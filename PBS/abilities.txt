@@ -581,10 +581,6 @@ Description = Boosts Sp. Atk each time a Pokémon faints.
 Name = Speed Boost
 Description = Speed is raised by two steps at the end of each of its turns.
 #-------------------------------
-[STALWART]
-Name = Stalwart
-Description = Ignores effects changing the target of a move.
-#-------------------------------
 [STAMINA]
 Name = Stamina
 Description = Boosts Defense by two steps when hit by an attack.

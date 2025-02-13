@@ -621,6 +621,7 @@ Description = Becomes charged upon entry, doubling the power of its next Electri
 [PROPELLERTAIL]
 Name = Propeller Tail
 Description = Ignores effects changing the target of a move.
+Flags = RedirectionImmunity
 #-------------------------------
 [PROVING]
 Name = Outrider
@@ -803,6 +804,11 @@ Description = Deals double damage to a target's replacement.
 [STALL]
 Name = Stall
 Description = The Pokémon moves after all other Pokémon do.
+#-------------------------------
+[STALWART]
+Name = Stalwart
+Description = Ignores effects changing the target of a move.
+Flags = RedirectionImmunity
 #-------------------------------
 [STEADFAST]
 Name = Steadfast
