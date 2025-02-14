@@ -16,9 +16,9 @@ items.txt
 regionaldexes.txt
 trainers.txt
 trainertypes.txt
+likes.txt
+dislikes.txt
 metadata.txt
-policies.txt
-traits.txt
 
 Examples of using each can be found in the MOD TEMPLATE folder.
 
