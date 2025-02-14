@@ -9,6 +9,7 @@ If you place a PBS file (e.g. “pokemon.txt”) inside a plugin, it will be hot
 This currently supports:
 pokemon.txt
 pokemon_metrics.txt
+pokemonforms.txt
 avatars.txt
 abilities.txt
 moves.txt
