@@ -15,6 +15,7 @@ module Compiler
       placenames = []
       placedescs = []
       sections   = []
+      baseFiles = [path]
       mapTextFiles = []
 		  mapTextFiles.concat(baseFiles)
 		  mapExtensions = Compiler.get_extensions("townmap")

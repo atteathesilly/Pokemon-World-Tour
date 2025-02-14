@@ -5,6 +5,7 @@ module Compiler
 		GameData::Dislike::DATA.clear
 		dislikeNames = []
 		dislikeNumber = 0
+		baseFiles = [path]
 		dislikeTextFiles = []
 		dislikeTextFiles.concat(baseFiles)
 		dislikeExtensions = Compiler.get_extensions("dislikes")
