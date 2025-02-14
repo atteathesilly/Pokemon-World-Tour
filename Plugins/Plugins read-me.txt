@@ -20,6 +20,7 @@ likes.txt
 dislikes.txt
 metadata.txt
 encounters.txt
+townmap.txt
 
 Examples of using each can be found in the MOD TEMPLATE folder.
 

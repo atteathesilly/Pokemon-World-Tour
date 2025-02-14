@@ -15,34 +15,40 @@ module Compiler
       placenames = []
       placedescs = []
       sections   = []
-      pbCompilerEachCommentedLine(path) { |line,lineno|
-        if line[/^\s*\[\s*(\d+)\s*\]\s*$/]
-          currentmap = $~[1].to_i
-          sections[currentmap] = []
-        else
-          if currentmap<0
-            raise _INTL("Expected a section at the beginning of the file\r\n{1}",FileLineData.linereport)
-          end
-          if !line[/^\s*(\w+)\s*=\s*(.*)$/]
-            raise _INTL("Bad line syntax (expected syntax like XXX=YYY)\r\n{1}",FileLineData.linereport)
-          end
-          settingname = $~[1]
-          schema = nonglobaltypes[settingname]
-          if schema
-            record = pbGetCsvRecord($~[2],lineno,schema)
-            if settingname=="Name"
-              rgnnames[currentmap] = record
-            elsif settingname=="Point"
-              placenames.push(record[2])
-              placedescs.push(record[3])
-              sections[currentmap][schema[0]] = [] if !sections[currentmap][schema[0]]
-              sections[currentmap][schema[0]].push(record)
-            else   # Filename
-              sections[currentmap][schema[0]] = record
+      mapTextFiles = []
+		  mapTextFiles.concat(baseFiles)
+		  mapExtensions = Compiler.get_extensions("townmap")
+		  mapTextFiles.concat(mapExtensions)
+		  mapTextFiles.each do |path|
+        pbCompilerEachCommentedLine(path) { |line,lineno|
+          if line[/^\s*\[\s*(\d+)\s*\]\s*$/]
+            currentmap = $~[1].to_i
+            sections[currentmap] = []
+          else
+            if currentmap<0
+              raise _INTL("Expected a section at the beginning of the file\r\n{1}",FileLineData.linereport)
+            end
+            if !line[/^\s*(\w+)\s*=\s*(.*)$/]
+              raise _INTL("Bad line syntax (expected syntax like XXX=YYY)\r\n{1}",FileLineData.linereport)
+            end
+            settingname = $~[1]
+            schema = nonglobaltypes[settingname]
+            if schema
+              record = pbGetCsvRecord($~[2],lineno,schema)
+              if settingname=="Name"
+                rgnnames[currentmap] = record
+              elsif settingname=="Point"
+                placenames.push(record[2])
+                placedescs.push(record[3])
+                sections[currentmap][schema[0]] = [] if !sections[currentmap][schema[0]]
+                sections[currentmap][schema[0]].push(record)
+              else   # Filename
+                sections[currentmap][schema[0]] = record
+              end
             end
           end
-        end
-      }
+        }
+      end
       save_data(sections,"Data/town_map.dat")
       MessageTypes.setMessages(MessageTypes::RegionNames,rgnnames)
       MessageTypes.setMessagesAsHash(MessageTypes::PlaceNames,placenames)
@@ -57,21 +63,27 @@ module Compiler
       return if !mapdata
       File.open("PBS/townmap.txt","wb") { |f|
         add_PBS_header_to_file(f)
-        for i in 0...mapdata.length
-          map = mapdata[i]
-          next if !map
-          f.write("\#-------------------------------\r\n")
-          f.write(sprintf("[%d]\r\n",i))
-          rname = pbGetMessage(MessageTypes::RegionNames,i)
-          f.write(sprintf("Name = %s\r\nFilename = %s\r\n",
-            (rname && rname!="") ? rname : _INTL("Unnamed"),
-            csvQuote((map[1].is_a?(Array)) ? map[1][0] : map[1])))
-          for loc in map[2]
-            f.write("Point = ")
-            pbWriteCsvRecord(loc,f,[nil,"uussUUUU"])
-            f.write("\r\n")
-          end
+        # THIS IS A HACK
+        # There's only one region in the current official game
+        # So without a better way to determine if a map comes from PBS extensions,
+        # we make sure that's the only one we write.
+        # If the game ever adds another map, THIS SHOULD BE CHANGED
+        #for i in 0...mapdata.length
+        i = 0
+        map = mapdata[i]
+        next if !map
+        f.write("\#-------------------------------\r\n")
+        f.write(sprintf("[%d]\r\n",i))
+        rname = pbGetMessage(MessageTypes::RegionNames,i)
+        f.write(sprintf("Name = %s\r\nFilename = %s\r\n",
+          (rname && rname!="") ? rname : _INTL("Unnamed"),
+          csvQuote((map[1].is_a?(Array)) ? map[1][0] : map[1])))
+        for loc in map[2]
+          f.write("Point = ")
+          pbWriteCsvRecord(loc,f,[nil,"uussUUUU"])
+          f.write("\r\n")
         end
+        #end
       }
       Graphics.update
     end
