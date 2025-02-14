@@ -276,6 +276,11 @@ module GameData
                 end
             end
 
+            # Set level from policy
+            if trainer.policies.include?(:MATCH_LEVEL_CAP)
+              pkmn.level = getLevelCap
+            end
+
             # Set Pokémon's properties if defined
             pkmn.name = nickname if !nickname.nil?
 
@@ -358,11 +363,7 @@ module GameData
         end
 
         if parentTrainer && trainer.party.length > Settings::MAX_PARTY_SIZE
-            echoln _INTL("Error when trying to contruct trainer #{@id.to_s} as an extension of trainer #{parentTrainer.id.to_s}. The resultant party is larger than the maximum party size!")
-            # Trim it down to size
-            while trainer.party.length > Settings::MAX_PARTY_SIZE
-              trainer.party.pop
-            end
+            echoln _INTL("WARNING: When trying to contruct trainer #{@id.to_s} as an extension of trainer #{parentTrainer.id.to_s}, the resultant party is larger than the maximum party size!")
         end
 
         trainer.party.compact!

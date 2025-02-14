@@ -5,7 +5,7 @@ def pbSetSelfSwitch(eventid, switch_name, value=true, mapid = -1)
 	$game_system.map_interpreter.pbSetSelfSwitch(eventid, switch_name, value, mapid)
 end
 
-def setMySwitch(switch,value=true)
+def setMySwitch(switch='A',value=true)
 	pbSetSelfSwitch(get_self.id,switch,value)
 end
 
@@ -57,6 +57,12 @@ def fadeSwitchOff(switchName = 'A')
 	blackFadeOutIn {
 		setMySwitch(switchName,false)
 	}
+end
+
+def toggleSwitch(eventID, switchName = 'A')
+	mapid = $game_map.map_id
+	currentValue = $game_self_switches[[mapid, eventID, switchName]]
+	pbSetSelfSwitch(eventID,switchName,!currentValue,mapid)
 end
 
 def toggleSwitches(eventsArray,switchName="A")

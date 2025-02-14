@@ -66,8 +66,6 @@ module Compiler
         MessageTypes.setMessagesAsHash(MessageTypes::Abilities, ability_names)
         MessageTypes.setMessagesAsHash(MessageTypes::AbilityDescs, ability_descriptions)
         Graphics.update
-
-        BattleHandlers::LoadDataDependentAbilityHandlers.trigger
     end
 
     #=============================================================================
@@ -188,15 +186,15 @@ module GameData
         end
 
         def is_sun_synergy_ability?
-            return @flags.include?("SunSynergy")
+            return @flags.include?("SunshineSynergy")
         end
 
         def is_rain_synergy_ability?
-            return @flags.include?("RainSynergy")
+            return @flags.include?("RainstormSynergy")
         end
 
         def is_sand_synergy_ability?
-            return @flags.include?("SandSynergy")
+            return @flags.include?("SandstormSynergy")
         end
 
         def is_hail_synergy_ability?
@@ -217,6 +215,10 @@ module GameData
 
         def is_flinch_immunity_ability?
             return @flags.include?("FlinchImmunity")
+        end
+
+        def is_redirection_immunity_ability?
+            return @flags.include?("RedirectionImmunity")
         end
 
         def is_uncopyable_ability?
