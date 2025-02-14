@@ -90,6 +90,7 @@ module Compiler
 		  encounterExtensions = Compiler.get_extensions("encounters")
 		  encounterTextFiles.concat(encounterExtensions)
       encounterTextFiles.each do |path|
+        baseFile = baseFiles.include?(path)
         pbCompilerEachPreppedLine(path) { |line, line_no|
           next if line.length == 0
           if expected_lines > 0 && line[/^\d+,/] && new_format   # Species line (new format)

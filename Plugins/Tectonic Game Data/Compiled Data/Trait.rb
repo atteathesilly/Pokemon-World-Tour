@@ -12,7 +12,7 @@ module Compiler
 		traitExtensions = Compiler.get_extensions("traits")
 		traitTextFiles.concat(traitExtensions)
 		traitTextFiles.each do |path|
-			baseFile = baseFiles.includes?(path)
+			baseFile = baseFiles.include?(path)
 			pbCompilerEachCommentedLine(path) { |line, line_no|
 				line = pbGetCsvRecord(line, line_no, [0, "*ns"])
 				trait_symbol = line[0].to_sym
@@ -29,6 +29,7 @@ module Compiler
 				traitNames[traitNumber] = trait_hash[:real_name]
 				traitNumber += 1
 			}
+		end
 		# Save all data
 		GameData::Trait.save
 		MessageTypes.setMessages(MessageTypes::Traits, traitNames)

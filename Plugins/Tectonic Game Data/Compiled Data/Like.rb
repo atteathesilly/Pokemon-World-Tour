@@ -11,7 +11,7 @@ module Compiler
 		likeExtensions = Compiler.get_extensions("likes")
 		likeTextFiles.concat(likeExtensions)
 		likeTextFiles.each do |path|
-			baseFile = baseFiles.includes?(path)
+			baseFile = baseFiles.include?(path)
 			pbCompilerEachCommentedLine(path) { |line, line_no|
 				line = pbGetCsvRecord(line, line_no, [0, "*ns"])
 				like_symbol = line[0].to_sym
