@@ -5838,7 +5838,7 @@ Pokemon = PINCURCHIN,70
 Pokemon = WAILORD,70
     Name = Hannibal
     Gender = male
-    Moves = WATERSPOUT,ROOST,COLDFRONT,ICEBEAM
+    Moves = WATERSPOUT,HYDROCANNON,COLDFRONT,ICEBEAM
     AbilityIndex = 0 # Pressure
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
