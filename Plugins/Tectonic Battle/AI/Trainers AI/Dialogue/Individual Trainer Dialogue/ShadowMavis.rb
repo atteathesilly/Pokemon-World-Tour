@@ -1,8 +1,7 @@
 PokeBattle_AI::TrainerPokemonFaintedDialogue.add(:SHADOW_MAVIS,
     proc { |_policy, battler, trainer_speaking, dialogue_array|
         battle = battler.battle
-        if battle.pbAllFainted?(battler.index) && !battle.pbAllFainted?(battler.index - 2) &&
-                !trainer_speaking.policyStates[:RelyOnYezeraComment]
+        if battle.pbTeamExhaustedButSideAlive?(battler.index) && !trainer_speaking.policyStates[:RelyOnYezeraComment]
             dialogue_array.push(_INTL("Tsk, tsk, tsk. It appears my work here is done."))
             dialogue_array.push(_INTL("Let's see which of you two is the better."))
             trainer_speaking.policyStates[:RelyOnYezeraComment] = true

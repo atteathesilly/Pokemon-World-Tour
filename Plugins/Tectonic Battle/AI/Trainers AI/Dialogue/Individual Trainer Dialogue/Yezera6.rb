@@ -1,11 +1,10 @@
 PokeBattle_AI::TrainerPokemonFaintedDialogue.add(:YEZERA6,
   proc { |_policy, battler, trainer_speaking, dialogue_array|
     battle = battler.battle
-    if battle.pbAllFainted?(battler.index) && !battle.pbAllFainted?(battler.index + 2) &&
-        !trainer_speaking.policyStates[:RelyOnMavisComment]
+    if battle.pbTeamExhaustedButSideAlive?(battler.index) && !trainer_speaking.policyStates[:RelyOnMavisComment]
         dialogue_array.push(_INTL("Don't give me that look! Don’t do it! Mavis – please, just end this."))
         trainer_speaking.policyStates[:RelyOnMavisComment] = true
-    elsif battler.species == :TOGEKISS && !trainer_speaking.policyStates[:TogekissDeathComment]
+    elsif !battle.pbAllFainted?(battler.index) && battler.species == :TOGEKISS && !trainer_speaking.policyStates[:TogekissDeathComment]
         dialogue_array.push(_INTL("Sleep. Rest, and awake in a new world."))
         trainer_speaking.policyStates[:TogekissDeathComment] = true
     end
