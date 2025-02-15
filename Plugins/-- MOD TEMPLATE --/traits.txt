@@ -1,1 +1,1 @@
-TESTTRAIT,Test Trait
+DEBUG_TESTTRAIT,Test Trait

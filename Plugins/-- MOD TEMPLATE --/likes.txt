@@ -1,1 +1,1 @@
-TESTLIKE,Debugging
+DEBUG_TESTLIKE,Debugging

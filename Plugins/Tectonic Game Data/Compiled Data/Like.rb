@@ -61,7 +61,12 @@ module GameData
 		end
 
 		def self.getRandomLike
-			return DATA.values.sample
+			like = DATA.values.sample
+			return like if $DEBUG
+			while like.id.start_with?("DEBUG_") do
+				like = DATA.values.sample
+			end
+			return like
 		end
 	end
 end

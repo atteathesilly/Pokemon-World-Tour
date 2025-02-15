@@ -61,7 +61,12 @@ module GameData
 		end
 
 		def self.getRandomTrait
-			return DATA.values.sample
+			trait = DATA.values.sample
+			return trait if $DEBUG
+			while trait.id.start_with?("DEBUG_") do
+				trait = DATA.values.sample
+			end
+			return trait
 		end
 	end
 end

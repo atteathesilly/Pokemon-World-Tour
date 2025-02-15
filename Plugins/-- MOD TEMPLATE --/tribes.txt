@@ -1,1 +1,1 @@
-TESTTRIBE,3,"Test Tribe","This tribe exists to test the PBS extensions system"
+DEBUG_TESTTRIBE,3,"Test Tribe","This tribe exists to test the PBS extensions system"

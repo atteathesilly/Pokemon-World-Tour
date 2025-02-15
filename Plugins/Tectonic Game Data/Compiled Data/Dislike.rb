@@ -61,7 +61,12 @@ module GameData
 		end
 
 		def self.getRandomDislike
-			return DATA.values.sample
+			dislike = DATA.values.sample
+			return dislike if $DEBUG
+			while dislike.id.start_with?("DEBUG_") do
+				dislike = DATA.values.sample
+			end
+			return dislike
 		end
 	end
 end
