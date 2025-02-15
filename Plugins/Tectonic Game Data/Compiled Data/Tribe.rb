@@ -5,7 +5,6 @@ module Compiler
 		tribe_names        = []
     tribe_descriptions = []
 		GameData::Tribe::DATA.clear
-		# Read each line of tribes.txt at a time and compile it
 		tribe_number = 0
 		baseFiles = [path]
 		tribeTextFiles = []
@@ -14,6 +13,7 @@ module Compiler
 		tribeTextFiles.concat(policyExtensions)
 		tribeTextFiles.each do |path|
 			baseFile = baseFiles.include?(path)
+			# Read each line of tribes.txt at a time and compile it
 			pbCompilerEachCommentedLine(path) { |line, line_no|
 				tribeSchema = [0, "*niss"]
 				line = pbGetCsvRecord(line, line_no, tribeSchema)
@@ -24,7 +24,7 @@ module Compiler
 				if GameData::Tribe::DATA[tribe_symbol]
 					raise _INTL("Tribe ID '{1}' is used twice.\r\n{2}", tribe_symbol, FileLineData.linereport)
 				end
-				# Construct trainer type hash
+				# Construct tribe hash
 				tribe_hash = {
 					:id          => tribe_symbol,
 					:id_number   => tribe_number,

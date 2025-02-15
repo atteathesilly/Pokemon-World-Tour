@@ -17,6 +17,7 @@ items.txt
 regionaldexes.txt
 trainers.txt
 trainertypes.txt
+tribes.txt
 likes.txt
 dislikes.txt
 metadata.txt
