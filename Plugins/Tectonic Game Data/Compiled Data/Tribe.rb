@@ -15,17 +15,16 @@ module Compiler
 		tribeTextFiles.each do |path|
 			baseFile = baseFiles.include?(path)
 			pbCompilerEachCommentedLine(path) { |line, line_no|
-				tribeSchema = [0, "*nis"]
+				tribeSchema = [0, "*niss"]
 				line = pbGetCsvRecord(line, line_no, tribeSchema)
 				tribe_symbol = line[0].to_sym
 				tribe_threshold = line[1].to_i
-				tribe_description = line[2]
+				tribe_name = line[2]
+				tribe_description = line[3]
 				if GameData::Tribe::DATA[tribe_symbol]
 					raise _INTL("Tribe ID '{1}' is used twice.\r\n{2}", tribe_symbol, FileLineData.linereport)
 				end
 				# Construct trainer type hash
-				tribe_name = tribe_symbol.downcase
-				tribe_name = tribe_name[0].upcase + tribe_name[1...]
 				tribe_hash = {
 					:id          => tribe_symbol,
 					:id_number   => tribe_number,
