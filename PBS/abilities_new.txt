@@ -64,10 +64,6 @@ Flags = EclipseSynergy
 Name = Apricorn Armor
 Description = Takes 40% less damage from attacks by Pokémon who have a status condition.
 #-------------------------------
-[ARCANE]
-Name = Arcane
-Description = Increases Sp. Atk by 30%.
-#-------------------------------
 [ARCANEFINALE]
 Name = Arcane Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Synchronize.

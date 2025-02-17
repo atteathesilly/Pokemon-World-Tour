@@ -44,6 +44,10 @@ Description = Boosts Sp. Atk and Speed by 25% in rain.
 Name = Breaking Wave
 Description = Slips past hazards. On the first turn, its attacks are always critical.
 #-------------------------------
+[ARCANE]
+Name = Arcane
+Description = Increases Sp. Atk by 30%.
+#-------------------------------
 [AROMAVEIL]
 Name = Aroma Veil
 Description = Protects against attacks that limit move choices.
