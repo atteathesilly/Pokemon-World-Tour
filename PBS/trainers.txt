@@ -573,7 +573,7 @@ Pokemon = SHELLOS,19
 [LEADER_Helena,Helena]
 Policies = HELENA,PRIORITIZEUTURN
 Flags = NoPerfect
-Pokemon = LANTURN,25
+Pokemon = CHINCHOU,25
     Moves = VOLTSWITCH,BUBBLEBEAM,BALEFULBOP,CONFUSERAY
     AbilityIndex = 0 # Volt Absorb
     Item = CADOBERRY

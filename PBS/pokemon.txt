@@ -3603,8 +3603,8 @@ InternalName = CHINCHOU
 Type1 = WATER
 Type2 = ELECTRIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 75,38,46,67,56,46
-# Total = 328
+BaseStats = 110,51,66,65,80,66
+# Total = 438
 BaseEXP = 66
 Rareness = 190
 Happiness = 50
@@ -3618,7 +3618,7 @@ Weight = 12.0
 Kind = Angler
 Pokedex = It shoots positive and negative electricity between the tips of its two antennae and zaps its enemies.
 Generation = 2
-Evolutions = LANTURN,Level,25
+Evolutions = LANTURN,Level,30
 #-------------------------------
 [171]
 Name = Lanturn
@@ -3626,8 +3626,8 @@ InternalName = LANTURN
 Type1 = WATER
 Type2 = ELECTRIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 135,58,75,67,81,75
-# Total = 491
+BaseStats = 147,63,81,75,90,81
+# Total = 537
 BaseEXP = 161
 Rareness = 75
 Happiness = 50
