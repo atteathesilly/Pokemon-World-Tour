@@ -97,6 +97,11 @@ Description = Doubles Sp. Def, but the Pokémon can't use status moves.
 Name = Assistant
 Description = Uses Assist upon entry, using a random move known by a party member.
 #-------------------------------
+[ASTRALHARVEST]
+Name = Astral Harvest
+Description = During eclipse, it restores its HP by half the damage it deals with attacks.
+Flags = EclipseSynergy
+#-------------------------------
 [AURORAPRISM]
 Name = Aurora Prism
 Description = Attacks this Pokémon uses that don't share a type with it are boosted by 50%. It can't use attacks of its own types.
@@ -852,11 +857,6 @@ Name = Heat Veil
 Description = Doubles Sp. Def in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
-[HEAVENSCROWN]
-Name = Heaven's Crown
-Description = If the Pokémon witnesses a total eclipse, it gets to move twice that turn.
-Flags = EclipseSynergy
-#-------------------------------
 [HEAVYDUTYHOOVES]
 Name = Heavy Duty Hooves
 Description = Boosts the power of kicking moves by 30%. Immune to hazards.
@@ -1143,11 +1143,6 @@ Description = Dive and Depth Charge deal 50% more damage.
 [MASSATTACK]
 Name = Mass Attack
 Description = All Pokémon's damage is decreased proportional to their health remaining.
-#-------------------------------
-[MASTERPLAN]
-Name = Master Plan
-Description = Raises each stat by two steps when a total eclipse happens.
-Flags = EclipseSynergy
 #-------------------------------
 [MENTALBLOCK]
 Name = Mental Block
@@ -1649,11 +1644,6 @@ Description = Boosts Attack by 20% in hail, or 40% if also below half health.
 Name = Severe
 Description = Its attacks are critical against numbed targets.
 #-------------------------------
-[SHAKYCODE]
-Name = Shaky Code
-Description = During eclipse, changes the Pokémon's type to the type of the move it's using.
-Flags = EclipseSynergy
-#-------------------------------
 [SHELLCRACKER]
 Name = Shellcracker
 Description = Its physical attacks reduce the target's Defense.
@@ -1991,11 +1981,6 @@ Description = Between each turn there's another turn where no one moves.
 [TOILANDTROUBLE]
 Name = Toil and Trouble
 Description = Foes suffer 50% more stat reduction from burn, frostbite, and numb.
-#-------------------------------
-[TOLLDANGER]
-Name = Toll Danger
-Description = When a total eclipse occurs, heals for 50% max HP and uses Heal Bell.
-Flags = EclipseSynergy
 #-------------------------------
 [TOLLTHEBELLS]
 Name = Toll the Bells

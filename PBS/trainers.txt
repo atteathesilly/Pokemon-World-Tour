@@ -1258,7 +1258,7 @@ Pokemon = MIMIKYU,36
     AbilityIndex = 0 # Disguise
 #-------------------------------
 [SCIENTIST_F3,Viola]
-Pokemon = BEHEEYEM,35
+Pokemon = BRONZONG,35
     AbilityIndex = 1 # Puzzling
 Pokemon = ELDEGOSS,35
     AbilityIndex = 1 # On the Wind
@@ -1505,8 +1505,8 @@ Pokemon = PORYGON2,28
     AbilityIndex = 0 # Realist
 #-------------------------------
 [CLOWN,Klemens]
-Pokemon = ELGYEM,28
-    Moves = PSYCHOCUT,BULLETCHARGE,EERIESPELL,SHINESHOT
+Pokemon = BRONZOR,28
+    Moves = HEALBELL,PSYBEAM,SHINESHOT,PACIFY
     AbilityIndex = 1 # Puzzling
     Item = REINFORCINGROD
 Pokemon = HAKAMOO,28
@@ -4705,8 +4705,8 @@ Pokemon = GIGANTEON,48
     Item = AGILITYHERB
 #-------------------------------
 [SWIMMER_F4,Yvonne]
-Pokemon = BEHEEYEM,56
-    Moves = METEORMASH,ZENHEADBUTT,PSYCHOBOOST,OCCULTATION
+Pokemon = BRONZONG,56
+    Moves = GYROBALL,PSYCHOBOOST,BRAINFREEZE,LIGHTNINGSLAM
     AbilityIndex = 1 # Puzzling
     Item = REINFORCINGROD
 Pokemon = ABSOLUS,57
@@ -8112,12 +8112,12 @@ Pokemon = MGIGALITH,70
     Item = BIGROOT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,10,0,20,5
-Pokemon = BRONZONG,70
-    Moves = ECLIPSE,DREAMABSORB,GYROBALL,ALLYSWITCH
-    AbilityIndex = 1 # Toll Danger
-    Item = LEFTOVERS
+Pokemon = BEHEEYEM,70
+    Moves = STEELBEAM,TOTALCONTROL,DISCHARGE,DREAMDANCE
+    AbilityIndex = 1 # Astral Harvest
+    Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
+    EV = 0,20,15,0,20,15
 Pokemon = PORYGONZ,70
     Moves = PHANTOMGATE,SUBLIMATE,HONESIGHT,BURNUP
     AbilityIndex = 1 # Adapted
