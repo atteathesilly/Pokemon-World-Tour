@@ -166,6 +166,7 @@ class PokemonTrade_Scene
          [@sprites["rsprite2"],spriteBall]
       )
       spriteBall.dispose
+      pbMEPlay("Evolution success")
     end
   
     def pbEndScreen
@@ -193,6 +194,7 @@ class PokemonTrade_Scene
          @pokemon.name,@pokemon.owner.public_id,@pokemon.owner.name)) { pbUpdate }
       pbMessageWaitForInput(@sprites["msgwindow"],50,true) { pbUpdate }
       pbPlayDecisionSE
+      pbMEPlay("Evolution start")
       pbScene1
       pbMessageDisplay(@sprites["msgwindow"],
          _INTL("For {1}'s {2},\r\n{3} sends {4}.\1",@trader1,speciesname1,@trader2,speciesname2)) { pbUpdate }
