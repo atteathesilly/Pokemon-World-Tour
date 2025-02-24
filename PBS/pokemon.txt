@@ -22192,4 +22192,3 @@ Kind = King
 Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and blessings. It has the power to cause hearts to mend and plants to spring forth.
 Generation = 8
 Flags = Legendary
-#-------------------------------
