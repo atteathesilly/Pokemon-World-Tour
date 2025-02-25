@@ -438,10 +438,14 @@ def generateFullDexDoc(generationNumber = nil,fileName = "fulldexdoc.txt")
 
 			# Tutor moves
 			tutorStr = "Tutor moves: "
-			tutorOnlyMoves = species_data.learnable_moves - allLevelMoves
-			tutorOnlyMoves.each_with_index do |moveID, index|
-				tutorStr += GameData::Move.get(moveID).real_name
-				tutorStr += ", " unless index == tutorOnlyMoves.length - 1
+			if species_data.canTutorAny? 
+				tutorStr += "All non-signature moves"
+			else
+				tutorOnlyMoves = species_data.learnable_moves - allLevelMoves
+				tutorOnlyMoves.each_with_index do |moveID, index|
+					tutorStr += GameData::Move.get(moveID).real_name
+					tutorStr += ", " unless index == tutorOnlyMoves.length - 1
+				end
 			end
 			dexListing.push(tutorStr)
 
