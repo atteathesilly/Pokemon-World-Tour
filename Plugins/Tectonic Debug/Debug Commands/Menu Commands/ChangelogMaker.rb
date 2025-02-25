@@ -246,6 +246,11 @@ def createChangeLog(generationNumber = nil,fileName = "Changelogs/changelog.txt"
 				end
 
 				unless addedMoves.empty?
+					# special case for mons with TutorAny flag
+					if newSpeciesData.canTutorAny?
+						changeLog.push("")
+						changeLog.push("Added Moves: All non-signature moves")
+					else
 						str = "Added Move#{addedMoves.length > 1 ? "s" : ""}: "
 						addedMoves.each_with_index do |move,index|
 								str += GameData::Move.get(move).real_name
@@ -255,6 +260,7 @@ def createChangeLog(generationNumber = nil,fileName = "Changelogs/changelog.txt"
 						end
 						changeLog.push("")
 						changeLog.push(str)
+					end
 				end
 			end
 
