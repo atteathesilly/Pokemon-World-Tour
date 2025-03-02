@@ -5169,17 +5169,6 @@ FunctionCode = RaiseUserSpd4
 Flags = CanSnatch
 Description = The user relaxes and lightens its body to move faster, raising its Speed by four steps.
 #-------------------------------
-[ALLYSWITCH]
-Name = Ally Switch
-Type = PSYCHIC
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = User
-Priority = 2
-FunctionCode = UserSwapsPositionsWithAlly
-Description = The user teleports using a strange power and switches its place with one of its allies.
-#-------------------------------
 [AMNESIA]
 Name = Amnesia
 Type = PSYCHIC

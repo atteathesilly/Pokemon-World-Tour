@@ -2297,6 +2297,17 @@ Animation = GROWL
 #-------------------------------
 #		PSYCHIC MOVES
 #-------------------------------
+[ALLYSWITCH]
+Name = Ally Switch
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 12
+Target = User
+Priority = 2
+FunctionCode = Invalid
+Description = The user teleports using a strange power and switches its place with one of its allies.
+#-------------------------------
 [BARRIER]
 Name = Barrier
 Type = PSYCHIC

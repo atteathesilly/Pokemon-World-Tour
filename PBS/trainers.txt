@@ -8520,7 +8520,7 @@ Pokemon = KLEAVOR,70
     Item = LUCKHERB
 Pokemon = INDEEDEE,70
     Form = 1 # Female Form
-    Moves = KICKSTART,BRAINFREEZE,ENERGYBALL,ALLYSWITCH
+    Moves = KICKSTART,BRAINFREEZE,ENERGYBALL,HELPINGHAND
     AbilityIndex = 1 # Mental Block
 #-------------------------------
 [SAILOR,Dom]
