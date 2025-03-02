@@ -280,7 +280,7 @@ Pokemon = SAWSBUCK,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,5,20,20,0
 Pokemon = LURANTIS,70
-    Moves = AUTUMNBLAST,LEAFSTORM,OVERHEAT,POLLENPUFF
+    Moves = SUPERPOWER,LEAFSTORM,STRAFE,POLLENPUFF
     AbilityIndex = 0 # Contrary
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
