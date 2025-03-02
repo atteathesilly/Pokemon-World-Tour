@@ -7936,7 +7936,7 @@ Pokemon = MANIKLAW,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = SNEASLER,70
-    Moves = DIRECLAW,CROSSCHOP,ADAMANTINEPRESS,ACROBATICS
+    Moves = CROSSPOISON,CROSSCHOP,ADAMANTINEPRESS,ACROBATICS
     AbilityIndex = 1 # Frustrate
     Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
