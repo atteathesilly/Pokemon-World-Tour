@@ -409,6 +409,10 @@ Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose 
 Name = Dire Diversion
 Description = It can avoid being knocked out by sacrificing its held item.
 #-------------------------------
+[DISCONNECTION]
+Name = Disconnection
+Description = On the first turn, its attacks numb the target.
+#-------------------------------
 [DISORIENTING]
 Name = Disorienting
 Description = Physical attacks against the Pokémon have a 30% chance to dizzy the attacker.

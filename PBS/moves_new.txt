@@ -91,19 +91,6 @@ EffectChance = 45
 Description = The user thrashes while infused with elements. It has a 15% chance each to poison, leech, or waterlog.
 Animation = FIERYWRATH
 #-------------------------------
-[CLAMOR]
-Name = Clamor
-Type = NORMAL
-Category = Special
-Power = 90
-Accuracy = 100
-TotalPP = 10
-Target = ClosestNearFoe
-FunctionCode = RampagePreventSleeping
-Flags = CanProtect,CanMirrorMove,Sound
-Description = The user attacks in an uproar for three turns. Over that time, no one can fall asleep.
-Animation = UPROAR
-#-------------------------------
 [CLOUDBREAK]
 Name = Cloudbreak
 Type = NORMAL
@@ -4815,6 +4802,18 @@ Flags = CanProtect,CanMirrorMove
 EffectChance = 20
 Description = The user and the target pit their energy against one another. The damage is based on the target's Sp. Atk rather than their Sp. Def.
 Animation = HYPERBEAM
+#-------------------------------
+[BROADCASTBLAST]
+Name = Broadcast Blast
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = UseAllOtherSoundMoves
+Flags = Sound
+Description = The user rocks out by using each Sound-based move they know. Only one use per battle.
+Animation = UPROAR
 #-------------------------------
 [CAPACITYBURST]
 Name = Capacity Burst
