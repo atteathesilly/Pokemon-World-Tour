@@ -6471,10 +6471,10 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Leech
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
-Description = The user strikes the target with dark energy. It has a 10% chance to leech.
-Animation = SNARL
+Description = The user burrows into the target's subconscious with emotional manipulation. It has a 10% chance to leech.
+Animation = TEASE
 #-------------------------------
 [DISARMINGSHOT]
 Name = Disarming Shot
@@ -6745,7 +6745,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Leech
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 100
 Description = The user entangles the target's mind with dark thoughts, leeching it.
 #-------------------------------
