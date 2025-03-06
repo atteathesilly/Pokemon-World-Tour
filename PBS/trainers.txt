@@ -7594,6 +7594,292 @@ Pokemon = GIGACHU,70
 Pokemon = ABOMASNOW,70
     AbilityIndex = 1 # Frustrate
 #-------------------------------
+[POKEMONMASTER_Vanya,Vanya,9]
+Flags = NoPerfect,RainTeam,PlayerTeam:Kiwrii
+Pokemon = DEWGONG,70
+	AbilityIndex = 1
+Pokemon = BOLTUND,70
+	AbilityIndex = 1
+Pokemon = ARMALDO,70
+	AbilityIndex = 1
+Pokemon = BLASFEMMIE,70
+	AbilityIndex = 1
+Pokemon = FLOATZEL,70
+	AbilityIndex = 0
+Pokemon = HYMNUS,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,10]
+Flags = NoPerfect,PlayerTeam:Riptidecord	
+Pokemon = PORYGONMAV,70
+	AbilityIndex = 1
+Pokemon = MMANDIBUZZ,70
+	AbilityIndex = 1
+Pokemon = WISHIWASHI,70
+	AbilityIndex = 0
+Pokemon = TSAREENA,70
+	AbilityIndex = 1
+Pokemon = MAROMATISSE,70
+	AbilityIndex = 0
+Pokemon = LEDIAN,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,11]
+Flags = NoPerfect,PlayerTeam:Cannamoos	
+Pokemon = SYLVEON,70
+	AbilityIndex = 1
+Pokemon = LUXRAY,70
+	AbilityIndex = 1
+Pokemon = INFERNAPE,70
+	AbilityIndex = 0
+Pokemon = GRENINJA,70
+	AbilityIndex = 1
+Pokemon = WORNET,70
+	AbilityIndex = 1
+Pokemon = TORTERRA,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,12]
+Flags = NoPerfect,PlayerTeam:Ardub23	
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,13]
+Flags = NoPerfect,PlayerTeam:Greeneyedpsycho
+Pokemon = ASANDSLASH,70
+	AbilityIndex = 0
+Pokemon = MZANGOOSE,70
+	AbilityIndex = 1
+Pokemon = APPLETUN,70
+	AbilityIndex = 1
+Pokemon = TALONFLAME,70
+	AbilityIndex = 0
+Pokemon = TYRANTRUM,70
+	AbilityIndex = 1
+Pokemon = DUSKNOIR,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,14]
+Flags = NoPerfect,PlayerTeam:Wildcard	
+Pokemon = CHATOT,70
+	AbilityIndex = 1
+Pokemon = DHELMISE,70
+	AbilityIndex = 0
+Pokemon = SCARODON,70
+	AbilityIndex = 1
+Pokemon = COFAGRIGUS,70
+	AbilityIndex = 0
+Pokemon = RUBARIOR,70
+	AbilityIndex = 0
+Pokemon = KINGDRA,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,15]
+Flags = NoPerfect,PlayerTeam:Maken33	
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+Pokemon = ,70
+	AbilityIndex =
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,16]
+Flags = NoPerfect,HailTeam,PlayerTeam:Zempest	
+Pokemon = HELECTRODE,70
+	AbilityIndex = 0
+Pokemon = MZANGOOSE,70
+	AbilityIndex = 0
+Pokemon = AURORUS,70
+	AbilityIndex = 1
+Pokemon = MNOCTOWL,70
+	AbilityIndex = 1
+Pokemon = DUSCLOPS,70
+	AbilityIndex = 1
+Pokemon = HDECIDUEYE,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,17]
+Flags = NoPerfect,PlayerTeam:SpeedyTurtle496	
+Pokemon = TOGEKISS,70
+	AbilityIndex = 1
+Pokemon = SERPERIOR,70
+	AbilityIndex = 1
+Pokemon = DRAGONITE,70
+	AbilityIndex = 1
+Pokemon = CINDERACE,70
+	AbilityIndex = 1
+Pokemon = GRAPIDASH,70
+	AbilityIndex = 0
+Pokemon = ASANDSLASH,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,18]
+Flags = NoPerfect,PlayerTeam:Lockernee245	
+Pokemon = TORKOAL,70
+	AbilityIndex = 0
+Pokemon = TORTERRA,70
+	AbilityIndex = 1
+Pokemon = CARRACOSTA,70
+	AbilityIndex = 1
+Pokemon = SEISMAW,70
+	AbilityIndex = 0
+Pokemon = BLASTOISE,70
+	AbilityIndex = 1
+Pokemon = TURTONATOR,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,19]
+Flags = NoPerfect,PlayerTeam:Lockernee245
+Pokemon = SAURENAID,70
+	AbilityIndex = 1
+Pokemon = SKARMORY,70
+	AbilityIndex = 1
+Pokemon = HYMNUS,70
+	AbilityIndex = 1
+Pokemon = GOODRA,70
+	AbilityIndex = 1
+Pokemon = AMPHAROS,70
+	AbilityIndex = 1
+Pokemon = LEAVANNY,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,20]
+Flags = NoPerfect,PlayerTeam:Aethariel
+Pokemon = PELIPPER,70
+	AbilityIndex = 1
+Pokemon = GLISCOR,70
+	AbilityIndex = 0
+Pokemon = TROPIUS,70
+	AbilityIndex = 0
+Pokemon = SAURENAID,70
+	AbilityIndex = 0
+Pokemon = DELIBIRD,70
+	AbilityIndex = 1
+Pokemon = AMOONGUSS,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,21]
+Flags = NoPerfect,SandTeam,PlayerTeam:Kamekami	
+Pokemon = RUNERIGUS,70
+	AbilityIndex = 1
+Pokemon = CLAYDOL,70
+	AbilityIndex = 1
+Pokemon = HARCANINE,70
+	AbilityIndex = 1
+Pokemon = RAMPARDOS,70
+	AbilityIndex = 0
+Pokemon = MARACTUS,70
+	AbilityIndex = 1
+Pokemon = GARCHOMP,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,22]
+Flags = NoPerfect,PlayerTeam:ExtraOrdiNora	
+Pokemon = TOGEKISS,70
+	AbilityIndex = 0
+Pokemon = HONCHKROW,70
+	AbilityIndex = 1
+Pokemon = ARCANINE,70
+	AbilityIndex = 1
+Pokemon = RHYPERIOR,70
+	AbilityIndex = 1
+Pokemon = LEAFEON,70
+	AbilityIndex = 1
+Pokemon = ZANGOOSE,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,23]
+Flags = NoPerfect,PlayerTeam:CostosCaliber
+Pokemon = MZANGOOSE,70
+	AbilityIndex = 1
+Pokemon = HONCHKROW,70
+	AbilityIndex = 0
+Pokemon = DELPHOX,70
+	AbilityIndex = 1
+Pokemon = RILLABOOM,70
+	AbilityIndex = 0
+Pokemon = PORYGONZ,70
+	AbilityIndex = 0
+Pokemon = MAGNEZONE,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,24]
+Flags = NoPerfect,PlayerTeam:ExtraOrdiNora	
+Pokemon = TOGEKISS,70
+	AbilityIndex = 0
+Pokemon = HONCHKROW,70
+	AbilityIndex = 1
+Pokemon = ARCANINE,70
+	AbilityIndex = 1
+Pokemon = RHYPERIOR,70
+	AbilityIndex = 1
+Pokemon = LEAFEON,70
+	AbilityIndex = 1
+Pokemon = ZANGOOSE,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,25]
+Flags = NoPerfect,PlayerTeam:Oreo29
+Pokemon = REAVOR,70
+	AbilityIndex = 1
+Pokemon = CINDERACE,70
+	AbilityIndex = 0
+Pokemon = MANERGETIC,70
+	AbilityIndex = 1
+Pokemon = SCEPTILE,70
+	AbilityIndex = 1
+Pokemon = PRIMARINA,70
+	AbilityIndex = 0
+Pokemon = WEAVILE,70
+	AbilityIndex = 0
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,26]
+Flags = NoPerfect,PlayerTeam:Breadon7414
+Pokemon = KOMALA,70
+	AbilityIndex = 0
+Pokemon = MMUSHARNA,70
+	AbilityIndex = 1
+Pokemon = HYPNO,70
+	AbilityIndex = 0
+Pokemon = SNORLAX,70
+	AbilityIndex = 0
+Pokemon = MFURRET,70
+	AbilityIndex = 0
+Pokemon = PAPELLUMEN,70
+	AbilityIndex = 1
+#-------------------------------
+[POKEMONMASTER_Vanya,Vanya,27]
+Flags = NoPerfect,PlayerTeam:Wolfunters64
+Pokemon = SAMUROTT,70
+	AbilityIndex = 1
+Pokemon = CHESNAUGHT,70
+	AbilityIndex = 1
+Pokemon = LYCANROC,70
+    Form = 2 # Dusk Form
+	AbilityIndex = 0
+Pokemon = SYLVEON,70
+	AbilityIndex = 1
+Pokemon = FURRET,70
+	AbilityIndex = 1
+Pokemon = BASCULEGION,70
+	AbilityIndex = 1
+#-------------------------------
 [WILDPARTY_KOKO,of Conflict]
 Flags = NoPerfect
 Pokemon = INCINEROAR,70
