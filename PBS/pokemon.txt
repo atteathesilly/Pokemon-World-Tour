@@ -7621,7 +7621,7 @@ StepsToHatch = 5355
 Height = 0.4
 Weight = 7.6
 Kind = Mud Fish
-Pokedex = In water, Mudkip breathes using the gills on its cheeks. If it is faced with a tight situation in battle, this Pokémon will unleash its amazing power - it can crush rocks bigger than itself.
+Pokedex = In water, Mudkip breathes using the gills on its cheeks. If it is faced with a tight situation in battle, this Pokémon will unleash its amazing power.
 Generation = 3
 Evolutions = MARSHTOMP,Level,16
 #-------------------------------
@@ -7641,7 +7641,7 @@ StepsToHatch = 5355
 Height = 0.7
 Weight = 28.0
 Kind = Mud Fish
-Pokedex = The surface of Marshtomp's body is enveloped by a thin, sticky film that enables it to live on land. This Pokémon plays in mud on beaches when the ocean tide is low.
+Pokedex = The surface of Marshtomp's body is enveloped by a thin, sticky film that enables it to live on land. This Pokémon plays in mud on beaches.
 Generation = 3
 Evolutions = SWAMPERT,Level,36
 #-------------------------------

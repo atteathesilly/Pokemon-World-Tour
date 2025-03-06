@@ -1444,7 +1444,7 @@ Target = NearFoe
 Priority = -6
 FunctionCode = SwitchOutTargetAndUserStatusMove
 Flags = CanMagicCoat,CanMirrorMove,Sound
-Description = The foe is forced is forced to switch out by a stinky cloud, then the user also switches. Always goes last.
+Description = The foe is forced to switch out by a stinky cloud, then the user also switches. Always goes last.
 Animation = STINKCLOUD
 #-------------------------------
 [TOXICTASTE]
@@ -6432,7 +6432,7 @@ Target = NearFoe
 FunctionCode = SwitchOutUserSetSpikes
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Defly sets a layer of damaging Spikes around the foe, then switches out.
+Description = Deftly sets a layer of damaging Spikes around the foe, then switches out.
 Animation = PARTINGSHOT
 #-------------------------------
 [CHECKMATE]
