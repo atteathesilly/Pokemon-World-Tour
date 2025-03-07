@@ -1443,7 +1443,7 @@ TotalPP = 10
 Target = NearFoe
 Priority = -6
 FunctionCode = SwitchOutTargetAndUserStatusMove
-Flags = CanMagicCoat,CanMirrorMove,Sound
+Flags = CanMagicCoat,CanMirrorMove
 Description = The foe is forced to switch out by a stinky cloud, then the user also switches. Always goes last.
 Animation = STINKCLOUD
 #-------------------------------
