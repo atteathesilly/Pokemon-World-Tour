@@ -524,6 +524,7 @@ class PokeBattle_Move_RaiseTargetAtkSpAtk3TargetHitsSelfAdaptive < PokeBattle_Mo
     end
 
     def getTargetAffectingEffectScore(user, target)
+        score = 0
         score -= getMultiStatUpEffectScore(ATTACKING_STATS_3, user, target, evaluateThreat: false)
         score -= 70 if target.hasActiveAbilityAI?(:UNAWARE)
         score += getMultiStatUpEffectScore(ATTACKING_STATS_3, user, user, evaluateThreat: false) if user.hasActiveAbilityAI?(:PETTY)
