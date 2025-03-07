@@ -7610,21 +7610,6 @@ Pokemon = HYMNUS,70
 	AbilityIndex = 1
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,10]
-Flags = NoPerfect,PlayerTeam:Riptidecord	
-Pokemon = PORYGONMAV,70
-	AbilityIndex = 1
-Pokemon = MMANDIBUZZ,70
-	AbilityIndex = 1
-Pokemon = WISHIWASHI,70
-	AbilityIndex = 0
-Pokemon = TSAREENA,70
-	AbilityIndex = 1
-Pokemon = MAROMATISSE,70
-	AbilityIndex = 0
-Pokemon = LEDIAN,70
-	AbilityIndex = 1
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,11]
 Flags = NoPerfect,PlayerTeam:Cannamoos	
 Pokemon = SYLVEON,70
 	AbilityIndex = 1
@@ -7639,7 +7624,7 @@ Pokemon = WORNET,70
 Pokemon = TORTERRA,70
 	AbilityIndex = 1
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,12]
+[POKEMONMASTER_Vanya,Vanya,11]
 Flags = NoPerfect,PlayerTeam:Ardub23	
 Pokemon = ,70
 	AbilityIndex =
@@ -7654,7 +7639,7 @@ Pokemon = ,70
 Pokemon = ,70
 	AbilityIndex =
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,13]
+[POKEMONMASTER_Vanya,Vanya,12]
 Flags = NoPerfect,PlayerTeam:Greeneyedpsycho
 Pokemon = ASANDSLASH,70
 	AbilityIndex = 0
@@ -7669,7 +7654,7 @@ Pokemon = TYRANTRUM,70
 Pokemon = DUSKNOIR,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,14]
+[POKEMONMASTER_Vanya,Vanya,13]
 Flags = NoPerfect,PlayerTeam:Wildcard	
 Pokemon = CHATOT,70
 	AbilityIndex = 1
@@ -7684,7 +7669,7 @@ Pokemon = RUBARIOR,70
 Pokemon = KINGDRA,70
 	AbilityIndex = 1
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,15]
+[POKEMONMASTER_Vanya,Vanya,14]
 Flags = NoPerfect,PlayerTeam:Maken33	
 Pokemon = ,70
 	AbilityIndex =
@@ -7699,7 +7684,7 @@ Pokemon = ,70
 Pokemon = ,70
 	AbilityIndex =
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,16]
+[POKEMONMASTER_Vanya,Vanya,15]
 Flags = NoPerfect,HailTeam,PlayerTeam:Zempest	
 Pokemon = HELECTRODE,70
 	AbilityIndex = 0
@@ -7714,7 +7699,7 @@ Pokemon = DUSCLOPS,70
 Pokemon = HDECIDUEYE,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,17]
+[POKEMONMASTER_Vanya,Vanya,16]
 Flags = NoPerfect,PlayerTeam:SpeedyTurtle496	
 Pokemon = TOGEKISS,70
 	AbilityIndex = 1
@@ -7729,37 +7714,7 @@ Pokemon = GRAPIDASH,70
 Pokemon = ASANDSLASH,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,18]
-Flags = NoPerfect,PlayerTeam:Lockernee245	
-Pokemon = TORKOAL,70
-	AbilityIndex = 0
-Pokemon = TORTERRA,70
-	AbilityIndex = 1
-Pokemon = CARRACOSTA,70
-	AbilityIndex = 1
-Pokemon = SEISMAW,70
-	AbilityIndex = 0
-Pokemon = BLASTOISE,70
-	AbilityIndex = 1
-Pokemon = TURTONATOR,70
-	AbilityIndex = 0
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,19]
-Flags = NoPerfect,PlayerTeam:Lockernee245
-Pokemon = SAURENAID,70
-	AbilityIndex = 1
-Pokemon = SKARMORY,70
-	AbilityIndex = 1
-Pokemon = HYMNUS,70
-	AbilityIndex = 1
-Pokemon = GOODRA,70
-	AbilityIndex = 1
-Pokemon = AMPHAROS,70
-	AbilityIndex = 1
-Pokemon = LEAVANNY,70
-	AbilityIndex = 0
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,20]
+[POKEMONMASTER_Vanya,Vanya,17]
 Flags = NoPerfect,PlayerTeam:Aethariel
 Pokemon = PELIPPER,70
 	AbilityIndex = 1
@@ -7774,7 +7729,7 @@ Pokemon = DELIBIRD,70
 Pokemon = AMOONGUSS,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,21]
+[POKEMONMASTER_Vanya,Vanya,18]
 Flags = NoPerfect,SandTeam,PlayerTeam:Kamekami	
 Pokemon = RUNERIGUS,70
 	AbilityIndex = 1
@@ -7789,22 +7744,7 @@ Pokemon = MARACTUS,70
 Pokemon = GARCHOMP,70
 	AbilityIndex = 1
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,22]
-Flags = NoPerfect,PlayerTeam:ExtraOrdiNora	
-Pokemon = TOGEKISS,70
-	AbilityIndex = 0
-Pokemon = HONCHKROW,70
-	AbilityIndex = 1
-Pokemon = ARCANINE,70
-	AbilityIndex = 1
-Pokemon = RHYPERIOR,70
-	AbilityIndex = 1
-Pokemon = LEAFEON,70
-	AbilityIndex = 1
-Pokemon = ZANGOOSE,70
-	AbilityIndex = 1
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,23]
+[POKEMONMASTER_Vanya,Vanya,19]
 Flags = NoPerfect,PlayerTeam:CostosCaliber
 Pokemon = MZANGOOSE,70
 	AbilityIndex = 1
@@ -7819,22 +7759,7 @@ Pokemon = PORYGONZ,70
 Pokemon = MAGNEZONE,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,24]
-Flags = NoPerfect,PlayerTeam:ExtraOrdiNora	
-Pokemon = TOGEKISS,70
-	AbilityIndex = 0
-Pokemon = HONCHKROW,70
-	AbilityIndex = 1
-Pokemon = ARCANINE,70
-	AbilityIndex = 1
-Pokemon = RHYPERIOR,70
-	AbilityIndex = 1
-Pokemon = LEAFEON,70
-	AbilityIndex = 1
-Pokemon = ZANGOOSE,70
-	AbilityIndex = 1
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,25]
+[POKEMONMASTER_Vanya,Vanya,20]
 Flags = NoPerfect,PlayerTeam:Oreo29
 Pokemon = REAVOR,70
 	AbilityIndex = 1
@@ -7849,7 +7774,7 @@ Pokemon = PRIMARINA,70
 Pokemon = WEAVILE,70
 	AbilityIndex = 0
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,26]
+[POKEMONMASTER_Vanya,Vanya,21]
 Flags = NoPerfect,PlayerTeam:Breadon7414
 Pokemon = KOMALA,70
 	AbilityIndex = 0
@@ -7864,7 +7789,7 @@ Pokemon = MFURRET,70
 Pokemon = PAPELLUMEN,70
 	AbilityIndex = 1
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,27]
+[POKEMONMASTER_Vanya,Vanya,22]
 Flags = NoPerfect,PlayerTeam:Wolfunters64
 Pokemon = SAMUROTT,70
 	AbilityIndex = 1
