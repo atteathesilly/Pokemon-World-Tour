@@ -1287,19 +1287,6 @@ EffectChance = 100
 Description = The user attacks while slathered in grime. This poisons the user.
 Animation = POISONJAB
 #-------------------------------
-[GRUNGE]
-Name = Grunge
-Type = POISON
-Category = Special
-Power = 90
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-FunctionCode = Dizzy
-Flags = CanProtect,CanMirrorMove,Sound
-EffectChance = 30
-Description = The user creates distorted guitar sounds to attack the target. It has a 30% chance to dizzy.
-#-------------------------------
 [HONORLESSSTING]
 Name = Honorless Sting
 Type = POISON

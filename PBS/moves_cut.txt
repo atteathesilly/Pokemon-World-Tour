@@ -1126,6 +1126,19 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat,CanMirrorMove
 Description = The user hurls up its stomach acids on the foe. The fluid negates the effect of the target's Ability.
 #-------------------------------
+[GRUNGE]
+Name = Grunge
+Type = POISON
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 30
+Description = The user creates distorted guitar sounds to attack the target. It has a 30% chance to dizzy.
+#-------------------------------
 [POISONPOWDER]
 Name = Poison Powder
 Type = POISON
