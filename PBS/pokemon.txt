@@ -20506,8 +20506,8 @@ Evolutions = ALCREMIE,Level,24
 Name = Alcremie
 Type1 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,55,115,59,100,70
-# Total = 469
+BaseStats = 85,50,105,50,85,65
+# Total = 440
 BaseEXP = 173
 Rareness = 100
 Happiness = 50
@@ -20526,7 +20526,7 @@ Evolutions = BLASFEMMIE,Level,44
 Name = Blasfemmie
 Type1 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 85,65,131,59,130,80
+BaseStats = 105,65,131,59,110,80
 # Total = 550
 BaseEXP = 173
 Rareness = 100
