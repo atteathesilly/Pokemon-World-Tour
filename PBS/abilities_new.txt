@@ -888,6 +888,10 @@ Flags = AllWeatherSynergy
 Name = Holiday Cheer
 Description = When entering battle, heals self and allies for 25% of their max health.
 #-------------------------------
+[HOOLIGAN]
+Name = Hooligan
+Description = Powers up recoil and sound moves by 30%.
+#-------------------------------
 [HONORABLE]
 Name = Honorable
 Description = Lowers priority of status moves used by any Pokémon.
