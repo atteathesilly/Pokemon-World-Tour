@@ -8282,8 +8282,8 @@ WildItemUncommon = MAGNET
 Name = Skitty
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 54,57,72,90,57,63
-# Total = 393
+BaseStats = 54,63,63,90,63,63
+# Total = 396
 GenderRate = Female75Percent
 BaseEXP = 52
 Rareness = 255
@@ -8303,7 +8303,7 @@ Evolutions = DELCATTY,Item,MOONSTONE
 Name = Delcatty
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,100,80,125,100,75
+BaseStats = 75,90,90,125,90,90
 # Total = 550
 GenderRate = Female75Percent
 BaseEXP = 140
