@@ -6412,18 +6412,6 @@ FunctionCode = DoubleDamageTargetMoved
 Flags = CanProtect
 Description = If the user moves after the target, this attack's power will be doubled.
 #-------------------------------
-[PUNISHMENT]
-Name = Punishment
-Type = DARK
-Category = Physical
-Power = 30
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = ScalesTargetsPositiveStatSteps
-Flags = CanProtect
-Description = This attack's power increases by 10 for every one of the target's positive stat steps.
-#-------------------------------
 [PURSUIT]
 Name = Pursuit
 Type = DARK
