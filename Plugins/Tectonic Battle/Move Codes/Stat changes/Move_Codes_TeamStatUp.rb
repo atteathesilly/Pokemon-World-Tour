@@ -46,7 +46,7 @@ end
 class PokeBattle_Move_RaiseUserAndAlliesDef2 < PokeBattle_TeamStatBuffMove
     def initialize(battle, move)
         super
-        @statUp = [:DEFENSE, 3]
+        @statUp = [:DEFENSE, 2]
     end
 end
 
