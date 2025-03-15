@@ -272,7 +272,7 @@ PokEstate::LoadDataDependentAwards += proc {
     PokEstate::GrantAwards.add(:DEXCOMPLETION50PERCENT,
         proc { |pokedex|
             next {
-                reward: :BALLLAUNCHER,
+                reward: [:BALLLAUNCHER],
                 description: _INTL("{1} non-legendary species (50%)",threshold50Percent),
                 page: 4,
                 threshold: threshold50Percent,
@@ -284,7 +284,7 @@ PokEstate::LoadDataDependentAwards += proc {
     PokEstate::GrantAwards.add(:DEXCOMPLETION75PERCENT,
         proc { |pokedex|
             next {
-                reward: :GLEAMPOWDER,
+                reward: [:GLEAMPOWDER],
                 description: _INTL("{1} non-legendary species (75%)",threshold75Percent),
                 page: 4,
                 threshold: threshold75Percent,
@@ -296,7 +296,7 @@ PokEstate::LoadDataDependentAwards += proc {
     PokEstate::GrantAwards.add(:DEXCOMPLETION100PERCENT,
         proc { |pokedex|
             next {
-                reward: :SHINYCHARM,
+                reward: [:SHINYCHARM],
                 description: _INTL("{1} non-legendary species (100%)",threshold100Percent),
                 page: 4,
                 threshold: threshold100Percent,
