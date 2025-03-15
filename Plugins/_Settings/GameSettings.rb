@@ -410,7 +410,7 @@ module Settings
             _INTL("Area"),
             _INTL("Type"),
             _INTL("Tribe"),
-            _INTL("Generation"),
+            _INTL("Total"),
         ]
     end
 end
