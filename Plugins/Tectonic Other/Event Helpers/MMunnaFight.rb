@@ -7,7 +7,7 @@ def mmunnaFight(species, level, switch = 'A', form = 0)
       return true
   else
       speciesName = GameData::Species.get(species).name
-      pbMessage(_INTL("#{speciesName} goes back to sleep after being left alone."))
+      pbMessage(_INTL("{1} goes back to sleep after being left alone.", speciesName))
       return false
   end
 end
