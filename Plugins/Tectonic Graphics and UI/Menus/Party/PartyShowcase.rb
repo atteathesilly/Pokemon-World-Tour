@@ -7,6 +7,8 @@ class PokemonPartyShowcase_Scene
         base = MessageConfig::DARK_TEXT_MAIN_COLOR
         shadow = MessageConfig::DARK_TEXT_SHADOW_COLOR
 
+        @trainer = trainer
+
         @sprites = {}
         @party = trainer.party.clone
         @viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
@@ -207,8 +209,28 @@ class PokemonPartyShowcase_Scene
         end
 
         # Display ability name
-        abilityName = pokemon.ability&.name || _INTL("No Ability")
-        drawTextEx(@overlay, displayX + 4, mainIconY + POKEMON_ICON_SIZE + 8, 200, 1, abilityName, base, shadow)
+        if @trainer.policies.include?(:CURSE_DOUBLE_ABILITIES)
+            abilityNameLabel = ""
+            legalAbilityCount = pokemon.species_data.legalAbilities.length
+            pokemon.species_data.legalAbilities.each_with_index do |legalAbilityID, index|
+                abilityNameLabel += GameData::Ability.get(legalAbilityID).name
+                abilityNameLabel += ", " unless index == legalAbilityCount - 1
+            end
+            @overlay.font.size = 20
+        elsif pokemon.ability.nil?
+            abilityNameLabel = _INTL("No Ability")
+        else
+            abilityNameLabel = pokemon.ability.name
+            if pokemon.hasExtraAbilities?
+                pokemon.extraAbilities.each do |extraAbilityID|
+                    abilityNameLabel += ", "
+                    abilityNameLabel += GameData::Ability.get(extraAbilityID).name
+                end
+                @overlay.font.size = 20
+            end
+        end
+        drawTextEx(@overlay, displayX + 4, mainIconY + POKEMON_ICON_SIZE + 8, 200, 1, abilityNameLabel, base, shadow)
+        pbSetSmallFont(@overlay)
     
         # Display Style Points
         styleValueX = displayX + 222
