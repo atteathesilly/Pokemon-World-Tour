@@ -95,10 +95,9 @@ BattleHandlers::AbilityOnSwitchOut.add(:COSTUMECHANGE,
       elsif !battler.pbOwnedByPlayer? # Trainer AI
         choice = 0
       else
-        choice = battle.scene.pbShowCommands(_INTL("Which form should it take?"),choices,0) 
-      @chosenForm = choice
-      battler.pbChangeForm(@chosenForm, _INTL("{1} takes on a new style!", battler.pbThis))
-      end 
+        choice = battle.scene.pbShowCommands(_INTL("Which form should it take?"),choices,0)
+      end
+      battler.pbChangeForm(choice, _INTL("{1} takes on a new style!", battler.pbThis))
   }
 )
 
