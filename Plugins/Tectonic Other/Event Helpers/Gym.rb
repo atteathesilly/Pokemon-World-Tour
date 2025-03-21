@@ -45,7 +45,7 @@ def earnBadge(badgeNum)
 	
 	giveBattleReport
 
-	postBattleTeamSnapshot(_INTL("Badge #{badgeNum} Team"),true)
+	postBattleTeamSnapshot(_INTL("Badge {1} Team", badgeNum),true)
 	
 	refreshMapEvents
 end

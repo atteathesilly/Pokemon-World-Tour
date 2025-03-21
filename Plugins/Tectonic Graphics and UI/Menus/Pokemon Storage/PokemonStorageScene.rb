@@ -705,7 +705,7 @@ class PokemonStorageScene
                         if search
                             fitsSearch = curpkmn.hasType?(search.id)
                         else
-                            pbDisplay(_INTL("\"#{ret}\" is not a valid type."))
+                            pbDisplay(_INTL("\"{1}\" is not a valid type.", ret))
                             return false
                         end
                     elsif searchMethod == 4 # Tribe
@@ -717,7 +717,7 @@ class PokemonStorageScene
                                 break
                             end
                         else
-                            pbDisplay(_INTL("\"#{ret}\" is not a valid tribe."))
+                            pbDisplay(_INTL("\"{1}\" is not a valid tribe.", ret))
                             return false
                         end
                     end
