@@ -267,19 +267,6 @@ class Pokemon
         @status = new_status.id
     end
 
-    def getStatusImageIndex
-        if afraid?
-            statusIndex = GameData::Status::DATA.keys.length / 2
-        elsif fainted?
-            statusIndex = GameData::Status::DATA.keys.length / 2 - 1
-        elsif status != :NONE
-            statusIndex = GameData::Status.get(status).id_number - 1
-        else
-            statusIndex = -1
-        end
-        return statusIndex
-    end
-
     # @return [Boolean] whether the Pokémon is not fainted and not an egg
     def able?
         return !egg? && @hp > 0 && !@afraid
