@@ -54,6 +54,7 @@ def postBattleTeamSnapshot(label=nil,curseMatters=false)
 	snapshotFlags = []
 	snapshotFlags.push("perfect") if battlePerfected?
 	snapshotFlags.push("cursed") if curseMatters && tarotAmuletActive?
+	snapshotFlags.push("showstatuses")
 	teamSnapshot(label,snapshotFlags)
 end
 
