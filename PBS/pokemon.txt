@@ -13431,8 +13431,8 @@ WildItemUncommon = NEVERMELTICE
 Name = Basculin
 Type1 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 85,95,55,85,45,70
-# Total = 435
+BaseStats = 80,90,50,80,45,65
+# Total = 410
 BaseEXP = 161
 Rareness = 125
 Happiness = 50
