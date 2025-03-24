@@ -950,11 +950,18 @@ Pokemon = CENTISKORCH,25
 #-------------------------------
 [POKEMONTRAINER_Yezera,Yezera,3]
 ExtendsVersion = 2
-Policies = CURSE_VENGEANT
+Policies = CURSE_RECYCLING
+Pokemon = MORGREM,25
+    Item = TANGABERRY
+Pokemon = MAGNETON,25
+    Item = AIRBALLOON
+Pokemon = POLIWHIRL,25
+    Item = SITRUSBERRY
 Pokemon = SANDACONDA,25
-    Moves = DUSTDEVIL,GLARE,SANDSTORM
+    Position = 1
+    Moves = DUSTDEVIL,BLUSTER,GLARE,STEALTHROCK
     AbilityIndex = 1 # Disorienting
-    Item = LEFTOVERS
+    Item = AGILITYHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = DARTRIX,25
