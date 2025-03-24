@@ -572,7 +572,7 @@ Pokemon = SHELLOS,19
 Policies = HELENA,PRIORITIZEUTURN
 Flags = NoPerfect
 Pokemon = CHINCHOU,25
-    Moves = VOLTSWITCH,BUBBLEBEAM,BALEFULBOP,CONFUSERAY
+    Moves = VOLTSWITCH,BUBBLEBEAM,FOOL,WATERLOG
     AbilityIndex = 0 # Volt Absorb
     Item = CADOBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
