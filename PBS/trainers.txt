@@ -301,7 +301,6 @@ Pokemon = BELDUM,17
     AbilityIndex = 1 # Optimized Alloy
 #-------------------------------
 [SCIENTIST_M2,Dexter]
-Policies = PRIORITIZEDOTS
 Pokemon = GRIMER,20
     Moves = POISONGAS,SLUDGE,DISABLE,MUDSHOT
     AbilityIndex = 0 # Corrosion
@@ -312,7 +311,6 @@ Pokemon = SOLOSIS,20
     AbilityIndex = 1 # Magic Guard
 #-------------------------------
 [SCIENTIST_F,Marie]
-Policies = PRIORITIZEDOTS
 Pokemon = CARKOL,20
     Moves = FLAMECHARGE,ROCKTHROW,RAPIDSPIN,IGNITE
     AbilityIndex = 1 # Fuel Hungry
@@ -323,7 +321,7 @@ Pokemon = SLUGMA,20
     AbilityIndex = 1 # Flame Body
 #-------------------------------
 [LEADER_Eko,Eko]
-Policies = PRIORITIZEDOTS,EKO
+Policies = EKO
 Flags = NoPerfect
 Pokemon = SALANDIT,20
     Moves = POISONGAS,STINKCLOUD,FIREPULSE,IGNITE
