@@ -2707,7 +2707,7 @@ Pokemon = MTANGROWTH,40
 Pokemon = MANTINE,40
     Name = 1 Second
     Gender = male
-    Moves = WARDPRESS,ENERGYBALL,SCALD,ICYWIND
+    Moves = WARDPRESS,COLDFRONT,SCALD,ICYWIND
     AbilityIndex = 1 # Free Ride
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,0,10,20
@@ -2721,7 +2721,7 @@ Pokemon = GLISCOR,40
 [LEADER_Zoe,Zoé,1]
 ExtendsVersion = 0
 Pokemon = MANTINE,40
-    Moves = WARDPRESS,COLDFRONT,SCALD,WIDEGUARD
+    Moves = WARDPRESS,ENERGYBALL,SCALD,WIDEGUARD
     Item = SITRUSBERRY
 Pokemon = SUDOWOODO,40
     Moves = POWERGEM,NERVEBLOCK,STRENGTHSAP,EARTHPOWER
