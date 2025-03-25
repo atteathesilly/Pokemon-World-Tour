@@ -332,7 +332,6 @@ Pokemon = FLETCHINDER,20
     Name = Dario
     Moves = FLAMECHARGE,AERIALACE,DOUBLEKICK,IGNITE
     AbilityIndex = 0 # Harsh
-    Item = LIECHIBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
 Pokemon = TENTACOOL,20
@@ -368,7 +367,6 @@ Pokemon = TENTACOOL,20
     EV = 0,20,10,0,20,20
 Pokemon = TYNAMO,20
     Moves = THUNDERFANG,POISONFANG,BULLETCHARGE,ENVENOM
-    Item = MAGNET
 Pokemon = VULPIX,20
     Moves = FIRESPIN,DRAININGKISS,WILLOWISP,SNARL
 Pokemon = CAMERUPT,20
