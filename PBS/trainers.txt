@@ -610,6 +610,7 @@ Pokemon = PRINPLUP,25
 Pokemon = TOXTRICITY,25
     Moves = VOLTSWITCH,STINKCLOUD,HEX,POISONGAS
     AbilityIndex = 1 # Thunderstruck
+    Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 #-------------------------------
@@ -624,8 +625,6 @@ Pokemon = LUXIO,25
     Moves = FEINTATTACK,THUNDERFANG,VOLTSWITCH,ICEFANG
 Pokemon = PRINPLUP,25
     Moves = FLIPTURN,SHRAPNEL,SUPERSONIC,AURAFLUX
-Pokemon = TOXTRICITY,25
-    Item = AIRBALLOON
 Pokemon = KINGLER,25
     Moves = UTURN,RAZORSHELL,KNOCKOFF,CRUELTY
     AbilityIndex = 0 # Frustrate
