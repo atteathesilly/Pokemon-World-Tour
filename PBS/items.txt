@@ -2569,7 +2569,7 @@ NamePlural = Spanning Bands
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = Ancient ceramic rings interlocked together. Unlocks the ability to teleport between Avatar Totems.
+Description = An ancient pair of interlocking ceramic rings. Unlocks the ability to teleport between Avatar Totems.
 #-------------------------------
 [POCKETTOTEM]
 Name = Pocket Totem
