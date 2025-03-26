@@ -164,7 +164,6 @@ class PokeBattle_Battler
             amt *= -1
         elsif boss?
             if @hp <= avatarPhaseLowerHealthBound && @hp + amt > avatarPhaseLowerHealthBound # Cap boss healing at the next health boundary
-                echoln("Capping healing!")
                 amt = avatarPhaseLowerHealthBound - @hp
             end
         end
