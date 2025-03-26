@@ -162,6 +162,11 @@ class PokeBattle_Battler
         # Nerve Break, Bad Influence
         if healingReversed?(showMessage && !aiCheck)
             amt *= -1
+        elsif boss?
+            if @hp <= avatarPhaseLowerHealthBound && @hp + amt > avatarPhaseLowerHealthBound # Cap boss healing at the next health boundary
+                echoln("Capping healing!")
+                amt = avatarPhaseLowerHealthBound - @hp
+            end
         end
 
         # Actually perform the HP change
