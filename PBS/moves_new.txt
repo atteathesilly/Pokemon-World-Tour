@@ -3589,19 +3589,6 @@ EffectChance = 100
 Description = The user dances rapidly, emitting tropical heat. Any frostbitten Pokémon will be healed by this heat.
 Animation = HEATWAVE
 #-------------------------------
-[HEATGYRE]
-Name = Heat Gyre
-Type = FIRE
-Category = Physical
-Power = 75
-Accuracy = 100
-TotalPP = 10
-Target = NearFoe
-FunctionCode = StartSunshine8
-Flags = CanProtect
-Description = Spins into the target while emitting heat, then summons sunshine for eight turns.
-Animation = FLAMEWHEEL
-#-------------------------------
 [HOTSHOT]
 Name = Hot Shot
 Type = FIRE
@@ -3704,6 +3691,19 @@ FunctionCode = RaiseUserAndAlliesAtk2
 Flags = CanSnatch,Sound
 Description = The user roars with the force of a volcano, raising the Attack of itself and allies.
 Animation = HOWL
+#-------------------------------
+[PARLEHIONHUNT]
+Name = Parlehion Hunt
+Type = FIRE
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = StartSunshine8
+Flags = CanProtect
+Description = The user emits a great amount of heat, then summons sunshine for eight turns.
+Animation = HEATWAVE
 #-------------------------------
 [PROMINENCE]
 Name = Prominence
@@ -7382,7 +7382,7 @@ Animation = FAIRYWIND
 Name = Waxing Light
 Type = FAIRY
 Category = Special
-Power = 75
+Power = 50
 Accuracy = 100
 TotalPP = 10
 Target = NearFoe

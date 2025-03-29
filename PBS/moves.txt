@@ -4375,18 +4375,6 @@ FunctionCode = CureUserPartyStatus
 Flags = CanSnatch
 Description = The user releases a soothing scent that heals all status problems affecting the user's party.
 #-------------------------------
-[BRANCHPOKE]
-Name = Branch Poke
-Type = GRASS
-Category = Physical
-Power = 45
-Accuracy = 100
-TotalPP = 30
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect
-Description = The user attacks the target by poking it with a sharply pointed branch.
-#-------------------------------
 [BULLETSEED]
 Name = Bullet Seed
 Type = GRASS
