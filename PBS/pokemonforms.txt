@@ -888,7 +888,7 @@ Pokedex = Now that it's equipped with its shield, it can shrug off impressive bl
 FormName = Rapid Strike
 Type1 = FIGHTING
 Type2 = WATER
-Moves = 0,SURGINGSTRIKES,1,SURGINGSTRIKES,28,AQUAJET
+Moves = 0,SURGINGSTRIKES,1,AQUAJET,1,SURGINGSTRIKES
 Pokedex = This form of Urshifu is a strong believer in defeating foes by raining many blows down on them. Its strikes are nonstop, flowing like a river.
 #-------------------------------
 [CALYREX,1]
