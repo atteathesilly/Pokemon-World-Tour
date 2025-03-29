@@ -335,7 +335,7 @@ end
           echoln("Checking the moves of #{species_data.real_name}")
           
           learnSet = []
-          species_data.moves.each do |learnset_entry|
+          species_data.level_moves.each do |learnset_entry|
               move_id = learnset_entry[1]
               next if learnSet.include?(move_id)
               move_counts[move_id][0] += 1

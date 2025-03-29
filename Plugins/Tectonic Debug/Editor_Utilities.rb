@@ -2,7 +2,7 @@ def pbGetLegalMoves(species)
     species_data = GameData::Species.get(species)
     moves = []
     return moves if !species_data
-    species_data.moves.each { |m| moves.push(m[1]) }
+    species_data.level_moves.each { |m| moves.push(m[1]) }
     species_data.tutor_moves.each { |m| moves.push(m) }
     babyspecies = species_data.get_baby_species
     GameData::Species.get(babyspecies).line_moves.each { |m| moves.push(m) }
