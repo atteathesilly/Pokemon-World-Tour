@@ -364,20 +364,46 @@ module GameData
             return allTribes
         end
 
+        def inherited_moves
+            inheritedMoves = []
+
+            prevoSpecies = self
+            while GameData::Species.get(prevoSpecies.get_previous_species) != prevoSpecies
+                prevoSpecies = GameData::Species.get(prevoSpecies.get_previous_species)
+
+                inheritedMoves.concat(prevoSpecies.line_moves || prevoSpecies.egg_moves)
+                if prevoSpecies.canTutorAny?
+                    learnableMoves.concat(GameData::Move.all_non_signature_moves)
+                end
+            end
+
+            inheritedMoves.uniq!
+            inheritedMoves.compact!
+            return inheritedMoves
+        end
+
+        def non_inherited_tutor_moves
+            nonInheritedTutorMoves = @tutor_moves.clone
+            inherited_moves.each do |moveID|
+                nonInheritedTutorMoves.delete(moveID)
+            end
+            return nonInheritedTutorMoves
+        end
+
+        def non_inherited_line_moves
+            nonInheritedLineMoves = (@line_moves || @egg_moves).clone
+            inherited_moves.each do |moveID|
+                nonInheritedLineMoves.delete(moveID)
+            end
+            return nonInheritedLineMoves
+        end
+
         def learnable_moves
             learnableMoves = []
 
-            firstSpecies = self
-            while GameData::Species.get(firstSpecies.get_previous_species) != firstSpecies
-                firstSpecies = GameData::Species.get(firstSpecies.get_previous_species)
-            end
-
-            learnableMoves.concat(firstSpecies.line_moves || firstSpecies.egg_moves)
-            if firstSpecies.canTutorAny?
-                learnableMoves.concat(GameData::Move.all_non_signature_moves)
-            else
-                learnableMoves.concat(@tutor_moves)
-            end
+            learnableMoves.concat(inherited_moves)
+            learnableMoves.concat(@tutor_moves)
+            learnableMoves.concat(@line_moves || @egg_moves)
             learnableMoves.concat(form_specific_moves)
             @moves.each do |learnset_entry|
                 m = learnset_entry[1]
@@ -1016,8 +1042,8 @@ module Compiler
         f.write(format("Happiness = %d\r\n", species.happiness)) unless species.happiness == GameData::Species::DEFAULT_BASE_HAPPINESS
         f.write(format("Abilities = %s\r\n", species.abilities.join(","))) if species.abilities.length > 0
         f.write(format("Moves = %s\r\n", species.moves.join(","))) if species.moves.length > 0
-        f.write(format("TutorMoves = %s\r\n", species.tutor_moves.join(","))) if species.tutor_moves.length > 0
-        f.write(format("LineMoves = %s\r\n", species.line_moves.join(","))) if species.line_moves.length > 0
+        f.write(format("TutorMoves = %s\r\n", species.non_inherited_tutor_moves.join(","))) if species.non_inherited_tutor_moves.length > 0
+        f.write(format("LineMoves = %s\r\n", species.non_inherited_line_moves.join(","))) if species.non_inherited_line_moves.length > 0
         f.write(format("Tribes = %s\r\n", species.tribes(true).join(","))) if species.tribes(true).length > 0
         f.write(format("StepsToHatch = %d\r\n", species.hatch_steps))
         f.write(format("Height = %.1f\r\n", species.height / 10.0))
@@ -1077,8 +1103,7 @@ module Compiler
         f.write("\#-------------------------------\r\n")
         f.write(format("[%s,%d]\r\n", species.species, species.form))
         if species.real_form_name && !species.real_form_name.empty?
-            f.write(format("FormName = %s\r\n",
-  species.real_form_name))
+            f.write(format("FormName = %s\r\n", species.real_form_name))
         end
         f.write(format("Notes = %s\r\n", species.notes)) if !species.notes.nil? && !species.notes.blank?
         f.write(format("PokedexForm = %d\r\n", species.pokedex_form)) if species.pokedex_form != species.form
@@ -1105,11 +1130,11 @@ module Compiler
         if species.moves.length > 0 && species.moves != base_species.moves
             f.write(format("Moves = %s\r\n", species.moves.join(",")))
         end
-        if species.tutor_moves.length > 0 && species.tutor_moves != base_species.tutor_moves
-            f.write(format("TutorMoves = %s\r\n", species.tutor_moves.join(",")))
+        if species.non_inherited_tutor_moves.length > 0 && species.non_inherited_tutor_moves != base_species.non_inherited_tutor_moves
+            f.write(format("TutorMoves = %s\r\n", species.non_inherited_tutor_moves.join(",")))
         end
-        if species.line_moves.length > 0 && species.line_moves != base_species.line_moves
-            f.write(format("LineMoves = %s\r\n", species.line_moves.join(",")))
+        if species.non_inherited_line_moves.length > 0 && species.non_inherited_line_moves != base_species.non_inherited_line_moves
+            f.write(format("LineMoves = %s\r\n", species.non_inherited_line_moves.join(",")))
         end
         f.write(format("StepsToHatch = %d\r\n", species.hatch_steps)) if species.hatch_steps != base_species.hatch_steps
         f.write(format("Height = %.1f\r\n", species.height / 10.0)) if species.height != base_species.height
