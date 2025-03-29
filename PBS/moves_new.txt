@@ -3692,8 +3692,8 @@ Flags = CanSnatch,Sound
 Description = The user roars with the force of a volcano, raising the Attack of itself and allies.
 Animation = HOWL
 #-------------------------------
-[PARLEHIONHUNT]
-Name = Parlehion Hunt
+[PARHELIONHUNT]
+Name = Parhelion Hunt
 Type = FIRE
 Category = Special
 Power = 50
