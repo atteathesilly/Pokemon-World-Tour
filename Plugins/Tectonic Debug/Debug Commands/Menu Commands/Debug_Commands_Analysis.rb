@@ -356,7 +356,7 @@ end
               firstSpecies = GameData::Species.get(firstSpecies.get_previous_species())
           end
           
-          firstSpecies.egg_moves.each do |move_id| 
+          firstSpecies.line_moves.each do |move_id| 
               next if tutorSet.include?(move_id)
               move_counts[move_id][1] += 1
               learnSet.push(move_id)

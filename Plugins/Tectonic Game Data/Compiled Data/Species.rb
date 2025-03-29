@@ -23,7 +23,8 @@ module GameData
         attr_reader :happiness
         attr_reader :moves
         attr_reader :tutor_moves
-        attr_reader :egg_moves
+        attr_reader :egg_moves # To maintain some backwards compatibility
+        attr_reader :line_moves
         attr_reader :abilities
         attr_reader :hidden_abilities
         attr_reader :wild_item_common
@@ -142,9 +143,9 @@ module GameData
             @tutor_moves           = hash[:tutor_moves]           || []
             @tutor_moves.uniq!
             @tutor_moves.sort_by! { |a| a.to_s }
-            @egg_moves = hash[:line_moves] || hash[:egg_moves] || []
-            @egg_moves.uniq!
-            @egg_moves.sort_by! { |a| a.to_s }
+            @line_moves            = hash[:line_moves] || []
+            @line_moves.uniq!
+            @line_moves.sort_by! { |a| a.to_s }
             @abilities             = hash[:abilities]             || []
             @hidden_abilities      = hash[:hidden_abilities]      || []
             @wild_item_common      = hash[:wild_item_common]
@@ -176,7 +177,7 @@ module GameData
                 raise _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
             end
 
-            @egg_moves.each do |moveID|
+            @line_moves.each do |moveID|
                 moveData = GameData::Move.get(moveID)
                 next if moveData.learnable?
                 raise _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
@@ -371,7 +372,7 @@ module GameData
                 firstSpecies = GameData::Species.get(firstSpecies.get_previous_species)
             end
 
-            learnableMoves.concat(firstSpecies.egg_moves)
+            learnableMoves.concat(firstSpecies.line_moves || firstSpecies.egg_moves)
             if firstSpecies.canTutorAny?
                 learnableMoves.concat(GameData::Move.all_non_signature_moves)
             else
@@ -611,7 +612,6 @@ module Compiler
                       :happiness             => contents["Happiness"],
                       :moves                 => contents["Moves"],
                       :tutor_moves           => contents["TutorMoves"],
-                      :egg_moves             => contents["EggMoves"],
                       :line_moves            => contents["LineMoves"],
                       :abilities             => contents["Abilities"],
                       :hidden_abilities      => contents["HiddenAbility"],
@@ -819,8 +819,7 @@ module Compiler
                     :happiness             => contents["Happiness"] || base_data.happiness,
                     :moves                 => moves,
                     :tutor_moves           => contents["TutorMoves"] || base_data.tutor_moves.clone,
-                    :egg_moves             => contents["EggMoves"] || base_data.egg_moves.clone,
-                    :line_moves            => contents["LineMoves"] || base_data.egg_moves.clone,
+                    :line_moves            => contents["LineMoves"] || base_data.line_moves.clone,
                     :abilities             => contents["Abilities"] || base_data.abilities.clone,
                     :hidden_abilities      => contents["HiddenAbility"] || base_data.hidden_abilities.clone,
                     :wild_item_common      => contents["WildItemCommon"] || base_data.wild_item_common,
@@ -1018,7 +1017,7 @@ module Compiler
         f.write(format("Abilities = %s\r\n", species.abilities.join(","))) if species.abilities.length > 0
         f.write(format("Moves = %s\r\n", species.moves.join(","))) if species.moves.length > 0
         f.write(format("TutorMoves = %s\r\n", species.tutor_moves.join(","))) if species.tutor_moves.length > 0
-        f.write(format("LineMoves = %s\r\n", species.egg_moves.join(","))) if species.egg_moves.length > 0
+        f.write(format("LineMoves = %s\r\n", species.line_moves.join(","))) if species.line_moves.length > 0
         f.write(format("Tribes = %s\r\n", species.tribes(true).join(","))) if species.tribes(true).length > 0
         f.write(format("StepsToHatch = %d\r\n", species.hatch_steps))
         f.write(format("Height = %.1f\r\n", species.height / 10.0))
@@ -1109,8 +1108,8 @@ module Compiler
         if species.tutor_moves.length > 0 && species.tutor_moves != base_species.tutor_moves
             f.write(format("TutorMoves = %s\r\n", species.tutor_moves.join(",")))
         end
-        if species.egg_moves.length > 0 && species.egg_moves != base_species.egg_moves
-            f.write(format("LineMoves = %s\r\n", species.egg_moves.join(",")))
+        if species.line_moves.length > 0 && species.line_moves != base_species.line_moves
+            f.write(format("LineMoves = %s\r\n", species.line_moves.join(",")))
         end
         f.write(format("StepsToHatch = %d\r\n", species.hatch_steps)) if species.hatch_steps != base_species.hatch_steps
         f.write(format("Height = %.1f\r\n", species.height / 10.0)) if species.height != base_species.height
