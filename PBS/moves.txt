@@ -951,19 +951,6 @@ FunctionCode = RedirectAllMovesToTarget
 Flags = CanProtect,CanMagicCoat,Uninvocable
 Description = The user shines a spotlight on the target so that only it will be attacked during the turn.
 #-------------------------------
-[STELLARATE]
-Name = Stellarate
-Type = NORMAL
-Category = Special
-Power = 25
-Accuracy = 0
-TotalPP = 15
-Target = AllNearFoes
-FunctionCode = HitTwoToFiveTimesAlwaysHits
-Flags = CanProtect
-Description = A barrage of two to five star-shaped rays are shot at the opposing team. Can't miss and skips protections.
-Animation = SWIFT
-#-------------------------------
 [STOCKPILE]
 Name = Stockpile
 Type = NORMAL

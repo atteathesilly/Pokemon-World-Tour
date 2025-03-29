@@ -580,6 +580,19 @@ Flags = CanProtect,CanMagicCoat
 Description = The user smirks with confidence. The Sp. Def of nearby enemies is reduced.
 Animation = SCARYFACE
 #-------------------------------
+[STELLARATE]
+Name = Stellarate
+Type = NORMAL
+Category = Special
+Power = 25
+Accuracy = 0
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = HitTwoToFiveTimesAlwaysHits
+Flags = CanProtect
+Description = A barrage of two to five star-shaped rays are shot at the opposing team. Can't miss and skips protections.
+Animation = SWIFT
+#-------------------------------
 [THIEVINGSPREE]
 Name = Thieving Spree
 Type = NORMAL
