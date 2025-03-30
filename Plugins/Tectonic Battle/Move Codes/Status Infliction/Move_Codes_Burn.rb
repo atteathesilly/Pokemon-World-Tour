@@ -133,23 +133,10 @@ end
 #===============================================================================
 class PokeBattle_Move_BurnAddFireType < PokeBattle_Move
     def pbFailsAgainstTarget?(_user, target, show_message)
-        unless GameData::Type.exists?(:FIRE) 
-            @battle.pbDisplay(_INTL("But it failed, since the Fire-type doesn't exist!")) if show_message
-            return true
-        end
-        if target.pbHasType?(:FIRE)
+        if !target.canBurn?(_user, false, self) && !target.canChangeTypeTo?(:FIRE)
             if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} is already Fire-type!", target.pbThis(true)))
+                @battle.pbDisplay(_INTL("But it failed, since {1} can't be burned or gain Fire-type!", target.pbThis(true)))
             end
-            return true
-        end
-        unless target.canChangeType?
-            if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} can't have its type changed!", target.pbThis(true)))
-            end
-            return true
-        end
-        unless target.canBurn?(_user, false, self)
         end 
         return false
     end
@@ -157,11 +144,15 @@ class PokeBattle_Move_BurnAddFireType < PokeBattle_Move
     def pbEffectAgainstTarget(_user, target)
         if target.canBurn?(_user, false, self)
             target.applyBurn(_user)
-        end 
-        target.applyEffect(:Type3, :FIRE)
+        end
+        if target.canChangeTypeTo?(:FIRE)
+            target.applyEffect(:Type3, :FIRE)
+        end
     end
 
-    def getTargetAffectingEffectScore(_user, _target)
-        return 60
+    def getTargetAffectingEffectScore(user, target)
+        score = getBurnEffectScore(user, target)
+        score += 60
+        return score
     end
 end
