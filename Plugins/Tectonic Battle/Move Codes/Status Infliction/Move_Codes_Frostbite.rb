@@ -97,3 +97,41 @@ end
 class PokeBattle_Move_HitTwoToFiveTimesFrostbite < PokeBattle_FrostbiteMove
     include RandomHitable
 end
+
+#===============================================================================
+# Frostbite the target and add the Ice-type to it.
+#===============================================================================
+class PokeBattle_Move_FrostbiteAddIceType < PokeBattle_FrostbiteMove
+    def pbFailsAgainstTarget?(_user, target, show_message)
+        unless GameData::Type.exists?(:ICE) 
+            @battle.pbDisplay(_INTL("But it failed, since the Ice-type doesn't exist!")) if show_message
+            return true
+        end
+        if target.pbHasType?(:ICE)
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since {1} is already Ice-type!", target.pbThis(true)))
+            end
+            return true
+        end
+        unless target.canChangeType?
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since {1} can't have its type changed!", target.pbThis(true)))
+            end
+            return true
+        end
+        unless target.canFrostbite?(_user, false, self)
+        end 
+        return false
+    end
+
+    def pbEffectAgainstTarget(_user, target)
+        if target.canFrostbite?(_user, false, self)
+            target.applyFrostbite(_user)
+        end 
+        target.applyEffect(:Type3, :ICE)
+    end
+
+    def getTargetAffectingEffectScore(_user, _target)
+        return 60
+    end
+end

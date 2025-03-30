@@ -3513,6 +3513,18 @@ Flags = CanProtect
 EffectChance = 10
 Description = The target is dried out and loses Water-type. Then, it bursts into flame from the heat.
 #-------------------------------
+[EVERNALFLUX]
+Name = Evernal Flux
+Type = FIRE
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = BurnAddFireType
+Flags = CanProtect,CanMagicCoat
+Description = The user emits great amounts of heat, burning the target and adding the Fire-type to it.
+Animation = MORNINGSUN
+#-------------------------------
 [FIREPULSE]
 Name = Fire Pulse
 Type = FIRE
@@ -3702,7 +3714,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = StartSunshine8
 Flags = CanProtect
-Description = The user emits a great amount of heat, then summons sunshine for eight turns.
+Description = The user attacks with fire that can be seen in two places, then summons sunshine for eight turns.
 Animation = HEATWAVE
 #-------------------------------
 [PROMINENCE]
@@ -5806,6 +5818,18 @@ Flags = CanProtect,Wind
 EffectChance = 100
 Description = The user attacks the target with a frontal cold wind. It reduces the target's Speed by three steps.
 Animation = ICYWIND
+#-------------------------------
+[HIBERNALFLUX]
+Name = Hibernal Flux
+Type = ICE
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = FrostbiteAddIceType
+Flags = CanProtect,CanMagicCoat
+Description = The user absorbs the target's heat, frosbitting it and adding the Ice-type to it.
+Animation = MOONLIGHT
 #-------------------------------
 [HYPERFROST]
 Name = Hyperfrost
