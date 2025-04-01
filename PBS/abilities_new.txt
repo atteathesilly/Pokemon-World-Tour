@@ -1160,6 +1160,10 @@ Description = Physical moves have a 30% chance to waterlog targets.
 Name = Marine Menace
 Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
+[MARTIALDISCIPLINE]
+Name = Martial Discipline
+Description = Repeats another Pokémon's punch and kick moves immediately at 75% power.
+#-------------------------------
 [MASSATTACK]
 Name = Mass Attack
 Description = All Pokémon's damage is decreased proportional to their health remaining.
