@@ -491,7 +491,7 @@ Description = If its stats would be changed, instead they're changed half as muc
 #-------------------------------
 [ECHO]
 Name = Echo
-Description = Repeats another Pokémon's sound moves immediately at 75% power.
+Description = Repeats another Pokémon's sound and pulse moves immediately at 75% power.
 #-------------------------------
 [ECTOPARTICLES]
 Name = Ecto-Particles
