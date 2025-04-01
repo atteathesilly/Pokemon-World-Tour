@@ -713,6 +713,18 @@ class PokeBattle_Battler
                     @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :Echo, ability: :ECHO)
                 end
             end
+            if !effectActive?(:Echo) && move.pulseMove?
+                echoers = []
+                @battle.pbPriority(true).each do |b|
+                    echoers.push(b) if b.index != user.index && b.hasActiveAbility?(:ECHO)
+                end
+                while echoers.length > 0
+                    nextUser = echoers.pop
+                    preTarget = choice[3]
+                    preTarget = user.index if nextUser.opposes?(user) || !nextUser.opposes?(preTarget)
+                    @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :Echo, ability: :ECHO)
+                end
+            end
             # Martial Discipline
             if !effectActive?(:MartialDiscipline) && move.punchingMove?
                 discipliners = []
