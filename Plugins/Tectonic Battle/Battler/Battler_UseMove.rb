@@ -717,10 +717,10 @@ class PokeBattle_Battler
             if !effectActive?(:MartialDiscipline) && move.punchingMove?
                 discipliners = []
                 @battle.pbPriority(true).each do |b|
-                    discipliner.push(b) if b.index != user.index && b.hasActiveAbility?(:MARTIALDISCIPLINE)
+                    discipliners.push(b) if b.index != user.index && b.hasActiveAbility?(:MARTIALDISCIPLINE)
                 end
-                while discipliner.length > 0
-                    nextUser = discipliner.pop
+                while discipliners.length > 0
+                    nextUser = discipliners.pop
                     preTarget = choice[3]
                     preTarget = user.index if nextUser.opposes?(user) || !nextUser.opposes?(preTarget)
                     @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :MartialDiscipline, ability: :MARTIALDISCIPLINE)
@@ -729,10 +729,10 @@ class PokeBattle_Battler
             if !effectActive?(:MartialDiscipline) && move.kickingMove?
                 discipliners = []
                 @battle.pbPriority(true).each do |b|
-                    discipliner.push(b) if b.index != user.index && b.hasActiveAbility?(:MARTIALDISCIPLINE)
+                    discipliners.push(b) if b.index != user.index && b.hasActiveAbility?(:MARTIALDISCIPLINE)
                 end
-                while discipliner.length > 0
-                    nextUser = discipliner.pop
+                while discipliners.length > 0
+                    nextUser = discipliners.pop
                     preTarget = choice[3]
                     preTarget = user.index if nextUser.opposes?(user) || !nextUser.opposes?(preTarget)
                     @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :MartialDiscipline, ability: :MARTIALDISCIPLINE)
