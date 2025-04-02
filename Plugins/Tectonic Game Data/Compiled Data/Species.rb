@@ -210,11 +210,13 @@ module GameData
 
         # @return [String] the translated name of this species
         def name
+            return pbGetMessageFromHash(MessageTypes::SPECIES_HASH, @real_name) || "" if is_chinese?
             return pbGetMessage(MessageTypes::Species, @id_number)
         end
 
         # @return [String] the translated name of this form of this species
         def form_name
+            return pbGetMessageFromHash(MessageTypes::FORMNAMES_HASH, @real_form_name) || "" if is_chinese?
             return pbGetMessage(MessageTypes::FormNames, @id_number)
         end
 
@@ -229,11 +231,13 @@ module GameData
 
         # @return [String] the translated Pokédex category of this species
         def category
+            return pbGetMessageFromHash(MessageTypes::KINDS_HASH, @real_category) || "" if is_chinese?
             return pbGetMessage(MessageTypes::Kinds, @id_number)
         end
 
         # @return [String] the translated Pokédex entry of this species
         def pokedex_entry
+            return pbGetMessageFromHash(MessageTypes::ENTRIES_HASH, @real_pokedex_entry) || "" if is_chinese?
             return pbGetMessage(MessageTypes::Entries, @id_number)
         end
 
@@ -779,6 +783,10 @@ module Compiler
         MessageTypes.setMessages(MessageTypes::FormNames, species_form_names)
         MessageTypes.setMessages(MessageTypes::Kinds, species_categories)
         MessageTypes.setMessages(MessageTypes::Entries, species_pokedex_entries)
+        MessageTypes.setMessagesAsHash(MessageTypes::SPECIES_HASH, species_names)
+        MessageTypes.setMessagesAsHash(MessageTypes::FORMNAMES_HASH, species_form_names)
+        MessageTypes.setMessagesAsHash(MessageTypes::KINDS_HASH, species_categories)
+        MessageTypes.setMessagesAsHash(MessageTypes::ENTRIES_HASH, species_pokedex_entries)
         Graphics.update
     end
 
@@ -979,6 +987,10 @@ module Compiler
         MessageTypes.addMessages(MessageTypes::FormNames, species_form_names)
         MessageTypes.addMessages(MessageTypes::Kinds, species_categories)
         MessageTypes.addMessages(MessageTypes::Entries, species_pokedex_entries)
+        MessageTypes.addMessagesAsHash(MessageTypes::SPECIES_HASH, species_names)
+        MessageTypes.addMessagesAsHash(MessageTypes::FORMNAMES_HASH, species_form_names)
+        MessageTypes.addMessagesAsHash(MessageTypes::KINDS_HASH, species_categories)
+        MessageTypes.addMessagesAsHash(MessageTypes::ENTRIES_HASH, species_pokedex_entries)
         Graphics.update
     end
 

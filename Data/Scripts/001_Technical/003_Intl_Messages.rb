@@ -440,6 +440,7 @@ class Messages
   def self.writeObject(f,msgs,secname,origMessages=nil)
     return if !msgs
     if msgs.is_a?(Array)
+      return if MessageTypes::NO_NEED_OUTPUT.include?(secname.to_s)
       f.write("[#{secname}]\r\n")
       for j in 0...msgs.length
         next if nil_or_empty?(msgs[j])
@@ -455,6 +456,7 @@ class Messages
         f.write(value+"\r\n")
       end
     elsif msgs.is_a?(OrderedHash)
+      return if MessageTypes::NO_NEED_OUTPUT_HASH.include?(secname.to_s)
       f.write("[#{secname}]\r\n")
       keys=msgs.keys
       for key in keys
@@ -470,7 +472,8 @@ class Messages
   
   def self.writeObjectUntranslated(f,msgs,sectionKey,secname,translatedMsgs)
     return if !msgs
-    if msgs.is_a?(Array)     
+    if msgs.is_a?(Array)
+      return if MessageTypes::NO_NEED_OUTPUT.include?(sectionKey.to_s)
       f.write("[#{secname}]\r\n")
       for j in 0...msgs.length
         next if nil_or_empty?(msgs[j])
@@ -482,6 +485,7 @@ class Messages
         f.write(value+"\r\n")
       end
     elsif msgs.is_a?(OrderedHash)
+      return if MessageTypes::NO_NEED_OUTPUT_HASH.include?(secname.to_s)
       f.write("[#{secname}]\r\n")
       keys=msgs.keys
       for key in keys
@@ -502,6 +506,7 @@ class Messages
   
   def self.writeMapObjectUntranslated(f,msgs,mapNumber,secname,translatedMsgs)
     return if !msgs
+    return if MessageTypes::NO_NEED_OUTPUT_HASH.include?(secname.to_s)
     f.write("[#{secname}]\r\n")
     keys=msgs.keys
     for key in keys
@@ -516,6 +521,63 @@ class Messages
       # key is already serialized
       f.write(valkey+"\r\n")
       f.write(value+"\r\n")
+    end
+  end
+
+  def self.writeObjectCombined(f, msgs, sectionKey, secname, translatedMsgs)
+    return unless msgs
+    if msgs.is_a?(Array)
+      return if MessageTypes::NO_NEED_OUTPUT.include?(sectionKey.to_s)
+      f.write("[#{secname}]\r\n")
+      msgs.each_with_index do |msg, j|
+        next if nil_or_empty?(msg)
+        origValue = Messages.normalizeValue(msg)
+        translatedValue = translatedMsgs.get(sectionKey, j)
+        translatedValue = Messages.normalizeValue(translatedValue) unless nil_or_empty?(translatedValue)
+        finalValue = (!nil_or_empty?(translatedValue) && translatedValue != origValue) ? translatedValue : origValue
+        f.write("#{j}\r\n")
+        f.write("#{origValue}\r\n")
+        f.write("#{finalValue}\r\n")
+      end
+    elsif msgs.is_a?(OrderedHash)
+      return if MessageTypes::NO_NEED_OUTPUT_HASH.include?(secname.to_s)
+      f.write("[#{secname}]\r\n")
+      keys = msgs.keys
+      for key in keys
+        next if nil_or_empty?(msgs[key])
+        origKey = Messages.normalizeValue(key)
+        origValue = Messages.normalizeValue(msgs[key])
+        translatedValue = nil
+        if translatedMsgs.messages[sectionKey]
+          id = Messages.stringToKey(key)
+          translatedValue = translatedMsgs.messages[sectionKey][id]
+        end
+        translatedValue = Messages.normalizeValue(translatedValue) unless nil_or_empty?(translatedValue)
+        finalValue = (!nil_or_empty?(translatedValue) && translatedValue != origValue) ? translatedValue : origValue
+        f.write("#{origKey}\r\n")
+        f.write("#{finalValue}\r\n")
+      end
+    end
+  end
+
+  def self.writeMapObjectCombined(f, msgs, mapNumber, secname, translatedMsgs)
+    return unless msgs
+    return if MessageTypes::NO_NEED_OUTPUT_HASH.include?(secname.to_s)
+    f.write("[#{secname}]\r\n")
+    keys = msgs.keys
+    for key in keys
+      next if nil_or_empty?(msgs[key])
+      origKey = Messages.normalizeValue(key)
+      origValue = Messages.normalizeValue(msgs[key])
+      translatedValue = nil
+      if translatedMsgs.messages[0][mapNumber]
+        id = Messages.stringToKey(key)
+        translatedValue = translatedMsgs.messages[0][mapNumber][id]
+      end
+      translatedValue = Messages.normalizeValue(translatedValue) unless nil_or_empty?(translatedValue)
+      finalValue = (!nil_or_empty?(translatedValue) && translatedValue != origValue) ? translatedValue : origValue
+      f.write("#{origKey}\r\n")
+      f.write("#{finalValue}\r\n")
     end
   end
 
@@ -547,7 +609,7 @@ class Messages
     }
   end
   
-  def extractUntranslated(outfile)
+  def extractUntranslated(outfile, combined = false)
     origMessages=Messages.new("Data/messages.dat")
     translatedMessages = Messages.new(languageDataFileName)
     File.open(outfile,"wb") { |f|
@@ -560,13 +622,21 @@ class Messages
       if origMessages.messages[0]
         for i in 0...origMessages.messages[0].length
           msgs=origMessages.messages[0][i]
-          Messages.writeMapObjectUntranslated(f,msgs,i,"Map#{i}",translatedMessages)
+          if combined
+            Messages.writeMapObjectCombined(f,msgs,i,"Map#{i}",translatedMessages)
+          else
+            Messages.writeMapObjectUntranslated(f,msgs,i,"Map#{i}",translatedMessages)
+          end
         end
       end
       # Other sections
       for i in 1...origMessages.messages.length
         msgs=origMessages.messages[i]
-        Messages.writeObjectUntranslated(f,msgs,i,i.to_s,translatedMessages)
+        if combined
+          Messages.writeObjectCombined(f,msgs,i,i.to_s,translatedMessages)
+        else
+          Messages.writeObjectUntranslated(f,msgs,i,i.to_s,translatedMessages)
+        end
       end
     }
   end
@@ -700,11 +770,17 @@ end
 
 
 module MessageTypes
+  NO_NEED_OUTPUT      = %w[25 26] # no need to output unnecessary text
+  NO_NEED_OUTPUT_HASH = %w[15 16 17]
   # Value 0 is used for common event and map event text
-  Species            = 1
+  Species            = 1   # 1, 2, 3, 4, 13 are used for other language compatibility
+  SPECIES_HASH       = 111 # 111, 222, 333, 444, 1313 are used for chinese only, for now, it is easy to change
   Kinds              = 2
+  KINDS_HASH         = 222
   Entries            = 3
+  ENTRIES_HASH       = 333
   FormNames          = 4
+  FORMNAMES_HASH     = 444
   Moves              = 5
   MoveDescriptions   = 6
   Items              = 7
@@ -714,10 +790,11 @@ module MessageTypes
   AbilityDescs       = 11
   Types              = 12
   TrainerTypes       = 13
-  TrainerNames       = 14
-  BeginSpeech        = 15
-  EndSpeechWin       = 16
-  EndSpeechLose      = 17
+  TRAINERTYPES_HASH  = 1313
+  TrainerNames       = 14 # partially used for Battle Tower 
+  BeginSpeech        = 15 # no need, this is for Battle Tower
+  EndSpeechWin       = 16 # no need, this is for Battle Tower
+  EndSpeechLose      = 17 # no need, this is for Battle Tower
   RegionNames        = 18
   PlaceNames         = 19
   PlaceDescriptions  = 20
@@ -725,8 +802,8 @@ module MessageTypes
   PhoneMessages      = 22
   TrainerLoseText    = 23
   ScriptTexts        = 24
-  RibbonNames        = 25
-  RibbonDescriptions = 26
+  RibbonNames        = 25 # no need
+  RibbonDescriptions = 26 # no need
   Tribes             = 27
   TribeDescriptions  = 28
   Traits             = 29
@@ -764,8 +841,8 @@ module MessageTypes
     @@messages.extract(outfile)
   end
   
-  def self.extractUntranslated(outfile)
-    @@messages.extractUntranslated(outfile)
+  def self.extractUntranslated(outfile, combined = false)
+    @@messages.extractUntranslated(outfile, combined)
   end
 
   def self.setMessages(type,array)

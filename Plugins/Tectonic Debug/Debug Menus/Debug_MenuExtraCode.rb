@@ -538,24 +538,35 @@ end
 #===============================================================================
 # Text import/export for localisation
 #===============================================================================
-def pbExtractText(untranslatedOnly = false)
+def get_language_name
+    Settings::LANGUAGES[$Options.language][0]
+end
+
+def is_chinese?
+    get_language_name == "Simplified Chinese"
+end
+
+def pbExtractText(untranslatedOnly = false, combined = false)
     if untranslatedOnly && $Options.language == 0
         pbMessage(_INTL("Can only run this command when the game language isn't set to the default!"))
         return
     end
+    language = get_language_name
     msgwindow = pbCreateMessageWindow
-    if safeExists?("intl.txt") &&
-       !pbConfirmMessageSerious(_INTL("intl.txt already exists. Overwrite it?"))
+    file_name = untranslatedOnly ? "intl_untranslated_#{language}.txt" : "intl_.txt"
+    file_name = "intl_combined_#{language}.txt" if combined
+    if safeExists?("PBS\\#{file_name}") &&
+       !pbConfirmMessageSerious(_INTL("{1} already exists. Overwrite it?", file_name))
         pbDisposeMessageWindow(msgwindow)
         return
     end
     pbMessageDisplay(msgwindow, _INTL("Please wait.\\wtnp[0]"))
     if untranslatedOnly
-        MessageTypes.extractUntranslated("PBS\\intl_.txt")
+        MessageTypes.extractUntranslated("PBS\\#{file_name}", combined)
     else
-        MessageTypes.extract("PBS\\intl_.txt")
+        MessageTypes.extract("PBS\\#{file_name}")
     end
-    pbMessageDisplay(msgwindow, _INTL("All text in the game was extracted and saved to PBS\\intl_.txt.\1"))
+    pbMessageDisplay(msgwindow, _INTL("All text in the game was extracted and saved to PBS\\{1}.\1", file_name))
     pbMessageDisplay(msgwindow,
         _INTL("To localize the text for a particular language, translate every second line in the file.\1"))
     pbMessageDisplay(msgwindow,
