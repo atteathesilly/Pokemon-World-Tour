@@ -15714,8 +15714,7 @@ Flags = Legendary
 #-------------------------------
 [VICTINI]
 Name = Victini
-Type1 = PSYCHIC
-Type2 = FIRE
+Type1 = FIRE
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 100,100,100,100,100,100
 # Total = 600
