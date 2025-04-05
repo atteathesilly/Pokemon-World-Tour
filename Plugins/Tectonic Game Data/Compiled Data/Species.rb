@@ -215,7 +215,7 @@ module GameData
 
         # @return [String] the translated name of this form of this species
         def form_name
-            return pbGetMessageFromHash(MessageTypes::FormNames, @real_form_name)
+            return pbGetMessageFromHash(MessageTypes::FormNames, @real_form_name) || ""
         end
 
         # Adds the form if not form 0
