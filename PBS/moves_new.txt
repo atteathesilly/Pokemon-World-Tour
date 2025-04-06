@@ -681,9 +681,9 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
-Flags = CanProtect
+Flags = CanProtect,Pulse
 EffectChance = 100
-Description = The user contorts the target's chi with a special technique, lowering its Sp. Def.
+Description = The user contorts the target's chi with an energy pulse, damaging it and lowering its Sp. Def.
 Animation = AURASPHERE
 #-------------------------------
 [BAR]
