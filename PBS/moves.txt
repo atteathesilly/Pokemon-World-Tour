@@ -6541,7 +6541,7 @@ Accuracy = 0
 TotalPP = 15
 Target = NearAlly
 FunctionCode = RaiseTargetDefSpDef3
-Description = The user raises the Def and Sp. Def stat of an ally Pokémon by three steps using a mysterious aroma.
+Description = The user raises the Defense and Sp. Def stat of an ally Pokémon by three steps using a mysterious aroma.
 #-------------------------------
 [BABYDOLLEYES]
 Name = Baby-Doll Eyes
