@@ -359,8 +359,8 @@ Pokemon = SALANDIT,20
     Item = AIRBALLOON
 Pokemon = FLETCHINDER,20
     Moves = FLAMECHARGE,AERIALACE,DOUBLEKICK,TAILWIND
-    Item = CHARTIBERRY
     AbilityIndex = 1 # Gale Wings
+    Item = CHARTIBERRY
 Pokemon = TENTACOOL,20
     Moves = WHIRLPOOL,SLUDGE,INFESTATION,PROTECT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
