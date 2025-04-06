@@ -1520,6 +1520,10 @@ Description = Maximizes Sp. Atk when its HP is lowered below half.
 Name = Recon
 Description = Before using a status move against a single foe, lowers their Sp. Def by two steps.
 #-------------------------------
+[REFRACTIVE]
+Name = Refract Aura
+Description = Pulse moves change the Pokémon's secondary type and their power is boosted by 30%.
+#-------------------------------
 [REFRESHMENTS]
 Name = Refreshments
 Description = Upon entry during sunshine, heals the lowest HP ally or self by 50%.
@@ -1678,7 +1682,7 @@ Description = Takes 50% less damage from hyper-effective attacks.
 #-------------------------------
 [SHIFTINGFIST]
 Name = Shifting Fist
-Description = Punching moves change secondary type and their power is boosted by 30%.
+Description = Punching moves change the Pokémon's secondary type and their power is boosted by 30%.
 #-------------------------------
 [SHOCKSTYLE]
 Name = Shock Style
