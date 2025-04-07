@@ -10265,7 +10265,7 @@ StepsToHatch = 30855
 Height = 1.4
 Weight = 40.0
 Kind = Eon
-Pokedex = Latias is highly sensitive to the emotions of people. If it senses any hostility, this Pokémon ruffles the feathers all over its body and cries shrilly to intimidate the foe.
+Pokedex = Latias is highly sensitive to the emotions of people. If it senses any hostility, this Pokémon ruffles the feathers all over its body and cries shrilly to intimidate them.
 Generation = 3
 Flags = Legendary
 #-------------------------------
@@ -16473,7 +16473,7 @@ StepsToHatch = 5120
 Height = 0.8
 Weight = 5.0
 Kind = Meringue
-Pokedex = Its sense of smell is 100 million times better than a human's, so even the faintest scent tells it about everything in the area. It's like it can see with its nose!
+Pokedex = Its sense of smell is 100 million times better than a human's, so even the faintest scent tells it about everything in the area.
 Generation = 6
 WildItemUncommon = RARECANDY
 #-------------------------------
@@ -18904,7 +18904,7 @@ StepsToHatch = 30822
 Height = 3.8
 Weight = 100.0
 Kind = Glowing
-Pokedex = Although it's alien to this world and a danger here, it's apparently a common organism in the world where it normally lives.
+Pokedex = One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses.
 Generation = 7
 Flags = Legendary
 #-------------------------------
@@ -18970,7 +18970,7 @@ StepsToHatch = 30822
 Height = 5.5
 Weight = 888.0
 Kind = Junkivore
-Pokedex = Although it's alien to this world and a danger here, it's apparently a common organism in the world where it normally lives.
+Pokedex = A dangerous Ultra Beast, it appears to be eating constantly, but for some reason its droppings have never been found.
 Generation = 7
 Flags = Legendary
 #-------------------------------
