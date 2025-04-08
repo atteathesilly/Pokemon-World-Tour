@@ -418,7 +418,7 @@ module GameData
 
                 inheritedTutorMoves.concat(prevoSpecies.line_moves || prevoSpecies.egg_moves)
                 if prevoSpecies.canTutorAny?
-                    learnableMoves.concat(GameData::Move.all_non_signature_moves)
+                    inheritedTutorMoves.concat(GameData::Move.all_non_signature_moves)
                 end
             end
 
@@ -476,6 +476,8 @@ module GameData
                     m = learnset_entry[1]
                     @learnableMoves.push(m)
                 end
+
+                @learnableMoves.concat(GameData::Move.all_non_signature_moves) if canTutorAny?
 
                 @learnableMoves.uniq!
                 @learnableMoves.compact!
