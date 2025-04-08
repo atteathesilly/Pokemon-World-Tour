@@ -464,25 +464,26 @@ module GameData
             return nonInheritedLevelMoves
         end
 
-        def learnable_moves
-            if @learnableMoves.nil?
-                @learnableMoves = []
+        def recalculate_learnable_moves
+            @learnableMoves = []
 
-                @learnableMoves.concat(inherited_tutor_moves)
-                @learnableMoves.concat(@tutor_moves)
-                @learnableMoves.concat(@line_moves || @egg_moves)
-                @learnableMoves.concat(form_specific_moves)
-                level_moves.each do |learnset_entry|
-                    m = learnset_entry[1]
-                    @learnableMoves.push(m)
-                end
-
-                @learnableMoves.concat(GameData::Move.all_non_signature_moves) if canTutorAny?
-
-                @learnableMoves.uniq!
-                @learnableMoves.compact!
+            @learnableMoves.concat(inherited_tutor_moves)
+            @learnableMoves.concat(@tutor_moves)
+            @learnableMoves.concat(@line_moves || @egg_moves)
+            @learnableMoves.concat(form_specific_moves)
+            level_moves.each do |learnset_entry|
+                m = learnset_entry[1]
+                @learnableMoves.push(m)
             end
 
+            @learnableMoves.concat(GameData::Move.all_non_signature_moves) if canTutorAny?
+
+            @learnableMoves.uniq!
+            @learnableMoves.compact!
+        end
+
+        def learnable_moves
+            recalculate_learnable_moves if @learnableMoves.nil?
             return @learnableMoves 
         end
 
