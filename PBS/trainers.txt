@@ -4738,7 +4738,7 @@ Pokemon = DRAGONITE,57
 #-------------------------------
 [TUBER_F2,Hana]
 Pokemon = AVALUGG,56
-    Moves = FROSTSPIKES,CRUNCH,CALAMITOUSSLASH,AVALANCHE
+    Moves = FROSTSPIKES,CRUNCH,CALAMITOUSSLASH,GLACIALRAM
     AbilityIndex = 0 # Chilled Body
     Item = LEFTOVERS
 Pokemon = MARACTUS,57

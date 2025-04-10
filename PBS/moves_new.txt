@@ -6075,7 +6075,7 @@ Animation = ICEBEAM
 [SUPERCOOL]
 Name = Supercool
 Type = ICE
-Category = Special
+Category = Physical
 Power = 100
 Accuracy = 50
 TotalPP = 5
@@ -6083,7 +6083,7 @@ Target = NearOther
 FunctionCode = Frostbite
 Flags = CanProtect
 EffectChance = 100
-Description = The user overwhelmes the target with a frigid ray, frostbiting it.
+Description = The user saps all the target's heat with a frigid touch, frostbiting it.
 #-------------------------------
 [THERMALDRAIN]
 Name = Thermal Drain

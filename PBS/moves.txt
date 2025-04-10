@@ -5609,19 +5609,6 @@ FunctionCode = StartWeakenDamageAgainstUserSideIfInHail5
 Flags = CanSnatch
 Description = This move reduces damage from attacks for five turns. This can be used only in hail.
 #-------------------------------
-[AVALANCHE]
-Name = Avalanche
-Type = ICE
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Priority = -4
-FunctionCode = DoubleDamageTargetHitUser
-Flags = CanProtect
-Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
-#-------------------------------
 [BLIZZARD]
 Name = Blizzard
 Type = ICE
