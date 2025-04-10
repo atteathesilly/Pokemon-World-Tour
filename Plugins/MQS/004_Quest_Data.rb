@@ -15,11 +15,83 @@ module QuestModule
     :Location4 => "Carnation Graves",
     :QuestDescription => "[Ask Writer for Desc].",
   }
+  
+  QUEST_ALESSA = {
+    :ID => "1",
+    :Name => "Alessa",
+    :Stage1 => "Find them in the sewers.",
+    :Stage2 => "Find them post surf.",
+    :Stage3 => "Find them back south.",
+    :Stage4 => "Find them near Team Chasm HQ.",
+    :Location1 => "Luxtech Sewers",
+    :Location2 => "Prizca East",
+    :Location3 => "Volcanic Shore",
+    :Location4 => "Hollowed Layer",
+    :QuestDescription => "[Ask Writer for Desc].",
+  }
+  
+  QUEST_SKYLER = {
+    :ID => "2",
+    :Name => "Skyler",
+    :Stage1 => "Find them in Velenz.",
+    :Stage2 => "Find them north east.",
+    :Stage3 => "Find them back south.",
+    :Stage4 => "Find them on the southern mountain.",
+    :Location1 => "Velenz",
+    :Location2 => "Prizca East",
+    :Location3 => "Team Chasm HQ",
+    :Location4 => "Kilna Ascent",
+    :QuestDescription => "[Ask Writer for Desc].",
+  }
+  
+  QUEST_KEONI = {
+    :ID => "3",
+    :Name => "Keoni",
+    :Stage1 => "Find them post surf.",
+    :Stage2 => "Find them in the sewers.",
+    :Stage3 => "Find them back south.",
+    :Stage4 => "Find them near Velenz.",
+    :Location1 => "Eleig Stretch",
+    :Location2 => "Sewer Junction",
+    :Location3 => "Novo College",
+    :Location4 => "Velenz Menagerie",
+    :QuestDescription => "[Ask Writer for Desc].",
+  }
+  
+  QUEST_EIFION = {
+    :ID => "4",
+    :Name => "Eifion",
+    :Stage1 => "Find them near the river.",
+    :Stage2 => "Find them up river.",
+    :Stage3 => "Find them in the shack.",
+    :Stage4 => "Find them near the lake.",
+    :Location1 => "Eleig River Crossing",
+    :Location2 => "Highland Lake",
+    :Location3 => "Tournament Grounds",
+    :Location4 => "Abyssal Cavern",
+    :QuestDescription => "[Ask Writer for Desc].",
+  }
+  
+  QUEST_CANDY = {
+    :ID => "5",
+    :Name => "Candy",
+    :Stage1 => "Enter the man's house.",
+    :Stage2 => "Find them at the college.",
+    :Stage3 => "Find them post surf.",
+    :Stage4 => "Find them in a cave.",
+    :Stage5 => "Find them at the river.",
+    :Location1 => "Barren Crater",
+    :Location2 => "Novo College",
+    :Location3 => "Prizca West",
+    :Location4 => "Cave of Hatching",
+    :Location5 => "Eleig Stretch",
+    :QuestDescription => "[Ask Writer for Desc].",
+  }
 
   # Fetch/Misc Quests
 
   QUEST_LOST_GROWLITHE = {
-    :ID => "1",
+    :ID => "6",
     :Name => "Find Growlithe!",
     :QuestGiver => "School Kid",
     :Stage1 => "Find the Growlithe.",
