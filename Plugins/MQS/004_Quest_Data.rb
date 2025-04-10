@@ -4,7 +4,7 @@ module QuestModule
   
   QUEST_IMOGENE = {
     :ID => "0",
-    :Name => "The Duplicate Sage",
+    :Name => "WIP: The Duplicate Sage",
     :Stage1 => "Find them north of Svait.",
     :Stage2 => "Find them post surf.",
     :Stage3 => "Find them back south.",
@@ -18,7 +18,7 @@ module QuestModule
   
   QUEST_ALESSA = {
     :ID => "1",
-    :Name => "Alessa",
+    :Name => "WIP: Alessa Quest",
     :Stage1 => "Find them in the sewers.",
     :Stage2 => "Find them post surf.",
     :Stage3 => "Find them back south.",
@@ -32,7 +32,7 @@ module QuestModule
   
   QUEST_SKYLER = {
     :ID => "2",
-    :Name => "Skyler",
+    :Name => "WIP: Skyler Quest",
     :Stage1 => "Find them in Velenz.",
     :Stage2 => "Find them north east.",
     :Stage3 => "Find them back south.",
@@ -46,7 +46,7 @@ module QuestModule
   
   QUEST_KEONI = {
     :ID => "3",
-    :Name => "Keoni",
+    :Name => "WIP: Keoni Quest",
     :Stage1 => "Find them post surf.",
     :Stage2 => "Find them in the sewers.",
     :Stage3 => "Find them back south.",
@@ -60,7 +60,7 @@ module QuestModule
   
   QUEST_EIFION = {
     :ID => "4",
-    :Name => "Eifion",
+    :Name => "WIP: Eifion Quest",
     :Stage1 => "Find them near the river.",
     :Stage2 => "Find them up river.",
     :Stage3 => "Find them in the shack.",
@@ -74,7 +74,7 @@ module QuestModule
   
   QUEST_CANDY = {
     :ID => "5",
-    :Name => "Candy",
+    :Name => "WIP: Candy Quest",
     :Stage1 => "Enter the man's house.",
     :Stage2 => "Find them at the college.",
     :Stage3 => "Find them post surf.",
