@@ -6155,18 +6155,6 @@ Flags = CanProtect,Pulse
 EffectChance = 40
 Description = The user releases an aura imbued with dark thoughts. It has a 40% chance to flinch the target.
 #-------------------------------
-[DARKVOID]
-Name = Dark Void
-Type = DARK
-Category = Status
-Accuracy = 100
-TotalPP = 1
-Target = AllNearFoes
-Priority = -1
-FunctionCode = SleepTargetIfUserDarkrai
-Flags = CanProtect,CanMagicCoat
-Description = Targets are dragged into a world of total darkness that makes them sleep. This move always goes last.
-#-------------------------------
 [FAKETEARS]
 Name = Fake Tears
 Type = DARK

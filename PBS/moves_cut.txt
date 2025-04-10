@@ -2974,6 +2974,18 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Darkness rolls over the field, damaging all other Pokémon, ending weather, and healing statuses.
 #-------------------------------
+[DARKVOID]
+Name = Dark Void
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+Priority = -1
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = Targets are dragged into a world of total darkness that makes them sleep. This move always goes last.
+#-------------------------------
 [EMBARGO]
 Name = Embargo
 Type = DARK

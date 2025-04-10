@@ -6469,6 +6469,18 @@ Flags = CanProtect
 Description = This attack deals 50% more damage if the target has any raised or lowered stat steps.
 Animation = PUNISHMENT
 #-------------------------------
+[CALLOFTHEVOID]
+Name = Call of the Void
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+FunctionCode = SleepTargetNextTurn
+Flags = CanProtect,CanMagicCoat
+Description = All near foes are dragged into a world of total darkness that makes them drowsy. Only one use per battle.
+Animation = DARKVOID
+#-------------------------------
 [CALTROPARTS]
 Name = Caltrop Arts
 Type = DARK
