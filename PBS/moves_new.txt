@@ -5470,7 +5470,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapOffensiveAndDefensiveStats5
-Description = The user creates an odd area in which Pokémon's offensive and Defense and Sp. Def are swapped.
+Description = The user creates an odd area in which Pokémon's offensive and defensive stats are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [OMNISCIENTBLOW]
