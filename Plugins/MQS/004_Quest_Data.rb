@@ -4,12 +4,11 @@ module QuestModule
   
   QUEST_IMOGENE = {
     :ID => "0",
-    :Name => "Imogene, the Duplicate Sage",
-    :QuestGiver => "Imogene",
+    :Name => "The Duplicate Sage",
     :Stage1 => "Find them north of Svait.",
     :Stage2 => "Find them post surf.",
     :Stage3 => "Find them back south.",
-    :Stage4 => "Find them north east of the Lingering Delta.",
+    :Stage4 => "Find them near the Lingering Delta.",
     :Location1 => "Ice Cave",
     :Location2 => "Prizca West",
     :Location3 => "Grouz",
