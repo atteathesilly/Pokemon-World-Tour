@@ -115,11 +115,11 @@ module QuestModule
 
   QUEST_DIGIT_SLIPS = {
     :ID => "8",
-    :Name => _INTL("An Inconvenienced Ranger",
-    :QuestGiver => _INTL("Ranger",
-    :Stage1 => _INTL("Find all the digit slips.",
-    :Location1 => _INTL("Menagerie-Velenz Gatehouse",
-    :QuestDescription => _INTL("The local ranger is tired of Rafael's gym puzzle. Find the digit slips and return them to him.",
+    :Name => _INTL("An Inconvenienced Ranger"),
+    :QuestGiver => _INTL("Ranger"),
+    :Stage1 => _INTL("Find all the digit slips."),
+    :Location1 => _INTL("Menagerie-Velenz Gatehouse"),
+    :QuestDescription => _INTL("The local ranger is tired of Rafael's gym puzzle. Find the digit slips and return them to him."),
   }
 
   QUEST_POKEMON_MASTER = {
