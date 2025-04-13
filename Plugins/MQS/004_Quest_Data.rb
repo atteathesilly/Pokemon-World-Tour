@@ -285,4 +285,65 @@ module QuestModule
     :QuestDescription => _INTL("[Placeholder]."),
   }
 
+  # Avatar Bounties
+  
+  QUEST_CROBAT = {
+    :ID => "23",
+    :Name => _INTL("Bounty: Crobat Avatar"),
+    :QuestGiver => _INTL("Ranger"),
+    :Stage1 => _INTL("Defeat the Crobat Avatar."),
+    :Stage2 => _INTL("Report back to the Ranger."),
+    :Location1 => _INTL("Underpeak Tunnels"),
+    :Location2 => _INTL("Peaks-Harbor Gatehouse"),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a Crobat Avatar lying in the tunnels under Split Peaks. Says he'll make it worth your while."),
+  }
+
+  QUEST_BEARTIC = {
+    :ID => "24",
+    :Name => _INTL("Bounty: Beartic Avatar"),
+    :QuestGiver => _INTL("Ranger"),
+    :Stage1 => _INTL("Defeat the Beartic Avatar."),
+    :Stage2 => _INTL("Report back to the Ranger."),
+    :Location1 => _INTL("Gigalith's Guts"),
+    :Location2 => _INTL("Svait-Park Gatehouse"),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a Beartic Avatar lying in the Gigalith's Guts. Says he'll make it worth your while."),
+  }
+
+  QUEST_MAROMATISSE = {
+    :ID => "25",
+    :Name => _INTL("Bounty: M. Aromatisse Avatar"),
+    :QuestGiver => _INTL("Ranger"),
+    :Stage1 => _INTL("Defeat the M. Aromatisse Avatar."),
+    :Stage2 => _INTL("Report back to the Ranger."),
+    :Location1 => _INTL("Highland Lake"),
+    :Location2 => _INTL("West-Plaza Gatehouse"),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a Makyan Aromatisse Avatar lying in the Highland Lake... apparently. Says he'll make it worth your while."),
+  }
+
+  QUEST_MONKES = {
+    :ID => "26",
+    :Name => _INTL("Bounty: Monkey Trio Avatars"),
+    :QuestGiver => _INTL("Ranger"),
+    :Stage1 => _INTL("Defeat the trio of Monkey Avatars."),
+    :Stage2 => _INTL("Report back to the Ranger."),
+    :Location1 => _INTL("The Shelf"),
+    :Location2 => _INTL("Shelf-Novo Gatehouse"),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a trio of Avatars, a Pansage, Pansear, and Panpour, lying in The Shelf. Says she'll make it worth your while."),
+  }
+
+  # Legendary Quests
+
+  QUEST_LEGEND_CLONE = {
+    :ID => "27",
+    :Name => _INTL("A Primordial Material"),
+    :QuestGiver => _INTL("Dr. Hekata"),
+    :Stage1 => _INTL("Talk to Dr. Hekata."),
+    :Stage2 => _INTL("Return to the Path of Paradise."),
+    :Stage3 => _INTL("Report back to Dr. Hekata."),
+    :Location1 => _INTL("Grouz"),
+    :Location2 => _INTL("Hollowed Layer"),
+    :Location3 => _INTL("Grouz"),
+    :QuestDescription => _INTL("Dr. Hekata gave you a call mysteriously, asking to meet her in her home of Grouz. What could she want of you?"),
+  }
+
 end
