@@ -346,4 +346,103 @@ module QuestModule
     :QuestDescription => _INTL("Dr. Hekata gave you a call mysteriously, asking to meet her in her home of Grouz. What could she want of you?"),
   }
 
+  QUEST_LEGEND_CELEBI = {
+    :ID => "28",
+    :Name => _INTL("Turn Back the Clock"),
+    :QuestGiver => _INTL("Celebi"),
+    :Stage1 => _INTL("Plant the seeds."),
+    :Location1 => _INTL("Crumbling Canyon"),
+    :QuestDescription => _INTL("The mythical being named Celebi handed you four latent seeds. Perhaps you need to plant these somewhere? Afterwards, seek out Celebi."),
+  }
+
+  QUEST_LEGEND_REGIROCK = {
+    :ID => "29",
+    :Name => _INTL("The Age of Stone"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Make your way through the dungeon."),
+    :Location1 => _INTL("Crumbling Canyon"),
+    :QuestDescription => _INTL("A strange dungeon lies before you. A crumbling canyon, carved out and inhabitated in an ancient time. That ancient time may not be as far away as it seems, however..."),
+  }
+
+  QUEST_LEGEND_REGICE = {
+    :ID => "30",
+    :Name => _INTL("The Age of Ice"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Make your way through the dungeon."),
+    :Location1 => _INTL("Mirror Tundra"),
+    :QuestDescription => _INTL("A strange dungeon lies before you. A frozen wasteland, locked in time and place, rigid and reflective obstacles blocking your way. Perhaps a reflection of times long past."),
+  }
+
+  QUEST_LEGEND_HOOPA = {
+    :ID => "31",
+    :Name => _INTL("Spacial Split"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find all the lost rangers."),
+    :Location1 => _INTL("Mirror Tundra"),
+    :QuestDescription => _INTL("You found a strange set of... spectres? Spirits? Whatever they could be, defeating them in a battle appears to give some resolution to this situation... What could've caused this?"),
+  }
+
+  QUEST_LEGEND_REGISTEEL = {
+    :ID => "32",
+    :Name => _INTL("The Age of Steel"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Make your way through the dungeon."),
+    :Location1 => _INTL("Alloyed Thicket"),
+    :QuestDescription => _INTL("A strange dungeon lies before you. A forest made of metals and alloys. Always malleable, always changing, the line between natural and man-made thin..."),
+  }
+
+  QUEST_LEGEND_MELTAN = {
+    :ID => "33",
+    :Name => _INTL("A Collapsed Metal"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find the Meltan scattered about."),
+    :Location1 => _INTL("Alloyed Thicket"),
+    :QuestDescription => _INTL("A strange metallic creature fell apart into multiple smaller creatures, and scattered about the Alloyed Thicket. What might happen if you reunite them together?"),
+  }
+
+  QUEST_LEGEND_REGIDRAGO = {
+    :ID => "34",
+    :Name => _INTL("The Age of Myths"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Make your way through the dungeon."),
+    :Location1 => _INTL("The Catacombs"),
+    :QuestDescription => _INTL("A strange dungeon lies before you. Winding age-old catacombs, full of myths and legends. Stories will be the basis of humanity for as long as it will exist."),
+  }
+
+  QUEST_LEGEND_MARSHADOW = {
+    :ID => "35",
+    :Name => _INTL("Always In Character"),
+    :QuestGiver => _INTL("The LARPers"),
+    :Stage1 => _INTL("See if you can find them again."),
+    :Location1 => _INTL("???"),
+    :QuestDescription => _INTL("Quite an eclectic group you've found. You've claimed their hoard, but this surely isn't the last time you'll find yourself encountering them."),
+  }
+
+  QUEST_LEGEND_REGIELEKI = {
+    :ID => "35",
+    :Name => _INTL("Age of Electricity"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Make your way through the dungeon."),
+    :Location1 => _INTL("Oasis System"),
+    :QuestDescription => _INTL("A strange dungeon lies before you. Circuits run throughout the entire cave, in a similar way to the small streams of water. Electrical currents flow like water, opening the way forward to your goal."),
+  }
+
+  QUEST_LEGEND_NULL = {
+    :ID => "36",
+    :Name => _INTL("The Most Dangerous Experiment"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Fight through the scientists."),
+    :Location1 => _INTL("Battle Plaza Underground"),
+    :QuestDescription => _INTL("A group of scientists appear to be guarding something important. You never were one for not sticking your nose in everything, what would a bunch of nerds hold up against you?"),
+  }
+
+  QUEST_LEGEND_VICTINI = {
+    :ID => "37",
+    :Name => _INTL("The Novo Battle Club"),
+    :QuestGiver => _INTL("Fight Club Louis"),
+    :Stage1 => _INTL("Fight your way up through the ranks."),
+    :Location1 => _INTL("Novo Town"),
+    :QuestDescription => _INTL("Louis is holding a Battle Club in Novo town. Simply a way to entertain yourselves and your Pokemon."),
+  }
+
 end
