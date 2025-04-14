@@ -149,7 +149,7 @@ module QuestModule
     :ID => "11",
     :Name => _INTL("Down Memory Lane"),
     :QuestGiver => _INTL("Berry Farmer"),
-    :Stage1 => _INTL("Bring the Pokemon to them."),
+    :Stage1 => _INTL("Bring the Pokémon to them."),
     :Location1 => _INTL("County Park, Berry Farmer's House"),
     :QuestDescription => _INTL("This former Team Chasm member has been feeling nostalgic. Bring them a Bergmite, a Klink, a Dreepy, a Makyan Tangela, and an Elekid."),
     :RewardString => _INTL("Catching Charm")
@@ -442,7 +442,16 @@ module QuestModule
     :QuestGiver => _INTL("Fight Club Louis"),
     :Stage1 => _INTL("Fight your way up through the ranks."),
     :Location1 => _INTL("Novo Town"),
-    :QuestDescription => _INTL("Louis is holding a Battle Club in Novo town. Simply a way to entertain yourselves and your Pokemon."),
+    :QuestDescription => _INTL("Louis is holding a Battle Club in Novo town. Simply a way to entertain yourselves and your Pokémon."),
+  }
+
+  QUEST_LEGEND_MAGEARNA = {
+    :ID => "38",
+    :Name => _INTL("Parting With a Friend"),
+    :QuestGiver => _INTL("Strange Girl"),
+    :Stage1 => _INTL("Trade her a Pokémon you've bonded with."),
+    :Location1 => _INTL("Tournament Lobby"),
+    :QuestDescription => _INTL("An odd girl in the tournament lobby has an offer. A Pokémon you've bonded with fully, for the individual she possesses... Can you make that trade?"),
   }
 
 end
