@@ -4,7 +4,7 @@ module QuestModule
   
   QUEST_IMOGENE = {
     :ID => "0",
-    :Name => _INTL("WIP: The Duplicate Sage"),
+    :Name => _INTL("Impostor/Imperatrice"),
     :Stage1 => _INTL("Find them north of Svait."),
     :Stage2 => _INTL("Find them post surf."),
     :Stage3 => _INTL("Find them back south."),
@@ -13,12 +13,12 @@ module QuestModule
     :Location2 => _INTL("Prizca West"),
     :Location3 => _INTL("Grouz"),
     :Location4 => _INTL("Carnation Graves"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("A pair of identical fortune tellers, each claiming the other is a Ditto. For some reason, they have a vested interest in you. Find out the truth."),
   }
   
   QUEST_ALESSA = {
     :ID => "1",
-    :Name => _INTL("WIP: Alessa Quest"),
+    :Name => _INTL("Kayfabe"),
     :Stage1 => _INTL("Find them in the sewers."),
     :Stage2 => _INTL("Find them post surf."),
     :Stage3 => _INTL("Find them back south."),
@@ -27,12 +27,12 @@ module QuestModule
     :Location2 => _INTL("Prizca East"),
     :Location3 => _INTL("Volcanic Shore"),
     :Location4 => _INTL("Hollowed Layer"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("A confident young woman who trains Pokémon for a price. Dueling her could be good practice – but she looks at you with unnerving familiarity. She knows more than she lets on."),
   }
   
   QUEST_SKYLER = {
     :ID => "2",
-    :Name => _INTL("WIP: Skyler Quest"),
+    :Name => _INTL("Dear Iconoclast"),
     :Stage1 => _INTL("Find them in Velenz."),
     :Stage2 => _INTL("Find them north east."),
     :Stage3 => _INTL("Find them back south."),
@@ -41,12 +41,12 @@ module QuestModule
     :Location2 => _INTL("Prizca East"),
     :Location3 => _INTL("Team Chasm HQ"),
     :Location4 => _INTL("Kilna Ascent"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("A dashing young man trying his best to be charming. His appreciation for avatars borders on spiritual. Who knows what'll happen if you seek him out?"),
   }
   
   QUEST_KEONI = {
     :ID => "3",
-    :Name => _INTL("WIP: Keoni Quest"),
+    :Name => _INTL("When in Makya"),
     :Stage1 => _INTL("Find them post surf."),
     :Stage2 => _INTL("Find them in the sewers."),
     :Stage3 => _INTL("Find them back south."),
@@ -55,12 +55,12 @@ module QuestModule
     :Location2 => _INTL("Sewer Junction"),
     :Location3 => _INTL("Novo College"),
     :Location4 => _INTL("Velenz Menagerie"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("A studious man, foreign to Makya. He studies regional forms for his research. Something strange is afoot in the region – perhaps you can work together to find out what."),
   }
   
   QUEST_EIFION = {
     :ID => "4",
-    :Name => _INTL("WIP: Eifion Quest"),
+    :Name => _INTL("Second Chances"),
     :Stage1 => _INTL("Find them near the river."),
     :Stage2 => _INTL("Find them up river."),
     :Stage3 => _INTL("Find them in the shack."),
@@ -69,12 +69,12 @@ module QuestModule
     :Location2 => _INTL("Highland Lake"),
     :Location3 => _INTL("Tournament Grounds"),
     :Location4 => _INTL("Abyssal Cavern"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("A modest young man with a Phione, a Pokémon of great import. He's a fellow gym challenger – maybe facing off against a living myth could sharpen your skills."),
   }
   
   QUEST_CANDY = {
     :ID => "5",
-    :Name => _INTL("WIP: Candy Quest"),
+    :Name => _INTL("do crimes plz <3"),
     :Stage1 => _INTL("Enter the man's house."),
     :Stage2 => _INTL("Find them at the college."),
     :Stage3 => _INTL("Find them post surf."),
@@ -85,7 +85,7 @@ module QuestModule
     :Location3 => _INTL("Prizca West"),
     :Location4 => _INTL("Cave of Hatching"),
     :Location5 => _INTL("Eleig Stretch"),
-    :QuestDescription => _INTL("[Ask Writer for Desc]."),
+    :QuestDescription => _INTL("An energetic girl with no respect for the law. Despite her bubbly energy, it's easy to see she's burdened by a vendetta. Help her enact justice or find peace."),
   }
 
   # Fetch/Misc Quests
@@ -199,90 +199,90 @@ module QuestModule
 
   QUEST_GYM_AVATARS_1 = {
     :ID => "16",
-    :Name => _INTL("The Lightning God"),
+    :Name => _INTL("Peal of Thunder"),
     :QuestGiver => _INTL("Lambert"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Casaba Villa, Lambert's House"),
     :Location2 => _INTL("Casaba Villa, Lambert's House"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Lambert was tasked with keeping eyes on an imprisoned avatar until he found someone capable of destroying it. He seems to think that's you. Silence the beast."),
   }
 
   QUEST_GYM_AVATARS_2 = {
     :ID => "17",
-    :Name => _INTL("A Song and a Dance"),
+    :Name => _INTL("May I Have this Dance?"),
     :QuestGiver => _INTL("Eko"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Shipping Lane"),
     :Location2 => _INTL("Novo Gym"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Eko has waited for years to find someone capable of destroying a particularly powerful avatar. They gave you a key to get into its prison, and told you not to ask too many questions. Put an end to the thing's performance."),
   }
 
   QUEST_GYM_AVATARS_3 = {
     :ID => "18",
-    :Name => _INTL("A Nature's Reprieve"),
+    :Name => _INTL("The Thanks I Get"),
     :QuestGiver => _INTL("Helena"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Team Chasm HQ"),
     :Location2 => _INTL("Luxtech Gym"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Helena told you that Makya's gym challenge was partially created to find exceptional trainers. Having found one, she's eager to put you to work. Take her key, find this vicious avatar, and show it a former Chasm boss's gratitude."),
   }
 
   QUEST_GYM_AVATARS_4 = {
     :ID => "19",
-    :Name => _INTL("The World's Rebirth"),
+    :Name => _INTL("Quietus"),
     :QuestGiver => _INTL("Rafael"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Velenz, Rafael's House"),
     :Location2 => _INTL("Velenz, Rafael's House"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Rafael claims that the gym leaders' real purpose is to watch over the prisons of devastatingly powerful avatars. All he wants is for you to go in and end his work. Strike down the darkness writhing within its tomb."),
   }
 
   QUEST_GYM_AVATARS_5 = {
     :ID => "19",
-    :Name => _INTL("The Knight's Weapons"),
+    :Name => _INTL("Neath Rust and Time"),
     :QuestGiver => _INTL("Zoe"),
     :Stage2 => _INTL("Defeat what lurks behind the door."),
     :Stage3 => _INTL("Report back about your success."),
     :Location1 => _INTL("Eleig River Crossing, Worn Shed"),
     :Location2 => _INTL("Eleig River Crossing, Worn Shed"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Zoé told you that her mentor abandoned her and Bence, but left behind instructions. If they found a trainer of her caliber, they were to send them to destroy a pair of dire avatars. End the beasts' illustrious stories here and now."),
   }
 
   QUEST_GYM_AVATARS_6 = {
     :ID => "20",
-    :Name => _INTL("The Multicolored Stag"),
+    :Name => _INTL("Beneficence"),
     :QuestGiver => _INTL("Noel"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Ancient Sewers"),
     :Location2 => _INTL("Prizca East Gym"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Noel explains that Team Chasm created something by tampering with the Regis. Whether intentional or accidental, the resulting avatar must be eliminated. Cull it and deaden its fell light."),
   }
 
   QUEST_GYM_AVATARS_7 = {
     :ID => "21",
-    :Name => _INTL("A Meteoric Being"),
+    :Name => _INTL("L'Enfant du Vide"),
     :QuestGiver => _INTL("Victoire"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Sweetrock Harbor"),
     :Location2 => _INTL("Sweetrock Harbor Gym"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Victoire has been waiting to find someone capable of eliminating a remnant of Team Chasm's experimentation with Regigigas's power. Provide this abomination a warm welcome."),
   }
 
   QUEST_GYM_AVATARS_8 = {
     :ID => "22",
-    :Name => _INTL("The Mythical Serpent"),
+    :Name => _INTL("Kiss of Ascalon"),
     :QuestGiver => _INTL("Samorn"),
     :Stage1 => _INTL("Defeat what lurks behind the door."),
     :Stage2 => _INTL("Report back about your success."),
     :Location1 => _INTL("Kilna Ascent"),
     :Location2 => _INTL("Team Chasm HQ Gym"),
-    :QuestDescription => _INTL("[Placeholder]."),
+    :QuestDescription => _INTL("Samorn told you that she helped Team Chasm create impenetrable crypts to imprison avatars within, utilizing the power of the Regis. Now, it's time to get rid of one of those avatars for good. She's given you the means to get in and cut it down to size."),
   }
 
   # Avatar Bounties
