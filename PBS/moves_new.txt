@@ -251,18 +251,6 @@ Flags = CanProtect,Biting
 Description = Channeling fear, the user bites the target. Deals double damage if the user is below half health.
 Animation = HYPERFANG
 #-------------------------------
-[FRESHSTART]
-Name = Fresh Start
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = NearOther
-FunctionCode = HealUserFullHPFailsIfNotUserFirstTurn
-Flags = CanSnatch
-Description = The user reinvigorates itself, healing to full. Only works the first turn the user is in battle.
-Animation = RECOVER
-#-------------------------------
 [GREATERGLORIES]
 Name = Greater Glories
 Type = NORMAL
@@ -669,7 +657,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserAtkDef2CriticalHitRate1
 Flags = CanSnatch
-Description = The user doubles its critical strike chance and raises its Attack and Defense by two steps.
+Description = Enables random critical hits for the user, doubles its critical hit chance, and raises its Attack and Defense by two steps.
 Animation = FOCUSENERGY
 #-------------------------------
 [AURAFLUX]
@@ -960,7 +948,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RampageAlwaysCriticalHit
 Flags = CanProtect
-Description = The user relentlessly rampages with its whip-like hands for three turns. Each hit will always be critical.
+Description = The user relentlessly rampages with its whip-like hands for three turns. Each hit will always be a critical hit.
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
@@ -7242,7 +7230,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpAtkSpDef2CriticalHitRate1
 Flags = CanSnatch
-Description = The user doubles its critical strike chance and raises its Sp. Atk and Sp. Def by two steps.
+Description = Enables random critical hits for the user, doubles its critical hit chance, and raises its Sp. Atk and Sp. Def by two steps.
 Animation = FOCUSENERGY
 #-------------------------------
 [MISADVENTURE]

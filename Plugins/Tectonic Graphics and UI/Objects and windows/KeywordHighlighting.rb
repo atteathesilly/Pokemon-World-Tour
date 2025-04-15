@@ -71,6 +71,16 @@ def battleKeywordsImportant
         "rooms",
         "room",
         "weather",
+        "critical hit chance",
+        "random critical hit",
+        "random critical hits",
+        "critical hits",
+        "critical hit",
+        "screens",
+        "all stats",
+        "invulnerable",
+        "clothing",
+        "trapping",
     ]
 end
 
@@ -85,6 +95,8 @@ def battleKeywordsImportantCaseSensitive
         "Speed",
         "Accuracy",
         "Evasion",
+        "Grey Mist",
+        "Stockpile",
     ]
 end
 
@@ -112,6 +124,7 @@ def battleKeywordsUnimportant
         "twice",
         "doubles",
         "double",
+        "doubled",
         "three times",
         "four times",
         "five times",
