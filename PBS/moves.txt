@@ -5436,7 +5436,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveScreens
 Flags = CanProtect,Biting
-Description = The user bites the target using psychic capabilities. Also breaks any Screens protecting the target's side.
+Description = The user bites the target using psychic capabilities. Also breaks any screens protecting the target's side.
 #-------------------------------
 [PSYCHOBOOST]
 Name = Psycho Boost
