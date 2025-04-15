@@ -78,7 +78,6 @@ def battleKeywordsImportant
         "critical hits",
         "critical hit",
         "screens",
-        "all stats",
         "invulnerable",
         "clothing",
         "trapping",
@@ -140,6 +139,7 @@ def battleKeywordsUnimportant
         "1/10th",
         "1/12th",
         "1/16th",
+        "all stats",
     ]
 end
 
