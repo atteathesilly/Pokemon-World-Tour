@@ -3109,7 +3109,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a 10% of its max HP.
+Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [HAIRCURL]
@@ -3339,7 +3339,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shoots shards of its own body at the target. The user loses a 10% of its max HP.
+Description = The user shoots shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SHREDSHOT]
@@ -3353,7 +3353,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shreds off bits of its own body to launch at the target. The user loses a 10% of its max HP.
+Description = The user shreds off bits of its own body to launch at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SLAG]
