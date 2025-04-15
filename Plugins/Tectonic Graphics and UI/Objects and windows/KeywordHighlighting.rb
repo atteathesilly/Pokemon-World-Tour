@@ -81,6 +81,8 @@ def battleKeywordsImportant
         "invulnerable",
         "clothing",
         "trapping",
+        "Grey Mist",
+        "Stockpile",
     ]
 end
 
@@ -95,8 +97,6 @@ def battleKeywordsImportantCaseSensitive
         "Speed",
         "Accuracy",
         "Evasion",
-        "Grey Mist",
-        "Stockpile",
     ]
 end
 
