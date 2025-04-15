@@ -974,7 +974,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect
-Description = A reckless charge attack from the air. It also damages the user by 25% of the damage dealt.
+Description = A reckless charge attack from the air. The user also takes 25% recoil.
 Animation = BRAVEBIRD
 #-------------------------------
 [BLUSTER]
@@ -1651,7 +1651,6 @@ TotalPP = 10
 Target = AllNearFoes
 FunctionCode = Basic
 Flags = CanProtect,Sound
-EffectChance = 30
 Description = The user hits a pitch that turns earth and stone to dust, damaging its foes.
 Animation = SCORCHINGSANDS
 #-------------------------------
@@ -1730,7 +1729,7 @@ TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHPExtendWeather1
 Flags = CanSnatch
-Description = The user slathers mud around to heal itself for 1/2 of its max HP, and extends any active screens by 1 turn.
+Description = The user slathers mud around to heal itself for half of their max HP, and extends any active screens by one turn.
 Animation = MUDSPORT
 #-------------------------------
 [STAMPDOWN]
@@ -2435,7 +2434,7 @@ Accuracy = 0
 TotalPP = 12
 Target = User
 FunctionCode = Trade6SpdForAtk
-Flags = CanSnatch
+Flags = CanSnatch,Blade
 Description = The user prepares its weapons, raising Attack by six steps but lowering Speed by six steps.
 Animation = SWORDSDANCE
 #-------------------------------
@@ -2566,7 +2565,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect
-Description = The user leeches the target's life. The user's HP is restored by 50% the damage dealt.
+Description = The user sucks the target's life. The user's HP is restored by 50% the damage dealt.
 Animation = LEECHLIFE
 #-------------------------------
 [SWARMBURST]
@@ -2694,7 +2693,6 @@ TotalPP = 15
 Target = AllNearOthers
 FunctionCode = Basic
 Flags = CanProtect,Sound
-EffectChance = 20
 Description = The user makes a dreadful bell noise, harming all near battlers with visions of impending doom.
 Animation = SCREECH
 #-------------------------------
@@ -3123,7 +3121,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a tenth of its max HP.
+Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [HAIRCURL]
@@ -3239,7 +3237,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = IfFaintsTargetAddTonsOfMoneyGainedFromBattle
-Flags = CanProtect
+Flags = CanProtect,Blade
 Description = The user attacks the target with a sword. If it faints, tons of money is earned after the battle.
 #-------------------------------
 [POLARIZEDROOM]
@@ -3353,7 +3351,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shoots shards of its own body at the target. The user loses a tenth of its max HP.
+Description = The user shoots shards of its own body at the target. The user loses a 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SHREDSHOT]
@@ -3367,7 +3365,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shreds off bits of its own body to launch at the target. The user loses a tenth of its max HP.
+Description = The user shreds off bits of its own body to launch at the target. The user loses a 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SLAG]
@@ -3406,7 +3404,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHPExtendWeather1
 Flags = CanSnatch
-Description = The user heals itself for 1/2 of its max HP, and extends the current weather by 1 turn.
+Description = The user heals itself for half of their max HP, and extends the current weather by one turn.
 Animation = RECOVER
 #-------------------------------
 [VANGUARD]
@@ -3832,7 +3830,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DestroysClothing
 Flags = CanProtect
-Description = The user surrounds the target with fire which also destroys any 'clothing' items it's holding.
+Description = The user surrounds the target with fire which also destroys any clothing items it's holding.
 Animation = INCINERATE
 #-------------------------------
 [VAINGLORYFLAMES]
@@ -4512,7 +4510,7 @@ TotalPP = 5
 Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesSpecialDamage
-Flags = CanProtect,Uninvocable
+Flags = CanProtect,Uninvocable,Blade
 Description = The user hides its blade. If it is hit by a special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
@@ -4990,7 +4988,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpAtk2Spd1
 Flags = CanSnatch,Dance
-Description = The user dances with the speed of lightning, raising its Sp. Atk by two steps and Speed by 1.
+Description = The user dances with the speed of lightning, raising its Sp. Atk by two steps and Speed by one.
 #-------------------------------
 [LIGHTNINGSLAM]
 Name = Lightning Slam
@@ -5610,7 +5608,6 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
-EffectChance = 10
 Description = The target is scrutinized, damaging their psyche. Can random critical hit.
 Animation = CONFUSION
 #-------------------------------
@@ -5738,7 +5735,7 @@ TotalPP = 10
 Target = BothSides
 FunctionCode = StartGreyMist5StartHail5
 Flags = CanMagicCoat
-Description = The user covers the field with an fog of ice crystals, summoning hail and creating grey mist for 5 turns.
+Description = The user covers the field with an fog of ice crystals, summoning hail and creating Grey Mist for 5 turns.
 Animation = HAIL
 #-------------------------------
 [FRIGIDFLURRY]
@@ -5856,7 +5853,7 @@ Target = NearOther
 FunctionCode = MinTargetSpdEvasion
 Flags = CanProtect
 EffectChance = 100
-Description = The user freezes the target in place, dealing damage and minimizing their Speed and evasiveness.
+Description = The user freezes the target in place, dealing damage and minimizing their Speed and Evasion.
 Animation = ICEBEAM
 #-------------------------------
 [HYPOTHERMIATE]
@@ -6349,7 +6346,7 @@ Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = TwoTurnChangeUserAmpharosForm
-Description = A two-turn move. The user channels insane amounts of energy the first turn, then transforms.
+Description = The user channels insane amounts of energy the first turn, then transforms on the second turn.
 Animation = DAZZLINGGLEAM
 #-------------------------------
 [TRIPLETHREAT]
@@ -6556,7 +6553,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHPRaiseDefSpDefCriticalHitRate1
 Flags = CanSnatch
-Description = The user restores 1/2 of their HP and raises their Defense, Sp. Def, and critical hit chance by two steps.
+Description = The user restores half of their max HP and raises their Defense, Sp. Def, and critical hit chance by two steps.
 Animation = COSMICPOWER
 #-------------------------------
 [DROWN]
@@ -6919,7 +6916,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserDependingOnMoonglow
 Flags = CanSnatch
-Description = The user restores 1/2 of its HP, or 2/3rds in moonglow.
+Description = The user restores half of their max HP, or 66% in moonglow.
 Animation = REST
 #-------------------------------
 [TEASE]
@@ -6946,7 +6943,7 @@ Target = NearOther
 Priority = 4
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect
-Description = The user transforms into a cloud of vermin, evading all attacks on the first turn. On the second turn it ambushes the target.
+Description = The user transforms into a cloud of vermin, becoming invulnerable to attacks on the first turn. On the second turn it ambushes the target.
 Animation = FLY
 #-------------------------------
 [WETWORK]

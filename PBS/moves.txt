@@ -606,7 +606,6 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 15
 Description = The target is physically pounded with a long tail or a foreleg, etc.
 #-------------------------------
 [PROTECT]
@@ -1062,7 +1061,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect
-Description = A full-body charge attack for slamming into the foe. It also damages the user by 25% of the damage dealt.
+Description = A full-body charge attack for slamming into the foe. The user also takes 25% recoil.
 #-------------------------------
 [TEARFULLOOK]
 Name = Tearful Look
@@ -1073,7 +1072,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk2
 Flags = CanMagicCoat
-Description = The user gets teary eyed. This lowers the target's Attack and Sp. Atk stats.
+Description = The user gets teary eyed. This lowers the target's Attack and Sp. Atk stats. by 2 steps
 #-------------------------------
 [TEATIME]
 Name = Teatime
@@ -1283,7 +1282,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserDefSpDef2
 Flags = CanProtect
-Description = The user fights the foe up close without guarding itself. This cuts the user's Defenses by two steps.
+Description = The user fights the foe up close without guarding itself. This lowers the user Defense and Sp. Def by two steps.
 #-------------------------------
 [COACHING]
 Name = Coaching
@@ -1318,7 +1317,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
-Description = The user delivers a double chop with its forearms crossed. Can random critical hit.
+Description = The user delivers a chop with its forearms crossed. Can random critical hit.
 #-------------------------------
 [DOUBLEKICK]
 Name = Double Kick
@@ -2026,7 +2025,7 @@ Name = Coil
 Type = POISON
 Category = Status
 Accuracy = 0
-TotalPP = 15
+TotalPP = 6
 Target = User
 FunctionCode = RaiseUserAtkDefAcc2
 Flags = CanSnatch
@@ -2055,7 +2054,6 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 10
 Description = The user shoots filthy garbage at the target to attack.
 #-------------------------------
 [POISONFANG]
@@ -2118,7 +2116,6 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
-EffectChance = 10
 Description = The user hits the target with its tail. Can random critical hit.
 #-------------------------------
 [PURIFY]
@@ -2402,7 +2399,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserDependingOnSandstorm
 Flags = CanSnatch
-Description = The user regains up to half of its max HP. It restores more HP in a sandstorm.
+Description = The user regains up to half of its max HP. It restores 66% in a sandstorm.
 #-------------------------------
 [SPIKES]
 Name = Spikes
@@ -2514,7 +2511,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackChargeRaiseUserSpAtk1
 Flags = CanProtect
-Description = Gathers space power and boosts its Sp. Atk by two steps on one turn, then attacks on the next turn.
+Description = Gathers space power and boosts its Sp. Atk by two steps on one turn, then attacks on the second turn.
 #-------------------------------
 [POWERGEM]
 Name = Power Gem
@@ -2632,7 +2629,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = StealthRock
 Flags = CanProtect,Blade
-Description = The user swings its stone axes. This leaves stone splinters floating around the target.
+Description = The user swings its stone axes. This leaves levitating stones floating around the target.
 Animation = STONEEDGE
 #-------------------------------
 [STONEEDGE]
@@ -2793,7 +2790,7 @@ Target = NearOther
 FunctionCode = LowerTargetAtk1
 Flags = CanProtect
 EffectChance = 100
-Description = The user makes a lunge at the target, attacking with full force. This lowers the target's Attack by one step.
+Description = The user makes a lunge at the target, attacking with full force. This lowers the target's Attack.
 #-------------------------------
 [MEGAHORN]
 Name = Megahorn
@@ -3103,7 +3100,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
-Description = The user vanishes somewhere, becoming invulnerable, then strikes on the next turn. Skips and destroys protections.
+Description = The user vanishes somewhere, becoming invulnerable, then strikes on the second turn. Skips and destroys protections.
 #-------------------------------
 [SCARYFACE]
 Name = Scary Face
@@ -3395,7 +3392,6 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 30
 Description = The target is slammed with a steel-hard tail.
 #-------------------------------
 [KINGSSHIELD]
@@ -3653,7 +3649,6 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 10
 Description = The foe is attacked with an intense blast of all-consuming fire.
 #-------------------------------
 [FIREFANG]
@@ -3680,7 +3675,7 @@ Target = NearOther
 FunctionCode = LowerTargetDef2
 Flags = CanProtect
 EffectChance = 100
-Description = The user strikes the target with a burning lash. This also lowers the target's Defense stat by two steps.
+Description = The user strikes the target with a flaming lash. This also lowers the target's Defense stat by two steps.
 #-------------------------------
 [FIREPLEDGE]
 Name = Fire Pledge
@@ -3855,7 +3850,7 @@ TotalPP = 5
 Target = AllNearOthers
 FunctionCode = UserLosesHalfOfTotalHP
 Flags = CanProtect
-Description = The user attacks everything by causing its own head to explode. This also damages the user.
+Description = The user attacks everything by causing its own head to explode. The user also takes 50% recoil.
 #-------------------------------
 [MYSTICALFIRE]
 Name = Mystical Fire
@@ -3892,7 +3887,6 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 10
 Description = Attacks by igniting a small stone and launching it as a fiery ball.
 #-------------------------------
 [RAGINGFURY]
@@ -4056,7 +4050,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderwater
 Flags = CanProtect
-Description = Diving on the first turn, becoming invulnerable, the user rises and hits from below water on the next turn.
+Description = Diving on the first turn, becoming invulnerable, the user rises and hits from below water on the second turn.
 #-------------------------------
 [FISHIOUSREND]
 Name = Fishious Rend
@@ -4212,7 +4206,7 @@ Target = AllNearOthers
 FunctionCode = CureTargetBurn
 Flags = CanProtect,Sound
 EffectChance = 100
-Description = The user bursts into song, emitting many bubbles. Any burnt Pokémon will be healed by these bubbles.
+Description = The user bursts into song, emitting many bubbles. Any burning Pokémon will be healed by these bubbles.
 #-------------------------------
 [SPLASH]
 Name = Splash
@@ -4285,7 +4279,6 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
-EffectChance = 10
 Description = The target is blasted with a forceful shot of water. Can random critical hit.
 #-------------------------------
 [WATERPLEDGE]
@@ -4324,7 +4317,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user hits the target with throwing stars 2 to 5 times in a row. This move always goes first.
+Description = The user hits the target with throwing stars two to five times in a row. This move always goes first.
 #-------------------------------
 [WATERSPOUT]
 Name = Water Spout
@@ -4493,7 +4486,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserAtkSpAtk2Or4InSun
 Flags = CanSnatch
-Description = The user's body grows all at once, raising Atk and Sp. Atk by two steps, or 4 in sunshine.
+Description = The user's body grows all at once, raising Attack and Sp. Atk by two steps, or four in sunshine.
 #-------------------------------
 [INGRAIN]
 Name = Ingrain
@@ -4725,7 +4718,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserDependingOnSunshine
 Flags = CanSnatch
-Description = The user restores 1/2 of its HP, or 2/3rds in sunshine.
+Description = The user restores half of their max HP, or 66% in sunshine.
 #-------------------------------
 [TROPKICK]
 Name = Trop Kick
@@ -5455,7 +5448,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveScreens
 Flags = CanProtect,Biting
-Description = The user bites the target using psychic capabilities. Also breaks anys Screens protecting the target's side.
+Description = The user bites the target using psychic capabilities. Also breaks any Screens protecting the target's side.
 #-------------------------------
 [PSYCHOBOOST]
 Name = Psycho Boost
@@ -6678,7 +6671,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = FixedDamageHalfTargetHP
 Flags = CanProtect
-Description = The user hits the target with the force of nature. It halves the target's HP.
+Description = The user hits the target with the force of nature. It cuts the target's HP to half.
 #-------------------------------
 [PLAYROUGH]
 Name = Play Rough
