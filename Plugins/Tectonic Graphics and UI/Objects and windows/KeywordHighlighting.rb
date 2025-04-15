@@ -55,6 +55,7 @@ def battleKeywordsImportant
         "maximize",
         "minimize",
         "minimize",
+        "minimizing",
         "aqua ring",
         "energy charged",
         "energy charge",
