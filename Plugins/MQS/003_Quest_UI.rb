@@ -275,20 +275,22 @@ class QuestList_Scene
     if questReward=="nil" || questReward==""
       questReward = "???"
     end
-    textpos = [
-      [sprintf("Stage %d/%d",quest.stage,questLength),38,38,0,@base,@shadow],
-      ["#{questGiver}",38,110,0,@base,@shadow],
-      ["#{originalMap}",38,182,0,@base,@shadow],
-      ["#{time}",38,254,0,@base,@shadow]
-    ]
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,88,
+    yStartingPos = 48
+    yGap = 72
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos,
       436,"<c2=#{colorQuest("cyan")}>Quest received from:</c2>",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,160,
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos+yGap*1,
       436,"<c2=#{colorQuest("magenta")}>Quest discovered #{loc}:</c2>",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,232,
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos+yGap*2,
       436,"<c2=#{colorQuest("green")}>Quest #{time_text} time:</c2>",@base,@shadow)
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,Graphics.height-68,
       436,"<c2=#{colorQuest("red")}>Reward:</c2> #{questReward}",@base,@shadow)
+    yStartingPos += 24
+    textpos = [
+        ["#{questGiver}",38,yStartingPos,0,@base,@shadow],
+        ["#{originalMap}",38,yStartingPos+yGap*1,0,@base,@shadow],
+        ["#{time}",38,yStartingPos+yGap*2,0,@base,@shadow]
+      ]
     pbDrawTextPositions(@sprites["overlay3"].bitmap,textpos)
   end
 
