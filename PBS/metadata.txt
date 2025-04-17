@@ -2419,7 +2419,7 @@ HealingSpot = 315,28,31
 # Underpeak Escape B1
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [340]
 # Illuminant Helix
@@ -2433,7 +2433,7 @@ BattleBack = wcave
 # Underpeak Escape B2
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [342]
 # Carnation Tower F1
