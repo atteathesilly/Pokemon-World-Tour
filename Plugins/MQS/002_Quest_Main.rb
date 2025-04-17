@@ -76,7 +76,7 @@ class Player_Quests
     end
     @active_quests.push(Quest.new(quest,color,story))
     unless skipAlert
-      questUpdate(_INTL("New quest discovered!"))
+      questAlert(_INTL("New quest discovered!"))
     end
     return true
   end
@@ -143,7 +143,7 @@ class Player_Quests
         @completed_quests.push(temp_quest)
         @active_quests.delete_at(i)
         found = true
-        questUpdate(_INTL("Quest completed!")) unless skipAlert
+        questAlert(_INTL("Quest completed!")) unless skipAlert
         break
       end
     end
@@ -167,7 +167,7 @@ class Player_Quests
         @active_quests[i].color = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
-        questUpdate(_INTL("Quest updated with the next task!")) unless skipAlert
+        questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
       end
       return true if found
     end
@@ -205,7 +205,7 @@ class Player_Quests
         @active_quests[i].color = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
-        questUpdate(_INTL("Quest updated with the next task!")) unless skipAlert
+        questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
       end
       return true if found
     end
