@@ -223,6 +223,13 @@ BicycleAlways = false
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[027]
+# The Catacombs B4
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = distortion
+#-------------------------------
 [028]
 # Professor's House
 Outdoor = false
