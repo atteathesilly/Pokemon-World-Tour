@@ -499,7 +499,9 @@ module QuestModule
     :Name => _INTL("WIP: Lainie"),
     :QuestGiver => _INTL("???"),
     :Stage1 => _INTL("Collect the Condensed Lights."),
+    :Stage2 => _INTL("Find your frind :)"),
     :Location1 => _INTL("???"),
+    :Location2 => _INTL("Velenz Menagerie"),
     :QuestDescription => _INTL("[Placeholder]."),
   }
 
