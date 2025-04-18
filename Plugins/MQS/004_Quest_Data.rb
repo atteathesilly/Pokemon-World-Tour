@@ -461,4 +461,12 @@ module QuestModule
     :QuestDescription => _INTL("WIP: A ragged journal, a strange scepter, reins, and an apricorn."),
   }
 
+  QUEST_LEGEND_GUARDIAN_ISLAND = {
+    :Name => _INTL("Guardian Island"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Explore the strange island."),
+    :Location1 => _INTL("Guardian Island"),
+    :QuestDescription => _INTL("You won the map to an abandoned island, what secrets could this place hold?"),
+  }
+
 end
