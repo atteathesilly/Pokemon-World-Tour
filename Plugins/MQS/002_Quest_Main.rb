@@ -101,7 +101,7 @@ class Player_Quests
     for i in 0...@active_quests.length
       if @active_quests[i].id == quest
         temp_quest = @active_quests[i]
-        temp_quest.color = color if color
+        temp_quest.colorID = color if color
         temp_quest.new = true # Setting this back to true makes the "!" icon appear when the quest updates
         temp_quest.time = Time.now
         @failed_quests.push(temp_quest)
@@ -137,7 +137,7 @@ class Player_Quests
     for i in 0...@active_quests.length
       if @active_quests[i].id == quest
         temp_quest = @active_quests[i]
-        temp_quest.color = color if color
+        temp_quest.colorID = color if color
         temp_quest.new = true # Setting this back to true makes the "!" icon appear when the quest updates
         temp_quest.time = Time.now
         @completed_quests.push(temp_quest)
@@ -164,7 +164,7 @@ class Player_Quests
     for i in 0...@active_quests.length
       if @active_quests[i].id == quest
         @active_quests[i].stage = stageNum
-        @active_quests[i].color = color if color
+        @active_quests[i].colorID = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
         questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
@@ -202,7 +202,7 @@ class Player_Quests
           return completeQuest(quest,color,story,skipAlert: skipAlert)
         end
         @active_quests[i].stage += 1
-        @active_quests[i].color = color if color
+        @active_quests[i].colorID = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
         questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
