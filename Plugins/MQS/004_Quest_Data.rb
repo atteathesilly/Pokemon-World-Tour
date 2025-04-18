@@ -469,4 +469,38 @@ module QuestModule
     :QuestDescription => _INTL("You won the map to an abandoned island, what secrets could this place hold?"),
   }
 
+  QUEST_LEGEND_LUGIA = {
+    :Name => _INTL("Sea Monster"),
+    :QuestGiver => _INTL("Ship Captain"),
+    :Stage1 => _INTL("Find the great Pokémon."),
+    :Location1 => _INTL("Aquatopia Menagerie"),
+    :QuestDescription => _INTL("A ship captain talks about a great Pokémon in the waves. Maybe you can be the one to find this beast."),
+  }
+
+  QUEST_LEGEND_SIGIL = {
+    :Name => _INTL("Carnation Sigil"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find the other piece of the sigil."),
+    :Stage2 => _INTL("Discover where the sigil takes you."),
+    :Location1 => _INTL("???"),
+    :Location2 => _INTL("???"),
+    :QuestDescription => _INTL("You found a half of a sigil of some sort. Completing it might let it do something."),
+  }
+
+  QUEST_LEGEND_HOOH = {
+    :Name => _INTL("Ruined Tower"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Collect the key."),
+    :Location1 => _INTL("???"),
+    :QuestDescription => _INTL("You saw that a wild Pokémon was holding a key. Take it, and bring it to the tower it goes to."),
+  }
+
+  QUEST_LEGEND_CONDENSED = {
+    :Name => _INTL("WIP: Lainie"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Collect the Condensed Lights."),
+    :Location1 => _INTL("???"),
+    :QuestDescription => _INTL("[Placeholder]."),
+  }
+
 end

@@ -17,3 +17,9 @@ def completeGuardianIslandQuest
         completeQuest(:QUEST_LEGEND_GUARDIAN_ISLAND)
     end
 end
+
+def stageTwoSigiLQuest
+    if pbGetSelfSwitch(1, 'A', 135) && pbGetSelfSwitch(7, 'A', 330)
+        advanceQuestToStage(:QUEST_LEGEND_SIGIL, 2)
+    end
+end
