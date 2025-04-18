@@ -441,4 +441,24 @@ module QuestModule
     :QuestDescription => _INTL("The TV talked about an island."),
   }
 
+  QUEST_LEGEND_CALYREX1 = {
+    :Name => _INTL("WIP: Odd Pits"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find the item in the postgame."),
+    :Location1 => _INTL("???"),
+    :QuestDescription => _INTL("WIP: There's something that should fill these pits, wonder what that is?"),
+  }
+
+  QUEST_LEGEND_CALYREX2 = {
+    :Name => _INTL("WIP: Calyrex"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find the hidden entrance."),
+    :Stage2 => _INTL("Find the grass pits."),
+    :Stage3 => _INTL("Return to the hidden room."),
+    :Location1 => _INTL("Battle Monument"),
+    :Location2 => _INTL("???"),
+    :Location3 => _INTL("Crown Chamber"),
+    :QuestDescription => _INTL("WIP: A ragged journal, a strange scepter, reins, and an apricorn."),
+  }
+
 end

@@ -5,3 +5,9 @@ def completeTriIslandQuest
       completeQuest(:QUEST_LEGEND_TRI_ISLAND)
   end
 end
+
+def stageThreeCalyrexQuest
+  if pbGetSelfSwitch(024, 'A', 333) && pbGetSelfSwitch(001, 'A', 434) && pbGetSelfSwitch(001, 'A', 436)
+      advanceQuestToStage(:QUEST_LEGEND_CALYREX2, 3)
+  end
+end
