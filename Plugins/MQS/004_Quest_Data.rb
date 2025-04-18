@@ -499,7 +499,7 @@ module QuestModule
     :Name => _INTL("Best Friends for Light"),
     :QuestGiver => _INTL("???"),
     :Stage1 => _INTL("Collect the Condensed Lights."),
-    :Stage2 => _INTL("Find your frind :)"),
+    :Stage2 => _INTL("Find your friend :)"),
     :Location1 => _INTL("???"),
     :Location2 => _INTL("Velenz Menagerie"),
     :QuestDescription => _INTL("At the name Lainie, a viscous mass of pure light formed in your bag. Find out more about the girl who's friends with all of Makya."),
