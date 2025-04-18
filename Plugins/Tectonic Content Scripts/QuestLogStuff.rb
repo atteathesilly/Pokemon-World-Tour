@@ -1,4 +1,4 @@
-# Ends the QUEST_LEGEND_TRI_ISLAND quest when the player obtains all 3 birds
+# Progresses or ends quests when all of a certain thing is gotten
 
 def completeTriIslandQuest
   if pbGetSelfSwitch(1, 'A', 416) && pbGetSelfSwitch(1, 'A', 417) && pbGetSelfSwitch(1, 'A', 415)
@@ -23,3 +23,12 @@ def stageTwoSigiLQuest
         advanceQuestToStage(:QUEST_LEGEND_SIGIL, 2)
     end
 end
+
+# Ends quest if Lugia is caught
+
+BallHandlers::OnPokemonCaught += proc { |ball, battle, pkmn|
+    next unless pkmn.species == :LUGIA
+    next unless $game_map.map_id == 239 # ocean fishing contest
+
+    completeQuest(:QUEST_LEGEND_LUGIA)
+}

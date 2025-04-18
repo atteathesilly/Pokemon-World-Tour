@@ -14,7 +14,6 @@ Events.onWildPokemonCreate += proc {|sender,e|
     overwriteWildPokemonSpecies(pokemon,:LUGIA)
     pokemon.set_starting_level([getLevelCap,45].min)
     pokemon.reset_moves
-    completeQuest(:QUEST_LEGEND_LUGIA)
 }
 
 Events.onWildPokemonCreate += proc {|sender,e|
