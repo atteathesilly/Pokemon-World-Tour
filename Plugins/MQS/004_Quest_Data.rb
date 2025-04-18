@@ -433,4 +433,12 @@ module QuestModule
     :QuestDescription => _INTL("[Placeholder]"),
   }
 
+  QUEST_LEGEND_TRI_ISLAND = {
+    :Name => _INTL("Tri Island"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Explore the strange island."),
+    :Location1 => _INTL("Tri Island"),
+    :QuestDescription => _INTL("The TV talked about an island."),
+  }
+
 end
