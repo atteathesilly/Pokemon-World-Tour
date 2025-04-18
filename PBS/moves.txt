@@ -692,7 +692,7 @@ Description = The user rests to cure itself of any status condition.
 [RELICSONG]
 Name = Relic Song
 Type = NORMAL
-Category = Special
+Category = Adaptive
 Power = 75
 Accuracy = 100
 TotalPP = 10
