@@ -4583,13 +4583,13 @@ Description = The user attacks by scattering petals in a rampage for three turns
 Name = Power Whip
 Type = GRASS
 Category = Physical
-Power = 120
-Accuracy = 70
-TotalPP = 10
+Power = 115
+Accuracy = 80
+TotalPP = 5
 Target = NearOther
-FunctionCode = CantMissAgainstTargetAlreadyAttacked
+FunctionCode = Basic
 Flags = CanProtect
-Description = The user violently whirls to lash the target. Can't miss if the target has already attacked this turn.
+Description = The user violently whirls its vines, tentacles, or the like to lash the target. 
 #-------------------------------
 [RAZORLEAF]
 Name = Razor Leaf
