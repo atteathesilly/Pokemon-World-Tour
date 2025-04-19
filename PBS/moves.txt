@@ -4589,7 +4589,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect
-Description = The user violently whirls its vines, tentacles, or the like to lash the target. 
+Description = The user violently whirls its vines, tentacles, or the like to lash the target.
 #-------------------------------
 [RAZORLEAF]
 Name = Razor Leaf
