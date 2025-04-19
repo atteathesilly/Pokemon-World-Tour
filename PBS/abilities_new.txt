@@ -2034,6 +2034,7 @@ Description = Heals based on the damage other battlers take from being poisoned.
 [TRACTORBEAM]
 Name = Tractor Beam
 Description = Prevents the foe from escaping during eclipse.
+Flags = EclipseSynergy
 #-------------------------------
 [TRAPPER]
 Name = Trapper
