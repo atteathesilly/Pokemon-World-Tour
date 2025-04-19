@@ -6749,7 +6749,7 @@ Weight = 10.8
 Kind = Dark
 Pokedex = To corner prey, they check each other's location using barks that only they can understand.
 Generation = 2
-Evolutions = HOUNDOOM,Level,27
+Evolutions = HOUNDOOM,Level,23
 #-------------------------------
 [HOUNDOOM]
 Name = Houndoom
@@ -6768,7 +6768,7 @@ Weight = 35.0
 Kind = Dark
 Pokedex = The flames it breathes when angry contain toxins. If they cause a burn, it will hurt forever.
 Generation = 2
-Evolutions = HOUNDOMINUS,Level,50
+Evolutions = HOUNDOMINUS,Level,46
 #-------------------------------
 [HOUNDOMINUS]
 Name = Houndominus
