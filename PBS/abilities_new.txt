@@ -273,7 +273,7 @@ Description = Physical moves have a 30% chance to frostbite targets.
 #-------------------------------
 [CITYRAZER]
 Name = City Razer
-Description = After knocking out any Pokémon with Waterfall, transforms into its Rampage form. Ability becomes Mold Breaker.
+Description = After knocking out any Pokémon with Waterfall, transforms into its Rampage form. Ability becomes Juggernaut.
 Flags = Immutable
 #-------------------------------
 [CLEANFREAK]
