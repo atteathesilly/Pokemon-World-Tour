@@ -1723,7 +1723,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = Basic
-Flags = CanProtect,CanRandomCrit
+Flags = CanProtect,CanRandomCrit,Wind
 Description = A vortex of air is shot at the target to inflict damage. Can random critical hit.
 #-------------------------------
 [AIRSLASH]
