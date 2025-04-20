@@ -7755,7 +7755,7 @@ Pokemon = MANERGETIC,70
 Pokemon = SCEPTILE,70
     AbilityIndex = 1 # Wall Ninja
 Pokemon = PRIMARINA,70
-    AbilityIndex = 0 # Maestro
+    AbilityIndex = 0 # Tuned Out
 Pokemon = WEAVILE,70
     AbilityIndex = 0 # Inner Focus
 #-------------------------------
