@@ -7625,21 +7625,6 @@ Pokemon = TORTERRA,70
     AbilityIndex = 1 # Living Armor
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,11]
-Flags = NoPerfect,PlayerTeam:Ardub23
-Pokemon = HZOROARK,70
-    AbilityIndex = 0 # Illusion
-Pokemon = GIGANTEON,70
-    AbilityIndex = 1 # Friend to All
-Pokemon = GIGANTEON,70
-    AbilityIndex = 1 # Friend to All
-Pokemon = GIGANTEON,70
-    AbilityIndex = 1 # Friend to All
-Pokemon = GIGANTEON,70
-    AbilityIndex = 1 # Friend to All
-Pokemon = GIGANTEON,70
-    AbilityIndex = 1 # Friend to All
-#-------------------------------
-[POKEMONMASTER_Vanya,Vanya,12]
 Flags = NoPerfect,PlayerTeam:Greeneyedpsycho
 Pokemon = ASANDSLASH,70
     AbilityIndex = 0 # Skill Link
@@ -7654,7 +7639,7 @@ Pokemon = TYRANTRUM,70
 Pokemon = DUSKNOIR,70
     AbilityIndex = 0 # Aggravate
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,13]
+[POKEMONMASTER_Vanya,Vanya,12]
 Flags = NoPerfect,PlayerTeam:Wildcard
 Pokemon = CHATOT,70
     AbilityIndex = 1 # Fascinate
@@ -7669,7 +7654,7 @@ Pokemon = RUBARIOR,70
 Pokemon = KINGDRA,70
     AbilityIndex = 1 # Gyre Spinner
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,14]
+[POKEMONMASTER_Vanya,Vanya,13]
 Flags = NoPerfect,PlayerTeam:Maken33
 Pokemon = HELECTRODE,70
     AbilityIndex = 0 # Perennial Payload
@@ -7684,7 +7669,7 @@ Pokemon = PTEROFLYTE,70
 Pokemon = AMUK,70
     AbilityIndex = 1 # Poison Punish
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,15]
+[POKEMONMASTER_Vanya,Vanya,14]
 Flags = NoPerfect,HailTeam,PlayerTeam:Zempest
 Pokemon = HELECTRODE,70
     AbilityIndex = 0 # Perennial Payload
@@ -7699,7 +7684,7 @@ Pokemon = DUSCLOPS,70
 Pokemon = HDECIDUEYE,70
     AbilityIndex = 0 # Taiga Trekker
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,16]
+[POKEMONMASTER_Vanya,Vanya,15]
 Flags = NoPerfect,PlayerTeam:SpeedyTurtle496
 Pokemon = TOGEKISS,70
     AbilityIndex = 1 # Serene Grace
@@ -7714,7 +7699,7 @@ Pokemon = GRAPIDASH,70
 Pokemon = ASANDSLASH,70
     AbilityIndex = 0 # Skill Link
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,17]
+[POKEMONMASTER_Vanya,Vanya,16]
 Flags = NoPerfect,PlayerTeam:Aethariel
 Pokemon = PELIPPER,70
     AbilityIndex = 1 # Dreary Clouds
@@ -7729,7 +7714,7 @@ Pokemon = DELIBIRD,70
 Pokemon = AMOONGUSS,70
     AbilityIndex = 0 # Regenerator
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,18]
+[POKEMONMASTER_Vanya,Vanya,17]
 Flags = NoPerfect,SandTeam,PlayerTeam:Kamekami
 Pokemon = RUNERIGUS,70
     AbilityIndex = 1 # Sand Stream
@@ -7744,7 +7729,7 @@ Pokemon = MARACTUS,70
 Pokemon = GARCHOMP,70
     AbilityIndex = 1 # Sands Macabre
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,19]
+[POKEMONMASTER_Vanya,Vanya,18]
 Flags = NoPerfect,PlayerTeam:CostosCaliber
 Pokemon = MZANGOOSE,70
     AbilityIndex = 1 # Mental Damage
@@ -7759,7 +7744,7 @@ Pokemon = PORYGONZ,70
 Pokemon = MAGNEZONE,70
     AbilityIndex = 0 # Analytic
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,20]
+[POKEMONMASTER_Vanya,Vanya,19]
 Flags = NoPerfect,PlayerTeam:Oreo29
 Pokemon = REAVOR,70
     AbilityIndex = 1 # Inner Focus
@@ -7774,7 +7759,7 @@ Pokemon = PRIMARINA,70
 Pokemon = WEAVILE,70
     AbilityIndex = 0 # Inner Focus
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,21]
+[POKEMONMASTER_Vanya,Vanya,20]
 Flags = NoPerfect,PlayerTeam:Breadon7414
 Pokemon = KOMALA,70
     AbilityIndex = 0 # Comatose
@@ -7789,7 +7774,7 @@ Pokemon = MFURRET,70
 Pokemon = PAPELLUMEN,70
     AbilityIndex = 1 # Erudite
 #-------------------------------
-[POKEMONMASTER_Vanya,Vanya,22]
+[POKEMONMASTER_Vanya,Vanya,21]
 Flags = NoPerfect,PlayerTeam:Wolfunters64
 Pokemon = SAMUROTT,70
     AbilityIndex = 1 # Swordplay
