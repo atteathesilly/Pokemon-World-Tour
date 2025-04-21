@@ -549,9 +549,7 @@ module QuestModule
     :Name => _INTL("WIP: Former Champion Ansel"),
     :QuestGiver => _INTL("Ansel"),
     :Stage1 => _INTL("Defeat another former champ."),
-    :Stage2 => _INTL("Return to Ansel."),
-    :Location1 => _INTL("Makya"),
-    :Location2 => _INTL("Battle Plaza"),
+    :Location1 => _INTL("Battle Plaza"),
     :QuestDescription => _INTL("[Placeholder]."),
   }
 

@@ -36,6 +36,12 @@ def completeDragonIsleQuest
     end
 end
 
+def completeSpiritAtollQuest
+    if pbGetSelfSwitch(1, 'A', 375) && pbGetSelfSwitch(1, 'A', 419) && pbGetSelfSwitch(1, 'A', 420)
+        advanceQuestToStage(:QUEST_LEGEND_ATOLL)
+    end
+end
+
 # Ends quest if Lugia is caught
 
 BallHandlers::OnPokemonCaught += proc { |ball, battle, pkmn|
