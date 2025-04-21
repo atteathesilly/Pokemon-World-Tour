@@ -7591,7 +7591,7 @@ Pokemon = ORICORIO,70
     AbilityIndex = 0 # Dancer
 Pokemon = GIGACHU,70
     AbilityIndex = 1 # Gargantuan
-Pokemon = ABOMASNOW,70
+Pokemon = CONIFEAR,70
     AbilityIndex = 1 # Frustrate
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,9]
