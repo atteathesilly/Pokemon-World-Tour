@@ -262,12 +262,6 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = POKEFAN
 #-------------------------------
-[THIEF]
-Name = Thief
-Gender = Female
-BaseMoney = 32
-IntroBGM = POKEFAN
-#-------------------------------
 [BUTLER]
 Name = Butler
 Gender = Male
@@ -1782,6 +1776,12 @@ Name = Teenager
 Gender = Male
 BaseMoney = 20
 IntroBGM = ROUGHNECK
+#-------------------------------
+[THIEF]
+Name = Thief
+Gender = Female
+BaseMoney = 32
+IntroBGM = POKEFAN
 #-------------------------------
 [TOURISTF]
 Name = Tourist
