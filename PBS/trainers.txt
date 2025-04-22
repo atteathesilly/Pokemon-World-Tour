@@ -2666,6 +2666,24 @@ Pokemon = WISHIWASHI,70
 Pokemon = ARCLAMOR,70
     AbilityIndex = 1 # Thunderstruck
 #-------------------------------
+[ROLLERSKATER_F,Attea]
+TrainerTypeLabel = DEVELOPER
+Pokemon = ORICORIO,70
+    Form = 2 # Pom Pom Style Form
+    AbilityIndex = 1 # Costume Change
+Pokemon = JIGGLYPUFF,70
+    Name = Kirby
+    Gender = male
+    AbilityIndex = 0 # Staggering Slaps
+Pokemon = LUDICOLO,70
+    AbilityIndex = 0 # Fiesta
+Pokemon = BELLOSSOM,70
+    AbilityIndex = 1 # Choreography
+Pokemon = GSLOWKING,70
+    AbilityIndex = 1 # Exorcist
+Pokemon = SLOWKING,70
+    AbilityIndex = 1 # Realist
+#-------------------------------
 [LEADER_Bence,Bence]
 Policies = BENCE
 Flags = NoPerfect
