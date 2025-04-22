@@ -2687,6 +2687,7 @@ Pokemon = BELLOSSOM,70
 Pokemon = GSLOWKING,70
     Moves = TOTALCONTROL,SLUDGEWAVE,EERIESPELL,SLACKOFF
     AbilityIndex = 1 # Exorcist
+Policies = ALLOW_RANDOM_MOVES
 Pokemon = SLOWKING,70
     Moves = SELECTIVEMEMORY,SLACKOFF,YAWN,PSYCHIC
     AbilityIndex = 1 # Realist
