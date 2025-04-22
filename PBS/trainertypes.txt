@@ -259,7 +259,13 @@ IntroBGM = YOUNGSTER
 [BURGLAR]
 Name = Burglar
 Gender = Male
-BaseMoney = 16
+BaseMoney = 32
+IntroBGM = POKEFAN
+#-------------------------------
+[THIEF]
+Name = Thief
+Gender = Female
+BaseMoney = 32
 IntroBGM = POKEFAN
 #-------------------------------
 [BUTLER]
