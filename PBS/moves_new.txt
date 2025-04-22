@@ -746,7 +746,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DisableTargetUsingOffTypeMove4
 Flags = CanProtect
-Description = Sets Bar on hit.
+Description = Pins the target with building materials. The target can't use off-type moves for three more turns.
 Animation = SMACKDOWN
 #-------------------------------
 [CONCUSS]

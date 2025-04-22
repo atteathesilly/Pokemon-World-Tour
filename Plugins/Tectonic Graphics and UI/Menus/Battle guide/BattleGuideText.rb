@@ -157,12 +157,12 @@ def battleGuideVolatileStatusesHash
         _INTL("Torment") => _INTL("When tormented, a Pokémon cannot use the same move twice in a row. If something prevents it from moving for a turn, it can choose the same move the following turn."),
         _INTL("Taunt") => _INTL("When taunted, a Pokémon is prevented from using status moves."),
         _INTL("Disable") => _INTL("When disabled, a Pokémon cannot use the move it last selected."),
+        _INTL("Bar") => _INTL("When barred, a Pokémon cannot use moves that don't share a type with themselves."),
         _INTL("Trapping") => _INTL("When trapped, a  Pokémon cannot switch out of battle. Includes manually switching, being forced out, or using a move like U-Turn."),
         _INTL("Substitute") => _INTL("A substitute blocks attacks and status effects. It has HP equal to the amount of HP it took to create it. Sound tag moves ignore substitute."),
         _INTL("Transformed") => _INTL("A transformed Pokémon becomes a copy of another. It gains their ability, moves, stats (except HP), and step boosts."),
         _INTL("Perish Song") => _INTL("A Pokémon affected by Perish Song will faint when the timer ends. Avatars will be damaged for half of an HP bar."),
         _INTL("Grounded") => _INTL("A grounded Pokémon loses their immunity to ground moves (from being Flying-type or having a Levitate ability)."),
-        _INTL("Bar") => _INTL("Pokémon on the field are unable to use moves that are not shared with their typing."),
     }
 end
 
