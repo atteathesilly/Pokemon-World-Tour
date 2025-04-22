@@ -162,6 +162,7 @@ def battleGuideVolatileStatusesHash
         _INTL("Transformed") => _INTL("A transformed Pokémon becomes a copy of another. It gains their ability, moves, stats (except HP), and step boosts."),
         _INTL("Perish Song") => _INTL("A Pokémon affected by Perish Song will faint when the timer ends. Avatars will be damaged for half of an HP bar."),
         _INTL("Grounded") => _INTL("A grounded Pokémon loses their immunity to ground moves (from being Flying-type or having a Levitate ability)."),
+        _INTL("Bar") => _INTL("Pokémon on the field are unable to use moves that are not shared with their typing."),
     }
 end
 
