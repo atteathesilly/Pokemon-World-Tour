@@ -2688,7 +2688,7 @@ Pokemon = GSLOWKING,70
     Moves = TOTALCONTROL,SLUDGEWAVE,EERIESPELL,SLACKOFF
     AbilityIndex = 1 # Exorcist
 Pokemon = SLOWKING,70
-    Moves = SELECTIVEMEMORY,SLACKOFF,YAWN
+    Moves = SELECTIVEMEMORY,SLACKOFF,YAWN,PSYCHIC
     AbilityIndex = 1 # Realist
 #-------------------------------
 [LEADER_Bence,Bence]
