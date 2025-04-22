@@ -2669,19 +2669,26 @@ Pokemon = ARCLAMOR,70
 [ROLLERSKATER_F,Attea]
 TrainerTypeLabel = DEVELOPER
 Pokemon = ORICORIO,70
-    Form = 2 # Pom Pom Style Form
+    Form = 1 # Pom-Pom Style Form
+    Moves = REVELATIONDANCE,AIRSLASH,PSYCHESWITCH,VOLTSWITCH
     AbilityIndex = 1 # Costume Change
 Pokemon = JIGGLYPUFF,70
     Name = Kirby
     Gender = male
+    Moves = PLAYROUGH,BODYSLAM,TRUMPCARD,PERISHSONG
     AbilityIndex = 0 # Staggering Slaps
+    Item = EVIOLITE
 Pokemon = LUDICOLO,70
+    Moves = GIGADRAIN,DREAMDANCE,HYPERVOICE,BUBBLEBLASTER
     AbilityIndex = 0 # Fiesta
 Pokemon = BELLOSSOM,70
+    Moves = SMOLDERRAVE,POLLENPUFF,HEARTHFIREHULA,MIASMA
     AbilityIndex = 1 # Choreography
 Pokemon = GSLOWKING,70
+    Moves = TOTALCONTROL,SLUDGEWAVE,EERIESPELL,SLACKOFF
     AbilityIndex = 1 # Exorcist
 Pokemon = SLOWKING,70
+    Moves = SELECTIVEMEMORY,SLACKOFF,YAWN
     AbilityIndex = 1 # Realist
 #-------------------------------
 [LEADER_Bence,Bence]
