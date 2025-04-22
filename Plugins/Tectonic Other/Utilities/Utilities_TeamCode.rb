@@ -61,11 +61,11 @@ def pokemon_to_indices(mon)
   species = species_data.id_number - 1 # Pokedex order corresponds to index order
   ability = mon.ability_index
   moves = mon.moves.map { |move| species_data.learnable_moves.find_index(move.id) }
-  moves.fill(-1, moves.length..4)
+  moves.fill(-1, moves.length..3)
   sp = mon.ev
   level = mon.level
   items = mon.items.map { |item| get_held_item_index(item.id) }
-  items.fill(-1, items.length..2)
+  items.fill(-1, items.length..1)
 
   indices = []
 
