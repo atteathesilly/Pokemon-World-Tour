@@ -3237,7 +3237,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartPolarizeTypeMatchups5
-Description = The user creates a high quality area in which super-effective deals 25% more, and not very effective deals 25% less.
+Description = The user creates a high quality area for 5 turns in which super-effective deals 25% more, and not very effective deals 25% less.
 Animation = WONDERROOM
 #-------------------------------
 [RAILCANNON]
@@ -5457,7 +5457,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapOffensiveAndDefensiveStats5
-Description = The user creates an odd area in which Pokémon's offensive and defensive stats are swapped.
+Description = The user creates an odd area for 5 turns in which Pokémon's offensive and defensive stats are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [OMNISCIENTBLOW]
@@ -7345,7 +7345,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapAttackingStats5
-Description = The user creates a puzzling area in which Pokémon's base Attack and Sp. Atk are swapped.
+Description = The user creates a puzzling area for 5 turns in which Pokémon's base Attack and Sp. Atk are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [SUGARBALL]
