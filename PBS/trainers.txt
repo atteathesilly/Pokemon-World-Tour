@@ -1704,7 +1704,7 @@ Pokemon = SLURPUFF,70
     AbilityIndex = 0 # Candy Veil
     Item = SITRUSBERRY
 Pokemon = BLISSEY,70
-    Moves = FOLLOWME,SWEETKISS,LIGHTSCREEN,LIFEDEW
+    Moves = ICYWIND,SWEETKISS,LIGHTSCREEN,LIFEDEW
     AbilityIndex = 0 # Serene Grace
     Item = ROCKYHELMET
 Pokemon = GASTRODON,70
@@ -2668,6 +2668,7 @@ Pokemon = ARCLAMOR,70
 #-------------------------------
 [ROLLERSKATER_F,Attea]
 TrainerTypeLabel = DEVELOPER
+Policies = ALLOW_RANDOM_MOVES
 Pokemon = ORICORIO,70
     Form = 1 # Pom-Pom Style Form
     Moves = REVELATIONDANCE,AIRSLASH,PSYCHESWITCH,VOLTSWITCH
@@ -2687,7 +2688,6 @@ Pokemon = BELLOSSOM,70
 Pokemon = GSLOWKING,70
     Moves = TOTALCONTROL,SLUDGEWAVE,EERIESPELL,SLACKOFF
     AbilityIndex = 1 # Exorcist
-Policies = ALLOW_RANDOM_MOVES
 Pokemon = SLOWKING,70
     Moves = SELECTIVEMEMORY,SLACKOFF,YAWN
     AbilityIndex = 1 # Realist
