@@ -47,15 +47,6 @@ FLAG_HAS_FORM_MASK = 0b1 << FLAG_HAS_FORM_SHIFT
 MIN_BYTES_PER_POKEMON = 12
 MAX_BYTES_PER_POKEMON = 16
 
-def get_move_index(symbol)
-  symbols = GameData::Move.keys.filter{ |key| !key.is_a?(Numeric) && key.is_a?(Symbol) }
-  index = symbols.find_index(symbol)
-  if index.nil? 
-    return -1 
-  end
-  return index
-end
-
 def get_held_item_index(symbol)
   symbols = GameData::Item.keys.filter{ |key| !key.is_a?(Numeric) && key.is_a?(Symbol) && GameData::Item.get(key).pocket == 5 }
   index = symbols.find_index(symbol)
@@ -66,9 +57,10 @@ def get_held_item_index(symbol)
 end
 
 def pokemon_to_indices(mon)
-  species = GameData::Species.get(mon.species).id_number - 1 # Pokedex order corresponds to index order
+  species_data = GameData::Species.get(mon.species)
+  species = species_data.id_number - 1 # Pokedex order corresponds to index order
   ability = mon.ability_index
-  moves = mon.moves.map { |move| get_move_index(move.id) }
+  moves = mon.moves.map { |move| species_data.learnable_moves.find_index(move.id) }
   moves.fill(-1, moves.length..4)
   sp = mon.ev
   level = mon.level
