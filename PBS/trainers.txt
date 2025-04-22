@@ -2675,7 +2675,7 @@ Pokemon = WISHIWASHI,70
     AbilityIndex = 0 # Schooling
     Item = LEFTOVERS
 Pokemon = ARCLAMOR,70
-    Moves = BROADCASTBLAST,HYPERVOICE,BELCH,METALSOUND
+    Moves = BROADCASTBLAST,HYPERVOICE,BELCH,NOBLEROAR
     AbilityIndex = 0 # Loud
     Item = LEPPABERRY
 #-------------------------------
