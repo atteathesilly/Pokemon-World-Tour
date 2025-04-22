@@ -150,19 +150,18 @@ end
 
 def battleGuideVolatileStatusesHash
     return {
-        _INTL("What are Volatile Statuses?") => _INTL("Volatile Status Conditions are similar to Status Conditions, except they will go away if you switch or get forced out."),
-        _INTL("Jinx") => _INTL("A jinxed Pokémon cannot Protect itself, and all attacks against it are guaranteed critical hits. Jinx wears off after 3 turns or if the affected Pokémon switches out."),
-        _INTL("Fractured") => _INTL("A fractured Pokémon deals 33% less damage with its moves. Fracture wears off after 3 turns or if the affected Pokémon switches out."),
-        _INTL("Curse") => _INTL("Curse is a status effect generally set by the move Cursed Oath. Your Pokémon loses 25% of its HP every turn. Lasts indefinitely"),
-        _INTL("Torment") => _INTL("You cannot use the same move twice in a row. If something prevents you from moving for a turn, you can choose the same move the following turn. Lasts indefinitely."),
-        _INTL("Disable") => _INTL("Your Pokémon cannot use the move it last selected. Duration dependent on ability."),
-        _INTL("Trapping") => _INTL("You cannot switch out of battle. Includes manually switching, being switched out, or using a move like U-Turn."),
-        _INTL("Substitute") => _INTL("Substitutes will block attacks, having HP equal to the amount of HP it took to create it. Sound tagged moves ignore substitute entirely."),
-        _INTL("Transformed") => _INTL("Turns into the targeted Pokémon. You gain their ability/abilities, moves, exact stats except HP, and step boosts."),
-        _INTL("Perish Song") => _INTL("Pokémon affected by Perish Song will faint when the timer ends at the end of the turn. Avatars will be damaged by 50% of one of their HP bars when affected by it."),
-        _INTL("Grounded") => _INTL("Flying and levitating Pokémon that are grounded will lose their immunity to ground moves."),
-        _INTL("Taunt") => _INTL("The Pokémon is prevented from using status moves for three more turns."),
-        _INTL("Other Volatiles") => _INTL("Young Again, Tar Shot, Thousand Waves, Nightmare, Ingrain, Laser Focus, Drowsy, Charge, Power of Alchemy, All Consuming, Stockpile, Curl Up, Throat Chop, Disarming Shot, Guard Split, Speed Swap, Power Trick, Encore."),
+        _INTL("What are Volatile Statuses?") => _INTL("Volatile Status Conditions are similar to Status Conditions, except they will go away if the Pokémon switches out."),
+        _INTL("Jinx") => _INTL("When jinxed, a Pokémon cannot Protect itself, and all attacks against it are guaranteed critical hits. Jinx wears off after 3 turns. Fairy-types do the most jinxing."),
+        _INTL("Fractured") => _INTL("When fractured, a Pokémon deals 33% less damage with its moves. Fracture wears off after 3 turns. Rock-types do the most fracturing."),
+        _INTL("Curse") => _INTL("When cursed, a Pokémon loses 25% of its HP every turn. Ghost-types do the most cursing."),
+        _INTL("Torment") => _INTL("When tormented, a Pokémon cannot use the same move twice in a row. If something prevents it from moving for a turn, it can choose the same move the following turn."),
+        _INTL("Taunt") => _INTL("When taunted, a Pokémon is prevented from using status moves."),
+        _INTL("Disable") => _INTL("When disabled, a Pokémon cannot use the move it last selected."),
+        _INTL("Trapping") => _INTL("When trapped, a  Pokémon cannot switch out of battle. Includes manually switching, being forced out, or using a move like U-Turn."),
+        _INTL("Substitute") => _INTL("A substitute blocks attacks and status effects. It has HP equal to the amount of HP it took to create it. Sound tag moves ignore substitute."),
+        _INTL("Transformed") => _INTL("A transformed Pokémon becomes a copy of another. It gains their ability, moves, stats (except HP), and step boosts."),
+        _INTL("Perish Song") => _INTL("A Pokémon affected by Perish Song will faint when the timer ends. Avatars will be damaged for half of an HP bar."),
+        _INTL("Grounded") => _INTL("A grounded Pokémon loses their immunity to ground moves (from being Flying-type or having a Levitate ability)."),
     }
 end
 
