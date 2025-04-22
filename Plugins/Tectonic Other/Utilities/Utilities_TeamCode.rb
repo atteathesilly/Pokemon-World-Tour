@@ -110,7 +110,7 @@ def encode_chunk(buffer, byte_offset, indices)
   first_u32 |= (indices[2] << MOVE1_SHIFT) & MOVE1_MASK
   first_u32 |= (indices[3] << MOVE2_SHIFT) & MOVE2_MASK
 
-  buffer.write([first_u32].pack('L'), byte_offset)
+  buffer.write([first_u32].pack('N'), byte_offset)
   byte_offset += 4
 
   # Second u32: Style points and level
@@ -121,7 +121,7 @@ def encode_chunk(buffer, byte_offset, indices)
   second_u32 |= (indices[8] << STYLE_SPEED_SHIFT) & STYLE_SPEED_MASK
   second_u32 |= (indices[9] << LEVEL_SHIFT) & LEVEL_MASK
   
-  buffer.write([second_u32].pack('L'), byte_offset)
+  buffer.write([second_u32].pack('N'), byte_offset)
   byte_offset += 4
 
   # TODO: Include optional data
@@ -139,7 +139,7 @@ def encode_chunk(buffer, byte_offset, indices)
   third_u32 |= (false ? 1 : 0) << FLAG_HAS_ITEM1_TYPE_SHIFT
   third_u32 |= (false ? 1 : 0) << FLAG_HAS_FORM_SHIFT
   
-  buffer.write([third_u32].pack('L'), byte_offset)
+  buffer.write([third_u32].pack('N'), byte_offset)
   byte_offset += 4
 
   # TODO: Write optional data
@@ -173,7 +173,7 @@ def encode_team(party)
   version_u16 |= (version_split[2].to_i & 0x1f) << VERSION_PATCH_SHIFT
   
   # Write version to buffer
-  buffer.write([version_u16].pack('S'))
+  buffer.write([version_u16].pack('n'))
   
   # Encode each Pokémon in the party
   byte_offset = 2
