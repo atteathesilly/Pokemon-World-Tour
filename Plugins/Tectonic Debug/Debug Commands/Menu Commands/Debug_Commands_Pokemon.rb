@@ -158,3 +158,18 @@ DebugMenuCommands.register("addpokemon", {
       pbMessage(_INTL("Pokémon in storage written to {1}",filename))
     }
   })
+
+  DebugMenuCommands.register("exportcode", {
+    "parent"      => "pokemonmenu",
+    "name"        => _INTL("Export Current Team to Code"),
+    "description" => _INTL("Create a shareable team code for the current party."),
+    "effect"      => proc {
+      mon_indices = $Trainer.party.map { |mon| pokemon_to_indices(mon) }
+      text = encode_team(mon_indices)
+      filename = "Analysis/Team_#{$Trainer.name}.txt"
+      File.open(filename,"wb") { |file|
+        file.write(text)
+      }
+      pbMessage(_INTL("Pokémon team code written to {1}",filename))
+    }
+  })
