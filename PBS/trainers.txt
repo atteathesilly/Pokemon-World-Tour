@@ -2654,17 +2654,30 @@ Pokemon = MPOLTEAGEIST,70
 [HEXMANIAC,Riptide]
 TrainerTypeLabel = DEVELOPER
 Pokemon = HELECTRODE,70
+    Moves = EXPLOSION,PROTECT
     AbilityIndex = 0 # Perennial Payload
-Pokemon = PORYGONMAV,70
-    AbilityIndex = 1 # Swordplay
-Pokemon = KABUTOPS,70
-    AbilityIndex = 0 # Super Luck
+    Item = NORMALGEM
+Pokemon = AMUK,70
+    Moves = POISONJAB,WETWORK,EXPLOSION,PROTECT
+    AbilityIndex = 0 # Power of Alchemy
+    Item = CRYSTALVEIL
+    ItemType = GHOST
+Pokemon = MARACTUS,70
+    Moves = THORNRATTLE,SHOREUP,LEECHSEED,SPIKYSHIELD
+    AbilityIndex = 0 # Grit
+    Item = SITRUSBERRY
 Pokemon = MNINETALES,70
-    AbilityIndex = 0 # Gild
+    Moves = SHADOWBALL,FLASHCANNON,STEELBEAM,PULVERIZERCHORD
+    AbilityIndex = 1 # Luxury Taste
+    Item = ASSAULTVEST
 Pokemon = WISHIWASHI,70
+    Moves = EBBFLOW,DEPTHCHARGE,PROTECT,WATERLOG
     AbilityIndex = 0 # Schooling
+    Item = LEFTOVERS
 Pokemon = ARCLAMOR,70
-    AbilityIndex = 1 # Thunderstruck
+    Moves = BROADCASTBLAST,HYPERVOICE,BELCH,METALSOUND
+    AbilityIndex = 0 # Loud
+    Item = LEPPABERRY
 #-------------------------------
 [ROLLERSKATER_F,Attea]
 TrainerTypeLabel = DEVELOPER
