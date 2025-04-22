@@ -1445,7 +1445,7 @@ Pokemon = CHERRIM,29
     Moves = LEECHSEED,GROWTH,BLOSSOM,INCINERATE
     AbilityIndex = 1 # Introvert
 Pokemon = FLOATZEL,27
-    Moves = FLIPTURN,DOUBLEHIT,FAKEOUT,AQUAJET
+    Moves = FLIPTURN,HEADBUTT,FAKEOUT,AQUAJET
     AbilityIndex = 1 # Technician
 #-------------------------------
 [AROMALADY,Cheshire]
@@ -4547,7 +4547,7 @@ Pokemon = CRADILY,55
 #-------------------------------
 [SWIMMER_M3,Diego]
 Pokemon = FLOATZEL,56
-    Moves = FAKEOUT,HYPERJET,STORMTHROW,DOUBLEDOWN
+    Moves = FAKEOUT,HYPERJET,STORMTHROW,MEGAPUNCH
     AbilityIndex = 1 # Technician
     Item = EJECTBUTTON
 Pokemon = CACTURNE,56
@@ -5013,7 +5013,7 @@ Pokemon = PHIONE,55
     AbilityIndex = 1 # Overflowing Heart
     Item = SALACBERRY
 Pokemon = GIGANTEON,55
-    Moves = DOUBLEDOWN,QUICKATTACK,RECOVER,FACADE
+    Moves = MEGAPUNCH,QUICKATTACK,RECOVER,FACADE
     AbilityIndex = 0 # Ultra Adapted
 #-------------------------------
 [MASKEDVILLAIN,Crimson,9]
@@ -5242,7 +5242,7 @@ Pokemon = PHIONE,65
     AbilityIndex = 1 # Overflowing Heart
     Item = SALACBERRY
 Pokemon = GIGANTEON,65
-    Moves = DOUBLEDOWN,QUICKATTACK,RECOVER,FACADE
+    Moves = MEGAPUNCH,QUICKATTACK,RECOVER,FACADE
     AbilityIndex = 0 # Ultra Adapted
 #-------------------------------
 [MASKEDVILLAIN2,Teal,9]
