@@ -156,8 +156,8 @@ class PokeBattle_Move
         user.eachAbilityShouldApply(aiCheck) do |ability|
             BattleHandlers.triggerAccuracyCalcUserAbility(ability, modifiers, user, target, self, typeToUse)
         end
-        user.eachAlly do |b|
-            b.eachAbilityShouldApply(aiCheck) do |ability|
+        user.eachAlly do |ally|
+            ally.eachAbilityShouldApply(aiCheck) do |ability|
                 BattleHandlers.triggerAccuracyCalcUserAllyAbility(ability, modifiers, user, target, self, typeToUse)
             end
         end
@@ -235,17 +235,6 @@ class PokeBattle_Move
                     forced = true
                     break
                 end
-            end
-
-            # Tactician tribe prevents random crits
-            if target.hasTribeBonus?(:TACTICIAN)
-                unless checkingForAI
-                    battle.pbShowTribeSplash(target, :TACTICIAN)
-                    battle.pbDisplay(_INTL("{1} prevents the hit from being critical!", target.pbThis))
-                    battle.pbHideTribeSplash(target)
-                end
-                crit = false
-                forced = true
             end
         end
 
@@ -369,11 +358,18 @@ showMessages)
         return 100 if !user.pbOwnedByPlayer? && @battle.curseActive?(:CURSE_PERFECT_LUCK)
         ret = effectChance > 0 ? effectChance : @effectChance
         return 100 if ret >= 100 || debugControl
-        ret += 20 if user.hasTribeBonus?(:FORTUNE)
+        ret += 30 if user.hasTribeBonus?(:FORTUNE)
 
         # User's abilities modify effect chance
         user.eachAbilityShouldApply(aiCheck) do |ability|
             ret = BattleHandlers.triggerAddedEffectChanceModifierUserAbility(ability, user, target, self, ret)
+        end
+
+        # User's ally's abilities modify effect chance
+        user.eachAlly do |ally|
+            ally.eachActiveAbility do |ability|
+                ret = BattleHandlers.triggerAddedEffectChanceModifierUserAllyAbility(ability, user, target, self, ret)
+            end
         end
 
         # Target's abilities modify effect chance

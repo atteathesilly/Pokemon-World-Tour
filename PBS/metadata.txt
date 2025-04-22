@@ -20,7 +20,6 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [002]
-# Sandstone System
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -222,6 +221,13 @@ Bicycle = true
 BicycleAlways = false
 BattleBack = cave1
 Environment = Cave
+#-------------------------------
+[027]
+# The Catacombs B4
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = distortion
 #-------------------------------
 [028]
 # Professor's House
@@ -1388,7 +1394,7 @@ Bicycle = false
 Outdoor = false
 ShowArea = false
 Bicycle = false
-HealingSpot = 187,67,30
+HealingSpot = 187,63,30
 #-------------------------------
 [192]
 # Field of Spires
@@ -2419,7 +2425,7 @@ HealingSpot = 315,28,31
 # Underpeak Escape B1
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [340]
 # Illuminant Helix
@@ -2433,7 +2439,7 @@ BattleBack = wcave
 # Underpeak Escape B2
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [342]
 # Carnation Tower F1

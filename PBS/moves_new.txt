@@ -135,7 +135,7 @@ TotalPP = 3
 Target = User
 FunctionCode = RaiseUserDefSpDef2CurlsUp
 Flags = CanSnatch
-Description = The user curls up to conceal weak spots and raise both of its defensive stats by two steps.
+Description = The user curls up to conceal weak spots and raise both of its Defense and Sp. Def by two steps.
 Animation = DEFENSECURL
 #-------------------------------
 [DAZZLE]
@@ -175,18 +175,6 @@ FunctionCode = RemoveRoomsIncidental
 Flags = CanProtect
 Description = An unusual shockwave that breaks down all active Rooms.
 Animation = SUPERSONIC
-#-------------------------------
-[DOUBLEDOWN]
-Name = Double Down
-Type = NORMAL
-Category = Physical
-Power = 45
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = HitTwoTimes
-Flags = CanProtect
-Description = The user punches the target twice in quick succession.
 #-------------------------------
 [ELEMENTALFANG]
 Name = Elemental Fang
@@ -251,18 +239,6 @@ Flags = CanProtect,Biting
 Description = Channeling fear, the user bites the target. Deals double damage if the user is below half health.
 Animation = HYPERFANG
 #-------------------------------
-[FRESHSTART]
-Name = Fresh Start
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = NearOther
-FunctionCode = HealUserFullHPFailsIfNotUserFirstTurn
-Flags = CanSnatch
-Description = The user reinvigorates itself, healing to full. Only works the first turn the user is in battle.
-Animation = RECOVER
-#-------------------------------
 [GREATERGLORIES]
 Name = Greater Glories
 Type = NORMAL
@@ -295,7 +271,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = NumbTargetLowerTargetAtkSpAtk1
 Flags = CanProtect,CanMagicCoat
-Description = The user's eyes glow with divine judgement, numbing the target and reducing both its attacking stats.
+Description = The user's eyes glow with divine judgement, numbing the target and reducing both its Attack and Sp. Atk.
 Animation = GLARE
 #-------------------------------
 [HONESIGHT]
@@ -307,7 +283,7 @@ TotalPP = 12
 Target = User
 FunctionCode = RaiseUserSpAtkAcc3
 Flags = CanSnatch
-Description = The user focuses its aim to raise its Sp. Atk and Accuracy by three steps each.
+Description = The user focuses its aim to raise its Sp. Atk and Accuracy by three steps.
 Animation = LASERFOCUS
 #-------------------------------
 [LATHER]
@@ -436,7 +412,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetSpAtkSpDef2
 Flags = CanProtect,CanMagicCoat
-Description = The user pranks the target, surprising it and reducing its Sp. Atk and Sp. Def by two steps each.
+Description = The user pranks the target, surprising it and reducing its Sp. Atk and Sp. Def by two steps.
 Animation = SCARYFACE
 #-------------------------------
 [PRISMATICPOWER]
@@ -669,7 +645,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserAtkDef2CriticalHitRate1
 Flags = CanSnatch
-Description = The user doubles its critical strike chance and raises its Attack and Defense by two steps each.
+Description = Enables random critical hits for the user, doubles its critical hit chance, and raises its Attack and Defense by two steps.
 Animation = FOCUSENERGY
 #-------------------------------
 [AURAFLUX]
@@ -681,9 +657,9 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
-Flags = CanProtect
+Flags = CanProtect,Pulse
 EffectChance = 100
-Description = The user contorts the target's chi with a special technique, lowering its Sp. Def.
+Description = The user contorts the target's chi with an energy pulse, damaging it and lowering its Sp. Def.
 Animation = AURASPHERE
 #-------------------------------
 [BAR]
@@ -719,7 +695,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserWorstStat4SecondWorstStat2
 Flags = CanSnatch,Dance
-Description = The user improvises a dance, raising its two weakest stats by three steps each.
+Description = The user improvises a dance, raising its two weakest stats by three steps.
 Animation = WORKUP
 #-------------------------------
 [BUILTDIFFERENT]
@@ -731,7 +707,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserAtkDef2SetUserTypesToRock
 Flags = CanSnatch
-Description = The user flexes its rocky skin, raising its Attack and Defense by two steps each and gaining the Rock type.
+Description = The user flexes its rocky skin, raising its Attack and Defense by two steps and gaining the Rock type.
 Animation = BULKUP
 #-------------------------------
 [BULWARK]
@@ -759,6 +735,19 @@ Flags = CanProtect,Dance
 EffectChance = 100
 Description = Combining dance and martial art, the user strikes the target and raises its Speed by two steps.
 Animation = RAPIDSPIN
+#-------------------------------
+[COLUMNARPIN]
+Name = Columnar Pin
+Type = FIGHTING
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DisableTargetUsingOffTypeMove4
+Flags = CanProtect
+Description = Pins the target with building materials. The target can't use off-type moves for three more turns.
+Animation = SMACKDOWN
 #-------------------------------
 [CONCUSS]
 Name = Concuss
@@ -872,7 +861,7 @@ Target = NearOther
 FunctionCode = RapidSpin
 Flags = CanProtect,Kicking
 EffectChance = 100
-Description = A kick that can also eliminate trapping and hazard moves. Also raises user's Speed.
+Description = A kick that can also eliminate trapping and hazards afflicting your side. Also raises user's Speed.
 #-------------------------------
 [SCUFFLE]
 Name = Scuffle
@@ -960,7 +949,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RampageAlwaysCriticalHit
 Flags = CanProtect
-Description = The user relentlessly rampages with its whip-like hands for three turns. Each hit will always be critical.
+Description = The user relentlessly rampages with its whip-like hands for three turns. Each hit will always be a critical hit.
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
@@ -974,7 +963,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect
-Description = A reckless charge attack from the air. It also damages the user by 25% of the damage dealt.
+Description = A reckless charge attack from the air. The user also takes 25% recoil.
 Animation = BRAVEBIRD
 #-------------------------------
 [BLUSTER]
@@ -1054,7 +1043,7 @@ TotalPP = 12
 Target = AllNearFoes
 FunctionCode = CantMissLowerTargetDefSpDefEvasion3
 Flags = CanMagicCoat,Sound
-Description = A high pitched screech lowers the target's Defense, Sp. Def, and Evasion by three steps each. Can't miss and skips protections.
+Description = A high pitched screech lowers the target's Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
 Animation = SUPERSONIC
 #-------------------------------
 [FURYPECKS]
@@ -1209,7 +1198,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserDefSpDef2
 Flags = CanProtect
-Description = The user and target bathe in acid. Lowers the user's Defense and Sp. Def by two steps each.
+Description = The user and target bathe in acid. Lowers the user's Defense and Sp. Def by two steps.
 Animation = ACIDDOWNPOUR
 #-------------------------------
 [BLIGHT]
@@ -1246,7 +1235,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = TwoTurnAttackRechargeSkippedIfTargetLeaves
-Flags = CanProtect,Bite,Uninvocable
+Flags = CanProtect,Biting,Uninvocable
 Description = Grips the target with its entire mouth. The user can't attack next turn unless the target faints or switches out.
 #-------------------------------
 [DISSOLUTION]
@@ -1348,7 +1337,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = Poison
-Flags = CanProtect,Bite
+Flags = CanProtect
 EffectChance = 10
 Description = The user stabs the opponent with a toxin-infused limb. It has a 10% chance to poison.
 Animation = POISONJAB
@@ -1359,7 +1348,7 @@ Type = POISON
 Category = Special
 Power = 40
 Accuracy = 100
-TotalPP = 25
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
@@ -1651,7 +1640,6 @@ TotalPP = 10
 Target = AllNearFoes
 FunctionCode = Basic
 Flags = CanProtect,Sound
-EffectChance = 30
 Description = The user hits a pitch that turns earth and stone to dust, damaging its foes.
 Animation = SCORCHINGSANDS
 #-------------------------------
@@ -1730,7 +1718,7 @@ TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHPExtendWeather1
 Flags = CanSnatch
-Description = The user slathers mud around to heal itself for 1/2 of its max HP, and extends any active screens by 1 turn.
+Description = The user slathers mud around to heal itself for half of their max HP, and extends any active screens by one turn.
 Animation = MUDSPORT
 #-------------------------------
 [STAMPDOWN]
@@ -1974,7 +1962,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = Icebreaker
 Flags = CanProtect
-Description = The user sweeps away hazards while charging. User also takes 33% recoil.
+Description = The user sweeps away hazards afflicting your side while charging. User also takes 33% recoil.
 Animation = HEADSMASH
 #-------------------------------
 [INVITESAND]
@@ -2235,7 +2223,7 @@ Type = BUG
 Category = Special
 Power = 40
 Accuracy = 100
-TotalPP = 25
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
@@ -2330,7 +2318,7 @@ Accuracy = 0
 TotalPP = 12
 Target = NearAlly
 FunctionCode = RaiseTargetWorstThreeStats1
-Description = The user raises all of the target's attacking and defensive stats.
+Description = The user raises all of the target's attacking and Defense and Sp. Def.
 Animation = AROMATICMIST
 #-------------------------------
 [IRRITATE]
@@ -2435,7 +2423,7 @@ Accuracy = 0
 TotalPP = 12
 Target = User
 FunctionCode = Trade6SpdForAtk
-Flags = CanSnatch
+Flags = CanSnatch,Blade
 Description = The user prepares its weapons, raising Attack by six steps but lowering Speed by six steps.
 Animation = SWORDSDANCE
 #-------------------------------
@@ -2566,7 +2554,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect
-Description = The user leeches the target's life. The user's HP is restored by 50% the damage dealt.
+Description = The user sucks the target's life. The user's HP is restored by 50% the damage dealt.
 Animation = LEECHLIFE
 #-------------------------------
 [SWARMBURST]
@@ -2616,7 +2604,7 @@ TotalPP = 10
 Target = User
 FunctionCode = RaiseUserSpAtk2Spd2
 Flags = CanSnatch
-Description = The user amps itself up for performance, raising its Sp. Atk and Speed by two steps each.
+Description = The user amps itself up for performance, raising its Sp. Atk and Speed by two steps.
 Animation = CALMMIND
 #-------------------------------
 #		GHOST MOVES
@@ -2644,7 +2632,7 @@ Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk2IfInHail
 Flags = CanProtect
 EffectChance = 100
-Description = The user attacks with bitter emotion. This lowers the target's attacking stats by two steps if in hail.
+Description = The user attacks with bitter emotion. This lowers the target's Attack and Sp. Atk by two steps if in hail.
 Animation = PHANTOMFORCE
 #-------------------------------
 [CRITICALERROR]
@@ -2694,7 +2682,6 @@ TotalPP = 15
 Target = AllNearOthers
 FunctionCode = Basic
 Flags = CanProtect,Sound
-EffectChance = 20
 Description = The user makes a dreadful bell noise, harming all near battlers with visions of impending doom.
 Animation = SCREECH
 #-------------------------------
@@ -3086,7 +3073,7 @@ Target = NearOther
 FunctionCode = CategoryDependsOnHigherDamageRaisesUserOtherAttackingStat
 Flags = CanProtect,Punch
 EffectChance = 100
-Description = Inflicts physical or special damage, whichever deals more. Then, raises the attacking stat which wasn't used.
+Description = Inflicts physical or special damage, whichever deals more. Then, raises Attack or Sp. Atk, whichever wasn't used.
 #-------------------------------
 [FARADAYCAGE]
 Name = Faraday Cage
@@ -3123,7 +3110,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user uses explosive force to shoot shards of its own body at the target. The user loses a tenth of its max HP.
+Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [HAIRCURL]
@@ -3239,7 +3226,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = IfFaintsTargetAddTonsOfMoneyGainedFromBattle
-Flags = CanProtect
+Flags = CanProtect,Blade
 Description = The user attacks the target with a sword. If it faints, tons of money is earned after the battle.
 #-------------------------------
 [POLARIZEDROOM]
@@ -3353,7 +3340,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shoots shards of its own body at the target. The user loses a tenth of its max HP.
+Description = The user shoots shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SHREDSHOT]
@@ -3367,7 +3354,7 @@ Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
 EffectChance = 100
-Description = The user shreds off bits of its own body to launch at the target. The user loses a tenth of its max HP.
+Description = The user shreds off bits of its own body to launch at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
 [SLAG]
@@ -3406,7 +3393,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHPExtendWeather1
 Flags = CanSnatch
-Description = The user heals itself for 1/2 of its max HP, and extends the current weather by 1 turn.
+Description = The user heals itself for half of their max HP, and extends the current weather by one turn.
 Animation = RECOVER
 #-------------------------------
 [VANGUARD]
@@ -3418,7 +3405,7 @@ TotalPP = 6
 Target = User
 FunctionCode = RaiseUserSpAtkDef2
 Flags = CanSnatch
-Description = The user enters a protective stance, raising its Sp. Atk and Defense by two steps each.
+Description = The user enters a protective stance, raising its Sp. Atk and Defense by two steps.
 #-------------------------------
 [VOLLEYSTANCE]
 Name = Volley Stance
@@ -3607,7 +3594,7 @@ Type = FIRE
 Category = Special
 Power = 40
 Accuracy = 100
-TotalPP = 25
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
@@ -3789,11 +3776,11 @@ Name = Store Fuel
 Type = FIRE
 Category = Status
 Accuracy = 0
-TotalPP = 15
+TotalPP = 6
 Target = User
 FunctionCode = RaiseUserSpAtkSpDefAcc2
 Flags = CanSnatch
-Description = The user conserves for future attacks. This raises its Sp. Atk, Sp. Def, and Accuracy by two steps each.
+Description = The user conserves for future attacks. This raises its Sp. Atk, Sp. Def, and Accuracy by two steps.
 #-------------------------------
 [TARVOLLEY]
 Name = Tar Volley
@@ -3832,7 +3819,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DestroysClothing
 Flags = CanProtect
-Description = The user surrounds the target with fire which also destroys any 'clothing' items it's holding.
+Description = The user surrounds the target with fire which also destroys any clothing items it's holding.
 Animation = INCINERATE
 #-------------------------------
 [VAINGLORYFLAMES]
@@ -3869,7 +3856,7 @@ TotalPP = 10
 Target = AllNearOthers
 FunctionCode = RemovesHazardsBothSides
 Flags = CanProtect
-Description = The user creates a storm using its flaming body, damaging everything around it and melting away hazards in both sides.
+Description = The user creates a storm using its flaming body, damaging everything around it and melting away hazards from both sides.
 Animation = INFERNOOVERDRIVE
 #-------------------------------
 #		WATER MOVES
@@ -3988,7 +3975,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = HealUserThirdOfTotalHPDamagingMove
 Flags = CanProtect
-Description = The user douses the target, healing itself by a third of its maximum HP in the process.
+Description = The user douses the target, healing itself by a third of its max HP in the process.
 Animation = BRINE
 #-------------------------------
 [ERODINGFOAM]
@@ -4014,7 +4001,7 @@ TotalPP = 6
 Target = User
 FunctionCode = RaiseUserAtkSpDef
 Flags = CanSnatch
-Description = The user gains an instinctual knowledge of battle, raising its Attack and Sp. Def by two steps each.
+Description = The user gains an instinctual knowledge of battle, raising its Attack and Sp. Def by two steps.
 #-------------------------------
 [FUGUFRENZY]
 Name = Fugu Frenzy
@@ -4039,7 +4026,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserSpAtkSpDef2
 Flags = CanProtect
-Description = The user propels a geyser of water at the target. Lowers the user's Sp. Atk and Sp. Def by two steps each.
+Description = The user propels a geyser of water at the target. Lowers the user's Sp. Atk and Sp. Def by two steps.
 Animation = WATERSPOUT
 #-------------------------------
 [HARBORBREAKER]
@@ -4368,7 +4355,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = LowerUserDefSpDef2
 Flags = CanProtect
-Description = The user sheds its leaves to attack. This lowers the user's defensive stats by two steps each.
+Description = The user sheds its leaves to attack. This lowers the user's Defense and Sp. Def by two steps.
 Animation = LEAFTORNADO
 #-------------------------------
 [BLADESOFGRASS]
@@ -4512,7 +4499,7 @@ TotalPP = 5
 Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesSpecialDamage
-Flags = CanProtect,Uninvocable
+Flags = CanProtect,Uninvocable,Blade
 Description = The user hides its blade. If it is hit by a special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
@@ -4678,7 +4665,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = LeechTargetLowerTargetAtkSpAtk1
 Flags = CanProtect,CanMagicCoat
-Description = A parasitic seed leeches the target and reduces both its attacking stats.
+Description = A parasitic seed leeches the target and reduces both its Attack and Sp. Atk.
 Animation = LEECHSEED
 #-------------------------------
 [SHARINGSMILES]
@@ -4802,7 +4789,7 @@ Type = ELECTRIC
 Category = Physical
 Power = 40
 Accuracy = 100
-TotalPP = 12
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = ReverseTargetHealingThisTurn
@@ -4990,7 +4977,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpAtk2Spd1
 Flags = CanSnatch,Dance
-Description = The user dances with the speed of lightning, raising its Sp. Atk by two steps and Speed by 1.
+Description = The user dances with the speed of lightning, raising its Sp. Atk by two steps and Speed by one.
 #-------------------------------
 [LIGHTNINGSLAM]
 Name = Lightning Slam
@@ -5219,7 +5206,7 @@ TotalPP = 30
 Target = User
 FunctionCode = RaiseUserAtkSpAtk4
 Flags = CanSnatch
-Description = The user meditates, raising both its Attack and Sp. Atk stats by four steps each.
+Description = The user meditates, raising both its Attack and Sp. Atk stats by four steps.
 Animation = MEDITATE
 #-------------------------------
 [BLINDSIDE]
@@ -5248,13 +5235,27 @@ EffectChance = 30
 Description = The user slows the target's mind with a psychically infused blow. This has a 30% chance to frostbite.
 Animation = ICEPUNCH
 #-------------------------------
+[CENSOR]
+Name = Censor
+Type = PSYCHIC
+Category = Physical
+Power = 100
+Accuracy = 50
+TotalPP = 5
+Target = NearOther
+FunctionCode = DisableTargetLastMoveUsed
+Flags = CanProtect,CanMagicCoat,Blade
+EffectChance = 100
+Description = Splits off a section of the target's psyche. Disables their last used move for 5 turns.
+Animation = PSYCHOCUT
+#-------------------------------
 [CORECOLLAPSE]
 Name = Core Collapse
 Type = PSYCHIC
 Category = Special
 Power = 100
 Accuracy = 100
-TotalPP = 10
+TotalPP = 5
 Target = AllNearOthers
 Priority = 1
 FunctionCode = RecoilHalfOfDamageDealt
@@ -5521,6 +5522,19 @@ Flags = CanProtect
 Description = Psychic energy assaults the foe and darkens the sky, summoning eclipse for 8 turns.
 Animation = DARKVOID
 #-------------------------------
+[PSYCHESWITCH]
+Name = Psyche Switch
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect
+Description = After making its attack to the targets psyche, the user teleports back to switch places with a party Pokémon.
+Animation = ZENHEADBUTT
+#-------------------------------
 [PSYCHICOVERLOAD]
 Name = Psychic Overload
 Type = PSYCHIC
@@ -5596,7 +5610,6 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
-EffectChance = 10
 Description = The target is scrutinized, damaging their psyche. Can random critical hit.
 Animation = CONFUSION
 #-------------------------------
@@ -5724,7 +5737,7 @@ TotalPP = 10
 Target = BothSides
 FunctionCode = StartGreyMist5StartHail5
 Flags = CanMagicCoat
-Description = The user covers the field with an fog of ice crystals, summoning hail and creating grey mist for 5 turns.
+Description = The user covers the field with an fog of ice crystals, summoning hail and creating Grey Mist for 5 turns.
 Animation = HAIL
 #-------------------------------
 [FRIGIDFLURRY]
@@ -5842,7 +5855,7 @@ Target = NearOther
 FunctionCode = MinTargetSpdEvasion
 Flags = CanProtect
 EffectChance = 100
-Description = The user freezes the target in place, dealing damage and minimizing their Speed and evasiveness.
+Description = The user freezes the target in place, dealing damage and minimizing their Speed and Evasion.
 Animation = ICEBEAM
 #-------------------------------
 [HYPOTHERMIATE]
@@ -6042,7 +6055,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = FrostSpikes
 Flags = CanProtect,Sound
-Description = The user incants a snowy curse, dealing damage and setting a layer of frost spikes around the target.
+Description = The user incants a snowy hex, dealing damage and setting a layer of frost spikes around the target.
 Animation = PERISHSONG
 #-------------------------------
 [SUBLIMATE]
@@ -6061,7 +6074,7 @@ Animation = ICEBEAM
 [SUPERCOOL]
 Name = Supercool
 Type = ICE
-Category = Special
+Category = Physical
 Power = 100
 Accuracy = 50
 TotalPP = 5
@@ -6069,7 +6082,7 @@ Target = NearOther
 FunctionCode = Frostbite
 Flags = CanProtect
 EffectChance = 100
-Description = The user overwhelmes the target with a frigid ray, frostbiting it.
+Description = The user saps all the target's heat with a frigid touch, frostbiting it.
 #-------------------------------
 [THERMALDRAIN]
 Name = Thermal Drain
@@ -6191,7 +6204,7 @@ Type = DRAGON
 Category = Special
 Power = 40
 Accuracy = 100
-TotalPP = 25
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
@@ -6298,7 +6311,7 @@ Target = NearOther
 FunctionCode = LowerTargetHighestStat1
 Flags = CanProtect
 EffectChance = 20
-Description = The shine from scales damages the target. 20% chance to reduce their higher attacking stat.
+Description = The shine from scales damages the target. This has a 20% chance to reduce the higher of the target's Attack or Sp. Atk.
 Animation = DAZZLINGGLEAM
 #-------------------------------
 [SCOUR]
@@ -6335,7 +6348,7 @@ Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = TwoTurnChangeUserAmpharosForm
-Description = A two-turn move. The user channels insane amounts of energy the first turn, then transforms.
+Description = The user channels insane amounts of energy the first turn, then transforms on the second turn.
 Animation = DAZZLINGGLEAM
 #-------------------------------
 [TRIPLETHREAT]
@@ -6414,7 +6427,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseTargetAtkSpAtk3TargetHitsSelfAdaptive
 Flags = CanProtect,CanMagicCoat
-Description = The user insults the target using a compliment. Their attacking stats are raised by three steps, but they hurt themselves in confusion.
+Description = The user insults the target using a compliment. Their Attack and Sp. Atk are raised by three steps, but they hurt themselves in confusion.
 Animation = FLATTER
 #-------------------------------
 [BLACKHOLE]
@@ -6454,6 +6467,18 @@ FunctionCode = Bully
 Flags = CanProtect
 Description = This attack deals 50% more damage if the target has any raised or lowered stat steps.
 Animation = PUNISHMENT
+#-------------------------------
+[CALLOFTHEVOID]
+Name = Call of the Void
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+FunctionCode = SleepTargetNextTurn
+Flags = CanProtect,CanMagicCoat
+Description = All near foes are dragged into a world of total darkness that makes them drowsy. Only one use per battle.
+Animation = DARKVOID
 #-------------------------------
 [CALTROPARTS]
 Name = Caltrop Arts
@@ -6530,7 +6555,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHPRaiseDefSpDefCriticalHitRate1
 Flags = CanSnatch
-Description = The user restores 1/2 of their HP and raises their Defense, Sp. Def, and critical hit chance by two steps each.
+Description = The user restores half of their max HP and raises their Defense, Sp. Def, and critical hit chance by two steps.
 Animation = COSMICPOWER
 #-------------------------------
 [DROWN]
@@ -6581,7 +6606,7 @@ Target = NearOther
 FunctionCode = RaiseUserAtkSpAtk1
 Flags = CanProtect
 EffectChance = 100
-Description = The user indulges its love of battle by striking a foe. Both of the user's attacking stats are raised.
+Description = The user indulges its love of battle by striking a foe. Both of the user's Attack and Sp. Atk are raised.
 #-------------------------------
 [GLOAT]
 Name = Gloat
@@ -6893,7 +6918,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserDependingOnMoonglow
 Flags = CanSnatch
-Description = The user restores 1/2 of its HP, or 2/3rds in moonglow.
+Description = The user restores half of their max HP, or 66% in moonglow.
 Animation = REST
 #-------------------------------
 [TEASE]
@@ -6920,7 +6945,7 @@ Target = NearOther
 Priority = 4
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect
-Description = The user transforms into a cloud of vermin, evading all attacks on the first turn. On the second turn it ambushes the target.
+Description = The user transforms into a cloud of vermin, becoming invulnerable to attacks on the first turn. On the second turn it ambushes the target.
 Animation = FLY
 #-------------------------------
 [WETWORK]
@@ -7113,7 +7138,7 @@ Type = FAIRY
 Category = Special
 Power = 40
 Accuracy = 100
-TotalPP = 25
+TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
@@ -7219,7 +7244,7 @@ TotalPP = 15
 Target = User
 FunctionCode = RaiseUserSpAtkSpDef2CriticalHitRate1
 Flags = CanSnatch
-Description = The user doubles its critical strike chance and raises its Sp. Atk and Sp. Def by two steps each.
+Description = Enables random critical hits for the user, doubles its critical hit chance, and raises its Sp. Atk and Sp. Def by two steps.
 Animation = FOCUSENERGY
 #-------------------------------
 [MISADVENTURE]
@@ -7386,7 +7411,7 @@ Target = NearOther
 FunctionCode = JinxTarget
 Flags = CanProtect,CanMagicCoat
 EffectChance = 100
-Description = The user invokes the target's true name as a fae curse, jinxing them.
+Description = The user uses fae magic to invoke the target's true name, jinxing them.
 Animation = MEANLOOK
 #-------------------------------
 [WARDPRESS]

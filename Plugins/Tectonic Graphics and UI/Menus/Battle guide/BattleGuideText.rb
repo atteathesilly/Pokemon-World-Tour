@@ -9,6 +9,7 @@ def battleGuideMainDirectory
         _INTL("Abilities")         => [_INTL("How do abilities work?"),:battleGuideAbilitiesHash],
         _INTL("Held Items")        => [_INTL("What are held items and how to use them?"),:battleGuideHeldItemsHash],
         _INTL("Status Conditions") => [_INTL("What are the Conditions a Pokémon can be afflicted with?"),:battleGuideStatusConditionsHash],
+        _INTL("Volatile Statuses") => [_INTL("What are the Volatile Statuses a Pokémon can be afflicted with?"),:battleGuideVolatileStatusesHash],
         _INTL("Critical Hits")     => [_INTL("What are critical hits and when do they happen?"),:battleGuideCriticalHitsHash],
         _INTL("Trainers")          => [_INTL("How do enemy Trainers work?"),:battleGuideTrainersHash],
         _INTL("Avatars")           => [_INTL("What are avatars and what do they do?"),:battleGuideAvatarsHash],
@@ -73,7 +74,7 @@ def battleGuideTypeChartHash
         _INTL("Psychic vs Steel") => _INTL("Psychic is now Super-Effective vs Steel. Think of magicians bending spoons."),
         _INTL("Poison vs Water") => _INTL("Poison is now Super-Effective vs Water. Think of chemicals polluting a river."),
         _INTL("Bug vs Fairy") => _INTL("Bug is now Super-Effective vs Fairy. Think of insects scaring children."),
-        _INTL("Grass resistances") => _INTL("Grass now resists Fairy, Psychic, and Ghost. Think of incense warding off magic."),
+        _INTL("Grass resistances") => _INTL("Grass now resists Fairy and Ghost. Think of incense warding off magic."),
         _INTL("Ice resistances") => _INTL("Ice now resists Flying and Ground. Ice is Super-Effective against those types, so it's only natural!"),
         _INTL("Other changes") => _INTL("Rock resists Ice. Fairy resists Dragon. Fairy is neutral against Fire. Bug resists Psychic."),
     }
@@ -147,12 +148,30 @@ def battleGuideStatusConditionsHash
     }
 end
 
+def battleGuideVolatileStatusesHash
+    return {
+        _INTL("What are Volatile Statuses?") => _INTL("Volatile Status Conditions are similar to Status Conditions, except they will go away if the Pokémon switches out."),
+        _INTL("Jinx") => _INTL("When jinxed, a Pokémon cannot Protect itself, and all attacks against it are guaranteed critical hits. Jinx wears off after 3 turns. Fairy-types do the most jinxing."),
+        _INTL("Fractured") => _INTL("When fractured, a Pokémon deals 33% less damage with its moves. Fracture wears off after 3 turns. Rock-types do the most fracturing."),
+        _INTL("Curse") => _INTL("When cursed, a Pokémon loses 25% of its HP every turn. Ghost-types do the most cursing."),
+        _INTL("Torment") => _INTL("When tormented, a Pokémon cannot use the same move twice in a row. If something prevents it from moving for a turn, it can choose the same move the following turn."),
+        _INTL("Taunt") => _INTL("When taunted, a Pokémon is prevented from using status moves."),
+        _INTL("Disable") => _INTL("When disabled, a Pokémon cannot use the move it last selected."),
+        _INTL("Bar") => _INTL("When barred, a Pokémon cannot use moves that don't share a type with themselves."),
+        _INTL("Trapping") => _INTL("When trapped, a  Pokémon cannot switch out of battle. Includes manually switching, being forced out, or using a move like U-Turn."),
+        _INTL("Substitute") => _INTL("A substitute blocks attacks and status effects. It has HP equal to the amount of HP it took to create it. Sound tag moves ignore substitute."),
+        _INTL("Transformed") => _INTL("A transformed Pokémon becomes a copy of another. It gains their ability, moves, stats (except HP), and step boosts."),
+        _INTL("Perish Song") => _INTL("A Pokémon affected by Perish Song will faint when the timer ends. Avatars will be damaged for half of an HP bar."),
+        _INTL("Grounded") => _INTL("A grounded Pokémon loses their immunity to ground moves (from being Flying-type or having a Levitate ability)."),
+    }
+end
+
 def battleGuideCriticalHitsHash
     return {
         _INTL("What are Critical Hits?") => _INTL("A critical hit deals 50% more damage than a regular hit. Certain moves are able to randomly critical hit."),
         _INTL("How common are Critical Hits?") => _INTL("For moves that can random crit, the chance is 1/8. This chance can be raised by abilities, items, or special effects."),
         _INTL("Other Effects") => _INTL("Critical hits ignore stat steps (on the user or the target) that would lower their damage. They also ignore protective screens like Reflect and Light Screen."),
-        _INTL("Preventing Criticals") => _INTL("Certain abilities prevent critical hits against that Pokemon. The Lucky Chant effect and the Strategist tribe bonus also protect their side from critical hits."),
+        _INTL("Preventing Criticals") => _INTL("Certain abilities prevent critical hits against that Pokemon. The Lucky Chant effect protects their side from critical hits."),
         _INTL("Guaranteed Criticals") => _INTL("Some moves or abilities are not random, but guarantee a critical hit under certain conditions. Otherwise, these act the same as random critical hits."),
     }
 end

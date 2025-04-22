@@ -211,6 +211,30 @@ FunctionCode = Invalid
 Flags = CanSnatch
 Description = The user curls up to conceal weak spots and raise both of its defensive stats.
 #-------------------------------
+[DOUBLEDOWN]
+Name = Double Down
+Type = NORMAL
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user punches the target twice in quick succession.
+#-------------------------------
+[DOUBLEHIT]
+Name = Double Hit
+Type = NORMAL
+Category = Physical
+Power = 35
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user slams the target with a long tail, vines, or tentacle. The target is hit twice in a row.
+#-------------------------------
 [DOUBLESLAP]
 Name = Double Slap
 Type = NORMAL
@@ -304,6 +328,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Enables the user to hit a Ghost type with any kind of move. It also enables the user to hit an evasive foe.
+#-------------------------------
+[FRESHSTART]
+Name = Fresh Start
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user reinvigorates itself, healing to full. Only works the first turn the user is in battle.
+Animation = RECOVER
 #-------------------------------
 [FRUSTRATION]
 Name = Frustration
@@ -1356,6 +1392,18 @@ Flags = CanProtect
 Description = The user spins a sandstorm around the target, trapping and damaging it for three turns.
 #-------------------------------
 #		ROCK MOVES
+#-------------------------------
+[HEADSMASH]
+Name = Head Smash
+Type = ROCK
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user attacks the foe with a hazardous, full-power headbutt. The user also takes 50% recoil.
 #-------------------------------
 [ROCKSLIDE]
 Name = Rock Slide
@@ -2748,6 +2796,19 @@ Description = The user creates a bizarre area in which Pokémon's Defense and Sp
 #-------------------------------
 #		ICE MOVES
 #-------------------------------
+[AVALANCHE]
+Name = Avalanche
+Type = ICE
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -4
+FunctionCode = Invalid
+Flags = CanProtect
+Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
 [COLDSNOT]
 Name = Cold Snot
 Type = ICE
@@ -2960,6 +3021,18 @@ Target = AllNearOthers
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Darkness rolls over the field, damaging all other Pokémon, ending weather, and healing statuses.
+#-------------------------------
+[DARKVOID]
+Name = Dark Void
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+Priority = -1
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = Targets are dragged into a world of total darkness that makes them sleep. This move always goes last.
 #-------------------------------
 [EMBARGO]
 Name = Embargo
