@@ -56,6 +56,15 @@ def get_held_item_index(symbol)
   return index
 end
 
+def get_type_index(symbol)
+  symbols = GameData::Type.keys.filter{ |key| !key.is_a?(Numeric) && key.is_a?(Symbol) }
+  index = symbols.find_index(symbol)
+  if index.nil? 
+    return -1 
+  end
+  return index
+end
+
 def pokemon_to_indices(mon)
   species_data = GameData::Species.get(mon.species)
   species = species_data.id_number # Pokedex order corresponds to index order
@@ -66,6 +75,8 @@ def pokemon_to_indices(mon)
   level = mon.level
   items = mon.items.map { |item| get_held_item_index(item) }
   items.fill(-1, items.length..1)
+  itemtype = get_type_index(mon.itemTypeChosen)
+  form = mon.form
 
   indices = []
 
@@ -87,6 +98,11 @@ def pokemon_to_indices(mon)
   indices.push(moves[2])
   indices.push(moves[3])
   indices.push(items[0])
+  indices.push(items[1]) # if no second item, will be -1
+  
+  indices.push(itemtype)
+  indices.push(form)
+
   return indices
 end
 
@@ -113,38 +129,33 @@ def encode_chunk(buffer, indices)
   
   buffer.write([second_u32].pack('N'))
 
-  # TODO: Include optional data
   # Check for optional data
-  # has_second_item = data.items.size > 1 && data.items[1].id != :NULL_ITEM
-  # has_item_type = data.item_types.size > 0 && data.item_types[0].id != :NULL_TYPE
-  # has_form = data.form != 0  # Assuming nullForm.formId is 0
+  has_second_item = indices[13] > -1
+  has_item_type = true
+  has_form_data = indices[15] > 0
 
   # Third u32: Move3, move4, item1, and flags
   third_u32 |= (indices[10] << MOVE3_SHIFT) & MOVE3_MASK
   third_u32 |= (indices[11] << MOVE4_SHIFT) & MOVE4_MASK
   third_u32 |= (indices[12] << ITEM1_SHIFT) & ITEM1_MASK
   # TODO: Include optional data
-  third_u32 |= (false ? 1 : 0) << FLAG_HAS_2_ITEM_SHIFT
-  third_u32 |= (false ? 1 : 0) << FLAG_HAS_ITEM1_TYPE_SHIFT
-  third_u32 |= (false ? 1 : 0) << FLAG_HAS_FORM_SHIFT
+  third_u32 |= (has_second_item ? 1 : 0) << FLAG_HAS_2_ITEM_SHIFT
+  third_u32 |= (has_item_type ? 1 : 0) << FLAG_HAS_ITEM1_TYPE_SHIFT
+  third_u32 |= (has_form_data ? 1 : 0) << FLAG_HAS_FORM_SHIFT
   
   buffer.write([third_u32].pack('N'))
 
-  # TODO: Write optional data
-  # if has_second_item
-  #   buffer.write([held_items.find_index { |x| x.id == data.items[1].id }].pack('C'), byte_offset)
-  #   byte_offset += 1
-  # end
+  if has_second_item
+    buffer.write([indices[13]].pack('C'))
+  end
 
-  # if has_item_type
-  #   buffer.write([version_map[:indices][:types][data.item_type.id]].pack('C'), byte_offset)
-  #   byte_offset += 1
-  # end
+  if has_item_type
+    buffer.write([indices[14]].pack('C'))
+  end
 
-  # if has_form
-  #   buffer.write([data.form].pack('C'), byte_offset)
-  #   byte_offset += 1
-  # end
+  if has_form_data
+    buffer.write([indices[15]].pack('C'))
+  end
 end
 
 def encode_team(party)
