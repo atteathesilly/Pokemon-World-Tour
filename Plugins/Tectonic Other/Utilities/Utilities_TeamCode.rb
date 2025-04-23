@@ -64,7 +64,7 @@ def pokemon_to_indices(mon)
   moves.fill(-1, moves.length..3)
   sp = mon.ev
   level = mon.level
-  items = mon.items.map { |item| get_held_item_index(item.id) }
+  items = mon.items.map { |item| get_held_item_index(item) }
   items.fill(-1, items.length..1)
 
   indices = []
