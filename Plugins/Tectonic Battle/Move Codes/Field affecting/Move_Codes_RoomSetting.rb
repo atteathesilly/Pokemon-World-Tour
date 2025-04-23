@@ -6,15 +6,7 @@ class PokeBattle_Move_StartPolarizeTypeMatchups8 < PokeBattle_RoomMove
     def initialize(battle, move)
         super
         @roomEffect = :PolarizedRoom
-		@polarizedDuration = 8
-    end
-
-    def pbEffectGeneral(_user)
-        @battle.field.applyEffect(:PolarizedRoom, @polarizedroomDuration)
-    end
-
-    def getEffectScore(user, _target)
-        return getPolarizedroomEffectScore(user, @polarizedroomDuration)
+		@durationSet = 8
     end
 end
 
@@ -36,6 +28,7 @@ class PokeBattle_Move_StartSwapAttackingStats8 < PokeBattle_RoomMove
     def initialize(battle, move)
         super
         @roomEffect = :PuzzleRoom
+		@durationSet = 8
     end
 end
 
@@ -58,6 +51,7 @@ class PokeBattle_Move_StartSwapOffensiveAndDefensiveStats8 < PokeBattle_RoomMove
     def initialize(battle, move)
         super
         @roomEffect = :OddRoom
+		@durationSet = 8
     end
 end
 
