@@ -113,7 +113,7 @@ def encode_chunk(buffer, indices)
 
   # First u32: Pokemon, ability, move1, move2
   first_u32 |= (indices[0] << POKEMON_SHIFT) & POKEMON_MASK
-  first_u32 |= (indices[1] { |x| x.id == data.ability.id } << ABILITY_SHIFT) & ABILITY_MASK
+  first_u32 |= (indices[1] << ABILITY_SHIFT) & ABILITY_MASK
   first_u32 |= (indices[2] << MOVE1_SHIFT) & MOVE1_MASK
   first_u32 |= (indices[3] << MOVE2_SHIFT) & MOVE2_MASK
 
