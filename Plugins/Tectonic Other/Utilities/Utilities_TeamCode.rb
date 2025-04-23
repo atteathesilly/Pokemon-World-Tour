@@ -90,7 +90,7 @@ def pokemon_to_indices(mon)
   return indices
 end
 
-def encode_chunk(buffer, byte_offset, indices)
+def encode_chunk(buffer, indices)
   first_u32 = 0
   second_u32 = 0
   third_u32 = 0
@@ -102,7 +102,6 @@ def encode_chunk(buffer, byte_offset, indices)
   first_u32 |= (indices[3] << MOVE2_SHIFT) & MOVE2_MASK
 
   buffer.write([first_u32].pack('N'))
-  byte_offset += 4
 
   # Second u32: Style points and level
   second_u32 |= (indices[4] << STYLE_HP_SHIFT) & STYLE_HP_MASK
@@ -113,7 +112,6 @@ def encode_chunk(buffer, byte_offset, indices)
   second_u32 |= (indices[9] << LEVEL_SHIFT) & LEVEL_MASK
   
   buffer.write([second_u32].pack('N'))
-  byte_offset += 4
 
   # TODO: Include optional data
   # Check for optional data
@@ -131,7 +129,6 @@ def encode_chunk(buffer, byte_offset, indices)
   third_u32 |= (false ? 1 : 0) << FLAG_HAS_FORM_SHIFT
   
   buffer.write([third_u32].pack('N'))
-  byte_offset += 4
 
   # TODO: Write optional data
   # if has_second_item
@@ -148,8 +145,6 @@ def encode_chunk(buffer, byte_offset, indices)
   #   buffer.write([data.form].pack('C'), byte_offset)
   #   byte_offset += 1
   # end
-
-  byte_offset
 end
 
 def encode_team(party)
@@ -167,13 +162,9 @@ def encode_team(party)
   buffer.write([version_u16].pack('n'))
   
   # Encode each Pokémon in the party
-  byte_offset = 2
   party.each do |indices|
-    byte_offset = encode_chunk(buffer, byte_offset, indices)
+    encode_chunk(buffer, indices)
   end
-
-  # Truncate buffer to actual data size
-  # buffer.truncate(byte_offset)
   
   # Convert to base64
   [buffer.string].pack('m0')
