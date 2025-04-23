@@ -58,7 +58,7 @@ end
 
 def pokemon_to_indices(mon)
   species_data = GameData::Species.get(mon.species)
-  species = species_data.id_number - 1 # Pokedex order corresponds to index order
+  species = species_data.id_number # Pokedex order corresponds to index order
   ability = mon.ability_index
   moves = mon.moves.map { |move| species_data.learnable_moves.find_index(move.id) }
   moves.fill(-1, moves.length..3)
