@@ -1154,7 +1154,7 @@ Power = 70
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = AlwaysCriticalHit
+FunctionCode = RecoilQuarterOfDamageDealtCriticalHits
 Flags = CanProtect
 Description = The opponent is shredded by talons as the user dives from a great height. This attack always results in a critical hit, but the user also takes 25% recoil.
 Animation = DRILLPECK
@@ -3115,15 +3115,16 @@ Description = The user lays a trap of sharp feathers around the foe. It hurts fo
 [FLETCHETTES]
 Name = Fletchettes
 Type = STEEL
-Category = Adaptive
+Category = Special
 Power = 70
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = AlwaysCriticalHit
+FunctionCode = MoveFracturesSelfCriticalHits
 Flags = CanProtect
 EffectChance = 10
 Description = The user dislodges a blast of thin projectiles. This attack always results in a critical hit, but applies Fracture to the user.
+Animation = SPIKECANNON
 #-------------------------------
 [FRAGMENTATION]
 Name = Fragmentation
@@ -5446,20 +5447,6 @@ FunctionCode = RaiseUserAndAlliesSpAtk2
 Flags = CanSnatch
 Description = The user syncs its mind with its teammates, raising the Sp. Atk of itself and its allies by two steps.
 Animation = CONFUSION
-#-------------------------------
-[MINDWARP]
-Name = Mind Warp
-Type = PSYCHIC
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = LowerTargetAtkSpAtk1
-Flags = CanProtect
-EffectChance = 30
-Description = The target's psyche is attacked directly. It has a 30% chance to lower the target's Attack and Sp. Atk.
-Animation = PSYCHIC
 #-------------------------------
 [MINDWAVES]
 Name = Mind Waves
