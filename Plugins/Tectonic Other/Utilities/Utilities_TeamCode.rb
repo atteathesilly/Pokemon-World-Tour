@@ -171,6 +171,9 @@ def encode_team(party)
   party.each do |indices|
     byte_offset = encode_chunk(buffer, byte_offset, indices)
   end
+
+  # Truncate buffer to actual data size
+  buffer.truncate(byte_offset)
   
   # Convert to base64
   [buffer.string].pack('m0')
