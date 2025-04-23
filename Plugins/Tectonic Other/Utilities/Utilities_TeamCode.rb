@@ -138,7 +138,7 @@ def encode_chunk(buffer, indices)
   third_u32 |= (indices[10] << MOVE3_SHIFT) & MOVE3_MASK
   third_u32 |= (indices[11] << MOVE4_SHIFT) & MOVE4_MASK
   third_u32 |= (indices[12] << ITEM1_SHIFT) & ITEM1_MASK
-  # TODO: Include optional data
+
   third_u32 |= (has_second_item ? 1 : 0) << FLAG_HAS_2_ITEM_SHIFT
   third_u32 |= (has_item_type ? 1 : 0) << FLAG_HAS_ITEM1_TYPE_SHIFT
   third_u32 |= (has_form_data ? 1 : 0) << FLAG_HAS_FORM_SHIFT
