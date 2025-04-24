@@ -178,5 +178,12 @@ def encode_team(party)
   end
   
   # Convert to base64
-  [buffer.string].pack('m0')
+  code = [buffer.string].pack('m0')
+
+  # make base64 URLsafe
+  code.gsub!("+","-")
+  code.gsub!("/","_")
+  code.gsub!("=","")
+
+  return code
 end
