@@ -3354,7 +3354,7 @@ Generation = 4
 Name = Happiny
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 150,5,5,40,20,95
+BaseStats = 135,5,5,40,20,95
 # Total = 315
 GenderRate = AlwaysFemale
 BaseEXP = 55
@@ -3376,7 +3376,7 @@ Evolutions = CHANSEY,Level,20
 Name = Chansey
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 200,10,5,50,45,105
+BaseStats = 180,10,5,50,45,105
 # Total = 415
 GenderRate = AlwaysFemale
 BaseEXP = 130
@@ -3395,7 +3395,7 @@ Evolutions = BLISSEY,Level,45
 Name = Blissey
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 255,10,10,55,75,135
+BaseStats = 225,10,10,55,75,135
 # Total = 540
 GenderRate = AlwaysFemale
 BaseEXP = 225
@@ -12265,7 +12265,7 @@ WildItemRare = WIDELENS
 Name = Lillipup
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 150,20,95,40,5,5
+BaseStats = 135,20,95,40,5,5
 # Total = 315
 BaseEXP = 55
 Rareness = 255
@@ -12285,7 +12285,7 @@ Evolutions = HERDIER,Level,20
 Name = Herdier
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 200,45,105,50,10,5
+BaseStats = 180,45,105,50,10,5
 # Total = 415
 BaseEXP = 130
 Rareness = 120
@@ -12302,7 +12302,7 @@ Evolutions = STOUTLAND,Level,45
 Name = Stoutland
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 255,75,135,55,10,10
+BaseStats = 225,75,135,55,10,10
 # Total = 540
 BaseEXP = 225
 Rareness = 45
