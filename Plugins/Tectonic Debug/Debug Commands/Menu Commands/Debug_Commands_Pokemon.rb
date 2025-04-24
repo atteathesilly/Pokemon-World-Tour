@@ -165,11 +165,9 @@ DebugMenuCommands.register("addpokemon", {
     "description" => _INTL("Create a shareable team code for the current party."),
     "effect"      => proc {
       mon_indices = $Trainer.party.map { |mon| pokemon_to_indices(mon) }
-      text = encode_team(mon_indices)
-      filename = "Analysis/Team_#{$Trainer.name}.txt"
-      File.open(filename,"wb") { |file|
-        file.write(text)
-      }
-      pbMessage(_INTL("Pokémon team code written to {1}",filename))
+      code = encode_team(mon_indices)
+      domain = Settings::DEV_VERSION ? "tectonic-dev" : "tectonic"
+      System.launch("https://#{domain}.alphakretin.com/teambuilder?team=#{code}")
+      pbMessage(_INTL("Pokémon team opened in team builder website."))
     }
   })
