@@ -41,7 +41,7 @@ class WaypointsTracker
 		mapInfos = pbLoadMapInfos
 		activeWayPoints.each do |waypointName,waypointInfo|
 			mapID = waypointInfo[0]
-			next unless mapInfos[gameMapID] # Skip map if it somehow doesn't exist anymore
+			next unless mapInfos[mapID] # Skip map if it somehow doesn't exist anymore
 			displayedPosition = getDisplayedPositionOfGameMap(mapID)
 			mapPositionHash[waypointName] = displayedPosition 
 		end
