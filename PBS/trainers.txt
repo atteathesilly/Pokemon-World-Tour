@@ -2039,7 +2039,7 @@ Pokemon = SIRFETCHD,40
     Moves = ARTOFWAR,SACREDSWORD,LEAFBLADE,DRILLPECK
     AbilityIndex = 1 # Super Luck
 Pokemon = GSLOWKING,40
-    Moves = MINDWARP,SLUDGEWAVE,ENVENOM,VENOSHOCK
+    Moves = PIERCINGDOUBT,SLUDGEWAVE,ENVENOM,VENOSHOCK
     AbilityIndex = 1 # Exorcist
     Item = HIVISJACKET
 #-------------------------------
@@ -2168,7 +2168,7 @@ Pokemon = BOUFFALANT,44
     Moves = DOUBLEEDGE,BEDROCKBREAKER,TAUNT,POISONJAB
     AbilityIndex = 0 # Afrotection
 Pokemon = REUNICLUS,42
-    Moves = SLUDGEWAVE,MINDWARP,RECOVER,CALMMIND
+    Moves = SLUDGEWAVE,PIERCINGDOUBT,RECOVER,CALMMIND
     AbilityIndex = 1 # Magic Guard
     Item = LIFEORB
 Pokemon = GOGOAT,42
@@ -3124,7 +3124,7 @@ Pokemon = CLAYDOL,45
     Moves = LEYLINEBURST,EERIESPELL,EARTHPOWER,SELFDESTRUCT
     AbilityIndex = 1 # Magic Bounce
 Pokemon = JYNX,45
-    Moves = FRIGIDJEALOUSY,HYPOTHERMIATE,MINDWARP,DEMONSKISS
+    Moves = FRIGIDJEALOUSY,HYPOTHERMIATE,PIERCINGDOUBT,DEMONSKISS
     AbilityIndex = 0 # Fascinate
 Pokemon = FROSLASS,45
     Moves = SNOWYSORROWS,HYPOTHERMIATE,HEX,SHIVER
@@ -3160,7 +3160,7 @@ Pokemon = DEWGONG,45
     Moves = FRIGIDFLURRY,SURF,CHILL
     AbilityIndex = 0 # Bitter
 Pokemon = DELPHOX,45
-    Moves = MYSTICALFIRE,MINDWARP
+    Moves = MYSTICALFIRE,PIERCINGDOUBT
     AbilityIndex = 1 # Fascinate
 #-------------------------------
 [WORKER3,Bruce]
@@ -3816,7 +3816,7 @@ Pokemon = DECIDUEYE,43
 #-------------------------------
 [SUPERNERD,John]
 Pokemon = KECLEON,41
-    Moves = PALEBLADE,MINDWARP,DISTURB,BODYPRESS
+    Moves = PALEBLADE,PIERCINGDOUBT,DISTURB,BODYPRESS
     AbilityIndex = 1 # Protean
     Item = AGILITYHERB
 Pokemon = GRENINJA,42
@@ -3918,7 +3918,7 @@ Pokemon = DRACOVISH,53
     Moves = PSYCHICFANGS,FISHIOUSREND,GALLINGSPIT,CRUNCH
     AbilityIndex = 0 # Live Fast
 Pokemon = ARCTOVISH,52
-    Moves = PRESSUREBURST,MINDWARP,SUBLIMATE,REVENGE
+    Moves = PRESSUREBURST,PIERCINGDOUBT,SUBLIMATE,REVENGE
     AbilityIndex = 0 # Burdened
     Item = CADOBERRY
 #-------------------------------
@@ -4010,7 +4010,7 @@ Pokemon = DIGNIPHITE,54
 #-------------------------------
 [GENTLEMAN,Nicholas]
 Pokemon = MMUSHARNA,55
-    Moves = SLACKOFF,DIAMONDFORCE,GUTTURALROAR,MINDWARP
+    Moves = SLACKOFF,DIAMONDFORCE,GUTTURALROAR,PIERCINGDOUBT
     AbilityIndex = 0 # Slumbering Drake
     Item = CHESTOBERRY
 Pokemon = PASSIMIAN,55
@@ -6784,7 +6784,7 @@ Pokemon = CELESTEELA,70
     AbilityIndex = 0 # Auto-Pilot
     Item = LEFTOVERS
 Pokemon = BEHEEYEM,70
-    Moves = DREAMDANCE,MINDWARP,SUBSTITUTE,THUNDERBOLT
+    Moves = DREAMDANCE,PIERCINGDOUBT,SUBSTITUTE,THUNDERBOLT
     AbilityIndex = 0 # Cold Calculation
     Item = SITRUSBERRY
 Pokemon = BLACEPHALON,70
@@ -8106,7 +8106,7 @@ Pokemon = DRUDDIGON,60
     AbilityIndex = 0 # Harbinger
     Item = PINPOINTROCK
 Pokemon = CLAYDOL,60
-    Moves = LIGHTSCREEN,REFLECT,MINDWARP,RAPIDSPIN
+    Moves = LIGHTSCREEN,REFLECT,PIERCINGDOUBT,RAPIDSPIN
     AbilityIndex = 0 # Planar Veil
     Item = LIGHTCLAY
 Pokemon = ZOROARK,60
@@ -8279,7 +8279,7 @@ Pokemon = DRIFBLIM,70
 #-------------------------------
 [BUTLER,Sagan]
 Pokemon = MMUSHARNA,70
-    Moves = MINDWARP,DRAGONPULSE,DIAMONDFORCE
+    Moves = PIERCINGDOUBT,DRAGONPULSE,DIAMONDFORCE
     AbilityIndex = 1 # Fatigued
     Item = CHESTOBERRY
 Pokemon = PORYGONZ,70
