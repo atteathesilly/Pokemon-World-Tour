@@ -9114,3 +9114,24 @@ Pokemon = GENGAR,60
     Moves = SPECTRALTONGUE,SHADOWBALL,SLUDGEWAVE,ICYWIND
     AbilityIndex = 0 # Levitate
     Item = LIFEORB
+#-------------------------------
+[WAITER,Aaron]
+Flags = PlayerTeam:Ardub23
+Pokemon = GIGANTEON,45
+    Moves = CLOUDBREAK,UNDERMINE,BULLETTRAIN,FLOWSTATE
+    AbilityIndex = 0 # Ultra Adapted
+Pokemon = HZOROARK,45
+    Moves = MALEFACTION,SPIKES,RECOVER,RUIN
+    AbilityIndex = 0 # Illusion
+Pokemon = GIGANTEON,45
+    Moves = DISSIPATION,SHADOWBALL,SCHEME,RECOVER
+    AbilityIndex = 0 # Ultra Adapted
+Pokemon = GIGANTEON,45
+    Moves = RETREAT,NATURALPROTECTION,WISH,RECOVER
+    AbilityIndex = 0 # Ultra Adapted
+Pokemon = GIGANTEON,45
+    Moves = HEALBELL,CHARM,RECOVER,RETREAT
+    AbilityIndex = 0 # Ultra Adapted
+Pokemon = GIGANTEON,45
+    Moves = LASTRESORT,PROTECT
+    AbilityIndex = 0 # Ultra Adapted
