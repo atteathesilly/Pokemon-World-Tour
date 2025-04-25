@@ -299,7 +299,8 @@ module Settings
     LANGUAGES = [
       ["English", "english.dat"],
       ["Español", "spanish.dat"],
-      ["中文（简体)", "chinese.dat"],
+      ["Simplified Chinese", "chinese_simplified.dat"],
+      ["Traditional Chinese", "chinese_traditional.dat"],
     ]
   
     #=============================================================================

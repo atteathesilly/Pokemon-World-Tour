@@ -6,6 +6,7 @@ module MessageConfig
     LIGHT_FADED_TEXT_COLOR      = Color.new(145,145,145)
     DARK_FADED_TEXT_COLOR       = Color.new(110,110,110)
     FONT_NAME               = "Power Green"
+    CHN_FONT_NAME           = "FusionPixelMonoPatched"
     FONT_SIZE               = 29
     SMALL_FONT_NAME         = "Power Green Small"
     SMALL_FONT_SIZE         = 25
@@ -143,29 +144,32 @@ module MessageConfig
     #-----------------------------------------------------------------------------
 
     def self.pbDefaultSystemFontName
-        return MessageConfig.pbTryFonts(FONT_NAME)
+        return is_chinese? ? MessageConfig.pbTryFonts(CHN_FONT_NAME) : MessageConfig.pbTryFonts(FONT_NAME)
     end
 
     def self.pbDefaultSmallFontName
-        return MessageConfig.pbTryFonts(SMALL_FONT_NAME)
+        return is_chinese? ? MessageConfig.pbTryFonts(CHN_FONT_NAME) : MessageConfig.pbTryFonts(SMALL_FONT_NAME)
     end
 
     def self.pbDefaultNarrowFontName
-        return MessageConfig.pbTryFonts(NARROW_FONT_NAME)
+        return is_chinese? ? MessageConfig.pbTryFonts(CHN_FONT_NAME) : MessageConfig.pbTryFonts(NARROW_FONT_NAME)
     end
 
     def self.pbGetSystemFontName
-        @@systemFont ||= pbDefaultSystemFontName
+        #@@systemFont ||= pbDefaultSystemFontName
+        @@systemFont = pbDefaultSystemFontName
         return @@systemFont
     end
 
     def self.pbGetSmallFontName
-        @@smallFont ||= pbDefaultSmallFontName
+        #@@smallFont ||= pbDefaultSmallFontName
+        @@smallFont = pbDefaultSmallFontName
         return @@smallFont
     end
 
     def self.pbGetNarrowFontName
-        @@narrowFont ||= pbDefaultNarrowFontName
+        #@@narrowFont ||= pbDefaultNarrowFontName
+        @@narrowFont = pbDefaultNarrowFontName
         return @@narrowFont
     end
 
