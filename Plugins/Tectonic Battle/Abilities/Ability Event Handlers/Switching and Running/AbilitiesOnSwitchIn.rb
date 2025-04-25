@@ -379,7 +379,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:PUZZLING,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:PuzzleRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:PuzzleRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -389,7 +389,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:ODDITY,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:OddRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:OddRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -399,7 +399,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:SUBSPACESCHISM,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:TrickRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:TrickRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -409,7 +409,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:POLARIZING,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:PolarizedRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:PolarizedRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -419,7 +419,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:INSIGHTAURA,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:InsightRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:InsightRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -429,7 +429,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:EMOTIONAURA,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:EmotionRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:EmotionRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
@@ -439,7 +439,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:WILLAURA,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
       battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
-      score = battle.pbStartRoom(:WillfulRoom, battler, aiCheck)
+      score = battle.pbStartRoom(:WillfulRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
   }
