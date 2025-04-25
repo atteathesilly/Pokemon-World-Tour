@@ -691,13 +691,6 @@ class PokeBattle_Battler
 
     def getRoomDuration(baseDuration = 8, aiCheck: false)
         ret = baseDuration
-        ret -= 3 if shouldAbilityApply?(:PUZZLING,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:ODDITY,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:SUBSPACESCHISM,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:POLARIZING,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:INSIGHTAURA,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:EMOTIONAURA,aiCheck)
-        ret -= 3 if shouldAbilityApply?(:WILLAURA,aiCheck)
         ret *= 2 if shouldItemApply?(:REINFORCINGROD,aiCheck)
         return ret
     end
