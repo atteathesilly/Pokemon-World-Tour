@@ -1525,7 +1525,7 @@ Name = Recon
 Description = Before using a status move against a single foe, lowers their Sp. Def by two steps.
 #-------------------------------
 [REFRACTIVE]
-Name = Refract Aura
+Name = Refractive
 Description = Pulse moves change the Pokémon's secondary type and their power is boosted by 30%.
 #-------------------------------
 [REFRESHMENTS]
