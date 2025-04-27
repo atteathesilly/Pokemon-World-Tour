@@ -3179,21 +3179,21 @@ Pokemon = SIGILYPH,45
 [LEADER_Noel,Noel]
 Policies = NOEL
 Flags = NoPerfect
-Pokemon = MRRIME,45
-    Moves = ZENHEADBUTT,FROSTSPIKES,TAUNT,DISABLE
-    AbilityIndex = 0 # Slapstick
+Pokemon = MBEAUTIFLY,45
+    Moves = LEECHLIFE,ICYINJECTION,FELLSTINGER,UTURN
+    AbilityIndex = 1 # Schadenfreude
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,0,10,20,0,10
+    EV = 15,20,0,15,20,0
 Pokemon = METAGROSS,45
     Name = Armiger
     Shiny = yes
-    Moves = METEORMASH,TRAMPLE,GLIMMERPULSE,SEERSTRIKE
-    AbilityIndex = 0 # Brute Force
+    Moves = METEORMASH,TRAMPLE,BULLETPUNCH,SEERSTRIKE
+    AbilityIndex = 1 # Optimized Alloy
     Item = STEELGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = MPOLTEAGEIST,45
-    Moves = FROSTBREATH,SEANCE,BUBBLEBARRAGE,FROSTSPIKES
+    Moves = FROSTBREATH,SEANCE,BUBBLEBARRAGE,HALTINGCOLD
     AbilityIndex = 1 # Chill Out
     Item = LOADEDDICE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -3203,12 +3203,11 @@ Pokemon = CRABOMINABLE,45
     AbilityIndex = 0 # Survivalist
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,0,20,20
-Pokemon = BRUXISH,45
-    Moves = CRUNCH,PSYCHICFANGS,FIREFANG,SNAP
-    AbilityIndex = 1 # Strong Jaw
-    Item = EXPERTBELT
+Pokemon = GRAPIDASH,45
+    Moves = PSYCHOSCISSION,MISADVENTURE,INFINITEFORCE,DRILLRUN
+    AbilityIndex = 1 # Heart of Justice
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 0,20,5,20,20,5
+    EV = 10,20,0,20,20,0
 Pokemon = GDARMANITAN,45
     Form = 1 # Zen Form
     Moves = BURNUP,SUBLIMATE,GRASSKNOT,BODYPRESS
@@ -3219,14 +3218,15 @@ Pokemon = GDARMANITAN,45
 [LEADER_Noel,Noel,1]
 ExtendsVersion = 0
 Policies = CURSE_TYPE_WEAKENED
-Pokemon = MRRIME,45
-    Item = FOCUSSASH
+Pokemon = MBEAUTIFLY,45
+    Item = HEAVYDUTYBOOTS
 Pokemon = METAGROSS,45
+    Item = ASSAULTVEST
 Pokemon = MPOLTEAGEIST,45
 Pokemon = CRABOMINABLE,45
     Item = CUSTAPBERRY
-Pokemon = BRUXISH,45
-    Moves = CRUNCH,PSYCHICFANGS,FIREFANG,POISONFANG
+Pokemon = GRAPIDASH,45
+    Item = CHOICEBAND
 Pokemon = GDARMANITAN,45
     Moves = BURNUP,SUBLIMATE,SOLARBEAM,BODYPRESS
     Item = POWERHERB
