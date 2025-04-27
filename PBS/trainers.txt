@@ -3180,7 +3180,7 @@ Pokemon = SIGILYPH,45
 Policies = NOEL
 Flags = NoPerfect
 Pokemon = MBEAUTIFLY,45
-    Moves = LEECHLIFE,ICYINJECTION,FELLSTINGER,UTURN
+    Moves = LEECHLIFE,ICYINJECTION,DEFOG,UTURN
     AbilityIndex = 1 # Schadenfreude
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,15,20,0
