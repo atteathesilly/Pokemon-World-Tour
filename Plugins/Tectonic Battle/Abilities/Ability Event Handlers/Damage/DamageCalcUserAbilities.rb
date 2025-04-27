@@ -791,3 +791,12 @@ BattleHandlers::DamageCalcUserAbility.add(:WREAKHAVOC,
     end
   }
 )
+
+BattleHandlers::DamageCalcUserAbility.add(:SLINKY,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.function == "TwoTurnAttackInvulnerableUnderwater" || move.function == "TwoTurnAttackInvulnerableInSky" || move.function == "TwoTurnAttackInvulnerableUnderground" || move.function == "TwoTurnAttackInvulnerableInSkyNumbTarget"
+      mults[:base_damage_multiplier] *= 2.0
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)

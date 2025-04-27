@@ -200,10 +200,6 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableInSky < PokeBattle_TwoTurnMove
 
     def pbIsChargingTurn?(user)
         ret = super
-        if !user.effectActive?(:TwoTurnAttack) && user.hasActiveAbility?(:SLINKY)
-            skipChargingTurn
-            return false
-        end
         return ret
     end
 
@@ -223,10 +219,6 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableUnderground < PokeBattle_TwoTurnM
 
     def pbIsChargingTurn?(user)
         ret = super
-        if !user.effectActive?(:TwoTurnAttack) && user.hasActiveAbility?(:SLINKY)
-            skipChargingTurn
-            return false
-        end
         return ret
     end
 
@@ -255,10 +247,6 @@ end
 class PokeBattle_Move_TwoTurnAttackInvulnerableUnderwater < PokeBattle_TwoTurnMove
     def pbIsChargingTurn?(user)
         ret = super
-        if !user.effectActive?(:TwoTurnAttack) && user.hasActiveAbility?(:SLINKY)
-            skipChargingTurn
-            return false
-        end
         return ret
     end
 
@@ -287,10 +275,6 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableInSkyNumbTarget < PokeBattle_TwoT
 
     def pbIsChargingTurn?(user)
         ret = super
-        if !user.effectActive?(:TwoTurnAttack) && user.hasActiveAbility?(:SLINKY)
-            skipChargingTurn
-            return false
-        end
         return ret
     end
 
