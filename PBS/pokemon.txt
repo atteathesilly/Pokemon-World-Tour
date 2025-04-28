@@ -20939,7 +20939,7 @@ Flags = Legendary
 Name = Kubfu
 Type1 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 60,90,60,53,50,72
+BaseStats = 60,90,60,72,53,50
 # Total = 385
 BaseEXP = 64
 Rareness = 3
