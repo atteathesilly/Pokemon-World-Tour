@@ -2359,7 +2359,7 @@ TrainerTypeLabel = DEVELOPER
 Pokemon = DRAGONITE,70
     AbilityIndex = 0 # Inner Focus
 Pokemon = KLAWSAR,70
-    AbilityIndex = 1 # Steely Shell
+    AbilityIndex = 1 # Bottom Feeder
 Pokemon = VESPIQUEN,70
     AbilityIndex = 1 # Stressful
 Pokemon = SCRAFTY,70
@@ -3924,7 +3924,7 @@ Pokemon = ARCTOVISH,52
 #-------------------------------
 [ELDER,Huy]
 Pokemon = CRAWDAUNT,54
-    Moves = GLEEFULGRASP,CRABHAMMER,SUCKERPUNCH,EARTHQUAKE
+    Moves = GLEEFULGRASP,LIQUIDATION,SUCKERPUNCH,EARTHQUAKE
     AbilityIndex = 0 # Filter
     Item = WEAKNESSPOLICY
 Pokemon = SCOLIPEDE,53
@@ -7514,7 +7514,7 @@ Pokemon = PINCURCHIN,70
 [POKEMONMASTER_Vanya,Vanya]
 Flags = NoPerfect
 Pokemon = KLAWSAR,70
-    AbilityIndex = 1 # Steely Shell
+    AbilityIndex = 1 # Bottom Feeder
 Pokemon = MPOLTEAGEIST,70
     AbilityIndex = 1 # Chill Out
 Pokemon = GREEDENT,70

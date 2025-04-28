@@ -198,6 +198,10 @@ Flags = SunshineSynergy
 Name = Bliss
 Description = Increase the EXP gained from battles in which it participates by 50%.
 #-------------------------------
+[BOTTOMFEEDER]
+Name = Bottom Feeder
+Description = Whenever this Pokémon attacks a trapped foe, it is healed for half of the damage dealt.
+#-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest
 Description = Lays a trap of levitating stones around the opponent when its HP is lowered below half.
