@@ -344,7 +344,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:BOTTOMFEEDER,
       next unless move.damagingMove?
       trappedTargets = []
       targets.each do |target|
-        next unless target.trapped?
+        next unless target.damageState.trapped
         trappedTargets.push(target)
       end
       user.pbRecoverHPFromMultiDrain(trappedTargets, 0.50, ability: ability)
