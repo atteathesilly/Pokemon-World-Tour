@@ -1890,7 +1890,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [STUBBORN]
 Name = Stubborn
-Description = Prevents its stats from being lowered by more than 1 step at a time.
+Description = Prevents its stats from being lowered by more than one step at a time.
 #-------------------------------
 [STUPEFYING]
 Name = Stupefying
