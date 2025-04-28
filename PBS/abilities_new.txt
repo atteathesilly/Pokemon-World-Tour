@@ -768,7 +768,7 @@ Flags = MoonglowSynergy
 #-------------------------------
 [FUMIGATE]
 Name = Fumigate
-Description = Random added effects of wind-based moves are +50% more likely likely to occur.
+Description = Random added effects of wind-based moves are +50% more likely to occur.
 #-------------------------------
 [GALEFORCE]
 Name = Gale Force
