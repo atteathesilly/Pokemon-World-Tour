@@ -623,6 +623,7 @@ module QuestModule
     :Stage1 => _INTL("Investigate the bandits."),
     :Location1 => _INTL("Kilna Turf"),
     :QuestDescription => _INTL("A ranger told you about how Kilna is strewn in items from thieves. Maybe they have a valuable stash you could take from."),
+    :RewardString => _INTL("Ice and Leaf Stone")
   }
 
   QUEST_STONES_SVAIT = {
@@ -631,6 +632,7 @@ module QuestModule
     :Stage1 => _INTL("Calm them down."),
     :Location1 => _INTL("Svait"),
     :QuestDescription => _INTL("You're hearing things are getting pretty rowdy with these tourists. Teach them you should always respect the places you visit!"),
+    :RewardString => _INTL("Alolan and Galarian Wreath")
   }
 
   QUEST_STONES_VELENZ = {
@@ -639,6 +641,7 @@ module QuestModule
     :Stage1 => _INTL("Release the influence."),
     :Location1 => _INTL("Velenz"),
     :QuestDescription => _INTL("Appears these people are being influenced by a strange rock... probably not healthy to leave them like that, could be radioactive."),
+    :RewardString => _INTL("Shiny and Moon Stone")
   }
 
   QUEST_STONES_SUICUNE = {
@@ -647,6 +650,7 @@ module QuestModule
     :Stage1 => _INTL("Defeat the avatar."),
     :Location1 => _INTL("Grouz"),
     :QuestDescription => _INTL("A powerful avatar of Suicune is being contained in this cave. Perhaps it is guarding something valuable..."),
+    :RewardString => _INTL("Water and Dawn Stone")
   }
 
   QUEST_STONES_RAIKOU = {
@@ -655,6 +659,7 @@ module QuestModule
     :Stage1 => _INTL("Defeat the avatar."),
     :Location1 => _INTL("The Shelf"),
     :QuestDescription => _INTL("A powerful avatar of Raikou is being contained in this cave. Perhaps it is guarding something valuable..."),
+    :RewardString => _INTL("Thunder and Dusk Stone")
   }
 
   QUEST_STONES_ENTEI = {
@@ -663,6 +668,7 @@ module QuestModule
     :Stage1 => _INTL("Defeat the avatar."),
     :Location1 => _INTL("County Park"),
     :QuestDescription => _INTL("A powerful avatar of Entei is being contained in this cave. Perhaps it is guarding something valuable..."),
+    :RewardString => _INTL("Fire and Sun Stone")
   }
 
 end
