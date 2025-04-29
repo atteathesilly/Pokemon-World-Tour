@@ -7550,7 +7550,6 @@ Height = 0.3
 Weight = 3.8
 Kind = Hot Cold Worm
 Pokedex = Its horns efficiently regulate its body temperature. It seeks out Fire- and Ice-type predators to charge itself with energy for evolution.
-WildItemUncommon = LUMBERRY
 Evolutions = MSILCOON,Ability0,18,MCASCOON,Ability1,18
 #-------------------------------
 [MSILCOON]
