@@ -157,6 +157,7 @@ Land,20
     16,WINGULL,9,11
 Puddle,20
     40,CLAMPERL,9,11
+    20,CLOBBOPUS,9,11
     20,HORSEA,9,11
     20,INKAY,9,11
     20,MGOLDEEN,9,11
@@ -277,8 +278,8 @@ Special
 [067] # Old Ice Cream Shop
 LandSparse,20
     20,AZURILL,9,11
-    20,CLOBBOPUS,9,11
     20,HONEDGE,9,11
+    20,SNORUNT,9,11
     20,TOXEL,9,11
     20,VANILLITE,9,11
 #-------------------------------
@@ -326,7 +327,7 @@ Special
 [117] # Ice Cave
 Land,20
     28,BERGMITE,23,25
-    28,SNORUNT,23,25
+    28,MMANTYKE,23,25
     14,PANCHAM,23,25
     14,SNEASEL,23,25
     14,SWINUB,23,25
