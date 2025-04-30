@@ -63,6 +63,10 @@ class MoveDex_Entry_Scene
         eachPokemonInPartyOrStorage do |pkmn|
             @ownedPokemonSpecies[pkmn.species] = true;
         end
+        @partyPokemonSpecies = {}
+        $Trainer.party.each do |pkmn|
+            @partyPokemonSpecies[pkmn.species] = true;
+        end
 
         drawPage
 
@@ -312,8 +316,14 @@ class MoveDex_Entry_Scene
 
             ownedIconXOffset = levelLabelsList[index] ? 160 : 208
 
-            if index < speciesDataList.length && @ownedPokemonSpecies.include?(speciesDataList[index].id)               
-                ownedIconImagePositions.push(["Graphics/Pictures/Battle/icon_own",speciesDrawX+ownedIconXOffset,speciesDrawY+6])
+            if index < speciesDataList.length
+                speciesID = speciesDataList[index].id
+                if @partyPokemonSpecies.include?(speciesID)
+                    icon = "Graphics/Pictures/Battle/icon_own_party"  
+                elsif @ownedPokemonSpecies.include?(speciesID)
+                    icon = "Graphics/Pictures/Battle/icon_own"
+                end
+                ownedIconImagePositions.push([icon,speciesDrawX+ownedIconXOffset,speciesDrawY+6]) if icon
             end
 
             drawFormattedTextEx(overlay, speciesDrawX , speciesDrawY, 450, speciesLabel, base, shadow)
