@@ -57,11 +57,11 @@ Land,20
     25,DROWZEE,20,22
     25,GOSSIFLEUR,20,22
 Puddle,20
-    25,BIDOOF,20,22
-    25,BUIZEL,20,22
-    25,GOLDEEN,20,22
-    25,LUVDISC,20,22
-    25,SKRELP,20,22
+    20,BIDOOF,20,22
+    20,BUIZEL,20,22
+    20,GOLDEEN,20,22
+    20,LUVDISC,20,22
+    20,SKRELP,20,22
 #-------------------------------
 [019] # Reading Ribombee Café
 Special
