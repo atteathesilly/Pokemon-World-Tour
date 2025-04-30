@@ -2012,6 +2012,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = FractureTarget
 Flags = CanProtect
+EffectChance = 100
 Description = The user drops a single piece of solid bedrock on the target, fracturing them.
 Animation = CONTINENTALCRUSH
 #-------------------------------
@@ -2949,6 +2950,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = CurseTarget
 Flags = CanProtect
+EffectChance = 100
 Description = The user snips the target's connection to life in order to curse them, damaging their HP by 25% each turn.
 #-------------------------------
 [THINAIR]
