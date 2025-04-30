@@ -377,16 +377,6 @@ class NewDexNav
 		
 		xLeft = 40
 		textpos = [[_INTL("DexNav: {1}", $game_map.name),40,-4,0,Color.new(248, 248, 248),Color.new(0, 0, 0)]]
-
-		# caughtCount = 0
-		# if $PokemonGlobal.caughtCountsPerMap && $PokemonGlobal.caughtCountsPerMap.has_key?($game_map.map_id)
-		# 	caughtCount = $PokemonGlobal.caughtCountsPerMap[$game_map.map_id][0]	
-		# end
-		# receivedCount = 0
-		# if $PokemonGlobal.caughtCountsPerMap && $PokemonGlobal.caughtCountsPerMap.has_key?($game_map.map_id)
-		# 	receivedCount = $PokemonGlobal.caughtCountsPerMap[$game_map.map_id][1]
-		# end
-		# textpos.push(["#{caughtCount} caught      #{receivedCount} gifts",Graphics.width / 2,52,2,base,shadow])
 		
 		pbDrawTextPositions(overlay, textpos)
   end
