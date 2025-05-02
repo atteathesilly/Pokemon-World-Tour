@@ -6704,8 +6704,8 @@ Tribes = SCOURGE,CHARMER
 StepsToHatch = 6630
 Height = 1.0
 Weight = 65.0
-Kind = TO DO
-Pokedex = TO DO
+Kind = Famine
+Pokedex = Food rots and milk curdles in their presence. Because of this, they're commonly seen fleeing from angered Pokémon such as Miltank or Alcremie.
 Generation = 4
 Evolutions = MMANTINE,Level,37
 #-------------------------------
@@ -6724,8 +6724,8 @@ Moves = 0,ICECALIBUR,1,ICECALIBUR
 StepsToHatch = 6630
 Height = 2.1
 Weight = 220.0
-Kind = TO DO
-Pokedex = TO DO
+Kind = Plague
+Pokedex = It pelts houses with hail that sounds like knocking, trying to get those inside to open a door or window. People used to import Skarmory to defend against them.
 Generation = 2
 #-------------------------------
 [DELIBIRD]
