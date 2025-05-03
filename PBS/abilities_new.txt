@@ -4,6 +4,11 @@
 Name = Above It All
 Description = After being attacked, uses Parting Shot to switch out.
 #-------------------------------
+[ACCUMULATION]
+Name = Accumulation
+Description = The Pokémon gains twice as many stats from leveling up.
+Flags = Immutable
+#-------------------------------
 [ACIDRAIN]
 Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.

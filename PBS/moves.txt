@@ -761,19 +761,6 @@ FunctionCode = LowerTargetDef4
 Flags = CanProtect,CanMagicCoat,Sound
 Description = The user's earsplitting screech reduces the target's Defense stat by four steps.
 #-------------------------------
-[SECRETPOWER]
-Name = Secret Power
-Type = NORMAL
-Category = Adaptive
-Power = 120
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = EffectDependsOnEnvironment
-Flags = CanProtect
-EffectChance = 30
-Description = The user attacks with a secret power. Its added effects vary depending on the user's environment.
-#-------------------------------
 [SELFDESTRUCT]
 Name = Self-Destruct
 Type = NORMAL
@@ -3524,6 +3511,21 @@ Target = User
 FunctionCode = RaiseUserAtk4
 Flags = CanSnatch,Dance
 Description = A frenetic dance to uplift the fighting spirit. It raises the user's Attack stat by four steps.
+#-------------------------------
+#		QMARKS MOVES
+#-------------------------------
+[SECRETPOWER]
+Name = Secret Power
+Type = QMARKS
+Category = Adaptive
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = EffectDependsOnEnvironment
+Flags = CanProtect
+EffectChance = 30
+Description = The user attacks with a secret power. Its added effects vary depending on the user's environment.
 #-------------------------------
 #		FIRE MOVES
 #-------------------------------
