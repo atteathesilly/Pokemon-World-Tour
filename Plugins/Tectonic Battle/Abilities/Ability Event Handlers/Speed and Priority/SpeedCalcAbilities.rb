@@ -191,10 +191,3 @@ BattleHandlers::SpeedCalcAbility.add(:FOREMAN,
       next mult * 2 if battler.battle.roomActive?
   }
 )
-
-BattleHandlers::SpeedCalcAbility.add(:ACCUMULATION,
-  proc { |ability, battler, mult|
-      mult += unownStatThing(battler.pokemon.level)
-      next mult
-  }
-)

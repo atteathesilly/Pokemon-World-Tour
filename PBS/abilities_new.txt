@@ -6,7 +6,8 @@ Description = After being attacked, uses Parting Shot to switch out.
 #-------------------------------
 [ACCUMULATION]
 Name = Accumulation
-Description = You gain a bonus that scales with your level.
+Description = The Pokémon gains twice as many stats from leveling up.
+Flags = Immutable
 #-------------------------------
 [ACIDRAIN]
 Name = Acid Rain

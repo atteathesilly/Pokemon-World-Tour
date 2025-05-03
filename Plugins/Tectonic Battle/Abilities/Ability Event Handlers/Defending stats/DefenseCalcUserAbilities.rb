@@ -39,10 +39,3 @@ BattleHandlers::DefenseCalcUserAbility.add(:BIGBOSS,
         next defenseMult
     }
 )
-
-BattleHandlers::DefenseCalcUserAbility.add(:ACCUMULATION,
-  proc { |ability, user, _battle, defenseMult|
-      defenseMult += unownStatThing(user.pokemon.level)
-      next defenseMult
-  }
-)
