@@ -252,8 +252,8 @@ class PokeBattle_AI
                 currentHP = battler.hp.to_f
                 currentHP += battler.totalhp * 0.25 if battler.hasActiveAbilityAI?(:REGENERATOR) || battler.hasActiveAbilityAI?(:HOLIDAYCHEER)
                 currentHP += battler.totalhp * 0.1 if battler.hasTribeBonus?(:CARETAKER)
-                currentHP += battler.totalhp * 0.5 if battler.hasActiveAbilityAI?(:REFRESHMENTS) && battler.ownersPolicies.include?(:SUN_TEAM)
-                currentHP += battler.totalhp * 0.5 if battler.hasActiveAbilityAI?(:TOLLTHEBELLS) && battler.ownersPolicies.include?(:ECLIPSE_TEAM)
+                currentHP += battler.totalhp * ENTRY_LOWEST_HEALING_ABILITY_FRACTION if battler.hasActiveAbilityAI?(:REFRESHMENTS) && battler.ownersPolicies.include?(:SUN_TEAM)
+                currentHP += battler.totalhp * ENTRY_LOWEST_HEALING_ABILITY_FRACTION if battler.hasActiveAbilityAI?(:TOLLTHEBELLS) && battler.ownersPolicies.include?(:ECLIPSE_TEAM)
                 if currentHP > battler.totalhp * 0.5
                     PBDebug.log("[STAY-IN RATING] #{battler.pbThis} (#{battler.index}) is bloodied but will regenerate, no penalty")
                     return stayInRating
