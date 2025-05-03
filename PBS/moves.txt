@@ -6472,10 +6472,10 @@ Name = Aromatic Mist
 Type = FAIRY
 Category = Status
 Accuracy = 0
-TotalPP = 15
+TotalPP = 4
 Target = NearAlly
-FunctionCode = RaiseTargetDefSpDef3
-Description = The user raises the Defense and Sp. Def stat of an ally Pokémon by three steps using a mysterious aroma.
+FunctionCode = RaiseTargetDefSpDef2
+Description = The user raises the Defense and Sp. Def stats of an ally Pokémon by two steps using a mysterious aroma.
 #-------------------------------
 [BABYDOLLEYES]
 Name = Baby-Doll Eyes
