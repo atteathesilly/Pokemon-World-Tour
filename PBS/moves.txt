@@ -763,9 +763,9 @@ Description = The user's earsplitting screech reduces the target's Defense stat 
 #-------------------------------
 [SECRETPOWER]
 Name = Secret Power
-Type = NORMAL
+Type = QMARKS
 Category = Adaptive
-Power = 120
+Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
