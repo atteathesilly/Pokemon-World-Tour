@@ -118,3 +118,10 @@ BattleHandlers::SpecialAttackCalcUserAbility.add(:EXTREMEVOLTAGE,
       next spAtkMult
   }
 )
+
+BattleHandlers::SpecialAttackCalcUserAbility.add(:ACCUMULATION,
+  proc { |ability, user, _battle, spAtkMult|
+      spAtkMult += unownStatThing(user.pokemon.level)
+      next spAtkMult
+  }
+)

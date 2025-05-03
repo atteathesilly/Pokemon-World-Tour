@@ -187,3 +187,10 @@ BattleHandlers::AttackCalcUserAbility.add(:FUELHUNGRY,
       next attackMult
   }
 )
+
+BattleHandlers::AttackCalcUserAbility.add(:ACCUMULATION,
+  proc { |ability, user, _battle, attackMult|
+      attackMult += unownStatThing(user.pokemon.level)
+      next attackMult
+  }
+)

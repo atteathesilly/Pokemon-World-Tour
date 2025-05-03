@@ -60,3 +60,10 @@ BattleHandlers::SpecialDefenseCalcUserAbility.add(:ICEMIRROR,
         next spDefMult
     }
 )
+
+BattleHandlers::SpecialDefenseCalcUserAbility.add(:ACCUMULATION,
+  proc { |ability, user, _battle, spDefMult|
+      spDefMult += unownStatThing(user.pokemon.level)
+      next spDefMult
+  }
+)

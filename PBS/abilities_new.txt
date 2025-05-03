@@ -4,6 +4,10 @@
 Name = Above It All
 Description = After being attacked, uses Parting Shot to switch out.
 #-------------------------------
+[ACCUMULATION]
+Name = Accumulation
+Description = You gain a bonus that scales with your level.
+#-------------------------------
 [ACIDRAIN]
 Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
