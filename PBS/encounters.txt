@@ -113,6 +113,7 @@ LandTall,20
     20,WOOLOO,8,10
 Special
     1,PIDOVE,15
+    1,EEVEE,15
 #-------------------------------
 [032] # Novo Apartments F1
 Special
