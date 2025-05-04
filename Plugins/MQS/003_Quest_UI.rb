@@ -39,11 +39,15 @@ class Window_Quest < Window_DrawableCommand
     dheight = self.height-self.borderY
     self.contents = pbDoEnsureBitmap(self.contents,dwidth,dheight)
     self.contents.clear
-    for i in 0...@item_max
-      next if i<self.top_item || i>self.top_item+self.page_item_max
-      drawItem(i,@item_max,itemRect(i))
+    if itemCount >0
+      for i in 0...@item_max
+        next if i<self.top_item || i>self.top_item+self.page_item_max
+        drawItem(i,@item_max,itemRect(i))
+      end
+      drawCursor(self.index,itemRect(self.index))
+    else
+      drawFormattedTextEx(self.contents,Graphics.width/2-52,32,436,_INTL("None"),self.baseColor,self.shadowColor)
     end
-    drawCursor(self.index,itemRect(self.index)) if itemCount >0
   end
   
   def update
@@ -70,9 +74,7 @@ class QuestList_Scene
     @shadow = MessageConfig::pbDefaultTextShadowColor
     addBackgroundPlane(@sprites,"bg","QuestUI/bg_1",@viewport)
     @sprites["base"] = IconSprite.new(0,0,@viewport)
-    bgFileName = "Graphics/Pictures/QuestUI/bg_2"
-    bgFileName += "_dark" if darkMode?
-    @sprites["base"].setBitmap(bgFileName)
+    setMainScreenBG
     @sprites["page_icon1"] = IconSprite.new(0,4,@viewport)
     if SHOW_FAILED_QUESTS
       @sprites["page_icon1"].setBitmap("Graphics/Pictures/QuestUI/page_icon1a")
@@ -95,12 +97,12 @@ class QuestList_Scene
       @quests.push($PokemonGlobal.quests.failed_quests)
       @quests_text.push("Failed")
     end
-    @current_quest = 0
+    @quest_list_type = 0
     @sprites["itemlist"] = Window_Quest.new(22,28,Graphics.width-22,Graphics.height-80,@viewport)
     @sprites["itemlist"].index = 0
     @sprites["itemlist"].baseColor = @base
     @sprites["itemlist"].shadowColor = @shadow
-    @sprites["itemlist"].quests = @quests[@current_quest]
+    @sprites["itemlist"].quests = @quests[@quest_list_type]
     @sprites["overlay1"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     pbSetSystemFont(@sprites["overlay1"].bitmap)
     @sprites["overlay2"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
@@ -112,23 +114,19 @@ class QuestList_Scene
     @sprites["overlay_control"] = BitmapSprite.new(Graphics.width,Graphics.height,@viewport)
     pbSetSystemFont(@sprites["overlay_control"].bitmap)
     pbDrawTextPositions(@sprites["overlay1"].bitmap,[
-      [_INTL("{1} quests", @quests_text[@current_quest]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
+      [_INTL("{1} quests", @quests_text[@quest_list_type]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
     ])
     drawFormattedTextEx(@sprites["overlay_control"].bitmap,38,316,
       436,"ARROWS: Navigate",@base,@shadow)
     drawFormattedTextEx(@sprites["overlay_control"].bitmap,38,348,
       436,"A/S: Jump Down/Up",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay_control"].bitmap,326,316,
-      436,"New Activity:",@base,@shadow)
-    pbDrawImagePositions(@sprites["overlay_control"].bitmap,[
-      [sprintf("Graphics/Pictures/QuestUI/new"),464,314]
-    ])
     pbFadeInAndShow(@sprites) { pbUpdate }
   end
 
   def pbScene
+    @questSelectionIndex = 0
     loop do
-      selected = @sprites["itemlist"].index
+      @questSelectionIndex = @sprites["itemlist"].index
       @sprites["itemlist"].active = true
       dorefresh = false
       Graphics.update
@@ -138,94 +136,143 @@ class QuestList_Scene
         pbPlayCloseMenuSE
         break
       elsif Input.trigger?(Input::USE)
-        if @quests[@current_quest].length==0
+        if @quests[@quest_list_type].length==0
           pbPlayBuzzerSE
         else
           pbPlayDecisionSE
-          fadeContent
-          @sprites["itemlist"].active = false
-          pbQuest(@quests[@current_quest][selected])
-          showContent
+          pbQuestDetailsScreen
         end
       elsif Input.trigger?(Input::RIGHT)
         pbPlayCursorSE
-        @current_quest +=1; @current_quest = 0 if @current_quest > @quests.length-1
+        @quest_list_type +=1; @quest_list_type = 0 if @quest_list_type > @quests.length-1
         dorefresh = true
       elsif Input.trigger?(Input::LEFT)
         pbPlayCursorSE
-        @current_quest -=1; @current_quest = @quests.length-1 if @current_quest < 0
+        @quest_list_type -=1; @quest_list_type = @quests.length-1 if @quest_list_type < 0
         dorefresh = true
       end
       swapQuestType if dorefresh
     end
   end
+
+  def setMainScreenBG
+    bgFileName = "Graphics/Pictures/QuestUI/bg_2"
+    bgFileName += "_dark" if darkMode?
+    @sprites["base"].setBitmap(bgFileName)
+  end
+
+  def setQuestScreenBG
+    bgFileName = "Graphics/Pictures/QuestUI/bg_3"
+    bgFileName += "_dark" if darkMode?
+    @sprites["base"].setBitmap(bgFileName)
+  end
   
   def swapQuestType
     @sprites["overlay1"].bitmap.clear
     @sprites["itemlist"].index = 0 # Resets cursor position
-    @sprites["itemlist"].quests = @quests[@current_quest]
-    @sprites["pageIcon"].x = @sprites["page_icon1"].x + 32*@current_quest
+    @sprites["itemlist"].quests = @quests[@quest_list_type]
+    @sprites["pageIcon"].x = @sprites["page_icon1"].x + 32*@quest_list_type
     pbDrawTextPositions(@sprites["overlay1"].bitmap,[
-      [_INTL("{1} tasks", @quests_text[@current_quest]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
+      [_INTL("{1} tasks", @quests_text[@quest_list_type]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
     ])
   end
-  
-  def fadeContent
-    15.times do
-      Graphics.update
-      @sprites["itemlist"].contents_opacity -= 17
-      @sprites["overlay1"].opacity -= 17; @sprites["overlay_control"].opacity -= 17
-      @sprites["page_icon1"].opacity -= 17; @sprites["pageIcon"].opacity -= 17
-    end
+
+  def swapToMainScreen
+    @sprites["itemlist"].contents_opacity = 255
+    @sprites["overlay1"].opacity = 255
+    @sprites["overlay_control"].opacity = 255
+    @sprites["page_icon1"].opacity = 255
+    @sprites["pageIcon"].opacity = 255
+
+    @sprites["overlay2"].opacity = 0
+    @sprites["overlay3"].opacity = 0
+    @sprites["page_icon2"].opacity = 0
+    setMainScreenBG
+  end
+
+  def swapToQuestDetailsScreen
+    @sprites["itemlist"].contents_opacity = 0
+    @sprites["overlay1"].opacity = 0
+    @sprites["overlay_control"].opacity = 0
+    @sprites["page_icon1"].opacity = 0
+    @sprites["pageIcon"].opacity = 0
+
+    @sprites["overlay2"].opacity = 255
+    @sprites["overlay3"].opacity = 255
+    @sprites["page_icon2"].opacity = 255
+    setQuestScreenBG
   end
   
-  def showContent
-    15.times do
-      Graphics.update
-      @sprites["itemlist"].contents_opacity += 17
-      @sprites["overlay1"].opacity += 17; @sprites["overlay_control"].opacity += 17
-      @sprites["page_icon1"].opacity += 17; @sprites["pageIcon"].opacity += 17
-    end
-  end
-  
-  def pbQuest(quest)
+  def pbQuestDetailsScreen
+    oldsprites = pbFadeOutAndHide(@sprites)
+    quest = @quests[@quest_list_type][@questSelectionIndex]
     quest.new = false
     drawQuestDesc(quest)
-    15.times do
-      Graphics.update
-      @sprites["overlay2"].opacity += 17; @sprites["overlay3"].opacity += 17; @sprites["page_icon2"].opacity += 17
-    end
-    page = 1
+    swapToQuestDetailsScreen
+    pbFadeInAndShow(@sprites, oldsprites)
+
+    refreshNeeded = false
+    page = 0
     loop do
       Graphics.update
       Input.update
       pbUpdate
-      showOtherInfo = false
-      if Input.trigger?(Input::RIGHT) && page==1
-        pbPlayCursorSE
-        page += 1
-        @sprites["page_icon2"].mirror = true
-        drawOtherInfo(quest)
-      elsif Input.trigger?(Input::LEFT) && page==2
-        pbPlayCursorSE
-        page -= 1
-        @sprites["page_icon2"].mirror = false
-        drawQuestDesc(quest)
+      if Input.trigger?(Input::RIGHT)
+        if page == 0
+          pbPlayCursorSE
+          page += 1
+          @sprites["page_icon2"].mirror = true
+          drawOtherInfo(quest)
+        else
+          pbPlayBuzzerSE
+        end
+      elsif Input.trigger?(Input::LEFT)
+        if page == 1
+          pbPlayCursorSE
+          page -= 1
+          @sprites["page_icon2"].mirror = false
+          drawQuestDesc(quest)
+        else
+          pbPlayBuzzerSE
+        end
+      elsif Input.trigger?(Input::UP)
+        if @questSelectionIndex > 0
+          @questSelectionIndex -= 1
+          refreshNeeded = true
+        else
+          pbPlayBuzzerSE
+        end
+      elsif Input.trigger?(Input::DOWN)
+        if @questSelectionIndex < @quests[@quest_list_type].length - 1
+          @questSelectionIndex += 1
+          refreshNeeded = true
+        else
+          pbPlayBuzzerSE
+        end
       elsif Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
         break
       end
+
+      if refreshNeeded
+        quest = @quests[@quest_list_type][@questSelectionIndex]
+        quest.new = false
+        if page == 0
+          drawQuestDesc(quest)
+        elsif page == 1
+          drawOtherInfo(quest)
+        end
+        refreshNeeded = false
+      end
     end
-    15.times do
-      Graphics.update
-      @sprites["overlay2"].opacity -= 17; @sprites["overlay3"].opacity -= 17; @sprites["page_icon2"].opacity -= 17
-    end
-    @sprites["page_icon2"].mirror = false
-    @sprites["itemlist"].refresh
+    pbFadeOutAndHide(@sprites)
+    swapToMainScreen
+    pbFadeInAndShow(@sprites, oldsprites)
   end
   
   def drawQuestDesc(quest)
-    @sprites["overlay2"].bitmap.clear; @sprites["overlay3"].bitmap.clear
+    @sprites["overlay2"].bitmap.clear
+    @sprites["overlay3"].bitmap.clear
     # Quest name
     questName = $quest_data.getName(quest.id)
     pbDrawTextPositions(@sprites["overlay2"].bitmap,[
