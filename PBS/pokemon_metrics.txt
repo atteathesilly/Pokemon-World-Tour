@@ -5574,12 +5574,6 @@ FrontSprite = 0,12
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
-[SILVALLY,9]
-BackSprite = 0,0
-FrontSprite = 0,12
-ShadowX = 0
-ShadowSize = 2
-#-------------------------------
 [SIMIPOUR]
 BackSprite = 0,18
 FrontSprite = 0,23

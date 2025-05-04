@@ -43,7 +43,7 @@ Turns = 1
 HPMult = 3.0
 #-------------------------------
 [LUVDISC]
-Ability = SLICKSURFACE
+Ability = MOISTSKIN
 Moves1 = LIFEDEW
 Turns = 1
 HPMult = 2.0
@@ -59,13 +59,6 @@ Ability = VITALSPIRIT
 Moves1 = SCRATCH,BITE,PRIMEVALDRAGONDANCE
 Moves2 = CLASH
 HPMult = 3.0
-#-------------------------------
-[BIDOOF]
-Ability = NORMALIZE
-Moves1 = BODYSLAM,PRIMEVALCALMMIND
-Moves2 = ZENHEADBUTT
-Turns = 1
-HPMult = 10.0
 #-------------------------------
 [ZERAORA]
 Ability = HYBRIDFIGHTER
@@ -265,7 +258,7 @@ Moves1 = STARFALL,BOREALWIND,EMPOWEREDANCIENTPOWER,PRIMEVALROCKPOLISH
 Moves2 = SHATTERSHOT,GUST
 #-------------------------------
 [RHYPERIOR]
-Ability = FORTIFIED
+Ability = HARDAS
 Moves1 = TRAMPLE,ROCKAPULT,PRIMEVALIGNITE
 Moves2 = FIREBLAST,STONEEDGE
 Item = LAGGINGTAIL
@@ -295,13 +288,6 @@ Item = MUSCLEBAND
 Ability = LOUD
 Moves1 = SNARL,SHOCKWAVE,STINKCLOUD,PRIMEVALSTRINGSHOT
 Moves2 = DRONING,SNARL,NOBLEROAR,WALLOFSOUND
-HPMult = 5.0
-Item = WISEGLASSES
-#-------------------------------
-[WATCHOG]
-Ability = RECON
-Moves1 = PARTICLEPULSE,GLARE,PRIMEVALNUMB
-Moves2 = SHOCKWAVE,BACKHAND
 HPMult = 5.0
 Item = WISEGLASSES
 #-------------------------------
@@ -517,7 +503,7 @@ Moves2 = SLAG,DAZZLINGGLEAM,TAKESHELTER
 HPMult = 8.0
 #-------------------------------
 [PHIONE]
-Ability = HYDRATION
+Ability = OVERFLOWINGHEART
 Moves1 = EBBFLOW
 HPMult = 3.0
 #-------------------------------
