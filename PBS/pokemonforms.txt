@@ -571,6 +571,10 @@ Height = 4.5
 Weight = 610.0
 Pokedex = This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything.
 #-------------------------------
+[ZYGARDE,3]
+FormName = 50%
+Abilities = POWERCONSTRUCT
+#-------------------------------
 [HOOPA,1]
 FormName = Unbound
 Type1 = PSYCHIC
@@ -764,6 +768,14 @@ BaseStats = 97,167,97,129,167,97
 Abilities = NEUROFORCE
 Height = 7.5
 Pokedex = The light pouring out from all over its body affects living things and nature, impacting them in various ways.
+#-------------------------------
+[NECROZMA,4]
+FormName = Ultra
+Type1 = PSYCHIC
+Type2 = DRAGON
+BaseStats = 97,167,97,129,167,97
+Abilities = NEUROFORCE
+Height = 7.5
 #-------------------------------
 [CRAMORANT,1]
 FormName = Gulping
