@@ -75,7 +75,9 @@ class Player_Quests
       end
     end
     @active_quests.push(Quest.new(quest,color,story))
-    questAlert(_INTL("New quest discovered!")) unless skipAlert
+    unless skipAlert
+      questAlert(_INTL("\\me[{1}]Quest discovered:","Register phone"),quest)
+    end
     return true
   end
   
@@ -105,7 +107,9 @@ class Player_Quests
         @failed_quests.push(temp_quest)
         @active_quests.delete_at(i)
         found = true
-        questAlert(_INTL("Quest failed!")) unless skipAlert
+        unless skipAlert
+          questAlert(_INTL("Quest failed:"),quest)
+        end
         break
       end
     end
@@ -139,7 +143,9 @@ class Player_Quests
         @completed_quests.push(temp_quest)
         @active_quests.delete_at(i)
         found = true
-        questAlert(_INTL("Quest completed!")) unless skipAlert
+        unless skipAlert
+          questAlert(_INTL("\\me[{1}]Quest completed:","Slots win"),quest)
+        end
         break
       end
     end
@@ -161,7 +167,9 @@ class Player_Quests
         @active_quests[i].colorID = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
-        questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
+        unless skipAlert
+          questAlert(_INTL("\\se[{1}]Quest updated:","Mining found all"),quest)
+        end
       end
       return true if found
     end
@@ -199,7 +207,9 @@ class Player_Quests
         @active_quests[i].colorID = color if color
         @active_quests[i].new = true # Setting this back to true makes the "!" icon appear when the quest updates
         found = true
-        questAlert(_INTL("Quest updated with the next task!")) unless skipAlert
+        unless skipAlert
+          questAlert(_INTL("\\se[{1}]Quest updated:","Mining found all").quest)
+        end
       end
       return true if found
     end
@@ -211,8 +221,12 @@ class Player_Quests
     return true
   end
 
-  def questAlert(text)
-    pbMessage(_INTL("\\wm\\se[{1}]<ac>\\c[2]{2}</c>\nCheck your quest log for more details!</ac>",QUEST_JINGLE,text))
+  def questAlert(text,quest)
+    pbMessage(_INTL("\\wm\<ac>\\c[2]{1}</c>\n{2}</ac>\\wtnp[{3}]",text,$quest_data.getName(quest),questAlertDuration))
+  end
+
+  def questAlertDuration
+    return 60 - $Options.textspeed * 4
   end
 end
 

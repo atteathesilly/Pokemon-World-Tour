@@ -1,3 +1,5 @@
+SHOW_FAILED_QUESTS = true
+
 #===============================================================================
 # Class that creates the scrolling list of quest names
 #===============================================================================
@@ -24,7 +26,7 @@ class Window_Quest < Window_DrawableCommand
     return if index>=self.top_row+self.page_item_max
     rect = Rect.new(rect.x+16,rect.y,rect.width-16,rect.height)
     name = $quest_data.getName(@quests[index].id)
-    name = "<b>" + "#{name}" + "</b>" if @quests[index].story
+    name = "<u>" + "#{name}" + "</u>" if @quests[index].story
     base = self.baseColor
     shadow = self.shadowColor
     colorID = @quests[index].colorID || 0
@@ -46,7 +48,7 @@ class Window_Quest < Window_DrawableCommand
       end
       drawCursor(self.index,itemRect(self.index))
     else
-      drawFormattedTextEx(self.contents,Graphics.width/2-52,32,436,_INTL("None"),self.baseColor,self.shadowColor)
+      drawFormattedTextEx(self.contents,Graphics.width/2-64,32,436,_INTL("None"),self.baseColor,self.shadowColor)
     end
   end
   
@@ -98,7 +100,7 @@ class QuestList_Scene
       @quests_text.push("Failed")
     end
     @quest_list_type = 0
-    @sprites["itemlist"] = Window_Quest.new(22,28,Graphics.width-22,Graphics.height-80,@viewport)
+    @sprites["itemlist"] = Window_Quest.new(22,32,Graphics.width-22,Graphics.height-20,@viewport)
     @sprites["itemlist"].index = 0
     @sprites["itemlist"].baseColor = @base
     @sprites["itemlist"].shadowColor = @shadow
@@ -116,10 +118,6 @@ class QuestList_Scene
     pbDrawTextPositions(@sprites["overlay1"].bitmap,[
       [_INTL("{1} quests", @quests_text[@quest_list_type]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
     ])
-    drawFormattedTextEx(@sprites["overlay_control"].bitmap,38,316,
-      436,"ARROWS: Navigate",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay_control"].bitmap,38,348,
-      436,"A/S: Jump Down/Up",@base,@shadow)
     pbFadeInAndShow(@sprites) { pbUpdate }
   end
 
@@ -128,7 +126,6 @@ class QuestList_Scene
     loop do
       @questSelectionIndex = @sprites["itemlist"].index
       @sprites["itemlist"].active = true
-      dorefresh = false
       Graphics.update
       Input.update
       pbUpdate
@@ -144,14 +141,15 @@ class QuestList_Scene
         end
       elsif Input.trigger?(Input::RIGHT)
         pbPlayCursorSE
-        @quest_list_type +=1; @quest_list_type = 0 if @quest_list_type > @quests.length-1
-        dorefresh = true
+        @quest_list_type +=1
+        @quest_list_type = 0 if @quest_list_type > @quests.length-1
+        swapQuestType
       elsif Input.trigger?(Input::LEFT)
         pbPlayCursorSE
-        @quest_list_type -=1; @quest_list_type = @quests.length-1 if @quest_list_type < 0
-        dorefresh = true
+        @quest_list_type -=1
+        @quest_list_type = @quests.length-1 if @quest_list_type < 0
+        swapQuestType
       end
-      swapQuestType if dorefresh
     end
   end
 
@@ -168,13 +166,18 @@ class QuestList_Scene
   end
   
   def swapQuestType
-    @sprites["overlay1"].bitmap.clear
     @sprites["itemlist"].index = 0 # Resets cursor position
     @sprites["itemlist"].quests = @quests[@quest_list_type]
-    @sprites["pageIcon"].x = @sprites["page_icon1"].x + 32*@quest_list_type
+    @sprites["pageIcon"].x = @sprites["page_icon1"].x + 32 * @quest_list_type
+    pbRefreshMainScreen
+  end
+
+  def pbRefreshMainScreen
+    @sprites["overlay1"].bitmap.clear
     pbDrawTextPositions(@sprites["overlay1"].bitmap,[
-      [_INTL("{1} tasks", @quests_text[@quest_list_type]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
+      [_INTL("{1} Quests", @quests_text[@quest_list_type]),6,-2,0,Color.new(248,248,248),Color.new(0,0,0),true]
     ])
+    @sprites["itemlist"].refresh
   end
 
   def swapToMainScreen
@@ -188,6 +191,7 @@ class QuestList_Scene
     @sprites["overlay3"].opacity = 0
     @sprites["page_icon2"].opacity = 0
     setMainScreenBG
+    pbRefreshMainScreen
   end
 
   def swapToQuestDetailsScreen
@@ -200,6 +204,7 @@ class QuestList_Scene
     @sprites["overlay2"].opacity = 255
     @sprites["overlay3"].opacity = 255
     @sprites["page_icon2"].opacity = 255
+    @sprites["page_icon2"].mirror = false
     setQuestScreenBG
   end
   
@@ -235,14 +240,14 @@ class QuestList_Scene
         else
           pbPlayBuzzerSE
         end
-      elsif Input.trigger?(Input::UP)
+      elsif Input.trigger?(Input::UP) || Input.repeat?(Input::UP)
         if @questSelectionIndex > 0
           @questSelectionIndex -= 1
           refreshNeeded = true
         else
           pbPlayBuzzerSE
         end
-      elsif Input.trigger?(Input::DOWN)
+      elsif Input.trigger?(Input::DOWN) || Input.repeat?(Input::DOWN)
         if @questSelectionIndex < @quests[@quest_list_type].length - 1
           @questSelectionIndex += 1
           refreshNeeded = true
@@ -279,7 +284,7 @@ class QuestList_Scene
       ["#{questName}",Graphics.width/2 - 12,-2,2,Color.new(248,248,248),Color.new(0,0,0),true]
     ])
     # Quest description
-    questDesc = "<b>Overview</b>: #{$quest_data.getQuestDescription(quest.id)}"
+    questDesc = "<u>Overview</u>: #{$quest_data.getQuestDescription(quest.id)}"
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,48,
       436,questDesc,@base,@shadow)
     # Stage description
@@ -290,10 +295,11 @@ class QuestList_Scene
     if questStageLocation=="nil" || questStageLocation==""
       questStageLocation = "???"
     end
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,316,
-      436,"<b>Task</b>: #{questStageDesc}",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,348,
-      436,"<b>Location</b>: #{questStageLocation}",@base,@shadow)
+    detailsStartingY = Graphics.height-70
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,detailsStartingY,
+      436,"<u>Task</u>: #{questStageDesc}",@base,@shadow)
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,detailsStartingY + 32,
+      436,"<u>Location</u>: #{questStageLocation}",@base,@shadow)
   end
 
   def drawOtherInfo(quest)
@@ -304,8 +310,6 @@ class QuestList_Scene
     if questGiver=="nil" || questGiver==""
       questGiver = "???"
     end
-    # Total number of stages for quest
-    questLength = $quest_data.getMaxStagesForQuest(quest.id)
     # Map quest was originally started
     originalMap = quest.location
     # Vary text according to map name
@@ -327,13 +331,14 @@ class QuestList_Scene
     yStartingPos = 48
     yGap = 72
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos,
-      436,"<b>Quest received from</b>:",@base,@shadow)
+      436,"<u>Quest received from</u>:",@base,@shadow)
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos+yGap*1,
-      436,"<b>Quest discovered #{loc}</b>:",@base,@shadow)
+      436,"<u>Quest discovered #{loc}</u>:",@base,@shadow)
     drawFormattedTextEx(@sprites["overlay3"].bitmap,38,yStartingPos+yGap*2,
-      436,"<b>Quest #{time_text} time</b>:",@base,@shadow)
-    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,Graphics.height-68,
-      436,"<b>Reward</b>: #{questReward}",@base,@shadow)
+      436,"<u>Quest #{time_text} time</u>:",@base,@shadow)
+    detailsStartingY = Graphics.height-70
+    drawFormattedTextEx(@sprites["overlay3"].bitmap,38,detailsStartingY,
+      436,"<u>Reward</u>: #{questReward}",@base,@shadow)
     yStartingPos += 24
     textpos = [
         ["#{questGiver}",38,yStartingPos,0,@base,@shadow],
