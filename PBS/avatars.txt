@@ -60,6 +60,13 @@ Moves1 = SCRATCH,BITE,PRIMEVALDRAGONDANCE
 Moves2 = CLASH
 HPMult = 3.0
 #-------------------------------
+[BIDOOF]
+Ability = NORMALIZE
+Moves1 = BODYSLAM,PRIMEVALCALMMIND
+Moves2 = ZENHEADBUTT
+Turns = 1
+HPMult = 10.0
+#-------------------------------
 [ZERAORA]
 Ability = HYBRIDFIGHTER
 Moves1 = MACHPUNCH,THUNDERFANG,PRIMEVALBULKUP
