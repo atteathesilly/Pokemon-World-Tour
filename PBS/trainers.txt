@@ -1642,7 +1642,7 @@ Pokemon = QUILLADIN,30
 Pokemon = AMAROWAK,30
     Name = Apotropaia
     Gender = female
-    Moves = BULLDOZE,SHADOWPUNCH,FIRELASH,BREAKDANCE
+    Moves = STAMPDOWN,SHADOWPUNCH,FIRELASH,BREAKDANCE
     AbilityIndex = 1 # Ancestral Dance
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,12,9,0,12,9
@@ -1665,7 +1665,7 @@ ExtendsVersion = 0
 Policies = CURSE_SELF_DEBUFFING
 Pokemon = BELLOSSOM,30
     Position = 0
-    Moves = GRASSKNOT,SMOLDERRAVE,DAZZLINGGLEAM,HEALPULSE
+    Moves = GRASSKNOT,SMOLDERRAVE,DAZZLINGGLEAM,BURNINGJEALOUSY
     AbilityIndex = 1 # Choreography
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1677,7 +1677,7 @@ Pokemon = MNINETALES,30
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = DHELMISE,30
-    Moves = ADAMANTINEPRESS,ROOTWRACK,GYROBALL,SHADOWSNEAK
+    Moves = ADAMANTINEPRESS,ROOTWRACK,WEIGHANCHOR,SHADOWSNEAK
     AbilityIndex = 0 # Rust & Wrack
     Item = OCCABERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1689,7 +1689,7 @@ Pokemon = WHIMSICOTT,30
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = AMAROWAK,30
-    Moves = BULLDOZE,SHADOWPUNCH,FIRELASH,SWORDSDANCE
+    Moves = STAMPDOWN,SHADOWPUNCH,FIRELASH,SWORDSDANCE
 Pokemon = ORICORIO,30
     Moves = FEATHERDANCE,LIGHTNINGDANCE,SQUALLDART,SMOLDERRAVE
 RemovePokemon = QUILLADIN,30
