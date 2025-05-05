@@ -32,7 +32,7 @@ class Window_Quest < Window_DrawableCommand
     colorID = @quests[index].colorID || 0
     questNameColors = getTextColorsFromIDNumber(colorID)
     drawFormattedTextEx(self.contents,rect.x,rect.y+4, 436,name,questNameColors[0],questNameColors[1])
-    pbDrawImagePositions(self.contents,[[sprintf("Graphics/Pictures/QuestUI/new"),rect.width-16,rect.y+2]]) if @quests[index].new
+    pbDrawImagePositions(self.contents,[[sprintf("Graphics/Pictures/QuestUI/new"),rect.width-16,rect.y+4]]) if @quests[index].new
   end
 
   def refresh
@@ -48,7 +48,7 @@ class Window_Quest < Window_DrawableCommand
       end
       drawCursor(self.index,itemRect(self.index))
     else
-      drawFormattedTextEx(self.contents,Graphics.width/2-64,32,436,_INTL("None"),self.baseColor,self.shadowColor)
+      drawFormattedTextEx(self.contents,Graphics.width/2-64,36,436,_INTL("None"),self.baseColor,self.shadowColor)
     end
   end
   
@@ -100,7 +100,7 @@ class QuestList_Scene
       @quests_text.push("Failed")
     end
     @quest_list_type = 0
-    @sprites["itemlist"] = Window_Quest.new(22,32,Graphics.width-22,Graphics.height-20,@viewport)
+    @sprites["itemlist"] = Window_Quest.new(22,26,Graphics.width-22,Graphics.height-20,@viewport)
     @sprites["itemlist"].index = 0
     @sprites["itemlist"].baseColor = @base
     @sprites["itemlist"].shadowColor = @shadow
