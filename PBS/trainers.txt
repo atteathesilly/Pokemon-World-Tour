@@ -6017,7 +6017,7 @@ Pokemon = SERPERIOR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,10,10,20,10,0
 Pokemon = EMPOLEON,70
-    Moves = FLIPTURN,HARBORBREAKER,FLETCHETTES,KNOCKOFF
+    Moves = FLIPTURN,HARBORBREAKER,FLECHETTES,KNOCKOFF
     AbilityIndex = 0 # Imperious
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
