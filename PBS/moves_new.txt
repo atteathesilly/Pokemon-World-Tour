@@ -3115,7 +3115,7 @@ Flags = CanMagicCoat
 Description = The user lays a trap of sharp feathers around the foe. It hurts foes that switch into battle.
 #-------------------------------
 [FLECHETTES]
-Name = Fletchettes
+Name = Flechettes
 Type = STEEL
 Category = Special
 Power = 70
