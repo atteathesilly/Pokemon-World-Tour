@@ -608,7 +608,7 @@ Pokemon = PRINPLUP,25
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,0,20,15
 Pokemon = TOXTRICITY,25
-    Moves = VOLTSWITCH,STINKCLOUD,HEX,POISONGAS
+    Moves = VOLTSWITCH,CLEARSMOG,HEX,POISONGAS
     AbilityIndex = 1 # Thunderstruck
     Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -987,7 +987,7 @@ Pokemon = DARTRIX,25
 Policies = YEZERA,METAGAMES_STAT_ITEMS
 Flags = NoPerfect
 Pokemon = ILLUMISE,35
-    Moves = WISH,ILLWISHES,REFLECT,UTURN
+    Moves = WISH,ILLWISHES,REFLECT,ENCORE
     AbilityIndex = 0 # Prankster
     Item = MENTALHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2802,13 +2802,13 @@ Pokemon = HARIYAMA,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,10,0,20,10
 Pokemon = FROSMOTH,45
-    Moves = THERMALDRAIN,CHILL,BUGBUZZ,DAZZLINGGLEAM
+    Moves = THERMALDRAIN,FRIGIDJEALOUSY,BUGBUZZ,DAZZLINGGLEAM
     AbilityIndex = 0 # Ice Scales
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,0,20,10
 Pokemon = DONPHAN,45
-    Moves = STEAMROLLER,EARTHQUAKE,ICESHARD,THUNDERFANG
+    Moves = CARAPACECRUSH,EARTHQUAKE,ICESHARD,HUMBLE
     AbilityIndex = 1 # Burn Out
     Item = SHELLBELL
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -3204,7 +3204,7 @@ Pokemon = BRUXISH,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,5,20,20,5
 Pokemon = GRAPIDASH,45
-    Moves = PSYCHOSCISSION,MISADVENTURE,INFINITEFORCE,DRILLRUN
+    Moves = PSYCHOSCISSION,HUMBLE,INFINITEFORCE,DRILLRUN
     AbilityIndex = 1 # Heart of Justice
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -4160,7 +4160,7 @@ Flags = NoPerfect
 Pokemon = TOGEKISS,65
     Name = Artemisia
     Gender = female
-    Moves = AIRSLASH,MOONBLAST,ROOST,PSYCHIC
+    Moves = AIRSLASH,SUPERSTITION,ROOST,PSYCHIC
     AbilityIndex = 1 # Serene Grace
     Item = BABIRIBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
