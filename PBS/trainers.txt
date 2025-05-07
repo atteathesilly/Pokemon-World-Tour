@@ -4089,6 +4089,10 @@ Pokemon = SEAKING,55
 [LEADER_Victoire,Victoire,1]
 ExtendsVersion = 0
 Policies = CURSE_EXTRA_ITEMS
+Pokemon = HYMNUS,55
+    Moves = DRACOMETEOR,PLAYROUGH,RAINSTORM,FIREBLAST
+    Item = WHITEHERB
+    ExtraItems = DAMPROCK
 Pokemon = BLASTOISE,55
     ExtraItems = FOCUSSASH
 Pokemon = MISMAGIUS,55
@@ -4096,10 +4100,6 @@ Pokemon = MISMAGIUS,55
 Pokemon = DECEAT,55
     Moves = METEORMASH,HUMBLE,SUCKERPUNCH,SWORDSDANCE
     ExtraItems = LIFEORB
-Pokemon = HYMNUS,55
-    Moves = DRACOMETEOR,PLAYROUGH,RAINSTORM,FIREBLAST
-    Item = WHITEHERB
-    ExtraItems = DAMPROCK
 Pokemon = BRONZONG,55
     Item = HIVISJACKET
     ExtraItems = ROCKYHELMET
@@ -4826,7 +4826,7 @@ Pokemon = GSTUNFISK,58
 Policies = METAGAMES_STAT_ITEMS
 Flags = NoPerfect
 Pokemon = REGIDRAGO,65
-    Moves = DRAGONENERGY,FACADE,CLOSECOMBAT,CRUNCH
+    Moves = DRAGONENERGY,FACADE,CLOSECOMBAT,REND
     AbilityIndex = 1 # Dragon's Blood
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,10,20,0,10,20
@@ -4838,7 +4838,7 @@ Pokemon = REGIELEKI,65
 Pokemon = TOGEKISS,65
     Name = Artemisia
     Gender = female
-    Moves = AIRSLASH,DAZZLINGGLEAM,TAILWIND,PSYCHIC
+    Moves = AIRSLASH,SUPERSTITION,TAILWIND,PSYCHIC
     AbilityIndex = 1 # Serene Grace
     Item = BABIRIBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -5474,19 +5474,19 @@ Pokemon = GALVANTULA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = CROBAT,70
-    Moves = UTURN,LEECHLIFE,TOXICTASTE,BRAVEBIRD
+    Moves = UTURN,LEECHLIFE,TOXICTASTE,TALONFALL
     AbilityIndex = 1 # Infiltrator
     Item = BIGROOT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,10,20,0,0
 Pokemon = PAPELLUMEN,70
-    Moves = SEDATINGDUST,BUGBUZZ,COLDFRONT,PSYCHIC
+    Moves = SEDATINGDUST,BUGBUZZ,COLDFRONT,PIERCINGDOUBT
     AbilityIndex = 1 # Erudite
     Item = WHITEHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,0,20,20,5
 Pokemon = WORNET,70
-    Moves = MANYNEEDLE,DRILLRUN,POISONJAB,UTURN
+    Moves = MANYNEEDLE,DRILLRUN,CROSSPOISON,UTURN
     AbilityIndex = 1 # Predation
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -6017,7 +6017,7 @@ Pokemon = SERPERIOR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,10,10,20,10,0
 Pokemon = EMPOLEON,70
-    Moves = COLDFRONT,HARBORBREAKER,FLASHCANNON,KNOCKOFF
+    Moves = FLIPTURN,HARBORBREAKER,FLETCHETTES,KNOCKOFF
     AbilityIndex = 0 # Imperious
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
