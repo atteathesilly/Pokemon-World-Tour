@@ -3305,7 +3305,7 @@ Pokemon = SNORLAX,65
 [FORMERCHAMP_Scilla,Scilla]
 Flags = NoPerfect
 Pokemon = AZUMARILL,70
-    Moves = AQUAJET,PLAYROUGH,LIQUIDATION,GIGAIMPACT
+    Moves = AQUAJET,HUMBLE,LIQUIDATION,GIGAIMPACT
     AbilityIndex = 1 # Pure Force
     Item = POWERLOCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -3363,7 +3363,7 @@ Pokemon = SAWSBUCK,70
     Form = 1 # Summer Form
     Moves = TRAMPLE,SPIKES,LEAFBLADE,DOUBLEEDGE
     AbilityIndex = 1 # Adapted
-    Item = POWERLOCK
+    Item = SITRUSBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,5,20,20,0
 Pokemon = STOUTLAND,70
@@ -3379,7 +3379,7 @@ Pokemon = APPLETUN,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,15,0,0,15
 Pokemon = BLAZIKEN,70
-    Moves = BLAZEKICK,CLOSECOMBAT,BRAVEBIRD,OVERHEAT
+    Moves = BLAZEKICK,CLOSECOMBAT,TALONFALL,OVERHEAT
     AbilityIndex = 1 # Pecking Order
     Item = PRISMATICPLATE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -4636,6 +4636,12 @@ Flags = NoPerfect
 Pokemon = REGISTEEL,60
     Moves = CLOSECOMBAT,DISCHARGE,EVERHONE,STEALTHROCK
     AbilityIndex = 1 # Indestructible
+Pokemon = CHATOT,60
+    Name = Dove Abyss
+    Gender = male
+    Moves = CHATTER,BUGBUZZ,SNARL,PROTECT
+    AbilityIndex = 1 # Fascinate
+    Item = SITRUSBERRY
 Pokemon = EXPLOUD,60
     Name = Egret Ash
     Gender = female
@@ -4658,12 +4664,6 @@ Pokemon = KROOKODILE,60
     Moves = EARTHQUAKE,CRUNCH,STAREDOWN,BULKUP
     AbilityIndex = 0 # Tough
     Item = WILDCARD
-Pokemon = CHATOT,60
-    Name = Dove Abyss
-    Gender = male
-    Moves = CHATTER,BUGBUZZ,SNARL,PROTECT
-    AbilityIndex = 1 # Fascinate
-    Item = SITRUSBERRY
 #-------------------------------
 [TRAINER_Sang,Sang,3]
 ExtendsVersion = 2
@@ -5427,7 +5427,7 @@ Pokemon = GRENINJA,70
 Policies = ECLIPSE_TEAM
 Flags = NoPerfect
 Pokemon = XATU,70
-    Moves = TAILWIND,WISH,FUTURESIGHT,UTURN
+    Moves = TAILWIND,WISH,PIERCINGDOUBT,UTURN
     AbilityIndex = 1 # Harbinger
     Item = PINPOINTROCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -5440,7 +5440,7 @@ Pokemon = MGIGALITH,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,15,0,0,15
 Pokemon = ARAICHU,70
-    Moves = PROTECT,THUNDERCAGE,MAELSTROM,KINETICGRIP
+    Moves = PROTECT,THUNDERCAGE,MAELSTROM,PIERCINGDOUBT
     AbilityIndex = 1 # Surf's Up
     Item = KEEBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
