@@ -110,10 +110,8 @@ class PokeBattle_Battle
 
     def damageFromDOTStatus(battler, status, aiCheck = false)
         if battler.takesIndirectDamage? && !battler.hasActiveAbility?(:PLACIDITY)
-            if status == :LEECHED
+            if status == :LEECHED || status == :POISON
                 fraction = 1.0 / 12.0
-            elsif status == :POISON
-                fraction = 1.0 / 10.0
             else
                 fraction = 1.0 / 8.0
             end
