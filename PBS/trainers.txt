@@ -7049,50 +7049,65 @@ Pokemon = SYLVEON,59
 [LOST_RANGER_BLUE,Farid]
 Flags = NoPerfect
 Pokemon = INTELEON,60
+    Moves = SNIPESHOT,DISARMINGSHOT,DEEPBREATHING,SUFFOCATE
     AbilityIndex = 0 # Sniper
     Item = SCOPELENS
 Pokemon = DARMANITAN,60
     Form = 1 # Zen Form
+    Moves = PSYCHESWITCH,FLAMETHROWER,PIERCINGDOUBT,IGNITE
     AbilityIndex = 0 # Tough
 Pokemon = RIOJIN,60
+    Moves = STEELBEAM,DETACHMENT,VANGUARD,DARKPULSE
     AbilityIndex = 1 # Inner Focus
     Item = SHELLBELL
 Pokemon = DONPHAN,60
+    Moves = EARTHQUAKE,ADAMANTINEPRESS,HUMBLE,CARAPACECRUSH
     AbilityIndex = 1 # Burn Out
 Pokemon = KOMALA,60
+    Moves = NULLPULSE,DREAMDANCE,FRENZYPLANT,SLACKOFF
     AbilityIndex = 0 # Comatose
     Item = ENERGYHERB
 #-------------------------------
 [LOST_RANGER_GREEN,Farid]
 Flags = NoPerfect
 Pokemon = FERROTHORN,60
+    Moves = POWERWHIP,IMPALINGSPIKE,LEECHSEED,SWORDSDANCE
     AbilityIndex = 0 # Iron Barbs
 Pokemon = REUNICLUS,60
+    Moves = PIERCINGDOUBT,MIASMA,STINGINGJEALOUSY,THUNDERBOLT
     AbilityIndex = 1 # Magic Guard
     Item = LIFEORB
 Pokemon = VIVILLON,60
     Form = 3 # Garden Pattern Form
+    Moves = SCALESCATTER,RECOVER,COLDFRONT,QUIVERDANCE
     AbilityIndex = 0 # Multiscale
     Item = LEFTOVERS
 Pokemon = MEGANIUM,60
+    Moves = HOLLYCHARM,ENCHANTEDARROW,STRENGTHSAP,MIRRORCOAT
     AbilityIndex = 0 # Fae Veil
 Pokemon = DRACOZOLT,60
+    Moves = VOLTSEEKERS,REND,MASSDESTRUCTION,HUMBLE
     AbilityIndex = 0 # Foolhardy
     Item = CHOICESCARF
 #-------------------------------
 [LOST_RANGER_PURPLE,Farid]
 Flags = NoPerfect
 Pokemon = NIDOKING,60
-    AbilityIndex = 1 # Stressful
+    Moves = POISONJAB,TRAMPLE,GLACIALRAM,LIGHTNINGSLAM
+    AbilityIndex = 0 # Sheer Force
 Pokemon = GRANBULL,60
+    Moves = PLAYBITE,MORNINGSTAR,DRAINPUNCH,BULKUP
     AbilityIndex = 0 # Intimidate
     Item = SKILLHERB
 Pokemon = MISMAGIUS,60
+    Moves = DEATHKNELL,ENCHANTINGSONG,DARKALLURE,EERIESPELL
     AbilityIndex = 1 # Ear-Splitting
     Item = THROATSPRAY
 Pokemon = CLOYSTER,60
+    Moves = SHELLSMASH,GLACIALRAM,ICEBERGBASH,POISONJAB
     AbilityIndex = 0 # Tough
 Pokemon = GLISCOR,60
+    Moves = DIVEBOMB,UNDERMINE,ROOST,SWORDSDANCE
     AbilityIndex = 0 # Grotesque Vitals
     Item = ASSAULTVEST
 #-------------------------------
