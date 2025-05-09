@@ -744,7 +744,7 @@ Pokedex = Sad that its true identity may be exposed, Mimikyu will mercilessly se
 #-------------------------------
 [NECROZMA,1]
 FormName = Dusk Mane
-Type1 = PSYCHIC
+Type1 = ROCK
 Type2 = STEEL
 BaseStats = 97,157,127,77,113,109
 Height = 3.8
@@ -753,7 +753,7 @@ Pokedex = This is Necrozma's form while it's absorbing the power of Solgaleo, ma
 #-------------------------------
 [NECROZMA,2]
 FormName = Dawn Wings
-Type1 = PSYCHIC
+Type1 = ROCK
 Type2 = GHOST
 BaseStats = 97,113,109,77,157,127
 Height = 4.2
@@ -762,7 +762,7 @@ Pokedex = Lunala no longer has a will of its own. Now under the control of Necro
 #-------------------------------
 [NECROZMA,3]
 FormName = Ultra
-Type1 = PSYCHIC
+Type1 = ROCK
 Type2 = DRAGON
 BaseStats = 97,167,97,129,167,97
 Abilities = NEUROFORCE
