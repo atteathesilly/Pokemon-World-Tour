@@ -7109,7 +7109,7 @@ Pokemon = CLOYSTER,60
 Pokemon = GLISCOR,60
     Moves = DIVEBOMB,UNDERMINE,ROOST,SWORDSDANCE
     AbilityIndex = 0 # Grotesque Vitals
-    Item = ASSAULTVEST
+    Item = LEFTOVERS
 #-------------------------------
 [TEENAGERM,Burke]
 Pokemon = LEAFEON,58

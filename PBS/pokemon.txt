@@ -18836,7 +18836,8 @@ Flags = Legendary
 #-------------------------------
 [NECROZMA]
 Name = Necrozma
-Type1 = DARK
+Type1 = ROCK
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 97,107,101,79,127,89
 # Total = 600
