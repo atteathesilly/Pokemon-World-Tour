@@ -1020,6 +1020,19 @@ Flags = CanProtect
 Description = The user soars up high, becoming invulnerable, then strikes on the second turn by dive bombing the target.
 Animation = FLY
 #-------------------------------
+[DIVININGTALON]
+Name = Divining Talon
+Type = FLYING
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = MoveJinxesSelfCriticalHits
+Flags = CanProtect
+Description = The opponent is shredded by talons. This attack always results in a critical hit, but applies Jinx to the user.
+Animation = DRILLPECK
+#-------------------------------
 [DRAFT]
 Name = Draft
 Type = FLYING
@@ -1145,19 +1158,6 @@ FunctionCode = Basic
 Flags = CanProtect
 Description = The user attacks the target while dashing skillfully past it.
 Animation = ACROBATICS
-#-------------------------------
-[TALONFALL]
-Name = Talonfall
-Type = FLYING
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = RecoilQuarterOfDamageDealtCriticalHits
-Flags = CanProtect
-Description = The opponent is shredded by talons. This attack always results in a critical hit, but the user also takes 25% recoil.
-Animation = DRILLPECK
 #-------------------------------
 [TEMPEST]
 Name = Tempest
