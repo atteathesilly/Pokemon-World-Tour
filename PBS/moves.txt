@@ -2488,6 +2488,18 @@ FunctionCode = Basic
 Flags = CanProtect
 Description = The user attacks with a ray of light that sparkles as if it were made of gemstones.
 #-------------------------------
+[PRISMATICLASER]
+Name = Prismatic Laser
+Type = ROCK
+Category = Special
+Power = 170
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttack
+Flags = CanProtect,Uninvocable
+Description = The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.
+#-------------------------------
 [ROCKBLAST]
 Name = Rock Blast
 Type = ROCK
@@ -5332,18 +5344,6 @@ Flags = CanProtect
 EffectChance = 100
 Description = A mistlike flurry of down envelops and damages the target. It also lowers the target's Sp. Atk by two steps.
 #-------------------------------
-[PHOTONGEYSER]
-Name = Photon Geyser
-Type = DARK
-Category = Adaptive
-Power = 100
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = IgnoreTargetAbility
-Flags = CanProtect
-Description = The user attacks with a pillar of dark light. This ignores their ability.
-#-------------------------------
 [POWERSPLIT]
 Name = Power Split
 Type = PSYCHIC
@@ -5365,18 +5365,6 @@ Target = User
 FunctionCode = SwapPhysicalStats
 Flags = CanSnatch
 Description = The user employs psychic power to switch its base Attack with its base Defense stat.
-#-------------------------------
-[PRISMATICLASER]
-Name = Prismatic Laser
-Type = ROCK
-Category = Special
-Power = 170
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttack
-Flags = CanProtect,Uninvocable
-Description = The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.
 #-------------------------------
 [PSYBEAM]
 Name = Psybeam
@@ -6321,6 +6309,18 @@ Target = NearOther
 FunctionCode = DoubleDamageTargetMoved
 Flags = CanProtect
 Description = If the user moves after the target, this attack's power will be doubled.
+#-------------------------------
+[PHOTONGEYSER]
+Name = Photon Geyser
+Type = DARK
+Category = Adaptive
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IgnoreTargetAbility
+Flags = CanProtect
+Description = The user attacks with a pillar of dark light. This ignores their ability.
 #-------------------------------
 [PURSUIT]
 Name = Pursuit
