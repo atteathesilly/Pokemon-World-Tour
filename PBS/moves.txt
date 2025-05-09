@@ -5334,7 +5334,7 @@ Description = A mistlike flurry of down envelops and damages the target. It also
 #-------------------------------
 [PHOTONGEYSER]
 Name = Photon Geyser
-Type = PSYCHIC
+Type = DARK
 Category = Adaptive
 Power = 100
 Accuracy = 100
@@ -5342,7 +5342,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = IgnoreTargetAbility
 Flags = CanProtect
-Description = The user attacks with a pillar of light. This ignores their ability.
+Description = The user attacks with a pillar of dark light. This ignores their ability.
 #-------------------------------
 [POWERSPLIT]
 Name = Power Split
@@ -5368,7 +5368,7 @@ Description = The user employs psychic power to switch its base Attack with its 
 #-------------------------------
 [PRISMATICLASER]
 Name = Prismatic Laser
-Type = PSYCHIC
+Type = ROCK
 Category = Special
 Power = 170
 Accuracy = 100
