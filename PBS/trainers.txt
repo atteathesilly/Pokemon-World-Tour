@@ -2796,7 +2796,7 @@ Pokemon = LIEPARD,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = HARIYAMA,45
-    Moves = ADAMANTINEPRESS,BRICKBREAK,BULLETPUNCH,KNOCKOFF
+    Moves = ADAMANTINEPRESS,BRICKBREAK,ROCKTOMB,KNOCKOFF
     AbilityIndex = 1 # Fighting Vigor
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
