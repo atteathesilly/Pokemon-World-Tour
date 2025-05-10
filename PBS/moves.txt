@@ -1092,7 +1092,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage
 Flags = CanProtect
-Description = The user rampages and attacks for three turns.
+Description = The user rampages and attacks for two turns.
 #-------------------------------
 [TICKLE]
 Name = Tickle
@@ -1150,7 +1150,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = RampagePreventSleeping
 Flags = CanProtect,Sound
-Description = The user attacks in an uproar, going on a rampage for three turns. Over that time, no one can fall asleep.
+Description = The user attacks in an uproar, going on a rampage for two turns. Over that time, no one can fall asleep.
 #-------------------------------
 [WISH]
 Name = Wish
@@ -3889,7 +3889,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage
 Flags = CanProtect
-Description = The user rampages and attacks while spewing flames for three turns.
+Description = The user rampages and attacks while spewing flames for two turns.
 Animation = FLAREBLITZ
 #-------------------------------
 [SACREDFIRE]
@@ -4567,7 +4567,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage
 Flags = CanProtect,Dance
-Description = The user attacks by scattering petals in a rampage for three turns.
+Description = The user attacks by scattering petals in a rampage for two turns.
 #-------------------------------
 [POWERWHIP]
 Name = Power Whip
@@ -5949,7 +5949,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage
 Flags = CanProtect
-Description = The user rampages and attacks for three turns.
+Description = The user rampages and attacks for two turns.
 #-------------------------------
 [ROAROFTIME]
 Name = Roar of Time
