@@ -2197,7 +2197,7 @@ Pokemon = VIKAVOLT,44
     AbilityIndex = 1 # Levitate
     Item = CHARTIBERRY
 #-------------------------------
-[JANITOR,Aaron]
+[JANITOR,Eric]
 Pokemon = FEAROW,40
     Moves = JETSTREAM,DRILLPECK,DRILLRUN,ROOST
     AbilityIndex = 0 # Tough
