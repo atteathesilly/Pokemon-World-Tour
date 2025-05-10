@@ -5945,8 +5945,8 @@ Generation = 4
 Name = Unown
 Type1 = QMARKS
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 50,50,50,50,50,50
-# Total = 300
+BaseStats = 55,55,55,55,55,55
+# Total = 330
 GenderRate = Genderless
 BaseEXP = 158
 Rareness = 225
