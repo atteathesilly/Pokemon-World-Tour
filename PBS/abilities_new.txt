@@ -2085,6 +2085,11 @@ Description = Takes half damage from Dark- and Bug-type moves.
 Name = Unassuming
 Description = Before using a status move against a single foe, lowers their Defense by two steps.
 #-------------------------------
+[UNBOUND]
+Name = Unbound
+Description = Moves ignore Abilities that would affect its moves or activate after hitting the target, and immunities due to typing.
+Flags = MoldBreaking
+#-------------------------------
 [UNBREAKABLE]
 Name = Unbreakable
 Description = Prevents half the self-damage from recoil and Self-Destruct/Explosion.
