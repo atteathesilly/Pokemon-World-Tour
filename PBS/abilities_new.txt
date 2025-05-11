@@ -1106,7 +1106,7 @@ Description = Boosts Speed by 50%, but the Pokémon is hurt for 1/10th HP each t
 #-------------------------------
 [LIVINGARMOR]
 Name = Living Armor
-Description = Heals 1/16th HP every turn. Protected against critical hits.
+Description = Protected against critical hits. Heals 1/12th HP every turn if hit by an attack.
 Flags = CritImmunity
 #-------------------------------
 [LONGODDS]
