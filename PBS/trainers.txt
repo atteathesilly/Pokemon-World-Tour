@@ -782,7 +782,7 @@ Pokemon = LEDYBA,25
 #-------------------------------
 [COOLTRAINER_F7,Blaire]
 Pokemon = SNEASLER,40
-    Moves = HONECLAWS,CROSSCHOP,VENOMORTAR,XSCISSOR
+    Moves = AIMTRUE,CROSSCHOP,VENOMORTAR,XSCISSOR
     AbilityIndex = 1 # Frustrate
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
