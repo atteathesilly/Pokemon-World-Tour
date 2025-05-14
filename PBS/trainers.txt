@@ -7369,51 +7369,89 @@ Pokemon = GRIMMSNARL,60
 #-------------------------------
 [CAMPER_M,Nick]
 Pokemon = ARATICATE,57
+    Moves = MOUTHFUL,SWEETSELENE,EXTREMESPEED,CRUNCH
     AbilityIndex = 1 # Gourmand
 Pokemon = REAVOR,57
+    Moves = SHATTERVISE,CARAPACECRUSH,ADAMANTINEPRESS,LEAFBLADE
     AbilityIndex = 1 # Inner Focus
     Item = ASSAULTVEST
 Pokemon = PTEROFLYTE,58
+    Moves = HUNTDOWN,BEDROCKBREAKER,DRAGONDANCE,INFERNOIMPACT
     AbilityIndex = 0 # Armor Piercing
 Pokemon = FLORGES,57
+    Moves = ENCHANTEDARROW,SYNTHESIS,WEATHERBURST,GIGADRAIN
     AbilityIndex = 0 # Clover Song
     Item = CADOBERRY
 #-------------------------------
 [ANCIENTPRIEST,Chestibor]
 Pokemon = GOLEM,60
+    Moves = EARTHQUAKE,GRINDSTONE,STEALTHROCK,FLAREBLITZ
     AbilityIndex = 1 # Desert Armor
+    Item = RINDOBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,10,20,0,10,10
 Pokemon = ZOROARK,60
+    Moves = BLACKOUT,TOTALCONTROL,DREAMDANCE,WEATHERBURST
     AbilityIndex = 1 # Territorial
 Pokemon = DRAPION,60
+    Moves = HONORLESSSTING,SEVER,VENOMGUARD,AGONIZE
     AbilityIndex = 0 # Darkened Skies
 Pokemon = SIGILYPH,60
+    Moves = SKYFALL,MISTBURST,PIERCINGDOUBT,HALTINGCOLD
     AbilityIndex = 0 # Magic Guard
+    Item = LIFEORB
 #-------------------------------
 [ANCIENTPRIEST,Radzayac]
 Pokemon = DIGGERSBY,60
+    Moves = SUPERFANG,MEGAPUNCH,UNDERMINE,GUNKSHOT
     AbilityIndex = 1 # Paranoid
 Pokemon = MGIGALITH,60
+    Moves = ABERRANTMOTE,SINGINGSTONE,BLOSSOM,LUMINBURST
     AbilityIndex = 0 # Time Interloper
+    Item = LUMBERAXE
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,10,0,20,10
+Pokemon = HZOROARK,60
+    Moves = RUIN,MALEFACTION,RECOVER,REFLECT
+    AbilityIndex = 0 # Illusion
+    Item = UTILITYUMBRELLA
 Pokemon = ARCTOZOLT,60
+    Moves = BOLTBEAK,FROSTBREATH,DETACHMENT,ERODE
     AbilityIndex = 0 # Meteoric
-Pokemon = ZOROARK,60
-    AbilityIndex = 1 # Territorial
 #-------------------------------
 [ANCIENTPRIEST,Dobromil]
 Pokemon = MBEAUTIFLY,60
+    Moves = PLAYROUGH,LEECHLIFE,ICYINJECTION,DEFOG
     AbilityIndex = 1 # Schadenfreude
+    Item = FOCUSSASH
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
 Pokemon = PURUGLY,60
-    AbilityIndex = 0 # Extorter
+    Moves = STAREDOWN,YAWN,NULLPULSE,PULVERIZERCHORD
+    AbilityIndex = 1 # Competitive
 Pokemon = QUAGSIRE,60
+    Moves = RIVERREST,LIQUIDATION,PLAYROUGH,TRAMPLE
     AbilityIndex = 0 # Unaware
+    Item = RINDOBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,10,10,0,10,10
 #-------------------------------
 [ANCIENTPRIEST,Kazmilos]
 Pokemon = MCARNIVINE,60
+    Moves = DIVEBOMB,VERMINCLOUD,ROOST,SAPPINGJEALOUSY
     AbilityIndex = 1 # Pestilent
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,10,15,0,10,15
 Pokemon = SHIINOTIC,60
+    Moves = SPORE,SUPERSTITION,DREAMABSORB,GIGADRAIN
     AbilityIndex = 1 # Torpor Sap
+    Item = LEPPABERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,10,0,20,10
 Pokemon = CINCCINO,60
+    Moves = FIREWORKS,STELLARATE,BUBBLEBARRAGE,WINDTUNNEL
     AbilityIndex = 1 # Fluffy
+    Item = LOADEDDICE
 #-------------------------------
 [CHALLENGER_Vanya,Vanya]
 Flags = NoPerfect

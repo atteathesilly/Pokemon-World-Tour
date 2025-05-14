@@ -491,7 +491,7 @@ Power = 180
 Accuracy = 100
 TotalPP = 1
 Target = NearOther
-FunctionCode = EmpoweredMetalClaw
+FunctionCode = EmpoweredMeteorMash
 Flags = CanProtect,Punch,Empowered
 EffectChance = 100
 Description = The target is obliterated by a meteoric strike, which raises the user's attack by two steps.
@@ -543,6 +543,7 @@ Target = User
 FunctionCode = EmpoweredSwordsDance
 Flags = Dance,Empowered
 Description = The user raises their Attack by four steps and becomes Steel-type.
+Animation = SWORDSDANCE
 #-------------------------------
 #		FIRE MOVES
 #-------------------------------
