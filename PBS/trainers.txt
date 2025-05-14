@@ -3233,74 +3233,121 @@ Pokemon = GDARMANITAN,45
 Policies = SANDSTORM_TEAM
 Flags = NoPerfect
 Pokemon = HIPPOWDON,50
+    Moves = STEALTHROCK,SLACKOFF,HEATWAVE,SANDBLASTING
     AbilityIndex = 0 # Sand Stream
     Item = SMOOTHROCK
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,10,10,0,10,10
 Pokemon = MANDIBUZZ,50
+    Moves = FOULPLAY,ROOST,CHILL,CULL
     AbilityIndex = 1 # Desert Scavenger
-    Item = SITRUSBERRY
+    Item = ROCKYHELMET
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,0,15,0,0,15
 Pokemon = MARACTUS,50
+    Moves = SPIKES,SHOREUP,THORNRATTLE,ERODE
     AbilityIndex = 1 # Desert Armor
-Pokemon = SALAMENCE,50
-    Moves = OUTRAGE,FIREFANG,DRAGONDANCE,ACROBATICS
-    AbilityIndex = 0 # Intimidate
-    Item = PERSIMBERRY
-Pokemon = TYPHLOSION,50
-    AbilityIndex = 0 # Brisk
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,10,15,0,10,10
+Pokemon = HGOODRA,50
+    Moves = METEORMASH,WEATHERBURST,WYRMWOUNDING,SAPPINGJEALOUSY
+    AbilityIndex = 1 # Impetuous
     Item = UTILITYUMBRELLA
+Pokemon = TYPHLOSION,50
+    Moves = SHIMMERINGHEAT,WEATHERBURST,SUFFOCATE,MIASMA
+    AbilityIndex = 0 # Brisk
+    Item = EXPERTBELT
 #-------------------------------
 [BATTLEGIRL3,Amelia]
 Flags = NoPerfect
 Pokemon = KECLEON,55
+    Moves = PIERCINGDOUBT,DRAINPUNCH,DISTURB,DISCHARGE
     AbilityIndex = 1 # Protean
     Item = WEAKNESSPOLICY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,15,10,0,15,10
 Pokemon = ATLACROSS,55
+    Moves = XSCISSOR,DRAINPUNCH,ADAMANTINEPRESS,DISTURB
     AbilityIndex = 1 # Power Lifter
     Item = CADOBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,15,10,0,15,10
 Pokemon = BRAVIARY,55
-    AbilityIndex = 0 # Defiant
-    Item = CUSTAPBERRY
+    Moves = RIGHTEOUSKICK,SWORDSDANCE,ELECTROSLASH,DIVININGTALON
+    AbilityIndex = 1 # Dynamic Entrance
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,5,15,20,0
 Pokemon = REUNICLUS,55
+    Moves = PIERCINGDOUBT,SLUDGEWAVE,CALMMIND,RECOVER
     AbilityIndex = 1 # Magic Guard
+    Item = KEEBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,15,15,0,15,10
 Pokemon = MANIKLAW,55
+    Moves = PROTECT,WILLOWISP,VIMRIPPER,PALEBLADE
     AbilityIndex = 0 # Malice
     Item = FOCUSSASH
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
 #-------------------------------
 [BATTLEGIRL2,Juniper]
 Flags = NoPerfect
 Pokemon = AMOONGUSS,60
+    Moves = SPORE,SLUDGEBOMB,GIGADRAIN,FOULPLAY
     AbilityIndex = 0 # Regenerator
     Item = ROCKYHELMET
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 15,10,15,0,10,10
 Pokemon = OMASTAR,60
+    Moves = MINDSAP,STEALTHROCK,SNIPESHOT,PETRIFY
     AbilityIndex = 1 # Introvert
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,10,15,0,10,15
 Pokemon = DRAPION,60
+    Moves = POISONSPIKES,HONORLESSSTING,KNOCKOFF,AGONIZE
     AbilityIndex = 1 # Merciless
     Item = REDCARD
 Pokemon = MAGMORTAR,60
+    Moves = FIREPULSE,FLASHCANNON,AURASPHERE,MIASMA
     AbilityIndex = 0 # Mega Launcher
     Item = STRIKEVEST
-Pokemon = RAPIDASH,60
-    AbilityIndex = 1 # Heavy Duty Hooves
-    Item = LIECHIBERRY
+Pokemon = MDRAGALGE,60
+    Moves = LIQUIDATION,HIGHJUMPKICK,PROTECT,WHIPKICK
+    AbilityIndex = 1 # Hasty
+    Item = FROSTORB
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
 #-------------------------------
 [BLACKBELT,Leo]
 Flags = NoPerfect
 Pokemon = AMPHAROS,65
+    Moves = TRANSCENDENTENERGY,DRAGONPULSE,LUMINBURST,DISCHARGE
     AbilityIndex = 0 # Static
-    Item = CADOBERRY
+    Item = POWERHERB
 Pokemon = HAEROBIC,65
+    Moves = MEGAPUNCH,CLOSECOMBAT,ACROBATICS,FLOWSTATE
     AbilityIndex = 1 # Stubborn
     Item = FIGHTINGGEM
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
 Pokemon = SALAMENCE,65
+    Moves = REND,ACROBATICS,INFERNOIMPACT,DRAGONDANCE
     AbilityIndex = 0 # Intimidate
-    Item = SHELLBELL
 Pokemon = SAMUROTT,65
+    Moves = RAZORSHELL,SACREDSWORD,SWORDSDANCE,LEAFBLADE
     AbilityIndex = 1 # Swordplay
 Pokemon = JYNX,65
+    Moves = PSYCHESWITCH,PIERCINGDOUBT,HYPOTHERMIATE,ENERGYBALL
     AbilityIndex = 0 # Fascinate
-    Item = FOCUSSASH
+    Item = ASSAULTVEST
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,15,0,15,15,10
 Pokemon = SNORLAX,65
-    Moves = BELLYDRUM,KNOCKOFF,GIGAIMPACT,BODYSLAM
+    Moves = BELLYDRUM,KNOCKOFF,EARTHQUAKE,BODYSLAM
     AbilityIndex = 1 # Thick Fat
+    Item = SITRUSBERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,10,0,20,10
 #-------------------------------
 [FORMERCHAMP_Scilla,Scilla]
 Flags = NoPerfect
