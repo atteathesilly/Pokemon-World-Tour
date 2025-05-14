@@ -4051,10 +4051,15 @@ Pokemon = HDECIDUEYE,55
 [LEADER_Victoire,Victoire]
 Policies = VICTOIRE
 Flags = NoPerfect
+Pokemon = HYMNUS,55
+    Moves = REND,MOONBLAST,RAINSTORM,FIREBLAST
+    AbilityIndex = 1 # Rain Prism
+    Item = DAMPROCK
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,20,5,0,20,5
 Pokemon = BLASTOISE,55
     Moves = FLASHCANNON,RAPIDSPIN,SURF,AURASPHERE
     AbilityIndex = 0 # Stormbringer
-    Item = DAMPROCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
 Pokemon = MISMAGIUS,55
@@ -4070,18 +4075,13 @@ Pokemon = DECEAT,55
     Item = UTILITYUMBRELLA
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
-Pokemon = HYMNUS,55
-    Moves = REND,MOONBLAST,RAINSTORM,FIREBLAST
-    AbilityIndex = 1 # Rain Prism
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,5,0,20,5
 Pokemon = BRONZONG,55
     Moves = WEATHERBURST,THUNDER,TAKESHELTER,KINETICGRIP
     AbilityIndex = 0 # Levitate
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,0,20,10
 Pokemon = SEAKING,55
-    Moves = STORMDRIVE,FLIPTURN,DRILLRUN,PLAYROUGH
+    Moves = STORMDRIVE,FLIPTURN,DRILLRUN,HUMBLE
     AbilityIndex = 1 # Volt Absorb
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
@@ -4091,9 +4091,9 @@ ExtendsVersion = 0
 Policies = CURSE_EXTRA_ITEMS
 Pokemon = HYMNUS,55
     Moves = DRACOMETEOR,PLAYROUGH,RAINSTORM,FIREBLAST
-    Item = WHITEHERB
-    ExtraItems = DAMPROCK
+    ExtraItems = WHITEHERB
 Pokemon = BLASTOISE,55
+    Item = DAMPROCK
     ExtraItems = FOCUSSASH
 Pokemon = MISMAGIUS,55
     ExtraItems = UTILITYUMBRELLA
