@@ -852,6 +852,18 @@ Flags = Empowered
 Description = Summons eclipse for 5 turns, resets lowered stats, and user becomes Psychic-type.
 Animation = ECLIPSE
 #-------------------------------
+[PRIMEVALMAGICCOAT]
+Name = Primeval Magic Coat
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = EmpoweredMagicCoat
+Flags = Empowered
+Description = Bounces back status moves for the next 3 turns, and user becomes Psychic-type.
+Animation = ECLIPSE
+#-------------------------------
 [PRIMEVALMINDLINK]
 Name = Primeval Mind Link
 Type = PSYCHIC

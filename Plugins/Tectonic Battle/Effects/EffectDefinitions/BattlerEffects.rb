@@ -669,6 +669,21 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :EmpoweredMagicCoat,
+    :real_name => "Primeval Magic Coat",
+    :type => :Integer,
+    :ticks_down => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} was shrouded with Magic Coat!", battler.pbThis))
+        turnCount = value - 1
+        battle.pbDisplay(_INTL("It'll bounce back status moves for {1} more turns!", turnCount))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer shrouded with a Magic Coat.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :MagnetRise,
     :real_name => "Magnet Risen",
     :type => :Integer,
