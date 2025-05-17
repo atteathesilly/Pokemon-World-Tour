@@ -1544,6 +1544,16 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :AvatarTransformedTypeThisTurn,
+    :real_name => "Transformed Type",
+    :resets_eor	=> true,
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler, _value|
+        echoln(_INTL("{1} is considered to have transformed its type this turn.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :Assist,
     :real_name => "Assisting",
     :resets_eor	=> true,
@@ -2206,3 +2216,4 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("{1} is frozen into a sculpture! It won't be able to move this turn!", battler.pbThis))
     end,
 })
+

@@ -122,6 +122,8 @@ class PokeBattle_Move_EmpoweredMagicCoat < PokeBattle_Move
 
     def pbEffectGeneral(user)
         user.applyEffect(:EmpoweredMagicCoat,4)
+
+        transformType(user, :PSYCHIC)
     end
 end
 
