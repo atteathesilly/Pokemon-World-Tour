@@ -3018,29 +3018,29 @@ Pokemon = GSLOWBRO,55
     AbilityIndex = 1 # Break Through
     Item = SITRUSBERRY
 Pokemon = HYMNUS,55
-    Moves = CRUELTY,WARDPRESS,DRAGONPULSE,STRAFE
+    Moves = CRUELTY,WARDPRESS,ROOST,COTTONGUARD
     AbilityIndex = 0 # Levitate
 Pokemon = ROSERADE,55
-    Moves = CRUELWHIPBLADE,LEAFBLADE,POISONJAB,PALEBLADE
+    Moves = CRUELWHIPBLADE,LEAFBLADE,POISONJAB,SLAY
     AbilityIndex = 1 # Merciless
     Item = FOCUSSASH
 Pokemon = DRAPION,55
-    Moves = HONORLESSSTING,KNOCKOFF,XSCISSOR,POISONSPIKES
+    Moves = HONORLESSSTING,KNOCKOFF,LEECHLIFE,TRAMPLE
     AbilityIndex = 1 # Merciless
 #-------------------------------
 [SWIMMER_F5,Shreya]
 Pokemon = FERALIGATR,56
-    Moves = RIPTURN,CRUNCH,AQUAJET,ICEFANG
+    Moves = RIPTURN,CRUNCH,DRAGBENEATH,ICEPUNCH
     AbilityIndex = 0 # Ferocious
     Item = SITRUSBERRY
 Pokemon = ARMALDO,56
-    Moves = UTURN,ADAMANTINEPRESS,AQUAJET,WAVEBREAK
+    Moves = UTURN,ADAMANTINEPRESS,AQUAJET,TRAMPLE
     AbilityIndex = 0 # Selective Scutes
 Pokemon = JOLTEON,56
-    Moves = NUMB,VOLTSWITCH,SHOUT,STELLARATE
+    Moves = NUMB,VOLTSWITCH,MIASMA,HYPERVOICE
     AbilityIndex = 1 # Needle Fur
 Pokemon = SWANNA,56
-    Moves = FLIPTURN,PLAYROUGH,STRAFE
+    Moves = FLIPTURN,MISADVENTURE,DIVININGTALON,INFERNOIMPACT
     AbilityIndex = 0 # Intimidate
     Item = STRIKEVEST
 #-------------------------------
@@ -3050,7 +3050,7 @@ Pokemon = CHESNAUGHT,57
     AbilityIndex = 0 # Intimidate
     Item = LEFTOVERS
 Pokemon = NOCTOWL,57
-    Moves = CALMMIND,PSYCHIC,COLDFRONT,ROOST
+    Moves = CALMMIND,PIERCINGDOUBT,COLDFRONT,ROOST
     AbilityIndex = 1 # Fascinate
     Item = LEFTOVERS
 Pokemon = EISCUE,57
@@ -3070,12 +3070,12 @@ Pokemon = KLEFKI,59
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
-Pokemon = MANDIBUZZ,59
-    Moves = FOULPLAY,PLANTDOUBT,DRILLPECK,CULL
-    AbilityIndex = 0 # Impervious
-    Item = LEFTOVERS
+Pokemon = CHERRIM,59
+    Moves = SOLARGLIDE,WEATHERBURST,PLAYROUGH,LEAFBLADE
+    AbilityIndex = 0 # Flower Gift
+    Item = POWERLOCK
 Pokemon = MANERGETIC,59
-    Moves = THUNDERBOLT,FLAMETHROWER,IGNITE,SHOUT
+    Moves = THUNDERBOLT,WHITEFLAME,IGNITE,NULLPULSE
     AbilityIndex = 1 # Fascinate
 #-------------------------------
 [JUGGLER,Youcef]
