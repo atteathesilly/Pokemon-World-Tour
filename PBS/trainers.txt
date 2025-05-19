@@ -4045,26 +4045,34 @@ Pokemon = TYRANITAR,55
 #-------------------------------
 [ARTIST4,Rabah]
 Pokemon = MLILLIGANT,55
+    Moves = HUMBLE,CHILL,GLACIALRAM,DRAGBENEATH
     AbilityIndex = 0 # Tangling Hair
-    Item = SITRUSBERRY
+    Item = ROCKYHELMET
 Pokemon = MACHAMP,55
+    Moves = MACHPUNCH,SUBMISSION,KNOCKOFF,FACADE
     AbilityIndex = 0 # Feel the Burn
     Item = RAWSTBERRY
 Pokemon = STUNFISK,55
+    Moves = MUDSLIDE,CALMMIND,RECOVER,RAPIDHERTZ
     AbilityIndex = 0 # Double Check
 Pokemon = TEAMUJIN,55
+    Moves = BODYSLAM,CRUNCH,POWERUPPUNCH,INFERNOIMPACT
     AbilityIndex = 1 # Parental Bond
 #-------------------------------
 [COOLTRAINER_F,Reina]
 Pokemon = AMBIPOM,55
+    Moves = THIEVINGSPREE,THIEF,CROSSCHOP,STRAFE
     AbilityIndex = 0 # Sticky Fingers
     Item = FOCUSSASH
 Pokemon = HTYPHLOSION,55
+    Moves = FRIGIDJEALOUSY,IMPURITYBLAZE,HEX,IGNITE
     AbilityIndex = 0 # Fiery Spirit
 Pokemon = HSAMUROTT,55
+    Moves = RAZORSHELL,SEVER,SLAY,LEAFBLADE
     AbilityIndex = 1 # Swordplay
     Item = WHETSTONE
 Pokemon = HDECIDUEYE,55
+    Moves = THREEFOLDVOLLEY,JAVELIN,DISARMINGSHOT,GIGADRAIN
     AbilityIndex = 1 # Feather Coat
 #-------------------------------
 [LEADER_Victoire,Victoire]
