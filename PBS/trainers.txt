@@ -4045,26 +4045,34 @@ Pokemon = TYRANITAR,55
 #-------------------------------
 [ARTIST4,Rabah]
 Pokemon = MLILLIGANT,55
+    Moves = HUMBLE,CHILL,GLACIALRAM,DRAGBENEATH
     AbilityIndex = 0 # Tangling Hair
-    Item = SITRUSBERRY
+    Item = ROCKYHELMET
 Pokemon = MACHAMP,55
+    Moves = MACHPUNCH,SUBMISSION,KNOCKOFF,FACADE
     AbilityIndex = 0 # Feel the Burn
     Item = RAWSTBERRY
 Pokemon = STUNFISK,55
+    Moves = MUDSLIDE,CALMMIND,RECOVER,RAPIDHERTZ
     AbilityIndex = 0 # Double Check
 Pokemon = TEAMUJIN,55
+    Moves = BODYSLAM,CRUNCH,POWERUPPUNCH,INFERNOIMPACT
     AbilityIndex = 1 # Parental Bond
 #-------------------------------
 [COOLTRAINER_F,Reina]
 Pokemon = AMBIPOM,55
+    Moves = THIEVINGSPREE,THIEF,CROSSCHOP,STRAFE
     AbilityIndex = 0 # Sticky Fingers
     Item = FOCUSSASH
 Pokemon = HTYPHLOSION,55
+    Moves = FRIGIDJEALOUSY,IMPURITYBLAZE,HEX,IGNITE
     AbilityIndex = 0 # Fiery Spirit
 Pokemon = HSAMUROTT,55
+    Moves = RAZORSHELL,SEVER,SLAY,LEAFBLADE
     AbilityIndex = 1 # Swordplay
     Item = WHETSTONE
 Pokemon = HDECIDUEYE,55
+    Moves = THREEFOLDVOLLEY,JAVELIN,DISARMINGSHOT,GIGADRAIN
     AbilityIndex = 1 # Feather Coat
 #-------------------------------
 [LEADER_Victoire,Victoire]
@@ -4228,38 +4236,50 @@ Pokemon = REGIROCK,65
 #-------------------------------
 [KIMONOGIRL,Chiyo]
 Pokemon = DELPHOX,55
+    Moves = TOTALCONTROL,WILLOWISP,WHITEFLAME,MOONBLAST
     AbilityIndex = 1 # Fascinate
 Pokemon = SWELLOW,56
+    Moves = DIVEBOMB,FACADE,DIVININGTALON,INFERNOIMPACT
     AbilityIndex = 0 # Daring
-    Item = FLAMEORB
+    Item = FROSTORB
 Pokemon = ARMALDO,57
+    Moves = ROCKALANCHE,SKEWER,UTURN,LEAFBLADE
     AbilityIndex = 0 # Selective Scutes
 Pokemon = MZANGOOSE,56
+    Moves = SIXFEETUNDER,PROTECT,VIMRIPPER,CROSSCHOP
     AbilityIndex = 1 # Mental Damage
     Item = GHOSTGEM
 #-------------------------------
 [YOUNGSTER2,Davor]
 Pokemon = RUBARIOR,58
-    AbilityIndex = 0 # Magic Shield
-    Item = ASSAULTVEST
+    Moves = STAREDOWN,GLIMMERPULSE,FOULPLAY,WILLOWISP
+    AbilityIndex = 1 # Prankster
+    Item = DARKGEM
 Pokemon = GOREBYSS,57
+    Moves = DREAMDANCE,GLAMOURFLASH,SCALD,MISTBURST
     AbilityIndex = 0 # Fascinate
 Pokemon = HLILLIGANT,58
+    Moves = SWORDSDANCE,ICECALIBUR,LEAFBLADE,SACREDSWORD
     AbilityIndex = 1 # Efflorescent
-    Item = LUMBERRY
+    Item = WHETSTONE
 Pokemon = TURTONATOR,57
+    Moves = HEATWAVE,DIAMETRICBREATH,MIASMA,BODYPRESS
     AbilityIndex = 1 # Harsh
 #-------------------------------
 [DRAGONTAMER,Bataar]
 Policies = ECLIPSE_TEAM
 Pokemon = XATU,59
+    Moves = PIERCINGDOUBT,AIRSLASH,CONFUSERAY,ROOST
     AbilityIndex = 1 # Harbinger
     Item = PINPOINTROCK
 Pokemon = SALAMENCE,57
+    Moves = WINGSPANECLIPSE,ACROBATICS,CALAMITOUSSLASH,DRAGONDANCE
     AbilityIndex = 1 # Scathing Syzygy
 Pokemon = GRUMPIG,58
+    Moves = DISTURB,ZENHEADBUTT,WARDPRESS,FLOWSTATE
     AbilityIndex = 1 # Anarchic
 Pokemon = DRAMPA,58
+    Moves = YOUNGAGAIN,LAUNDER,WEATHERBURST,OCCULTATION
     AbilityIndex = 1 # Apprehensive
     Item = LEFTOVERS
 #-------------------------------
