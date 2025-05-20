@@ -8241,32 +8241,40 @@ Pokemon = DRAMPA,70
     Item = SHELLBELL
 #-------------------------------
 [SAILOR2,Noah]
-Pokemon = KINGDRA,60
-    AbilityIndex = 1 # Gyre Spinner
 Pokemon = RIBOMBEE,60
+    Moves = REFLECT,LIGHTSCREEN,ANESTHETIZE,SUPERSTITION
     AbilityIndex = 0 # Karma
     Item = FOCUSSASH
+Pokemon = KINGDRA,60
+    Moves = MURKYFOG,HYDROPUMP,SCOUR,WATERLOG
+    AbilityIndex = 1 # Gyre Spinner
 #-------------------------------
 [POKEMONBREEDER_F4,Sara]
 Pokemon = SANDSLASH,60
+    Moves = ROCKALANCHE,SWORDSDANCE,LEECHLIFE,TRAMPLE
     AbilityIndex = 1 # Tough Claws
 Pokemon = GOODRA,60
+    Moves = SLIMEBALL,DRAGONENERGY,DRAGONPULSE,THUNDERBOLT
     AbilityIndex = 0 # Gooey
     Item = BLACKSLUDGE
 #-------------------------------
 [POKEMONBREEDER_M4,Isaac]
 Pokemon = YANMEGA,60
+    Moves = TAILWIND,JAVELIN,AIRSLASH,BUGBUZZ
     AbilityIndex = 0 # Darter
 Pokemon = TURTONATOR,60
+    Moves = HEATWAVE,MIASMA,SHELLTRAP,DRAGONPULSE
     AbilityIndex = 0 # Vengeance
     Item = SITRUSBERRY
 #-------------------------------
 [COOLTRAINER_F3,Leah]
 Pokemon = INDEEDEE,60
+    Moves = FAKEOUT,HYPERVOICE,PIERCINGDOUBT,DRAINPUNCH
     AbilityIndex = 1 # Mental Block
 Pokemon = TOGEDEMARU,60
+    Moves = ZINGZAP,SPIKYSHIELD,STEELBEAM,GRASSKNOT
     AbilityIndex = 1 # Sudden Turn
-    Item = CHOICEBAND
+    Item = AIRBALLOON
 #-------------------------------
 [DRAGONTAMER2,Abraham]
 Policies = ECLIPSE_TEAM
