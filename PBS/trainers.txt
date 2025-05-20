@@ -8254,7 +8254,7 @@ Pokemon = SANDSLASH,60
     Moves = ROCKALANCHE,SWORDSDANCE,LEECHLIFE,TRAMPLE
     AbilityIndex = 1 # Tough Claws
 Pokemon = GOODRA,60
-    Moves = SLIMEBALL,DRAGONENERGY,DRAONPULSE,THUNDERBOLT
+    Moves = SLIMEBALL,DRAGONENERGY,DRAGONPULSE,THUNDERBOLT
     AbilityIndex = 0 # Gooey
     Item = BLACKSLUDGE
 #-------------------------------
