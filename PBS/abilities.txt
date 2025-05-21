@@ -480,7 +480,7 @@ Flags = SandstormSynergy
 #-------------------------------
 [SANDSHROUD]
 Name = Sand Shroud
-Description = Takes 25% less damage in a sandstorm.
+Description = Takes 30% less damage in a sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [SANDSTREAM]

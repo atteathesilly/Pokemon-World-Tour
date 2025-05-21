@@ -234,6 +234,11 @@ Description = Draws in moves from foes with base power 100 or more.
 Name = Erosion Cycle
 Description = Using or being hit by a physical move leaves a rock on the field. Status moves collect them, healing by 1/4th each.
 #-------------------------------
+[ETERNALWINTER]
+Name = Eternal Winter
+Description = Extends hail by two turns after knocking out any Pokémon.
+Flags = HailSynergy
+#-------------------------------
 [EVOARMOR]
 Name = Evo-Armor
 Description = Boosts one defending stat by two steps according to the foe's attacking stats.

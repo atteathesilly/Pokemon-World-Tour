@@ -62,7 +62,7 @@ Description = Raises Defense and Sp. Def whenever any Pokémon uses a dance move
 #-------------------------------
 [APPREHENSIVE]
 Name = Apprehensive
-Description = Takes 30% less damage in eclipse, except in total eclipse.
+Description = Takes 35% less damage in eclipse, except in total eclipse.
 Flags = EclipseSynergy
 #-------------------------------
 [APRICORNARMOR]
@@ -299,7 +299,7 @@ Description = It changes form to match the move it selected.
 #-------------------------------
 [CLOUDBURST]
 Name = Cloudburst
-Description = Boosts Sp. Atk and Speed by 25% in rainstorm.
+Description = Boosts Sp. Atk and Speed by 30% in rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
 [CLOVERSONG]
@@ -374,7 +374,7 @@ Description = On the first turn, its attacks burn the target.
 #-------------------------------
 [DEBRISFIELD]
 Name = Debris Field
-Description = Can't be statused due to its hard shell. Boosts Sp. Atk and Speed by 25% in sandstorm.
+Description = Can't be statused due to its hard shell. Boosts Sp. Atk and Speed by 30% in sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DECONTAMINATION]
@@ -535,11 +535,6 @@ Description = Eclipse counts down twice as quickly.
 Name = Erudite
 Description = Powers up Psychic-type moves by 50%.
 #-------------------------------
-[ETERNALWINTER]
-Name = Eternal Winter
-Description = Extends hail by two turns after knocking out any Pokémon.
-Flags = HailSynergy
-#-------------------------------
 [EXCAVATOR]
 Name = Excavator
 Description = Dig and Undermine deal 50% more damage.
@@ -622,7 +617,7 @@ Description = Double the Pokémon's Speed if any enemy is below half health.
 #-------------------------------
 [FERROFLUID]
 Name = Ferrofluid
-Description = Takes 25% less damage in a rainstorm.
+Description = Takes 30% less damage in a rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
 [FIERYSPIRIT]
@@ -742,7 +737,7 @@ Description = When hit with a special move, hits back instantly with that same m
 #-------------------------------
 [FROSTFANGED]
 Name = Frostfanged
-Description = Boosts Attack and Speed by 25% in hail.
+Description = Boosts Attack and Speed by 30% in hail.
 Flags = HailSynergy
 #-------------------------------
 [FROSTPITALITY]
@@ -1773,12 +1768,12 @@ Description = Whenever the Pokémon falls asleep, each other battler becomes dro
 #-------------------------------
 [SNOWSHROUD]
 Name = Snow Shroud
-Description = Takes 25% less damage in a hail.
+Description = Takes 30% less damage in hail.
 Flags = HailSynergy
 #-------------------------------
 [SOLARCELL]
 Name = Solar Cell
-Description = In sunshine, gets a 25% boost to Sp. Atk and Sp. Def.
+Description = Boosts Sp. Atk and Sp. Def by 30% in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [SOLONOCTURNE]
