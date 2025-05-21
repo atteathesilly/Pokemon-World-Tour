@@ -247,6 +247,18 @@ Flags = CanProtect,Empowered
 Description = A cloud of poison gas is sprayed at all nearby foes, poisoning them. User becomes a Poison-type.
 Animation = POISONGAS
 #-------------------------------
+[PRIMEVALPOISONSPIKES]
+Name = Primeval Poison Spikes
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = FoeSide
+FunctionCode = EmpoweredPoisonSpikes
+Flags = Empowered
+Description = The user lays 2 layers of poisonous spike traps at the foe's feet, and becomes Poison-type.
+Animation = TOXICSPIKES
+#-------------------------------
 #		GROUND MOVES
 #-------------------------------
 [EMPOWEREDEARTHQUAKE]
