@@ -4107,6 +4107,12 @@ Pokemon = BLASTOISE,55
     AbilityIndex = 0 # Stormbringer
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
+Pokemon = DECEAT,55
+    Moves = METEORMASH,HUMBLE,CRUNCH,SWORDSDANCE
+    AbilityIndex = 0 # Pure Force
+    Item = UTILITYUMBRELLA
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,20,10,0,20,0
 Pokemon = MISMAGIUS,55
     Name = Cherchez
     Moves = FROSTBREATH,DEATHKNELL,ENCHANTINGSONG,THUNDER
@@ -4114,12 +4120,6 @@ Pokemon = MISMAGIUS,55
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,0,20,20,5
-Pokemon = DECEAT,55
-    Moves = METEORMASH,HUMBLE,CRUNCH,SWORDSDANCE
-    AbilityIndex = 0 # Pure Force
-    Item = UTILITYUMBRELLA
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,10,0,20,0
 Pokemon = BRONZONG,55
     Moves = WEATHERBURST,THUNDER,TAKESHELTER,KINETICGRIP
     AbilityIndex = 0 # Levitate
