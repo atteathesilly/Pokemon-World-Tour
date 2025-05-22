@@ -2336,7 +2336,7 @@ Pokemon = WEAVILE,70
     EV = 10,20,0,20,20,0
 Pokemon = EMPOLEON,70
     Moves = DEFOG,FLIPTURN,BULLETTRAIN,ICEBEAM
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,15,0,0,15

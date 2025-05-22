@@ -202,6 +202,11 @@ Description = When it attacks from underground in sandstorm, it'll transform int
 Name = Early Bird
 Description = The Pokémon awakens quickly from sleep.
 #-------------------------------
+[ECTOPARTICLES]
+Name = Ecto-Particles
+Description = Restores HP based on damage from hail.
+Flags = HailSynergy
+#-------------------------------
 [EFFECTSPORE]
 Name = Effect Spore
 Description = Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker.

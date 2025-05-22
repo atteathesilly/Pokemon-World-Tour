@@ -408,9 +408,9 @@ Pokemon = GOLDEEN,20
     Moves = FROLIC,AQUAJET,TEETERDANCE,LEER
     AbilityIndex = 1 # Volt Absorb
     Item = WATERGEM
-Pokemon = PRINPLUP,21
-    Moves = WATERPULSE,SHINESHOT,SUPERSONIC,AQUAJET
-    AbilityIndex = 1 # Self-Sufficient
+Pokemon = WARTORTLE,21
+    Moves = WATERPULSE,SHINESHOT,RAPIDSPIN,AQUAJET
+    AbilityIndex = 1 # Mega Launcher
 #-------------------------------
 [RUINMANIAC,Spencer]
 Pokemon = BALTOY,21
@@ -604,7 +604,7 @@ Pokemon = LUXIO,25
     EV = 0,20,10,20,20,0
 Pokemon = PRINPLUP,25
     Moves = FLIPTURN,WATERPULSE,BULLETCHARGE,AURORABEAM
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,0,20,15
 Pokemon = TOXTRICITY,25
@@ -828,7 +828,7 @@ Pokemon = ILLUMISE,45
     EV = 20,0,15,0,0,15
 Pokemon = EMPOLEON,45
     Moves = SURF,YAWN,PROTECT,FLECHETTES
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,15,0,0,15
@@ -1154,11 +1154,11 @@ Pokemon = AURORUS,55
     Item = ICYROCK
 Pokemon = CURSOLA,55
     Moves = STRENGTHSAP,SPITEFULCHANT,PETRIFY,HAIL
-    AbilityIndex = 0 # Ecto-Particles
+    AbilityIndex = 0 # Natural Cure
     Item = LEFTOVERS
 Pokemon = HATTERENE,55
     Moves = OMNISCIENTBLOW,HUMBLE,VIMRIPPER,SUCKERPUNCH
-    AbilityIndex = 1 # Sleetshaker
+    AbilityIndex = 1 # Berserk
 Pokemon = HUNTAIL,55
     Moves = ABYSSALMIST,BLACKOUT,BUBBLEBLASTER,BLIZZARD
     AbilityIndex = 0 # Intimidate
@@ -2827,7 +2827,7 @@ Pokemon = LIEPARD,45
     Item = DARKGEM
 Pokemon = EMPOLEON,45
     Moves = BULLETTRAIN,SWORDSDANCE,HARBORBREAKER,SUBMISSION
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
     Item = SALACBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
@@ -4679,10 +4679,10 @@ Pokemon = PALMANTRA,59
 Pokemon = ARBOK,59
     Moves = GLARE,MIASMA,CRUNCH,GALLINGSPIT
     AbilityIndex = 0 # Intimidate
-Pokemon = EMPOLEON,59
-    Moves = FRAGMENTATION,AQUAJET,BRAVEBIRD,HARBORBREAKER
-    AbilityIndex = 1 # Self-Sufficient
-    Item = SITRUSBERRY
+Pokemon = WISHIWASHI,59
+    Moves = AQUAJET,FLIPTURN,WATERLOG,EARTHPOWER
+    AbilityIndex = 0 # Schooling
+    Item = LEFTOVERS
 Pokemon = CONIFEAR,59
     Moves = HOLLYCHARM,GLACIALRAM,CHILL,WOODHAMMER
     AbilityIndex = 1 # Frustrate
@@ -4824,7 +4824,7 @@ Pokemon = ABSOLUS,57
     AbilityIndex = 1 # Vengeance
 Pokemon = EMPOLEON,58
     Moves = HARBORBREAKER,FLASHCANNON,BRAVEBIRD,AQUAJET
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
 Pokemon = DRAGONITE,57
     Moves = TEMPEST,COLDFRONT,DRAGONPULSE,SURF
     AbilityIndex = 1 # Multiscale
@@ -7084,8 +7084,8 @@ Pokemon = ELDEGOSS,56
 Pokemon = ZEBSTRIKA,56
     AbilityIndex = 1 # Reckless
     Item = SHELLBELL
-Pokemon = HZOROARK,57
-    AbilityIndex = 1 # Mental Block
+Pokemon = CRAMORANT,57
+    AbilityIndex = 0 # Gulp Missile
 Pokemon = SALAZZLE,58
     AbilityIndex = 1 # Domineering
 #-------------------------------
@@ -8209,7 +8209,7 @@ Pokemon = CONIFEAR,70
     Item = ICYROCK
 Pokemon = CURSOLA,70
     Moves = WILLOWISP,CURSEDOATH,DRIFTOFF,STRENGTHSAP
-    AbilityIndex = 0 # Ecto-Particles
+    AbilityIndex = 0 # Natural Cure
     Item = SHUCABERRY
 Pokemon = MAMOSWINE,70
     Moves = FRIGIDJEALOUSY,STOMPINGTANTRUM,BULLETTRAIN,SHIVERDANCE
@@ -8745,8 +8745,6 @@ Pokemon = MUK,70
     Item = SITRUSBERRY
 #-------------------------------
 [TOURISTM,Francois]
-Pokemon = EMPOLEON,70
-    AbilityIndex = 1 # Self-Sufficient
 Pokemon = FLORGES,70
     AbilityIndex = 1 # Sentry
 Pokemon = TOUCANNON,70
@@ -8755,6 +8753,8 @@ Pokemon = TOUCANNON,70
 Pokemon = MILTANK,70
     AbilityIndex = 0 # Thick Fat
     Item = LEFTOVERS
+Pokemon = ADUGTRIO,70
+    AbilityIndex = 2 # Tangling Hair
 #-------------------------------
 [OFFICEWORKER_M,Kurt]
 Pokemon = MEOWSTIC,70
@@ -8792,7 +8792,7 @@ Pokemon = GLISCOR,70
     EV = 12,8,15,0,8,15
 Pokemon = EMPOLEON,70
     Moves = ICESHARD,ADRENALASH,FARADAYCAGE,SCALD
-    AbilityIndex = 1 # Self-Sufficient
+    AbilityIndex = 0 # Imperious
     Item = WATERBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,11,0,20,9
@@ -9114,8 +9114,6 @@ Pokemon = GDARMANITAN,70
     AbilityIndex = 1 # Gorilla Tactics
 #-------------------------------
 [IDEALTRAINER,of Freedom]
-Pokemon = GIGANTEON,70
-    AbilityIndex = 0 # Ultra Adapted
 Pokemon = MNINETALES,70
     AbilityIndex = 1 # Luxury Taste
 Pokemon = ABSOLUS,70
@@ -9125,7 +9123,9 @@ Pokemon = EMOLGA,70
 Pokemon = LEDIAN,70
     AbilityIndex = 1 # Star Guardian
 Pokemon = HZOROARK,70
-    AbilityIndex = 1 # Mental Block
+    AbilityIndex = 0 # Illusion
+Pokemon = GIGANTEON,70
+    AbilityIndex = 0 # Ultra Adapted
 #-------------------------------
 [ARTIFICIALTRAINER,Solitaire]
 Policies = MATCH_LEVEL_CAP

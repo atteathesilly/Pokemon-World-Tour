@@ -401,7 +401,7 @@ Flags = SandstormSynergy
 #-------------------------------
 [DESERTSCAVENGER]
 Name = Desert Scavenger
-Description = Restores HP based on damage from sandstorm.
+Description = Restores HP based on damage taken by others from sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DESERTSPIRIT]
@@ -501,11 +501,6 @@ Description = If its stats would be changed, instead they're changed half as muc
 [ECHO]
 Name = Echo
 Description = Repeats another Pokémon's sound and pulse moves immediately at 75% power.
-#-------------------------------
-[ECTOPARTICLES]
-Name = Ecto-Particles
-Description = Restores HP based on damage from hail.
-Flags = HailSynergy
 #-------------------------------
 [EFFLORESCENT]
 Name = Efflorescent
@@ -2197,6 +2192,11 @@ Description = Upon entry, creates a Willful Room for four turns, reducing all hi
 [WINTERINSULATION]
 Name = Winter Insulation
 Description = During hail, immune to Fire- and Electric-type moves.
+Flags = HailSynergy
+#-------------------------------
+[WINTERSWAGES]
+Name = Winter's Wages
+Description = Restores HP based on damage taken by others from hail.
 Flags = HailSynergy
 #-------------------------------
 [WIRECUTTER]
