@@ -8709,8 +8709,6 @@ Pokemon = LUXRAY,70
 Pokemon = TANGROWTH,70
     Moves = PUFFBALL,POWERWHIP,ROCKALANCHE,EARTHQUAKE
     AbilityIndex = 0 # Late Bloomer
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,10,0,20,10
 Pokemon = MOTHIM,70
     Moves = SCALESTORM,TRUMPCARD,STEELBEAM,ACROBATICS
     AbilityIndex = 1 # Moth Burglar
