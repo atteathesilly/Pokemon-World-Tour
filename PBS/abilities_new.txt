@@ -353,7 +353,7 @@ Description = When this Pokémon becomes statused, its Attack is raised by three
 #-------------------------------
 [DARKENEDSKIES]
 Name = Darkened Skies
-Description = Powers up Dark-type moves by 50% in sandstorm.
+Description = Powers up the Pokémon's Dark-type moves by 50% in sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DARKSCALECLOUD]
@@ -392,21 +392,21 @@ Description = Foes aren't released from its trapping moves even when the Pokémo
 #-------------------------------
 [DELAYEDREACTION]
 Name = Delayed Reaction
-Description = 33% of all move damage taken is instead taken at the end of the next turn.
+Description = 33% of all move damage taken by the Pokémon is instead taken at the end of the next turn.
 #-------------------------------
 [DESERTARMOR]
 Name = Desert Armor
-Description = Doubles Defense in a sandstorm.
+Description = Doubles the Pokémon's Defense in a sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DESERTSCAVENGER]
 Name = Desert Scavenger
-Description = Restores HP based on damage taken by others from sandstorm.
+Description = Restores the Pokémon's HP based on damage taken by others from sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DESERTSPIRIT]
 Name = Desert Spirit
-Description = Immune to Ground-type moves. Takes 20% less damage in sandstorm.
+Description = the Pokémon is immune to Ground-type moves and takes 20% less damage in sandstorm.
 Flags = SandstormSynergy,Levitation
 #-------------------------------
 [DESICCATE]
@@ -487,11 +487,11 @@ Description = Whenever it uses a status move, becomes energy charged, doubling t
 #-------------------------------
 [EARSPLITTING]
 Name = Ear-Splitting
-Description = Boosts power of sound-based moves by 50%.
+Description = Boosts power of the Pokémon's sound-based moves by 50%.
 #-------------------------------
 [EARTHSHAKER]
 Name = Earthshaker
-Description = In sandstorm, Attack is boosted by 30%.
+Description = In sandstorm, the Pokémon's Attack is boosted by 30%.
 Flags = SandstormSynergy
 #-------------------------------
 [ECCENTRIC]
@@ -500,7 +500,7 @@ Description = If its stats would be changed, instead they're changed half as muc
 #-------------------------------
 [ECHO]
 Name = Echo
-Description = Repeats another Pokémon's sound and pulse moves immediately at 75% power.
+Description = Repeats another Pokémon's sound and pulse moves immediately at 50% power.
 #-------------------------------
 [EFFLORESCENT]
 Name = Efflorescent
@@ -869,7 +869,7 @@ Flags = SunshineSynergy
 #-------------------------------
 [HEATVEIL]
 Name = Heat Veil
-Description = Doubles Sp. Def in sunshine.
+Description = Doubles the Pokémon's Sp. Def in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [HEAVYDUTYHOOVES]
@@ -1182,7 +1182,7 @@ Description = Disables the opponent's most recently-used move for two turns upon
 #-------------------------------
 [METEORIC]
 Name = Meteoric
-Description = Boosts Speed by 50% in sandstorm or hail.
+Description = Boosts the Pokémon's Speed by 50% in sandstorm or hail.
 Flags = SandstormSynergy,HailSynergy
 #-------------------------------
 [MIDDLEWAY]
@@ -1195,7 +1195,7 @@ Description = Using a status move in moonglow extends the weather by a turn.
 #-------------------------------
 [MIDNIGHTSUN]
 Name = Midnight Sun
-Description = Powers up Dark-type moves by 50% in sunshine.
+Description = Powers up the Pokémon's Dark-type moves by 50% in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [MISTFORM]
@@ -1352,12 +1352,12 @@ Flags = RainstormSynergy
 #-------------------------------
 [OXYGENATION]
 Name = Oxygenation
-Description = Heals status problems each turn if in sunshine.
+Description = Heals the Pokémon's status problems each turn if in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [PALACEGUARD]
 Name = Palace Guard
-Description = Receives 33% less move damage if there is an active Room.
+Description = The Pokémon receives 33% less move damage if there is an active Room.
 #-------------------------------
 [PALEOLITHIC]
 Name = Paleolithic
@@ -1614,11 +1614,11 @@ Flags = Immutable
 #-------------------------------
 [SANDSNIPER]
 Name = Sand Sniper
-Description = Boosts Speed by 50% in sandstorm. Can't miss during sandstorm.
+Description = Boosts the Pokémon's Speed by 50% in sandstorm. Can't miss during sandstorm.
 #-------------------------------
 [SANDWORNAUGER]
 Name = Sandworn Auger
-Description = During sandstorm, Speed is boosted by 50% and twice as likely to crit.
+Description = During sandstorm, the Pokémon's Speed is boosted by 50% and twice as likely to crit.
 Flags = SandstormSynergy
 #-------------------------------
 [SAPPER]
@@ -1768,12 +1768,12 @@ Description = Whenever the Pokémon falls asleep, each other battler becomes dro
 #-------------------------------
 [SNOWSHROUD]
 Name = Snow Shroud
-Description = Takes 30% less damage in hail.
+Description = The Pokémon takes 30% less move damage in hail.
 Flags = HailSynergy
 #-------------------------------
 [SOLARCELL]
 Name = Solar Cell
-Description = Boosts Sp. Atk and Sp. Def by 30% in sunshine.
+Description = Boosts the Pokémon's Sp. Atk and Sp. Def by 30% in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [SOLONOCTURNE]
@@ -1939,7 +1939,7 @@ Flags = SunshineSynergy
 #-------------------------------
 [SUNCHASER]
 Name = Sun Chaser
-Description = Boosts Attack by 30% in sunshine.
+Description = Boosts the Pokémon's Attack by 30% in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [SUNEATER]
