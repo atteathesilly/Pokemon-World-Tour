@@ -283,6 +283,15 @@ BattleHandlers::DamageCalcTargetAbility.add(:LIMINAL,
   }
 )
 
+BattleHandlers::DamageCalcTargetAbility.add(:MISTFORM,
+  proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
+    if target.effectActive?(:SwitchedIn)
+      mults[:final_damage_multiplier] *= 0.5
+      target.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcTargetAbility.add(:PLASMAGLOBE,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
       mults[:final_damage_multiplier] *= 1.5

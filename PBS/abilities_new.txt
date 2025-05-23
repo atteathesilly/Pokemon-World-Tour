@@ -1198,6 +1198,11 @@ Name = Midnight Sun
 Description = Powers up Dark-type moves by 50% in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
+[MISTFORM]
+Name = Mist Form
+Description = Slips past hazards. Takes 50% less damage if it switched in this turn.
+Flags = HazardImmunity
+#-------------------------------
 [MOISTSKIN]
 Name = Moist Skin
 Description = If an attack lowers its HP to half or less, waterlogs the attacker.
