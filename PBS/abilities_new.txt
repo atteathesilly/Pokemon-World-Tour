@@ -205,7 +205,7 @@ Description = Increase the EXP gained from battles in which it participates by 5
 #-------------------------------
 [BOTTOMFEEDER]
 Name = Bottom Feeder
-Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped. 
+Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped.
 #-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest

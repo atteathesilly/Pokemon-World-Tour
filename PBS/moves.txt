@@ -2130,19 +2130,6 @@ Flags = CanProtect
 EffectChance = 30
 Description = Unsanitary sludge is hurled at the target. It has a 30% chance to poison.
 #-------------------------------
-[SLUDGEBOMB]
-Name = Sludge Bomb
-Type = POISON
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Poison
-Flags = CanProtect
-EffectChance = 30
-Description = Unsanitary sludge is hurled at the target. It has a 30% chance to poison.
-#-------------------------------
 [SLUDGEWAVE]
 Name = Sludge Wave
 Type = POISON
