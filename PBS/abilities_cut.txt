@@ -843,6 +843,11 @@ Description = Raises Speed each time the Pokémon flinches.
 Name = Steam Engine
 Description = Maximizes Speed when hit by a Fire- or Water-type move.
 #-------------------------------
+[STEELYSHELL]
+Name = Steely Shell
+Description = Steel-type attacks deal 50% more damage, and the Pokémon is protected from critical hits.
+Flags = CritImmunity
+#-------------------------------
 [STENCH]
 Name = Stench
 Description = Attacks have a 50% chance to cause the target to flinch.

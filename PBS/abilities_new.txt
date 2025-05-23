@@ -1714,7 +1714,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [SILVERSENSE]
 Name = Silver Sense
-Description = Twice as likely for moves to be critical. Restores HP for half the damage it does with critical hits.
+Description = Doubles critical hit chance. Restores HP for half the damage it does with critical hits.
 #-------------------------------
 [SINKINGFEELING]
 Name = Sinking Feeling
@@ -1823,7 +1823,8 @@ Flags = AllWeatherSynergy,OtherStatDropImmunity
 #-------------------------------
 [STAMPEDE]
 Name = Stampede
-Description = The Pokémon's critical hit chance raises or lowers with its Speed.
+Description = Doubles critical hit chance for every two Speed steps raised. All moves can random critical hit.
+Flags = EnablesRandomCrits
 #-------------------------------
 [STARGUARDIAN]
 Name = Star Guardian
@@ -1841,11 +1842,6 @@ Description = Takes 50% less damage from Water-type moves. Raises Speed by four 
 [STEELABSORB]
 Name = Steel Absorb
 Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
-#-------------------------------
-[STEELYSHELL]
-Name = Steely Shell
-Description = Steel-type attacks deal 50% more damage, and the Pokémon is protected from critical hits.
-Flags = CritImmunity
 #-------------------------------
 [STEEPFLYING]
 Name = Steep Flying

@@ -198,7 +198,7 @@ class PokeBattle_Move
 
     # Returns whether the attack is critical, and whether it was forced to be so
     def pbIsCritical?(user, target, checkingForAI = false)
-        unless critsPossible?(user, target)
+        if critsPrevented?(user, target)
             if checkingForAI
                 return false
             else
@@ -206,7 +206,7 @@ class PokeBattle_Move
             end
         end
 
-        allowedToRandomCrit = canRandomCrit? || user.effectActive?(:RaisedCritChance)
+        allowedToRandomCrit = allowedToRandomCrit?(user, target)
 
         crit = false
         forced = false
@@ -288,10 +288,9 @@ class PokeBattle_Move
         return c
     end
 
-    def critsPossible?(user, target)
+    def critsPrevented?(user, target)
         return false if target.pbOwnSide.effectActive?(:LuckyChant)
         return false if target.pbOwnSide.effectActive?(:DiamondField) && !(user && user.hasActiveAbility?(:INFILTRATOR))
-        return false if applySunDebuff?(user, @calcType)
         return false if pbCriticalOverride(user, target) < 0
         return true
     end
@@ -305,6 +304,13 @@ class PokeBattle_Move
             return true if BattleHandlers.triggerGuaranteedCriticalUserAbility(ability, user, target, @battle)
         end
         return false
+    end
+
+    def allowedToRandomCrit?(user, target)
+        return true if canRandomCrit?  
+        return true if user.effectActive?(:RaisedCritChance)
+        return true if user.hasActiveAbility?(GameData::Ability.getByFlag("EnablesRandomCrits")) 
+        return false 
     end
 
     #=============================================================================
@@ -380,7 +386,6 @@ showMessages)
         end
 
         ret *= 2 if user.pbOwnSide.effectActive?(:Rainbow)
-        ret /= 2 if applyRainDebuff?(user, type)
         ret /= 2 if target.hasTribeBonus?(:SERENE)
         if ret < 100 && user.shouldItemApply?(:LUCKHERB, aiCheck)
             ret = 100
