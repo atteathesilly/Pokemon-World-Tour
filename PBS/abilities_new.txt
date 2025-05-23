@@ -205,7 +205,7 @@ Description = Increase the EXP gained from battles in which it participates by 5
 #-------------------------------
 [BOTTOMFEEDER]
 Name = Bottom Feeder
-Description = Whenever this Pokémon attacks a trapped foe, it is healed for half of the damage dealt.
+Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped. 
 #-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest
@@ -2041,7 +2041,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [TRAPPER]
 Name = Trapper
-Description = Takes 25% less damage from Pokémon that are trapped.
+Description = Takes 30% less damage from Pokémon that are trapped.
 #-------------------------------
 [TRAUMATIZING]
 Name = Traumatizing
