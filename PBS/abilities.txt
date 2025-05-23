@@ -286,6 +286,10 @@ Name = Inner Focus
 Description = The Pokémon is protected from flinching, Intimidate, Fascinate, and Frustrate.
 Flags = FlinchImmunity
 #-------------------------------
+[INSOMNIA]
+Name = Insomnia
+Description = Prevents the Pokémon from falling asleep.
+#-------------------------------
 [INTIMIDATE]
 Name = Intimidate
 Description = Upon entry, lowers the foe's Attack stat by two steps.

@@ -8546,12 +8546,13 @@ Pokemon = BEHEEYEM,70
     Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
-Pokemon = PORYGONZ,70
-    Moves = PHANTOMGATE,SUBLIMATE,HONESIGHT,BURNUP
-    AbilityIndex = 1 # Adapted
-    Item = COLBURBERRY
+Pokemon = CHIMECHO,70
+    Moves = HYPERVOICE,HEALBELL,WARDPRESS,PIERCINGDOUBT
+    AbilityIndex = 1 # Toll the Bells
+    Item = CRYSTALVEIL
+    ItemType = NORMAL
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
+    EV = 10,20,0,10,20,10
 Pokemon = BEWEAR,70
     Moves = BEARHUG,CHAOSWHEEL,SWEETSELENE,BULKUP
     AbilityIndex = 0 # Intimidate
@@ -8586,12 +8587,12 @@ Pokemon = AMPHAROS,70
     Item = POWERHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,5,20,0,5
-Pokemon = XATU,70
-    Moves = ECLIPSE,WISH,RISINGPOWER,TAILWIND
-    AbilityIndex = 0 # Vigilant
-    Item = CADOBERRY
+Pokemon = ORBEETLE,70
+    Moves = ECLIPSE,MINDSAP,BUGBUZZ,BODYPRESS
+    AbilityIndex = 1 # Tractor Beam
+    Item = COLBURBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
+    EV = 20,0,20,0,0,10
 Pokemon = DRAGONITE,70
     Moves = DRAGONRIDE,DIVEBOMB,ROOST,POWERUPPUNCH
     AbilityIndex = 1 # Multiscale
@@ -8686,75 +8687,99 @@ Policies = CURSE_SELF_DEBUFFING
 #-------------------------------
 [SAGE,Takeshi]
 Pokemon = RAMPARDOS,70
+    Moves = CLOSECOMBAT,ACCELEROCK,SWORDSDANCE,ADAMANTINEPRESS
     AbilityIndex = 1 # Sturdy
-    Item = AGILITYHERB
+    Item = SALACBERRY
 Pokemon = VESPIQUEN,70
+    Moves = DEFENDORDER,HEALORDER,TERRORSWARM,ENVENOM
     AbilityIndex = 1 # Stressful
-Pokemon = DRIFBLIM,70
-    AbilityIndex = 1 # Drifting Mist
+Pokemon = WYRDEER,70
+    Moves = CENSOR,HIGHJUMPKICK,LONGSHOT,SUPERCOOL
+    AbilityIndex = 0 # No Guard
 Pokemon = HLILLIGANT,70
+    Moves = STOMPINGTANTRUM,GLACIALRAM,LEAFBLADE,CLOSECOMBAT
     AbilityIndex = 0 # Fascinate
     Item = LIFEORB
 #-------------------------------
 [VETERANM,Taro]
-Pokemon = MAMOSWINE,70
-    AbilityIndex = 0 # Thick Fat
 Pokemon = LUXRAY,70
+    Moves = VOLTTACKLE,SUCKERPUNCH,CRUNCH,PLAYROUGH
     AbilityIndex = 1 # Intimidate
     Item = EJECTBUTTON
+Pokemon = TANGROWTH,70
+    Moves = PUFFBALL,POWERWHIP,ROCKALANCHE,EARTHQUAKE
+    AbilityIndex = 0 # Late Bloomer
 Pokemon = MOTHIM,70
+    Moves = SCALESTORM,TRUMPCARD,STEELBEAM,ACROBATICS
     AbilityIndex = 1 # Moth Burglar
     Item = EJECTBUTTON
 Pokemon = HTYPHLOSION,70
+    Moves = STITCHUP,SOULEATER,HEATWAVE,FRIGIDFLURRY
     AbilityIndex = 1 # Exorcist
 #-------------------------------
 [MEDIUM,Izumi]
 Pokemon = FROSLASS,70
+    Moves = PIERCINGDOUBT,SUFFOCATE,THUNDERBOLT,ICEBEAM
     AbilityIndex = 0 # Sealing Body
 Pokemon = CARNIVINE,70
+    Moves = TRAPJAW,CRUNCH,FIREFANG,STRAFE
     AbilityIndex = 0 # Strong Jaw
-    Item = YACHEBERRY
+    Item = STRIKEVEST
 Pokemon = BASTIODON,70
+    Moves = COSMICPOWER,SHOREUP,FARADAYCAGE,BODYPRESS
     AbilityIndex = 1 # Battle-Hardened
-    Item = CHOPLEBERRY
+    Item = SITRUSBERRY
 Pokemon = SCRAFTY,70
+    Moves = DRAGONDANCE,BROWBEAT,DRAINPUNCH,IRONHEAD
     AbilityIndex = 1 # Moxie
 #-------------------------------
 [EXPERTF,Kimiko]
 Pokemon = INFERNAPE,70
-    AbilityIndex = 0 # Mystic Fist
+    Moves = ACROBATICS,SECRETTECHNIQUE,FLAREBLITZ,UTURN
+    AbilityIndex = 1 # Monkey Mischief
 Pokemon = FLOATZEL,70
-    AbilityIndex = 0 # Moxie
-    Item = WATERGEM
+    Moves = HYPERJET,FURYSWIPES,ROCKBLAST,ICICLESPEAR
+    AbilityIndex = 1 # Technician
+    Item = LOADEDDICE
 Pokemon = LEAFEON,70
+    Moves = RECOVER,SWORDSDANCE,LEAFBLADE,BODYSLAM
     AbilityIndex = 1 # Reluctant Blade
-    Item = CADOBERRY
+    Item = ROCKYHELMET
 Pokemon = METAGROSS,70
-    AbilityIndex = 1 # Optimized Alloy
+    Moves = PIERCINGDOUBT,METEORMASH,DETACHMENT,MUDSLIDE
+    AbilityIndex = 0 # Brute Force
 #-------------------------------
 [EXPERTM,Hiroshi]
 Pokemon = ELECTIVIRE,70
+    Moves = VOLTTACKLE,NUMB,CLOSECOMBAT,ICEPUNCH
     AbilityIndex = 0 # Severe
 Pokemon = GASTRODON,70
+    Moves = RECOVER,SILTSURGE,SLUDGEWAVE,MUDSLIDE
     AbilityIndex = 1 # Water Absorb
 Pokemon = GLACEON,70
+    Moves = RECOVER,VANGUARD,HYPOTHERMIATE,MUDSLIDE
     AbilityIndex = 1 # Brilliant Flurry
     Item = LEFTOVERS
 Pokemon = MUK,70
+    Moves = VENOSHOCK,FLAMETHROWER,POISONGAS,GIGADRAIN
     AbilityIndex = 0 # Corrosion
     Item = SITRUSBERRY
 #-------------------------------
 [TOURISTM,Francois]
 Pokemon = FLORGES,70
+    Moves = LIGHTOFRUIN,SYNTHESIS,GIGADRAIN,CALMMIND
     AbilityIndex = 1 # Sentry
 Pokemon = TOUCANNON,70
+    Moves = FIREWORKS,BULLETSEED,BUBBLEBARRAGE,FURYPECKS
     AbilityIndex = 1 # Skill Link
-    Item = CHOICEBAND
+    Item = EXPERTBELT
 Pokemon = MILTANK,70
+    Moves = CURLUP,MILKDRINK,ROUGHTUMBLE,ADAMANTINEPRESS
     AbilityIndex = 0 # Thick Fat
     Item = LEFTOVERS
 Pokemon = ADUGTRIO,70
-    AbilityIndex = 2 # Tangling Hair
+    Moves = SHOREUP,SLUDGEWAVE,HAIRCURL,SANDBLASTING
+    AbilityIndex = 1 # Fascinate
 #-------------------------------
 [OFFICEWORKER_M,Kurt]
 Pokemon = MEOWSTIC,70

@@ -391,10 +391,6 @@ Description = Prevents the Pokémon from getting poisoned.
 Name = Infinite Source
 Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
 #-------------------------------
-[INSOMNIA]
-Name = Insomnia
-Description = Prevents the Pokémon from falling asleep.
-#-------------------------------
 [JASPERCHARGE]
 Name = Jasper Charge
 Description = Boosts Sp. Atk by 30%, but lowers Sp. Atk after using a special move.
