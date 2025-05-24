@@ -834,9 +834,9 @@ Pokemon = TOGEKISS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,10,0,0,20
 Pokemon = KABUTOPS,70
-    Moves = TORRENTSCYTHE,BEDROCKBREAKER,XSCISSOR,SEVER
-    AbilityIndex = 0 # Super Luck
-    Item = SCOPELENS
+    Moves = DEEPBREATHING,BEDROCKBREAKER,XSCISSOR,SEVER
+    AbilityIndex = 0 # Sniper
+    Item = SITRUSBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 #-------------------------------
@@ -1672,9 +1672,9 @@ Pokemon = JYNX,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = KABUTOPS,70
-    Moves = TORRENTSCYTHE,BEDROCKBREAKER,XSCISSOR,SEVER
-    AbilityIndex = 0 # Super Luck
-    Item = SCOPELENS
+    Moves = AQUAJET,BEDROCKBREAKER,SKEWER,KNOCKOFF
+    AbilityIndex = 1 # Unafraid
+    Item = WHITEHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = LEAVANNY,70

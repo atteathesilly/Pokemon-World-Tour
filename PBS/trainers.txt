@@ -4856,7 +4856,7 @@ Pokemon = WORMADAM,59
     AbilityIndex = 1 # Cloaking
 Pokemon = KABUTOPS,60
     Moves = TORRENTSCYTHE,SEVER,BEDROCKBREAKER,XSCISSOR
-    AbilityIndex = 0 # Super Luck
+    AbilityIndex = 0 # Sniper
     Item = SCOPELENS
 Pokemon = BEWEAR,59
     Moves = BEARHUG,CHAOSWHEEL,BABYDOLLEYES,MACHPUNCH
@@ -7572,7 +7572,7 @@ Pokemon = ESCAVALIER,45
 Pokemon = SLOWBRO,45
     AbilityIndex = 0 # Delayed Reaction
 Pokemon = KABUTOPS,45
-    AbilityIndex = 0 # Super Luck
+    AbilityIndex = 0 # Sniper
 Pokemon = HTYPHLOSION,45
     AbilityIndex = 1 # Exorcist
 #-------------------------------

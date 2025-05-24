@@ -557,7 +557,7 @@ Flags = HailSynergy
 #-------------------------------
 [SNIPER]
 Name = Sniper
-Description = Doubles critical hit chance. Powers up critical hits by another 50%.
+Description = Doubles the critical hit chance of random crit moves. Powers up critical hits by another 50%.
 #-------------------------------
 [SNOWWARNING]
 Name = Snow Warning
@@ -612,7 +612,7 @@ Description = It can't be knocked out with one hit.
 #-------------------------------
 [SUPERLUCK]
 Name = Super Luck
-Description = Doubles critical hit chance. All moves can random critical hit.
+Description = Quadruples the critical hit chance of random crit moves.
 Flags = EnablesRandomCrits
 #-------------------------------
 [SWIFTSWIM]

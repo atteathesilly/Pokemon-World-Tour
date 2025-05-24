@@ -13,7 +13,7 @@ BattleHandlers::CriticalCalcUserAbility.add(:SNIPER,
 BattleHandlers::CriticalCalcUserAbility.add(:STAMPEDE,
   proc { |ability, user, _target, _move, c|
       next 0 if user.steps[:SPEED] <= 0
-      next c + user.steps[:SPEED] / 2
+      next c + user.steps[:SPEED]
   }
 )
 

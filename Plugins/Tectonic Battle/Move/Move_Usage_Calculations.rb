@@ -1,3 +1,5 @@
+CRITICAL_HIT_RATIOS = [16, 8, 4, 2, 1]
+
 class PokeBattle_Move
     #=============================================================================
     # Move's type calculation
@@ -242,7 +244,9 @@ class PokeBattle_Move
             if forced
                 return crit
             elsif allowedToRandomCrit
-                return rate >= 3 # If rate is 3 or higher, a "random" crit is actually guaranteed
+                # If the rate is high enough,
+                # A "random" crit is actually guaranteed
+                return rate >= CRITICAL_HIT_RATIOS.length - 1
             else
                 return false
             end
@@ -253,13 +257,17 @@ class PokeBattle_Move
 
     def isRandomCrit?(user, _target, rate)
         # Calculation
-        ratios = [8, 4, 2, 1]
-        rate = ratios.length - 1 if rate >= ratios.length
-        return @battle.pbRandom(ratios[rate]) == 0
+        rate = CRITICAL_HIT_RATIOS.length - 1 if rate >= CRITICAL_HIT_RATIOS.length
+        denom = CRITICAL_HIT_RATIOS[rate]
+        echoln("[CRITICAL HIT RATE] Critical hit rate for #{user.pbThis(true)}'s #{@id} against target #{target.pbThis(true)} is 1 in #{denom}")
+        return @battle.pbRandom(denom) == 0
     end
 
     def criticalHitRate(user, target)
         c = 0
+
+        c += 1 if canRandomCrit?
+
         # Ability effects that alter critical hit rate
         user.eachActiveAbility do |ability|
             c = BattleHandlers.triggerCriticalCalcUserAbility(ability, user, target, self, c)

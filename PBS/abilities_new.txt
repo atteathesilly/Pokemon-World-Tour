@@ -1828,7 +1828,7 @@ Flags = AllWeatherSynergy,OtherStatDropImmunity
 #-------------------------------
 [STAMPEDE]
 Name = Stampede
-Description = Doubles critical hit chance for every two Speed steps raised. All moves can random critical hit.
+Description = Doubles critical hit chance for each Speed step up. All moves can random critical hit.
 Flags = EnablesRandomCrits
 #-------------------------------
 [STARGUARDIAN]
