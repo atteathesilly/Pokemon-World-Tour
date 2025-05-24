@@ -255,7 +255,7 @@ class PokeBattle_Move
         end
     end
 
-    def isRandomCrit?(user, _target, rate)
+    def isRandomCrit?(user, target, rate)
         # Calculation
         rate = CRITICAL_HIT_RATIOS.length - 1 if rate >= CRITICAL_HIT_RATIOS.length
         denom = CRITICAL_HIT_RATIOS[rate]
