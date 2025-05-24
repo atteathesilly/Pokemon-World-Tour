@@ -1774,9 +1774,7 @@ Pokemon = SLURPUFF,70
 #-------------------------------
 [NURSE,Joy]
 Pokemon = HAPPINY,20
-    Moves = DIZZYPUNCH,FIREPUNCH,ICEPUNCH,THUNDERPUNCH
     AbilityIndex = 0 # Serene Grace
-    Item = POWERLOCK
 #-------------------------------
 [POKEMANIAC,Nikos]
 Pokemon = LEAFEON,35
