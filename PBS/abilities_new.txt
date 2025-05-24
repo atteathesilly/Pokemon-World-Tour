@@ -406,7 +406,7 @@ Flags = SandstormSynergy
 #-------------------------------
 [DESERTSPIRIT]
 Name = Desert Spirit
-Description = the Pokémon is immune to Ground-type moves and takes 20% less damage in sandstorm.
+Description = The Pokémon is immune to Ground-type moves and takes 20% less damage in sandstorm.
 Flags = SandstormSynergy,Levitation
 #-------------------------------
 [DESICCATE]

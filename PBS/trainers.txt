@@ -1241,47 +1241,66 @@ Pokemon = VICTREEBEL,70
 #-------------------------------
 [SCIENTIST_M2,Marco]
 Pokemon = KECLEON,36
+    Moves = RECOVER,PALEBLADE,PIERCINGDOUBT,ROCKALANCHE
     AbilityIndex = 0 # Adaptive Skin
 Pokemon = DELCATTY,36
+    Moves = LAUNDER,HEX,EXTREMESPEED,FAKEOUT
     AbilityIndex = 0 # Above It All
 Pokemon = NINETALES,36
+    Moves = CRIMSONSTORM,FLAMESPIKES,DRAININGKISS,PIERCINGDOUBT
     AbilityIndex = 1 # Feedback
+    Item = HIVISJACKET
 Pokemon = GABITE,36
+    Moves = GLARE,CRUNCH,TRAMPLE,REND
     AbilityIndex = 0 # Rough Skin
+    Item = ROCKYHELMET
 #-------------------------------
 [SCIENTIST_F,Natasha]
 Pokemon = SMEARGLE,37
     Moves = VCREATE,STELLARATE,SIXFEETUNDER,PLANETCRACKER
     AbilityIndex = 1 # Technician
+    Item = LOADEDDICE
 Pokemon = SMEARGLE,37
     Moves = COACHING,BLOSSOM,PACKAGE,BREAKDANCE
     AbilityIndex = 1 # Technician
 Pokemon = SMEARGLE,37
     Moves = OCTOLOCK,NORETREAT,OBLIVIONWING,TERADRAIN
-    AbilityIndex = 1 # Technician
+    AbilityIndex = 0 # Mental Block
 Pokemon = SMEARGLE,37
     Moves = PROFANE,GIGAIMPACT,ALLERGY,HUNTDOWN
-    AbilityIndex = 1 # Technician
+    AbilityIndex = 0 # Mental Block
+    Item = ENERGYHERB
 #-------------------------------
 [SCIENTIST_M,Julien]
 Pokemon = INTELEON,36
+    Moves = SPIKES,SNIPESHOT,SHRAPNEL,DARKPULSE
     AbilityIndex = 1 # Illusion
 Pokemon = DITTO,36
     AbilityIndex = 0 # Imposter
+    Item = SEVENLEAGUEBOOTS
 Pokemon = ZOROARK,36
+    Moves = GRIMVISIONS,PSYCHICFANGS,SEVER,FLAMETHROWER
     AbilityIndex = 0 # Illusion
 Pokemon = MIMIKYU,36
+    Moves = VIMRIPPER,CURSEDOATH,PROTECT,SAPPINGJEALOUSY
     AbilityIndex = 0 # Disguise
+    Item = LEFTOVERS
 #-------------------------------
 [SCIENTIST_F3,Viola]
 Pokemon = BRONZONG,35
+    Moves = TAKESHELTER,KINETICGRIP,STEALTHROCK,HEAVYSLAM
     AbilityIndex = 1 # Puzzling
+    Item = REINFORCINGROD
 Pokemon = ELDEGOSS,35
+    Moves = POISONIVY,SYNTHESIS,SAPPINGJEALOUSY,WEATHERBURST
     AbilityIndex = 1 # On the Wind
 Pokemon = DRIFBLIM,35
+    Moves = HEATWAVE,HEX,ACROBATICS,BODYSLAM
     AbilityIndex = 1 # Drifting Mist
 Pokemon = WEEZING,35
+    Moves = EXPLOSION,MIASMA,HEATWAVE,WINDTUNNEL
     AbilityIndex = 0 # Neutralizing Gas
+    Item = NORMALGEM
 #-------------------------------
 [TOURISTF,Mariana]
 Pokemon = PILOSWINE,26
@@ -2054,31 +2073,42 @@ Pokemon = ZEBSTRIKA,39
 #-------------------------------
 [CLERK_M2,Marton]
 Pokemon = KLEFKI,38
+    Moves = JAVELIN,ENCHANTINGSONG,BREAKINGSWIPE,SWEETKISS
     AbilityIndex = 1 # Kleptomaniac
     Item = CADOBERRY
 Pokemon = CENTISKORCH,39
+    Moves = AGONIZE,COIL,BURNINGJEALOUSY,THUNDERFANG
     AbilityIndex = 0 # Firefighter
 #-------------------------------
 [CLERK_M2,Zoltan]
 Pokemon = TROPIUS,38
-    AbilityIndex = 0 # Mental Block
+    Moves = COLDFRONT,PROTECT,GIGADRAIN,TAILWIND
+    AbilityIndex = 1 # Berry Bunch
+    Item = YACHEBERRY,OCCABERRY
 Pokemon = SWALOT,39
-    AbilityIndex = 1 # Toxin Tax
+    Moves = STELLARATE,CLEARSMOG,ENCORE,YAWN
+    AbilityIndex = 0 # Thick Fat
 #-------------------------------
 [CEO,Beatrice]
 Flags = NoPerfect
 Pokemon = HELIOLISK,40
+    Moves = BEAMSTRUGGLE,WEATHERBURST,BUBBLEBLASTER,DRAGONPULSE
     AbilityIndex = 1 # Water Absorb
-    Item = CADOBERRY
+    Item = AIRBALLOON
 Pokemon = HEATMOR,40
+    Moves = STRENGTHSAP,FIRELASH,FLAMESPIKES,FARADAYCAGE
     AbilityIndex = 0 # Firefighter
 Pokemon = DOUBLADE,40
-    AbilityIndex = 1 # Full Metal Body
+    Moves = SWORDSDANCE,SHADOWSNEAK,GYROBALL,PAINSPLIT
+    AbilityIndex = 0 # Full Metal Body
+    Item = EVIOLITE
 Pokemon = FURFROU,40
+    Moves = LOUNGE,LAUNDER,FOULPLAY,ENERGYBALL
     AbilityIndex = 0 # Stylish
 Pokemon = PANGORO,40
+    Moves = HATEFULHAYMAKER,DRAINPUNCH,GRIMEGRAPPLE,FACADE
     AbilityIndex = 0 # Big Boss
-    Item = CADOBERRY
+    Item = STRIKEVEST
 #-------------------------------
 [BIRDKEEPER_M,Kendall]
 Pokemon = DODRIO,40
