@@ -2075,31 +2075,42 @@ Pokemon = ZEBSTRIKA,39
 #-------------------------------
 [CLERK_M2,Marton]
 Pokemon = KLEFKI,38
+    Moves = JAVELIN,ENCHANTINGSONG,BREAKINGSWIPE,SWEETKISS
     AbilityIndex = 1 # Kleptomaniac
     Item = CADOBERRY
 Pokemon = CENTISKORCH,39
+    Moves = AGONIZE,COIL,BURNINGJEALOUSY,THUNDERFANG
     AbilityIndex = 0 # Firefighter
 #-------------------------------
 [CLERK_M2,Zoltan]
 Pokemon = TROPIUS,38
-    AbilityIndex = 0 # Mental Block
+    Moves = COLDFRONT,PROTECT,GIGADRAIN,TAILWIND
+    AbilityIndex = 1 # Berry Bunch
+    Item = YACHEBERRY,OCCABERRY
 Pokemon = SWALOT,39
-    AbilityIndex = 1 # Toxin Tax
+    Moves = STELLARATE,CLEARSMOG,ENCORE,YAWN
+    AbilityIndex = 0 # Thick Fat
 #-------------------------------
 [CEO,Beatrice]
 Flags = NoPerfect
 Pokemon = HELIOLISK,40
+    Moves = BEAMSTRUGGLE,WEATHERBURST,BUBBLEBLASTER,DRAGONPULSE
     AbilityIndex = 1 # Water Absorb
-    Item = CADOBERRY
+    Item = AIRBALLOON
 Pokemon = HEATMOR,40
+    Moves = STRENGTHSAP,FIRELASH,FLAMESPIKES,FARADAYCAGE
     AbilityIndex = 0 # Firefighter
 Pokemon = DOUBLADE,40
-    AbilityIndex = 1 # Full Metal Body
+    Moves = SWORDSDANCE,SHADOWSNEAK,GYROBALL,PAINSPLIT
+    AbilityIndex = 0 # Full Metal Body
+    Item = EVIOLITE
 Pokemon = FURFROU,40
+    Moves = LOUNGE,LAUNDER,FOULPLAY,ENERGYBALL
     AbilityIndex = 0 # Stylish
 Pokemon = PANGORO,40
+    Moves = HATEFULHAYMAKER,DRAINPUNCH,GRIMEGRAPPLE,FACADE
     AbilityIndex = 0 # Big Boss
-    Item = CADOBERRY
+    Item = STRIKEVEST
 #-------------------------------
 [BIRDKEEPER_M,Kendall]
 Pokemon = DODRIO,40
