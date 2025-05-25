@@ -2319,6 +2319,17 @@ EffectChance = 100
 Description = The user sends vines to ensnare all enemies, lowering the Speed of any that moved first by three steps.
 Animation = FRENZYPLANT
 #-------------------------------
+[WORRYSEED]
+Name = Worry Seed
+Type = GRASS
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = A seed that causes worry is planted on the foe. It prevents sleep by making its Ability Insomnia.
+#-------------------------------
 #		ELECTRIC MOVES
 #-------------------------------
 [AURAWHEEL]
