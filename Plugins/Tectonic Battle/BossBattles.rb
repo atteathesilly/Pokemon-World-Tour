@@ -221,7 +221,7 @@ def createBossGraphics(avatarData, overworldMult = 1.5, battleMult = 1.5, overwr
             echoln("Creating overworld sprite for Avatar #{avatarData.species}")
             speciesOverworldBitmap = GameData::Species.ow_sprite_bitmap(avatarData.species, avatarData.form)
             copiedOverworldBitmap = speciesOverworldBitmap.copy
-            bossifiedOverworld = bossify(copiedOverworldBitmap.bitmap, overworldMult)
+            bossifiedOverworld = bossify(copiedOverworldBitmap.bitmap, overworldMult, opacity: BASE_OPACITY_OVERWORLD)
             bossifiedOverworld.to_file(bossOWFilePath)
         else
             echoln("Overworld sprite already exists for Avatar #{avatarData.species}")
@@ -294,9 +294,10 @@ EXTRA_TYPE_HUE_WEIGHTING_PER_PHASE = 0.0
 TYPE_SATURATION_WEIGHTING = 0.2
 TYPE_LUMINOSITY_WEIGHTING = 0.3
 
-BASE_OPACITY = 140
+BASE_OPACITY_OVERWORLD = 120
+BASE_OPACITY_BATTLE = 140
 
-def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
+def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0, opacity: BASE_OPACITY_BATTLE)
     # Figure out the color info that should be used for the given type, if any
     applyType = false
     if type
@@ -369,7 +370,7 @@ def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
             color.blue += BASE_RGB_ADD[2]
 
             # Add the transparency
-            color.alpha = [color.alpha, BASE_OPACITY].min
+            color.alpha = [color.alpha, opacity].min
 
             # Round and clamp
             color.red	= color.red.round.clamp(0, 255)
