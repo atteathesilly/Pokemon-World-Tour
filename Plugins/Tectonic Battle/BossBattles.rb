@@ -337,18 +337,18 @@ def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
                     type2WeightatPixel = 1 - type1WeightAtPixel
 
                     # Hue
-                    h = averageOfHues(h, type1H, type1WeightAtPixel * 0.8)
-                    h = averageOfHues(h, type2H, type2WeightatPixel * 0.9)
+                    h = averageOfHues(h, type1H, type1WeightAtPixel * 0.9)
+                    h = averageOfHues(h, type2H, type2WeightatPixel * 1.1)
 
                     # Saturation
                     s = s * (1.0 - TYPE_SATURATION_WEIGHTING)
-                    s += type1S * TYPE_SATURATION_WEIGHTING * type1WeightAtPixel
-                    s += type2S * TYPE_SATURATION_WEIGHTING * type2WeightatPixel
+                    s += type1S * TYPE_SATURATION_WEIGHTING * type1WeightAtPixel * 0.75
+                    s += type2S * TYPE_SATURATION_WEIGHTING * type2WeightatPixel * 0.75
 
                     # Luminance
                     l = l * (1.0 - TYPE_LUMINOSITY_WEIGHTING)
-                    l += type1L * TYPE_LUMINOSITY_WEIGHTING * type1WeightAtPixel
-                    l += type2L * TYPE_LUMINOSITY_WEIGHTING * type2WeightatPixel
+                    l += type1L * TYPE_LUMINOSITY_WEIGHTING * type1WeightAtPixel * 0.75
+                    l += type2L * TYPE_LUMINOSITY_WEIGHTING * type2WeightatPixel * 0.75
                 else
                     h = averageOfHues(h, typeH, typeHueWeight)
                     s = s * (1.0 - TYPE_SATURATION_WEIGHTING) + typeS * TYPE_SATURATION_WEIGHTING 
