@@ -242,18 +242,18 @@ def createBossGraphics(avatarData, overworldMult = 1.5, battleMult = 1.5, overwr
             
             avatarData.getListOfPhaseTypes.each_with_index do |type, index|
                 if type.is_a?(Array)
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type[0], battleMult, overwriteExisting: overwriteExisting)
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type, battleMult, overwriteExisting: overwriteExisting)
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type[0], battleMult, overwriteExisting: overwriteExisting)
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, battleMult, overwriteExisting: overwriteExisting)
                 else
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type, battleMult, overwriteExisting: overwriteExisting)  
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, battleMult, overwriteExisting: overwriteExisting)  
                 end
             end
         end
     end
 end
 
-def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, phase, type, sizeMult, overwriteExisting: true)
-    identifier = "Avatar #{avatarData.species} (form #{form}) phase #{phase}"
+def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, sizeMult, overwriteExisting: true)
+    identifier = "Avatar #{avatarData.species} (form #{form})"
     identifier = "#{identifier} -- #{type.to_s}" if type
 
     # Front sprites
@@ -290,18 +290,17 @@ BASE_AVATAR_SATURATION_SHIFT = 0
 BASE_AVATAR_LIGHTNESS_SHIFT = 0
 
 BASE_TYPE_HUE_WEIGHTING = 0.7
-EXTRA_TYPE_HUE_WEIGHTING_PER_PHASE = 0.0
 TYPE_SATURATION_WEIGHTING = 0.2
 TYPE_LUMINOSITY_WEIGHTING = 0.3
 
 BASE_OPACITY_OVERWORLD = 120
 BASE_OPACITY_BATTLE = 140
 
-def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0, opacity: BASE_OPACITY_BATTLE)
+def bossify(bitmap, scaleFactor = 1.5, type = nil, opacity: BASE_OPACITY_BATTLE)
     # Figure out the color info that should be used for the given type, if any
     applyType = false
     if type
-        typeHueWeight = BASE_TYPE_HUE_WEIGHTING + EXTRA_TYPE_HUE_WEIGHTING_PER_PHASE * phase
+        typeHueWeight = BASE_TYPE_HUE_WEIGHTING
         applyType = true if typeHueWeight > 0 
         if type.is_a?(Array)
             type1Color = GameData::Type.get(type[0]).color
