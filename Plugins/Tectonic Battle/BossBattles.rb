@@ -263,7 +263,7 @@ def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpecies
         echoln("Creating front sprite for #{identifier}")
         battlebitmap = AnimatedBitmap.new(baseSpeciesFrontFilePath)
         copiedBattleBitmap = battlebitmap.copy
-        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type, phase)
+        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type)
         bossifiedBattle.to_file(bossFrontFilePath)
     else
         echoln("Front sprite already exists for #{identifier}")
@@ -276,7 +276,7 @@ def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpecies
         echoln("Creating back sprite for #{identifier}")
         battlebitmap = AnimatedBitmap.new(baseSpeciesBackFilePath)
         copiedBattleBitmap = battlebitmap.copy
-        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type, phase)
+        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type)
         bossifiedBattle.to_file(bossBackFilePath)
     else
         echoln("Back sprite already exists for #{identifier}")
