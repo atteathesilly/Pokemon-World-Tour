@@ -953,6 +953,19 @@ Animation = SHIVERDANCE
 #-------------------------------
 #		DRAGON MOVES
 #-------------------------------
+[EMPOWEREDCRUELTY]
+Name = Empowered Cruelty
+Type = DRAGON
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 1
+Target = AllNearOthers
+FunctionCode = EmpoweredCruelty
+Flags = CanProtect,Empowered
+Description = The user crushes all near foes with evil intent. This deals double damage to targets with a status condition.
+Animation = CRUSHCLAW
+#-------------------------------
 [EMPOWEREDDRAGONBREATH]
 Name = Empowered Dragon Breath
 Type = DRAGON
