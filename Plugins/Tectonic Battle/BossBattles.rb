@@ -221,7 +221,7 @@ def createBossGraphics(avatarData, overworldMult = 1.5, battleMult = 1.5, overwr
             echoln("Creating overworld sprite for Avatar #{avatarData.species}")
             speciesOverworldBitmap = GameData::Species.ow_sprite_bitmap(avatarData.species, avatarData.form)
             copiedOverworldBitmap = speciesOverworldBitmap.copy
-            bossifiedOverworld = bossify(copiedOverworldBitmap.bitmap, overworldMult)
+            bossifiedOverworld = bossify(copiedOverworldBitmap.bitmap, overworldMult, opacity: BASE_OPACITY_OVERWORLD)
             bossifiedOverworld.to_file(bossOWFilePath)
         else
             echoln("Overworld sprite already exists for Avatar #{avatarData.species}")
@@ -242,18 +242,18 @@ def createBossGraphics(avatarData, overworldMult = 1.5, battleMult = 1.5, overwr
             
             avatarData.getListOfPhaseTypes.each_with_index do |type, index|
                 if type.is_a?(Array)
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type[0], battleMult, overwriteExisting: overwriteExisting)
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type, battleMult, overwriteExisting: overwriteExisting)
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type[0], battleMult, overwriteExisting: overwriteExisting)
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, battleMult, overwriteExisting: overwriteExisting)
                 else
-                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, index, type, battleMult, overwriteExisting: overwriteExisting)  
+                    bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, battleMult, overwriteExisting: overwriteExisting)  
                 end
             end
         end
     end
 end
 
-def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, phase, type, sizeMult, overwriteExisting: true)
-    identifier = "Avatar #{avatarData.species} (form #{form}) phase #{phase}"
+def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpeciesBackFilePath, type, sizeMult, overwriteExisting: true)
+    identifier = "Avatar #{avatarData.species} (form #{form})"
     identifier = "#{identifier} -- #{type.to_s}" if type
 
     # Front sprites
@@ -263,7 +263,7 @@ def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpecies
         echoln("Creating front sprite for #{identifier}")
         battlebitmap = AnimatedBitmap.new(baseSpeciesFrontFilePath)
         copiedBattleBitmap = battlebitmap.copy
-        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type, phase)
+        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type)
         bossifiedBattle.to_file(bossFrontFilePath)
     else
         echoln("Front sprite already exists for #{identifier}")
@@ -276,7 +276,7 @@ def bossifyBattleSprites(avatarData, form, baseSpeciesFrontFilePath, baseSpecies
         echoln("Creating back sprite for #{identifier}")
         battlebitmap = AnimatedBitmap.new(baseSpeciesBackFilePath)
         copiedBattleBitmap = battlebitmap.copy
-        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type, phase)
+        bossifiedBattle = bossify(copiedBattleBitmap.bitmap, sizeMult, type)
         bossifiedBattle.to_file(bossBackFilePath)
     else
         echoln("Back sprite already exists for #{identifier}")
@@ -290,17 +290,17 @@ BASE_AVATAR_SATURATION_SHIFT = 0
 BASE_AVATAR_LIGHTNESS_SHIFT = 0
 
 BASE_TYPE_HUE_WEIGHTING = 0.7
-EXTRA_TYPE_HUE_WEIGHTING_PER_PHASE = 0.0
-TYPE_SATURATION_WEIGHTING = 0.2
+TYPE_SATURATION_WEIGHTING = 0.8
 TYPE_LUMINOSITY_WEIGHTING = 0.3
 
-BASE_OPACITY = 140
+BASE_OPACITY_OVERWORLD = 120
+BASE_OPACITY_BATTLE = 140
 
-def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
+def bossify(bitmap, scaleFactor = 1.5, type = nil, opacity: BASE_OPACITY_BATTLE)
     # Figure out the color info that should be used for the given type, if any
     applyType = false
     if type
-        typeHueWeight = BASE_TYPE_HUE_WEIGHTING + EXTRA_TYPE_HUE_WEIGHTING_PER_PHASE * phase
+        typeHueWeight = BASE_TYPE_HUE_WEIGHTING
         applyType = true if typeHueWeight > 0 
         if type.is_a?(Array)
             type1Color = GameData::Type.get(type[0]).color
@@ -337,18 +337,18 @@ def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
                     type2WeightatPixel = 1 - type1WeightAtPixel
 
                     # Hue
-                    h = averageOfHues(h, type1H, type1WeightAtPixel * 0.8)
-                    h = averageOfHues(h, type2H, type2WeightatPixel * 0.9)
+                    h = averageOfHues(h, type1H, type1WeightAtPixel * 0.9)
+                    h = averageOfHues(h, type2H, type2WeightatPixel * 1.1)
 
                     # Saturation
                     s = s * (1.0 - TYPE_SATURATION_WEIGHTING)
-                    s += type1S * TYPE_SATURATION_WEIGHTING * type1WeightAtPixel
-                    s += type2S * TYPE_SATURATION_WEIGHTING * type2WeightatPixel
+                    s += type1S * TYPE_SATURATION_WEIGHTING * type1WeightAtPixel * 0.75
+                    s += type2S * TYPE_SATURATION_WEIGHTING * type2WeightatPixel * 0.75
 
                     # Luminance
                     l = l * (1.0 - TYPE_LUMINOSITY_WEIGHTING)
-                    l += type1L * TYPE_LUMINOSITY_WEIGHTING * type1WeightAtPixel
-                    l += type2L * TYPE_LUMINOSITY_WEIGHTING * type2WeightatPixel
+                    l += type1L * TYPE_LUMINOSITY_WEIGHTING * type1WeightAtPixel * 0.75
+                    l += type2L * TYPE_LUMINOSITY_WEIGHTING * type2WeightatPixel * 0.75
                 else
                     h = averageOfHues(h, typeH, typeHueWeight)
                     s = s * (1.0 - TYPE_SATURATION_WEIGHTING) + typeS * TYPE_SATURATION_WEIGHTING 
@@ -369,7 +369,7 @@ def bossify(bitmap, scaleFactor = 1.5, type = nil, phase = 0)
             color.blue += BASE_RGB_ADD[2]
 
             # Add the transparency
-            color.alpha = [color.alpha, BASE_OPACITY].min
+            color.alpha = [color.alpha, opacity].min
 
             # Round and clamp
             color.red	= color.red.round.clamp(0, 255)

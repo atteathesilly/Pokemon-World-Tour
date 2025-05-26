@@ -4722,17 +4722,6 @@ FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect
 Description = The user slams its rugged body into the target to attack. The user also takes 33% recoil.
 #-------------------------------
-[WORRYSEED]
-Name = Worry Seed
-Type = GRASS
-Category = Status
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = SetTargetAbilityToInsomnia
-Flags = CanProtect,CanMagicCoat
-Description = A seed that causes worry is planted on the foe. It prevents sleep by making its Ability Insomnia.
-#-------------------------------
 #		ELECTRIC MOVES
 #-------------------------------
 [BOLTBEAK]
