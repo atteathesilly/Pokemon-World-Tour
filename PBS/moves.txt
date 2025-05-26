@@ -6575,8 +6575,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = User
-FunctionCode = TwoTurnAttackRaiseUserSpAtkSpDefSpd4
-Description = The user absorbs energy and raises its Sp. Atk, Sp. Def, and Speed by four steps on the next turn.
+FunctionCode = TwoTurnAttackRaiseUserAllStats3
+Description = The user absorbs energy and raises all of its stats by three steps on the next turn.
 #-------------------------------
 [LIGHTOFRUIN]
 Name = Light of Ruin
