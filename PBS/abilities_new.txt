@@ -1165,7 +1165,7 @@ Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARTIALDISCIPLINE]
 Name = Martial Discipline
-Description = Repeats another Pokémon's punch and kick moves immediately at 75% power.
+Description = Repeats another Pokémon's punch and kick moves immediately at 50% power.
 #-------------------------------
 [MASSATTACK]
 Name = Mass Attack
