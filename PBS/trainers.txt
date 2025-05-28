@@ -7116,40 +7116,52 @@ Pokemon = CASTFORM,70
 #-------------------------------
 [HEXMANIAC,Juno]
 Pokemon = OBSTAGOON,50
+    Moves = DROWN,MINDSAP,HYPERVOICE,DARKALLURE
     AbilityIndex = 1 # Frustrate
     Item = EJECTBUTTON
 Pokemon = TORTERRA,51
+    Moves = ROOTSHELTER,EARTHQUAKE,ADAMANTINEPRESS,WHIPKICK
     AbilityIndex = 1 # Living Armor
     Item = LEFTOVERS
 Pokemon = MIENSHAO,52
+    Moves = WHIPTRANCE,AIRSLASH,VOLTSWITCH,DISARMINGSHOT
     AbilityIndex = 1 # Natural Cure
 Pokemon = MDUSTOX,53
+    Moves = LIFTOFF,ACROBATICS,UTURN,LUNGE
     AbilityIndex = 1 # Follow Through
 #-------------------------------
 [ARTIST3,Alicynthia]
-Pokemon = ALAKAZAM,52
+Policies = ECLIPSE_TEAM
+Pokemon = ALAKAZAM,53
     Moves = POLARIZEDROOM,PSYCHIC,JAVELIN,NUMB
-    AbilityIndex = 1 # Steelworker
+    AbilityIndex = 0 # Warping Effect
     Item = REINFORCINGROD
-Pokemon = SCEPTILE,52
-    AbilityIndex = 1 # Wall Ninja
-Pokemon = HYDREIGON,53
+Pokemon = HYDREIGON,55
+    Moves = TRIPLETHREAT,DARKPULSE,JAVELIN,FLAMETHROWER
     AbilityIndex = 1 # Sun Eater
     Item = PINPOINTROCK
-Pokemon = REUNICLUS,54
+Pokemon = SCEPTILE,54
+    Moves = LEAFSTORM,WEATHERBURST,CALAMITOUSSLASH,ACROBATICS
+    AbilityIndex = 1 # Wall Ninja
+Pokemon = REUNICLUS,53
+    Moves = MIASMA,PIERCINGDOUBT,ECLIPSE,RECOVER
     AbilityIndex = 0 # Extremophile
 #-------------------------------
 [SCHOOLKID_F2,Honesty]
-Pokemon = ZOROARK,53
-    AbilityIndex = 0 # Illusion
-Pokemon = NINETALES,53
-    AbilityIndex = 1 # Feedback
-    Item = HIVISJACKET
 Pokemon = CHANDELURE,55
+    Moves = HEX,SHIVER,HEATWAVE,ENERGYBALL
     AbilityIndex = 0 # Light Trick
-Pokemon = RIOJIN,54
-    AbilityIndex = 0 # Honorable
-    Item = PAYAPABERRY
+    Item = AIRBALLOON
+Pokemon = ZOROARK,53
+    Moves = DARKPULSE,FLAMETHROWER,TOTALCONTROL,GRASSKNOT
+    AbilityIndex = 0 # Illusion
+Pokemon = RIBOMBEE,54
+    Moves = STICKYWEB,MOONBLAST,FACADE,BUGBUZZ
+    AbilityIndex = 1 # Impulsive
+    Item = FLAMEORB
+Pokemon = RIOJIN,53
+    Moves = DARKPULSE,FLAMETHROWER,DETACHMENT,JAVELIN
+    AbilityIndex = 1 # Inner Focus
 #-------------------------------
 [RICHBOY3,Ryan]
 Pokemon = ELDEGOSS,56
