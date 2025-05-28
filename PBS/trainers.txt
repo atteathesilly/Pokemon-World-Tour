@@ -4507,14 +4507,19 @@ Pokemon = GIGANTEON,48
 [TRAINER_Eifion,Eifion]
 Flags = NoPerfect
 Pokemon = HOUNDOOM,28
+    Moves = FINALIZE,TAUNT,BURNINGJEALOUSY,LASHOUT
     AbilityIndex = 1 # Berserk
+    Item = SITRUSBERRY
 Pokemon = GROVYLE,29
+    Moves = SHRED,SAPPINGJEALOUSY,PUZZLEROOM,BULLDOZE
     AbilityIndex = 1 # Wall Ninja
 Pokemon = MANECTRIC,29
+    Moves = ELECTROBALL,NUMB,ICEFANG,BURNINGJEALOUSY
     AbilityIndex = 1 # Fascinate
 Pokemon = PHIONE,30
-    Moves = BUBBLEBEAM,DIVE,SUPERSONIC
+    Moves = MENDINGSPRING,DIVE,SUPERSONIC,AMNESIA
     AbilityIndex = 1 # Overflowing Heart
+    Item = WATERBALLOON
 #-------------------------------
 [SCHOOLKID_M3,Jeremy]
 Policies = FEAR
