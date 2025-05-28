@@ -7067,40 +7067,52 @@ Pokemon = MILLIBLAZE,70
 #-------------------------------
 [FAIRYTALEGIRL,Madeline]
 Pokemon = FURFROU,70
+    Moves = FOULPLAY,SHORTCIRCUIT,LOUNGE,WATERLOG
     AbilityIndex = 0 # Stylish
-Pokemon = PANGORO,70
-    AbilityIndex = 0 # Big Boss
-    Item = CADOBERRY
+Pokemon = GRANBULL,70
+    Moves = PLAYBITE,DRAINPUNCH,CRUNCH,THUNDERFANG
+    AbilityIndex = 1 # Strong Jaw
+    Item = EXPERTBELT
 Pokemon = TOXAPEX,70
+    Moves = VENOMGUARD,RECOVER,STOCKPILE,TERRORSWARM
     AbilityIndex = 0 # Noxious
     Item = BLACKSLUDGE
 Pokemon = CHIMECHO,70
+    Moves = REVERBWARD,SUFFOCATE,COLDFRONT,PIERCINGDOUBT
     AbilityIndex = 0 # Brisk
 #-------------------------------
 [GARDENER,Larry]
 Pokemon = KABUTOPS,70
-    AbilityIndex = 1 # Unafraid
+    Moves = DEEPBREATHING,TORRENTSCYTHE,SEVER,ROCKALANCHE
+    AbilityIndex = 0 # Sniper
 Pokemon = REAVOR,70
-    AbilityIndex = 1 # Inner Focus
+    Moves = SLAMSHUT,BULLETCHARGE,DUALWINGBEAT,STINGINGJAB
+    AbilityIndex = 0 # Technician
     Item = CADOBERRY
 Pokemon = MZANGOOSE,70
-    AbilityIndex = 0 # Served Cold
+    Moves = HONECLAWS,SUNDERFATE,IRONTAIL,CROSSCHOP
+    AbilityIndex = 1 # Mental Damage
 Pokemon = GARCHOMP,70
+    Moves = MACHFLIGHT,REND,STRAFE,EARTHQUAKE
     AbilityIndex = 0 # Rough Skin
     Item = SHELLBELL
 #-------------------------------
 [BEAUTY5,Esme]
 Policies = SUN_TEAM
 Pokemon = SUNFLORA,70
+    Moves = WEATHERBURST,SOLARBEAM,SYNTHESIS,EARTHPOWER
     AbilityIndex = 1 # Drought
     Item = HEATROCK
 Pokemon = ESPEON,70
+    Moves = WEATHERBURST,PIERCINGDOUBT,PSYCHESWITCH,MIASMA
     AbilityIndex = 0 # Overthinking
-Pokemon = HOUNDOMINUS,70
-    AbilityIndex = 0 # Midnight Sun
-    Item = WEAKNESSPOLICY
-Pokemon = RIBOMBEE,70
-    AbilityIndex = 1 # Impulsive
+Pokemon = CHERRIM,70
+    Moves = WEATHERBURST,SOLARGLIDE,INFERNOIMPACT,PLAYROUGH
+    AbilityIndex = 0 # Flower Gift
+    Item = POWERLOCK
+Pokemon = CASTFORM,70
+    Moves = WEATHERBURST,INVITESUNSHINE,SOLARBEAM,ICEBERGBASH
+    AbilityIndex = 1 # Forecast
 #-------------------------------
 [HEXMANIAC,Juno]
 Pokemon = OBSTAGOON,50
