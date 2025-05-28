@@ -672,9 +672,10 @@ class PokeBattle_Battler
         prevAbilities = @ability_ids
         @ability_ids  = []
         @ability_ids.push(@pokemon.ability_id) if @pokemon.ability_id
+        
+        # Pokemon extra abilities (from curses and avatar shenanigans)
         @ability_ids.concat(@pokemon.extraAbilities)
         @addedAbilities.clear
-
         @addedAbilities.concat(@pokemon.extraAbilities)
 
         # Check for "has all legal ability" effects
@@ -692,6 +693,11 @@ class PokeBattle_Battler
                 @ability_ids.push(legalAbility)
                 @addedAbilities.push(legalAbility)
             end
+        end
+
+        if !initialization && illusion? && hasActiveAbility?(:INCOGNITO) && disguisedAs.ability && !GameData::Ability.get(disguisedAs.ability_id).is_uncopyable_ability?
+            @ability_ids.push(disguisedAs.ability_id)
+            @addedAbilities.push(disguisedAs.ability_id)
         end
 
         unless initialization

@@ -1274,7 +1274,7 @@ Pokemon = SMEARGLE,37
 [SCIENTIST_M,Julien]
 Pokemon = INTELEON,36
     Moves = SPIKES,SNIPESHOT,SHRAPNEL,DARKPULSE
-    AbilityIndex = 1 # Illusion
+    AbilityIndex = 1 # Incognito
 Pokemon = DITTO,36
     AbilityIndex = 0 # Imposter
     Item = SEVENLEAGUEBOOTS
@@ -3763,7 +3763,7 @@ Pokemon = WEEPINBELL,27
 [TUBER_M,Derek]
 Pokemon = INTELEON,41
     Moves = SNIPESHOT,DARKPULSE,SHINESHOT
-    AbilityIndex = 1 # Illusion
+    AbilityIndex = 1 # Incognito
     Item = WATERGEM
 Pokemon = SANDSLASH,41
     Moves = ONAROLL,FURYCUTTER,ROCKROLL

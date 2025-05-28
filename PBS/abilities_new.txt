@@ -973,6 +973,11 @@ Description = Its same-type attack bonus is based on its party members rather th
 Name = Impulsive
 Description = When this Pokémon becomes statused, its Sp. Atk is raised by three steps.
 #-------------------------------
+[INCOGNITO]
+Name = Incognito
+Description = Comes out disguised as the Pokémon in back. While disguised, copies its ability.
+Flags = Immutable
+#-------------------------------
 [INDESTRUCTIBLE]
 Name = Indestructible
 Description = After being attacked, gains immunity to that move's type but loses other morphed immunities.
