@@ -2745,7 +2745,7 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = UserOrNearOther
-FunctionCode = UserOrTargetMakesSubstitute
+FunctionCode = UserOrTargetMakesSubstitute25
 Flags = CanProtect,CanMagicCoat
 Description = The user forces itself or the target to make a substitute by turning it into a doll.
 #-------------------------------
@@ -5479,6 +5479,17 @@ Flags = CanProtect
 EffectChance = 10
 Description = The target is hit by a weak telekinetic force. It has a 10% chance to lower the target's Sp. Def.
 Animation = CONFUSION
+#-------------------------------
+[MITOSIS]
+Name = Mitosis
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserMakeSubstitute50RaiseSpd4
+Flags = CanSnatch
+Description = The user spends 50% HP to create a Substitute. If successful, the user's Speed is raised by four steps.
 #-------------------------------
 [ODDROOM]
 Name = Odd Room
