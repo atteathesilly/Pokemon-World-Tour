@@ -5644,6 +5644,18 @@ FunctionCode = ProtectUserFromDamagingMovesLowerSpecAttackerSpDef2
 Description = Protects the user from damage this turn. It also lowers the Sp. Def of special attackers by four steps.
 Animation = PROTECT
 #-------------------------------
+[RHYTHMICRITUAL]
+Name = Rhythmic Ritual
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = GrantUserPearlOfWisdom
+Flags = Dance
+Description = The user does an arcane dance to summon a Pearl Of Wisdom to hold. The Pearl boosts all stats by 20% and can be flung for huge damage.
+Animation = TEETERDANCE
+#-------------------------------
 [SCRUTINIZE]
 Name = Scrutinize
 Type = PSYCHIC

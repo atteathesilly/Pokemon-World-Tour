@@ -1689,6 +1689,10 @@ Description = Boosts Attack by 20% in hail, or 40% if also below half health.
 Name = Severe
 Description = Its attacks are critical against numbed targets.
 #-------------------------------
+[SHARPSHOOTER]
+Name = Sharpshooter
+Description = Doubles the critical hit chance of random crit moves. The Pokémon's Speed is doubled while using them.
+#-------------------------------
 [SHELLCRACKER]
 Name = Shellcracker
 Description = Its physical attacks reduce the target's Defense.
