@@ -47,3 +47,32 @@ ItemIconEvents::ModifyItemIconBitmap.add(:AIDKIT,
       end
   }
 )
+
+ItemIconEvents::ModifyItemIconBitmap.add(:EXPEZDISPENSER,
+  proc { |item, bitmap|
+      base = Color.new(235, 235, 235)
+      shadow = Color.new(50, 50, 50)
+      expAmount = $PokemonGlobal.expJAR || 0
+      dividedTimes = 0
+      while expAmount >= 1000
+        expAmount /= 1000
+        dividedTimes += 1
+      end
+      case dividedTimes
+      when 0
+        label = expAmount.to_s
+      when 1
+        label = _INTL("{1}K",expAmount.to_s)
+      when 2
+        label = _INTL("{1}M",expAmount.to_s)
+      when 3
+        label = _INTL("{1}B",expAmount.to_s)
+      when 4
+        label = _INTL("{1}T",expAmount.to_s)
+      else
+        label = _INTL("Lots")
+      end
+      textPos = [label, 2, 14, 0, base, shadow, true]
+      pbDrawTextPositions(bitmap,[textPos])
+  }
+)
