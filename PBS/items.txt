@@ -2630,8 +2630,9 @@ Name = Cell Booster
 NamePlural = Cell Boosters
 Pocket = 8
 Price = 0
+FieldUse = Direct
 Flags = KeyItem
-Description = Condensed essence of life. Holding it allows you to run, bike, and surf faster.
+Description = Condensed essence of life. Holding it allows you to run, bike, and surf faster. Can be toggled on or off.
 #-------------------------------
 [RUSTEDCOMPASS]
 Name = Rusted Compass
