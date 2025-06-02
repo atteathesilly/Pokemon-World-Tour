@@ -4794,7 +4794,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = LowerTargetSpAtk4
-Flags = CanProtect,CanMagicCoat,Sound
+Flags = CanProtect,CanMagicCoat
 Description = The user's body generates an eerie impulse. Lowers the target's Sp. Atk stat by four steps.
 #-------------------------------
 [ELECTROBALL]
