@@ -1666,7 +1666,7 @@ Pocket = 3
 Price = 1000
 BattleUse = OnFoe
 Flags = PokeBall,SnagBall,SkipPocketMessage,NoBallSwap
-Description = A special Poké Ball designed to catch Ultra Beasts. It has a low success rate for catching others.
+Description = A special Poké Ball with 5x strength against Ultra Beasts.
 #-------------------------------
 [SLICEBALL]
 Name = Slice Ball
