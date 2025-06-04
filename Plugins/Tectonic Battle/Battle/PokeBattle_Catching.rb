@@ -306,9 +306,9 @@ class PokeBattle_Battle
 
         # Calculation modifiers
         if status == :SLEEP
-            x *= 2.5
+            x *= 2.0
         elsif status != :NONE
-            x *= 1.5
+            x *= 1.25
         end
         x = x.floor
         x = 1 if x < 1
