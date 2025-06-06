@@ -1630,7 +1630,7 @@ Pocket = 3
 Price = 800
 BattleUse = OnFoe
 Flags = PokeBall,SnagBall,SkipPocketMessage
-Description = A somewhat different Poké Ball which has 5x strength on the first turn of a wild encounter.
+Description = A somewhat different Poké Ball which has 3x strength on the first turn of a wild encounter.
 #-------------------------------
 [CHERISHBALL]
 Name = Cherish Ball
