@@ -302,7 +302,7 @@ class PokeBattle_Battle
 
     def self.captureThresholdCalcInternals(status, statusCount, current_hp, total_hp, catch_rate)
         # First half of the shakes calculation
-        x = (((5 * total_hp) - (4 * current_hp)) * catch_rate.to_f) / (5 * total_hp) * 1.5
+        x = (((5 * total_hp) - (4 * current_hp)) * catch_rate.to_f) / (5 * total_hp) * 1.2
 
         # Calculation modifiers
         if status == :SLEEP
@@ -355,14 +355,4 @@ def runCaptureTest(species = :MEWTWO,level = 50,hpPercentile = 0.2,status = :SLE
     percentile = ((successes.to_f / trialCount.to_f) * 100).truncate(1)
     echoln("The pokemon was captured #{percentile} percent of the time in #{trialCount} trials.")
     echoln("=========================================================================")
-end
-
-def CTLC
-    runCaptureTest(:CATERPIE,10,0.25,:DIZZY,:POKEBAL,100)
-    runCaptureTest(:CATERPIE,30,0.25,:DIZZY,:POKEBALL,100)
-    runCaptureTest(:CATERPIE,50,0.25,:DIZZY,:POKEBALL,100)
-
-    runCaptureTest(:MEWTWO,10,0.25,:DIZZY,:ULTRABALL,100)
-    runCaptureTest(:MEWTWO,30,0.25,:DIZZY,:ULTRABALL,100)
-    runCaptureTest(:MEWTWO,50,0.25,:DIZZY,:ULTRABALL,100) 
 end
