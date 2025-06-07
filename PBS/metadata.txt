@@ -114,7 +114,7 @@ Environment = Forest
 # Chamber of Regieleki
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 BattleBack = cave1
 WildBattleBGM = Tectonic_Epitaph_of_the_Demiurge.ogg
 #-------------------------------
@@ -1747,13 +1747,13 @@ Bicycle = false
 # Grouz Mine Sinkhole
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [242]
 # Goomy Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [243]
 # Chasm Base Mess Hall
@@ -1765,31 +1765,31 @@ Bicycle = false
 # Gible Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [245]
 # Deino Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [246]
 # Jangmo-o Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [247]
 # Dreepy Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [248]
 # Bagon Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [249]
 # Dratini Den
@@ -1878,7 +1878,7 @@ Environment = Cave
 # Dratini Den 2
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [262]
 # Sweetrock Harbor Buildings
@@ -2201,7 +2201,7 @@ Bicycle = false
 # Gible Den 2
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [309]
 # Cave of Hatching F2
@@ -2481,7 +2481,7 @@ Bicycle = false
 # UB Portal
 Outdoor = false
 ShowArea = true
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [350]
 # Forgotten Grave Site
@@ -2492,7 +2492,7 @@ Bicycle = true
 [351]
 # Lainie's Mansion
 Outdoor = false
-ShowArea = false
+ShowArea = true
 Bicycle = false
 #-------------------------------
 [352]
@@ -2664,7 +2664,7 @@ BattleBack = cave2
 # Cavern of Knowledge
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [376]
 # Islands
@@ -2743,25 +2743,25 @@ HealingSpot = 377,50,36
 # Cave of Conflict
 Outdoor = false
 ShowArea = true
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [387]
 # Cave of Life
 Outdoor = false
 ShowArea = true
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [388]
 # Cave of Abundance
 Outdoor = false
 ShowArea = true
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [389]
 # Cave of Hope
 Outdoor = false
 ShowArea = true
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [390]
 # Novo-Turf Gatehouse
@@ -2892,7 +2892,7 @@ BattleBack = cave1
 # Tournament Grounds EQ
 Outdoor = true
 ShowArea = false
-Bicycle = false
+Bicycle = true
 Weather = Overcast,100
 #-------------------------------
 [409]
@@ -3089,8 +3089,69 @@ Outdoor = false
 ShowArea = false
 Bicycle = true
 #-------------------------------
+[437]
+# Bogdan Cement Lobby
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[438]
+# Bogdan Cement Plant
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[439]
+# Knowledge Elder's Home
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[440]
+# Emotion Elder's Home
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[441]
+# Knowledge Elder's Home
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[442]
+# Bence's House
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [443]
 # Team Chasm Archive
 Outdoor = false
 ShowArea = false
 Bicycle = false
+#-------------------------------
+[444]
+# Crown Chamber
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
+[445]
+# Battle Monument Secret
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
+[446]
+# Goomy Den 2
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
+[447]
+# Barren Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Weather = Stillness,100
