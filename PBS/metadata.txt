@@ -20,9 +20,11 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [002]
-Outdoor = false
-ShowArea = false
-Bicycle = false
+# Windborn Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Humidity = Wet
 #-------------------------------
 [003]
 # Kilna Turf
@@ -1795,7 +1797,7 @@ Bicycle = true
 # Dratini Den
 Outdoor = false
 ShowArea = false
-Bicycle = false
+Bicycle = true
 #-------------------------------
 [250]
 # Chasm Base Lab
