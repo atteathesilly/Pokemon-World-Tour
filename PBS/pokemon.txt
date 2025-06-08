@@ -11279,7 +11279,7 @@ Evolutions = PURUGLY,Level,32
 Name = Purugly
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 120,75,75,85,112,80
+BaseStats = 120,70,75,95,107,80
 # Total = 547
 GenderRate = Female75Percent
 BaseEXP = 158
