@@ -1,7 +1,7 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [002] # Windborn Island
-LandTall,21
+Land,21
     1,CRAMORANT,56,58
     1,JUMPLUFF,56,58
     1,PIDGEOT,56,58
