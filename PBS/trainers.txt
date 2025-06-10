@@ -7180,7 +7180,7 @@ Pokemon = CRAMORANT,57
     Moves = SURF,SKYFALL,WEATHERBURST,SUPERPOWER
     AbilityIndex = 0 # Gulp Missile
 Pokemon = MMANTINE,58
-    Moves = WEATHERBURST,TOXICTASTE,IRONHEAD,AGONIZE,
+    Moves = WEATHERBURST,TOXICTASTE,IRONHEAD,AGONIZE
     AbilityIndex = 0 # Slush Rush
     Item = ASSAULTVEST
 #-------------------------------
@@ -7293,7 +7293,7 @@ Pokemon = MMUSHARNA,57
     Moves = SLEEPTALK,PIERCINGDOUBT,DIAMONDFORCE,DIAMETRICBREATH
     AbilityIndex = 0 # Slumbering Drake
 Pokemon = ZANGOOSE,58
-    Moves = DEEPBEATHING,PALEBLADE,DISTURB,PSYCHICFANGS
+    Moves = DEEPBREATHING,PALEBLADE,DISTURB,PSYCHICFANGS
     AbilityIndex = 0 # Venomdetta
     Item = FOCUSSASH
 Pokemon = SEAKING,58
