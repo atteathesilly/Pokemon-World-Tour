@@ -304,7 +304,7 @@ Special
 #-------------------------------
 [085] # Worried Man's House
 Special
-    1,SHELLOS,15
+    1,FRILLISH,15
 #-------------------------------
 [086] # Zigzagoon Nest
 Special
@@ -1082,6 +1082,10 @@ Special
 [392] # Turf-Grouz Gatehouse
 Special
     1,ELEKID,15
+#-------------------------------
+[092] # Crater-Shelf Gatehouse
+Special
+    1,MINCCINO,15
 #-------------------------------
 [403] # Frozen Lake
 LandTall,20
