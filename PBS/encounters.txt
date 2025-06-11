@@ -1083,7 +1083,7 @@ Special
 Special
     1,ELEKID,15
 #-------------------------------
-[092] # Crater-Shelf Gatehouse
+[396] # Crater-Shelf Gatehouse
 Special
     1,MINCCINO,15
 #-------------------------------
