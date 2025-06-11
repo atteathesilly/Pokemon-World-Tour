@@ -3762,15 +3762,15 @@ Pokemon = WEEPINBELL,27
 #-------------------------------
 [TUBER_M,Derek]
 Pokemon = INTELEON,41
-    Moves = SNIPESHOT,DARKPULSE,SHINESHOT
+    Moves = SNIPESHOT,DARKPULSE,FRIDIGJEALOUSY,UTURN
     AbilityIndex = 1 # Incognito
     Item = WATERGEM
+Pokemon = MLILLIGANT,41
+    Moves = GLACIALRAM,PLAYROUGH,LIQUIDATION,BACKHAND
+    AbilityIndex = 1 # Petty
 Pokemon = SANDSLASH,41
     Moves = ONAROLL,FURYCUTTER,ROCKROLL
     AbilityIndex = 1 # Tough Claws
-Pokemon = MLILLIGANT,41
-    Moves = GLACIALRAM,PLAYROUGH,WAVEBREAK,BACKHAND
-    AbilityIndex = 1 # Petty
 Pokemon = DARMANITAN,41
     Moves = FIRELASH,FLAREBLITZ,THRASH,SEERSTRIKE
     AbilityIndex = 0 # Extreme Power
