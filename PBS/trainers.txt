@@ -3120,13 +3120,13 @@ Pokemon = WEEZING,44
 Pokemon = FERROTHORN,45
     Moves = EXPLOSION,POWERWHIP,GYROBALL
     AbilityIndex = 0 # Iron Barbs
-    Item = LAGGINGTAIL
+    Item = IRONBALL
 Pokemon = FORRETRESS,45
     Moves = EXPLOSION,GYROBALL,PAYBACK
     AbilityIndex = 0 # Natural Cure
 Pokemon = GOLEM,46
     Moves = EXPLOSION,EARTHQUAKE,ROCKALANCHE
-    AbilityIndex = 1 # Desert Armor
+    AbilityIndex = 0 # Unbreakable
 #-------------------------------
 [BEAUTY,Kryssa]
 Pokemon = GDARMANITAN,45
