@@ -10694,7 +10694,6 @@ Generation = 4
 [BIDOOF]
 Name = Bidoof
 Type1 = NORMAL
-Type2 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 75,75,60,60,75,60
 # Total = 405
@@ -10715,7 +10714,6 @@ Evolutions = BIBAREL,Level,30
 [BIBAREL]
 Name = Bibarel
 Type1 = NORMAL
-Type2 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 95,95,75,75,95,75
 # Total = 510
