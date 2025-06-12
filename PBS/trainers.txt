@@ -3024,8 +3024,8 @@ Pokemon = MANECTRIC,36
 #-------------------------------
 [GARDENER,Jacek]
 Pokemon = BIBAREL,37
-    Moves = BODYSLAM,SURF,SHOUT,YAWN
-    AbilityIndex = 1 # Moody
+    Moves = BODYSLAM,SURF,SHOUT,WORKUP
+    AbilityIndex = 0 # Simple
     Item = SITRUSBERRY
 Pokemon = SANDSLASH,38
     Moves = ONAROLL,FURYCUTTER,ROCKROLL,SNOWBALL
