@@ -493,7 +493,7 @@ NamePlural = Rocky Helmets
 Pocket = 5
 Price = 6000
 Flags = Clothing,AttackerRecoil
-Description = Damages attackers for 1/6th of their HP when they hit the holder with physical attacks.
+Description = Damages attackers for 1/8th of their HP when they hit the holder with physical attacks.
 #-------------------------------
 [HIVISJACKET]
 Name = Hi-Viz Jacket
@@ -501,7 +501,7 @@ NamePlural = Hi-Viz Jackets
 Pocket = 5
 Price = 6000
 Flags = Clothing,AttackerRecoil
-Description = Damages attackers for 1/6th of their HP when they hit the holder with special attacks.
+Description = Damages attackers for 1/8th of their HP when they hit the holder with special attacks.
 #-------------------------------
 [EJECTBUTTON]
 Name = Eject Button
