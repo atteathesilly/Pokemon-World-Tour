@@ -128,8 +128,8 @@ module QuestModule
     :QuestGiver => _INTL("Alolan"),
     :Stage1 => _INTL("Find their package."),
     :Stage2 => _INTL("Return the package."),
-    :Location1 => _INTL("Prizca West Travel Agency"),
-    :Location1 => _INTL("Prizca West Travel Agency"),
+    :Location1 => _INTL("County Park"),
+    :Location2 => _INTL("Prizca West Travel Agency"),
     :QuestDescription => _INTL("These people report they lost a package to a Gyarados attack, and want you to get it. Must be important, for their job...?"),
     :RewardString => _INTL("Alolan Wreath")
   }
@@ -451,24 +451,20 @@ module QuestModule
     :QuestDescription => _INTL("The TV talked about a newly discovered island off the coast. A lot of trainers will be heading there, try to be the best one."),
   }
 
-  QUEST_LEGEND_CALYREX1 = {
-    :Name => _INTL("WIP: Odd Pits"),
-    :QuestGiver => _INTL("???"),
-    :Stage1 => _INTL("Find the item in the postgame."),
-    :Location1 => _INTL("Makya"),
-    :QuestDescription => _INTL("WIP: There's something that should fill these pits, wonder what that is?"),
-  }
-
   QUEST_LEGEND_CALYREX2 = {
-    :Name => _INTL("WIP: Calyrex"),
+    :Name => _INTL("The King and the Corvid"),
     :QuestGiver => _INTL("???"),
     :Stage1 => _INTL("Find the hidden entrance."),
-    :Stage2 => _INTL("Find the grass pits."),
-    :Stage3 => _INTL("Return to the hidden room."),
+    :Stage2 => _INTL("Prove yourself to the Corviknight."),
+    :Stage3 => _INTL("Explore the hidden chamber."),
+    :Stage4 => _INTL("Find the grassy pits."),
+    :Stage5 => _INTL("Return to the hidden chamber."),
     :Location1 => _INTL("Battle Monument"),
-    :Location2 => _INTL("Makya"),
-    :Location3 => _INTL("Crown Chamber"),
-    :QuestDescription => _INTL("WIP: A ragged journal, a strange scepter, reins, and an apricorn."),
+    :Location2 => _INTL("Under the Battle Monument"),
+    :Location3 => _INTL("Under the Battle Monument"),
+    :Location4 => _INTL("Spots Around Makya"),
+    :Location5 => _INTL("Crown Chamber"),
+    :QuestDescription => _INTL("You've opened a strange cave under the Battle Monument.  What could it be hiding?"),
   }
 
   QUEST_LEGEND_GUARDIAN_ISLAND = {
@@ -543,6 +539,16 @@ module QuestModule
     :Location1 => _INTL("Samorn's House"),
     :Location2 => _INTL("Isle of Dragons"),
     :QuestDescription => _INTL("The mysterious Dragon Hatcher in Samorn's house offers to hatch the dragon eggs you find around the region."),
+  }
+
+  QUEST_LEGEND_WEATHER_TRIO = {
+    :Name => _INTL("Bad Weather"),
+    :QuestGiver => _INTL("???"),
+    :Stage1 => _INTL("Find the other avatar."),
+    :Stage2 => _INTL("Find Rayquaza."),
+    :Location1 => _INTL("Makya"),
+    :Location2 => _INTL("Kilna Ascent"),
+    :QuestDescription => _INTL("A trio of imposing beasts, hidden in the outer reaches of Makya. Why not add controlling the weather to your arsenal?"),
   }
 
   # Former Champions
