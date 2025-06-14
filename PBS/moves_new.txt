@@ -67,7 +67,7 @@ Animation = CALMMIND
 [CHACHING]
 Name = Cha-ching
 Type = NORMAL
-Category = Physical
+Category = Adaptive
 Power = 90
 Accuracy = 100
 TotalPP = 15
