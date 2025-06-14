@@ -2850,6 +2850,18 @@ Flags = CanProtect
 Description = The user opens its soul to unleash massive energy. This lowers the user's Sp. Atk and Sp. Def by two steps.
 Animation = OMINOUSWIND
 #-------------------------------
+[PHARAOHSCURSE]
+Name = Pharaoh's Curse
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = CurseTargetEarnMoneyFromCurse
+Flags = CanProtect,CanMagicCoat
+Description = The target becomes Cursed. Health lost from Curse becomes coins for you to earn after battle.
+Animation = CURSE
+#-------------------------------
 [SEANCE]
 Name = Seance
 Type = GHOST
