@@ -838,10 +838,6 @@ Description = If an attack lowers the Pokémon's HP to half or less, the attacke
 Name = Hard Fall
 Description = Deals 30% more move damage to Pokémon that are taller than it.
 #-------------------------------
-[HARDWORKER]
-Name = Hard Worker
-Description = Increases the money gained from battles in which it participates by 50%.
-#-------------------------------
 [HARSH]
 Name = Harsh
 Description = Its attacks are critical against burned targets.
@@ -1363,6 +1359,10 @@ Flags = RainstormSynergy
 Name = Oxygenation
 Description = Heals the Pokémon's status problems each turn if in sunshine.
 Flags = SunshineSynergy
+#-------------------------------
+[PACIFIST]
+Name = Pacifist
+Description = The Pokémon refuses to fight. However, it gathers extra candy when trainers flee.
 #-------------------------------
 [PALACEGUARD]
 Name = Palace Guard
