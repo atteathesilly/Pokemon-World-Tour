@@ -684,7 +684,7 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
                 facewindow.dispose if facewindow
                 partyMember = $Trainer.party[param.to_i]
                 if partyMember
-                    partyMemberBitmap = GameData::Species.sprite_bitmap_from_pokemon($Trainer.party[param.to_i])
+                    partyMemberBitmap = GameData::Species.sprite_bitmap_from_pokemon(partyMember)
                     facewindow = PictureWindow.new(partyMemberBitmap.bitmap)
                     pbPositionNearMsgWindow(facewindow, msgwindow, :left)
                     facewindow.viewport = msgwindow.viewport
@@ -697,6 +697,7 @@ def pbMessageDisplay(msgwindow, message, letterbyletter = true, commandProc = ni
                             facewindow.y = Graphics.height - facewindow.height * (signWaitTime - signWaitCount) / signWaitTime
                         end
                     end
+                    Pokemon.play_cry(partyMember.species)
                 end
             when "db"
                 iconwindow.dispose if facewindow
