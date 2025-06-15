@@ -1363,6 +1363,7 @@ Flags = SunshineSynergy
 [PACIFIST]
 Name = Pacifist
 Description = The Pokémon refuses to fight. However, it gathers extra candy when trainers flee.
+Flags = Immutable
 #-------------------------------
 [PALACEGUARD]
 Name = Palace Guard
