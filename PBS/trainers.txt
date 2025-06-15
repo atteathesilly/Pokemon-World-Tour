@@ -5482,7 +5482,7 @@ Pokemon = MAMOSWINE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = DROMERUPT,70
-    Moves = EXPLOSION,SANDBLASTING,YAWN,DRYHEAT
+    Moves = EXPLOSION,EARTHPOWER,YAWN,DRYHEAT
     AbilityIndex = 1 # Adrenaline Rush
     Item = NORMALGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
