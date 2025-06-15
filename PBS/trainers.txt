@@ -4555,18 +4555,18 @@ Pokemon = ATLACROSS,70
     AbilityIndex = 0 # Skill Link
     Item = SCOPELENS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,0,3,20,7
+    EV = 15,20,0,15,20,0
 Pokemon = URSHIFU,70
     Name = Precipice
-    Moves = WICKEDBLOW,THUNDERPUNCH,CLOSECOMBAT,IRONHEAD
+    Moves = WICKEDBLOW,SURGINGSTRIKES,CLOSECOMBAT,POISONJAB
     AbilityIndex = 0 # Unseen Fist
     Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = SPIRITOMB,70
-    Moves = DREAMDANCE,WILLOWISP,HEX,BLACKOUT
+    Moves = SWEETSELENE,WILLOWISP,HEX,BLACKOUT
     AbilityIndex = 0 # Bad Influence
-    Item = SALACBERRY
+    Item = REDCARD
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,15,15,0,15,0
 #-------------------------------
