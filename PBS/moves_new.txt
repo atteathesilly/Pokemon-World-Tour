@@ -1405,7 +1405,7 @@ Target = AllNearFoes
 FunctionCode = Poison
 Flags = CanProtect,Wind
 EffectChance = 30
-Description = Summons a storm of poisonous gas to hit all nearby Pokémon with a 30% chance to poison.
+Description = Summons a storm of poisonous gas to hit all nearby foes with a 30% chance to poison.
 Animation = SMOG
 #-------------------------------
 [STINGINGJEALOUSY]
