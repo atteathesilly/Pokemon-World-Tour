@@ -75,6 +75,7 @@ Target = NearOther
 FunctionCode = AddMoneyGainedFromBattle
 Flags = CanProtect
 Description = The user attacks with the full force of The Market. Money is earned after the battle.
+Animation = PAYDAY
 #-------------------------------
 [CHAOSWHEEL]
 Name = Chaos Wheel
@@ -3281,6 +3282,7 @@ Target = NearOther
 FunctionCode = IfFaintsTargetAddTonsOfMoneyGainedFromBattle
 Flags = CanProtect,Blade
 Description = The user attacks the target with a sword. If it faints, tons of money is earned after the battle.
+Animation = SACREDSWORD
 #-------------------------------
 [POLARIZEDROOM]
 Name = Polarized Room
@@ -6390,6 +6392,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimesAddMoneyGainedFromBattleEachHit
 Flags = CanProtect
 Description = The user makes an offering, then attacks two to five times. Money is earned for each hit.
+Animation = PAYDAY
 #-------------------------------
 [SCALEGLINT]
 Name = Scale Glint
@@ -6922,6 +6925,7 @@ Target = NearOther
 FunctionCode = AddMoneyGainedFromBattle
 Flags = CanProtect
 Description = The user demands tribute from the target. Money is earned after the battle.
+Animation = PAYDAY
 #-------------------------------
 [SCAM]
 Name = Scam
@@ -7120,6 +7124,19 @@ Flags = CanProtect
 EffectChance = 50
 Description = The target is pranked with a huge bucket of water. This has a 50% chance to waterlog it.
 Animation = HYDROVORTEX
+#-------------------------------
+[CHARITY]
+Name = Charity
+Type = FAIRY
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ScalesCreatedMoney
+Flags = CanProtect
+Description = The user hits the target with a generous donation. Consumes up to 1000 scattered coins. Base power is boosted by 10 for every 100 coins consumed.
+Animation = PAYDAY
 #-------------------------------
 [CRUELKISS]
 Name = Cruel Kiss
