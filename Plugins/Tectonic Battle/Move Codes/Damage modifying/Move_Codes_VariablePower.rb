@@ -172,3 +172,14 @@ class PokeBattle_Move_ScalesTallerThanTarget < PokeBattle_Move
         return ret
     end
 end
+
+#===============================================================================
+#Power increases the more money on the field. (Profitize)
+#===============================================================================
+class PokeBattle_Move_ScalesCreatedMoney < PokeBattle_Move
+    def pbBaseDamage(baseDmg, _user, _target)
+        coinsToConsume = [@battle.field.countEffect(:PayDay),1000].min
+        baseDmg += (coinsToConsume / 10).floor
+        return baseDmg
+    end
+end
