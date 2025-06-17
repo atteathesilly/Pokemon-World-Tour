@@ -1214,6 +1214,20 @@ Animation = GUST
 #-------------------------------
 #		POISON MOVES
 #-------------------------------
+[ACIDBALL]
+Name = Acid Ball
+Type = POISON
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect
+EffectChance = 20
+Description = The user lobs harsh acid at the target. It has a 20% chance to lower Sp. Def.
+Animation = ACID
+#-------------------------------
 [ACIDBATH]
 Name = Acid Bath
 Type = POISON
@@ -1331,15 +1345,15 @@ Animation = POISONSTING
 Name = Miasma
 Type = POISON
 Category = Special
-Power = 90
+Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = LowerTargetSpDef1
+FunctionCode = Poison
 Flags = CanProtect,Wind
-EffectChance = 20
-Description = The user envelops the target in a foul wind. It has a 20% chance to lower Sp. Def.
-Animation = ACIDSPRAY
+EffectChance = 30
+Description = The user envelops the target in a foul wind. It has a 30% chance to poison.
+Animation = SMOG
 #-------------------------------
 [MURKYFOG]
 Name = Murky Fog
@@ -1407,20 +1421,6 @@ Flags = CanProtect
 Description = The user attacks with cloying slime, rendering the target's item sticky and unusable.
 Animation = SLUDGEBOMB
 #-------------------------------
-[SMOGSTORM]
-Name = Smog Storm
-Type = POISON
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 5
-Target = AllNearFoes
-FunctionCode = Poison
-Flags = CanProtect,Wind
-EffectChance = 30
-Description = Summons a storm of poisonous gas to hit all nearby Pokémon with a 30% chance to poison.
-Animation = SMOG
-#-------------------------------
 [STINGINGJEALOUSY]
 Name = Stinging Jealousy
 Type = POISON
@@ -1457,7 +1457,7 @@ TotalPP = 10
 Target = NearFoe
 Priority = -6
 FunctionCode = SwitchOutTargetAndUserStatusMove
-Flags = CanMagicCoat
+Flags = CanMagicCoat,Wind
 Description = The foe is forced to switch out by a stinky cloud, then the user also switches. Always goes last.
 Animation = STINKCLOUD
 #-------------------------------
