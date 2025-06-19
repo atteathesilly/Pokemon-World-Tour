@@ -3157,3 +3157,4 @@ Outdoor = true
 ShowArea = true
 Bicycle = true
 Weather = Stillness,100
+MapPosition = 0,20,7

@@ -7,6 +7,7 @@ def jovanFliesAway
   }
 end
 
+# To be used on the electric fences keeping them imprisoned
 def forceFliesAway(eventID,species,globalSwitchID)
   showExclamation(eventID)
   pbWait(30)
@@ -16,4 +17,5 @@ def forceFliesAway(eventID,species,globalSwitchID)
     pbSEPlay("Fly")
     setGlobalSwitch(globalSwitchID)
   }
+  setMySwitch('B')
 end
