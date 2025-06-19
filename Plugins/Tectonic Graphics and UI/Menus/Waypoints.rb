@@ -14,9 +14,9 @@ class WaypointsTracker
 		@legendsMaterialized = []
 	end
 
-	def overwriteWaypoint(waypointName,event)
+	def overwriteWaypoint(waypointName,event,newName=nil)
 		if @activeWayPoints.has_key?(waypointName) || debugControl
-			addWaypoint(waypointName,event)
+			addWaypoint(newName || waypointName,event)
 		end
 	end
 

@@ -6,3 +6,14 @@ def jovanFliesAway
     incrementGlobalVar(44)
   }
 end
+
+def forceFliesAway(eventID,species,globalSwitchID)
+  showExclamation(eventID)
+  pbWait(30)
+  blackFadeOutIn {
+    Pokemon.play_cry(species)
+    pbWait(40)
+    pbSEPlay("Fly")
+    setGlobalSwitch(globalSwitchID)
+  }
+end
