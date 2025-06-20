@@ -1214,7 +1214,7 @@ Description = If an attack lowers its HP to half or less, waterlogs the attacker
 #-------------------------------
 [MONKEYMISCHIEF]
 Name = Monkey Mischief
-Description = When hit by another Pokémon, destroys one of the their items.
+Description = When hit by another Pokémon, destroys one of their items.
 #-------------------------------
 [MOONBASKING]
 Name = Moon Basking
