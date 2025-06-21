@@ -49,7 +49,7 @@ def completeKilnaThievesQuest
 end
 
 def completeSvaitTouristsQuest
-    if pbGetSelfSwitch(37, 'A', 8) && pbGetSelfSwitch(42, 'A', 8)
+    if pbGetSelfSwitch(5, 'A', 293) && pbGetSelfSwitch(8, 'A', 293)
         completeQuest(:QUEST_STONES_SVAIT)
     end
 end
