@@ -1018,6 +1018,8 @@ Pokemon = RAICHU,35
 [POKEMONTRAINER_Yezera,Yezera,5]
 ExtendsVersion = 4
 Policies = CURSE_DOUBLE_ABILITIES
+Pokemon = ILLUMISE,35
+    AbilityIndex = 1 # Fascinate
 Pokemon = MILTANK,35
     Moves = HEALBELL,BODYSLAM,MILKDRINK,BULLDOZE
     AbilityIndex = 0 # Thick Fat
