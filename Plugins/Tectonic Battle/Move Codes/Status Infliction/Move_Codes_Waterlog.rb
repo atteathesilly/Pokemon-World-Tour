@@ -38,8 +38,11 @@ class PokeBattle_Move_WaterlogTargetHitsDivers < PokeBattle_WaterlogMove
     end
 
     def getEffectScore(user, _target)
-        return 50 if user.canGulpMissile?
-        return 0
+        score = super
+        if user.canGulpMissile?
+          score += 50
+        end
+        return score
     end
 end
 
