@@ -21,7 +21,7 @@ end
 # Power is doubled if the target is using Dive. Hits some semi-invulnerable
 # targets. (Surf)
 #===============================================================================
-class PokeBattle_Move_HitsDivers < PokeBattle_WaterlogMove
+class PokeBattle_Move_WaterlogTargetHitsDivers < PokeBattle_WaterlogMove
     def hitsDivingTargets?; return true; end
 
     def pbBaseDamage(baseDmg, _user, target)
@@ -44,7 +44,7 @@ class PokeBattle_Move_HitsDivers < PokeBattle_WaterlogMove
 end
 
 # Empowered Surf
-class PokeBattle_Move_653 < PokeBattle_Move_HitsDivers
+class PokeBattle_Move_653 < PokeBattle_Move_WaterlogTargetHitsDivers
     include EmpoweredMove
 end
 
