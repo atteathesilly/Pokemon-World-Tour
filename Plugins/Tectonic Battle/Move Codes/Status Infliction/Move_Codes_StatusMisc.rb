@@ -20,28 +20,7 @@ class PokeBattle_Move_NumbBurnOrFrostbiteTarget < PokeBattle_Move
 end
 
 #===============================================================================
-# Poisons, leeches, or waterlogs the target. (Rolling Arsenal)
-#===============================================================================
-class PokeBattle_Move_PoisonDizzyOrLeechTarget < PokeBattle_Move
-    def pbAdditionalEffect(user, target)
-        return if target.damageState.substitute
-        case @battle.pbRandom(3)
-        when 0 then target.applyPoison(user)	if target.canPoison?(user, true, self)
-        when 1 then target.applyDizzy(user)  if target.canWaterlog?(user, true, self)
-        when 2 then target.applyLeeched(user)	if target.canLeech?(user, true, self)
-        end
-    end
-
-    def getTargetAffectingEffectScore(user, target)
-        poisonScore = getPoisonEffectScore(user, target)
-        dizzyScore = getDizzyEffectScore(user, target)
-        leechScore = getLeechEffectScore(user, target)
-        return (poisonScore + dizzyScore + leechScore) / 3
-    end
-end
-
-#===============================================================================
-# Poisons, leeches, or waterlogs the target. (Chaos Wheel)
+# Poisons, leeches, or waterlogs the target. (Chaos Wheel, Rolling Arsenal)
 #===============================================================================
 class PokeBattle_Move_PoisonWaterlogOrLeechTarget < PokeBattle_Move
     def pbAdditionalEffect(user, target)
