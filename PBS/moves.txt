@@ -559,7 +559,7 @@ Accuracy = 0
 TotalPP = 15
 Target = NearOther
 FunctionCode = UseMoveDependingOnEnvironment
-Description = An attack that makes use of nature's power. Its effects vary depending on the user's environment.
+Description = An attack that makes use of nature's power. Its effects and type vary depending on the user's environment.
 #-------------------------------
 [NOBLEROAR]
 Name = Noble Roar
@@ -576,7 +576,7 @@ Description = The user intimidates all nearby foes, lowering their Attack and Sp
 Name = Pay Day
 Type = NORMAL
 Category = Adaptive
-Power = 50
+Power = 60
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -2567,8 +2567,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartSandstorm8
-Description = Summons sandstorm for eight turns. Damages non-Rock, non-Ground Pokémon every turn.
+FunctionCode = StartSandstorm6
+Description = Summons sandstorm for six turns. Damages non-Rock, non-Ground Pokémon every turn.
 #-------------------------------
 [STEALTHROCK]
 Name = Stealth Rock
@@ -3925,8 +3925,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartSunshine8
-Description = Summons sunshine for eight turns, boosting Fire-type attacks and hindering most others.
+FunctionCode = StartSunshine6
+Description = Summons sunshine for six turns, boosting Fire-type attacks and hindering most others.
 #-------------------------------
 [VCREATE]
 Name = V-create
@@ -4108,8 +4108,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartRainstorm8
-Description = Summons rainstorm for eight turns, boosting Water-type attacks and hindering most others.
+FunctionCode = StartRainstorm6
+Description = Summons rainstorm for six turns, boosting Water-type attacks and hindering most others.
 #-------------------------------
 [RAZORSHELL]
 Name = Razor Shell
@@ -4204,10 +4204,10 @@ Power = 90
 Accuracy = 100
 TotalPP = 12
 Target = AllNearOthers
-FunctionCode = Waterlog
+FunctionCode = WaterlogTargetHitsDivers
 Flags = CanProtect
 EffectChance = 10
-Description = It swamps the area with a giant wave, hitting every battler nearby. Has a 10% chance to waterlog.
+Description = It swamps the area with a giant wave, hitting every battler nearby and underwater. Has a 10% chance to waterlog.
 #-------------------------------
 [SURGINGSTRIKES]
 Name = Surging Strikes
@@ -5602,8 +5602,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartHail8
-Description = Summons hail for eight turns. Damages non-Ice, non-Ghost-types every turn.
+FunctionCode = StartHail6
+Description = Summons hail for six turns. Damages non-Ice, non-Ghost-types every turn.
 #-------------------------------
 [ICEBEAM]
 Name = Ice Beam
@@ -6654,19 +6654,6 @@ Flags = CanProtect,Wind
 EffectChance = 30
 Description = The user attacks foes with love and hate. It has a 30% chance to lower both Attack and Sp. Atk.
 Animation = HURRICANE
-#-------------------------------
-[STRANGESTEAM]
-Name = Strange Steam
-Type = FAIRY
-Category = Special
-Power = 90
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = Dizzy
-Flags = CanProtect,Wind
-EffectChance = 30
-Description = The user attacks the target by emitting steam. It has a 30% chance to dizzy.
 #-------------------------------
 [SWEETKISS]
 Name = Sweet Kiss

@@ -2614,6 +2614,7 @@ Outdoor = false
 ShowArea = true
 Bicycle = true
 Weather = TimeSandstorm,100
+MapPosition = 0,5,14
 BattleBack = cave1
 #-------------------------------
 [369]

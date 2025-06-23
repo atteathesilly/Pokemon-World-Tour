@@ -336,12 +336,21 @@ BattleHandlers::AbilityOnSwitchIn.add(:SWIFTSTOMPS,
 )
 
 BattleHandlers::AbilityOnSwitchIn.add(:BREAKTHROUGH,
-proc { |ability, battler, battle, aiCheck|
-    next 0 if aiCheck
-    battle.pbShowAbilitySplash(battler, ability)
-    battle.pbDisplay(_INTL("{1} overpowers type immunities!", battler.pbThis))
-    battle.pbHideAbilitySplash(battler)
-}
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} overpowers type immunities!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:PACIFIST,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} refuses to fight!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
 )
 
 ##########################################
@@ -1101,10 +1110,27 @@ BattleHandlers::AbilityOnSwitchIn.add(:LASTGASP,
 )
 
 BattleHandlers::AbilityOnSwitchIn.add(:UNBOUND,
-proc { |ability, battler, battle, aiCheck|
-    next 0 if aiCheck
-    battle.pbShowAbilitySplash(battler, ability)
-    battle.pbDisplay(_INTL("{1} overpowers type immunities!", battler.pbThis))
-    battle.pbHideAbilitySplash(battler)
-}
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} overpowers type immunities!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+CASHOUT_HEALING_DIVISOR = 10
+
+BattleHandlers::AbilityOnSwitchIn.add(:CASHOUT,
+  proc { |ability, battler, battle, aiCheck|
+      next unless battler.pbOwnedByPlayer?
+      next unless battle.field.effectActive?(:PayDay)
+      maxCoinsCanHealFrom = battler.maxOverhealingPossible * CASHOUT_HEALING_DIVISOR
+      coinsToConsume = [battle.field.countEffect(:PayDay),maxCoinsCanHealFrom].min
+      healingAmt = coinsToConsume / CASHOUT_HEALING_DIVISOR
+      battler.showMyAbilitySplash(ability)
+      healingMessage = _INTL("{1} gobbles up the scattered coins!",battler.pbThis)
+      battler.pbRecoverHP(healingAmt, true, true, true, healingMessage, canOverheal: true)
+      battle.field.effects[:PayDay] -= coinsToConsume
+      battler.hideMyAbilitySplash
+  }
 )

@@ -1196,6 +1196,20 @@ Flags = CanProtect
 EffectChance = 30
 Description = Unsanitary sludge is hurled at the target. It has a 30% chance to poison.
 #-------------------------------
+[SMOGSTORM]
+Name = Smog Storm
+Type = POISON
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = Invalid
+Flags = CanProtect,Wind
+EffectChance = 30
+Description = Summons a storm of poisonous gas to hit all nearby Pokémon with a 30% chance to poison.
+Animation = SMOG
+#-------------------------------
 [TOXIC]
 Name = Toxic
 Type = POISON
@@ -1417,6 +1431,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user attacks the foe with a hazardous, full-power headbutt. The user also takes 50% recoil.
+#-------------------------------
+[INVITESAND]
+Name = Invite Sand
+Type = ROCK
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = The user numbs the target, then summons sandstorm for eight turns.
+Animation = SANDSTORM
 #-------------------------------
 [ROCKSLIDE]
 Name = Rock Slide
@@ -1876,6 +1902,18 @@ Flags = CanProtect
 Description = Spins into the target while emitting heat, then summons sunshine for eight turns.
 Animation = FLAMEWHEEL
 #-------------------------------
+[INVITESUN]
+Name = Invite Sun
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = The user burns the target, then welcomes in sunshine for eight turns.
+Animation = SUNSHINE
+#-------------------------------
 [LAVAPLUME]
 Name = Lava Plume
 Type = FIRE
@@ -1958,6 +1996,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanRandomCrit
 Description = The target is hammered with a large pincer. Can random critical hit.
+#-------------------------------
+[INVITERAIN]
+Name = Invite Rain
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat
+Description = The user waterlogs the target, then welcomes in rainstorm for eight turns.
+Animation = RAINSTORM
 #-------------------------------
 [MUDDYWATER]
 Name = Muddy Water
@@ -3072,6 +3122,16 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Darkness rolls over the field, damaging all other Pokémon, ending weather, and healing statuses.
 #-------------------------------
+[BULLY]
+Name = Bully
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = Invalid
+Description = This attack deals 50 percent more damage if the target has any raised or lowered stat steps.
+#-------------------------------
 [DARKVOID]
 Name = Dark Void
 Type = DARK
@@ -3329,3 +3389,16 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Dizzies the target by putting them under a magical spell.
 Animation = CHARM
+#-------------------------------
+[STRANGESTEAM]
+Name = Strange Steam
+Type = FAIRY
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Wind
+EffectChance = 30
+Description = The user attacks the target by emitting steam. It has a 30% chance to dizzy.

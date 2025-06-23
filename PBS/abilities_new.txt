@@ -72,6 +72,7 @@ Description = Takes 40% less damage from attacks by Pokémon who have a status c
 [ARCANEFINALE]
 Name = Arcane Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Synchronize.
+Flags = Immutable
 #-------------------------------
 [ARCCONDUCTOR]
 Name = Arc Conductor
@@ -259,6 +260,10 @@ Description = Has a 30% chance to burn targets when using special moves.
 [CANDYVEIL]
 Name = Candy Veil
 Description = Prevents itself and allies from being poisoned, leeched, or waterlogged.
+#-------------------------------
+[CASHOUT]
+Name = Cash Out
+Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
 #-------------------------------
 [CHALLENGER]
 Name = Challenger
@@ -709,10 +714,6 @@ Description = Doubles the Pokémon's Speed in Rooms.
 Name = Fortified
 Description = Take 30% less damage from attacks on turns when it hasn't moved yet.
 #-------------------------------
-[FORTUNE]
-Name = Fortune
-Description = Doubles the money gained from battles in which it participates.
-#-------------------------------
 [FREERIDE]
 Name = Free Ride
 Description = Raises other allies' Speed by two steps upon entering the battle.
@@ -893,6 +894,7 @@ Description = Wild Pokémon are more likely to appear in pairs and to be species
 [HEROICFINALE]
 Name = Heroic Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Inner Focus.
+Flags = Immutable
 #-------------------------------
 [HIGHRISE]
 Name = High-rise
@@ -1214,7 +1216,7 @@ Description = If an attack lowers its HP to half or less, waterlogs the attacker
 #-------------------------------
 [MONKEYMISCHIEF]
 Name = Monkey Mischief
-Description = When hit by another Pokémon, destroys one of the their items.
+Description = When hit by another Pokémon, destroys one of their items.
 #-------------------------------
 [MOONBASKING]
 Name = Moon Basking
@@ -1242,6 +1244,7 @@ Description = Hits opponent with Thief when withdrawn from battle.
 [MUPROTOCOL]
 Name = MU Protocol
 Description = Immune to the type of the memory disc it holds.
+Flags = Immutable
 #-------------------------------
 [MUTABLE]
 Name = Mutable
@@ -1319,7 +1322,7 @@ Description = Boosts the Accuracy of its allies and itself by 50%.
 #-------------------------------
 [ODDITY]
 Name = Oddity
-Description = Upon entry, creates an Odd Room for four turns, swapping offensive and Defense and Sp. Def.
+Description = Upon entry, creates an Odd Room for four turns, swapping offensive and defensive stats.
 #-------------------------------
 [OFFENSIVE]
 Name = Offensive
@@ -1359,6 +1362,11 @@ Flags = RainstormSynergy
 Name = Oxygenation
 Description = Heals the Pokémon's status problems each turn if in sunshine.
 Flags = SunshineSynergy
+#-------------------------------
+[PACIFIST]
+Name = Pacifist
+Description = The Pokémon refuses to fight. However, it gathers extra candy when trainers flee.
+Flags = Immutable
 #-------------------------------
 [PALACEGUARD]
 Name = Palace Guard
@@ -1528,6 +1536,10 @@ Flags = Immutable
 [REAWAKENEDPOWER]
 Name = Reawakened Power
 Description = Maximizes Sp. Atk when its HP is lowered below half.
+#-------------------------------
+[RECLAMATION]
+Name = Reclamation
+Description = After knocking out any Pokémon, regenerates its previously-used item.
 #-------------------------------
 [RECON]
 Name = Recon

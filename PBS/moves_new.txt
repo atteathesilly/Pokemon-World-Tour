@@ -67,14 +67,15 @@ Animation = CALMMIND
 [CHACHING]
 Name = Cha-ching
 Type = NORMAL
-Category = Physical
+Category = Adaptive
 Power = 90
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = AddLotsOfMoneyGainedFromBattle
+FunctionCode = AddMoneyGainedFromBattle
 Flags = CanProtect
-Description = The user attacks with the full force of The Market. Much money is earned after the battle.
+Description = The user attacks with the full force of The Market. Money is earned after the battle.
+Animation = PAYDAY
 #-------------------------------
 [CHAOSWHEEL]
 Name = Chaos Wheel
@@ -84,10 +85,10 @@ Power = 80
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = PoisonDizzyOrLeechTarget
+FunctionCode = PoisonWaterlogOrLeechTarget
 Flags = CanProtect
 EffectChance = 45
-Description = The user thrashes while infused with elements. It has a 15% chance each to poison, leech, or waterlog.
+Description = The user thrashes while infused with elements. It has a 15% chance each to poison, waterlog or leech.
 Animation = FIERYWRATH
 #-------------------------------
 [CLOUDBREAK]
@@ -175,6 +176,18 @@ FunctionCode = RemoveRoomsIncidental
 Flags = CanProtect
 Description = An unusual shockwave that breaks down all active Rooms.
 Animation = SUPERSONIC
+#-------------------------------
+[DRAINAGE]
+Name = Drainage
+Type = NORMAL
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Drainage
+Flags = CanProtect
+Description = This attack inflicts double damage on a waterlogged foe. It also cures the target's waterlogging, however.
 #-------------------------------
 [ELEMENTALFANG]
 Name = Elemental Fang
@@ -1201,6 +1214,20 @@ Animation = GUST
 #-------------------------------
 #		POISON MOVES
 #-------------------------------
+[ACIDBALL]
+Name = Acid Ball
+Type = POISON
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect
+EffectChance = 20
+Description = The user lobs harsh acid at the target. It has a 20% chance to lower Sp. Def.
+Animation = ACID
+#-------------------------------
 [ACIDBATH]
 Name = Acid Bath
 Type = POISON
@@ -1318,15 +1345,15 @@ Animation = POISONSTING
 Name = Miasma
 Type = POISON
 Category = Special
-Power = 90
+Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = LowerTargetSpDef1
+FunctionCode = Poison
 Flags = CanProtect,Wind
-EffectChance = 20
-Description = The user envelops the target in a foul wind. It has a 20% chance to lower Sp. Def.
-Animation = ACIDSPRAY
+EffectChance = 30
+Description = The user envelops the target in a foul wind. It has a 30% chance to poison.
+Animation = SMOG
 #-------------------------------
 [MURKYFOG]
 Name = Murky Fog
@@ -1394,20 +1421,6 @@ Flags = CanProtect
 Description = The user attacks with cloying slime, rendering the target's item sticky and unusable.
 Animation = SLUDGEBOMB
 #-------------------------------
-[SMOGSTORM]
-Name = Smog Storm
-Type = POISON
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 5
-Target = AllNearFoes
-FunctionCode = Poison
-Flags = CanProtect,Wind
-EffectChance = 30
-Description = Summons a storm of poisonous gas to hit all nearby foes with a 30% chance to poison.
-Animation = SMOG
-#-------------------------------
 [STINGINGJEALOUSY]
 Name = Stinging Jealousy
 Type = POISON
@@ -1444,7 +1457,7 @@ TotalPP = 10
 Target = NearFoe
 Priority = -6
 FunctionCode = SwitchOutTargetAndUserStatusMove
-Flags = CanMagicCoat
+Flags = CanMagicCoat,Wind
 Description = The foe is forced to switch out by a stinky cloud, then the user also switches. Always goes last.
 Animation = STINKCLOUD
 #-------------------------------
@@ -2462,10 +2475,10 @@ Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = PoisonDizzyOrLeechTarget
+FunctionCode = PoisonWaterlogOrLeechTarget
 Flags = CanProtect
 EffectChance = 60
-Description = The user bites, claws, and stings the target while rolling. It has a 20% chance each to poison, dizzy, or leech.
+Description = The user bites, claws, and stings the target while rolling. It has a 20% chance each to poison, waterlog, or leech.
 Animation = CHAOSWHEEL
 #-------------------------------
 [SCALESCATTER]
@@ -2837,6 +2850,18 @@ FunctionCode = LowerUserSpAtkSpDef2
 Flags = CanProtect
 Description = The user opens its soul to unleash massive energy. This lowers the user's Sp. Atk and Sp. Def by two steps.
 Animation = OMINOUSWIND
+#-------------------------------
+[PHARAOHSCURSE]
+Name = Pharaoh's Curse
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = CurseTargetEarnMoneyFromCurse
+Flags = CanProtect,CanMagicCoat
+Description = The target becomes Cursed. Health lost from Curse becomes coins for you to earn after battle.
+Animation = CURSE
 #-------------------------------
 [SEANCE]
 Name = Seance
@@ -3257,6 +3282,7 @@ Target = NearOther
 FunctionCode = IfFaintsTargetAddTonsOfMoneyGainedFromBattle
 Flags = CanProtect,Blade
 Description = The user attacks the target with a sword. If it faints, tons of money is earned after the battle.
+Animation = SACREDSWORD
 #-------------------------------
 [POLARIZEDROOM]
 Name = Polarized Room
@@ -5351,8 +5377,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartEclipse8
-Description = Summons eclipse for eight turns, boosting Psychic-type attacks and heralding the total eclipse.
+FunctionCode = StartEclipse6
+Description = Summons eclipse for six turns, boosting Psychic-type attacks and heralding the total eclipse.
 #-------------------------------
 [ENERGYTRICK]
 Name = Energy Trick
@@ -6366,6 +6392,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimesAddMoneyGainedFromBattleEachHit
 Flags = CanProtect
 Description = The user makes an offering, then attacks two to five times. Money is earned for each hit.
+Animation = PAYDAY
 #-------------------------------
 [SCALEGLINT]
 Name = Scale Glint
@@ -6540,11 +6567,11 @@ Name = Call of the Void
 Type = DARK
 Category = Status
 Accuracy = 100
-TotalPP = 1
+TotalPP = 3
 Target = AllNearFoes
-FunctionCode = SleepTargetNextTurn
+FunctionCode = SacrificeAllySleepTargetNextTurn
 Flags = CanProtect,CanMagicCoat
-Description = All near foes are dragged into a world of total darkness that makes them drowsy. Only one use per battle.
+Description = The user sacrifices their ally to cover all near foes in total darkness. They become drowsy.
 Animation = DARKVOID
 #-------------------------------
 [CALTROPARTS]
@@ -6895,9 +6922,10 @@ Power = 90
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = AddLotsOfMoneyGainedFromBattle
+FunctionCode = AddMoneyGainedFromBattle
 Flags = CanProtect
-Description = The user demands tribute from the target. Much money is earned after the battle.
+Description = The user demands tribute from the target. Money is earned after the battle.
+Animation = PAYDAY
 #-------------------------------
 [SCAM]
 Name = Scam
@@ -7096,6 +7124,19 @@ Flags = CanProtect
 EffectChance = 50
 Description = The target is pranked with a huge bucket of water. This has a 50% chance to waterlog it.
 Animation = HYDROVORTEX
+#-------------------------------
+[CHARITY]
+Name = Charity
+Type = FAIRY
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ScalesCreatedMoney
+Flags = CanProtect
+Description = The user hits the target with a generous donation. Consumes up to 1000 scattered coins. Base power is boosted by 10 for every 100 coins consumed.
+Animation = PAYDAY
 #-------------------------------
 [CRUELKISS]
 Name = Cruel Kiss
@@ -7376,8 +7417,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
-FunctionCode = StartMoonglow8
-Description = Summons moonglow for eight turns, boosting Fairy-type attacks and heralding the Full Moon.
+FunctionCode = StartMoonglow6
+Description = Summons moonglow for six turns, boosting Fairy-type attacks and heralding the Full Moon.
 #-------------------------------
 [MORNINGSTAR]
 Name = Morningstar
