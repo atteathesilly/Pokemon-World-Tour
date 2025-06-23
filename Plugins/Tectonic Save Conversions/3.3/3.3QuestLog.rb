@@ -9,11 +9,11 @@ SaveData.register_conversion(:quest_log_3_3_0) do
 
       questLog = save_data[:global_metadata].quests
 
-      questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbHasItem?(:CONDENSEDLIGHT)
-
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[136,30, 'A']]
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[24,10, 'B']]
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[30,26, 'B']]
+
+      # NPC Side Quests
 
       questLog.advanceQuest(:QUEST_IMOGENE) if globalVariables[IMOGENE_STAGE_VAR] > 1
       questLog.advanceQuest(:QUEST_ALESSA) if selfSwitches[[56,56, 'A']] || globalVariables[ALESSA_STAGE_VAR] > 1
@@ -25,6 +25,38 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       # TO DO: Fail major NPC quests if entered helix before completing
       
       # Gym avatar quests
+
+      # Legendary Quests
+
+      questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbHasItem?(:CONDENSEDLIGHT)
+      questLog.advanceQuest(:QUEST_LEGEND_CELEBI) if selfSwitches[[370,19, 'B']]
+      questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[379,71, 'A']]
+      questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[378,31, 'A']]
+      questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[403,1, 'A']]
+      questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[361,27, 'A']]
+      questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,53, 'B']]
+      questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,20, 'B']]
+      # The commented out ones didn't work
+      #questLog.advanceQuest(:QUEST_LEGEND_MELTAN) if selfSwitches[[20,103, 'A']]
+      #questLog.advanceQuest(:QUEST_LEGEND_NULL) if selfSwitches[[228,1, 'A']]
+      #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[265,3, 'B']]
+      #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[269,1, 'B']]
+      #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[414,6, 'A']]
+      #questLog.advanceQuest(:QUEST_LEGEND_ATOLL) if selfSwitches[[165,33, 'D']]
+      #questLog.advanceQuest(:QUEST_LEGEND_DRAGON_ISLE) if selfSwitches[[251,1, 'A']]
+      #questLog.advanceQuest(:QUEST_LEGEND_DRAGON_ISLE) if selfSwitches[[251,1, 'B']]
+
+      # Former Champions
+
+      #questLog.advanceQuest(:QUEST_FORMER_ANSEL) if selfSwitches[[34,41, 'A']]
+      #questLog.advanceQuest(:QUEST_FORMER_PRAVEEN) if selfSwitches[[34,41, 'D']]
+      #questLog.advanceQuest(:QUEST_FORMER_PRAVEEN) if selfSwitches[[316,5, 'D']]
+      #questLog.advanceQuest(:QUEST_FORMER_CHARA) if selfSwitches[[316,5, 'B']]
+      #questLog.advanceQuest(:QUEST_FORMER_ELISE) if selfSwitches[[188,20, 'B']]
+      #questLog.advanceQuest(:QUEST_FORMER_VINCENT) if selfSwitches[[188,20, 'C']]
+      #questLog.advanceQuest(:QUEST_FORMER_CASEY) if selfSwitches[[270,3, 'A']]
+
+      # Misc quests
 
       questLog.advanceQuest(:QUEST_LOST_GROWLITHE) if selfSwitches[[32,14, 'A']]
       questLog.advanceQuest(:QUEST_LOST_GROWLITHE) if globalSwitches[112]
