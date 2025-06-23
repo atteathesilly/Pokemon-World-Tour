@@ -17,6 +17,7 @@ class WaypointsTracker
 	def overwriteWaypoint(waypointName,event,newName=nil)
 		if @activeWayPoints.has_key?(waypointName) || debugControl
 			addWaypoint(newName || waypointName,event)
+			deleteWaypoint(waypointName) if newName
 		end
 	end
 
