@@ -4,6 +4,6 @@ class PokeBattle_Battler
         pseudoLevel = rescaleLevelForStats(@level)
         moneyDropped = pseudoLevel * multiplier
         moneyDropped = (moneyDropped * @battle.moneyMult).floor
-        @battle.field.incrementEffect(:PayDay, moneyDropped)
+        pbOwnSide.incrementEffect(:PayDay, moneyDropped)
     end
 end

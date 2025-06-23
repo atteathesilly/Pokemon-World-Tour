@@ -157,7 +157,8 @@ GameData::BattleEffect.register_effect(:Battler, {
             curseDamage = battler.applyFractionalDamage(CURSE_DAMAGE_FRACTION, false)
             if battler.effectActive?(:PharaohsCurse) && !battler.pbOwnedByPlayer?
                 moneyEarned = curseDamage * 10
-                battle.field.incrementEffect(:PayDay, moneyEarned)
+                moneyEarned = (battle.moneyMult * moneyEarned).floor
+                battler.pbOwnSide.incrementEffect(:PayDay, moneyEarned)
             end
         end
     end,
