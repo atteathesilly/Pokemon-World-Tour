@@ -2092,25 +2092,26 @@ Pokemon = SWALOT,39
     AbilityIndex = 0 # Thick Fat
 #-------------------------------
 [CEO,Beatrice]
+Policies = PRESERVE_LAST_POKEMON
 Flags = NoPerfect
-Pokemon = HELIOLISK,40
-    Moves = BEAMSTRUGGLE,WEATHERBURST,BUBBLEBLASTER,DRAGONPULSE
-    AbilityIndex = 1 # Water Absorb
-    Item = AIRBALLOON
-Pokemon = HEATMOR,40
-    Moves = STRENGTHSAP,FIRELASH,FLAMESPIKES,FARADAYCAGE
-    AbilityIndex = 0 # Firefighter
-Pokemon = DOUBLADE,40
-    Moves = SWORDSDANCE,SHADOWSNEAK,GYROBALL,PAINSPLIT
-    AbilityIndex = 0 # Full Metal Body
-    Item = EVIOLITE
-Pokemon = FURFROU,40
-    Moves = LOUNGE,LAUNDER,FOULPLAY,ENERGYBALL
-    AbilityIndex = 0 # Stylish
-Pokemon = PANGORO,40
-    Moves = HATEFULHAYMAKER,DRAINPUNCH,GRIMEGRAPPLE,FACADE
-    AbilityIndex = 0 # Big Boss
-    Item = STRIKEVEST
+Pokemon = MNINETALES,40
+	Moves = SUNDERFATE,CHACHING,FRAGMENTATION,PIERCINGDOUBT
+	AbilityIndex = 0 # Gild
+	Item = SKILLHERB
+Pokemon = GWEEZING,40
+	Moves = CHACHING,CLEARSMOG,MISTBURST,EXPLOSION
+	AbilityIndex = 1 # Industrialize
+Pokemon = PERRSERKER,40
+	Moves = PLUNDER,REVENGE,UTURN,CHACHING
+	AbilityIndex = 1 # Steely Spirit
+Pokemon = COFAGRIGUS
+	Moves = PHARAOHSCURSE,CRIMSONSTORM,DESTINYBOND,WILLOWISP
+	Item = LEFTOVERS
+	AbilityIndex = 0 # Mummy
+Pokemon = Persian
+	Moves = SWORDSDANCE,SLASH,PSYCHOSCISSION,ELECTROSLASH
+	AbilityIndex = 0 # Cash Out
+	Item = WHETSTONE
 #-------------------------------
 [BIRDKEEPER_M,Kendall]
 Pokemon = DODRIO,40
