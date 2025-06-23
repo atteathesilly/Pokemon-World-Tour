@@ -16,33 +16,40 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       NPC_QUEST_STAGE_MAX = 5
 
       # NPC Side Quests
-      questLog.advanceQuest(:QUEST_IMOGENE) if globalVariables[IMOGENE_STAGE_VAR] > 1
-      questLog.advanceQuest(:QUEST_ALESSA) if selfSwitches[[56,56, 'A']] || globalVariables[ALESSA_STAGE_VAR] > 1
-      questLog.advanceQuest(:QUEST_SKYLER) if globalVariables[SKYLER_STAGE_VAR] > 1
-      questLog.advanceQuest(:QUEST_KEONI) if selfSwitches[[20,81, 'A']]
-      questLog.advanceQuest(:QUEST_EIFION) if selfSwitches[[40,5,EIFION_STAGE_VAR]]
-      questLog.advanceQuest(:QUEST_CANDY) if globalVariables[CANDY_STAGE_VAR] > 1
+      (1...NPC_QUEST_STAGE_MAX - 1).each do |stage|
+        questLog.advanceQuest(:QUEST_IMOGENE) if globalVariables[IMOGENE_STAGE_VAR] > stage
+        questLog.advanceQuest(:QUEST_ALESSA) if globalVariables[ALESSA_STAGE_VAR] > stage
+        questLog.advanceQuest(:QUEST_SKYLER) if globalVariables[SKYLER_STAGE_VAR] > stage
+        questLog.advanceQuest(:QUEST_KEONI) if globalVariables[KEONI_STAGE_VAR] > stage
+        questLog.advanceQuest(:QUEST_EIFION) if globalVariables[EIFION_STAGE_VAR] > stage
+        questLog.advanceQuest(:QUEST_CANDY) if globalVariables[CANDY_STAGE_VAR] > stage
+      end
+      questLog.completeQuest(:QUEST_IMOGENE, skipAlert: true) if globalVariables[IMOGENE_STAGE_VAR] == NPC_QUEST_STAGE_MAX
+      questLog.completeQuest(:QUEST_ALESSA, skipAlert: true) if globalVariables[ALESSA_STAGE_VAR] == NPC_QUEST_STAGE_MAX
+      questLog.completeQuest(:QUEST_SKYLER, skipAlert: true) if globalVariables[SKYLER_STAGE_VAR] == NPC_QUEST_STAGE_MAX
+      questLog.completeQuest(:QUEST_KEONI, skipAlert: true) if globalVariables[KEONI_STAGE_VAR] == NPC_QUEST_STAGE_MAX
+      questLog.completeQuest(:QUEST_EIFION, skipAlert: true) if globalVariables[EIFION_STAGE_VAR] == NPC_QUEST_STAGE_MAX
+      questLog.completeQuest(:QUEST_CANDY, skipAlert: true) if globalVariables[CANDY_STAGE_VAR] == NPC_QUEST_STAGE_MAX
       
       # Fail major NPC quests if entered helix before completing
       if globalSwitches[RECURRING_QUEST_FAILURE_SWITCH]
-          # TODO: only fail if not completed? unsure if automatically handled
           if (globalVariables[IMOGENE_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_IMOGENE)          
+              questLog.failQuest(:QUEST_IMOGENE, skipAlert: true)          
           end
           if (globalVariables[ALESSA_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_ALESSA)          
+              questLog.failQuest(:QUEST_ALESSA, skipAlert: true)          
           end
           if (globalVariables[SKYLER_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_SKYLER)          
+              questLog.failQuest(:QUEST_SKYLER, skipAlert: true)          
           end
           if (globalVariables[KEONI_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_KEONI)          
+              questLog.failQuest(:QUEST_KEONI, skipAlert: true)          
           end
           if (globalVariables[EIFION_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_EIFION)          
+              questLog.failQuest(:QUEST_EIFION, skipAlert: true)          
           end
           if (globalVariables[CANDY_STAGE_VAR] < NPC_QUEST_STAGE_MAX) 
-              questLog.failQuest(:QUEST_CANDY)          
+              questLog.failQuest(:QUEST_CANDY, skipAlert: true)          
           end
       end
       
