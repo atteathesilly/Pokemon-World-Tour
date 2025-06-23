@@ -39,3 +39,12 @@ def jovanFliesPlayerToBarren(incrementVar = true)
     transferPlayerToEvent(9,Right,447)
   }
 end
+
+def jovanFliesAwayLast
+  Pokemon.play_cry(:TROPIUS)
+  pbWait(40)
+  blackFadeOutIn(20) {
+    pbSEPlay("Fly")
+    incrementGlobalVar(FORCES_QUEST_STAGE)
+  }
+end
