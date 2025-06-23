@@ -74,6 +74,7 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[361,27, 'A']]
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,53, 'B']]
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,20, 'B']]
+      questLog.completeQuest(:QUEST_LEGEND_MARSHADOW, skipAlert: true) if selfSwitches[[362,4,'C']]
       # The commented out ones didn't work
       #questLog.advanceQuest(:QUEST_LEGEND_MELTAN) if selfSwitches[[20,103, 'A']]
       #questLog.advanceQuest(:QUEST_LEGEND_NULL) if selfSwitches[[228,1, 'A']]
