@@ -11,7 +11,10 @@ SaveData.register_conversion(:quest_log_3_3_0) do
 
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[136,30, 'A']]
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[24,10, 'B']]
-      questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[30,26, 'B']]
+      if selfSwitches[[30,26, 'B']]
+        questLog.advanceQuest(:QUEST_HIDE_AND_SEEK)
+        questLog.completeQuest(:QUEST_HIDE_AND_SEEK, skipAlert: true)
+      end
 
       NPC_QUEST_STAGE_MAX = 5
 
@@ -56,8 +59,10 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       # Gym avatar quests
 
       # Legendary Quests
-
       questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbHasItem?(:CONDENSEDLIGHT)
+      questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbQuantity(:CONDENSEDLIGHT) >= condensedLightCount
+      questLog.completeQuest(:QUEST_LEGEND_CONDENSED, skipAlert: true) if selfSwitches[[351,11,"B"]]
+      
       questLog.advanceQuest(:QUEST_LEGEND_CELEBI) if selfSwitches[[370,19, 'B']]
       questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[379,71, 'A']]
       questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[378,31, 'A']]
