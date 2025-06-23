@@ -62,11 +62,15 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbHasItem?(:CONDENSEDLIGHT)
       questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbQuantity(:CONDENSEDLIGHT) >= condensedLightCount
       questLog.completeQuest(:QUEST_LEGEND_CONDENSED, skipAlert: true) if selfSwitches[[351,11,"B"]]
-      
+
       questLog.advanceQuest(:QUEST_LEGEND_CELEBI) if selfSwitches[[370,19, 'B']]
+      questLog.completeQuest(:QUEST_LEGEND_CELEBI, skipAlert: true) if selfSwitches[[372,2,'A']]
+
       questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[379,71, 'A']]
       questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[378,31, 'A']]
       questLog.advanceQuest(:QUEST_LEGEND_HOOPA) if selfSwitches[[403,1, 'A']]
+      questLog.completeQuest(:QUEST_LEGEND_HOOPA, skipAlert: true) if selfSwitches[[405,1,'A']]
+
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[361,27, 'A']]
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,53, 'B']]
       questLog.advanceQuest(:QUEST_LEGEND_MARSHADOW) if selfSwitches[[362,20, 'B']]
