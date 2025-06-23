@@ -49,5 +49,16 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.completeQuest(:QUEST_BEARTIC) if selfSwitches[[395,8,'A']]
       questLog.completeQuest(:QUEST_MAROMATISSE) if selfSwitches[[339,5,'A']]
       questLog.completeQuest(:QUEST_MONKES) if selfSwitches[[391,5,'A']]
+
+      # set starting timestamps for quests
+      questLog.active_quests.each do |quest|
+          quest.time = Time.now;
+      end
+      questLog.completed_quests.each do |quest|
+          quest.time = Time.now;
+      end
+      questLog.failed_quests.each do |quest|
+          quest.time = Time.now;
+      end
   end
 end
