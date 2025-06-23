@@ -14,7 +14,6 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[30,26, 'B']]
 
       # NPC Side Quests
-
       questLog.advanceQuest(:QUEST_IMOGENE) if globalVariables[IMOGENE_STAGE_VAR] > 1
       questLog.advanceQuest(:QUEST_ALESSA) if selfSwitches[[56,56, 'A']] || globalVariables[ALESSA_STAGE_VAR] > 1
       questLog.advanceQuest(:QUEST_SKYLER) if globalVariables[SKYLER_STAGE_VAR] > 1
@@ -22,7 +21,16 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_EIFION) if selfSwitches[[40,5,EIFION_STAGE_VAR]]
       questLog.advanceQuest(:QUEST_CANDY) if globalVariables[CANDY_STAGE_VAR] > 1
       
-      # TO DO: Fail major NPC quests if entered helix before completing
+      # Fail major NPC quests if entered helix before completing
+      if globalSwitches[RECURRING_QUEST_FAILURE_SWITCH]
+          # TODO: only fail if not completed? unsure if automatically handled
+          questLog.failQuest(:QUEST_IMOGENE)
+          questLog.failQuest(:QUEST_ALESSA)
+          questLog.failQuest(:QUEST_SKYLER)
+          questLog.failQuest(:QUEST_KEONI)
+          questLog.failQuest(:QUEST_EIFION)
+          questLog.failQuest(:QUEST_CANDY)
+      end
       
       # Gym avatar quests
 
