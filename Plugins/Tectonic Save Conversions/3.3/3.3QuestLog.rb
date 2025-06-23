@@ -80,7 +80,9 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.completeQuest(:QUEST_LEGEND_MELTAN, skipAlert: true) if selfSwitches[[412,10,'A']]
 
       # The commented out ones didn't work
-      #questLog.advanceQuest(:QUEST_LEGEND_NULL) if selfSwitches[[228,1, 'A']]
+      questLog.advanceQuest(:QUEST_LEGEND_NULL) if selfSwitches[[228,1, 'A']]
+      questLog.completeQuest(:QUEST_LEGEND_NULL, skipAlert: true) if selfSwitches[[228,12,'A']]
+      
       #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[265,3, 'B']]
       #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[269,1, 'B']]
       #questLog.advanceQuest(:QUEST_LEGEND_EVENTIDE) if selfSwitches[[414,6, 'A']]
@@ -129,6 +131,9 @@ SaveData.register_conversion(:quest_log_3_3_0) do
           quest.time = Time.now;
       end
       questLog.completed_quests.each do |quest|
+          quest.time = Time.now;
+      end
+      questLog.failed_quests.each do |quest|
           quest.time = Time.now;
       end
   end
