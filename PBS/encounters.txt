@@ -557,7 +557,7 @@ FloweryGrass2,20
     20,TOGEDEMARU,32,34
     20,TROPIUS,32,34
 Special
-    1,CASTFORM,40
+    1,DURANT,40
 #-------------------------------
 [187] # Prizca East
 FloweryGrass2,20
@@ -619,6 +619,8 @@ LandSparse,20
     25,DRILBUR,49,51
     25,HAWLUCHA,49,51
     25,SKARMORY,49,51
+Special
+    1,BOUNSWEET,10
 #-------------------------------
 [212] # Ruins Digsite
 DarkCave,20
@@ -873,10 +875,6 @@ Land,20
     25,PICHU,59,61
     25,ROOKIDEE,59,61
 #-------------------------------
-[263] # Sweetrock Harbor Center
-Special
-    1,BOUNSWEET,10
-#-------------------------------
 [264] # Thunder Point
 Land,20
     20,BLASFEMMIE,55,57
@@ -968,6 +966,10 @@ DarkCave,20
     20,DUSKULL,20,22
     20,MAWILE,20,22
     20,SABLEYE,20,22
+#-------------------------------
+[331] # Frostflow Farms Center
+Special
+    1,CASTFORM,40
 #-------------------------------
 [333] # Floral Maze
 FloweryGrass2,20
