@@ -8082,7 +8082,7 @@ Pokemon = PAPELLUMEN,70
     AbilityIndex = 1 # Erudite
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,21]
-Flags = NoPerfect,PlayerTeam:Wolfunters64
+Flags = NoPerfect,PlayerTeam:Wolfhunters64
 Pokemon = SAMUROTT,70
     AbilityIndex = 1 # Swordplay
 Pokemon = CHESNAUGHT,70
