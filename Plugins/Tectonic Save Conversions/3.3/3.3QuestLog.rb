@@ -19,7 +19,7 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       NPC_QUEST_STAGE_MAX = 5
 
       # NPC Side Quests
-      (1...NPC_QUEST_STAGE_MAX - 1).each do |stage|
+      (0...NPC_QUEST_STAGE_MAX - 1).each do |stage|
         questLog.advanceQuest(:QUEST_IMOGENE) if globalVariables[IMOGENE_STAGE_VAR] > stage
         questLog.advanceQuest(:QUEST_ALESSA) if globalVariables[ALESSA_STAGE_VAR] > stage
         questLog.advanceQuest(:QUEST_SKYLER) if globalVariables[SKYLER_STAGE_VAR] > stage
