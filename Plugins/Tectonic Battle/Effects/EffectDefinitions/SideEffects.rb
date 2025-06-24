@@ -694,7 +694,7 @@ GameData::BattleEffect.register_effect(:Side, {
     end,
 })
 
-GameData::BattleEffect.register_effect(:Field, {
+GameData::BattleEffect.register_effect(:Side, {
     :id => :PayDay,
     :real_name => "Money Dropped",
     :type => :Integer,
