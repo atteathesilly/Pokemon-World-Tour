@@ -337,7 +337,6 @@ MultipleForms.copy(:FLABEBE,:FLOETTE,:FLORGES)
 MultipleForms.register(:ESPURR,{
   "getFormOnCreation" => proc { |pkmn|
     next pkmn.gender
-    next rand(2)
   }
 })
 
@@ -591,6 +590,5 @@ MultipleForms.register(:MORPEKO, {
 MultipleForms.register(:INDEEDEE,{
   "getFormOnCreation" => proc { |pkmn|
     next pkmn.gender
-    next rand(2)
   },
 })
