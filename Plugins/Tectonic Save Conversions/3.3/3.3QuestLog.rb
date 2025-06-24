@@ -121,10 +121,11 @@ SaveData.register_conversion(:quest_log_3_3_0) do
 
       questLog.advanceQuest(:QUEST_LOST_GROWLITHE) if selfSwitches[[32,14, 'A']]
       questLog.advanceQuest(:QUEST_LOST_GROWLITHE) if globalSwitches[112]
-      questLog.completedQuest(:QUEST_LOST_GROWLITHE, skipAlert: true) if selfSwitches[[32,14, 'C']]
+      questLog.completeQuest(:QUEST_LOST_GROWLITHE, skipAlert: true) if selfSwitches[[32,14, 'C']]
 
       questLog.advanceQuest(:QUEST_DIGIT_SLIPS) if selfSwitches[[397,5, 'A']]
-      questLog.advanceQuest(:QUEST_DIGIT_SLIPS) if selfSwitches[[397,5, 'B']]
+      questLog.completeQuest(:QUEST_DIGIT_SLIPS, skipAlert: true) if selfSwitches[[397,5, 'C']]
+      
       questLog.advanceQuest(:QUEST_POKEMON_MASTER) if selfSwitches[[17,4, 'A']]
       questLog.advanceQuest(:QUEST_POKEMON_MASTER) if selfSwitches[[18,2, 'B']]
       
