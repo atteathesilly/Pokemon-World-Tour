@@ -155,15 +155,17 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[171,2, 'A']]
       questLog.completeQuest(:QUEST_AEGIS_FRAUD, skipAlert: true) if selfSwitches[[155,11, 'D']]
 
-      questLog.advanceQuest(:QUEST_MALASADAS) if selfSwitches[[122,29, 'A']]
+      # no starting condition for this one
+      questLog.completeQuest(:QUEST_MALASADAS, skipAlert: true) if selfSwitches[[122,29, 'A']]
+
       questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[56,8, 'A']]
       #questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[TBD,TBD,TBD]]
       
       # Avatar bounties (no data tracking quest start, unfortunately)
-      questLog.completeQuest(:QUEST_CROBAT) if selfSwitches[[402,8,'A']]
-      questLog.completeQuest(:QUEST_BEARTIC) if selfSwitches[[395,8,'A']]
-      questLog.completeQuest(:QUEST_MAROMATISSE) if selfSwitches[[339,5,'A']]
-      questLog.completeQuest(:QUEST_MONKES) if selfSwitches[[391,5,'A']]
+      questLog.completeQuest(:QUEST_CROBAT, skipAlert: true) if selfSwitches[[402,8,'A']]
+      questLog.completeQuest(:QUEST_BEARTIC, skipAlert: true) if selfSwitches[[395,8,'A']]
+      questLog.completeQuest(:QUEST_MAROMATISSE, skipAlert: true) if selfSwitches[[339,5,'A']]
+      questLog.completeQuest(:QUEST_MONKES, skipAlert: true) if selfSwitches[[391,5,'A']]
 
       # set starting timestamps for quests
       questLog.active_quests.each do |quest|
