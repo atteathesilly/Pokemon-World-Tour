@@ -155,11 +155,9 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[171,2, 'A']]
       questLog.completeQuest(:QUEST_AEGIS_FRAUD, skipAlert: true) if selfSwitches[[155,11, 'D']]
 
-      # no starting condition for this one
+      # no starting condition for these ones
       questLog.completeQuest(:QUEST_MALASADAS, skipAlert: true) if selfSwitches[[122,29, 'A']]
-
-      questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[56,8, 'A']]
-      #questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[TBD,TBD,TBD]]
+      questLog.completeQuest(:QUEST_NOVO_WREATHS, skipAlert: true) if selfSwitches[[56,8, 'A']]
       
       # Avatar bounties (no data tracking quest start, unfortunately)
       questLog.completeQuest(:QUEST_CROBAT, skipAlert: true) if selfSwitches[[402,8,'A']]
