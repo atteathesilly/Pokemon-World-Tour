@@ -1,4 +1,3 @@
-@ -1,2248 +1,2248 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [ABOVEITALL]
@@ -740,6 +739,7 @@ Flags = HailSynergy
 [FROSTPITALITY]
 Name = Frostpitality
 Description = Prevents the foe from escaping during hail.
+Flags = HailSynergy
 #-------------------------------
 [FROSTSCATTER]
 Name = Frost Scatter
@@ -1200,6 +1200,7 @@ Description = Boosts Attack by 50% if it used a special move last turn, or boost
 [MIDNIGHTOIL]
 Name = Midnight Oil
 Description = Using a status move in moonglow extends the weather by a turn.
+Flags = MoonglowSynergy
 #-------------------------------
 [MIDNIGHTSUN]
 Name = Midnight Sun
@@ -1227,6 +1228,7 @@ Flags = MoonglowSynergy
 [MOONBLANKET]
 Name = Moon Blanket
 Description = The Pokémon and its allies take 25% less move damage during moonglow.
+Flags = MoonglowSynergy
 #-------------------------------
 [MOONGAZE]
 Name = Moon Gaze
@@ -1255,18 +1257,9 @@ Description = It changes type to that of the move it's about to use. This works 
 Name = Mystic Fist
 Description = Boosts the power of punching moves by 30%, and makes them special when that would be more effective.
 #-------------------------------
-[MYSTICTAP]
-Name = Mystic Tap
-Description = Gets double healing from all sources during moonglow.
-Flags = MoonglowSynergy
-#-------------------------------
 [NEEDLEFUR]
 Name = Needle Fur
 Description = Attackers lose 1/10th of their HP. If the Pokémon is below half health, attackers lose 1/5th instead.
-#-------------------------------
-[NEGATIVEOUTLOOK]
-Name = Negative Outlook
-Description = Raises Electric-type allies' Sp. Def by 50%.
 #-------------------------------
 [NERVENUMBER]
 Name = Nerve Number
@@ -1454,10 +1447,6 @@ Description = Upon entry, creates a Polarized Room for four turns, exaggerating 
 Name = Poor Conduct
 Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insulting them.
 #-------------------------------
-[POSITIVEOUTLOOK]
-Name = Positive Outlook
-Description = Raises Electric-type allies' Sp. Atk by 50%.
-#-------------------------------
 [POWERLIFTER]
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.
@@ -1494,10 +1483,6 @@ Description = Upon entry, creates a Puzzle Room for four turns, swapping base At
 [QUARRELSOME]
 Name = Quarrelsome
 Description = Both deals and takes double damage on its first full turn out in battle.
-#-------------------------------
-[QUICKBUILD]
-Name = Quick Build
-Description = Room-creating moves have priority.
 #-------------------------------
 [QUILLERINSTINCT]
 Name = Quiller Instinct
@@ -1628,11 +1613,12 @@ Flags = SandstormSynergy
 [SANDSMACABRE]
 Name = Sands Macabre
 Description = When it attacks from underground in sandstorm, it'll transform into Reaper form.
-Flags = Immutable
+Flags = Immutable,SandstormSynergy
 #-------------------------------
 [SANDSNIPER]
 Name = Sand Sniper
 Description = Boosts the Pokémon's Speed by 50% in sandstorm. Can't miss during sandstorm.
+Flags = SandstormSynergy
 #-------------------------------
 [SANDWORNAUGER]
 Name = Sandworn Auger
@@ -1686,10 +1672,6 @@ Description = Special moves have a 30% chance to leech targets.
 Name = Selective Scutes
 Description = Boosts one defending stat by two steps according to the foe's Attack and Sp. Atk.
 #-------------------------------
-[SELFSUFFICIENT]
-Name = Self-Sufficient
-Description = Heals 1/16th HP every turn. Protected from being burned or frostbitten.
-#-------------------------------
 [SENTRY]
 Name = Sentry
 Description = Takes 25% less damage while using a status move.
@@ -1709,10 +1691,6 @@ Description = Doubles the critical hit chance of random crit moves. The Pokémon
 [SHELLCRACKER]
 Name = Shellcracker
 Description = Its physical attacks reduce the target's Defense.
-#-------------------------------
-[SHIELDWALL]
-Name = Shield Wall
-Description = Takes 50% less damage from hyper-effective attacks.
 #-------------------------------
 [SHIFTINGFIST]
 Name = Shifting Fist
@@ -1806,10 +1784,6 @@ Flags = MoonglowSynergy
 [SOPPING]
 Name = Sopping
 Description = Physical attacks against the Pokémon have a 30% chance to waterlog the attacker.
-#-------------------------------
-[SOULREAD]
-Name = Soul Read
-Description = Double damage to targets who don't share a type with their last-used move.
 #-------------------------------
 [SOUNDBARRIER]
 Name = Sound Barrier
@@ -2140,10 +2114,6 @@ Description = Makes the foe nervous and unable to eat Berries or Leftovers.
 [VANDAL]
 Name = Vandal
 Description = Deals 30% more damage to targets that have an item. After attacking a foe, destroys their clothing items.
-#-------------------------------
-[VARIETY]
-Name = Variety
-Description = Powers up moves different than the last move by 50%.
 #-------------------------------
 [VENGEANCE]
 Name = Vengeance
