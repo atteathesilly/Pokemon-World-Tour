@@ -1126,10 +1126,14 @@ BattleHandlers::AbilityOnSwitchIn.add(:CASHOUT,
       maxCoinsCanHealFrom = battler.maxOverhealingPossible * CASHOUT_HEALING_DIVISOR
       coinsToConsume = [battler.pbOwnSide.countEffect(:PayDay),maxCoinsCanHealFrom].min
       healingAmt = coinsToConsume / CASHOUT_HEALING_DIVISOR
-      battler.showMyAbilitySplash(ability)
+      battler.showMyAbilitySplash(ability) unless aiCheck
       healingMessage = _INTL("{1} gobbles up the scattered coins!",battler.pbThis)
-      battler.pbRecoverHP(healingAmt, true, true, true, healingMessage, canOverheal: true)
-      battler.pbOwnSide.effects[:PayDay] -= coinsToConsume
-      battler.hideMyAbilitySplash
+      recoveredHP = battler.pbRecoverHP(healingAmt, true, true, true, healingMessage, canOverheal: true, aiCheck: aiCheck)
+      if aiCheck
+        next getHealingEffectScore(recoveredHP)
+      else
+        battler.pbOwnSide.effects[:PayDay] -= coinsToConsume
+        battler.hideMyAbilitySplash
+      end
   }
 )
