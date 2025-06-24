@@ -1130,7 +1130,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:CASHOUT,
       healingMessage = _INTL("{1} gobbles up the scattered coins!",battler.pbThis)
       recoveredHP = battler.pbRecoverHP(healingAmt, true, true, true, healingMessage, canOverheal: true, aiCheck: aiCheck)
       if aiCheck
-        next getHealingEffectScore(recoveredHP)
+        next battler.getHealingEffectScore(recoveredHP)
       else
         battler.pbOwnSide.effects[:PayDay] -= coinsToConsume
         battler.hideMyAbilitySplash
