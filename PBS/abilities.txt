@@ -174,7 +174,7 @@ Flags = SunshineSynergy,Immutable
 #-------------------------------
 [FLOWERVEIL]
 Name = Flower Veil
-Description = Protects Grass-type allies from non-volatile status conditions or stat reductions (except self-inflicted).
+Description = Protects Grass-type allies from status conditions or stat lowering (except self-inflicted).
 #-------------------------------
 [FLUFFY]
 Name = Fluffy
@@ -230,7 +230,7 @@ Flags = Immutable
 #-------------------------------
 [HEALER]
 Name = Healer
-Description = Heals ally's non-volatile status conditions at the end of turn.
+Description = Heals ally's status conditions at the end of turn.
 #-------------------------------
 [HEAVYMETAL]
 Name = Heavy Metal
@@ -251,7 +251,7 @@ Description = Boosts move damage by 50%, but lowers Accuracy by 20%.
 #-------------------------------
 [HYDRATION]
 Name = Hydration
-Description = Heals non-volatile status conditions each turn if in rainstorm.
+Description = Heals status problems each turn if in rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
 [ICEBODY]
@@ -308,7 +308,7 @@ Description = Boosts the power of punching moves by 30%.
 #-------------------------------
 [LEAFGUARD]
 Name = Leaf Guard
-Description = Immune to non-volatile status conditions while in sunshine.
+Description = Immune to status conditions while in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [LEVITATE]
@@ -367,7 +367,7 @@ Description = When the Pokémon is hit by an attack, the attacker's ability beco
 #-------------------------------
 [NATURALCURE]
 Name = Natural Cure
-Description = All non-volatile status conditions heal when it switches out.
+Description = All status problems heal when it switches out.
 #-------------------------------
 [NEUROFORCE]
 Name = Neuroforce
@@ -523,7 +523,7 @@ Description = Boosts the power of blade moves by 50%.
 #-------------------------------
 [SHEDSKIN]
 Name = Shed Skin
-Description = At the end of each turn, heals from every non-volatile status condition (except Sleep).
+Description = At the end of each turn, heals from every non-volatile status (except Sleep).
 #-------------------------------
 [SHEERFORCE]
 Name = Sheer Force
@@ -535,7 +535,7 @@ Description = Blocks all random added effects of attacks taken.
 #-------------------------------
 [SHIELDSDOWN]
 Name = Shields Down
-Description = Immune to non-volatile status conditions while it has its shell. Below half HP, its shell breaks and it turns aggressive.
+Description = Cannot be statused while it has its shell. Below half HP, its shell breaks and it turns aggressive.
 Flags = Immutable
 #-------------------------------
 [SIMPLE]
@@ -622,7 +622,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [SYNCHRONIZE]
 Name = Synchronize
-Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokemon also gets that condition.
+Description = When the Pokémon is given a status condition by another Pokémon, they also get that condition.
 #-------------------------------
 [TANGLINGHAIR]
 Name = Tangling Hair
