@@ -125,8 +125,18 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_DIGIT_SLIPS) if selfSwitches[[397,5, 'B']]
       questLog.advanceQuest(:QUEST_POKEMON_MASTER) if selfSwitches[[17,4, 'A']]
       questLog.advanceQuest(:QUEST_POKEMON_MASTER) if selfSwitches[[18,2, 'B']]
+      
       questLog.advanceQuest(:QUEST_SUS_PACKAGE) if selfSwitches[[59,18, 'A']]
-      questLog.advanceQuest(:QUEST_SUS_PACKAGE) if itemBag.pbHasItem?(:WEIRDPACKAGE)
+      if itemBag.pbHasItem?(:WEIRDPACKAGE)
+        questLog.advanceQuest(:QUEST_SUS_PACKAGE)
+        if !selfSwitches[[59,18, 'A']]
+            # skip to second stage if obtained the package first
+            questLog.advanceQuest(:QUEST_SUS_PACKAGE)           
+        end
+      end
+      questLog.completeQuest(:QUEST_SUS_PACKAGE, skipAlert: true) if selfSwitches[[59,18, 'B']]
+
+
       questLog.advanceQuest(:QUEST_MEMORY_LANE) if selfSwitches[[80,1, 'A']]
       questLog.advanceQuest(:QUEST_AGRAVELER) if selfSwitches[[4,6, 'A']]
       questLog.advanceQuest(:QUEST_ABSOLUS) if selfSwitches[[66,2, 'A']]
