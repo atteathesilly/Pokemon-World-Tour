@@ -142,6 +142,8 @@ SaveData.register_conversion(:quest_log_3_3_0) do
 
 
       questLog.advanceQuest(:QUEST_MEMORY_LANE) if selfSwitches[[80,1, 'A']]
+      questLog.completeQuest(:QUEST_MEMORY_LANE, skipAlert: true) if selfSwitches[[80,1, 'B']]
+
       questLog.advanceQuest(:QUEST_AGRAVELER) if selfSwitches[[4,6, 'A']]
       questLog.advanceQuest(:QUEST_ABSOLUS) if selfSwitches[[66,2, 'A']]
       questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[155,11, 'A']]
