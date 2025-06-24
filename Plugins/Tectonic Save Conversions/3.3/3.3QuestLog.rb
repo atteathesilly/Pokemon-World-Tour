@@ -127,10 +127,10 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.advanceQuest(:QUEST_POKEMON_MASTER) if selfSwitches[[18,2, 'B']]
       questLog.completeQuest(:QUEST_POKEMON_MASTER, skipAlert: true) if selfSwitches[[17,4, 'C']]
       
-      questLog.advanceQuest(:QUEST_SUS_PACKAGE) if selfSwitches[[59,18, 'A']]
+      questLog.advanceQuest(:QUEST_SUS_PACKAGE) if selfSwitches[[159,18, 'A']]
       if itemBag.pbHasItem?(:WEIRDPACKAGE)
         questLog.advanceQuest(:QUEST_SUS_PACKAGE)
-        if !selfSwitches[[59,18, 'A']]
+        if !selfSwitches[[159,18, 'A']]
             # skip to second stage if obtained the package first
             questLog.advanceQuest(:QUEST_SUS_PACKAGE)           
         end
