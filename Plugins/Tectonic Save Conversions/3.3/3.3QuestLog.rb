@@ -135,7 +135,7 @@ SaveData.register_conversion(:quest_log_3_3_0) do
             questLog.advanceQuest(:QUEST_SUS_PACKAGE)           
         end
       end
-      questLog.completeQuest(:QUEST_SUS_PACKAGE, skipAlert: true) if selfSwitches[[59,18, 'B']]
+      questLog.completeQuest(:QUEST_SUS_PACKAGE, skipAlert: true) if selfSwitches[[159,18, 'B']]
 
 
       questLog.advanceQuest(:QUEST_MEMORY_LANE) if selfSwitches[[80,1, 'A']]
