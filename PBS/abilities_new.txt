@@ -1,3 +1,4 @@
+@ -1,2248 +1,2248 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [ABOVEITALL]
@@ -67,7 +68,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [APRICORNARMOR]
 Name = Apricorn Armor
-Description = Takes 40% less damage from attacks by Pokémon who have a status condition.
+Description = Takes 40% less damage from attacks by Pokémon who have a non-volatile status condition.
 #-------------------------------
 [ARCANEFINALE]
 Name = Arcane Finale
@@ -134,7 +135,7 @@ Description = The effect of healing on foes is reversed.
 #-------------------------------
 [BADLUCK]
 Name = Bad Luck
-Description = When free from status, non-damaging moves by foes are drawn in.
+Description = When free from non-volatile status conditions, non-damaging moves by foes are drawn in.
 #-------------------------------
 [BADOMEN]
 Name = Bad Omen
@@ -292,11 +293,11 @@ Flags = Immutable
 #-------------------------------
 [CLEANFREAK]
 Name = Clean Freak
-Description = Boosts move damage by 50% while it has a status condition. However, it suffers double effect from status conditions.
+Description = Boosts move damage by 50% while it has a non-volatile status condition. It suffers double effect from such status conditions.
 #-------------------------------
 [CLINGY]
 Name = Clingy
-Description = Prevents foes with status conditions from fleeing.
+Description = Prevents foes with non-volatile status conditions from fleeing.
 #-------------------------------
 [CLOAKING]
 Name = Cloaking
@@ -354,7 +355,7 @@ Description = Immune to Dragon-type, Fairy-type and Ghost-type attacks.
 #-------------------------------
 [DARING]
 Name = Daring
-Description = When this Pokémon becomes statused, its Attack is raised by three steps.
+Description = When this Pokémon gains a non-volatile status condition, its Attack is raised by three steps.
 #-------------------------------
 [DARKENEDSKIES]
 Name = Darkened Skies
@@ -379,7 +380,7 @@ Description = On the first turn, its attacks burn the target.
 #-------------------------------
 [DEBRISFIELD]
 Name = Debris Field
-Description = Can't be statused due to its hard shell. Boosts Sp. Atk and Speed by 30% in sandstorm.
+Description = Immune to non-volatile status conditions due to its hard shell. Boosts Sp. Atk and Speed by 30% in sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [DECONTAMINATION]
@@ -845,7 +846,7 @@ Description = Its attacks are critical against burned targets.
 #-------------------------------
 [HASTY]
 Name = Hasty
-Description = When this Pokémon becomes statused, its Speed is raised by three steps.
+Description = When this Pokémon gains a non-volatile status condition, its Speed is raised by three steps.
 #-------------------------------
 [HAUNTED]
 Name = Haunted
@@ -973,7 +974,7 @@ Description = Its same-type attack bonus is based on its party members rather th
 #-------------------------------
 [IMPULSIVE]
 Name = Impulsive
-Description = When this Pokémon becomes statused, its Sp. Atk is raised by three steps.
+Description = When this Pokémon gains a non-volatile status condition, its Sp. Atk is raised by three steps.
 #-------------------------------
 [INCOGNITO]
 Name = Incognito
@@ -990,7 +991,7 @@ Description = Immune to Steel-type moves and raises Speed if hit by one.
 #-------------------------------
 [INEXORABLE]
 Name = Inexorable
-Description = Pokémon take damage from status conditions even while switched out.
+Description = Pokémon take damage from non-volatile status conditions even while switched out.
 #-------------------------------
 [INFECTED]
 Name = Infected
@@ -1087,7 +1088,7 @@ Description = At the end of each turn, heals self by 1/20 and a party member by 
 #-------------------------------
 [LIGHTTRICK]
 Name = Light Trick
-Description = Doubled Speed if any enemy has a status condition.
+Description = Doubled Speed if any enemy has a non-volatile status condition.
 #-------------------------------
 [LIMINAL]
 Name = Liminal
@@ -1360,7 +1361,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [OXYGENATION]
 Name = Oxygenation
-Description = Heals the Pokémon's status problems each turn if in sunshine.
+Description = Heals the Pokémon's non-volatile status conditions each turn if in sunshine.
 Flags = SunshineSynergy
 #-------------------------------
 [PACIFIST]
@@ -1418,7 +1419,7 @@ Description = The Pokémon's moves deal 50% more damage if they're a different t
 #-------------------------------
 [PLACIDITY]
 Name = Placidity
-Description = Takes no damage from status ailments.
+Description = Takes no damage from non-volatile status conditions.
 #-------------------------------
 [PLANARVEIL]
 Name = Planar Veil
@@ -1430,7 +1431,7 @@ Description = Attacks against the Pokémon deal 50% more damage, but the attacke
 #-------------------------------
 [PLOTARMOR]
 Name = Plot Armor
-Description = During eclipse, immune to status conditions and having its stats lowered.
+Description = During eclipse, immune to non-volatile status conditions and stat reductions.
 #-------------------------------
 [PLURIPOTENCE]
 Name = Pluripotence
@@ -1556,7 +1557,7 @@ Flags = SunshineSynergy
 #-------------------------------
 [REFUGE]
 Name = Refuge
-Description = Pokémon that swap in for this have their status effects healed, and take 30% less damage that turn.
+Description = Pokémon that swap in for this have their non-volatile status conditions healed, and take 30% less damage that turn.
 #-------------------------------
 [RELUCTANTBLADE]
 Name = Reluctant Blade
@@ -2162,7 +2163,7 @@ Description = Powers up Grass-type moves of itself and its allies by 50%.
 #-------------------------------
 [VICTORYMOLT]
 Name = Victory Molt
-Description = Heals status conditions and resets stat changes after knocking out any Pokémon.
+Description = Heals non-volatile status conditions and resets stat changes after knocking out any Pokémon.
 #-------------------------------
 [VIGILANT]
 Name = Vigilant
