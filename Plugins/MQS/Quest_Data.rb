@@ -543,6 +543,26 @@ module QuestModule
     :QuestDescription => _INTL("A trio of imposing beasts, hidden in the outer reaches of Makya. Why not add controlling the weather to your arsenal?"),
   }
 
+  QUEST_LEGEND_GENIES = {
+    :Name => _INTL("Excessive Force"),
+    :QuestGiver => _INTL("Jovan"),
+    :Stage1 => _INTL("Explore the cave."),
+    :Stage2 => _INTL("Smth."),
+    :Location1 => _INTL("Oasis System"),
+    :Location2 => _INTL("Place"),
+    :QuestDescription => _INTL("The suspicious but friendly scientist is asking for help, you've eavesdropped a bit (un)intentionally, but the whole story still alludes you. What is so important about a dumb cave in the desert?"),
+  }
+
+  QUEST_JOVAN = {
+    :Name => _INTL("A Troubled Scientist"),
+    :QuestGiver => _INTL("Jovan"),
+    :Stage1 => _INTL("Explore the cave."),
+    :Stage2 => _INTL("Smth."),
+    :Location1 => _INTL("Oasis System"),
+    :Location2 => _INTL("Place"),
+    :QuestDescription => _INTL(""),
+  }
+
   # Former Champions
 
   QUEST_FORMER_CHAMPIONS = {

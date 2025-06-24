@@ -57,6 +57,23 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       end
       
       # Gym avatar quests
+      
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_1) if selfSwitches[[41,13, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_1) if globalSwitches[126]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_2) if selfSwitches[[62,17, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_2) if globalSwitches[127]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_3) if selfSwitches[[21,4, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_3) if globalSwitches[128]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_4) if selfSwitches[[104,5, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_4) if globalSwitches[129]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_5) if globalSwitches[138]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_5) if globalSwitches[130]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_6) if globalSwitches[139]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_6) if globalSwitches[131]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_7) if selfSwitches[[279,2, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_7) if globalSwitches[132]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_8) if selfSwitches[[300,1, 'B']]
+      questLog.advanceQuest(:QUEST_GYM_AVATARS_8) if globalSwitches[133]
 
       # Legendary Quests
       questLog.advanceQuest(:QUEST_LEGEND_CONDENSED) if itemBag.pbHasItem?(:CONDENSEDLIGHT)
