@@ -151,8 +151,10 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog.completeQuest(:QUEST_ABSOLUS, skipAlert: true) if selfSwitches[[66,2, 'B']]
 
       questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[155,11, 'A']]
+      questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[155,91, 'A']]
       questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[171,2, 'A']]
-      questLog.advanceQuest(:QUEST_AEGIS_FRAUD) if selfSwitches[[155,11, 'D']]
+      questLog.completeQuest(:QUEST_AEGIS_FRAUD, skipAlert: true) if selfSwitches[[155,11, 'D']]
+
       questLog.advanceQuest(:QUEST_MALASADAS) if selfSwitches[[122,29, 'A']]
       questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[56,8, 'A']]
       #questLog.advanceQuest(:QUEST_NOVO_WREATHS) if selfSwitches[[TBD,TBD,TBD]]
