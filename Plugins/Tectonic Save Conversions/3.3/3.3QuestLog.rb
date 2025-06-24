@@ -10,12 +10,9 @@ SaveData.register_conversion(:quest_log_3_3_0) do
       questLog = save_data[:global_metadata].quests
 
       questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[136,30, 'A']]
-      questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[24,10, 'B']]
-      if selfSwitches[[30,26, 'B']]
-        questLog.advanceQuest(:QUEST_HIDE_AND_SEEK)
-        questLog.completeQuest(:QUEST_HIDE_AND_SEEK, skipAlert: true)
-      end
-
+      questLog.advanceQuest(:QUEST_HIDE_AND_SEEK) if selfSwitches[[30,10, 'B']]
+      questLog.completeQuest(:QUEST_HIDE_AND_SEEK, skipAlert: true) if selfSwitches[[38,26, 'B']]
+      
       NPC_QUEST_STAGE_MAX = 5
 
       # NPC Side Quests
