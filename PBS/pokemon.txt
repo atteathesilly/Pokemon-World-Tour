@@ -8121,7 +8121,7 @@ Type1 = BUG
 Type2 = GHOST
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 1,90,45,40,30,30
-# Total = 235
+# Total = 236
 GenderRate = Genderless
 BaseEXP = 83
 Rareness = 35
@@ -16914,7 +16914,7 @@ Type1 = ELECTRIC
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 115,95,90,50,95,90
-# Total = 525
+# Total = 535
 BaseEXP = 151
 Rareness = 155
 Abilities = CHEEKPOUCH,WIRECUTTER

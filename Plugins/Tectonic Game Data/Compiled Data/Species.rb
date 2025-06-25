@@ -135,7 +135,7 @@ module GameData
             newBST = 0
             GameData::Stat.each_main do |s|
                 @base_stats[s.id] = 1 if !@base_stats[s.id] || @base_stats[s.id] <= 0
-                next if @base_stats[s.id] % 5 == 0
+                next if @base_stats[s.id] % 5 == 0 || @base_stats[s.id] == 1
                 oldValue = @base_stats[s.id]
                 newValue = (oldValue / 5.0).round(0) * 5
 
