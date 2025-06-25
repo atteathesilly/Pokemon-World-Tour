@@ -18260,7 +18260,6 @@ Evolutions = TSAREENA,Level,36
 [TSAREENA]
 Name = Tsareena
 Type1 = GRASS
-Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 72,120,88,62,70,123
 # Total = 535
