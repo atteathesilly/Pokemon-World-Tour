@@ -7510,18 +7510,6 @@ Flags = CanProtect
 Description = The user goes on a wild tantrum, going on a rampage for two turns.
 Animation = THRASH
 #-------------------------------
-[TRANQUILTUNE]
-Name = Tranquil Tune
-Type = FAIRY
-Category = Status
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = SleepTargetIfBelowHalfHPRaiseUserAtk1
-Flags = CanProtect,Sound
-Description = The target is put to sleep, and the user's Attack is raised. Fails unless the target is at or below half health.
-Animation = SING
-#-------------------------------
 [TRUENAME]
 Name = True Name
 Type = FAIRY

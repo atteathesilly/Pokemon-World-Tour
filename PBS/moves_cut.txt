@@ -3402,3 +3402,15 @@ FunctionCode = Invalid
 Flags = CanProtect,Wind
 EffectChance = 30
 Description = The user attacks the target by emitting steam. It has a 30% chance to dizzy.
+#-------------------------------
+[TRANQUILTUNE]
+Name = Tranquil Tune
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Sound
+Description = The target is put to sleep, and the user's Attack is raised. Fails unless the target is at or below half health.
+Animation = SING

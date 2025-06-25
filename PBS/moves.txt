@@ -1152,6 +1152,16 @@ FunctionCode = RampagePreventSleeping
 Flags = CanProtect,Sound
 Description = The user attacks in an uproar, going on a rampage for two turns. Over that time, no one can fall asleep.
 #-------------------------------
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = WakeUpSlap
+Flags = CanProtect
+Description = This attack inflicts double damage on a sleeping target. It also wakes the target up, however.
+#-------------------------------
 [WISH]
 Name = Wish
 Type = NORMAL
@@ -1623,7 +1633,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserAtkDef2
 Flags = CanProtect
-Description = The user attacks the target with great power. However, it also lowers the user's Attack and Defense.
+Description = The user attacks the target with great power. This lowers the user's Attack and Defense by two steps.
 #-------------------------------
 [THUNDEROUSKICK]
 Name = Thunderous Kick
@@ -1650,18 +1660,6 @@ Priority = 1
 FunctionCode = Basic
 Flags = CanProtect
 Description = The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first.
-#-------------------------------
-[WAKEUPSLAP]
-Name = Wake-Up Slap
-Type = FIGHTING
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = WakeUpSlap
-Flags = CanProtect
-Description = This attack inflicts double damage on a sleeping target. It also wakes the target up, however.
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
