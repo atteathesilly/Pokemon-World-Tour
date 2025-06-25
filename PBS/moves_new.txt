@@ -4095,7 +4095,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserSpAtkSpDef2
 Flags = CanProtect
-Description = The user propels a geyser of water at the target. Lowers the user's Sp. Atk and Sp. Def by two steps.
+Description = The user propels a geyser of water at the target. This lowers the user's Sp. Atk and Sp. Def by two steps.
 Animation = WATERSPOUT
 #-------------------------------
 [HARBORBREAKER]

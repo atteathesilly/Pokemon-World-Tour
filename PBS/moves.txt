@@ -1152,6 +1152,8 @@ FunctionCode = RampagePreventSleeping
 Flags = CanProtect,Sound
 Description = The user attacks in an uproar, going on a rampage for two turns. Over that time, no one can fall asleep.
 #-------------------------------
+[WAKEUPSLAP]
+Name = Wake-Up Slap
 Type = NORMAL
 Category = Physical
 Power = 80
