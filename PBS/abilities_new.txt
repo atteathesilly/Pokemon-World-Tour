@@ -36,7 +36,7 @@ Description = Protects the Pokémon from recoil damage. The Pokémon doesn't tri
 #-------------------------------
 [AFTERIMAGE]
 Name = Afterimage
-Description = Slips past all types of spikes. Deals 50% more damage to targets that switched in this turn.
+Description = Slips past all types of Spikes. Deals 50% more damage to targets that switched in this turn.
 #-------------------------------
 [AGGRAVATE]
 Name = Aggravate
@@ -1803,7 +1803,7 @@ Description = The Pokémon and its allies' moves are twice as likely to be criti
 #-------------------------------
 [SPINESPLODE]
 Name = Spinesplode
-Description = Leaves two layers of spikes after it self-destructs.
+Description = Leaves two layers of Spikes after it self-destructs.
 #-------------------------------
 [SPINTENSITY]
 Name = Spintensity

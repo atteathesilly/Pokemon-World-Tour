@@ -2345,7 +2345,7 @@ Accuracy = 0
 TotalPP = 12
 Target = NearAlly
 FunctionCode = RaiseTargetWorstThreeStats1
-Description = The user raises all of the target's attacking and Defense and Sp. Def.
+Description = The user spreads an aroma that raises the target's three weakest stats.
 Animation = AROMATICMIST
 #-------------------------------
 [IRRITATE]
@@ -3204,7 +3204,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = SpikesIfTargetFaints
 Flags = CanProtect
-Description = A large spike is shot at the target. If this causes the target to faint, a layer of spikes is set on the ground beneath them.
+Description = A large spike is shot at the target. If this causes the target to faint, a layer of Spikes is set on the ground beneath them.
 Animation = SPIKECANNON
 #-------------------------------
 [IRONARROW]
@@ -3292,7 +3292,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartPolarizeTypeMatchups8
-Description = The user creates a high quality area for 8 turns in which super-effective deals 25% more, and not very effective deals 25% less.
+Description = The user creates a high quality area for eight turns in which super-effective deals 25% more, and not very effective deals 25% less.
 Animation = WONDERROOM
 #-------------------------------
 [RAILCANNON]
@@ -3875,7 +3875,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = FlameSpikes
 Flags = CanProtect,Pulse
-Description = The user launches volcanic debris, dealing damage and setting a layer of flame spikes around the target.
+Description = The user launches volcanic debris, dealing damage and setting a layer of burning spikes around the target.
 Animation = FLAMEBURST
 #-------------------------------
 [UPINFLAMES]
@@ -4044,7 +4044,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = HealUserThirdOfTotalHPDamagingMove
 Flags = CanProtect
-Description = The user douses the target, healing itself by a third of its max HP in the process.
+Description = The user douses the target, healing itself by 33% of its max HP in the process.
 Animation = BRINE
 #-------------------------------
 [ERODINGFOAM]
@@ -4982,7 +4982,7 @@ Target = NearOther
 FunctionCode = GutCheck
 Flags = CanProtect
 EffectChance = 100
-Description = The user attacks with courage. Sets spikes if Full. If Hangry, deals double damage and is Dark-type.
+Description = The user attacks with courage. Sets Spikes if Full. If Hangry, deals double damage and is Dark-type.
 Animation = SPARK
 #-------------------------------
 [HEALTHYCHEER]
@@ -4994,7 +4994,7 @@ TotalPP = 5
 Target = NearAlly
 FunctionCode = HealTargetHalfOfTotalHPAndCureStatus
 Flags = CanProtect,CanMagicCoat,Dance
-Description = The user dances to restore an ally by 50% max HP. They're cured of any status conditions.
+Description = The user dances to restore an ally by half of their max HP. They're cured of any status conditions.
 Animation = HEALPULSE
 #-------------------------------
 [INERTIASHOCK]
@@ -5525,7 +5525,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapOffensiveAndDefensiveStats8
-Description = The user creates an odd area for 8 turns in which Pokémon's offensive and defensive stats are swapped.
+Description = The user creates an odd area for eight turns in which Pokémon's offensive and defensive stats are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [OMNISCIENTBLOW]
@@ -6148,7 +6148,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = FrostSpikes
 Flags = CanProtect,Sound
-Description = The user incants a snowy hex, dealing damage and setting a layer of frost spikes around the target.
+Description = The user incants a snowy hex, dealing damage and setting a layer of frozen spikes around the target.
 Animation = PERISHSONG
 #-------------------------------
 [SUBLIMATE]
@@ -6610,7 +6610,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = FaintsTargetBelowQuarterOfTotalHP
 Flags = CanProtect
-Description = The user tries to pick off a weak target. After damage, if the target is below 1/4 HP, they instantly faint.
+Description = The user tries to pick off a weak target. After damage, if the target is below 25% HP, they instantly faint.
 Animation = NIGHTSLASH
 #-------------------------------
 [DARKALLURE]
@@ -6977,7 +6977,7 @@ TotalPP = 5
 Target = AllNearOthers
 FunctionCode = UserFaintsExplosiveScalesWithEnemySideSpikes
 Flags = CanProtect
-Description = Explodes, dealing an extra 30 base power to all foes for each layer of spikes underneath them. The user faints.
+Description = Explodes, dealing an extra 30 base power to all foes for each layer of Spikes underneath them. The user faints.
 Animation = EXPLOSION
 #-------------------------------
 [SPOTTING]
@@ -7135,7 +7135,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = ScalesCreatedMoney
 Flags = CanProtect
-Description = The user hits the target with a generous donation. Consumes up to 1000 scattered coins. Base power is boosted by 10 for every 100 coins consumed.
+Description = The target is hit with a generous donation. Consumes up to 1000 scattered coins. Base power is boosted by 10 for every 100 consumed.
 Animation = PAYDAY
 #-------------------------------
 [CRUELKISS]
@@ -7467,7 +7467,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapAttackingStats8
-Description = The user creates a puzzling area for 8 turns in which Pokémon's base Attack and Sp. Atk are swapped.
+Description = The user creates a puzzling area for eight turns in which Pokémon's base Attack and Sp. Atk are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [SUGARBALL]
