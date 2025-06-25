@@ -3244,7 +3244,6 @@ Weight = 1.0
 Kind = Poison Gas
 Pokedex = Getting up close to a Koffing will give you a chance to observe, through its thin skin, the toxic gasses swirling inside. It blows up at the slightest stimulation.
 Generation = 1
-WildItemUncommon = SMOKEBALL
 Evolutions = WEEZING,Level,35,GWEEZING,Item,GALARICAWREATH
 #-------------------------------
 [WEEZING]
@@ -3266,7 +3265,6 @@ Weight = 9.5
 Kind = Poison Gas
 Pokedex = Top-grade perfume is made using its internal poison gasses by diluting them to the highest level.
 Generation = 1
-WildItemUncommon = SMOKEBALL
 #-------------------------------
 [GWEEZING]
 Name = G. Weezing
@@ -3288,7 +3286,6 @@ Weight = 16.0
 Kind = Poison Gas
 Pokedex = Long ago, during a time when droves of factories fouled the air with pollution, Weezing changed into this form for some reason.
 Generation = 8
-WildItemUncommon = SMOKEBALL
 #-------------------------------
 [RHYHORN]
 Name = Rhyhorn
@@ -18153,7 +18150,6 @@ Weight = 4.8
 Kind = Toxic Lizard
 Pokedex = The males will do whatever the females tell them. They give the females most of their food.
 Generation = 7
-WildItemUncommon = SMOKEBALL
 Evolutions = SALAZZLE,Level,30
 #-------------------------------
 [SALAZZLE]
@@ -18175,7 +18171,6 @@ Weight = 22.2
 Kind = Toxic Lizard
 Pokedex = Salazzle lives deep in caves and forces the Salandit it has attracted with its pheromones to serve it.
 Generation = 7
-WildItemUncommon = SMOKEBALL
 #-------------------------------
 [STUFFUL]
 Name = Stufful
