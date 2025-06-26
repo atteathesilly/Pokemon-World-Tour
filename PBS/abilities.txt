@@ -572,7 +572,6 @@ Description = It can't be knocked out with one hit.
 [SUPERLUCK]
 Name = Super Luck
 Description = Quadruples the critical hit chance of random crit moves.
-Flags = EnablesRandomCrits
 #-------------------------------
 [SWIFTSWIM]
 Name = Swift Swim
