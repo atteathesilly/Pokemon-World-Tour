@@ -2012,7 +2012,7 @@ Description = Between each turn there's another turn where no one moves.
 #-------------------------------
 [TOILANDTROUBLE]
 Name = Toil and Trouble
-Description = Foes suffer 50% more stat reduction from burn, frostbite, and numb.
+Description = Foes suffer 50% more move damage reduction from burn, frostbite, and numb.
 #-------------------------------
 [TOLLTHEBELLS]
 Name = Toll the Bells
