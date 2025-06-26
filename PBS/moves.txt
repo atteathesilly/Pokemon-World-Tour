@@ -6252,8 +6252,8 @@ Description = The user lowers the target's Attack and Sp. Atk by two steps. Then
 [PAYBACK]
 Name = Payback
 Type = DARK
-Category = Physical
-Power = 50
+Category = Adaptive
+Power = 60
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
