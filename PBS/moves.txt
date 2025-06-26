@@ -262,7 +262,7 @@ Description = An attack that hits first and makes the target flinch. It only wor
 [FLAIL]
 Name = Flail
 Type = NORMAL
-Category = Physical
+Category = Adaptive
 Power = 1
 Accuracy = 100
 TotalPP = 12
@@ -1538,31 +1538,6 @@ Priority = 3
 FunctionCode = ProtectUserSideFromPriorityMoves
 Flags = CanSnatch
 Description = The user protects itself and its allies from priority moves. It always fails if it is used in succession.
-#-------------------------------
-[REVENGE]
-Name = Revenge
-Type = FIGHTING
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Priority = -4
-FunctionCode = DoubleDamageTargetHitUser
-Flags = CanProtect
-Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
-#-------------------------------
-[REVERSAL]
-Name = Reversal
-Type = FIGHTING
-Category = Physical
-Power = 1
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = ScalesWithLostHP
-Flags = CanProtect
-Description = An all-out attack that becomes more powerful the less HP the user has.
 #-------------------------------
 [SACREDSWORD]
 Name = Sacred Sword

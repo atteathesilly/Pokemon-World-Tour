@@ -1188,7 +1188,7 @@ Pokemon = CACTURNE,60
     Moves = SINISTERSPINES,SUCKERPUNCH,GRIMEGRAPPLE,SWORDSDANCE
     AbilityIndex = 0 # Heartless
 Pokemon = ARCTOVISH,60
-    Moves = PRESSUREBURST,SUBLIMATE,REVENGE,RECOVER
+    Moves = PRESSUREBURST,SUBLIMATE,BODYPRESS,RECOVER
     AbilityIndex = 1 # Analytic
     Item = LUMBERAXE
 #-------------------------------
@@ -2924,7 +2924,7 @@ Pokemon = TOXAPEX,48
     AbilityIndex = 1 # Regenerator
     Item = ROCKYHELMET
 Pokemon = KROOKODILE,47
-    Moves = EARTHQUAKE,STAREDOWN,CRUNCH,REVERSAL
+    Moves = EARTHQUAKE,STAREDOWN,CRUNCH,PURSUIT
     AbilityIndex = 1 # Regenerator
     Item = ASSAULTVEST
 Pokemon = MANERGETIC,47
@@ -4017,7 +4017,7 @@ Pokemon = DRACOVISH,53
     Moves = PSYCHICFANGS,FISHIOUSREND,GALLINGSPIT,CRUNCH
     AbilityIndex = 0 # Live Fast
 Pokemon = ARCTOVISH,52
-    Moves = PRESSUREBURST,PIERCINGDOUBT,SUBLIMATE,REVENGE
+    Moves = PRESSUREBURST,PIERCINGDOUBT,SUBLIMATE,BODYPRESS
     AbilityIndex = 0 # Burdened
     Item = CADOBERRY
 #-------------------------------
@@ -7320,7 +7320,7 @@ Pokemon = MAGCARGO,58
 #-------------------------------
 [BIKER,Knoxx]
 Pokemon = SCRAFTY,57
-    Moves = BROWBEAT,GRIMEGRAPPLE,REVERSAL,SUBSTITUTE
+    Moves = BROWBEAT,GRIMEGRAPPLE,FLAIL,SUBSTITUTE
     AbilityIndex = 0 # Shed Skin
 Pokemon = GUMSHOOS,57
     Moves = REND,BRAINFREEZE,AGONIZE,SHORTCIRCUIT
