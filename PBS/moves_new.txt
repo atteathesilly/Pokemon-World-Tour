@@ -852,6 +852,19 @@ Flags = CanSnatch,Dance
 Description = The user raises all of their stats by two steps. Fails unless a foe fainted last turn.
 Animation = WORKUP
 #-------------------------------
+[FRONTKICK]
+Name = Front Kick
+Type = FIGHTING
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect
+Description = The user strikes the target with a basic frontal kicking technique.
+Animation = LOWKICK
+#-------------------------------
 [NERVEBLOCK]
 Name = Nerve Block
 Type = FIGHTING
@@ -2797,6 +2810,19 @@ FunctionCode = DisableTargetLastMoveUsedReduceItsPPBy5
 Flags = CanProtect,CanMagicCoat
 Description = Disables the target's last used move for five turns, and cuts 5 PP from it.
 Animation = DISABLE
+#-------------------------------
+[GHOSTLYGRASP]
+Name = Ghostly Grasp
+Type = GHOST
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ScalesTargetsWeight
+Flags = CanProtect
+Description = Spectral hands reach from the ground to trip the target. The heavier the target, the greater the damage.
+Animation = CRUSHGRIP
 #-------------------------------
 [HONEYSLATHER]
 Name = Honey Slather

@@ -60,7 +60,7 @@ Pokemon = GEODUDE,8
     Moves = ROCKTHROW,RUMBLE,ROCKPOLISH
     AbilityIndex = 0 # Unbreakable
 Pokemon = TIMBURR,9
-    Moves = POUND,LOWKICK,LEAFAGE
+    Moves = POUND,FRONTKICK,LEAFAGE
     AbilityIndex = 0 # Expertise
 #-------------------------------
 [GENTLEMAN,Wilfrid]
@@ -1933,7 +1933,7 @@ Pokemon = BEWEAR,55
 #-------------------------------
 [BOARDER,Alex]
 Pokemon = HITMONTOP,35
-    Moves = BRUTALSWING,FAKEOUT,MACHPUNCH,LOWKICK
+    Moves = BRUTALSWING,FAKEOUT,MACHPUNCH,SCYTHEKICK
     AbilityIndex = 0 # Intimidate
     Item = EJECTBUTTON
 Pokemon = NINJASK,35
@@ -2154,7 +2154,7 @@ Pokemon = LEAVANNY,42
     Moves = LEAFBLADE,XSCISSOR,PALEBLADE,SWORDSDANCE
     AbilityIndex = 1 # Bladebrained
 Pokemon = SCRAFTY,42
-    Moves = LOWKICK,SUCKERPUNCH,BROWBEAT,SCHEME
+    Moves = SCYTHEKICK,SUCKERPUNCH,BROWBEAT,SCHEME
     AbilityIndex = 1 # Moxie
 Pokemon = RAPIDASH,41
     Moves = TRAMPLE,BLAZEKICK,BOUNCE,IGNITE
