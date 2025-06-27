@@ -4716,8 +4716,8 @@ Evolutions = DRAGONAIR,Level,30
 Name = Dragonair
 Type1 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 75,70,70,55,70,75
-# Total = 415
+BaseStats = 75,80,75,55,75,80
+# Total = 440
 BaseEXP = 147
 Rareness = 50
 Happiness = 60
@@ -10093,8 +10093,8 @@ Name = Salamence
 Type1 = DRAGON
 Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 95,135,80,100,80,60
-# Total = 550
+BaseStats = 95,135,80,100,85,65
+# Total = 560
 BaseEXP = 270
 Rareness = 35
 Happiness = 35
@@ -11448,8 +11448,8 @@ Name = Gabite
 Type1 = DRAGON
 Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,90,65,80,50,55
-# Total = 410
+BaseStats = 80,90,75,80,60,60
+# Total = 445
 BaseEXP = 144
 Rareness = 50
 Abilities = ROUGHSKIN,SANDSHROUD
@@ -15417,8 +15417,8 @@ Name = Zweilous
 Type1 = DARK
 Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 85,55,70,55,85,70
-# Total = 420
+BaseStats = 85,60,70,60,90,70
+# Total = 435
 BaseEXP = 147
 Rareness = 50
 Happiness = 35
@@ -18687,8 +18687,8 @@ Name = Hakamo-o
 Type1 = DRAGON
 Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 55,75,90,65,75,70
-# Total = 430
+BaseStats = 60,80,90,65,80,75
+# Total = 450
 BaseEXP = 147
 Rareness = 50
 Happiness = 50
@@ -20890,8 +20890,8 @@ Name = Drakloak
 Type1 = DRAGON
 Type2 = GHOST
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 80,90,60,110,70,60
-# Total = 470
+BaseStats = 70,90,60,100,60,60
+# Total = 440
 BaseEXP = 144
 Rareness = 50
 Happiness = 50
