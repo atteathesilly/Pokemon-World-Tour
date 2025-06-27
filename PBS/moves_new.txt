@@ -861,7 +861,7 @@ Accuracy = 100
 TotalPP = 25
 Target = NearOther
 FunctionCode = Basic
-Flags = CanProtect
+Flags = CanProtect,Kicking
 Description = The user strikes the target with a basic frontal kicking technique.
 Animation = LOWKICK
 #-------------------------------
