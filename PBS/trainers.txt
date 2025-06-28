@@ -820,42 +820,42 @@ Pokemon = FLORGES,40
     EV = 20,20,10,0,20,0
 #-------------------------------
 [COOLTRAINER_M7,Emir]
-Pokemon = ILLUMISE,45
-    Moves = STRUGGLEBUG,WISH,REFLECT,LIGHTSCREEN
-    AbilityIndex = 0 # Prankster
-    Item = LIGHTCLAY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
-Pokemon = EMPOLEON,45
-    Moves = SURF,YAWN,PROTECT,FLECHETTES
-    AbilityIndex = 0 # Imperious
-    Item = LEFTOVERS
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
 Pokemon = CROBAT,45
-    Moves = UTURN,TOXICTASTE,DIVININGTALON,LEECHLIFE
-    AbilityIndex = 1 # Infiltrator
-    Item = LIFEORB
+    Moves = EXSANGUINATE,ACROBATICS,INFERNOIMPACT,TAILWIND
+    AbilityIndex = 0 # Inner Focus
+    Item = POISONGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
-Pokemon = SLOWKING,45
-    Moves = CALMMIND,YAWN,PIERCINGDOUBT,SLACKOFF
-    AbilityIndex = 1 # Realist
+Pokemon = DURANT,45
+    Moves = XSCISSOR,IRONHEAD,PROTECT,EARTHQUAKE
+    AbilityIndex = 0 # Hustle
+    Item = WIDELENS
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = MIGHTYENA,45
+    Moves = WETWORK,SUCKERPUNCH,PROTECT,HUMBLE
+    AbilityIndex = 0 # Intimidate
+    Item = LUCKHERB
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = WEAVILE,45
+    Moves = FRIGIDJEALOUSY,SEVER,PSYCHOSCISSION,FAKEOUT
+    AbilityIndex = 0 # Inner Focus
+    Item = LIFEORB
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 9,20,0,20,20,1
+Pokemon = EELEKTROSS,45
+    Moves = TOXICTASTE,ELECTROSLASH,NUMB,PROTECT
+    AbilityIndex = 0 # Levitate
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
-Pokemon = EELEKTROSS,45
-    Moves = COIL,GUNKSHOT,LEECHLIFE,ELECTROSLASH
-    AbilityIndex = 0 # Levitate
-    Item = SITRUSBERRY
+Pokemon = SIMIPOUR,45
+    Moves = BODYSLAM,SNIPESHOT,FAKEOUT,ACROBATICS
+    AbilityIndex = 1 # Unburden
+    Item = NORMALGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,10,0,20,0
-Pokemon = MIGHTYENA,45
-    Moves = CRUNCH,YAWN,PARTINGSHOT,CRUELTY
-    AbilityIndex = 0 # Intimidate
-    Item = DARKGEM
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
+    EV = 8,20,6,10,20,6
 #-------------------------------
 [COOLTRAINER_F7,Nyx]
 Policies = MOONGLOW_TEAM
@@ -898,13 +898,13 @@ Pokemon = ADUGTRIO,55
 #-------------------------------
 [COOLTRAINER_M7,Nero]
 Pokemon = MORPEKO,65
-    Moves = GUTCHECK,TAUNT,BELLYDRUM,RAPIDSPIN
+    Moves = GUTCHECK,TAUNT,FAKEOUT,RAPIDSPIN
     AbilityIndex = 0 # Hunger Switch
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = VENUSAUR,65
-    Moves = SAPPINGJEALOUSY,LEECHSEED,POWERWHIP,SLUDGEWAVE
+    Moves = SAPPINGJEALOUSY,SAPPINGSEED,POWERWHIP,MIASMA
     AbilityIndex = 0 # Poison Absorb
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -922,14 +922,14 @@ Pokemon = BLASTOISE,65
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,0,20,10
 Pokemon = CHARIZARD,65
-    Moves = OVERHEAT,DRACOMETEOR,WILDFIREMELT,REND
+    Moves = OVERHEAT,DRACOMETEOR,DETACHMENT,REND
     AbilityIndex = 0 # Pure Rage
     Item = WHITEHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = LYCANROC,65
     Form = 2 # Dusk Form
-    Moves = PSYCHICFANGS,ADAMANTINEPRESS,CLOSECOMBAT,SWORDSDANCE
+    Moves = PSYCHICFANGS,ROCKALANCHE,CLOSECOMBAT,ACCELEROCK
     AbilityIndex = 0 # Tough Claws
     Item = CHOPLEBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
