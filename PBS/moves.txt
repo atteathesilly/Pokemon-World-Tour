@@ -262,7 +262,7 @@ Description = An attack that hits first and makes the target flinch. It only wor
 [FLAIL]
 Name = Flail
 Type = NORMAL
-Category = Physical
+Category = Adaptive
 Power = 1
 Accuracy = 100
 TotalPP = 12
@@ -1152,6 +1152,18 @@ FunctionCode = RampagePreventSleeping
 Flags = CanProtect,Sound
 Description = The user attacks in an uproar, going on a rampage for two turns. Over that time, no one can fall asleep.
 #-------------------------------
+[WAKEUPSLAP]
+Name = Wake-Up Slap
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = WakeUpSlap
+Flags = CanProtect
+Description = This attack inflicts double damage on a sleeping target. It also wakes the target up, however.
+#-------------------------------
 [WISH]
 Name = Wish
 Type = NORMAL
@@ -1209,8 +1221,8 @@ Accuracy = 0
 TotalPP = 15
 Target = NearOther
 FunctionCode = AlwaysHits
-Flags = CanProtect,Pulse
-Description = The user looses a blast of aura power from deep within its body. This move is certain to hit.
+Flags = Pulse
+Description = The user looses a blast of aura from deep within its body. Can't miss and skips protections.
 #-------------------------------
 [BODYPRESS]
 Name = Body Press
@@ -1527,31 +1539,6 @@ FunctionCode = ProtectUserSideFromPriorityMoves
 Flags = CanSnatch
 Description = The user protects itself and its allies from priority moves. It always fails if it is used in succession.
 #-------------------------------
-[REVENGE]
-Name = Revenge
-Type = FIGHTING
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Priority = -4
-FunctionCode = DoubleDamageTargetHitUser
-Flags = CanProtect
-Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
-#-------------------------------
-[REVERSAL]
-Name = Reversal
-Type = FIGHTING
-Category = Physical
-Power = 1
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = ScalesWithLostHP
-Flags = CanProtect
-Description = An all-out attack that becomes more powerful the less HP the user has.
-#-------------------------------
 [SACREDSWORD]
 Name = Sacred Sword
 Type = FIGHTING
@@ -1623,7 +1610,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserAtkDef2
 Flags = CanProtect
-Description = The user attacks the target with great power. However, it also lowers the user's Attack and Defense.
+Description = The user attacks the target with great power. This lowers the user's Attack and Defense by two steps.
 #-------------------------------
 [THUNDEROUSKICK]
 Name = Thunderous Kick
@@ -1650,18 +1637,6 @@ Priority = 1
 FunctionCode = Basic
 Flags = CanProtect
 Description = The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first.
-#-------------------------------
-[WAKEUPSLAP]
-Name = Wake-Up Slap
-Type = FIGHTING
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = WakeUpSlap
-Flags = CanProtect
-Description = This attack inflicts double damage on a sleeping target. It also wakes the target up, however.
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
@@ -2372,7 +2347,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = Spikes
 Flags = CanMagicCoat
-Description = The user lays spikes at the foe's feet. Foes that switch into battle are hurt a bit for each layer.
+Description = The user lays Spikes at the foe's feet. Foes that switch into battle are hurt a bit for each layer.
 #-------------------------------
 [STOMPINGTANTRUM]
 Name = Stomping Tantrum
@@ -4146,7 +4121,7 @@ TotalPP = 12
 Target = User
 FunctionCode = LowerUserDefSpDef2RaiseUserAtkSpAtkSpd3
 Flags = CanSnatch
-Description = The user breaks its shell, lowering its Defense and Sp. Def by two steps but raising attacking and Speed stats by three steps.
+Description = The user breaks its shell, lowering its Defense and Sp. Def by two steps but raising Attack, Sp. Atk and Speed by three steps.
 #-------------------------------
 [SNIPESHOT]
 Name = Snipe Shot
@@ -4424,7 +4399,7 @@ Type = GRASS
 Category = Special
 Power = 1
 Accuracy = 100
-TotalPP = 15
+TotalPP = 20
 Target = NearOther
 FunctionCode = ScalesTargetsWeight
 Flags = CanProtect
@@ -5199,7 +5174,7 @@ TotalPP = 5
 Target = NearAlly
 FunctionCode = HealTargetHalfOfTotalHP
 Flags = CanProtect,CanMagicCoat,Pulse
-Description = The user emits a healing pulse which restores the target's HP by up to half of its max HP.
+Description = The user emits a healing pulse which restores the target's HP by half of its max HP.
 #-------------------------------
 [HEARTSTAMP]
 Name = Heart Stamp
@@ -5756,7 +5731,7 @@ TotalPP = 5
 Target = User
 FunctionCode = RaiseUserMainStats2LoseThirdOfTotalHP
 Flags = CanSnatch,Sound
-Description = The user raises all its stats by two steps, at the cost of 1/3rd of its max HP.
+Description = The user raises all its stats by two steps, at the cost of 33% of its max HP.
 #-------------------------------
 [COREENFORCER]
 Name = Core Enforcer
@@ -6025,7 +6000,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = SpikesFirstLayerOnly
 Flags = CanProtect,Blade
-Description = The user slashes its shell blade, leaving spikes under the target if none have already been placed.
+Description = The user slashes its shell blade, leaving Spikes under the target if none have already been placed.
 Animation = NIGHTSLASH
 #-------------------------------
 [CONFIDE]
@@ -6277,8 +6252,8 @@ Description = The user lowers the target's Attack and Sp. Atk by two steps. Then
 [PAYBACK]
 Name = Payback
 Type = DARK
-Category = Physical
-Power = 50
+Category = Adaptive
+Power = 60
 Accuracy = 100
 TotalPP = 10
 Target = NearOther

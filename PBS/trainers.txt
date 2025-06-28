@@ -60,7 +60,7 @@ Pokemon = GEODUDE,8
     Moves = ROCKTHROW,RUMBLE,ROCKPOLISH
     AbilityIndex = 0 # Unbreakable
 Pokemon = TIMBURR,9
-    Moves = POUND,LOWKICK,LEAFAGE
+    Moves = POUND,FRONTKICK,LEAFAGE
     AbilityIndex = 0 # Expertise
 #-------------------------------
 [GENTLEMAN,Wilfrid]
@@ -162,7 +162,7 @@ Pokemon = BINACLE,15
 Pokemon = RIOLU,15
     Name = Sangfroid
     Gender = female
-    Moves = MAGNETWAVE,NERVEBLOCK,VALORBOLT,VANGUARD
+    Moves = MAGNETWAVE,NERVEBLOCK,AURAPULSE,VANGUARD
     AbilityIndex = 1 # Inner Focus
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -182,7 +182,7 @@ Pokemon = PANCHAM,15
 Pokemon = BINACLE,15
     Item = SITRUSBERRY
 Pokemon = RIOLU,15
-    Moves = MAGNETWAVE,SLINGSHOT,VALORBOLT,VANGUARD
+    Moves = MAGNETWAVE,SLINGSHOT,AURAPULSE,VANGUARD
 Pokemon = EKANS,15
     Position = 4
     Moves = ACID,BITE,GLARE,WIPEOUT
@@ -229,7 +229,7 @@ Pokemon = LARVESTA,18
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = WHISMUR,17
-    Moves = VALORBOLT,SCREECH,ECHOEDVOICE,SHOUT
+    Moves = AURAPULSE,SCREECH,ECHOEDVOICE,SHOUT
     AbilityIndex = 1 # Loud
     Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -540,7 +540,7 @@ Pokemon = APPLIN,24
 #-------------------------------
 [GUITARIST3,Mai]
 Pokemon = LOUDRED,24
-    Moves = SHOUT,VALORBOLT,ROUND,HARSHVOICE
+    Moves = SHOUT,AURAPULSE,ROUND,HARSHVOICE
     AbilityIndex = 1 # Loud
 Pokemon = GPONYTA,24
     Moves = MISHAP,HEARTSTAMP,GROWL,AGILITY
@@ -1188,7 +1188,7 @@ Pokemon = CACTURNE,60
     Moves = SINISTERSPINES,SUCKERPUNCH,GRIMEGRAPPLE,SWORDSDANCE
     AbilityIndex = 0 # Heartless
 Pokemon = ARCTOVISH,60
-    Moves = PRESSUREBURST,SUBLIMATE,REVENGE,RECOVER
+    Moves = PRESSUREBURST,SUBLIMATE,BODYPRESS,RECOVER
     AbilityIndex = 1 # Analytic
     Item = LUMBERAXE
 #-------------------------------
@@ -1787,7 +1787,7 @@ Pokemon = WEAVILE,35
     Moves = SEVER,FROSTBARB,ICESHARD,METALCLAW
     AbilityIndex = 0 # Inner Focus
 Pokemon = HYPNO,35
-    Moves = DREAMFEAST,WAKEUPSLAP,CONFUSERAY,PACIFY
+    Moves = DREAMFEAST,BRICKBREAK,CONFUSERAY,PACIFY
     AbilityIndex = 0 # Bad Dreams
 Pokemon = ALTARIA,35
     Moves = DRAGONCLAW,FROLIC,BOREALWIND,DAZZLINGGLEAM
@@ -1933,7 +1933,7 @@ Pokemon = BEWEAR,55
 #-------------------------------
 [BOARDER,Alex]
 Pokemon = HITMONTOP,35
-    Moves = BRUTALSWING,FAKEOUT,MACHPUNCH,LOWKICK
+    Moves = BRUTALSWING,FAKEOUT,MACHPUNCH,SCYTHEKICK
     AbilityIndex = 0 # Intimidate
     Item = EJECTBUTTON
 Pokemon = NINJASK,35
@@ -2092,25 +2092,26 @@ Pokemon = SWALOT,39
     AbilityIndex = 0 # Thick Fat
 #-------------------------------
 [CEO,Beatrice]
+Policies = PRESERVE_LAST_POKEMON
 Flags = NoPerfect
-Pokemon = HELIOLISK,40
-    Moves = BEAMSTRUGGLE,WEATHERBURST,BUBBLEBLASTER,DRAGONPULSE
-    AbilityIndex = 1 # Water Absorb
-    Item = AIRBALLOON
-Pokemon = HEATMOR,40
-    Moves = STRENGTHSAP,FIRELASH,FLAMESPIKES,FARADAYCAGE
-    AbilityIndex = 0 # Firefighter
-Pokemon = DOUBLADE,40
-    Moves = SWORDSDANCE,SHADOWSNEAK,GYROBALL,PAINSPLIT
-    AbilityIndex = 0 # Full Metal Body
-    Item = EVIOLITE
-Pokemon = FURFROU,40
-    Moves = LOUNGE,LAUNDER,FOULPLAY,ENERGYBALL
-    AbilityIndex = 0 # Stylish
-Pokemon = PANGORO,40
-    Moves = HATEFULHAYMAKER,DRAINPUNCH,GRIMEGRAPPLE,FACADE
-    AbilityIndex = 0 # Big Boss
-    Item = STRIKEVEST
+Pokemon = MNINETALES,40
+    Moves = SHADOWBALL,CHACHING,FRAGMENTATION,PIERCINGDOUBT
+    AbilityIndex = 0 # Gild
+    Item = AMULETCOIN
+Pokemon = GWEEZING,40
+    Moves = CHACHING,CLEARSMOG,CHARITY,SELFDESTRUCT
+    AbilityIndex = 1 # Industrialize
+Pokemon = PERRSERKER,40
+    Moves = PLUNDER,SUPERPOWER,UTURN,CHACHING
+    AbilityIndex = 1 # Steely Spirit
+Pokemon = COFAGRIGUS,40
+    Moves = PHARAOHSCURSE,CRIMSONSTORM,DESTINYBOND,WILLOWISP
+    AbilityIndex = 0 # Mummy
+    Item = LEFTOVERS
+Pokemon = PERSIAN,40
+    Moves = SWORDSDANCE,SLASH,PSYCHOSCISSION,ELECTROSLASH
+    AbilityIndex = 0 # Cash Out
+    Item = WHETSTONE
 #-------------------------------
 [BIRDKEEPER_M,Kendall]
 Pokemon = DODRIO,40
@@ -2153,7 +2154,7 @@ Pokemon = LEAVANNY,42
     Moves = LEAFBLADE,XSCISSOR,PALEBLADE,SWORDSDANCE
     AbilityIndex = 1 # Bladebrained
 Pokemon = SCRAFTY,42
-    Moves = LOWKICK,SUCKERPUNCH,BROWBEAT,SCHEME
+    Moves = SCYTHEKICK,SUCKERPUNCH,BROWBEAT,SCHEME
     AbilityIndex = 1 # Moxie
 Pokemon = RAPIDASH,41
     Moves = TRAMPLE,BLAZEKICK,BOUNCE,IGNITE
@@ -2924,7 +2925,7 @@ Pokemon = TOXAPEX,48
     AbilityIndex = 1 # Regenerator
     Item = ROCKYHELMET
 Pokemon = KROOKODILE,47
-    Moves = EARTHQUAKE,STAREDOWN,CRUNCH,REVERSAL
+    Moves = EARTHQUAKE,STAREDOWN,CRUNCH,PURSUIT
     AbilityIndex = 1 # Regenerator
     Item = ASSAULTVEST
 Pokemon = MANERGETIC,47
@@ -3680,7 +3681,7 @@ Pokemon = GENGAR,40
     AbilityIndex = 1 # Break Through
     Item = POISONGEM
 Pokemon = BLAZIKEN,40
-    Moves = BLAZEKICK,AURASPHERE,CRIMSONSTORM,STRAFE
+    Moves = BLAZEKICK,ADRENALASH,CRIMSONSTORM,STRAFE
     AbilityIndex = 1 # Pecking Order
 #-------------------------------
 [LASS2,Faye]
@@ -4017,7 +4018,7 @@ Pokemon = DRACOVISH,53
     Moves = PSYCHICFANGS,FISHIOUSREND,GALLINGSPIT,CRUNCH
     AbilityIndex = 0 # Live Fast
 Pokemon = ARCTOVISH,52
-    Moves = PRESSUREBURST,PIERCINGDOUBT,SUBLIMATE,REVENGE
+    Moves = PRESSUREBURST,PIERCINGDOUBT,SUBLIMATE,BODYPRESS
     AbilityIndex = 0 # Burdened
     Item = CADOBERRY
 #-------------------------------
@@ -4232,7 +4233,7 @@ Pokemon = SEISMITOAD,50
 Pokemon = WIGGLYTUFF,50
     Name = Wren Glass
     Gender = male
-    Moves = UPROAR,TRANQUILTUNE,PLAYROUGH,PROTECT
+    Moves = UPROAR,LULLABY,PLAYROUGH,PROTECT
     AbilityIndex = 1 # Maestro
     Item = THROATSPRAY
 Pokemon = KROOKODILE,50
@@ -4781,7 +4782,7 @@ Pokemon = SEISMITOAD,60
 Pokemon = WIGGLYTUFF,60
     Name = Wren Glass
     Gender = male
-    Moves = UPROAR,TRANQUILTUNE,PLAYROUGH,PROTECT
+    Moves = UPROAR,LULLABY,PLAYROUGH,PROTECT
     AbilityIndex = 1 # Maestro
     Item = THROATSPRAY
 Pokemon = KROOKODILE,60
@@ -6195,7 +6196,7 @@ Pokemon = SEISMITOAD,70
 Pokemon = WIGGLYTUFF,70
     Name = Wren Glass
     Gender = male
-    Moves = UPROAR,TRANQUILTUNE,PLAYROUGH,PROTECT
+    Moves = UPROAR,LULLABY,PLAYROUGH,PROTECT
     AbilityIndex = 1 # Maestro
     Item = THROATSPRAY
 Pokemon = KROOKODILE,70
@@ -7320,7 +7321,7 @@ Pokemon = MAGCARGO,58
 #-------------------------------
 [BIKER,Knoxx]
 Pokemon = SCRAFTY,57
-    Moves = BROWBEAT,GRIMEGRAPPLE,REVERSAL,SUBSTITUTE
+    Moves = BROWBEAT,GRIMEGRAPPLE,FLAIL,SUBSTITUTE
     AbilityIndex = 0 # Shed Skin
 Pokemon = GUMSHOOS,57
     Moves = REND,BRAINFREEZE,AGONIZE,SHORTCIRCUIT
@@ -8082,7 +8083,7 @@ Pokemon = PAPELLUMEN,70
     AbilityIndex = 1 # Erudite
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,21]
-Flags = NoPerfect,PlayerTeam:Wolfunters64
+Flags = NoPerfect,PlayerTeam:Wolfhunters64
 Pokemon = SAMUROTT,70
     AbilityIndex = 1 # Swordplay
 Pokemon = CHESNAUGHT,70

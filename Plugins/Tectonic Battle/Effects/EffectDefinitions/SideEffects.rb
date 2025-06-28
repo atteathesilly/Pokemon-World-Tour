@@ -693,3 +693,12 @@ GameData::BattleEffect.register_effect(:Side, {
         end
     end,
 })
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :PayDay,
+    :real_name => "Money Dropped",
+    :type => :Integer,
+    :increment_proc => proc do |battle, _side, teamName, _value, increment|
+        battle.pbDisplay(_INTL("{1} coins were scattered to the ground!", increment))
+    end,
+})
