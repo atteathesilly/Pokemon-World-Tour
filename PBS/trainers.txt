@@ -162,7 +162,7 @@ Pokemon = BINACLE,15
 Pokemon = RIOLU,15
     Name = Sangfroid
     Gender = female
-    Moves = MAGNETWAVE,NERVEBLOCK,VALORBOLT,VANGUARD
+    Moves = MAGNETWAVE,NERVEBLOCK,AURAPULSE,VANGUARD
     AbilityIndex = 1 # Inner Focus
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -182,7 +182,7 @@ Pokemon = PANCHAM,15
 Pokemon = BINACLE,15
     Item = SITRUSBERRY
 Pokemon = RIOLU,15
-    Moves = MAGNETWAVE,SLINGSHOT,VALORBOLT,VANGUARD
+    Moves = MAGNETWAVE,SLINGSHOT,AURAPULSE,VANGUARD
 Pokemon = EKANS,15
     Position = 4
     Moves = ACID,BITE,GLARE,WIPEOUT
@@ -229,7 +229,7 @@ Pokemon = LARVESTA,18
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = WHISMUR,17
-    Moves = VALORBOLT,SCREECH,ECHOEDVOICE,SHOUT
+    Moves = AURAPULSE,SCREECH,ECHOEDVOICE,SHOUT
     AbilityIndex = 1 # Loud
     Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -540,7 +540,7 @@ Pokemon = APPLIN,24
 #-------------------------------
 [GUITARIST3,Mai]
 Pokemon = LOUDRED,24
-    Moves = SHOUT,VALORBOLT,ROUND,HARSHVOICE
+    Moves = SHOUT,AURAPULSE,ROUND,HARSHVOICE
     AbilityIndex = 1 # Loud
 Pokemon = GPONYTA,24
     Moves = MISHAP,HEARTSTAMP,GROWL,AGILITY
@@ -3681,7 +3681,7 @@ Pokemon = GENGAR,40
     AbilityIndex = 1 # Break Through
     Item = POISONGEM
 Pokemon = BLAZIKEN,40
-    Moves = BLAZEKICK,AURASPHERE,CRIMSONSTORM,STRAFE
+    Moves = BLAZEKICK,ADRENALASH,CRIMSONSTORM,STRAFE
     AbilityIndex = 1 # Pecking Order
 #-------------------------------
 [LASS2,Faye]

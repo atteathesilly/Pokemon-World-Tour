@@ -1221,8 +1221,8 @@ Accuracy = 0
 TotalPP = 15
 Target = NearOther
 FunctionCode = AlwaysHits
-Flags = CanProtect,Pulse
-Description = The user looses a blast of aura power from deep within its body. This move is certain to hit.
+Flags = Pulse
+Description = The user looses a blast of aura from deep within its body. Can't miss and skips protections.
 #-------------------------------
 [BODYPRESS]
 Name = Body Press

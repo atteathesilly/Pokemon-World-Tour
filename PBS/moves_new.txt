@@ -675,6 +675,18 @@ EffectChance = 100
 Description = The user contorts the target's chi with an energy pulse, damaging it and lowering its Sp. Def.
 Animation = AURASPHERE
 #-------------------------------
+[AURAPULSE]
+Name = Aura Pulse
+Type = FIGHTING
+Category = Special
+Power = 40
+Accuracy = 0
+TotalPP = 25
+Target = NearOther
+FunctionCode = AlwaysHits
+Flags = Pulse
+Description = Aura deep within the user's body is spurred to pulse outward. Can't miss and skips protections.
+#-------------------------------
 [BAR]
 Name = Bar
 Type = FIGHTING
