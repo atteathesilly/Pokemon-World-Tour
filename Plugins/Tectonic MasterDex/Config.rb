@@ -28,7 +28,7 @@ MAPS_AVAILABLE_BY_CAP = {
 			32,71,74,			# Novo Apartments, Novo Apartments Room 103, Novo Apartments Room 203
 			91,65,85,			# Reading Ribombee Cafe, Nemeth Mart, Worried Man's House
 			213,214,219,		# Velenz Menagerie, Team Chasm HQ, Stone Nest
-			217,49,243,			# Sweetrock Harbor, Tourist's House, Chasm Base Mess Hall
+			358,49,243,			# Dr. Hekata's House, Tourist's House, Chasm Base Mess Hall
 			251,305,321,	    # Samorn's House, Feebas' Fin Warehouse, Crater Station Backroom
 		],
 	25 =>
