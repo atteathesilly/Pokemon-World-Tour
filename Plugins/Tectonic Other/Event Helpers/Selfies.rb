@@ -14,18 +14,23 @@ def takeSelfie
     }
     pbWait(10)
 
-    # Set up text graphics elements
-    base   = MessageConfig.pbDefaultTextMainColor
-    shadow = MessageConfig.pbDefaultTextShadowColor
-    viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
-    viewport.z = 99999
-    overlay = BitmapSprite.new(Graphics.width, Graphics.height, viewport)
-    overlay.bitmap.font.size = 32
-    
-    # Draw the text
-    pbDrawTextPositions(overlay.bitmap,[
-      [caption,Graphics.width / 2, Graphics.height / 2 + 40, 2, base, shadow, true]
-    ])
+    if caption.length > 0
+      base   = MessageConfig.pbDefaultTextMainColor
+      shadow = MessageConfig.pbDefaultTextShadowColor
+      viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
+      viewport.z = 99999
+      selfieShaderBitmap = AnimatedBitmap.new(pbResolveBitmap("Graphics/Pictures/selfie_shader"))
+      overlay = BitmapSprite.new(Graphics.width, Graphics.height, viewport)
+
+      overlay.bitmap.blt(0,0,selfieShaderBitmap.bitmap,Rect.new(0,0,Graphics.width,Graphics.height))
+      overlay.bitmap.font.size = 24
+      overlay.z = 1
+      
+      # Draw the text
+      pbDrawTextPositions(overlay.bitmap,[
+        [caption,Graphics.width / 2, Graphics.height / 2 + 88, 2, base, shadow, false]
+      ])
+    end
 
     pbWait(30)
 
@@ -36,6 +41,8 @@ def takeSelfie
     pbWait(80)
 
     # Dispose of elements
-    overlay.dispose
-    viewport.dispose
+    if caption.length > 0
+      overlay.dispose
+      viewport.dispose
+    end
 end
