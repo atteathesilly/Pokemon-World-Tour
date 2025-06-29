@@ -242,8 +242,13 @@ module Compiler
             current_type = (values[0] && !values[0].empty?) ? values[0].to_sym : nil
             if current_type && GameData::EncounterType.exists?(current_type)   # Start of a new encounter method
               need_step_chances = false
-              step_chances[current_type] = values[1].to_i if values[1] && !values[1].empty?
-              step_chances[current_type] ||= GameData::EncounterType.get(current_type).trigger_chance
+              if current_type == :Special
+                # Special encounters skip step chances and have available level as their only parameter
+                available_levels[current_type] = values[1].to_i if values[1] && !values[1].empty?
+              else
+                step_chances[current_type] = values[1].to_i if values[1] && !values[1].empty?
+                step_chances[current_type] ||= GameData::EncounterType.get(current_type).trigger_chance
+              end
               probabilities = GameData::EncounterType.get(current_type).old_slots
               expected_lines = probabilities.length
               available_levels[current_type] = values[2].to_i if values[2] && !values[2].empty?
@@ -301,13 +306,17 @@ module Compiler
         encounter_data.types.each do |type, slots|
           next if !slots || slots.length == 0
           if encounter_data.step_chances[type] && encounter_data.step_chances[type] > 0
-            if encounter_data.available_levels[type] && encounter_data.step_chances[type] > 0
+            if encounter_data.available_levels[type] && encounter_data.available_levels[type] > 0
               f.write(sprintf("%s,%d,%d\r\n", type.to_s, encounter_data.step_chances[type], encounter_data.available_levels[type]))
             else 
               f.write(sprintf("%s,%d\r\n", type.to_s, encounter_data.step_chances[type]))
             end
           else
-            f.write(sprintf("%s\r\n", type.to_s))
+            if encounter_data.available_levels[type] && encounter_data.available_levels[type] > 0
+              f.write(sprintf("%s,%d\r\n", type.to_s, encounter_data.available_levels[type]))
+            else
+              f.write(sprintf("%s\r\n", type.to_s))
+            end
           end
           slots.each do |slot|
             if slot[2] == slot[3]
