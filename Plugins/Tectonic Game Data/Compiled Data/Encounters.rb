@@ -4,6 +4,7 @@ module GameData
       attr_accessor :map
       attr_accessor :version
       attr_reader :step_chances
+      attr_reader :available_levels
       attr_reader :types
       attr_reader :defined_in_extension
   
@@ -63,6 +64,7 @@ module GameData
         @map          = hash[:map]
         @version      = hash[:version]      || 0
         @step_chances = hash[:step_chances]
+        @available_levels = hash[:available_levels]
         @types        = hash[:types]        || {}
         @defined_in_extension = hash[:defined_in_extension] || false
       end
@@ -202,12 +204,14 @@ module Compiler
               raise _INTL("Encounters for map '{1}' are defined twice.\r\n{2}", map_number, FileLineData.linereport)
             end
             step_chances = {}
+            available_levels = {}
             # Construct encounter hash
             encounter_hash = {
               :id           => key,
               :map          => map_number,
               :version      => 0,
               :step_chances => step_chances,
+              :available_levels => available_levels,
               :types        => {},
               :defined_in_extension => !baseFile
             }
@@ -239,6 +243,7 @@ module Compiler
               step_chances[current_type] ||= GameData::EncounterType.get(current_type).trigger_chance
               probabilities = GameData::EncounterType.get(current_type).old_slots
               expected_lines = probabilities.length
+              available_levels[current_type] = values[2].to_i if values[2] && !values[2].empty?
               encounter_hash[:types][current_type] = []
             else
               raise _INTL("Undefined encounter type \"{1}\" for map '{2}'.\r\n{3}",
@@ -293,7 +298,11 @@ module Compiler
         encounter_data.types.each do |type, slots|
           next if !slots || slots.length == 0
           if encounter_data.step_chances[type] && encounter_data.step_chances[type] > 0
-            f.write(sprintf("%s,%d\r\n", type.to_s, encounter_data.step_chances[type]))
+            if encounter_data.available_levels[type] && encounter_data.step_chances[type] > 0
+              f.write(sprintf("%s,%d,%d\r\n", type.to_s, encounter_data.step_chances[type], encounter_data.available_levels[type]))
+            else 
+              f.write(sprintf("%s,%d\r\n", type.to_s, encounter_data.step_chances[type]))
+            end
           else
             f.write(sprintf("%s\r\n", type.to_s))
           end
