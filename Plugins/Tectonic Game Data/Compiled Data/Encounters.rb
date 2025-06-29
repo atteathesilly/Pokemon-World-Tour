@@ -81,6 +81,7 @@ module Compiler
       new_format        = nil
       encounter_hash    = nil
       step_chances      = nil
+      available_levels  = nil
       need_step_chances = false   # Not needed for new format only
       probabilities     = nil     # Not needed for new format only
       current_type      = nil
@@ -162,12 +163,14 @@ module Compiler
               raise _INTL("Encounters for map '{1}' are defined twice.\r\n{2}", map_number, FileLineData.linereport)
             end
             step_chances = {}
+            available_levels = {}
             # Construct encounter hash
             encounter_hash = {
               :id           => key,
               :map          => map_number,
               :version      => map_version,
               :step_chances => step_chances,
+              :available_levels => available_levels,
               :types        => {},
               :defined_in_extension => !baseFile
             }

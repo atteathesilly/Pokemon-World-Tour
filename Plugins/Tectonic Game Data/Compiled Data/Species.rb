@@ -1015,6 +1015,7 @@ module Compiler
             enc_data.types.each do |key, slots|
                 next unless slots
                 earliestLevelForSlot = enc_data.available_levels[key]
+                next if earliestLevelForSlot.nil?
                 earliestLevelForSlot = [earliestLevelForSlot, SURFING_LEVEL].min if key == :ActiveWater
                 slots.each do |slot|
                     species = slot[1]
