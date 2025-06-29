@@ -76,6 +76,10 @@ Puddle,20
     20,LUVDISC,20,22
     20,SKRELP,20,22
 #-------------------------------
+[013] # Frost Station 1032
+Special
+    1,SKITTY,15
+#-------------------------------
 [019] # Reading Ribombee Café
 Special
     1,MILCERY,15
@@ -285,6 +289,10 @@ LandTall,20
     25,PIKIPEK,14,16
     25,PINECO,14,16
     25,SCATTERBUG,14,16
+#-------------------------------
+[064] # M. Munna Den
+Special
+    1,MMUNNA,23
 #-------------------------------
 [066] # Apartment Attic
 Special
@@ -538,7 +546,7 @@ LandTall,25
     20,LICKITUNG,32,34
     20,SEWADDLE,32,34
 Puddle,20
-    40,ESPURR,32,34
+    40,CORPHISH,32,34
     20,CUFANT,32,34
     20,ILLUMISE,32,34
     20,VOLBEAT,32,34
