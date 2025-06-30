@@ -1011,12 +1011,10 @@ module Compiler
 
         # Checking every single map in the game for encounters
         GameData::Encounter.each_of_version do |enc_data|
-            earliestLevelForMap = getEarliestLevelForMap(enc_data.map)
-
             # For each slot in that encounters data listing
             enc_data.types.each do |key, slots|
                 next unless slots
-                earliestLevelForSlot = earliestLevelForMap
+                earliestLevelForSlot = enc_data.available_levels[key] || 100
                 earliestLevelForSlot = [earliestLevelForSlot, SURFING_LEVEL].min if key == :ActiveWater
                 slots.each do |slot|
                     species = slot[1]
@@ -1085,14 +1083,6 @@ module Compiler
     def getEarliestLevelForItem(item_id)
         ITEMS_AVAILABLE_BY_CAP.each do |levelCapBracket, itemArray|
             next unless itemArray.include?(item_id)
-            return levelCapBracket
-        end
-        return 100
-    end
-
-    def getEarliestLevelForMap(map_id)
-        MAPS_AVAILABLE_BY_CAP.each do |levelCapBracket, mapArray|
-            next unless mapArray.include?(map_id)
             return levelCapBracket
         end
         return 100
