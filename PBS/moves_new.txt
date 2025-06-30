@@ -4544,6 +4544,19 @@ FunctionCode = ScalesTallerThanTarget
 Flags = CanProtect
 Description = The user drops some heads from high up. The taller the user compared to the target, the greater the damage.
 #-------------------------------
+[CREEPINGSTRIKE]
+Name = Creeping Strike
+Type = GRASS
+Category = Adaptive
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoubleDamageTargetMoved
+Flags = CanProtect
+Description = If the user moves after the target, this attack's power will be doubled.
+Animation = VINEWHIP
+#-------------------------------
 [CRUELWHIPBLADE]
 Name = Cruel Whipblade
 Type = GRASS
@@ -4583,6 +4596,20 @@ Flags = CanProtect
 EffectChance = 10
 Description = The user fires a small bolt of energy at the target. It has a 10% chance to raise user's Sp. Atk.
 Animation = ENERGYBALL
+#-------------------------------
+[FLASHSEED]
+Name = Flash Seed
+Type = GRASS
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect
+EffectChance = 30
+Description = The target is disoriented by an explosive seed. It has a 30% chance to dizzy.
+Animation = SEEDBOMB
 #-------------------------------
 [HEADTHROW]
 Name = Head Throw
@@ -4749,19 +4776,6 @@ FunctionCode = StartsCursedIngrain
 Flags = CanSnatch
 Description = Lays roots that heal the user by absorbing 1/8th HP from foes each turn. The user becomes trapped.
 Animation = INGRAIN
-#-------------------------------
-[ROOTWRACK]
-Name = Rootwrack
-Type = GRASS
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-FunctionCode = PowerBoostTargetMoved25Percent
-Flags = CanProtect
-Description = The user sends its roots to attack. Deals 25% more damage if the target attacked first.
-Animation = VINEWHIP
 #-------------------------------
 [SAPPINGJEALOUSY]
 Name = Sapping Jealousy

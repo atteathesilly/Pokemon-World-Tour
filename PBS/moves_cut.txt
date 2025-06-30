@@ -2310,6 +2310,31 @@ FunctionCode = Invalid
 Flags = CanProtect,Wind
 Description = The user stirs up a violent petal blizzard and attacks everything around it.
 #-------------------------------
+[ROOTWRACK]
+Name = Rootwrack
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user sends its roots to attack. Deals 50% more damage if the target attacked first.
+Animation = VINEWHIP
+#-------------------------------
+[SEEDBOMB]
+Name = Seed Bomb
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user slams a barrage of hard-shelled seeds down on the target from above.
+#-------------------------------
 [SLEEPPOWDER]
 Name = Sleep Powder
 Type = GRASS

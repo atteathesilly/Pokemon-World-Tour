@@ -490,7 +490,7 @@ Pokemon = DREEPY,24
     Moves = QUICKATTACK,RAKE,SHADOWCLAW,SHRED
     AbilityIndex = 0 # Clear Body
 Pokemon = SWIRLIX,24
-    Moves = COTTONSPORE,ROOTWRACK,PIXIEPUNCH
+    Moves = COTTONSPORE,CREEPINGSTRIKE,PIXIEPUNCH
     AbilityIndex = 1 # Fine Sugar
 #-------------------------------
 [TEENAGERF,Naomi]
@@ -1041,7 +1041,7 @@ Pokemon = ELECTRIKE,20
 Pokemon = STUFFUL,20
     AbilityIndex = 0 # Intimidate
 Pokemon = FERROSEED,20
-    Moves = ROOTWRACK,SPIKES,METALCLAW
+    Moves = CREEPINGSTRIKE,SPIKES,METALCLAW
     AbilityIndex = 0 # Iron Barbs
     Item = CADOBERRY
 #-------------------------------
@@ -1389,7 +1389,7 @@ Pokemon = KADABRA,28
 #-------------------------------
 [WORKER,Kevin]
 Pokemon = ABOMASNOW,28
-    Moves = ICYWIND,SEEDBOMB,MAGICALLEAF,ICESHARD
+    Moves = ICYWIND,FLASHSEED,MAGICALLEAF,ICESHARD
     AbilityIndex = 1 # Frustrate
     Item = CHOPLEBERRY
 Pokemon = HEATMOR,28
@@ -1650,12 +1650,12 @@ Pokemon = CRAMORANT,35
 Policies = RAFAEL
 Flags = NoPerfect
 Pokemon = DHELMISE,30
-    Moves = SHADOWCLAW,GYROBALL,ROOTWRACK,SYNTHESIS
+    Moves = SHADOWCLAW,GYROBALL,CREEPINGSTRIKE,SYNTHESIS
     AbilityIndex = 1 # Kelp Link
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,10,0,20,10
 Pokemon = QUILLADIN,30
-    Moves = SPIKYSHIELD,LEECHSEED,SEEDBOMB,ARMTHRUST
+    Moves = SPIKYSHIELD,LEECHSEED,FLASHSEED,ARMTHRUST
     AbilityIndex = 1 # Aggravate
     Item = HIVISJACKET
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1698,13 +1698,13 @@ Pokemon = MNINETALES,30
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = DHELMISE,30
-    Moves = ADAMANTINEPRESS,ROOTWRACK,WEIGHANCHOR,SHADOWSNEAK
+    Moves = ADAMANTINEPRESS,CREEPINGSTRIKE,WEIGHANCHOR,SHADOWSNEAK
     AbilityIndex = 0 # Rust & Wrack
     Item = OCCABERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = WHIMSICOTT,30
-    Moves = STARDANCE,KNOCKOFF,SEEDBOMB,PIXIEPUNCH
+    Moves = STARDANCE,KNOCKOFF,FLASHSEED,PIXIEPUNCH
     AbilityIndex = 0 # Cotton Decoy
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1953,7 +1953,7 @@ Pokemon = BISHARP,35
     AbilityIndex = 1 # Sturdy
     Item = WEAKNESSPOLICY
 Pokemon = AEXEGGUTOR,35
-    Moves = DRAGONHAMMER,SEEDBOMB,KICKSTART,SYNTHESIS
+    Moves = DRAGONHAMMER,FLASHSEED,KICKSTART,SYNTHESIS
     AbilityIndex = 0 # Realist
 Pokemon = FURRET,35
     Moves = COIL,SLASH,REST,DIG
@@ -2006,7 +2006,7 @@ Pokemon = HIPPOWDON,38
     AbilityIndex = 1 # Glass Firing
     Item = CADOBERRY
 Pokemon = AEXEGGUTOR,37
-    Moves = DRAGONHAMMER,KICKSTART,ENERGYBALL,SEEDBOMB
+    Moves = DRAGONHAMMER,KICKSTART,ENERGYBALL,FLASHSEED
     AbilityIndex = 0 # Realist
 Pokemon = OCTILLERY,37
     Moves = TARVOLLEY,BUBBLEBARRAGE,HONESIGHT
@@ -2301,7 +2301,7 @@ Pokemon = UNFEZANT,40
     Moves = SEVER,STRAFE,PALEBLADE,FOCUSENERGY
     AbilityIndex = 1 # Super Luck
 Pokemon = TOUCANNON,40
-    Moves = FIREWORKS,BEAKBLAST,FURYPECKS,SEEDBOMB
+    Moves = FIREWORKS,BEAKBLAST,FURYPECKS,FLASHSEED
     AbilityIndex = 1 # Skill Link
     Item = FIREGEM
 Pokemon = SWANNA,40
@@ -3656,7 +3656,7 @@ Pokemon = RELICANTH,38
     AbilityIndex = 1 # Reawakened Power
     Item = CUSTAPBERRY
 Pokemon = FERROTHORN,38
-    Moves = IMPALINGSPIKE,ROOTWRACK,GYROBALL
+    Moves = IMPALINGSPIKE,CREEPINGSTRIKE,GYROBALL
     AbilityIndex = 0 # Iron Barbs
     Item = LEFTOVERS
 Pokemon = GLISCOR,38
