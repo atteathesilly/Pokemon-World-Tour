@@ -4555,18 +4555,6 @@ FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
 Description = Sharp-edged leaves are launched to slash at the opposing team. Can random critical hit.
 #-------------------------------
-[SEEDBOMB]
-Name = Seed Bomb
-Type = GRASS
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect
-Description = The user slams a barrage of hard-shelled seeds down on the target from above.
-#-------------------------------
 [SEEDFLARE]
 Name = Seed Flare
 Type = GRASS
