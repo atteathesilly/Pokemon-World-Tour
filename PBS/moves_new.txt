@@ -4174,7 +4174,7 @@ Target = NearOther
 FunctionCode = Waterlog
 Flags = CanProtect
 EffectChance = 30
-Description = The target is immersed in water, having a 30% chance to becomed Waterlogged.
+Description = The target is immersed in water. This has a 30% chance to waterlog.
 Animation = WATERGUN
 #-------------------------------
 [INVITERAINSTORM]
@@ -7078,7 +7078,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef2
 Flags = CanProtect,Pulse
 EffectChance = 100
-Description = The user pulses powerful dark light to expose the target's motives. This lower's their Sp. Def by two steps.
+Description = The user pulses powerful dark light to expose the target's motives. This lowers their Sp. Def by two steps.
 Animation = DARKPULSE
 #-------------------------------
 [VERMINCLOUD]
