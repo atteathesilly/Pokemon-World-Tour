@@ -2737,6 +2737,55 @@ Pokemon = SLOWKING,70
     Moves = SELECTIVEMEMORY,SLACKOFF,YAWN
     AbilityIndex = 1 # Realist
 #-------------------------------
+[BEAUTY,Bella]
+TrainerTypeLabel = DEVELOPER
+Policies = ECLIPSE_TEAM
+Pokemon = INDEEDEE,70
+    Form = 1 # Female Form
+    Gender = female
+    Moves = ECLIPSE,FOLLOWME,MYSTICALFIRE,TUTELAGE
+    AbilityIndex = 1 # Mental Block
+    Item = PINPOINTROCK
+Pokemon = DELCATTY,70
+    Name = EatTheRich
+    Gender = female
+    Shiny = yes
+    Moves = FAKEOUT,WISH,FOLLOWME,ALLERGY
+    AbilityIndex = 0 # Above It All
+    Item = WILDCARD
+Pokemon = HTYPHLOSION,70
+    Gender = female
+    Moves = SOULEATER,STITCHUP,BURNINGJEALOUSY,PIERCINGDOUBT
+    AbilityIndex = 1 # Exorcist
+    Item = UTILITYUMBRELLA
+Pokemon = MILOTIC,70
+    Gender = female
+    Moves = MENDINGSPRING,MAELSTROM,BREAKINGSWIPE,RECOVER
+    AbilityIndex = 0 # Dramatic Lighting
+    Item = LEFTOVERS
+Pokemon = MEGANIUM,70
+    Gender = female
+    Moves = STRENGTHSAP,ROOTSHELTER,GIGADRAIN,SYNTHESIS
+    AbilityIndex = 0 # Fae Veil
+    Item = LEFTOVERS
+Pokemon = AMPHAROS,70
+    Gender = female
+    Moves = TRANSCENDENTENERGY,THUNDERCAGE,DIAMETRICBREATH,RECOVER
+    AbilityIndex = 1 # Stubborn
+    Item = COVERTCLOAK
+#-------------------------------
+[POKEMONBREEDER_M2,Pechapanda]
+TrainerTypeLabel = DEVELOPER
+Pokemon = KIRLIA,70
+    AbilityIndex = 1 # Feedback
+Pokemon = ESPEON,70
+    AbilityIndex = 0 # Overthinking
+Pokemon = EMPOLEON,70
+    AbilityIndex = 0 # Imperious
+Pokemon = JELLICENT,70
+    Gender = male
+    AbilityIndex = 0 # Backwash
+#-------------------------------
 [LEADER_Bence,Bence]
 Policies = BENCE
 Flags = NoPerfect
