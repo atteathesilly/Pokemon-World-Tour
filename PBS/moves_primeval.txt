@@ -586,6 +586,18 @@ Flags = CanProtect,Empowered
 EffectChance = 100
 Description = The user attacks by breathing a special, hot fire. This lowers the target's Sp. Atk stat by six steps.
 #-------------------------------
+[PRIMEVALFLAMESPIKES]
+Name = Primeval Flame Spikes
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = FoeSide
+FunctionCode = EmpoweredFlameSpikes
+Flags = Empowered
+Description = The user lays 2 hazard layers of flaming spike traps at the foe's feet, and becomes Fire-type.
+Animation = FLAMESPIKES
+#-------------------------------
 [PRIMEVALIGNITE]
 Name = Primeval Ignite
 Type = FIRE
@@ -926,6 +938,18 @@ FunctionCode = EmpoweredChill
 Flags = CanProtect,Empowered
 Description = The user inflicts frostbite on all nearby foes. User becomes an Ice-type.
 Animation = CHILL
+#-------------------------------
+[PRIMEVALFROSTSPIKES]
+Name = Primeval Frost Spikes
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = FoeSide
+FunctionCode = EmpoweredFrostSpikes
+Flags = Empowered
+Description = The user lays 2 hazard layers of frozen spike traps at the foe's feet, and becomes Ice-type.
+Animation = FROSTSPIKES
 #-------------------------------
 [PRIMEVALHAIL]
 Name = Primeval Hail
