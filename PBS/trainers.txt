@@ -1005,7 +1005,7 @@ Pokemon = MALAMAR,35
     EV = 0,20,0,20,20,10
 Pokemon = GOURGEIST,35
     Moves = MYSTERYSEED,SEANCE,FIREWORKS,BULLETSEED
-    AbilityIndex = 1 # Unafraid
+    AbilityIndex = 0 # Flourishing
     Item = LOADEDDICE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
