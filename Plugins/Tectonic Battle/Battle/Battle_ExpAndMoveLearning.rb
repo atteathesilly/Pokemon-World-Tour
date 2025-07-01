@@ -87,11 +87,6 @@ class PokeBattle_Battle
     def pbGainExpOne(idxParty, defeatedBattler, numPartic, expShare, expAll, hasExpJAR, showMessages = true)
         pkmn = pbParty(0)[idxParty] # The Pokémon gaining exp from defeatedBattler
         growth_rate = pkmn.growth_rate
-        # Don't bother calculating if gainer is already at max Exp
-        if pkmn.exp >= growth_rate.maximum_exp
-            pkmn.calc_stats
-            return
-        end
         isPartic    = defeatedBattler.participants.include?(idxParty)
         hasExpShare = expShare.include?(idxParty)
         level = defeatedBattler.level
@@ -156,21 +151,21 @@ class PokeBattle_Battle
         end
         # Make sure Exp doesn't exceed the maximum
         level_cap = LEVEL_CAPS_USED ? getLevelCap : growth_rate.max_level
-        expFinal = growth_rate.add_exp(pkmn.exp, exp)
-        expLeftovers = expFinal.clamp(0, growth_rate.minimum_exp_for_level(level_cap))
-        # Calculates if there is excess exp and if it can be stored
-        if (expFinal > expLeftovers) && hasExpJAR
-            expLeftovers = expFinal.clamp(0, growth_rate.minimum_exp_for_level(level_cap + 1))
-        else
-            expLeftovers = 0
+        expFinalBeforeCap = pkmn.exp + exp
+        expFinal = expFinalBeforeCap.clamp(0, growth_rate.minimum_exp_for_level(level_cap))
+        # EXP-EZ Dispenser storage
+        if hasExpJAR
+          expLeftovers = expFinalBeforeCap - expFinal
+          expLeftovers = (expLeftovers * EXP_JAR_BASE_EFFICIENCY).floor
+          @expStored += expLeftovers
+          $PokemonGlobal.expJAR = 0 if $PokemonGlobal.expJAR.nil?
+          $PokemonGlobal.expJAR += expLeftovers
+
+          echoln("[EXP JAR] Storing #{expLeftovers} EXP in the exp jar")
         end
-        expFinal = expFinal.clamp(0, growth_rate.minimum_exp_for_level(level_cap))
-        expGained = expFinal - pkmn.exp
-        expLeftovers -= pkmn.exp
-        expLeftovers = (expLeftovers * EXP_JAR_BASE_EFFICIENCY).floor
-        @expStored += expLeftovers if expLeftovers > 0
         curLevel = pkmn.level
         newLevel = growth_rate.level_from_exp(expFinal)
+        expGained = expFinal - pkmn.exp
         if expGained == 0 and pkmn.level < level_cap
             pbDisplayPaused(_INTL("{1} gained 0 experience.", pkmn.name))
             return
@@ -200,6 +195,7 @@ class PokeBattle_Battle
         tempExp1 = pkmn.exp
         battler = pbFindBattler(idxParty)
         loop do # For each level gained in turn...
+            break if pkmn.exp >= growth_rate.maximum_exp
             # EXP Bar animation
             levelMinExp = growth_rate.minimum_exp_for_level(curLevel)
             levelMaxExp = growth_rate.minimum_exp_for_level(curLevel + 1)
@@ -228,7 +224,7 @@ class PokeBattle_Battle
             @scene.pbRefreshOne(battler.index) if battler
             pbDisplayPaused(_INTL("{1} grew to Lv. {2}!", pkmn.name, curLevel))
             @scene.pbLevelUp(pkmn, battler, oldTotalHP, oldAttack, oldDefense,
-                                          oldSpAtk, oldSpDef, oldSpeed)
+                                        oldSpAtk, oldSpDef, oldSpeed)
             # Learn all moves learned at this level
             moveList = pkmn.getMoveList
             unless $Options.prompt_level_moves == 1
@@ -236,8 +232,6 @@ class PokeBattle_Battle
             end
             battler.pokemon.changeHappiness("levelup") if battler && battler.pokemon
         end
-        $PokemonGlobal.expJAR = 0 if $PokemonGlobal.expJAR.nil?
-        $PokemonGlobal.expJAR += expLeftovers if expLeftovers > 0 && hasExpJAR
     end
 
     #=============================================================================
