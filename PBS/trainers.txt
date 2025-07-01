@@ -2668,7 +2668,7 @@ Pokemon = MPOLTEAGEIST,70
 Pokemon = TYPHLOSION,70
     AbilityIndex = 0 # Brisk
 #-------------------------------
-[POKEMONBREEDER_F,ZombyGoast]
+[POKEMONBREEDER_F,Miss Zesty]
 TrainerTypeLabel = DEVELOPER
 Pokemon = DECEAT,70
     AbilityIndex = 1 # Intimidate
