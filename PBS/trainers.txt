@@ -2685,31 +2685,27 @@ Pokemon = MPOLTEAGEIST,70
 #-------------------------------
 [HEXMANIAC,Riptide]
 TrainerTypeLabel = DEVELOPER
-Pokemon = HELECTRODE,70
-    Moves = EXPLOSION,PROTECT
-    AbilityIndex = 0 # Perennial Payload
-    Item = NORMALGEM
 Pokemon = AMUK,70
-    Moves = POISONJAB,WETWORK,EXPLOSION,PROTECT
+    Moves = BRUTALSWING,BULKUP,RECOVER,DISSOLUTION
     AbilityIndex = 0 # Power of Alchemy
-    Item = CRYSTALVEIL
-    ItemType = GHOST
-Pokemon = MARACTUS,70
-    Moves = THORNRATTLE,SHOREUP,LEECHSEED,SPIKYSHIELD
-    AbilityIndex = 0 # Grit
-    Item = SITRUSBERRY
-Pokemon = MNINETALES,70
-    Moves = SHADOWBALL,FLASHCANNON,STEELBEAM,PULVERIZERCHORD
-    AbilityIndex = 1 # Luxury Taste
-    Item = ASSAULTVEST
-Pokemon = WISHIWASHI,70
-    Moves = EBBFLOW,DEPTHCHARGE,PROTECT,WATERLOG
-    AbilityIndex = 0 # Schooling
     Item = LEFTOVERS
-Pokemon = ARCLAMOR,70
-    Moves = WALLOFSOUND,HYPERVOICE,BELCH,NOBLEROAR
-    AbilityIndex = 0 # Loud
-    Item = LEPPABERRY
+Pokemon = MEDITITE,1
+    Moves = FOLLOWME
+    AbilityIndex = 1 # Stability
+Pokemon = TURTWIG,1
+    Moves = STEALTHROCK
+    AbilityIndex = 1 # Living Armor
+Pokemon = SKRELP,1
+    Moves = POISONGAS
+    AbilityIndex = 1 # Poison Touch
+    Item = CHOICESCARF
+Pokemon = SPINARAK,1
+    Moves = STICKYWEB
+    AbilityIndex = 0 # Venom Gorger
+    Item = FRAGILELOCKET
+Pokemon = POLIWAG,1
+    Moves = FOLLOWME
+    AbilityIndex = 0 # Clear Body
 #-------------------------------
 [ROLLERSKATER_F,Attea]
 TrainerTypeLabel = DEVELOPER
@@ -2737,7 +2733,7 @@ Pokemon = SLOWKING,70
     Moves = SELECTIVEMEMORY,SLACKOFF,YAWN
     AbilityIndex = 1 # Realist
 #-------------------------------
-[BEAUTY,Bella]
+[BEAUTY5,Bella]
 TrainerTypeLabel = DEVELOPER
 Policies = ECLIPSE_TEAM
 Pokemon = INDEEDEE,70
