@@ -4099,6 +4099,18 @@ EffectChance = 100
 Description = The user spews alkaline bubbles that melt the target, lowering their Defense by three steps.
 Animation = BUBBLEBEAM
 #-------------------------------
+[FLOODGATE]
+Name = Floodgate
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = UserTakesHalfDamageThisTurnWaterlogAttackers
+Description = Halves attack damage taken this turn. Waterlogs any attackers. Fails if used successively.
+Animation = AQUARING
+#-------------------------------
 [FLOWSTATE]
 Name = Flow State
 Type = WATER
