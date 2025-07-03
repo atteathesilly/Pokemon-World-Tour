@@ -2796,7 +2796,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetSpd4DrowsyIfHail
 Flags = CanProtect,CanMagicCoat
-Description = The user soothes the target, lowering its Speed by 4 steps. If in hail, they also become drowsy.
+Description = The user soothes the target, lowering its Speed by four steps. If in hail, they also become drowsy.
 Animation = YAWN
 #-------------------------------
 [FROMBEYOND]
