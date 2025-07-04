@@ -1016,8 +1016,7 @@ module Compiler
                 next unless slots
                 earliestLevelForSlot = enc_data.available_levels[key] || 100
                 slots.each do |slot|
-                    species = slot[1]
-                    # TODO: Record entry for base form of species instead of specified form (BUG: Deerling missing)
+                    species = GameData::Species.get(slot[1]).species # get base form
                     if !earliestWildEncounters.has_key?(species) || earliestWildEncounters[species] > earliestLevelForSlot
                         earliestWildEncounters[species] = earliestLevelForSlot
                     end
