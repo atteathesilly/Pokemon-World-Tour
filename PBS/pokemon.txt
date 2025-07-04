@@ -85,6 +85,7 @@ Evolutions = CHARMELEON,Level,16
 [CHARMELEON]
 Name = Charmeleon
 Type1 = FIRE
+Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 60,65,60,80,80,65
 # Total = 410
