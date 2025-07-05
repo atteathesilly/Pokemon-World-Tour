@@ -304,7 +304,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,Blade,CanRandomCrit
-Description = The target is raked two to five times. Can random critical hit.
+Description = The target is multi-hit two to five times with raking swipes. Can random critical hit.
 #-------------------------------
 [GIGAIMPACT]
 Name = Giga Impact
@@ -1210,7 +1210,7 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimesNumb
 Flags = CanProtect
 EffectChance = 10
-Description = The user looses a flurry of open-palmed arm thrusts that hit two to five times in a row. Has a 10% chance to numb.
+Description = The user looses a flurry of open-palmed arm thrusts that multi-hit two to five times. Has a 10% chance to numb.
 #-------------------------------
 [AURASPHERE]
 Name = Aura Sphere
@@ -2189,7 +2189,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user strikes the target with a hard bone two to five times in a row.
+Description = The user multi-hits two to five times with a hard bone.
 #-------------------------------
 [BULLDOZE]
 Name = Bulldoze
@@ -2472,7 +2472,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user hurls hard rocks at the target. Two to five rocks are launched in quick succession.
+Description = The user hurls hard rocks at the target. The target is multi-hit two to five times in quick succession.
 #-------------------------------
 [ROCKPOLISH]
 Name = Rock Polish
@@ -2751,7 +2751,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = Sharp spikes are shot at the target in rapid succession. They hit two to five times in a row.
+Description = Sharp spikes are shot at the target in rapid succession. They multi-hit two to five times.
 #-------------------------------
 [POLLENPUFF]
 Name = Pollen Puff
@@ -3435,7 +3435,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = Sharp spikes are shot at the target in rapid succession. They hit two to five times in a row.
+Description = Sharp spikes are shot at the target in rapid succession. They multi-hit two to five times.
 #-------------------------------
 [STEELBEAM]
 Name = Steel Beam
@@ -4257,7 +4257,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user hits the target with throwing stars two to five times in a row. This move always goes first.
+Description = The user multi-hits the target two to five times with throwing stars. This move always goes first.
 #-------------------------------
 [WATERSPOUT]
 Name = Water Spout
@@ -4318,7 +4318,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user forcefully shoots seeds at the target. Two to five seeds are shot in rapid succession.
+Description = The user forcefully shoots seeds at the target. It multi-hits two to five times.
 #-------------------------------
 [CHLOROBLAST]
 Name = Chloroblast
@@ -5655,7 +5655,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
-Description = The user launches sharp icicles at the target. It strikes two to five times in a row.
+Description = The user launches sharp icicles at the target. It multi-hits two to five times.
 #-------------------------------
 [ICYWIND]
 Name = Icy Wind
