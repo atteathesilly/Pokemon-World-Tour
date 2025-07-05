@@ -5140,7 +5140,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = AverageUserTargetDefenses
 Flags = CanProtect
-Description = The user employs psychic power to average its base Defense and base Sp. Def stats with those of its target.
+Description = The user employs psychic power to average its unmodified Defense and Sp. Def stats with those of its target.
 #-------------------------------
 [HEALINGWISH]
 Name = Healing Wish
@@ -5292,7 +5292,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = AverageUserTargetOffenses
 Flags = CanProtect
-Description = The user employs psychic power to average its base Attack and base Sp. Atk stats with those of the target.
+Description = The user employs psychic power to average its unmodified Attack and Sp. Atk stats with those of the target.
 #-------------------------------
 [POWERTRICK]
 Name = Power Trick
@@ -5303,7 +5303,7 @@ TotalPP = 10
 Target = User
 FunctionCode = SwapPhysicalStats
 Flags = CanSnatch
-Description = The user employs psychic power to switch its base Attack with its base Defense stat.
+Description = The user employs psychic power to switch its unmodified Attack with its unmodified Defense.
 #-------------------------------
 [PSYBEAM]
 Name = Psybeam
