@@ -2064,7 +2064,7 @@ Target = User
 Priority = 3
 FunctionCode = ProtectUserSideFromMultiTargetMovesRedirectAllMovesToUser
 Flags = CanSnatch
-Description = The user and its allies are protected from wide-ranging attacks this turn, and enemies can only target the user. Fails if used in succession.
+Description = The user and its allies are protected from spread moves this turn, and enemies can only target the user. Fails if used in succession.
 Animation = WIDEGUARD
 #-------------------------------
 [PETRIFY]
@@ -6276,7 +6276,7 @@ Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = UseTwoRandomDragonThemedMoves
-Description = Invokes the aspects of multiple dragons, striking with a physical move and a special move.
+Description = Invokes the aspects of many dragons, striking with a physical move and a special move.
 #-------------------------------
 [AXETOGRIND]
 Name = Axe to Grind

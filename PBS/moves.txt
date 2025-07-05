@@ -2603,7 +2603,7 @@ Target = UserSide
 Priority = 3
 FunctionCode = ProtectUserSideFromMultiTargetMoves
 Flags = CanSnatch
-Description = The user and its allies are protected from wide-ranging attacks for a turn. Always fails if used in succession.
+Description = The user and its allies are protected from spread moves for a turn. Always fails if used in succession.
 #-------------------------------
 #		BUG MOVES
 #-------------------------------
@@ -6141,7 +6141,7 @@ Accuracy = 0
 TotalPP = 5
 Target = NearOther
 FunctionCode = HyperspaceFury
-Description = Unleashes a barrage of multi-arm attacks, skipping and destroying protections. Always hits. Lowers the user's Defense by two steps.
+Description = Unleashes a barrage of many-armed attacks, skipping and destroying protections. Always hits. Lowers the user's Defense by two steps.
 #-------------------------------
 [JAWLOCK]
 Name = Jaw Lock
