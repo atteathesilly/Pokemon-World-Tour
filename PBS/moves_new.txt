@@ -579,7 +579,7 @@ TotalPP = 15
 Target = AllNearFoes
 FunctionCode = HitTwoToFiveTimesAlwaysHits
 Flags = CanProtect
-Description = A barrage of star-shaped rays are shot at the opposing team that mutli-hits two to five times. Can't miss and skips protections.
+Description = A barrage of star-shaped rays are shot at the opposing team that multi-hits two to five times. Can't miss and skips protections.
 Animation = SWIFT
 #-------------------------------
 [THIEVINGSPREE]
