@@ -256,7 +256,7 @@ TotalPP = 1
 Target = FoeSide
 FunctionCode = EmpoweredPoisonSpikes
 Flags = Empowered
-Description = The user lays 2 hazard layers of poisonous spike traps at the foe's feet, and becomes Poison-type.
+Description = The user lays 2 hazard layers of poisonous spikes at the foe's feet, and becomes Poison-type.
 Animation = TOXICSPIKES
 #-------------------------------
 #		GROUND MOVES
@@ -306,7 +306,7 @@ TotalPP = 1
 Target = FoeSide
 FunctionCode = EmpoweredSpikes
 Flags = Empowered
-Description = The user lays 3 hazard layers of spike traps at the foe's feet, and becomes Ground-type.
+Description = The user lays 3 hazard layers of spikes at the foe's feet, and becomes Ground-type.
 Animation = SPIKES
 #-------------------------------
 [WARPINGCORE]
@@ -595,7 +595,7 @@ TotalPP = 1
 Target = FoeSide
 FunctionCode = EmpoweredFlameSpikes
 Flags = Empowered
-Description = The user lays 2 hazard layers of flaming spike traps at the foe's feet, and becomes Fire-type.
+Description = The user lays 2 hazard layers of flaming spikes at the foe's feet, and becomes Fire-type.
 Animation = FLAMESPIKES
 #-------------------------------
 [PRIMEVALIGNITE]
@@ -948,7 +948,7 @@ TotalPP = 1
 Target = FoeSide
 FunctionCode = EmpoweredFrostSpikes
 Flags = Empowered
-Description = The user lays 2 hazard layers of frozen spike traps at the foe's feet, and becomes Ice-type.
+Description = The user lays 2 hazard layers of frozen spikes at the foe's feet, and becomes Ice-type.
 Animation = FROSTSPIKES
 #-------------------------------
 [PRIMEVALHAIL]
