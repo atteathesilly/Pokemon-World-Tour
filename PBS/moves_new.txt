@@ -579,7 +579,7 @@ TotalPP = 15
 Target = AllNearFoes
 FunctionCode = HitTwoToFiveTimesAlwaysHits
 Flags = CanProtect
-Description = A barrage of star-shaped rays are shot at the opposing team that mutli-hits two to five times. Can't miss and skips protections.
+Description = A barrage of star-shaped rays are shot at the opposing team that multi-hits two to five times. Can't miss and skips protections.
 Animation = SWIFT
 #-------------------------------
 [THIEVINGSPREE]
@@ -2025,7 +2025,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = NumbTargetStartSandstorm8
 Flags = CanProtect,CanMagicCoat
-Description = The user numbs the target, then summons sandstorm for eight turns.
+Description = The user numbs the target, then welcomes in sandstorm for eight turns.
 Animation = SANDSTORM
 #-------------------------------
 [MEGALITHRITE]
@@ -2037,7 +2037,7 @@ TotalPP = 10
 Target = FoeSide
 FunctionCode = StealthRockStartSandstorm5
 Flags = CanMagicCoat
-Description = The user calls all rocks to join it, summoning sandstorm for five turns and laying a trap of levitating stones around the target.
+Description = The user calls all rocks to join it, summoning sandstorm for five turns and laying a hazard of levitating stones around the target.
 Animation = STEALTHROCK
 #-------------------------------
 [MONOLITHDROP]
@@ -5453,7 +5453,7 @@ TotalPP = 10
 Target = User
 FunctionCode = SwapSpecialStats
 Flags = CanSnatch
-Description = The user employs psychic power to switch its base Sp. Atk with its base Sp. Def stat.
+Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
 #-------------------------------
 [EXPLOIT]
 Name = Exploit
@@ -5638,7 +5638,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage3HitTwoToFiveTimes
 Flags = CanProtect
-Description = Unveiling its ears, the released psychic power causes the user to rampage 2 to 5 times each for two turns.
+Description = Unveiling its ears, the released psychic power causes the user to rampage and multi-hit two to five times for two turns.
 Animation = FURYSWIPES
 #-------------------------------
 [PENUMBRA]
@@ -7531,7 +7531,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSwapAttackingStats8
-Description = The user creates a puzzling area for eight turns in which Pokémon's base Attack and Sp. Atk are swapped.
+Description = The user creates a puzzling area for eight turns in which Pokémon's unmodified Attack and Sp. Atk are swapped.
 Animation = MAGICROOM
 #-------------------------------
 [SUGARBALL]
