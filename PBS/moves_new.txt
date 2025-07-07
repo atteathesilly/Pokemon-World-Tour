@@ -2025,7 +2025,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = NumbTargetStartSandstorm8
 Flags = CanProtect,CanMagicCoat
-Description = The user numbs the target, then summons sandstorm for eight turns.
+Description = The user numbs the target, then welcomes in sandstorm for eight turns.
 Animation = SANDSTORM
 #-------------------------------
 [MEGALITHRITE]
@@ -5638,7 +5638,7 @@ TotalPP = 10
 Target = ClosestNearFoe
 FunctionCode = Rampage3HitTwoToFiveTimes
 Flags = CanProtect
-Description = Unveiling its ears, the released psychic power causes the user to rampage and multi-hit 2 to 5 times for two turns.
+Description = Unveiling its ears, the released psychic power causes the user to rampage and multi-hit two to five times for two turns.
 Animation = FURYSWIPES
 #-------------------------------
 [PENUMBRA]
