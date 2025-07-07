@@ -2037,7 +2037,7 @@ TotalPP = 10
 Target = FoeSide
 FunctionCode = StealthRockStartSandstorm5
 Flags = CanMagicCoat
-Description = The user calls all rocks to join it, summoning sandstorm for five turns and laying a trap of levitating stones around the target.
+Description = The user calls all rocks to join it, summoning sandstorm for five turns and laying a hazard of levitating stones around the target.
 Animation = STEALTHROCK
 #-------------------------------
 [MONOLITHDROP]

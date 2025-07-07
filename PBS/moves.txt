@@ -3879,7 +3879,7 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesPhysicalDamage
 Flags = CanProtect,Uninvocable
-Description = The user sets a shell trap. If it is hit by a physical move, the trap explodes and hurts all near foes.
+Description = The user rigs its shell to explode. If it is hit by a physical move this turn, the shell detonates and hurts all near foes.
 #-------------------------------
 [SUNSHINE]
 Name = Sunshine
