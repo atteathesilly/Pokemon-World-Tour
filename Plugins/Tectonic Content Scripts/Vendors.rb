@@ -449,7 +449,6 @@ def eastEndExclusives
 
 	setPrice(:RUSTEDSWORD,20_000)
 	setPrice(:RUSTEDSHIELD,20_000)
-	setPrice(:REINSOFUNITY,20_000)
 	setPrice(:DYNAMITESTICK,5_000)
 	
 	pbPokemonMart(
