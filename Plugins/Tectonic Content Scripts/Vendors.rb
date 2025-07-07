@@ -542,9 +542,11 @@ end
 
 def switchOutTMShop
 	tmsStock = %i[
+		TMRETREAT
 		TMVOLTSWITCH
 		TMUTURN
 		TMFLIPTURN
+		TMPSYCHESWITCH
 		TMPARTINGSHOT
 	]
 
