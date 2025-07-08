@@ -914,6 +914,10 @@ Description = Lowers priority of status moves used by any Pokémon.
 Name = Hooligan
 Description = Powers up recoil and sound moves by 30%.
 #-------------------------------
+[HOPPINGMAD]
+Name = Hopping Mad
+Description = The Pokémon's Speed is doubled while using rampage moves.
+#-------------------------------
 [HUBRIS]
 Name = Hubris
 Description = Raises Sp. Atk after knocking out any Pokémon.
