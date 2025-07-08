@@ -135,11 +135,7 @@ class PokeBattle_Move_EmpoweredGreyMist < PokeBattle_Move_StartGreyMist5
 
     def pbEffectGeneral(user)
         super
-
-        itemName = GameData::Item.get(:BLACKSLUDGE).name
-        @battle.pbDisplay(_INTL("{1} crafts itself a {2}!", user.pbThis, itemName))
-        user.giveItem(:BLACKSLUDGE)
-
+        craftItem(user,:BLACKSLUDGE)
         transformType(user, :POISON)
     end
 end

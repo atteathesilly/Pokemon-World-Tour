@@ -373,7 +373,7 @@ TotalPP = 1
 Target = User
 FunctionCode = EmpoweredRockPolish
 Flags = Empowered
-Description = The sharply raises its speed, gains an extra two moves per turn, and becomes Rock-type.
+Description = The user raises its Speed by six steps, gains a Rock Gem, and becomes Rock-type.
 Animation = ROCKPOLISH
 #-------------------------------
 [PRIMEVALSANDSTORM]
