@@ -294,7 +294,7 @@ TotalPP = 1
 Target = User
 FunctionCode = EmpoweredShoreUp
 Flags = Empowered
-Description = The user restores 1/8th of its HP, but begins eroding. At the end of each turn, its defensive stats are lowered and its attacking stats are raised. User becomes Ground-type.
+Description = The user restores 1/8th of its HP, but begins eroding. At the end of each turn, its Defense and Sp. Def are lowered and its Attack and Sp. Atk are raised. User becomes Ground-type.
 Animation = SHOREUP
 #-------------------------------
 [PRIMEVALSPIKES]
@@ -542,7 +542,7 @@ TotalPP = 1
 Target = User
 FunctionCode = EmpoweredPolarizedRoom
 Flags = Empowered
-Description = The user creates a Polarized Room for 8 turns, raises both of its Defensive stats, and becomes Steel-type.
+Description = The user creates a Polarized Room for 8 turns, raises its Defense and Sp. Def, and becomes Steel-type.
 Animation = POLARIZEDROOM
 #-------------------------------
 [PRIMEVALSWORDSDANCE]
@@ -1074,7 +1074,7 @@ TotalPP = 1
 Target = BothSides
 FunctionCode = EmpoweredMoonglow
 Flags = Empowered
-Description = Summons moonglow for 5 turns, buffs the defending stats of all allies, and user becomes Fairy-type.
+Description = Summons moonglow for 5 turns, raises the Defense and Sp. Def of all allies, and user becomes Fairy-type.
 Animation = MOONGLOW
 #-------------------------------
 [PRIMEVALPUZZLEROOM]
@@ -1086,5 +1086,5 @@ TotalPP = 1
 Target = User
 FunctionCode = EmpoweredPuzzleRoom
 Flags = Empowered
-Description = The user creates a Puzzle Room for 8 turns, raises both of its Attacking stats, and becomes Fairy-type.
+Description = The user creates a Puzzle Room for 8 turns, raises its Attack and Sp. Atk, and becomes Fairy-type.
 Animation = PUZZLEROOM
