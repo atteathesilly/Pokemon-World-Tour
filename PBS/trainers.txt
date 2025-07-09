@@ -2686,7 +2686,7 @@ Pokemon = MPOLTEAGEIST,70
 [HEXMANIAC,Riptide]
 TrainerTypeLabel = DEVELOPER
 Pokemon = AMUK,70
-    Moves = BRUTALSWING,BULKUP,RECOVER,DISSOLUTION
+    Moves = BRUTALSWING,RECOVER,FLOWSTATE,BULKUP
     AbilityIndex = 0 # Power of Alchemy
     Item = LEFTOVERS
 Pokemon = MEDITITE,1
@@ -3341,7 +3341,7 @@ Pokemon = GDARMANITAN,45
 #-------------------------------
 [LEADER_Noel,Noel,1]
 ExtendsVersion = 0
-Policies = CURSE_ICE_SCULPTURES
+Policies = CURSE_NO_MOVING_CYCLICAL
 Pokemon = MBEAUTIFLY,45
     Item = HEAVYDUTYBOOTS
 Pokemon = METAGROSS,45
@@ -8335,8 +8335,8 @@ Pokemon = PRIMARINA,70
     AbilityIndex = 0 # Tuned Out
     Item = KEBIABERRY
 Pokemon = AMUK,70
-    Moves = GUNKSHOT,WETWORK,PARTINGSHOT,RECOVER
-    AbilityIndex = 0 # Power of Alchemy
+    Moves = GUNKSHOT,CRUNCH,PARTINGSHOT,RECOVER
+    AbilityIndex = 1 # Poison Punish
     Item = BLACKSLUDGE
 Pokemon = BARBARACLE,70
     Moves = SHELLSMASH,CROSSCHOP,ADAMANTINEPRESS,ACCELEROCK
@@ -9480,7 +9480,7 @@ Pokemon = URSALUNA,60
     AbilityIndex = 1 # Tough
     Item = CHESTOBERRY
 Pokemon = AMUK,60
-    Moves = PARTINGSHOT,POISONJAB,DISSOLUTION,RECOVER
+    Moves = PARTINGSHOT,POISONJAB,FLOWSTATE,RECOVER
     AbilityIndex = 1 # Poison Punish
     Item = BLACKSLUDGE
 Pokemon = CORVIKNIGHT,60
