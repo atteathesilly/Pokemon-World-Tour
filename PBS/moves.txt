@@ -6141,7 +6141,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TrapUserAndTarget
 Flags = CanProtect,Biting
-Description = Prevents the user and target from switching out until either of them faints or is switched out.
+Description = Traps the user and target until either of them faints or is switched out.
 #-------------------------------
 [KNOCKOFF]
 Name = Knock Off
