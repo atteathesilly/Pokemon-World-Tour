@@ -20,12 +20,19 @@ end
 class PokeBattle_Move_EmpoweredTailwind < PokeBattle_Move_StartUserSideDoubleSpeed4
     include EmpoweredMove
 
+    def initialize(battle, move)
+        super
+        @tailwindDuration = 6
+    end
+
     def pbEffectGeneral(user)
-        user.pbOwnSide.applyEffect(:Tailwind, 4)
-        @battle.eachSameSideBattler(user) do |b|
-            b.applyEffect(:ExtraTurns, 1)
-        end
-        transformType(user, :FLYING)
+        user.pbOwnSide.applyEffect(:EmpoweredTailwind, @tailwindDuration)
+    end
+
+    def getEffectScore(user, _target)
+        score = getTailwindEffectScore(user, @tailwindDuration, self)
+        score *= 1.5
+        return score
     end
 end
 
