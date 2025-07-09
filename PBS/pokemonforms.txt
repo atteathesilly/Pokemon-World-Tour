@@ -900,7 +900,7 @@ Pokedex = It takes a grim joy in using its new scythes. Some worry that it may b
 FormName = Rampage
 BaseStats = 95,155,110,85,85,115
 Abilities = JUGGERNAUT
-Pokedex = Great conflicts naturally prompt Gyarados to enter this form. Peaceful regions rarely them in such a state.
+Pokedex = Great conflicts naturally prompt Gyarados to enter this form. Peaceful regions rarely see them in such a state.
 #-------------------------------
 [GARDEVOIR,1]
 FormName = Finale
