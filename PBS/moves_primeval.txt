@@ -165,7 +165,7 @@ TotalPP = 1
 Target = UserSide
 FunctionCode = EmpoweredTailwind
 Flags = Empowered
-Description = The user ups the Speed and attack count of itself and allies, and becomes Flying-type.
+Description = The user sets a powerful tailwind for 6 turns, which also increases move damage by 30%. User becomes Flying-type.
 Animation = TAILWIND
 #-------------------------------
 [PRIMEVALWHIRLWIND]
