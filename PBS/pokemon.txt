@@ -6921,8 +6921,8 @@ Generation = 8
 Name = Smeargle
 Type1 = NORMAL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 60,50,60,75,50,60
-# Total = 355
+BaseStats = 80,50,80,85,50,80
+# Total = 425
 BaseEXP = 88
 Rareness = 95
 Abilities = MENTALBLOCK,TECHNICIAN
