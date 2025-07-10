@@ -3894,7 +3894,7 @@ Pokemon = PRIMARINA,47
     Moves = SPARKLINGARIA,ENCHANTINGSONG,HYPERVOICE,SWEETKISS
     AbilityIndex = 0 # Tuned Out
 Pokemon = ANNIHILAPE,48
-    Moves = CROSSCHOP,COLDSHOULDER,BULKUP,KINDLE
+    Moves = CROSSCHOP,COLDSHOULDER,BULKUP,BLAZEKICK
     AbilityIndex = 0 # Defiant
     Item = LEFTOVERS
 #-------------------------------
@@ -7408,13 +7408,13 @@ Pokemon = MAGCARGO,58
 #-------------------------------
 [BIKER,Knoxx]
 Pokemon = SCRAFTY,57
-    Moves = BROWBEAT,GRIMEGRAPPLE,FLAIL,SUBSTITUTE
+    Moves = BROWBEAT,GRIMEGRAPPLE,DRAINPUNCH,DROWN
     AbilityIndex = 0 # Shed Skin
 Pokemon = GUMSHOOS,57
-    Moves = REND,BRAINFREEZE,AGONIZE,SHORTCIRCUIT
+    Moves = SUPERFANG,BRAINFREEZE,AGONIZE,SHORTCIRCUIT
     AbilityIndex = 1 # Cynic
     Item = CRYSTALVEIL
-    ItemType = DRAGON
+    ItemType = GHOST
 Pokemon = TITANIX,57
     Moves = PULVERIZERCHORD,FRAGMENTATION,INFERNO,ZAPCANNON
     AbilityIndex = 1 # Gravitas
