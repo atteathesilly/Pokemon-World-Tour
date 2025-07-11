@@ -987,7 +987,7 @@ TotalPP = 1
 Target = AllNearOthers
 FunctionCode = EmpoweredCruelty
 Flags = CanProtect,Empowered
-Description = The user crushes all near foes with evil intent. This deals double damage to targets with a status condition.
+Description = The user crushes all near foes with evil intent. This deals double damage to targets with a non-volatile status condition.
 Animation = CRUSHCLAW
 #-------------------------------
 [EMPOWEREDDRAGONBREATH]

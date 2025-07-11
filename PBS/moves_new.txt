@@ -35,7 +35,7 @@ TotalPP = 5
 Target = NearFoe
 FunctionCode = ForceUserAndTargetToRest
 Flags = CanProtect,CanMagicCoat
-Description = The user and the target both fall asleep, fully restoring their HP and healing any status conditions.
+Description = The user and the target both fall asleep, fully restoring their HP and healing any non-volatile status conditions.
 Animation = REST
 #-------------------------------
 [BUTTINGHEADS]
@@ -605,7 +605,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = GiveUserStatusToTargetDamagingMove
 Flags = CanProtect
-Description = The user flings the dirty oil on its fur. It transfers any status condition to the target.
+Description = The user flings the dirty oil on its fur. It transfers any non-volatile status condition to the target.
 Animation = ACIDSPRAY
 #-------------------------------
 [WEATHERBURST]
@@ -3731,7 +3731,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = ImpurityBlaze
 Flags = CanProtect
-Description = If the target has a status condition, this deals double damage and heals every battler's status condition.
+Description = If the target has a non-volatile status condition, this deals double damage and heals every battler's non-volatile status condition.
 Animation = HEX
 #-------------------------------
 [INFERNOIMPACT]
@@ -3991,7 +3991,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = CureUserPartyStatusDamagingMove
 Flags = CanProtect
-Description = The user shoots purified water, also healing the status problems of all the party Pokémon.
+Description = The user shoots purified water, also healing the non-volatile status conditions of all the party Pokémon.
 Animation = WATERPULSE
 #-------------------------------
 [BREACH]
@@ -4434,7 +4434,7 @@ TotalPP = 5
 Target = UserAndAllies
 FunctionCode = CureUserPartyStatusStartHealUserEachTurn
 Flags = CanSnatch,Sound
-Description = The user's song heals the status problems of all the party Pokémon, and forms an Aqua Ring around itself, healing 10% HP per turn.
+Description = The user's song heals the non-volatile status conditions of all the party Pokémon, and forms an Aqua Ring around itself, healing 10% HP per turn.
 Animation = HEALBELL
 #-------------------------------
 [WHELM]
@@ -5058,7 +5058,7 @@ TotalPP = 5
 Target = NearAlly
 FunctionCode = HealTargetHalfOfTotalHPAndCureStatus
 Flags = CanProtect,CanMagicCoat,Dance
-Description = The user dances to restore an ally by half of their max HP. They're cured of any status conditions.
+Description = The user dances to restore an ally by half of their max HP. They're cured of any non-volatile status conditions.
 Animation = HEALPULSE
 #-------------------------------
 [INERTIASHOCK]
@@ -6327,7 +6327,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DoubleDamageTargetStatused
 Flags = CanProtect
-Description = The user crushes the target with evil intent. This deals double damage if the target has a status condition.
+Description = The user crushes the target with evil intent. This deals double damage if the target has a non-volatile status condition.
 Animation = CRUSHCLAW
 #-------------------------------
 [DIAMETRICBREATH]
