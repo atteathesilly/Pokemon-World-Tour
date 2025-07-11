@@ -1429,7 +1429,7 @@ Kind = Scratch Cat
 Pokedex = It loves coins, so if you give it one, you can make friends with Meowth easily. But it's fickle, so you can't count on that friendship lasting.
 Generation = 1
 WildItemUncommon = PEARL
-Evolutions = PERSIAN,Level,36,NIBELONG,Item,DAWNSTONE
+Evolutions = PERSIAN,Level,31,NIBELONG,Item,DAWNSTONE
 #-------------------------------
 [PERSIAN]
 Name = Persian
@@ -1490,7 +1490,7 @@ Kind = Scratch Cat
 Pokedex = It's impulsive, selfish, and fickle. It's very popular with some Trainers who like giving it the attention it needs.
 Generation = 7
 WildItemUncommon = PEARL
-Evolutions = APERSIAN,Level,36
+Evolutions = APERSIAN,Level,31
 #-------------------------------
 [APERSIAN]
 Name = A. Persian
@@ -1531,7 +1531,7 @@ Kind = Scratch Cat
 Pokedex = These daring Pokémon have coins on their foreheads. Darker coins are harder, and harder coins garner more respect among Meowth.
 Generation = 8
 WildItemUncommon = PEARL
-Evolutions = PERRSERKER,Level,36
+Evolutions = PERRSERKER,Level,31
 #-------------------------------
 [PERRSERKER]
 Name = Perrserker
