@@ -4425,7 +4425,7 @@ TotalPP = 15
 Target = User
 FunctionCode = StartHealUserEachTurnTrapUser
 Flags = CanSnatch
-Description = The user lays roots that restore 1/8th HP on every turn. Because it is rooted, it can't switch out.
+Description = The user lays roots that restore 1/8th HP on every turn. Because it is rooted, it is trapped.
 #-------------------------------
 [JUNGLEHEALING]
 Name = Jungle Healing
