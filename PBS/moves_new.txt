@@ -3808,7 +3808,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = StartSunshine8
 Flags = CanProtect
-Description = The user attacks with fire that can be seen in two places, then summons sunshine for eight turns.
+Description = The user attacks with fire that can be seen in multiple places, then summons sunshine for eight turns.
 Animation = HEATWAVE
 #-------------------------------
 [PROMINENCE]
