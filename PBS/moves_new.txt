@@ -5258,7 +5258,6 @@ Power = 80
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
-Priority = 1
 FunctionCode = FlinchTargetLowerTargetSpd1
 Flags = CanProtect
 EffectChance = 100
