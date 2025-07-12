@@ -9468,7 +9468,7 @@ Pokemon = STONJOURNER,70
     Moves = HELPINGHAND,NERVEBLOCK,WIDEGUARD
     AbilityIndex = 0 # Power Spot
 #-------------------------------
-[POKEMONRANGER_F_GANG,Mina]
+[POKEMONRANGER_F2_GANG,Mina]
 Flags = NoPerfect
 Pokemon = SHUCKLE,60
     Moves = STEALTHROCK,GREYMIST,STICKYWEB,ENCORE
@@ -9495,7 +9495,7 @@ Pokemon = GRAPIDASH,60
     AbilityIndex = 0 # Joyous Sorrow
     Item = LIFEORB
 #-------------------------------
-[POKEMONRANGER_F2_GANG,Amber]
+[POKEMONRANGER_F_GANG,Amber]
 Flags = NoPerfect
 Pokemon = KROOKODILE,60
     Moves = STAREDOWN,IGNITE,STEALTHROCK,EARTHQUAKE
