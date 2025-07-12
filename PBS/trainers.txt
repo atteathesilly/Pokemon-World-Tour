@@ -9468,8 +9468,7 @@ Pokemon = STONJOURNER,70
     Moves = HELPINGHAND,NERVEBLOCK,WIDEGUARD
     AbilityIndex = 0 # Power Spot
 #-------------------------------
-[POKEMONRANGER_F,Mina]
-TrainerTypeLabel = CHASMGANG
+[POKEMONRANGER_F2_GANG,Mina]
 Flags = NoPerfect
 Pokemon = SHUCKLE,60
     Moves = STEALTHROCK,GREYMIST,STICKYWEB,ENCORE
@@ -9496,8 +9495,7 @@ Pokemon = GRAPIDASH,60
     AbilityIndex = 0 # Joyous Sorrow
     Item = LIFEORB
 #-------------------------------
-[POKEMONRANGER_F2,Amber]
-TrainerTypeLabel = CHASMGANG
+[POKEMONRANGER_F_GANG,Amber]
 Flags = NoPerfect
 Pokemon = KROOKODILE,60
     Moves = STAREDOWN,IGNITE,STEALTHROCK,EARTHQUAKE
@@ -9524,8 +9522,7 @@ Pokemon = HEATMOR,60
     AbilityIndex = 1 # Pure Energy
     Item = CHOICESCARF
 #-------------------------------
-[POKEMONRANGER_M,Terrance]
-TrainerTypeLabel = CHASMGANG
+[POKEMONRANGER_M2_GANG,Terrance]
 Flags = NoPerfect
 Pokemon = ACCELGOR,60
     Moves = CALTROPARTS,SCALESTORM,BIOFLASH,ENERGYBALL
@@ -9552,8 +9549,7 @@ Pokemon = BARRASKEWDA,60
     AbilityIndex = 0 # Follow Through
     Item = CHOICEBAND
 #-------------------------------
-[POKEMONRANGER_M3,Micah]
-TrainerTypeLabel = CHASMGANG
+[POKEMONRANGER_M4_GANG,Micah]
 Flags = NoPerfect
 Pokemon = CLAYDOL,60
     Moves = LIGHTSCREEN,REFLECT,RETREAT,LEYLINEBURST
