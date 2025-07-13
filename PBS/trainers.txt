@@ -3933,10 +3933,10 @@ Pokemon = MASQUERAIN,40
 #-------------------------------
 [WORKER2,Hugo]
 Pokemon = MACHAMP,44
-    Moves = DYNAMICPUNCH,KNOCKOFF,FIRELASH,STONEEDGE
+    Moves = DYNAMICPUNCH,KNOCKOFF,FIRELASH
     AbilityIndex = 1 # No Guard
 Pokemon = ASANDSLASH,44
-    Moves = METEORMASH,ICECALIBUR,RAPIDSPIN,LEECHLIFE
+    Moves = METEORMASH,ICECALIBUR,RAPIDSPIN
     AbilityIndex = 1 # Assault Spines
 Pokemon = TYRANTRUM,44
     Moves = CRUNCH,CALAMITOUSSLASH,BEDROCKBREAKER,BULLDOZE
@@ -3945,7 +3945,7 @@ Pokemon = TYRANTRUM,44
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,10,10,20,10,0
 Pokemon = VIKAVOLT,44
-    Moves = DISCHARGE,BUGBUZZ,INFESTATION,FLASHCANNON
+    Moves = DISCHARGE,BUGBUZZ,INFESTATION
     AbilityIndex = 0 # Emergency Power
     Item = OCCABERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
