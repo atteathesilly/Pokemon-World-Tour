@@ -4890,19 +4890,6 @@ FunctionCode = HealUserByTwoThirdsOfDamageDoneIfTargetHurtUserThisTurn
 Flags = CanProtect,Biting
 Description = Lures an enemy into its jaws. If they hit the user this turn, the user's HP is restored by 66% the damage dealt.
 #-------------------------------
-[VINEBIND]
-Name = Vinebind
-Type = GRASS
-Category = Physical
-Power = 50
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = Binds the foe with vines, trapping and damaging it for three turns.
-Animation = GRASSKNOT
-#-------------------------------
 [WHIPKICK]
 Name = Whip Kick
 Type = GRASS

@@ -2358,6 +2358,18 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = The user scatters a big cloud of sleep-inducing dust around the target.
 #-------------------------------
+[SNAPTRAP]
+Name = Snap Trap
+Type = GRASS
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user snares the target, trapping and damaging it for three turns.
+#-------------------------------
 [SOLARBLADE]
 Name = Solar Blade
 Type = GRASS
@@ -2416,6 +2428,19 @@ Target = AllNearFoes
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = A sweet scent that lowers the foe's evasiveness. It also lures wild Pokémon if used in grass, etc.
+#-------------------------------
+[VINEBIND]
+Name = Vinebind
+Type = GRASS
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = Binds the foe with vines, trapping and damaging it for three turns.
+Animation = GRASSKNOT
 #-------------------------------
 [VINEMAZE]
 Name = Vine Maze

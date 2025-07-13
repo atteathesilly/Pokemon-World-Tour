@@ -1423,7 +1423,7 @@ Pokemon = GYAMASK,30
 #-------------------------------
 [BACKPACKER_F,Aiyana]
 Pokemon = TANGELA,28
-    Moves = KNOCKOFF,VINEBIND,BLUNTFORCE,POISONIVY
+    Moves = KNOCKOFF,RAZORLEAF,BLUNTFORCE,POISONIVY
     AbilityIndex = 1 # Tangling Hair
     Item = GRASSGEM
 Pokemon = GOURGEIST,28
@@ -1483,7 +1483,7 @@ Pokemon = SHEDINJA,28
 #-------------------------------
 [POKEMONRANGER_M,Ivan]
 Pokemon = MTANGELA,27
-    Moves = GLARE,ANCIENTPOWER,VINEBIND,SLUDGE
+    Moves = GLARE,ANCIENTPOWER,RAZORLEAF,SLUDGE
     AbilityIndex = 0 # Petrifying
     Item = SITRUSBERRY
 Pokemon = CORVISQUIRE,28
@@ -3636,7 +3636,7 @@ Pokemon = GDARMANITAN,70
     Moves = ICEHAMMER,CLOSECOMBAT,EARTHQUAKE,ZENHEADBUTT
     AbilityIndex = 1 # Gorilla Tactics
 Pokemon = MTANGROWTH,70
-    Moves = METEORBEAM,PETRIFY,SLUDGEWAVE,SNAPTRAP
+    Moves = METEORBEAM,PETRIFY,SLUDGEWAVE,RAZINGVINES
     AbilityIndex = 0 # Petrifying
     Item = POWERHERB
 Pokemon = MZANGOOSE,70
@@ -3846,7 +3846,7 @@ Pokemon = SLOWPOKE,26
     Moves = PSYCHOCUT,SLACKOFF,WAVEBREAK,DISABLE
     AbilityIndex = 1 # Mental Block
 Pokemon = WEEPINBELL,27
-    Moves = CROSSPOISON,VINEBIND,CLEARSMOG,AERIALACE
+    Moves = CROSSPOISON,RAZORLEAF,CLEARSMOG,AERIALACE
     AbilityIndex = 1 # Flytrap
     Item = FLYINGGEM
 #-------------------------------
@@ -3980,7 +3980,7 @@ Pokemon = BRONZONG,42
     AbilityIndex = 0 # Levitate
     Item = BINDINGBAND
 Pokemon = DECIDUEYE,43
-    Moves = SPIRITSHACKLE,SNAPTRAP,SHADOWSNEAK,ACROBATICS
+    Moves = SPIRITSHACKLE,WHIPKICK,SHADOWSNEAK,ACROBATICS
     AbilityIndex = 1 # Siphon Sniper
 #-------------------------------
 [SUPERNERD,John]
@@ -7360,7 +7360,7 @@ Pokemon = GLISCOR,60
 #-------------------------------
 [TEENAGERM,Burke]
 Pokemon = LEAFEON,58
-    Moves = SNAPTRAP,STRAFE,POISONIVY,RECOVER
+    Moves = LEAFBLADE,STRAFE,POISONIVY,RECOVER
     AbilityIndex = 1 # Reluctant Blade
 Pokemon = GSTUNFISK,58
     Moves = FARADAYCAGE,SHOREUP,YAWN,TRAMPLE
@@ -7623,7 +7623,7 @@ Pokemon = SPINDA,59
     AbilityIndex = 1 # Unconventional
     Item = SITRUSBERRY
 Pokemon = TREVENANT,59
-    Moves = SNAPTRAP,DISTURB,ADAMANTINEPRESS,SHIVERDANCE
+    Moves = LEAFBLADE,DISTURB,ADAMANTINEPRESS,SHIVERDANCE
     AbilityIndex = 1 # Frustrate
 Pokemon = THROH,59
     Moves = DRAINPUNCH,KNOCKOFF,ROCKALANCHE,POISONJAB
