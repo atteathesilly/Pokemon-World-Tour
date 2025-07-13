@@ -702,18 +702,6 @@ FunctionCode = DoubleDamageAvengingFaint
 Flags = CanProtect
 Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage doubles.
 #-------------------------------
-[REVELATIONDANCE]
-Name = Revelation Dance
-Type = NORMAL
-Category = Adaptive
-Power = 90
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = TypeIsUserFirstType
-Flags = CanProtect,Dance
-Description = The user attacks the target by dancing very hard. The user's type determines the type of this move.
-#-------------------------------
 [ROAR]
 Name = Roar
 Type = NORMAL
@@ -6617,3 +6605,17 @@ FunctionCode = Dizzy
 Flags = CanProtect,CanMagicCoat
 Description = The user kisses the target with a sweet, angelic cuteness that dizzies the target.
 Animation = SWEETKISS
+#-------------------------------
+#		FLEX MOVES
+#-------------------------------
+[REVELATIONDANCE]
+Name = Revelation Dance
+Type = FLEX
+Category = Adaptive
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = TypeIsUserFirstType
+Flags = CanProtect,Dance
+Description = The user attacks the target by dancing very hard.

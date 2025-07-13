@@ -327,18 +327,6 @@ EffectChance = 30
 Description = The user spins the target with a cleansing vortex. It has a 30% chance to waterlog.
 Animation = SOAK
 #-------------------------------
-[LONGSHOT]
-Name = Long Shot
-Type = NORMAL
-Category = Adaptive
-Power = 110
-Accuracy = 70
-TotalPP = 25
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect
-Description = The user makes a foolhardy, roundabout attack. It misses much of the time.
-#-------------------------------
 [LOUNGE]
 Name = Lounge
 Type = NORMAL
@@ -363,18 +351,6 @@ FunctionCode = SleepTargetIfBelowHalfHP
 Flags = CanProtect,CanMagicCoat,Sound
 Description = A lullaby is sung in a calming voice that puts the target with half its HP or less left into a deep sleep.
 Animation = SING
-#-------------------------------
-[MULTISTRIKE]
-Name = Multi-Strike
-Type = NORMAL
-Category = Adaptive
-Power = 15
-Accuracy = 100
-TotalPP = 25
-Target = NearOther
-FunctionCode = HitTwoToFiveTimes
-Flags = CanProtect
-Description = The target is multi-hit two to five times.
 #-------------------------------
 [NULLPULSE]
 Name = Null Pulse
@@ -7625,3 +7601,29 @@ Target = User
 FunctionCode = ChangeUserDeoxusChoiceOfForm
 Description = The user mutates its genetic code, transforming into any of its 3 other forms. Only useable as Deoxys Normal.
 Animation = TRANSFORM
+#-------------------------------
+#		FLEX MOVES
+#-------------------------------
+[LONGSHOT]
+Name = Long Shot
+Type = FLEX
+Category = Adaptive
+Power = 110
+Accuracy = 70
+TotalPP = 25
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect
+Description = The user makes a foolhardy, roundabout attack. It misses much of the time.
+#-------------------------------
+[MULTISTRIKE]
+Name = Multi-Strike
+Type = FLEX
+Category = Adaptive
+Power = 15
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect
+Description = The target is multi-hit two to five times.
