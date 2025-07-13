@@ -91,7 +91,7 @@ module QuestModule
     :Stage2 => _INTL("Return to the kid."),
     :Location1 => _INTL("Repora Forest"),
     :Location2 => _INTL("Novo Apartments"),
-    :QuestDescription => _INTL("The kid in Novo Apartments is asking you to find his Growlithe, which is lost in Repora Forest."),
+    :QuestDescription => _INTL("The kid in Novo Apartments is asking you to find his Growlithe, which is lost in Repora Forest. Can he not keep track of his own Pokémon? Seriously."),
   }
 
   QUEST_HIDE_AND_SEEK = {
@@ -101,7 +101,7 @@ module QuestModule
     :Stage2 => _INTL("Find him again."),
     :Location1 => _INTL("Casaba Island"),
     :Location2 => _INTL("Casaba Island"),
-    :QuestDescription => _INTL("Play hide and seek with the kid who said they'd give you TMs."),
+    :QuestDescription => _INTL("What are you, 12? You don't even remember when you last played hide and seek. Well, TMs do seem nice..."),
     :RewardString => _INTL("TMs!")
   }
 
@@ -110,7 +110,7 @@ module QuestModule
     :QuestGiver => _INTL("Ranger"),
     :Stage1 => _INTL("Find all the digit slips."),
     :Location1 => _INTL("Menagerie-Velenz Gatehouse"),
-    :QuestDescription => _INTL("The local ranger is tired of Rafael's gym puzzle. Find the digit slips and return them to him."),
+    :QuestDescription => _INTL("The local ranger is tired of Rafael's gym puzzle, as you likely are by now too. You've always been up for taking random things off the ground afterall."),
   }
 
   QUEST_POKEMON_MASTER = {
@@ -139,7 +139,7 @@ module QuestModule
     :QuestGiver => _INTL("Berry Farmer"),
     :Stage1 => _INTL("Bring the Pokémon to her."),
     :Location1 => _INTL("County Park"),
-    :QuestDescription => _INTL("This former Team Chasm member has been feeling nostalgic. Bring her a Bergmite, a Klink, a Dreepy, a Makyan Tangela, and an Elekid."),
+    :QuestDescription => _INTL("This former Team Chasm member has been feeling nostalgic. Show her a Bergmite, a Klink, a Dreepy, a Makyan Tangela, and an Elekid on your team."),
     :RewardString => _INTL("Catching Charm")
   }
 
@@ -148,7 +148,7 @@ module QuestModule
     :QuestGiver => _INTL("Scientist"),
     :Stage1 => _INTL("Defeat the avatar."),
     :Location1 => _INTL("Novo Town, Scientist's House"),
-    :QuestDescription => _INTL("The Alolan Geodudes have gone on a frenzy! This Avatar would wreak havoc unchecked."),
+    :QuestDescription => _INTL("The Alolan Geodudes have gone on a frenzy! This Avatar would wreak havoc unchecked. Scientists sure are reckless here aren't they?"),
   }
 
   QUEST_ABSOLUS = {
@@ -156,7 +156,7 @@ module QuestModule
     :QuestGiver => _INTL("Worker"),
     :Stage1 => _INTL("Defeat the Avatar."),
     :Location1 => _INTL("Novo Apartments, Attic"),
-    :QuestDescription => _INTL("An Avatar has invaded Novo Apartments. Assist the Absol it's staring down!"),
+    :QuestDescription => _INTL("An Avatar has invaded Novo Apartments. Assist the Absol it's staring down! Perhaps it can even be of use to you."),
   }
 
   QUEST_AEGIS_FRAUD = {
@@ -168,7 +168,7 @@ module QuestModule
     :Location1 => _INTL("Prizca West"),
     :Location2 => _INTL("Aegis Insurance"),
     :Location3 => _INTL("Prizca West"),
-    :QuestDescription => _INTL("An undercover Makyan Ranger is investigating Aegis Insurance. Help her infiltrate the building to discover the truth."),
+    :QuestDescription => _INTL("An undercover Makyan Ranger is investigating Aegis Insurance. Help her infiltrate the building to discover the truth. There's only room for 1 shady corporation in Makya afterall."),
   }
 
   QUEST_MALASADAS = {
@@ -176,7 +176,7 @@ module QuestModule
     :QuestGiver => _INTL("Dragon Tamer"),
     :Stage1 => _INTL("Give them 10 Big Malasadas."),
     :Location1 => _INTL("Luxtech Sewers"),
-    :QuestDescription => _INTL("Locals are feeding the Pokémon in the sewers as compensation for the items stolen from them."),
+    :QuestDescription => _INTL("Locals are feeding the Pokémon in the sewers as compensation for the items stolen from them. You'd never do that right?"),
   }
 
   QUEST_NOVO_WREATHS = {
@@ -194,7 +194,7 @@ module QuestModule
     :QuestGiver => _INTL("Scientist"),
     :Stage1 => _INTL("Defeat the gauntlet."),
     :Location1 => _INTL("Luxtech Main"),
-    :QuestDescription => _INTL("You've been offered a gauntlet of scientists to try to get past. How difficult could these eggheads be anyways?"),
+    :QuestDescription => _INTL("You've come across a gauntlet of scientists that wish to battle you for a reward. How difficult could these eggheads be anyways?"),
   }
 
   # Gym Leader Avatars
@@ -288,7 +288,7 @@ module QuestModule
     :Stage2 => _INTL("Report back to the Ranger."),
     :Location1 => _INTL("Underpeak Tunnels"),
     :Location2 => _INTL("Peaks-Harbor Gatehouse"),
-    :QuestDescription => _INTL("A ranger is asking you to deal with a Crobat Avatar lying in the tunnels under Split Peaks. Says he'll make it worth your while."),
+    :QuestDescription => _INTL("A ranger is asking you to... \"Explode\" the Crobat Avatar lying in the tunnels under Split Peaks. Quite a choice of words, but she does have something for you when you undergo this request.."),
   }
 
   QUEST_BEARTIC = {
@@ -298,7 +298,7 @@ module QuestModule
     :Stage2 => _INTL("Report back to the Ranger."),
     :Location1 => _INTL("Gigalith's Guts"),
     :Location2 => _INTL("Svait-Park Gatehouse"),
-    :QuestDescription => _INTL("A ranger is asking you to deal with a Beartic Avatar lying in the Gigalith's Guts. Says he'll make it worth your while."),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a Beartic Avatar lying in the Gigalith's Guts. Keeping Makya safe may not always be your priorities, but the reward does sound good."),
   }
 
   QUEST_MAROMATISSE = {
@@ -308,7 +308,7 @@ module QuestModule
     :Stage2 => _INTL("Report back to the Ranger."),
     :Location1 => _INTL("Highland Lake"),
     :Location2 => _INTL("West-Plaza Gatehouse"),
-    :QuestDescription => _INTL("A ranger is asking you to deal with a Makyan Aromatisse Avatar lying in the Highland Lake... apparently. Says he'll make it worth your while."),
+    :QuestDescription => _INTL("A ranger appears to be asking you to deal with a Makyan Aromatisse Avatar lying in the Highland Lake... apparently. Says he'll make it worth your while, but you are not even sure if that's the case either."),
   }
 
   QUEST_MONKES = {
@@ -318,7 +318,7 @@ module QuestModule
     :Stage2 => _INTL("Report back to the Ranger."),
     :Location1 => _INTL("The Shelf"),
     :Location2 => _INTL("Shelf-Novo Gatehouse"),
-    :QuestDescription => _INTL("A ranger is asking you to deal with a trio of Avatars, a Pansage, Pansear, and Panpour, lying in The Shelf. Says she'll make it worth your while."),
+    :QuestDescription => _INTL("A ranger is asking you to deal with a trio of Avatars, a Pansage, Pansear, and Panpour, lying in The Shelf. Seriously, the rangers can't handle a couple of monkeys? Terrible look."),
   }
 
   # Legendary Quests
