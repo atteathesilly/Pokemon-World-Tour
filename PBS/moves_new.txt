@@ -7627,3 +7627,16 @@ Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
 Description = The target is multi-hit two to five times.
+#-------------------------------
+[RUNAMUCK]
+Name = Run Amuck
+Type = FLEX
+Category = Adaptive
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = ClosestNearFoe
+FunctionCode = Rampage
+Flags = CanProtect
+Description = The user attacks with simple determination and rampages for two turns.
+Animation = THRASH
