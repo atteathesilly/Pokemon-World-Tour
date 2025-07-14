@@ -1004,6 +1004,7 @@ module Compiler
                 earliestLevelForSlot = [earliestLevelForSlot, SURFING_LEVEL].min if key == :ActiveWater
                 slots.each do |slot|
                     species = slot[1]
+                    # TODO: Record entry for base form of species instead of specified form (BUG: Deerling missing)
                     if !earliestWildEncounters.has_key?(species) || earliestWildEncounters[species] > earliestLevelForSlot
                         earliestWildEncounters[species] = earliestLevelForSlot
                     end
