@@ -4247,18 +4247,6 @@ FunctionCode = ScalesWithUserHP
 Flags = CanProtect
 Description = The user spouts water to damage the foe. Weakens in damage as the user loses HP. Weakest at half HP.
 #-------------------------------
-[WHIRLPOOL]
-Name = Whirlpool
-Type = WATER
-Category = Special
-Power = 50
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = The user swirls the target in a whirlpool, trapping and damaging it for three turns.
-#-------------------------------
 #		GRASS MOVES
 #-------------------------------
 [ABSORB]
@@ -4413,7 +4401,7 @@ TotalPP = 15
 Target = User
 FunctionCode = StartHealUserEachTurnTrapUser
 Flags = CanSnatch
-Description = The user lays roots that restore 1/8th HP on every turn. Because it is rooted, it can't switch out.
+Description = The user lays roots that restore 1/8th HP on every turn. Because it is rooted, it is trapped.
 #-------------------------------
 [JUNGLEHEALING]
 Name = Jungle Healing
@@ -4543,18 +4531,6 @@ FunctionCode = LowerTargetSpDef1
 Flags = CanProtect
 EffectChance = 100
 Description = The user generates a shock wave from within its body. This lower's the target's Sp. Def.
-#-------------------------------
-[SNAPTRAP]
-Name = Snap Trap
-Type = GRASS
-Category = Physical
-Power = 75
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = The user snares the target, trapping and damaging it for three turns.
 #-------------------------------
 [SOLARBEAM]
 Name = Solar Beam
