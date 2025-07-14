@@ -4177,19 +4177,6 @@ Flags = CanProtect,CanMagicCoat
 Description = The user waterlogs the target, then welcomes in rainstorm for eight turns.
 Animation = RAINSTORM
 #-------------------------------
-[MAELSTROM]
-Name = Maelstrom
-Type = WATER
-Category = Special
-Power = 75
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = The foe is pulled into a huge whirlpool, trapping and damaging it for three turns.
-Animation = WHIRLPOOL
-#-------------------------------
 [MENDINGSPRING]
 Name = Mending Spring
 Type = WATER
@@ -4304,7 +4291,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The target is crushed in the user's shell or claws, trapping and damaging it for three turns.
+Description = The target is crushed in the user's shell, mouth, or claws, trapping and damaging it for three turns.
 Animation = CLAMP
 #-------------------------------
 [SNAP]

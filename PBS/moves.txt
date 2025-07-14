@@ -4247,18 +4247,6 @@ FunctionCode = ScalesWithUserHP
 Flags = CanProtect
 Description = The user spouts water to damage the foe. Weakens in damage as the user loses HP. Weakest at half HP.
 #-------------------------------
-[WHIRLPOOL]
-Name = Whirlpool
-Type = WATER
-Category = Special
-Power = 50
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = The user swirls the target in a whirlpool, trapping and damaging it for three turns.
-#-------------------------------
 #		GRASS MOVES
 #-------------------------------
 [ABSORB]

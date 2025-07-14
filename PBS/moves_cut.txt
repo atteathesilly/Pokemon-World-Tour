@@ -2046,6 +2046,19 @@ Flags = CanProtect,CanMagicCoat
 Description = The user waterlogs the target, then welcomes in rainstorm for eight turns.
 Animation = RAINSTORM
 #-------------------------------
+[MAELSTROM]
+Name = Maelstrom
+Type = WATER
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The foe is pulled into a huge whirlpool, trapping and damaging it for three turns.
+Animation = WHIRLPOOL
+#-------------------------------
 [MUDDYWATER]
 Name = Muddy Water
 Type = WATER
@@ -2153,6 +2166,18 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = Strikes the target with lunar tides, then summons rain for five turns.
 Animation = SURF
+#-------------------------------
+[WHIRLPOOL]
+Name = Whirlpool
+Type = WATER
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user swirls the target in a whirlpool, trapping and damaging it for three turns.
 #-------------------------------
 [WITHDRAW]
 Name = Withdraw
