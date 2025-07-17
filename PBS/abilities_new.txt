@@ -1209,7 +1209,7 @@ Flags = SunshineSynergy
 #-------------------------------
 [MISTFORM]
 Name = Mist Form
-Description = Slips past hazards. Takes 50% less damage if it switched in this turn.
+Description = Slips past hazards. Takes one third less damage if it switched in this turn.
 Flags = HazardImmunity
 #-------------------------------
 [MOISTSKIN]
