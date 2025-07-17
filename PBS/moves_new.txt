@@ -3944,19 +3944,6 @@ Animation = INFERNOOVERDRIVE
 #-------------------------------
 #		WATER MOVES
 #-------------------------------
-[ABYSSALSTRIKE]
-Name = Abyssal Strike
-Type = WATER
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableUnderwater
-Flags = CanProtect
-Description = The user dives into the abyss, charging and becoming invulnerable, then rises with explosive strength on the second turn.
-Animation = DIVE
-#-------------------------------
 [ARCHEANDELUGE]
 Name = Archean Deluge
 Type = WATER
@@ -4033,6 +4020,19 @@ FunctionCode = LowerTargetSpd1
 Flags = CanProtect
 EffectChance = 20
 Description = A blast of bubbles is shot at the target. It has a 20% chance to lower the target's Speed stat.
+#-------------------------------
+[DEPTHCHARGE]
+Name = Depth Charge
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableUnderwater
+Flags = CanProtect
+Description = The user dives deep on the first turn, charging and becoming invulnerable, then rises and strikes with explosive strength on the second.
+Animation = DIVE
 #-------------------------------
 [DRAGBENEATH]
 Name = Drag Beneath

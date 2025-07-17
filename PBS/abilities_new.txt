@@ -1169,7 +1169,7 @@ Description = Physical moves have a 30% chance to waterlog targets.
 #-------------------------------
 [MARINEMENACE]
 Name = Marine Menace
-Description = Dive and Abyssal Strike deal 50% more damage.
+Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARTIALDISCIPLINE]
 Name = Martial Discipline
