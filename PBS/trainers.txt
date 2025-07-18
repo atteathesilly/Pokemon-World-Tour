@@ -3303,7 +3303,7 @@ Pokemon = SIGILYPH,45
 Policies = NOEL
 Flags = NoPerfect
 Pokemon = MBEAUTIFLY,45
-    Moves = LEECHLIFE,ICYINJECTION,DEFOG,UTURN
+    Moves = SKEWER,ICYINJECTION,DEFOG,UTURN
     AbilityIndex = 1 # Schadenfreude
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,15,20,0
@@ -3312,9 +3312,9 @@ Pokemon = METAGROSS,45
     Shiny = yes
     Moves = METEORMASH,TRAMPLE,BULLETPUNCH,SEERSTRIKE
     AbilityIndex = 1 # Optimized Alloy
-    Item = STEELGEM
+    Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,10,0,20,0
+    EV = 20,20,0,0,20,10
 Pokemon = MPOLTEAGEIST,45
     Moves = FROSTBREATH,SEANCE,BUBBLEBARRAGE,HALTINGCOLD
     AbilityIndex = 1 # Chill Out
@@ -3345,13 +3345,11 @@ Policies = CURSE_NO_MOVING_CYCLICAL
 Pokemon = MBEAUTIFLY,45
     Item = HEAVYDUTYBOOTS
 Pokemon = METAGROSS,45
-    Item = ASSAULTVEST
 Pokemon = BRUXISH,45
 Pokemon = GRAPIDASH,45
-    Item = CHOICEBAND
+    Item = WHITEHERB
 Pokemon = GDARMANITAN,45
-    Moves = BURNUP,SUBLIMATE,SOLARBEAM,BODYPRESS
-    Item = POWERHERB
+    Item = STRIKEVEST
 #-------------------------------
 [BLACKBELT2,Riccardo]
 Policies = SANDSTORM_TEAM
