@@ -7392,7 +7392,7 @@ Pokemon = SEAKING,58
 #-------------------------------
 [BEAUTY4,Brunhilda]
 Pokemon = MBEAUTIFLY,59
-    Moves = ICYINJECTION,LEECHLIFE,PLAYROUGH,BURNINGJEALOUSY
+    Moves = ICYINJECTION,LEECHLIFE,PLAYROUGH,UTURN
     AbilityIndex = 1 # Schadenfreude
 Pokemon = GOLDUCK,58
     Moves = PIERCINGDOUBT,SLAMSHUT,CALMMIND,PACIFY
