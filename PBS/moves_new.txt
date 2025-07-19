@@ -1875,7 +1875,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Basic
-Flags = CanProtect,CanRandomCrit
+Flags = CanProtect,CanRandomCrit,Light
 Description = The user attacks with the bright glint of crystals. Can random critical hit.
 #-------------------------------
 [DIAMONDFIELD]
@@ -6429,7 +6429,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetHighestStat1
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 20
 Description = The shine from scales damages the target. This has a 20% chance to reduce the higher of the target's Attack or Sp. Atk.
 Animation = DAZZLINGGLEAM
