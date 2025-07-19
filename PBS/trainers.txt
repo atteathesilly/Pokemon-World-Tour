@@ -1057,7 +1057,7 @@ Pokemon = BRIONNE,25
 Pokemon = BUTTERFREE,25
     AbilityIndex = 1 # Erudite
 Pokemon = BOLDORE,25
-    Moves = STEALTHROCK,SHOCKWAVE,CRYSTALGLEAM,CHARGE
+    Moves = STEALTHROCK,SHOCKWAVE,DIAMONDBOLT,CHARGE
     AbilityIndex = 1 # Unburden
     Item = SITRUSBERRY
 Pokemon = POOCHYENA,25
@@ -1589,7 +1589,7 @@ Pokemon = COPPERAJAH,30
     AbilityIndex = 1 # Fascinate
     Item = PAYAPABERRY
 Pokemon = LUNATONE,30
-    Moves = SWEETSELENE,CRYSTALGLEAM,PSYBEAM
+    Moves = SWEETSELENE,DIAMONDBOLT,PSYBEAM
     AbilityIndex = 0 # Silver Sense
 #-------------------------------
 [CAMPER_F,Veronica]
@@ -1989,7 +1989,7 @@ Pokemon = PANGORO,35
     AbilityIndex = 1 # Juggernaut
     Item = SITRUSBERRY
 Pokemon = LUNATONE,36
-    Moves = PSYCHIC,SWEETSELENE,CRYSTALGLEAM,MOONBLAST
+    Moves = PSYCHIC,SWEETSELENE,DIAMONDFORCE,MOONBLAST
     AbilityIndex = 1 # Otherworldly
 Pokemon = EMOLGA,36
     Moves = VOLTSWITCH,AIRSLASH,ENCORE,NUZZLE

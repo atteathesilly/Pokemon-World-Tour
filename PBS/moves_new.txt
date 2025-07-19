@@ -1875,8 +1875,21 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Basic
-Flags = CanProtect,CanRandomCrit,Light
-Description = The user attacks with the bright glint of crystals. Can random critical hit.
+Flags = CanProtect,Light
+Description = The user attacks with the bright glint of crystals.
+#-------------------------------
+[DIAMONDBOLT]
+Name = Diamond Bolt
+Type = ROCK
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanRandomCrit
+Description = The user shoots a spike of diamond to strike the target. Can random critical hit.
+Animation = DIAMONDFORCE
 #-------------------------------
 [DIAMONDFIELD]
 Name = Diamond Field
