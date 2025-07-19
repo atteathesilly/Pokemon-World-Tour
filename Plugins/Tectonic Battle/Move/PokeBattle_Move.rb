@@ -144,6 +144,7 @@ class PokeBattle_Move
     def bladeMove?;             return @flags.include?("Blade"); end
     def windMove?;              return @flags.include?("Wind"); end
     def kickingMove?;           return @flags.include?("Kicking"); end
+    def lightMove?;             return @flags.include?("Light"); end
     def foretoldMove?;          return @flags.include?("Foretold"); end
     def empoweredMove?;         return @flags.include?("Empowered"); end
 

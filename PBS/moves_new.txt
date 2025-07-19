@@ -147,8 +147,8 @@ Accuracy = 100
 TotalPP = 30
 Target = AllNearFoes
 FunctionCode = LowerTargetSpAtk2
-Flags = CanProtect,CanMagicCoat
-Description = The user dazzles nearby foes with light or sound. Their Sp. Atk is lowered by two steps.
+Flags = CanProtect,CanMagicCoat,Light
+Description = The user dazzles nearby foes with light. Their Sp. Atk is lowered by two steps.
 Animation = FLASH
 #-------------------------------
 [DIFFUSEPULSE]
@@ -554,7 +554,7 @@ Accuracy = 0
 TotalPP = 15
 Target = AllNearFoes
 FunctionCode = HitTwoToFiveTimesAlwaysHits
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = A barrage of star-shaped rays are shot at the opposing team that multi-hits two to five times. Can't miss and skips protections.
 Animation = SWIFT
 #-------------------------------
@@ -1886,7 +1886,7 @@ Accuracy = 0
 TotalPP = 20
 Target = UserSide
 FunctionCode = StartPreventCriticalHitsAndRandomEffectsAgainstUserSide10
-Flags = CanSnatch
+Flags = CanSnatch,Light
 Description = A diamond-tough force-field protects the user's side for 5 turns from critical hits, and reduces move damage taken.
 Animation = LIGHTSCREEN
 #-------------------------------
@@ -1924,7 +1924,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DoubleDamageGemConsumed
 Flags = CanProtect,Pulse
-Description = The user harms the target with gemlike light. Deals double damage if the user has used a gem this battle.
+Description = The user harms the target with a pulse of power. Deals double damage if the user has used a gem this battle.
 Animation = POWERGEM
 #-------------------------------
 [GRANITEHEAD]
@@ -2212,8 +2212,8 @@ Accuracy = 100
 TotalPP = 12
 Target = AllNearFoes
 FunctionCode = DoubleDamageFaster
-Flags = CanProtect
-Description = The user emits a wave of green energy to strike near foes. Deals double damage to those slower than the user.
+Flags = CanProtect,Light
+Description = The user emits a wave of green light to strike near foes. Deals double damage to those slower than the user.
 Animation = FLASH
 #-------------------------------
 #		BUG MOVES
@@ -2255,7 +2255,7 @@ TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = The user shoots out a quick flash of bioluminescence to damage the target. This move always goes first.
 Animation = SIGNALBEAM
 #-------------------------------
@@ -2384,7 +2384,7 @@ Accuracy = 100
 TotalPP = 25
 Target = NearOther
 FunctionCode = Flinch
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 20
 Description = The user attacks with small beams of light. It has a 20% chance to make the target flinch.
 Animation = SIGNALBEAM
@@ -2398,7 +2398,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = Flinch
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 40
 Description = The user attacks with a blinding flash of bioluminscence. It has a 40% chance to make the target flinch.
 Animation = SIGNALBEAM
@@ -3369,7 +3369,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 30
 Description = The user looses a flash of energy from its polished body. It has a 30% chance to lower Sp. Def.
 Animation = MIRRORSHOT
@@ -3539,7 +3539,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = TwoTurnAttackChargeStartSunshine5
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = Charges by summoning sunshine for five turns, then overwhelms the foe with fiery light on the second turn.
 Animation = FIREBLAST
 #-------------------------------
@@ -4581,7 +4581,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Dizzy
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 30
 Description = The target is disoriented by an explosive seed. It has a 30% chance to dizzy.
 Animation = SEEDBOMB
@@ -5123,7 +5123,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = RaiseUserSpDef2
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 100
 Description = Cloaking itself in light energy, the user shocks the target, raising the user's Sp. Def by two steps.
 Animation = DISCHARGE
@@ -5158,7 +5158,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Numb
-Flags = CanProtect,CanRandomCrit
+Flags = CanProtect,CanRandomCrit,Light
 EffectChance = 50
 Description = The user slices with claws of light that have a 50% chance to numb. Can random critical hit.
 #-------------------------------
@@ -5804,7 +5804,7 @@ TotalPP = 5
 Target = NearOther
 Priority = 1
 FunctionCode = LowerTargetAtk1
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 100
 Description = An aurora borealis flashes brightly at the target, lowering their Attack. Always goes first.
 Animation = AURORABEAM
@@ -7065,7 +7065,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef2
 Flags = CanProtect,Pulse
 EffectChance = 100
-Description = The user pulses powerful dark light to expose the target's motives. This lowers their Sp. Def by two steps.
+Description = The user pulses powerful darkness to expose the target's motives. This lowers their Sp. Def by two steps.
 Animation = DARKPULSE
 #-------------------------------
 [VERMINCLOUD]
@@ -7289,7 +7289,7 @@ TotalPP = 10
 Target = NearOther
 Priority = 1
 FunctionCode = Basic
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = The user flashes colorful light to damage the target. This move always goes first.
 Animation = DAZZLINGGLEAM
 #-------------------------------
@@ -7571,7 +7571,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearFoe
 FunctionCode = StartMoonglow8
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = Strikes the target with lunar light, then summons moonglow for eight turns.
 Animation = DAZZLINGGLEAM
 #-------------------------------
