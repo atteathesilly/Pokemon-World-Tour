@@ -1007,6 +1007,21 @@ Flags = CanProtect,Wind
 EffectChance = 20
 Description = The user whips up a cold north wind to attack the target. It has a 20% chance to frostbite.
 #-------------------------------
+[CLASSICALPHYSICS]
+Name = Classical Physics
+Type = FLYING
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 1
+FunctionCode = DoubleDamageGravity
+Flags = CanProtect
+EffectChance = 100
+Description = An apple falls from high up to strike the foe. Always goes first. Deals double damage in intense Gravity.
+Animation = GRAVAPPLE
+#-------------------------------
 [COLDFRONT]
 Name = Cold Front
 Type = FLYING
@@ -2825,18 +2840,6 @@ Flags = CanProtect
 Description = Spectral hands reach from the ground to trip the target. The heavier the target, the greater the damage.
 Animation = CRUSHGRIP
 #-------------------------------
-[HONEYSLATHER]
-Name = Honey Slather
-Type = GHOST
-Category = Status
-Accuracy = 0
-TotalPP = 5
-Target = User
-FunctionCode = HealUserFullHPBindsTarget
-Flags = CanSnatch
-Description = The user uses honey to fully restore their HP. However, this lures swarming insects, trapping and damaging the user for three turns.
-Animation = RECOVER
-#-------------------------------
 [MACHINATE]
 Name = Machinate
 Type = GHOST
@@ -4505,21 +4508,6 @@ Target = None
 FunctionCode = ReviveGrassTypePartyMemberToFullHP
 Description = Restores a fainted Grass-type party member to full HP. Only one use per battle.
 Animation = GRASSYTERRAIN
-#-------------------------------
-[CLASSICALPHYSICS]
-Name = Classical Physics
-Type = GRASS
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Priority = 1
-FunctionCode = DoubleDamageGravity
-Flags = CanProtect
-EffectChance = 100
-Description = An apple falls from high up to strike the foe. Always goes first. Deals double damage in intense Gravity.
-Animation = GRAVAPPLE
 #-------------------------------
 [COCODROP]
 Name = Coco Drop
@@ -7332,6 +7320,18 @@ FunctionCode = HeartRhythm
 Flags = CanProtect,Sound
 Description = Power increases by 20 each time it's used in succession. User heals for half of damage dealt.
 Animation = ROUND
+#-------------------------------
+[HONEYSLATHER]
+Name = Honey Slather
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = HealUserFullHPBindsTarget
+Flags = CanSnatch
+Description = The user uses honey to fully restore their HP. However, this lures swarming insects, trapping and damaging the user for three turns.
+Animation = RECOVER
 #-------------------------------
 [HUMBLE]
 Name = Humble
