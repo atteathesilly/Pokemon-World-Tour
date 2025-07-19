@@ -3784,7 +3784,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearFoe
 FunctionCode = StartSunshine8
-Flags = CanProtect
+Flags = CanProtect,Light
 Description = The user attacks with fire that can be seen in multiple places, then summons sunshine for eight turns.
 Animation = HEATWAVE
 #-------------------------------
