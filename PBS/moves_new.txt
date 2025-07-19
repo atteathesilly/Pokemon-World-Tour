@@ -1156,9 +1156,9 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = Flinch
-Flags = CanProtect,Wind
+Flags = CanProtect
 EffectChance = 30
-Description = The user strikes the target with a sudden wind. It has a 40% chance to flinch the target.
+Description = The user strikes the target with a dart of air. It has a 40% chance to flinch the target.
 #-------------------------------
 [STRAFE]
 Name = Strafe

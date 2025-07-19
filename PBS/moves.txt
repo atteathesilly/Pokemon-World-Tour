@@ -1673,9 +1673,9 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = Flinch
-Flags = CanProtect,Blade,Wind
+Flags = CanProtect
 EffectChance = 40
-Description = The user attacks with a blade of air that slices even the sky. It has a 40% chance to flinch the target.
+Description = The user attacks with air that slices even the sky. It has a 40% chance to flinch the target.
 #-------------------------------
 [BEAKBLAST]
 Name = Beak Blast
