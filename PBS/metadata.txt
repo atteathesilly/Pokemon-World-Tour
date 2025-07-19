@@ -2,8 +2,8 @@
 #-------------------------------
 [000]
 Home = 32,9,7,2
-WildBattleBGM = Red-Streamer-Battle.ogg
-TrainerBattleBGM = DPPTTrainer.ogg
+WildBattleBGM = Battle-Sticker-Star.ogg
+TrainerBattleBGM = Red-Streamer-Battle.ogg
 AvatarBattleBGM = Battle avatar.ogg
 LegendaryAvatarBattleBGM = Battle avatar legendary.ogg
 WildVictoryME = VICTORYWILDPOKEMONHGSS.ogg
