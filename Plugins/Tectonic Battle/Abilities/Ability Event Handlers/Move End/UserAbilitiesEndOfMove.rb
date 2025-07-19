@@ -611,3 +611,14 @@ BattleHandlers::UserAbilityEndOfMove.add(:OFFENSIVE,
     end
   }
 )
+
+BattleHandlers::UserAbilityEndOfMove.add(:BLINDING,
+  proc { |ability, user, _targets, move, battle, _switchedBattlers|
+      next unless move.lightMove?
+      battle.pbShowAbilitySplash(user, ability)
+      user.eachOpposing do |b|
+        b.tryLowerStat(:SPECIAL_DEFENSE, user, increment: 1, showFailMsg: true)
+      end
+      battle.pbHideAbilitySplash(user)
+  }
+)
