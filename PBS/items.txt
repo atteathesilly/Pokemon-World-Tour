@@ -178,7 +178,7 @@ FieldUse = OnPokemon
 Flags = EvolutionItem
 Description = A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally tart.
 #-------------------------------
-[SYRUPYTAPPLE]
+[SYRUPYAPPLE]
 Name = Syrupy Apple
 NamePlural = Syrupy Apples
 Pocket = 1

@@ -19917,7 +19917,7 @@ Weight = 0.5
 Kind = Apple Core
 Pokedex = As soon as it's born, it burrows into an apple. The apple serves as both a food source and a home.
 Generation = 8
-Evolutions = FLAPPLE,Item,TARTAPPLE,APPLETUN,Item,SWEETAPPLE
+Evolutions = FLAPPLE,Item,TARTAPPLE,APPLETUN,Item,SWEETAPPLE,DIPPLIN,Item,SYRUPYAPPLE
 #-------------------------------
 [FLAPPLE]
 Name = Flapple
@@ -19958,6 +19958,44 @@ Weight = 13.0
 Kind = Apple Nectar
 Pokedex = A nectarous scent wafts from its body, luring in the bug Pokémon it preys on. The skin on its back is especially yummy.
 Generation = 8
+#-------------------------------
+[DIPPLIN]
+Name = Dipplin
+Type1 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 80,50,110,40,95,80
+# Total = 455
+BaseEXP = 170
+Rareness = 60
+Happiness = 50
+Abilities = RIPEN,FINESUGAR
+Moves = 40,GIGADRAIN,44,SUNSHINE,48,AROMATICMIST,52,IGNITE,56,DRACOMETEOR,60,TERADRAIN
+LineMoves = BODYPRESS,EMBER,FIREBLAST,FIREPULSE,FLAMETHROWER,HEATWAVE,INCINERATE,LIGHTSCREEN,MUDSHOT,MUDSLIDE,MUDSLING,REFLECT,WYRMWOUNDING
+StepsToHatch = 5396
+Height = 0.4
+Weight = 4.4
+Kind = Candy Apple
+Pokedex = The head sticking out belongs to the fore-wyrm, while the tail belongs to the core-wyrm. The two share one apple and help each other out.
+Generation = 9
+Evolutions = HYDRAPPLE,Level,44
+#-------------------------------
+[HYDRAPPLE]
+Name = Hydrapple
+Type1 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 105,80,110,45,120,80
+# Total = 540
+BaseEXP = 170
+Rareness = 60
+Happiness = 50
+Abilities = RIPEN,FINESUGAR
+Moves = 0,DRAGONPULSE
+StepsToHatch = 5396
+Height = 1.8
+Weight = 93.0
+Kind = Apple Hydra
+Pokedex = Seven syrpents live inside an apple made of syrup. The syrpent in the center is the commander.
+Generation = 9
 #-------------------------------
 [SILICOBRA]
 Name = Silicobra
