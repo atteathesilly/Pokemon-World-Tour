@@ -6562,7 +6562,7 @@ Animation = SWEETKISS
 #-------------------------------
 [JUDGMENT]
 Name = Judgment
-Type = FLEX
+Type = NORMAL
 Category = Special
 Power = 100
 Accuracy = 100
@@ -6574,7 +6574,7 @@ Description = The user releases countless shots of light. Its type varies with t
 #-------------------------------
 [MULTIATTACK]
 Name = Multi-Attack
-Type = FLEX
+Type = NORMAL
 Category = Physical
 Power = 120
 Accuracy = 100
