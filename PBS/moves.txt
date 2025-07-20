@@ -436,18 +436,6 @@ FunctionCode = Basic
 Flags = CanProtect,Sound
 Description = The user lets loose a horribly echoing shout with the power to inflict damage.
 #-------------------------------
-[JUDGMENT]
-Name = Judgment
-Type = NORMAL
-Category = Special
-Power = 100
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TypeDependsOnUserSpecialItem
-Flags = CanProtect,Light
-Description = The user releases countless shots of light. Its type varies with the kind of Plate the user is holding.
-#-------------------------------
 [LASTRESORT]
 Name = Last Resort
 Type = NORMAL
@@ -526,18 +514,6 @@ Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Flags = CanSnatch
 Description = The user restores its own HP by up to half of its max HP.
-#-------------------------------
-[MULTIATTACK]
-Name = Multi-Attack
-Type = NORMAL
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TypeDependsOnUserSpecialItem
-Flags = CanProtect
-Description = Cloaking itself in high energy, the user slams into the target. This move's type depends on the held memory.
 #-------------------------------
 [NATURALGIFT]
 Name = Natural Gift
@@ -6583,6 +6559,30 @@ Description = The user kisses the target with a sweet, angelic cuteness that diz
 Animation = SWEETKISS
 #-------------------------------
 #		FLEX MOVES
+#-------------------------------
+[JUDGMENT]
+Name = Judgment
+Type = FLEX
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeDependsOnUserSpecialItem
+Flags = CanProtect,Light
+Description = The user releases countless shots of light. Its type varies with the kind of Plate the user is holding.
+#-------------------------------
+[MULTIATTACK]
+Name = Multi-Attack
+Type = FLEX
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeDependsOnUserSpecialItem
+Flags = CanProtect
+Description = Cloaking itself in high energy, the user slams into the target. This move's type depends on the held memory.
 #-------------------------------
 [REVELATIONDANCE]
 Name = Revelation Dance
