@@ -52,7 +52,7 @@ BattleHandlers::UserItemAfterMoveUse.add(:PROTEINSHAKE,
         next if battle.pbAllFainted?(user.idxOwnSide) || battle.pbAllFainted?(user.idxOpposingSide)
         next unless move.punchingMove?
         next if numHits == 0
-        user.pbHeldItemTriggered(item) if applyFractionalHealing(1.0 / 3.0, item: item, canOverheal: true) != 0
+        user.pbHeldItemTriggered(item) if user.applyFractionalHealing(1.0 / 3.0, item: item, canOverheal: true) != 0
     }
 )
 
@@ -61,7 +61,7 @@ BattleHandlers::UserItemAfterMoveUse.add(:STRESSBALL,
         next if battle.pbAllFainted?(user.idxOwnSide) || battle.pbAllFainted?(user.idxOpposingSide)
         next unless move.pulseMove?
         next if numHits == 0
-        user.pbHeldItemTriggered(item) if applyFractionalHealing(1.0 / 3.0, item: item, canOverheal: true) != 0
+        user.pbHeldItemTriggered(item) if user.applyFractionalHealing(1.0 / 3.0, item: item, canOverheal: true) != 0
     }
 )
 
