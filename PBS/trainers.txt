@@ -5184,7 +5184,6 @@ Pokemon = MILLIBLAZE,55
     AbilityIndex = 0 # Firefighter
     Item = WATERGEM
 Pokemon = FLORGES,55
-    Form = 0 # Red Flower Form
     Moves = SYNTHESIS,MOONBLAST,PETALDANCE,CALMMIND
     AbilityIndex = 1 # Sentry
     Item = OCCABERRY
@@ -5415,7 +5414,6 @@ Pokemon = MILLIBLAZE,65
     AbilityIndex = 0 # Firefighter
     Item = WATERGEM
 Pokemon = FLORGES,65
-    Form = 0 # Red Flower Form
     Moves = SYNTHESIS,MOONBLAST,PETALDANCE,CALMMIND
     AbilityIndex = 1 # Sentry
     Item = OCCABERRY
@@ -6513,7 +6511,6 @@ Pokemon = MILLIBLAZE,70
     AbilityIndex = 0 # Firefighter
     Item = WATERGEM
 Pokemon = FLORGES,70
-    Form = 0 # Red Flower Form
     Moves = SYNTHESIS,MOONBLAST,PETALDANCE,CALMMIND
     AbilityIndex = 1 # Sentry
 #-------------------------------
@@ -6741,7 +6738,6 @@ Pokemon = MILLIBLAZE,70
     AbilityIndex = 0 # Firefighter
     Item = WATERGEM
 Pokemon = FLORGES,70
-    Form = 0 # Red Flower Form
     Moves = SYNTHESIS,MOONBLAST,PETALDANCE,CALMMIND
     AbilityIndex = 1 # Sentry
 #-------------------------------
@@ -7143,7 +7139,6 @@ Pokemon = HEATRAN,70
 [TRAINER_Skyler,Skyler]
 Flags = NoPerfect
 Pokemon = FLORGES,70
-    Form = 0 # Red Flower Form
     Moves = SYNTHESIS,MOONBLAST,PETALTEMPEST,PSYCHIC
     AbilityIndex = 0 # Clover Song
 Pokemon = JIRACHI,70
@@ -8259,7 +8254,6 @@ Pokemon = MIMIKYU,70
 [TAPU_LELE,Tapu Lele]
 Flags = NoPerfect
 Pokemon = FLORGES,70
-    Form = 0 # Red Flower Form
     Moves = LIGHTOFRUIN,ENERGYBALL,FRENZYPLANT,PSYCHIC
     AbilityIndex = 1 # Sentry
     Item = SALACBERRY
