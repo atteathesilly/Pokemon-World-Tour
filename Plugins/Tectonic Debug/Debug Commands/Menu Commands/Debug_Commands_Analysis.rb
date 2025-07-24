@@ -802,7 +802,7 @@ DebugMenuCommands.register("earliestlevels", {
             next if move.primeval
             next if move.cut
             next if move.zmove
-            move_levels[move.id] = [70, false]
+            move_levels[move.id] = [70, false, []]
         end
 
         GameData::Species.each do |species_data|
@@ -850,19 +850,25 @@ DebugMenuCommands.register("earliestlevels", {
                         learn_level = evoLevelThreshold
                     end
                 end
+                # if multiple pokemon learn at the lowest level, push to the list of learners
+                if move_levels[move_id][0] == learn_level
+                    move_levels[move_id][2].push(species_data.species)
+                end
                 if move_levels[move_id][0] > learn_level
                     move_levels[move_id][0] = learn_level
                     move_levels[move_id][1] = is_evo_move
+                    move_levels[move_id][2] = [species_data.species]
                 end
             end
         end
 
         File.open("Analysis/move_levels.txt","wb") { |file|
-            file.write("Move, Level, Evolution\r\n")
+            file.write("Move,Level,Evolution,Learners\r\n")
             move_levels.each do |move_id,levels|
                 level = levels[0]
                 evo = levels[1]
-                file.write("#{move_id},#{level},#{evo}\r\n")
+                learners = levels[2].join(",")
+                file.write("#{move_id},#{level},#{evo},#{learners}\r\n")
             end
         }
         pbMessage(_INTL("Move learn level analysis written to Analysis/move_levels.txt"))
