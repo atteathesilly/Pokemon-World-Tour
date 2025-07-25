@@ -814,14 +814,12 @@ DebugMenuCommands.register("earliestlevels", {
             end
 
             echoln("Checking the moves of #{species_data.real_name}")
-            evo_move = nil
             species_data.level_moves.each do |learnset_entry|
                 learn_level = learnset_entry[0]
                 move_id = learnset_entry[1]
                 is_evo_move = false
                 # handle evolution moves
                 if learn_level == 0 
-                    evo_move = move_id
                     is_evo_move = true # set evolution flag
                     species_data.evolutions.each do |evolutionEntry|
                         evoMethod = evolutionEntry[1]
@@ -845,10 +843,6 @@ DebugMenuCommands.register("earliestlevels", {
                         end
                         learn_level = evoLevelThreshold
                     end
-                end
-                # ignore relearnable evo moves, but include genuine level 1 moves
-                if learn_level == 1
-                    next if move_id == evo_move
                 end
                 # if multiple pokemon learn at the lowest level, push to the list of learners
                 if move_levels[move_id][0] == learn_level
