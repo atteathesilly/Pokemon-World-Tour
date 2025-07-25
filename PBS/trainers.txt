@@ -3515,7 +3515,7 @@ Pokemon = STOUTLAND,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = APPLETUN,70
-    Moves = HONEYSLATHER,DRACOMETEOR,LEECHSEED,ENERGYBALL
+    Moves = HONEYSLATHER,DRACOMETEOR,LEECHSEED,WHITEFLAME
     AbilityIndex = 1 # Firefighter
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -7495,7 +7495,7 @@ Pokemon = RAICHU,60
     Moves = THUNDERBOLT,SNIPESHOT,DETACHMENT,ENCORE
     AbilityIndex = 0 # Extreme Voltage
 Pokemon = FLAPPLE,60
-    Moves = GRAVITY,CLASSICALPHYSICS,DRAGONPULSE,TEMPEST
+    Moves = GRAVITY,CLASSICALPHYSICS,REND,LEAFBLADE
     AbilityIndex = 0 # Hustle
     Item = WIDELENS
 Pokemon = DARMANITAN,60
