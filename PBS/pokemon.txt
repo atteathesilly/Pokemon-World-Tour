@@ -20692,43 +20692,25 @@ Kind = Copperderm
 Pokedex = If a job requires serious strength, this Pokémon will excel at it. Its copper body tarnishes in the rain, turning a vibrant green color.
 Generation = 8
 WildItemUncommon = LAGGINGTAIL
-Evolutions = COPPERAJAH,Level,29
+Evolutions = COPPERAJAH,Level,31
 #-------------------------------
 [COPPERAJAH]
 Name = Copperajah
 Type1 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 112,105,59,30,70,74
+BaseStats = 112,115,59,30,95,104
 # Total = 450
 BaseEXP = 175
 Rareness = 70
 Happiness = 50
 Abilities = HEAVYMETAL,FASCINATE
+Moves = 0,HEAVYSLAM,1,HEAVYSLAM
 StepsToHatch = 6681
 Height = 3.0
 Weight = 650.0
 Kind = Copperderm
 Pokedex = These Pokémon live in herds. Their trunks have incredible grip strength, strong enough to crush giant rocks into powder.
 Generation = 8
-WildItemUncommon = LAGGINGTAIL
-Evolutions = DIGNIPHITE,Level,49
-#-------------------------------
-[DIGNIPHITE]
-Name = Digniphite
-Type1 = STEEL
-# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 137,125,84,20,90,104
-# Total = 560
-BaseEXP = 250
-Rareness = 50
-Happiness = 50
-Abilities = HEAVYMETAL,FASCINATE
-Moves = 0,HEAVYSLAM,1,HEAVYSLAM
-StepsToHatch = 6681
-Height = 12.0
-Weight = 882.0
-Kind = Monumental
-Pokedex = After evolution, it has taken on the appearance of a great monument. If revered, it will protect nearby villages from all manner of disaster.
 WildItemUncommon = LAGGINGTAIL
 #-------------------------------
 [DRACOZOLT]

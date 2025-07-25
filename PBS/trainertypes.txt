@@ -310,12 +310,6 @@ Gender = Unknown
 BaseMoney = 100
 BattleBGM = Battle Vanya
 #-------------------------------
-[RIVAL_SALLY]
-Name = Rival
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle vanya
-#-------------------------------
 [CHAMPION_F]
 Name = Champion
 Gender = Female
@@ -1433,6 +1427,12 @@ Name = Rising Star
 Gender = Male
 BaseMoney = 60
 IntroBGM = ELITETRAINER
+#-------------------------------
+[RIVAL_SALLY]
+Name = Rival
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle vanya
 #-------------------------------
 [ROLLERSKATER_F]
 Name = Roller Skater
