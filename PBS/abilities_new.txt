@@ -273,6 +273,10 @@ Description = Prevents itself and allies from being poisoned, leeched, or waterl
 Name = Cash Out
 Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
 #-------------------------------
+[CELERITAS]
+Name = Celeritas
+Description = The Pokémon's Speed is doubled while using light-based moves.
+#-------------------------------
 [CHALLENGER]
 Name = Challenger
 Description = Immune to Fighting-type moves, and raises Attack and Sp. Atk if hit by one.

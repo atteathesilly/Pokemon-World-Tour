@@ -362,6 +362,15 @@ BattleHandlers::AbilityOnSwitchIn.add(:HOPPINGMAD,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:CELERITAS,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} is shining with light speed!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
