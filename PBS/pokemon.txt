@@ -16505,7 +16505,7 @@ StepsToHatch = 5120
 Height = 0.8
 Weight = 15.5
 Kind = Fragrance
-Pokedex = Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongside it.
+Pokedex = Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, they will have a hard time walking alongside it.
 Generation = 6
 WildItemUncommon = FAIRYFEATHER
 #-------------------------------
