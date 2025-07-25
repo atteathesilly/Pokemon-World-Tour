@@ -1445,12 +1445,6 @@ Pokemon = MAMOSWINE,70
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,5,0,20,20
-Pokemon = DIGNIPHITE,70
-    Moves = HEAVYSLAM,HEATCRASH,EARTHQUAKE,REFURBISH
-    AbilityIndex = 0 # Heavy Metal
-    Item = CUSTAPBERRY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,10,0,20,10
 #-------------------------------
 [BUGCATCHER_F,Ani]
 Pokemon = INTELEON,70

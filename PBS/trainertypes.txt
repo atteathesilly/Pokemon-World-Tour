@@ -1432,7 +1432,7 @@ IntroBGM = ELITETRAINER
 Name = Rival
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle vanya
+BattleBGM = Ludwig-Battle
 #-------------------------------
 [ROLLERSKATER_F]
 Name = Roller Skater

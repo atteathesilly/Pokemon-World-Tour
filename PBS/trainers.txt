@@ -20,10 +20,10 @@ Pokemon = SLAKING,70
     Moves = TACKLE
     AbilityIndex = 1 # Truant
 #-------------------------------
-[YOUNGSTER,Joey]
-Pokemon = LILLIGANT,50
-    AbilityIndex = 1 # Herbalist
-    Item = PARADOXHERB,MIRRORHERB
+[RIVAL_SALLY,Sally]
+Pokemon = DUCKLETT,15
+    Moves = GLITTERBOMB,PECK,TAILWIND,TIDEPULL
+    AbilityIndex = 1 # Slipstream
 #-------------------------------
 [ROLLERSKATER_M,Lane Tester]
 Pokemon = MACHOP,10
@@ -4102,10 +4102,6 @@ Pokemon = DELCATTY,55
 Pokemon = GOLISOPOD,55
     Moves = FIRSTIMPRESSION,CROSSCHOP,STUNNINGCURL,WATERFALL
     AbilityIndex = 0 # Emergency Exit
-Pokemon = DIGNIPHITE,54
-    Moves = HEAVYSLAM,REFURBISH,TRAMPLE,IRONTAIL
-    AbilityIndex = 1 # Fascinate
-    Item = LEFTOVERS
 #-------------------------------
 [GENTLEMAN,Nicholas]
 Pokemon = MMUSHARNA,55
@@ -6383,9 +6379,6 @@ Pokemon = HAXORUS,70
 Pokemon = RILLABOOM,70
     Moves = SOLARGLIDE,KNOCKOFF,SWORDSDANCE,ACROBATICS
     AbilityIndex = 1 # Vital Rhythm
-Pokemon = DIGNIPHITE,70
-    Moves = HEAVYSLAM,EARTHQUAKE,TANTRUM,HEATCRASH
-    AbilityIndex = 0 # Heavy Metal
 Pokemon = CRUSTLE,70
     Moves = SHELLSMASH,LEECHLIFE,EARTHQUAKE,BEDROCKBREAKER
     AbilityIndex = 0 # Stratagem
@@ -6398,8 +6391,6 @@ Pokemon = HAXORUS,70
     Item = YACHEBERRY
 Pokemon = RILLABOOM,70
     Item = GRASSGEM
-Pokemon = DIGNIPHITE,70
-    Item = CHOICEBAND
 Pokemon = CRUSTLE,70
     Item = SEVENLEAGUEBOOTS
 #-------------------------------
@@ -6610,9 +6601,6 @@ Pokemon = HAXORUS,70
 Pokemon = RILLABOOM,70
     Moves = SOLARGLIDE,KNOCKOFF,SWORDSDANCE,ACROBATICS
     AbilityIndex = 1 # Vital Rhythm
-Pokemon = DIGNIPHITE,70
-    Moves = HEAVYSLAM,EARTHQUAKE,TANTRUM,HEATCRASH
-    AbilityIndex = 0 # Heavy Metal
 Pokemon = CRUSTLE,70
     Moves = SHELLSMASH,LEECHLIFE,EARTHQUAKE,BEDROCKBREAKER
     AbilityIndex = 0 # Stratagem
@@ -6625,8 +6613,6 @@ Pokemon = HAXORUS,70
     Item = YACHEBERRY
 Pokemon = RILLABOOM,70
     Item = GRASSGEM
-Pokemon = DIGNIPHITE,70
-    Item = CHOICEBAND
 Pokemon = CRUSTLE,70
     Item = SEVENLEAGUEBOOTS
 #-------------------------------
@@ -7017,9 +7003,6 @@ Pokemon = HAXORUS,55
 Pokemon = RILLABOOM,55
     Moves = SOLARGLIDE,KNOCKOFF,SWORDSDANCE,ACROBATICS
     AbilityIndex = 1 # Vital Rhythm
-Pokemon = DIGNIPHITE,55
-    Moves = HEAVYSLAM,ADAMANTINEPRESS,BRICKBREAK,BULLETTRAIN
-    AbilityIndex = 0 # Heavy Metal
 #-------------------------------
 [TRAINER_Alessa,Alessa,6]
 Policies = ALESSA_5
