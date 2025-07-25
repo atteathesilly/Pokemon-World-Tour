@@ -4,8 +4,8 @@
 Home = 32,9,7,2
 WildBattleBGM = Battle-Sticker-Star.ogg
 TrainerBattleBGM = Red-Streamer-Battle.ogg
-AvatarBattleBGM = Battle avatar.ogg
-LegendaryAvatarBattleBGM = Battle avatar legendary.ogg
+AvatarBattleBGM = Event-battle.ogg
+LegendaryAvatarBattleBGM = vellumental-battle.ogg
 WildVictoryME = VICTORYWILDPOKEMONHGSS.ogg
 TrainerVictoryME = VICTORYTRAINERDPPT.ogg
 BicycleBGM = BICYCLE2.ogg
