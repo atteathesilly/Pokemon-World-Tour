@@ -4894,6 +4894,19 @@ FunctionCode = TargetActsNextBoostsTheirDamage
 Description = The user assists an ally's next move, boosting its power by 50% and letting it move right after the user.
 Animation = HELPINGHAND
 #-------------------------------
+[ARCLAMP]
+Name = Arc Lamp
+Type = ELECTRIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = AllNearOthers
+FunctionCode = Numb
+Flags = CanProtect,Light
+EffectChance = 30
+Description = A flare of electricity creates a bright light, damaging all nearby battlers. It has a 30% chance to numb.
+#-------------------------------
 [BADENDING]
 Name = Bad Ending
 Type = ELECTRIC
@@ -4934,7 +4947,7 @@ Target = NearOther
 FunctionCode = DamageBelowHalfTakenAsRecoil
 Flags = CanProtect
 Description = The user surges with electricity. If it deals less than 50% of the target's max health, the user takes the difference as recoil.
-Animation = DISCHARGE
+Animation = ARCLAMP
 #-------------------------------
 [CURRENTCRASH]
 Name = Current Crash
@@ -5067,6 +5080,19 @@ EffectChance = 10
 Description = The user strikes the enemy while coated with electricity. It has a 10% chance to numb.
 Animation = SPARK
 #-------------------------------
+[LASERBEAM]
+Name = Laser Beam
+Type = ELECTRIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,Light
+EffectChance = 30
+Description = Electricity is generated to beam intense light directly at the target. This has a 30% chance to numb.
+#-------------------------------
 [LIGHTNINGDANCE]
 Name = Lightning Dance
 Type = ELECTRIC
@@ -5128,7 +5154,7 @@ FunctionCode = RaiseUserSpDef2
 Flags = CanProtect,Light
 EffectChance = 100
 Description = Cloaking itself in light energy, the user shocks the target, raising the user's Sp. Def by two steps.
-Animation = DISCHARGE
+Animation = ARCLAMP
 #-------------------------------
 [METAFORM]
 Name = Metaform

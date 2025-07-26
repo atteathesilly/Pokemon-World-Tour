@@ -1090,7 +1090,7 @@ Pokemon = GOODRA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = GARDEVOIR,70
-    Moves = NERVEBLOCK,DRAININGKISS,PSYCHIC,DISCHARGE
+    Moves = NERVEBLOCK,DRAININGKISS,PSYCHIC,ARCLAMP
     AbilityIndex = 1 # Feedback
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
