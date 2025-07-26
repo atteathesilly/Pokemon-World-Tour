@@ -586,6 +586,10 @@ Name = Fashionable
 Description = Can hold two different items, if one is clothing and the other is not.
 Flags = MultipleItems
 #-------------------------------
+[FASTCHEWER]
+Name = Fast Chewer
+Description = The Pokémon's Speed is doubled while using biting moves.
+#-------------------------------
 [FATCHANCE]
 Name = Fat Chance
 Description = Raises all of its stats whenever it knocks out a Pokémon with a critical hit.

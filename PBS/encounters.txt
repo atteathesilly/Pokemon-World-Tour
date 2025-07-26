@@ -2,7 +2,16 @@
 #-------------------------------
 [015] # Starting town
 Land,20
-    40,KOFFING,34,36
-    20,AIPOM,34,36
-    20,MVULPIX,34,36
-    20,PIDOVE,34,36
+    40,YUNGOOS,9,11
+    20,ROOKIDEE,9,11
+    20,SKWOVET,9,11
+    20,WURMPLE,9,11
+FloweryGrass,21
+    20,PANPOUR,9,11
+    20,PANSAGE,9,11
+    20,PANSEAR,9,11
+    5,FLABEBE,9,11
+    5,FLABEBE_1,9,11
+    5,FLABEBE_2,9,11
+    5,FLABEBE_3,9,11
+    5,FLABEBE_4,9,11

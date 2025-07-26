@@ -24,6 +24,7 @@ Bicycle = false
 Outdoor = true
 ShowArea = true
 Bicycle = true
+BattleBack = forest
 #-------------------------------
 [147]
 # PokEstate
