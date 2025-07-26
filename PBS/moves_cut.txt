@@ -631,6 +631,18 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat,Sound
 Description = A soothing lullaby is sung in a calming voice that puts the target into a deep slumber.
 #-------------------------------
+[SKULLBASH]
+Name = Skull Bash
+Type = NORMAL
+Category = Physical
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user charges to raise its Defense by four steps in the first turn, then rams the foe on the second.
+#-------------------------------
 [SLAM]
 Name = Slam
 Type = NORMAL
