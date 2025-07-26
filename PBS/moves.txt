@@ -4688,19 +4688,6 @@ Flags = CanProtect
 EffectChance = 100
 Description = The user fires a concentrated bundle of electricity, raising the user's Sp. Atk stat by two steps.
 #-------------------------------
-[DISCHARGE]
-Name = Discharge
-Type = ELECTRIC
-Category = Special
-Power = 80
-Accuracy = 100
-TotalPP = 12
-Target = AllNearOthers
-FunctionCode = Numb
-Flags = CanProtect
-EffectChance = 30
-Description = A flare of electricity is loosed to strike the area around the user. It has a 30% chance to numb.
-#-------------------------------
 [EERIEIMPULSE]
 Name = Eerie Impulse
 Type = ELECTRIC
