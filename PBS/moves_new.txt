@@ -812,7 +812,6 @@ TotalPP = 20
 Target = NearFoe
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect,Kicking
-EffectChance = 100
 Description = The user drops onto the target with a kick, dealing 25% recoil to self.
 Animation = JUMPKICK
 #-------------------------------
@@ -1018,7 +1017,6 @@ Target = NearOther
 Priority = 1
 FunctionCode = DoubleDamageGravity
 Flags = CanProtect
-EffectChance = 100
 Description = An apple falls from high up to strike the foe. Always goes first. Deals double damage in intense Gravity.
 Animation = GRAVAPPLE
 #-------------------------------
@@ -1224,7 +1222,6 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,Wind
-EffectChance = 10
 Description = Wind rapidly spins the target in place to multi-hit two to five times.
 Animation = GUST
 #-------------------------------
@@ -3179,7 +3176,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = MoveFracturesSelfCriticalHits
 Flags = CanProtect
-EffectChance = 10
 Description = The user dislodges a blast of thin projectiles. This attack always results in a critical hit, but applies Fracture to the user.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3193,7 +3189,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3425,7 +3420,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user shoots shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3439,7 +3433,6 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user shreds off bits of its own body to launch at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3597,7 +3590,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveTargetWaterType
 Flags = CanProtect
-EffectChance = 10
 Description = The target is dried out and loses Water-type. Then, it bursts into flame from the heat.
 #-------------------------------
 [EVERNALFLUX]
@@ -5049,7 +5041,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = InertiaShock
 Flags = CanProtect
-EffectChance = 10
 Description = Deals 50% more damage if faster than the target. Lowers the user's Speed.
 Animation = VOLTTACKLE
 #-------------------------------
