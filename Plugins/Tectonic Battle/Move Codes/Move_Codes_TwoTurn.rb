@@ -155,7 +155,7 @@ end
 # Two turn attack. Ups user's Defense by 4 steps first turn, attacks second turn.
 # (Skull Bash)
 #===============================================================================
-class PokeBattle_Move_TwoTurnAttackChargeRaiseUserDef1 < PokeBattle_TwoTurnMove
+class PokeBattle_Move_TwoTurnAttackChargeRaiseUserDef4 < PokeBattle_TwoTurnMove
     def pbChargingTurnMessage(user, _targets)
         @battle.pbDisplay(_INTL("{1} tucked in its head!", user.pbThis))
     end

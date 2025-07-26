@@ -807,18 +807,6 @@ FunctionCode = ReplaceMoveWithTargetLastMoveUsed
 Flags = Uninvocable
 Description = It enables the user to permanently learn the move last used by the foe. Once used, Sketch disappears.
 #-------------------------------
-[SKULLBASH]
-Name = Skull Bash
-Type = NORMAL
-Category = Physical
-Power = 140
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackChargeRaiseUserDef1
-Flags = CanProtect
-Description = The user charges to raise its Defense by four steps in the first turn, then rams the foe on the second.
-#-------------------------------
 [SLACKOFF]
 Name = Slack Off
 Type = NORMAL
