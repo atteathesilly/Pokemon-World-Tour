@@ -948,8 +948,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user manifests a bolt of pure courage. This has a 10% chance of raising the user's Sp. Atk.
+EffectChance = 20
+Description = The user manifests a bolt of pure courage. This has a 20% chance of raising the user's Sp. Atk.
 Animation = AURASPHERE
 #-------------------------------
 [WHIPTRANCE]
@@ -3111,8 +3111,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseUserSpd1
 Flags = CanProtect
-EffectChance = 10
-Description = The user becomes a pain train. It has a 10% chance to raise the user's Speed.
+EffectChance = 20
+Description = The user becomes a pain train. It has a 20% chance to raise the user's Speed.
 Animation = HEAVYSLAM
 #-------------------------------
 [CAVALRYCHARGE]
@@ -4548,8 +4548,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user attacks with the bursting power of nature. It has a 10% chance to raise user's Sp. Atk.
+EffectChance = 20
+Description = The user attacks with the bursting power of nature. It has a 20% chance to raise user's Sp. Atk.
 Animation = ENERGYBALL
 #-------------------------------
 [ESSENCEARROW]
@@ -4562,8 +4562,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user fires a small bolt of energy at the target. It has a 10% chance to raise user's Sp. Atk.
+EffectChance = 20
+Description = The user fires a small bolt of energy at the target. It has a 20% chance to raise user's Sp. Atk.
 Animation = ENERGYBALL
 #-------------------------------
 [FLASHSEED]
@@ -5548,8 +5548,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect
-EffectChance = 10
-Description = The target is hit by a weak telekinetic force. It has a 10% chance to lower the target's Sp. Def.
+EffectChance = 20
+Description = The target is hit by a weak telekinetic force. It has a 20% chance to lower the target's Sp. Def.
 Animation = CONFUSION
 #-------------------------------
 [MITOSIS]
