@@ -13038,8 +13038,8 @@ WildItemUncommon = REINFORCINGROD
 Name = Tympole
 Type1 = POISON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 50,60,50,65,60,40
-# Total = 325
+BaseStats = 75,60,55,55,60,45
+# Total = 350
 BaseEXP = 59
 Rareness = 195
 Happiness = 50
@@ -13060,8 +13060,8 @@ Name = Palpitoad
 Type1 = POISON
 Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 80,70,65,65,80,60
-# Total = 420
+BaseStats = 90,75,65,70,75,60
+# Total = 435
 BaseEXP = 134
 Rareness = 95
 Happiness = 50
@@ -13080,8 +13080,8 @@ Name = Seismitoad
 Type1 = POISON
 Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 105,90,85,85,90,75
-# Total = 530
+BaseStats = 115,95,85,90,95,75
+# Total = 555
 BaseEXP = 229
 Rareness = 35
 Happiness = 50

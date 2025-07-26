@@ -1590,7 +1590,7 @@ Description = Immune to Dark-type and Bug-type moves.
 #-------------------------------
 [RESONANT]
 Name = Resonant
-Description = Spread moves deal 25% more damage instead of 25% less.
+Description = Spread moves hitting multiple targets deal 50% more damage.
 #-------------------------------
 [ROAST]
 Name = Roast
