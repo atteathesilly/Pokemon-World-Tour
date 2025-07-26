@@ -9,6 +9,17 @@ BattleHandlers::MoveSpeedModifierAbility.add(:MAESTRO,
     }
 )
 
+BattleHandlers::MoveSpeedModifierAbility.add(:FASTCHEWER,
+    proc { |ability, battler, move, battle, mult, aiCheck|
+        next unless (aiCheck && move.nil?) || move.bitingMove?
+        if aiCheck
+            next mult * 2.0
+        else
+            battler.applyEffect(:MoveSpeedDoubled,ability)
+        end
+    }
+)
+
 BattleHandlers::MoveSpeedModifierAbility.add(:GALEWINGS,
     proc { |ability, battler, move, battle, mult, aiCheck|
         next unless (aiCheck && move.nil?) || move.type == :FLYING

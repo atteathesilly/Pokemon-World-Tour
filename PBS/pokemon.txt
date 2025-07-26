@@ -10981,7 +10981,7 @@ Kind = Tiny Bee
 Pokedex = It collects honey for its colony. At night, they cluster to form a beehive and sleep. If a colony loses their Vespiquen, a new Combee will take its place.
 Generation = 4
 WildItemCommon = HONEY
-Evolutions = VESPIQUEN,Level,28
+Evolutions = VESPIQUEN,Level,27
 #-------------------------------
 [VESPIQUEN]
 Name = Vespiquen
