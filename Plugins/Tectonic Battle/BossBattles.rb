@@ -293,8 +293,8 @@ BASE_TYPE_HUE_WEIGHTING = 0.7
 TYPE_SATURATION_WEIGHTING = 0.8
 TYPE_LUMINOSITY_WEIGHTING = 0.3
 
-BASE_OPACITY_OVERWORLD = 120
-BASE_OPACITY_BATTLE = 140
+BASE_OPACITY_OVERWORLD = 255
+BASE_OPACITY_BATTLE = 255
 
 def bossify(bitmap, scaleFactor = 1.5, type = nil, opacity: BASE_OPACITY_BATTLE)
     # Figure out the color info that should be used for the given type, if any
