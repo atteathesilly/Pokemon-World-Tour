@@ -95,10 +95,6 @@ Description = Sound-based attacks turn Ice-type and are boosted by 30%.
 Name = Armor Piercing
 Description = Deals double damage against Pokémon that have raised defenses or that are protected by a screen.
 #-------------------------------
-[AROMATIC]
-Name = Aromatic
-Description = Uses Aromatherapy if an attack lowers its HP to half or below.
-#-------------------------------
 [ASSAULTSPINES]
 Name = Assault Spines
 Description = Doubles Sp. Def, but the Pokémon can't use status moves.
@@ -1953,7 +1949,7 @@ Description = Special moves against the Pokémon have a 30% chance to frostbite 
 #-------------------------------
 [SUDDENTURN]
 Name = Sudden Turn
-Description = Uses Rapid Spin after its first attack to clear hazards, raise Speed, and deal damage.
+Description = Uses Rapid Spin if an attack lowers its HP to half or below.
 #-------------------------------
 [SUMMITSPIRIT]
 Name = Summit Spirit
