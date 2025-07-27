@@ -698,7 +698,7 @@ HPMult = 8.0
 #-------------------------------
 [VESPIQUEN]
 Ability = STRESSFUL
-Moves1 = NOISEORDER,DEFENDORDER,PRIMEVALSHOREUP
+Moves1 = SWARMORDER,DEFENDORDER,PRIMEVALSHOREUP
 Moves2 = EARTHQUAKE,SWARMORDER
 HPMult = 8.0
 #-------------------------------
