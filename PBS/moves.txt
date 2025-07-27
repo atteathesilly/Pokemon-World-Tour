@@ -687,7 +687,6 @@ TotalPP = 10
 Target = AllNearFoes
 FunctionCode = ChangeUserMeloettaForm
 Flags = CanProtect,Sound
-EffectChance = 10
 Description = An ancient song appeals to the hearts of those listening. Switches Meloetta's form.
 #-------------------------------
 [RETALIATE]
@@ -1053,7 +1052,7 @@ Type = NORMAL
 Category = Status
 Accuracy = 100
 TotalPP = 15
-Target = AllNearOthers
+Target = AllNearFoes
 FunctionCode = Dizzy
 Flags = CanProtect,Dance
 Description = The user performs a wobbly dance that dizzies the Pokémon around it.
@@ -2089,10 +2088,9 @@ Power = 95
 Accuracy = 100
 TotalPP = 10
 Target = AllNearOthers
-FunctionCode = Poison
+FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 10
-Description = It swamps the area around the user with a giant sludge wave. It has a 10% chance to poison.
+Description = It swamps the area around the user with a giant wave of toxic sludge.
 #-------------------------------
 [SMOG]
 Name = Smog
@@ -3364,8 +3362,8 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RaiseUserAtk1
 Flags = CanProtect,Punch
-EffectChance = 10
-Description = The target is hit with a hard punch fired like a meteor. It has a 10% chance to raise Attack.
+EffectChance = 20
+Description = The target is hit with a hard punch fired like a meteor. It has a 20% chance to raise Attack.
 #-------------------------------
 [SHIFTGEAR]
 Name = Shift Gear
@@ -3916,8 +3914,8 @@ TotalPP = 25
 Target = AllNearFoes
 FunctionCode = LowerTargetSpd1
 Flags = CanProtect
-EffectChance = 10
-Description = A spray of bubbles is jetted at all near foes. This has a 10% chance to lower their Speed.
+EffectChance = 20
+Description = A spray of bubbles is jetted at all near foes. This has a 20% chance to lower their Speed.
 #-------------------------------
 [BUBBLEBEAM]
 Name = Bubble Beam
@@ -6381,14 +6379,14 @@ Description = The user protects itself and its allies from status moves with a m
 Name = Dazzling Gleam
 Type = FAIRY
 Category = Special
-Power = 70
+Power = 60
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
 FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,Light
-EffectChance = 10
-Description = The user emits a powerful damaging flash. It has a 10% chance to lower Sp. Atk.
+EffectChance = 40
+Description = The user emits a powerful damaging flash. It has a 40% chance to lower Sp. Atk.
 #-------------------------------
 [DECORATE]
 Name = Decorate

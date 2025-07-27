@@ -812,7 +812,6 @@ TotalPP = 20
 Target = NearFoe
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect,Kicking
-EffectChance = 100
 Description = The user drops onto the target with a kick, dealing 25% recoil to self.
 Animation = JUMPKICK
 #-------------------------------
@@ -949,8 +948,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user manifests a bolt of pure courage. This has a 10% chance of raising the user's Sp. Atk.
+EffectChance = 20
+Description = The user manifests a bolt of pure courage. This has a 20% chance of raising the user's Sp. Atk.
 Animation = AURASPHERE
 #-------------------------------
 [WHIPTRANCE]
@@ -1018,7 +1017,6 @@ Target = NearOther
 Priority = 1
 FunctionCode = DoubleDamageGravity
 Flags = CanProtect
-EffectChance = 100
 Description = An apple falls from high up to strike the foe. Always goes first. Deals double damage in intense Gravity.
 Animation = GRAVAPPLE
 #-------------------------------
@@ -1224,7 +1222,6 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,Wind
-EffectChance = 10
 Description = Wind rapidly spins the target in place to multi-hit two to five times.
 Animation = GUST
 #-------------------------------
@@ -1334,7 +1331,7 @@ Animation = MIST
 Name = Grime Grapple
 Type = POISON
 Category = Physical
-Power = 120
+Power = 140
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
@@ -1567,8 +1564,8 @@ EffectChance = 20
 Description = The user whips up a hot desert twister to attack the target. It has a 20% chance to burn.
 Animation = SCORCHINGSANDS
 #-------------------------------
-[DUSTMACHPULSE]
-Name = Dustmach Pulse
+[DUSTSTORM]
+Name = Dust Storm
 Type = GROUND
 Category = Special
 Power = 120
@@ -1576,7 +1573,7 @@ Accuracy = 100
 TotalPP = 5
 Target = AllNearOthers
 FunctionCode = Basic
-Flags = CanProtect,Pulse
+Flags = CanProtect,Wind
 Description = The user whips up dirt at supersonic speeds, damaging everything around it.
 Animation = SCORCHINGSANDS
 #-------------------------------
@@ -1626,11 +1623,11 @@ Category = Special
 Power = 80
 Accuracy = 100
 TotalPP = 10
-Target = AllNearOthers
+Target = NearOther
 FunctionCode = RaiseUserSpd1
 Flags = CanProtect
 EffectChance = 100
-Description = The user rides onto the field on a huge wave of mud, damaging all nearby and raising their own Speed.
+Description = The user propels itself forward with a wave of mud which also slams into the target. The user's speed is raised.
 Animation = MUDBOMB
 #-------------------------------
 [MUDSLING]
@@ -2732,9 +2729,9 @@ Animation = HEX
 Name = Death Knell
 Type = GHOST
 Category = Special
-Power = 90
+Power = 95
 Accuracy = 100
-TotalPP = 15
+TotalPP = 10
 Target = AllNearOthers
 FunctionCode = Basic
 Flags = CanProtect,Sound
@@ -3114,8 +3111,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseUserSpd1
 Flags = CanProtect
-EffectChance = 10
-Description = The user becomes a pain train. It has a 10% chance to raise the user's Speed.
+EffectChance = 20
+Description = The user becomes a pain train. It has a 20% chance to raise the user's Speed.
 Animation = HEAVYSLAM
 #-------------------------------
 [CAVALRYCHARGE]
@@ -3179,7 +3176,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = MoveFracturesSelfCriticalHits
 Flags = CanProtect
-EffectChance = 10
 Description = The user dislodges a blast of thin projectiles. This attack always results in a critical hit, but applies Fracture to the user.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3193,7 +3189,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3425,7 +3420,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user shoots shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3439,7 +3433,6 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = UserLosesTenthOfTotalHP
 Flags = CanProtect
-EffectChance = 100
 Description = The user shreds off bits of its own body to launch at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
@@ -3597,7 +3590,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveTargetWaterType
 Flags = CanProtect
-EffectChance = 10
 Description = The target is dried out and loses Water-type. Then, it bursts into flame from the heat.
 #-------------------------------
 [EVERNALFLUX]
@@ -4556,8 +4548,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user attacks with the bursting power of nature. It has a 10% chance to raise user's Sp. Atk.
+EffectChance = 20
+Description = The user attacks with the bursting power of nature. It has a 20% chance to raise user's Sp. Atk.
 Animation = ENERGYBALL
 #-------------------------------
 [ESSENCEARROW]
@@ -4570,8 +4562,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = RaiseUserSpAtk1
 Flags = CanProtect
-EffectChance = 10
-Description = The user fires a small bolt of energy at the target. It has a 10% chance to raise user's Sp. Atk.
+EffectChance = 20
+Description = The user fires a small bolt of energy at the target. It has a 20% chance to raise user's Sp. Atk.
 Animation = ENERGYBALL
 #-------------------------------
 [FLASHSEED]
@@ -4898,14 +4890,14 @@ Animation = HELPINGHAND
 Name = Arc Lamp
 Type = ELECTRIC
 Category = Special
-Power = 80
+Power = 95
 Accuracy = 100
-TotalPP = 12
+TotalPP = 10
 Target = AllNearOthers
-FunctionCode = Numb
+FunctionCode = Basic
 Flags = CanProtect,Light
 EffectChance = 30
-Description = A flare of electricity creates a bright light, damaging all nearby battlers. It has a 30% chance to numb.
+Description = A flare of electricity creates a bright light, damaging all nearby battlers.
 Animation = FLASH
 #-------------------------------
 [BADENDING]
@@ -5049,7 +5041,6 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = InertiaShock
 Flags = CanProtect
-EffectChance = 10
 Description = Deals 50% more damage if faster than the target. Lowers the user's Speed.
 Animation = VOLTTACKLE
 #-------------------------------
@@ -5557,8 +5548,8 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect
-EffectChance = 10
-Description = The target is hit by a weak telekinetic force. It has a 10% chance to lower the target's Sp. Def.
+EffectChance = 20
+Description = The target is hit by a weak telekinetic force. It has a 20% chance to lower the target's Sp. Def.
 Animation = CONFUSION
 #-------------------------------
 [MITOSIS]
@@ -6417,7 +6408,7 @@ Category = Special
 Power = 80
 Accuracy = 100
 TotalPP = 15
-Target = AllNearOthers
+Target = AllNearFoes
 FunctionCode = DamageBoostEclipse50Percent
 Flags = CanProtect
 Description = Attacks all near others with dragon energy. Power increases by 50% in eclipse.

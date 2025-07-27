@@ -1331,7 +1331,7 @@ Pokemon = LINOONE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = PIDGEOT,70
-    Moves = TEMPEST,DUSTMACHPULSE,SUPERCOOL,THUNDER
+    Moves = TEMPEST,DUSTSTORM,SUPERCOOL,THUNDER
     AbilityIndex = 0 # No Guard
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2445,7 +2445,7 @@ Pokemon = MEGANIUM,70
     EV = 20,0,20,0,0,10
 Pokemon = ARCANINE,70
     Moves = BLAZINGSPEED,CLOSECOMBAT,ELECTROSLASH,PLAYROUGH
-    AbilityIndex = 1 # Heart of Justice
+    AbilityIndex = 1 # Serene Grace
     Item = FIREGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,10,0,20,10

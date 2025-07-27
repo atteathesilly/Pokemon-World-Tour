@@ -422,7 +422,7 @@ Pokemon = BUIZEL,21
     AbilityIndex = 1 # Technician
 Pokemon = GROWLITHE,21
     Moves = FROLIC,FIREFANG,GROWL
-    AbilityIndex = 1 # Heart of Justice
+    AbilityIndex = 1 # Serene Grace
 #-------------------------------
 [SOCIALITE,Elizabeth]
 Pokemon = URSARING,22
@@ -1107,9 +1107,9 @@ Pokemon = GIGACHU,35
 [BAKER,Margerie]
 Flags = NoPerfect
 Pokemon = ARCANINE,45
-    Moves = BLAZINGSPEED,EXTREMESPEED,HUMBLE,HOWL
-    AbilityIndex = 1 # Heart of Justice
-    Item = LIECHIBERRY
+    Moves = BLAZEKICK,BODYSLAM,HUMBLE,BULLETTRAIN
+    AbilityIndex = 0 # Intimidate
+    Item = ASSAULTVEST
 Pokemon = BLASFEMMIE,45
     Moves = DRAININGKISS,DARKALLURE,GLAMOURFLASH,SCAM
     AbilityIndex = 1 # Hubris
@@ -2250,7 +2250,7 @@ Pokemon = MAGCARGO,40
 #-------------------------------
 [LADY3,Kristiane]
 Pokemon = PIDGEOT,40
-    Moves = DUSTMACHPULSE,AIRSLASH,GALLINGSPIT,SHOUT
+    Moves = DUSTSTORM,AIRSLASH,GALLINGSPIT,SHOUT
     AbilityIndex = 1 # Aeroshell
     Item = SITRUSBERRY
 Pokemon = MINIOR,40
@@ -3706,7 +3706,7 @@ Pokemon = ALTARIA,46
 #-------------------------------
 [BIRDKEEPER_M2,Bernhard]
 Pokemon = PIDGEOT,36
-    Moves = DUSTMACHPULSE,AIRSLASH,GALLINGSPIT,SHOUT
+    Moves = DUSTSTORM,AIRSLASH,GALLINGSPIT,SHOUT
     AbilityIndex = 1 # Aeroshell
 Pokemon = WHISCASH,37
     Moves = TREMOR,WATERFALL,DRAGONTAIL,REST
@@ -9364,7 +9364,7 @@ Pokemon = AEGISLASH,70
 #-------------------------------
 [IDEALTRAINER,of Days]
 Pokemon = LYCANROC,70
-    AbilityIndex = 1 # Lycanthrope
+    AbilityIndex = 1 # Serene Grace
 Pokemon = TOXAPEX,70
     AbilityIndex = 1 # Regenerator
 Pokemon = VIKAVOLT,70
