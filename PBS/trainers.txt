@@ -1122,7 +1122,7 @@ Pokemon = STOUTLAND,45
     Moves = CLOUDBREAK,WISH,ROAR,NUMB
     AbilityIndex = 0 # Break Through
 Pokemon = VESPIQUEN,45
-    Moves = SWARMORDER,NOISEORDER,DEFENDORDER,HEALORDER
+    Moves = SWARMORDER,LATCHON,DEFENDORDER,HEALORDER
     AbilityIndex = 1 # Stressful
     Item = LEFTOVERS
 #-------------------------------

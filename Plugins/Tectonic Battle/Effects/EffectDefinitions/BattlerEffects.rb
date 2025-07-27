@@ -609,11 +609,6 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :SuddenTurn,
-    :real_name => "Instructed",
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
     :id => :LaserFocus,
     :real_name => "Laser Focus Turns",
     :type => :Integer,

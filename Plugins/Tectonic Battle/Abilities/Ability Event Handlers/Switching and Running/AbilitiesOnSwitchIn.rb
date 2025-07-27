@@ -644,7 +644,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:ASSISTANT,
 BattleHandlers::AbilityOnSwitchIn.add(:SUDDENTURN,
   proc { |ability, battler, battle, aiCheck|
     if aiCheck
-      next battle.forceUseMove(battler, :RAPIDSPIN, ability: ability, aiCheck: true)
+      next battle.forceUseMove(battler, :RAPIDSPIN, ability: ability, aiCheck: true) / 2
     else
       next 0
     end
