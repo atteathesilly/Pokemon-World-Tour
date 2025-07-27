@@ -10378,6 +10378,7 @@ Flags = Legendary
 [GROUDON]
 Name = Groudon
 Type1 = GROUND
+Type2 = FIRE
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 100,150,140,90,100,90
 # Total = 670
