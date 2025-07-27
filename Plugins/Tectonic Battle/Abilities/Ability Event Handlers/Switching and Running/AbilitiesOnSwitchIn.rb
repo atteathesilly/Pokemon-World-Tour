@@ -68,13 +68,13 @@ BattleHandlers::AbilityOnSwitchIn.add(:STYGIANNIGHT,
   }
 )
 
-BattleHandlers::AbilityOnSwitchIn.add(:METEORSHOWER,
+BattleHandlers::AbilityOnSwitchIn.add(:EVENTHORIZON,
   proc { |ability, battler, battle, aiCheck|
       pbBattleWeatherAbility(ability, :MeteorShower, battler, battle, false, true, aiCheck)
   }
 )
 
-BattleHandlers::AbilityOnSwitchIn.add(:ICEAGE,
+BattleHandlers::AbilityOnSwitchIn.add(:HEATDEATH,
   proc { |ability, battler, battle, aiCheck|
       pbBattleWeatherAbility(ability, :IceAge, battler, battle, false, true, aiCheck)
   }

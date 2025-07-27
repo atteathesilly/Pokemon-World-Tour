@@ -952,7 +952,7 @@ Description = Doubles Speed. Dashes to avoid hazards when entering.
 Flags = HazardImmunity
 #-------------------------------
 [ICEAGE]
-Name = Ice Age
+Name = Heat Death
 Description = Changes the weather to ice age, which increase PP usage. Lingers for 3 turns after leaving.
 Flags = HailSynergy
 #-------------------------------
@@ -1218,8 +1218,8 @@ Name = Meteoric
 Description = Boosts the Pokémon's Speed by 50% in sandstorm or hail.
 Flags = SandstormSynergy,HailSynergy
 #-------------------------------
-[METEORSHOWER]
-Name = Meteor Shower
+[EVENTHORIZON]
+Name = Event Horizon
 Description = Changes the weather to meteor shower, which increases sandstorm damage. Lingers for 3 turns after leaving.
 Flags = SandstormSynergy
 #-------------------------------
