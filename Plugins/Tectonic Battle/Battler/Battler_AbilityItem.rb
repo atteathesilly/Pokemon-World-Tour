@@ -233,13 +233,13 @@ class PokeBattle_Battler
 
         @addedItems.push(item)
 
-        updateTribeCounts
+        @battle.updateTribeCounts
     end
     
     def setItems(value)
         @pokemon.setItems(value)
 
-        updateTribeCounts
+        @battle.updateTribeCounts
     end
 
     def recycleItem(recyclingMsg: nil, ability: nil)
@@ -255,7 +255,7 @@ class PokeBattle_Battler
         hideMyAbilitySplash if ability
         pbHeldItemTriggerCheck
 
-        updateTribeCounts
+        @battle.updateTribeCounts
     end
 
     #=============================================================================
@@ -292,7 +292,7 @@ class PokeBattle_Battler
         applyEffect(:ItemLost) if items.length == 0
         refreshDataBox
         
-        updateTribeCounts
+        @battle.updateTribeCounts
     end
 
     #=========================================
