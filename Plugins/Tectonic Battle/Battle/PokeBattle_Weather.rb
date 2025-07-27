@@ -82,6 +82,8 @@ class PokeBattle_Battle
         when :Moonglow      then pbDisplay(_INTL("The bright moon doesn't wane!"))
         when :RingEclipse   then pbDisplay(_INTL("The planetary ring tightens its grip!"))
         when :BloodMoon     then pbDisplay(_INTL("The nightmarish moon is unending!"))
+        when :MeteorShower  then pbDisplay(_INTL("The sand shows no sign of stopping!"))
+        when :IceAge        then pbDisplay(_INTL("The hail may go on forever!"))
         end
     end
 
@@ -98,6 +100,8 @@ class PokeBattle_Battle
         when :Moonglow      then pbDisplay(_INTL("The light of the moon shines down!"))
         when :RingEclipse   then pbDisplay(_INTL("A planetary ring dominates the sky!"))
         when :BloodMoon     then pbDisplay(_INTL("A nightmare possessed the moon!"))
+        when :MeteorShower  then pbDisplay(_INTL("A storm of otherworldly rocks approach!"))
+        when :IceAge        then pbDisplay(_INTL("Unrelenting hail approaches!"))
         end
     end
 
@@ -115,6 +119,8 @@ class PokeBattle_Battle
         when :StrongWinds   then pbDisplay(_INTL("The mysterious air current has dissipated!"))
         when :RingEclipse   then pbDisplay(_INTL("The planetary ring flew off!"))
         when :BloodMoon     then pbDisplay(_INTL("The nightmare is purged from the moon!"))
+        when :MeteorShower  then pbDisplay(_INTL("The storm of meteors ceases!"))
+        when :IceAge        then pbDisplay(_INTL("The hailstorm finally clears!"))
         end
         oldWeather = @field.weather
         @field.weather	= :None
@@ -153,6 +159,16 @@ class PokeBattle_Battle
             if !pbCheckGlobalAbility(:STYGIANNIGHT) && @field.defaultWeather != :BloodMoon
                 @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
                 pbDisplay(_INTL("The nightmare moon begins to retreat!"))
+            end
+        when :MeteorShower
+            if !pbCheckGlobalAbility(:METEORSHOWER) && @field.defaultWeather != :MeteorShower
+                @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
+                pbDisplay(_INTL("The extreme sand begins to dissipate!"))
+            end
+        when :IceAge
+            if !pbCheckGlobalAbility(:ICEAGE) && @field.defaultWeather != :IceAge
+                @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
+                pbDisplay(_INTL("The unrelenting hail begins to calm down!"))
             end
         end
 
@@ -198,6 +214,15 @@ class PokeBattle_Battle
             return true
         when :BloodMoon
             pbDisplay(_INTL("The nightmarish moon is unaffected!")) if showMessages
+            return true
+        when :BloodMoon
+            pbDisplay(_INTL("The nightmarish moon is unaffected!")) if showMessages
+            return true
+        when :MeteorShower
+            pbDisplay(_INTL("The sandstorm rages on unaffected!")) if showMessages
+            return true
+        when :IceAge
+            pbDisplay(_INTL("The hailstorm continues regardless!")) if showMessages
             return true
         end
         return false

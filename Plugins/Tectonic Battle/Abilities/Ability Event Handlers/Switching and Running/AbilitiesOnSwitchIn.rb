@@ -68,6 +68,18 @@ BattleHandlers::AbilityOnSwitchIn.add(:STYGIANNIGHT,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:METEORSHOWER,
+  proc { |ability, battler, battle, aiCheck|
+      pbBattleWeatherAbility(ability, :MeteorShower, battler, battle, false, true, aiCheck)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:ICEAGE,
+  proc { |ability, battler, battle, aiCheck|
+      pbBattleWeatherAbility(ability, :IceAge, battler, battle, false, true, aiCheck)
+  }
+)
+
 #######################################################
 # Entry debuff abilities
 #######################################################

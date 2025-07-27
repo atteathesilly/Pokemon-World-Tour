@@ -935,6 +935,11 @@ Name = Hyper Speed
 Description = Doubles Speed. Dashes to avoid hazards when entering.
 Flags = HazardImmunity
 #-------------------------------
+[ICEAGE]
+Name = Ice Age
+Description = Changes the weather to ice age, which increase PP usage. Lingers for 3 turns after leaving.
+Flags = HailSynergy
+#-------------------------------
 [ICEBLOCK]
 Name = Ice Block
 Description = It can avoid being knocked out by using its face. The face then melts.
@@ -1196,6 +1201,11 @@ Description = Disables the opponent's most recently-used move for two turns upon
 Name = Meteoric
 Description = Boosts the Pokémon's Speed by 50% in sandstorm or hail.
 Flags = SandstormSynergy,HailSynergy
+#-------------------------------
+[METEORSHOWER]
+Name = Meteor Shower
+Description = Changes the weather to meteor shower, which increases sandstorm damage. Lingers for 3 turns after leaving.
+Flags = SandstormSynergy
 #-------------------------------
 [MIDDLEWAY]
 Name = Middle Way
