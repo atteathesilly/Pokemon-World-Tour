@@ -3095,3 +3095,12 @@ Price = 0
 FieldUse = Direct
 Flags = KeyItem,SkipPocketMessage
 Description = A vessel for negative emotions. Perfectly defeat enough trainers to earn its rewards.
+#-------------------------------
+[SMARTPHONE]
+Name = Smart Phone
+NamePlural = Smart Phones
+Pocket = 8
+Price = 0
+FieldUse = Direct
+Flags = KeyItem
+Description = A smart phone. Use it to take selfies.
