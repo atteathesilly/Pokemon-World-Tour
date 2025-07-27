@@ -211,6 +211,38 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableInSky < PokeBattle_Move_TwoTurnAt
 end
 
 #===============================================================================
+# Two turn attack. Skips first turn, attacks second turn. 
+# Power increases the quicker the user is than the target (Jet Speed)
+#===============================================================================
+class PokeBattle_Move_TwoTurnAttackInvulnerableScalesFaster < PokeBattle_Move_TwoTurnAttackInvulnerable
+    def pbBaseDamage(_baseDmg, user, target)
+        ratio = user.pbSpeed.to_f / target.pbSpeed.to_f
+        basePower = 10 + (7 * ratio).floor * 5
+        basePower = 150 if basePower > 150
+        basePower = 40 if basePower < 40
+        return basePower
+    end
+
+    def pbChargingTurnMessage(user, _targets)
+        @battle.pbDisplay(_INTL("{1} flew up high!", user.pbThis))
+    end
+end
+
+#===============================================================================
+# Two turn attack. Skips first turn, inflicts Jinx and Frostbite second turn. (Misty Dreams)
+#===============================================================================
+class PokeBattle_Move_TwoTurnAttackInvulnerableJinxFrostbite < PokeBattle_Move_TwoTurnAttackInvulnerable
+    def pbEffectAgainstTarget(user, target)
+        target.applyEffect(:Jinxed, DEFAULT_JINX_DURATION)
+        target.applyFrostbite
+    end
+
+    def pbChargingTurnMessage(user, _targets)
+        @battle.pbDisplay(_INTL("{1} disappears into mist!", user.pbThis))
+    end
+end
+
+#===============================================================================
 # Two turn attack. Skips first turn, attacks second turn. (Dig, Undermine)
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
