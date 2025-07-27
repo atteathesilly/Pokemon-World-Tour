@@ -1,6 +1,5 @@
 ItemHandlers::UseFromBag.add(:SMARTPHONE,proc { |item|
-	takeSelfie
-	next 1
+	next 2
 })
 
 ItemHandlers::ConfirmUseInField.add(:SMARTPHONE,proc { |item|
