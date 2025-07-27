@@ -1331,7 +1331,7 @@ Pokemon = LINOONE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = PIDGEOT,70
-    Moves = TEMPEST,DUSTMACHPULSE,SUPERCOOL,THUNDER
+    Moves = TEMPEST,DUSTSTORM,SUPERCOOL,THUNDER
     AbilityIndex = 0 # No Guard
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

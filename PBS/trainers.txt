@@ -2250,7 +2250,7 @@ Pokemon = MAGCARGO,40
 #-------------------------------
 [LADY3,Kristiane]
 Pokemon = PIDGEOT,40
-    Moves = DUSTMACHPULSE,AIRSLASH,GALLINGSPIT,SHOUT
+    Moves = DUSTSTORM,AIRSLASH,GALLINGSPIT,SHOUT
     AbilityIndex = 1 # Aeroshell
     Item = SITRUSBERRY
 Pokemon = MINIOR,40
@@ -3706,7 +3706,7 @@ Pokemon = ALTARIA,46
 #-------------------------------
 [BIRDKEEPER_M2,Bernhard]
 Pokemon = PIDGEOT,36
-    Moves = DUSTMACHPULSE,AIRSLASH,GALLINGSPIT,SHOUT
+    Moves = DUSTSTORM,AIRSLASH,GALLINGSPIT,SHOUT
     AbilityIndex = 1 # Aeroshell
 Pokemon = WHISCASH,37
     Moves = TREMOR,WATERFALL,DRAGONTAIL,REST

@@ -1336,6 +1336,19 @@ EffectChance = 10
 Description = The user controls turbulent dust and sand to attack all nearby foes.
 Animation = SCORCHINGSANDS
 #-------------------------------
+[DUSTMACHPULSE]
+Name = Dustmach Pulse
+Type = GROUND
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = Invalid
+Flags = CanProtect,Pulse
+Description = The user whips up dirt at supersonic speeds, damaging everything around it.
+Animation = SCORCHINGSANDS
+#-------------------------------
 [FISSURE]
 Name = Fissure
 Type = GROUND

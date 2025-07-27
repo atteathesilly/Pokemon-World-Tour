@@ -1052,7 +1052,7 @@ Type = NORMAL
 Category = Status
 Accuracy = 100
 TotalPP = 15
-Target = AllNearOthers
+Target = AllNearFoes
 FunctionCode = Dizzy
 Flags = CanProtect,Dance
 Description = The user performs a wobbly dance that dizzies the Pokémon around it.
@@ -2088,10 +2088,9 @@ Power = 95
 Accuracy = 100
 TotalPP = 10
 Target = AllNearOthers
-FunctionCode = Poison
+FunctionCode = Basic
 Flags = CanProtect
-EffectChance = 10
-Description = It swamps the area around the user with a giant sludge wave. It has a 10% chance to poison.
+Description = It swamps the area around the user with a giant wave of toxic sludge.
 #-------------------------------
 [SMOG]
 Name = Smog

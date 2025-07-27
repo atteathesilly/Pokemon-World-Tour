@@ -1564,8 +1564,8 @@ EffectChance = 20
 Description = The user whips up a hot desert twister to attack the target. It has a 20% chance to burn.
 Animation = SCORCHINGSANDS
 #-------------------------------
-[DUSTMACHPULSE]
-Name = Dustmach Pulse
+[DUSTSTORM]
+Name = Dust Storm
 Type = GROUND
 Category = Special
 Power = 120
@@ -1573,7 +1573,7 @@ Accuracy = 100
 TotalPP = 5
 Target = AllNearOthers
 FunctionCode = Basic
-Flags = CanProtect,Pulse
+Flags = CanProtect,Wind
 Description = The user whips up dirt at supersonic speeds, damaging everything around it.
 Animation = SCORCHINGSANDS
 #-------------------------------
@@ -1623,11 +1623,11 @@ Category = Special
 Power = 80
 Accuracy = 100
 TotalPP = 10
-Target = AllNearOthers
+Target = NearOther
 FunctionCode = RaiseUserSpd1
 Flags = CanProtect
 EffectChance = 100
-Description = The user rides onto the field on a huge wave of mud, damaging all nearby and raising their own Speed.
+Description = The user propels itself forward with a wave of mud which also slams into the target. The user's speed is raised.
 Animation = MUDBOMB
 #-------------------------------
 [MUDSLING]
@@ -2729,9 +2729,9 @@ Animation = HEX
 Name = Death Knell
 Type = GHOST
 Category = Special
-Power = 90
+Power = 95
 Accuracy = 100
-TotalPP = 15
+TotalPP = 10
 Target = AllNearOthers
 FunctionCode = Basic
 Flags = CanProtect,Sound
@@ -4890,14 +4890,14 @@ Animation = HELPINGHAND
 Name = Arc Lamp
 Type = ELECTRIC
 Category = Special
-Power = 80
+Power = 95
 Accuracy = 100
-TotalPP = 12
+TotalPP = 10
 Target = AllNearOthers
-FunctionCode = Numb
+FunctionCode = Basic
 Flags = CanProtect,Light
 EffectChance = 30
-Description = A flare of electricity creates a bright light, damaging all nearby battlers. It has a 30% chance to numb.
+Description = A flare of electricity creates a bright light, damaging all nearby battlers.
 Animation = FLASH
 #-------------------------------
 [BADENDING]
@@ -6408,7 +6408,7 @@ Category = Special
 Power = 80
 Accuracy = 100
 TotalPP = 15
-Target = AllNearOthers
+Target = AllNearFoes
 FunctionCode = DamageBoostEclipse50Percent
 Flags = CanProtect
 Description = Attacks all near others with dragon energy. Power increases by 50% in eclipse.
