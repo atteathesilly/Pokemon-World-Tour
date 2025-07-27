@@ -543,6 +543,11 @@ Description = Eclipse counts down twice as quickly.
 Name = Erudite
 Description = Powers up Psychic-type moves by 50%.
 #-------------------------------
+[EVENTHORIZON]
+Name = Event Horizon
+Description = Changes the weather to a star storm, which increases sandstorm damage. Lingers for 3 turns after leaving.
+Flags = SandstormSynergy
+#-------------------------------
 [EXCAVATOR]
 Name = Excavator
 Description = Dig and Undermine deal 50% more damage.
@@ -880,6 +885,11 @@ Description = Immune to Fairy-type moves and restores 25% of max HP if hit by on
 Name = Heart of Justice
 Description = Immune to Dark-type moves, and boosts Attack and Sp. Atk when hit by one.
 #-------------------------------
+[HEATDEATH]
+Name = Heat Death
+Description = Changes the weather to ice age, which increase PP usage. Lingers for 3 turns after leaving.
+Flags = HailSynergy
+#-------------------------------
 [HEATSAVOR]
 Name = Heat Savor
 Description = Heals by 1/8th of its max HP each turn if in sunshine.
@@ -950,11 +960,6 @@ Description = Punches, Kicks, and Bites combo together to create special effects
 Name = Hyper Speed
 Description = Doubles Speed. Dashes to avoid hazards when entering.
 Flags = HazardImmunity
-#-------------------------------
-[HEATDEATH]
-Name = Heat Death
-Description = Changes the weather to ice age, which increase PP usage. Lingers for 3 turns after leaving.
-Flags = HailSynergy
 #-------------------------------
 [ICEBLOCK]
 Name = Ice Block
@@ -1217,11 +1222,6 @@ Description = Disables the opponent's most recently-used move for two turns upon
 Name = Meteoric
 Description = Boosts the Pokémon's Speed by 50% in sandstorm or hail.
 Flags = SandstormSynergy,HailSynergy
-#-------------------------------
-[EVENTHORIZON]
-Name = Event Horizon
-Description = Changes the weather to meteor shower, which increases sandstorm damage. Lingers for 3 turns after leaving.
-Flags = SandstormSynergy
 #-------------------------------
 [MIDDLEWAY]
 Name = Middle Way

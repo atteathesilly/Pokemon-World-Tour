@@ -400,7 +400,7 @@ class PokeBattle_Battle
         when :StrongWinds then pbDisplay(_INTL("The wind is strong."))
         when :RingEclipse then pbDisplay(_INTL("A planetary ring dominates the skyline."))
         when :Bloodmoon   then pbDisplay(_INTL("The moon is taken by a nightmare."))
-        when :MeteorShower then pbDisplay(_INTL("The sandstorm ravages all."))
+        when :StarStorm   then pbDisplay(_INTL("The sandstorm ravages all."))
         when :IceAge      then pbDisplay(_INTL("The hailstorm destroys all."))
         end
         # Change avatars for auto-testing

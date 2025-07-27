@@ -82,7 +82,7 @@ class PokeBattle_Battle
         when :Moonglow      then pbDisplay(_INTL("The bright moon doesn't wane!"))
         when :RingEclipse   then pbDisplay(_INTL("The planetary ring tightens its grip!"))
         when :BloodMoon     then pbDisplay(_INTL("The nightmarish moon is unending!"))
-        when :MeteorShower  then pbDisplay(_INTL("The sand shows no sign of stopping!"))
+        when :StarStorm     then pbDisplay(_INTL("The sand shows no sign of stopping!"))
         when :IceAge        then pbDisplay(_INTL("The hail may go on forever!"))
         end
     end

@@ -99,8 +99,8 @@ GameData::BattleWeather.register({
 })
 
 GameData::BattleWeather.register({
-  :id        => :MeteorShower,
-  :name      => _INTL("Meteor Shower"),
+  :id        => :StarStorm,
+  :name      => _INTL("Star Storm"),
   :animation => "Sandstorm",
 })
 

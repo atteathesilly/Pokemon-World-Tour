@@ -70,7 +70,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:STYGIANNIGHT,
 
 BattleHandlers::AbilityOnSwitchIn.add(:EVENTHORIZON,
   proc { |ability, battler, battle, aiCheck|
-      pbBattleWeatherAbility(ability, :MeteorShower, battler, battle, false, true, aiCheck)
+      pbBattleWeatherAbility(ability, :StarStorm, battler, battle, false, true, aiCheck)
   }
 )
 
