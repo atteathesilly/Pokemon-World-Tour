@@ -1580,6 +1580,20 @@ Target = NearAlly
 FunctionCode = Invalid
 Description = The user makes its ally perform the move in the user's first slot.
 #-------------------------------
+[NOISEORDER]
+Name = Noise Order
+Type = BUG
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Sound
+EffectChance = 100
+Description = The user calls out its underlings to annoy the target with buzzing sounds, dizzying it.
+Animation = BUGBUZZ
+#-------------------------------
 [POWDER]
 Name = Powder
 Type = BUG

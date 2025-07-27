@@ -2454,20 +2454,6 @@ Flags = CanSnatch
 Description = The user makes a plea for survival, halving the damage their side takes from non-attack sources for 8 turns.
 Animation = SAFEGUARD
 #-------------------------------
-[NOISEORDER]
-Name = Noise Order
-Type = BUG
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = Dizzy
-Flags = CanProtect,Sound
-EffectChance = 100
-Description = The user calls out its underlings to annoy the target with buzzing sounds, dizzying it.
-Animation = BUGBUZZ
-#-------------------------------
 [PATIENTBLADE]
 Name = Patient Blade
 Type = BUG
