@@ -27,11 +27,18 @@ Bicycle = true
 BattleBack = forest
 #-------------------------------
 [002]
-# LuxTech Center FIX THIS
+# Your room
 Outdoor = false
 ShowArea = false
 Bicycle = false
-HealingSpot = 6,25,32
+HealingSpot = 15,14,9
+#-------------------------------
+[003]
+# Your house
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 15,14,9
 #-------------------------------
 [147]
 # PokEstate
