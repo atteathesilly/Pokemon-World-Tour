@@ -364,7 +364,6 @@ FunctionCode = ResetTargetStatSteps
 Flags = CanProtect,Pulse
 EffectChance = 30
 Description = The target is struck by a pulse of negative energy. This resets the target's stat changes.
-Animation = WEATHERBALL
 #-------------------------------
 [PALEBLADE]
 Name = Pale Blade
@@ -532,6 +531,19 @@ FunctionCode = ChangeUserDeerlingSawsbuckForm
 Flags = CanProtect
 Description = The user strikes while inviting the power of seasons. The user changes form to the next season.
 Animation = BODYSLAM
+#-------------------------------
+[SHOUT]
+Name = Shout
+Type = NORMAL
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 1
+FunctionCode = Basic
+Flags = CanProtect,Sound
+Description = The user shouts with force at the target. This move always hits first.
 #-------------------------------
 [SMIRK]
 Name = Smirk
@@ -914,6 +926,19 @@ Flags = CanProtect
 Description = The user attacks with a burst of inner energy. Lowers the user's Sp. Atk by four steps.
 Animation = AURASPHERE
 #-------------------------------
+[SMASH]
+Name = Smash
+Type = FIGHTING
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = LowerTargetDef1
+Flags = CanProtect,Punch
+EffectChance = 20
+Description = The user attacks with a strong punch. It has a 20% chance to lower Defense.
+#-------------------------------
 [STANDTOGETHER]
 Name = Stand Together
 Type = FIGHTING
@@ -1224,6 +1249,18 @@ FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect,Wind
 Description = Wind rapidly spins the target in place to multi-hit two to five times.
 Animation = GUST
+#-------------------------------
+[WINGCRASH]
+Name = Wing Crash
+Type = FLYING
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = RecoilFifthOfDamageDealt
+Flags = CanProtect
+Description = The target is struck with large, imposing wings. The user also takes 20% recoil.
 #-------------------------------
 #		POISON MOVES
 #-------------------------------
@@ -2133,6 +2170,19 @@ Flags = CanProtect,Dance
 EffectChance = 100
 Description = The user dances wildly while churning rocks towards the target. This raises the user's Attack by two steps.
 Animation = ROCKSLIDE
+#-------------------------------
+[ROCKROLL]
+Name = Rock Roll
+Type = ROCK
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = RockRoll
+Flags = CanProtect
+Description = The user rolls into the target. Its power doubles if it hits in succession.
+Animation = ROLLOUT
 #-------------------------------
 [ROLLINGBOULDER]
 Name = Rolling Boulder
@@ -3449,6 +3499,17 @@ Flags = CanProtect,Blade
 Description = The user slashes at the target with a steel blade. Super effective versus Dragon-types.
 Animation = SACREDSWORD
 #-------------------------------
+[SMARTHORN]
+Name = Smart Horn
+Type = STEEL
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysHits
+Description = The user stabs the target with a sharp horn. Can't miss and skips protections.
+#-------------------------------
 [TAKESHELTER]
 Name = Take Shelter
 Type = STEEL
@@ -3860,6 +3921,16 @@ FunctionCode = RaiseUserSpAtkSpDefAcc2
 Flags = CanSnatch
 Description = The user conserves for future attacks. This raises its Sp. Atk, Sp. Def, and Accuracy by two steps.
 #-------------------------------
+[SUNSHINE]
+Name = Sunshine
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartSunshine6
+Description = Summons sunshine for six turns, boosting Fire-type attacks and hindering most others.
+#-------------------------------
 [TARVOLLEY]
 Name = Tar Volley
 Type = FIRE
@@ -4196,6 +4267,16 @@ Target = NearOther
 FunctionCode = DamageBoost50PercentTargetHitUser
 Flags = CanProtect
 Description = Attacks with pressurized water. Deals 50% more damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
+[RAINSTORM]
+Name = Rainstorm
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartRainstorm6
+Description = Summons rainstorm for six turns, boosting Water-type attacks and hindering most others.
 #-------------------------------
 [RAMMINGSPEED]
 Name = Ramming Speed
@@ -4782,6 +4863,19 @@ FunctionCode = FailsIfTargetActed
 Flags = CanProtect
 Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
 Animation = SPIKECANNON
+#-------------------------------
+[SOLARGLIDE]
+Name = Solar Glide
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasedPriorityInSunshine
+Flags = CanProtect
+Description = Attacks by gliding on the ground. This move always goes first in sunshine.
+Animation = GRASSYGLIDE
 #-------------------------------
 [SYMBIOSIS]
 Name = Symbiosis
@@ -5390,6 +5484,19 @@ Flags = CanProtect,CanMagicCoat
 Description = By sacrificing half its total HP, the user makes the target fall asleep.
 Animation = LOVELYKISS
 #-------------------------------
+[DREAMABSORB]
+Name = Dream Absorb
+Type = PSYCHIC
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDoneDoubleDamageIfTargetAsleep
+Flags = CanProtect
+Description = The user's HP is restored by 50% of the damage dealt. Power doubles if the foe is asleep.
+Animation = DREAMEATER
+#-------------------------------
 [DREAMFEAST]
 Name = Dream Feast
 Type = PSYCHIC
@@ -5422,6 +5529,20 @@ Target = User
 FunctionCode = SwapSpecialStats
 Flags = CanSnatch
 Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
+#-------------------------------
+[ESPERDIVE]
+Name = Esper Dive
+Type = PSYCHIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpd2
+Flags = CanProtect
+EffectChance = 100
+Description = The user slashes the target with aura-enriched wings. This boosts the user's Speed by two steps.
+Animation = SKYATTACK
 #-------------------------------
 [EXPLOIT]
 Name = Exploit
@@ -6156,6 +6277,19 @@ Target = NearOther
 FunctionCode = ScalesWithLostHP
 Flags = CanProtect
 Description = The user flips, flaps, fumbles, then flounders. It becomes more powerful the less HP the user has.
+#-------------------------------
+[SNOWBALL]
+Name = Snowball
+Type = ICE
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = IceBall
+Flags = CanProtect
+Description = The user rolls into the target. Its power doubles if it hits in succession.
+Animation = ICEBALL
 #-------------------------------
 [SNOWSPILL]
 Name = Snow Spill
