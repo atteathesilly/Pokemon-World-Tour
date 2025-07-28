@@ -12608,7 +12608,7 @@ Height = 0.6
 Weight = 23.3
 Kind = Dragon Egg
 Pokedex = When a Munna egg is placed in the care of a brooding dragon, it hatches into this form. It will repeatedly headbutt Togepi if placed near one.
-Evolutions = MMUSHARNA,Level,37
+Evolutions = MMUSHARNA,Level,27
 #-------------------------------
 [MMUSHARNA]
 Name = M. Musharna
@@ -21105,3 +21105,40 @@ Kind = King
 Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and blessings. It has the power to cause hearts to mend and plants to spring forth.
 Generation = 8
 Flags = Legendary
+#-------------------------------
+[MASCHIFF]
+Name = Maschiff
+Type1 = DARK
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,78,60,55,51,51
+# Total = 365
+BaseEXP = 166
+Rareness = 95
+Abilities = FASTCHEWER,DEFIANT
+Moves = 1,TAUNT,1,WIPEOUT,4,BITE,8,FAKEOUT,12,AQUAJET,16,PURSUIT,20,FIREFANG,20,ICEFANG,20,THUNDERFANG,24,HOWL,28,PLANTDOUBT,32,BEATUP,36,PSYCHICFANGS,40,CRUNCH,44,PLAYROUGH,48,FOULPLAY,52,LIQUIDATION,56,SUPERFANG,60,PARTINGSHOT
+LineMoves = AERIALACE,AFTERYOU,AIMTRUE,BLIZZARD,BRAINFREEZE,BREACH,BUBBLE,BUBBLEBARRAGE,BUBBLEBEAM,BUBBLEBLASTER,BULKUP,BULLETCHARGE,DROWN,DUNK,ENDURE,EXTREMESPEED,FACADE,FLAMECHARGE,FLING,FRIGIDJEALOUSY,FROSTBREATH,FROSTOVER,GIGAIMPACT,HELPINGHAND,ICEBEAM,ICEFANG,INFERNOIMPACT,IRONTAIL,KEELHAUL,KINDLE,LASHOUT,LIGHTSCREEN,LIQUIDATION,MAGICCOAT,MOONGLOW,NATURALPROTECTION,NIGHTFELLING,PAINSPLIT,PAYBACK,PIERCINGDOUBT,PLAYROUGH,POISONFANG,PROTECT,REFLECT,REST,SEERSTRIKE,SHARPEN,SHOTPUT,SIGNALBEAM,SKULLBASH,SLEEPTALK,SNAP,SNATCH,SNORE,SUBSTITUTE,SWEETSELENE,SWORDSDANCE,TAUNT,TORMENT,TRUMPCARD,UPROAR,WATERFALL,WETWORK,WIPEOUT
+Tribes = TACTICIAN,LOYAL
+StepsToHatch = 4096
+Height = 0.5
+Weight = 16.0
+Kind = Rascal
+Pokedex = It always scowls in an attempt to make opponents take it seriously, but even crying children will burst into laughter when they see Maschiff’s face.
+Generation = 9
+Evolutions = MABOSSTIFF,Level,27
+#-------------------------------
+[MABOSSTIFF]
+Name = Mabosstiff
+Type1 = DARK
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 80,110,90,85,60,80
+# Total = 505
+BaseEXP = 166
+Rareness = 95
+Abilities = FASTCHEWER,DEFIANT
+Moves = 0,SLOBBER
+StepsToHatch = 4096
+Height = 1.1
+Weight = 61.0
+Kind = Boss
+Pokedex = Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family.
+Generation = 9

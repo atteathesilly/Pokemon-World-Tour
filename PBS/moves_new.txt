@@ -4281,6 +4281,20 @@ Flags = CanProtect
 Description = The target is crushed in the user's shell or claws, trapping and damaging it for three turns.
 Animation = CLAMP
 #-------------------------------
+[SLOBBER]
+Name = Slobber
+Type = WATER
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Waterlog
+Flags = CanProtect
+EffectChance = 50
+Description = The user licks the target aggressively with slobbery tongue. It has a 50% chance to waterlog.
+Animation = WATERFALL
+#-------------------------------
 [SNAP]
 Name = Snap
 Type = WATER

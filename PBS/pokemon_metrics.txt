@@ -3534,6 +3534,12 @@ FrontSprite = -9,15
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[MABOSSTIFF]
+BackSprite = 0,56
+FrontSprite = -1,24
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [MACHAMP]
 BackSprite = 0,10
 FrontSprite = -10,5
@@ -3723,6 +3729,12 @@ ShadowSize = 1
 [MARSHTOMP]
 BackSprite = 0,19
 FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MASCHIFF]
+BackSprite = 0,56
+FrontSprite = -1,33
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
