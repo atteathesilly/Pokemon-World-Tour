@@ -14,10 +14,10 @@ class PokeBattle_Battle
         priority = pbPriority(true)   # in order of fastest -> slowest speeds only
 
         checkBattleStateAchievements(self)
+        
+        pbEORWeather(priority)
 
         pbEORHealing(priority)
-
-        pbEORWeather(priority)
 
         if @field.effectActive?(:EmotionRoom)
             priority.each { |b|

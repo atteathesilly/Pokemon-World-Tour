@@ -82,8 +82,8 @@ class PokeBattle_Battle
         when :Moonglow      then pbDisplay(_INTL("The bright moon doesn't wane!"))
         when :RingEclipse   then pbDisplay(_INTL("The planetary ring tightens its grip!"))
         when :BloodMoon     then pbDisplay(_INTL("The nightmarish moon is unending!"))
-        when :StarStorm     then pbDisplay(_INTL("The sand shows no sign of stopping!"))
-        when :IceAge        then pbDisplay(_INTL("The hail may go on forever!"))
+        when :StarStorm     then pbDisplay(_INTL("The star storm continues!"))
+        when :IceAge        then pbDisplay(_INTL("The ice age may go on forever!"))
         end
     end
 
@@ -100,8 +100,8 @@ class PokeBattle_Battle
         when :Moonglow      then pbDisplay(_INTL("The light of the moon shines down!"))
         when :RingEclipse   then pbDisplay(_INTL("A planetary ring dominates the sky!"))
         when :BloodMoon     then pbDisplay(_INTL("A nightmare possessed the moon!"))
-        when :MeteorShower  then pbDisplay(_INTL("A storm of otherworldly rocks approach!"))
-        when :IceAge        then pbDisplay(_INTL("Unrelenting hail approaches!"))
+        when :StarStorm     then pbDisplay(_INTL("Stars are falling from the heavens!"))
+        when :IceAge        then pbDisplay(_INTL("An ice age began!"))
         end
     end
 
@@ -119,8 +119,8 @@ class PokeBattle_Battle
         when :StrongWinds   then pbDisplay(_INTL("The mysterious air current has dissipated!"))
         when :RingEclipse   then pbDisplay(_INTL("The planetary ring flew off!"))
         when :BloodMoon     then pbDisplay(_INTL("The nightmare is purged from the moon!"))
-        when :MeteorShower  then pbDisplay(_INTL("The storm of meteors ceases!"))
-        when :IceAge        then pbDisplay(_INTL("The hailstorm finally clears!"))
+        when :StarStorm     then pbDisplay(_INTL("The star storm ceases!"))
+        when :IceAge        then pbDisplay(_INTL("The ice age makes way!"))
         end
         oldWeather = @field.weather
         @field.weather	= :None
@@ -160,15 +160,15 @@ class PokeBattle_Battle
                 @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
                 pbDisplay(_INTL("The nightmare moon begins to retreat!"))
             end
-        when :MeteorShower
-            if !pbCheckGlobalAbility(:METEORSHOWER) && @field.defaultWeather != :MeteorShower
+        when :StarStorm
+            if !pbCheckGlobalAbility(:EVENTHORIZON) && @field.defaultWeather != :StarStorm
                 @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
-                pbDisplay(_INTL("The extreme sand begins to dissipate!"))
+                pbDisplay(_INTL("The barrage of stars shows signs of stopping!"))
             end
         when :IceAge
-            if !pbCheckGlobalAbility(:ICEAGE) && @field.defaultWeather != :IceAge
+            if !pbCheckGlobalAbility(:HEATDEATH) && @field.defaultWeather != :IceAge
                 @field.weatherDuration = PRIMORDIAL_WEATHER_LINGER_TURNS
-                pbDisplay(_INTL("The unrelenting hail begins to calm down!"))
+                pbDisplay(_INTL("The ice age begins to end!"))
             end
         end
 
@@ -193,11 +193,6 @@ class PokeBattle_Battle
         end
     end
 
-    def pbChangeField(_user, fieldEffect, modifier)
-        return
-        @field.effects[PBEffects: fieldEffect] = modifier
-    end
-
     def primevalWeatherPresent?(showMessages = true)
         case @field.weather
         when :HarshSun
@@ -215,14 +210,11 @@ class PokeBattle_Battle
         when :BloodMoon
             pbDisplay(_INTL("The nightmarish moon is unaffected!")) if showMessages
             return true
-        when :BloodMoon
-            pbDisplay(_INTL("The nightmarish moon is unaffected!")) if showMessages
-            return true
-        when :MeteorShower
-            pbDisplay(_INTL("The sandstorm rages on unaffected!")) if showMessages
+        when :StarStorm
+            pbDisplay(_INTL("The storm of stars is unstoppable!")) if showMessages
             return true
         when :IceAge
-            pbDisplay(_INTL("The hailstorm continues regardless!")) if showMessages
+            pbDisplay(_INTL("The ice age is still in control!")) if showMessages
             return true
         end
         return false
@@ -406,10 +398,18 @@ class PokeBattle_Battle
         return 0 unless battler.takesSandstormDamage?
         damageDoubled = pbCheckGlobalAbility(:IRONSTORM)
         if showMessages && !aiCheck
-            if damageDoubled
-                pbDisplay(_INTL("{1} is shredded by the iron-infused sandstorm!", battler.pbThis))
+            if pbWeather == :StarStorm
+                if damageDoubled
+                    pbDisplay(_INTL("{1} is shredded by iron stardust!", battler.pbThis))
+                else
+                    pbDisplay(_INTL("{1} is buffeted by stardust!", battler.pbThis))
+                end
             else
-                pbDisplay(_INTL("{1} is buffeted by the sandstorm!", battler.pbThis))
+                if damageDoubled
+                    pbDisplay(_INTL("{1} is shredded by the iron-infused sandstorm!", battler.pbThis))
+                else
+                    pbDisplay(_INTL("{1} is buffeted by the sandstorm!", battler.pbThis))
+                end  
             end
         end
         fraction = 1.0 / 16.0
@@ -423,16 +423,28 @@ class PokeBattle_Battle
         return 0 unless battler.takesHailDamage?
         damageDoubled = pbCheckGlobalAbility(:BITTERCOLD)
         if showMessages && !aiCheck
-            if damageDoubled
-                pbDisplay(_INTL("{1} is pummeled by the bitterly cold hail!", battler.pbThis))
+            if pbWeather == :IceAge
+                if damageDoubled
+                    pbDisplay(_INTL("{1} is pummeled by the bitterly cold shards of ice!", battler.pbThis))
+                else
+                    pbDisplay(_INTL("{1} is buffeted by shards of ice!", battler.pbThis))
+                end
             else
-                pbDisplay(_INTL("{1} is buffeted by the hail!", battler.pbThis))
+                if damageDoubled
+                    pbDisplay(_INTL("{1} is pummeled by the bitterly cold hail!", battler.pbThis))
+                else
+                    pbDisplay(_INTL("{1} is buffeted by the hail!", battler.pbThis))
+                end
             end
         end
         fraction = 1.0 / 16.0
         fraction *= 2 if damageDoubled
         fraction *= 2 if curseActive?(:CURSE_BOOSTED_HAIL)
         hailDamage = battler.applyFractionalDamage(fraction, aiCheck: aiCheck)
+        # Ice Age anti-healing effect
+        if hailDamage > 0 && pbWeather == :IceAge && !battler.effectActive?(:HealBlockPermanent)
+            battler.applyEffect(:HealBlockPermanent)
+        end
         return hailDamage
     end
 
@@ -448,11 +460,11 @@ class PokeBattle_Battle
     end
 
     def sandy?
-        return %i[Sandstorm].include?(pbWeather)
+        return %i[Sandstorm StarStorm].include?(pbWeather)
     end
 
     def icy?
-        return %i[Hail].include?(pbWeather)
+        return %i[Hail IceAge].include?(pbWeather)
     end
 
     def eclipsed?

@@ -455,6 +455,22 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HealBlockPermanent,
+    :real_name => "Healing Blocked",
+    :baton_passed => true,
+    :is_mental => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} was prevented from healing!", battler.pbThis))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} broke free of the Heal Block!", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} can use healing again!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :HelpingHand,
     :real_name => "Helping Hand",
     :resets_eor	=> true,
