@@ -545,7 +545,7 @@ Description = Powers up Psychic-type moves by 50%.
 #-------------------------------
 [EVENTHORIZON]
 Name = Event Horizon
-Description = Changes the weather to a star storm, which increases sandstorm damage. Lingers for 3 turns after leaving.
+Description = Changes the weather to star storm, which increases its damage over time. Lingers for 3 turns after leaving.
 Flags = SandstormSynergy
 #-------------------------------
 [EXCAVATOR]
@@ -887,7 +887,7 @@ Description = Immune to Dark-type moves, and boosts Attack and Sp. Atk when hit 
 #-------------------------------
 [HEATDEATH]
 Name = Heat Death
-Description = Changes the weather to ice age, which increase PP usage. Lingers for 3 turns after leaving.
+Description = Changes the weather to ice age, which damages and prevents healing. Lingers for 3 turns after leaving.
 Flags = HailSynergy
 #-------------------------------
 [HEATSAVOR]
