@@ -1,45 +1,43 @@
 UNKNOWN = _INTL("???")
 
 # Main characters
-TAMARIND = _INTL("Tamarind")
-YEZERA = _INTL("Yezera")
-ZAIN = _INTL("Zain")
+MOM = _INTL("Mom")
+SALLY = _INTL("Sally")
 
 # Recurring NPCs
-IMOGENE = _INTL("Imogene")
-ALESSA = _INTL("Alessa")
-SKYLER = _INTL("Skyler")
-KEONI = _INTL("Keoni")
-EIFION = _INTL("Eifion")
-CANDY = _INTL("Candy")
+MIROR = _INTL("Miror B")
+EMMET = _INTL("Emmet")
+SINA = _INTL("Sina")
+DEXIO = _INTL("Dexio")
+TORY = _INTL("Tory")
+MAGGIE = _INTL("Maggie")
 
 # Gym leaders
-LAMBERT = _INTL("Lambert")
-EKO = _INTL("Eko")
-HELENA = _INTL("Helena")
-RAFAEL = _INTL("Rafael")
-ZOE = _INTL("Zoé")
-BENCE = _INTL("Bence")
-NOEL = _INTL("Noel")
-VICTOIRE = _INTL("Victoire")
-SAMORN = _INTL("Samorn")
+RIDDLE = _INTL("Riddle")
+CHUCK = _INTL("Chuck")
+FLINT = _INTL("Flint")
+VOLKNER = _INTL("Volkner")
+GIANNA = _INTL("Gianna")
+CARRY = _INTL("Carry")
+REN = _INTL("Ren")
+NAGAO = _INTL("Nagao")
+TANYA = _INTL("Tanya")
+MINA = _INTL("Mina")
 
-# Former champions
-SCILLA = _INTL("Scilla")
-CASEY = _INTL("Casey")
-CHARA = _INTL("Chara")
-ELISE = _INTL("Elise")
-VINCENT = _INTL("Vincent")
-PRAVEEN = _INTL("Praveen")
-ANSEL = _INTL("Ansel")
+# Treasure Guardians
+REGI = _INTL("Regigigas")
+HOOH = _INTL("Ho-oh")
+GIRATINA = _INTL("Giratina")
+LUGIA = _INTL("Lugia")
+MIRAIDON = _INTL("Miraidon")
+MEWTWO = _INTL("Mewtwo")
+YVELTAL = _INTL("Yveltal")
 
-# Pro Trainers
-XANDER = _INTL("Xander")
-JADE = _INTL("Jade")
-BLAIRE = _INTL("Blaire")
-EMIR = _INTL("Emir")
-NYX = _INTL("Nyx")
-NERO = _INTL("Nero")
+# Main Villains
+PAUL = _INTL("Paul Eclipse")
+KELPIE = _INTL("Kelpie")
+MEL = _INTL("Mel")
+SPRIGGAN = _INTL("Spriggan")
 
 # Other
 CARETAKER = _INTL("Alondra")
