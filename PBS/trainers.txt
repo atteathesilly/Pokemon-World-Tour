@@ -3220,7 +3220,7 @@ Pokemon = GOLEM,46
 #-------------------------------
 [BEAUTY,Kryssa]
 Pokemon = GDARMANITAN,45
-    Moves = ICEHAMMER,CLOSECOMBAT,MACHPUNCH,TAUNT
+    Moves = ICEHAMMER,CLOSECOMBAT,MACHPUNCH,FLAREBLITZ
     AbilityIndex = 0 # Gorilla Tactics
 Pokemon = STARMIE,45
     Moves = SNIPESHOT,EXPLOIT,SHOCKWAVE,RAPIDSPIN
