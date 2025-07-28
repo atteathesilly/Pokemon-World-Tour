@@ -6510,6 +6510,19 @@ FunctionCode = ProtectUserExtendEclipse1Turn
 Description = Protects the user from attacks. If an eclipse is active, extends it by one turn. Fails if used in succession.
 Animation = PROTECT
 #-------------------------------
+[JETSPEED]
+Name = Jet Speed
+Type = DRAGON
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableScalesFaster
+Flags = CanProtect
+Description = The user flies high up into the air at supersonic speeds, charging and becoming invulnerable. It does more damage the faster the user is.
+Animation = FLY
+#-------------------------------
 [LOOMOVER]
 Name = Loom Over
 Type = DRAGON
@@ -7587,6 +7600,19 @@ FunctionCode = UserLosesHalfOfCurrentHP
 Flags = CanProtect
 Description = Attacks nearby foes with a misty explosion. User is damaged for 50% of their current HP.
 Animation = MISTYEXPLOSION
+#-------------------------------
+[MISTYMIRAGE]
+Name = Misty Mirage
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableJinxFrostbite
+Flags = CanProtect,Uninvocable
+EffectChance = 100
+Description = The user disappears in a cloud of mist, charging and becoming invulnerable. On the next turn, the target becomes Jinxed and Frostbitten.
+Animation = PHANTOMFORCE
 #-------------------------------
 [MOONGLOW]
 Name = Moonglow

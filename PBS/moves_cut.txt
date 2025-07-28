@@ -2855,6 +2855,19 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = The user distracts the target by bending a spoon. It lowers the target's accuracy.
 #-------------------------------
+[LUSTERPURGE]
+Name = Luster Purge
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Light
+EffectChance = 100
+Description = The user lets loose a damaging burst of light. It also lowers the target's Sp. Def by two steps.
+#-------------------------------
 [MAGICPOWDER]
 Name = Magic Powder
 Type = PSYCHIC
@@ -2922,6 +2935,19 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = Enables the user to hit a Dark type with any type of move. It also enables the user to hit an evasive foe.
+#-------------------------------
+[MISTBALL]
+Name = Mist Ball
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+EffectChance = 100
+Description = A mistlike flurry of down envelops and damages the target. It also lowers the target's Sp. Atk by two steps.
 #-------------------------------
 [POWERSWAP]
 Name = Power Swap

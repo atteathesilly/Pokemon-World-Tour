@@ -5037,19 +5037,6 @@ FunctionCode = UserFaintsHealAndCureReplacementRestorePP
 Flags = CanSnatch,Dance
 Description = The user faints. In return, the Pokémon taking its place will have its non-volatile status conditions and HP fully restored.
 #-------------------------------
-[LUSTERPURGE]
-Name = Luster Purge
-Type = PSYCHIC
-Category = Special
-Power = 70
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = LowerTargetSpDef2
-Flags = CanProtect,Light
-EffectChance = 100
-Description = The user lets loose a damaging burst of light. It also lowers the target's Sp. Def by two steps.
-#-------------------------------
 [MAGICCOAT]
 Name = Magic Coat
 Type = PSYCHIC
@@ -5074,19 +5061,6 @@ Priority = -5
 FunctionCode = CounterSpecialDamage
 Flags = CanProtect,Uninvocable
 Description = A retaliation move that counters any special attack, inflicting double the damage taken.
-#-------------------------------
-[MISTBALL]
-Name = Mist Ball
-Type = PSYCHIC
-Category = Special
-Power = 70
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = LowerTargetSpAtk2
-Flags = CanProtect
-EffectChance = 100
-Description = A mistlike flurry of down envelops and damages the target. It also lowers the target's Sp. Atk by two steps.
 #-------------------------------
 [POWERSPLIT]
 Name = Power Split
