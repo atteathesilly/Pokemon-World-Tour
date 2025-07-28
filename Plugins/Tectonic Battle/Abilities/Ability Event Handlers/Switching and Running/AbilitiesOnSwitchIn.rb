@@ -68,6 +68,18 @@ BattleHandlers::AbilityOnSwitchIn.add(:STYGIANNIGHT,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:EVENTHORIZON,
+  proc { |ability, battler, battle, aiCheck|
+      pbBattleWeatherAbility(ability, :StarStorm, battler, battle, false, true, aiCheck, baseDuration: -1)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:HEATDEATH,
+  proc { |ability, battler, battle, aiCheck|
+      pbBattleWeatherAbility(ability, :IceAge, battler, battle, false, true, aiCheck, baseDuration: -1)
+  }
+)
+
 #######################################################
 # Entry debuff abilities
 #######################################################
