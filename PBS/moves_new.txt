@@ -7467,8 +7467,8 @@ Flags = CanProtect
 Description = Attacks nearby foes with a misty explosion. User is damaged for 50% of their current HP.
 Animation = MISTYEXPLOSION
 #-------------------------------
-[MISTYDREAMS]
-Name = Misty Dreams
+[MISTYMIRAGE]
+Name = Misty Mirage
 Type = FAIRY
 Category = Status
 Accuracy = 100

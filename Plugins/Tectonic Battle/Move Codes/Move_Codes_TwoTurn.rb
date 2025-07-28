@@ -229,7 +229,7 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableScalesFaster < PokeBattle_Move_Tw
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, inflicts Jinx and Frostbite second turn. (Misty Dreams)
+# Two turn attack. Skips first turn, inflicts Jinx and Frostbite second turn. (Misty Mirage)
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerableJinxFrostbite < PokeBattle_Move_TwoTurnAttackInvulnerable
     def pbAttackingTurnEffect(user, target)
