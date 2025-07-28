@@ -18621,8 +18621,8 @@ Name = Drampa
 Type1 = NORMAL
 Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 90,60,85,45,135,90
-# Total = 505
+BaseStats = 95,70,90,45,135,100
+# Total = 535
 BaseEXP = 170
 Rareness = 95
 Happiness = 50
