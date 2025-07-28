@@ -232,9 +232,9 @@ end
 # Two turn attack. Skips first turn, inflicts Jinx and Frostbite second turn. (Misty Dreams)
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerableJinxFrostbite < PokeBattle_Move_TwoTurnAttackInvulnerable
-    def pbEffectAgainstTarget(user, target)
+    def pbAttackingTurnEffect(user, target)
+        target.applyFrostbite(user) if target.canFrostbite?(user, false, self)
         target.applyEffect(:Jinxed, DEFAULT_JINX_DURATION)
-        target.applyFrostbite
     end
 
     def pbChargingTurnMessage(user, _targets)

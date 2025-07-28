@@ -522,7 +522,7 @@ class PokeBattle_Battler
                 "TwoTurnAttackInvulnerableInSky",
                 "TwoTurnAttackInvulnerableInSkyNumbTarget",
                 "TwoTurnAttackInvulnerableInSkyRecoilQuarterOfDamageDealt",
-                "TwoTurnAttackInvulnerableScalesFaster"
+                "TwoTurnAttackInvulnerableScalesFaster",
                 "TwoTurnAttackInvulnerableJinxFrostbite"
             )
     end

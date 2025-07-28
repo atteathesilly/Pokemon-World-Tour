@@ -7476,6 +7476,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableJinxFrostbite
 Flags = CanProtect,Uninvocable
+EffectChance = 100
 Description = The user disappears in a cloud of mist, charging and becoming invulnerable. On the next turn, the target becomes Jinxed and Frostbitten.
 Animation = PHANTOMFORCE
 #-------------------------------
