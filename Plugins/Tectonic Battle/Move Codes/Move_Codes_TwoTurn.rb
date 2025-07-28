@@ -217,9 +217,9 @@ end
 class PokeBattle_Move_TwoTurnAttackInvulnerableScalesFaster < PokeBattle_Move_TwoTurnAttackInvulnerable
     def pbBaseDamage(_baseDmg, user, target)
         ratio = user.pbSpeed.to_f / target.pbSpeed.to_f
-        basePower = 10 + (7 * ratio).floor * 5
-        basePower = 150 if basePower > 150
-        basePower = 40 if basePower < 40
+        basePower = 30 + (10 * ratio).floor * 5
+        basePower = 200 if basePower > 200
+        basePower = 60 if basePower < 60
         return basePower
     end
 
