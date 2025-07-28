@@ -12608,7 +12608,7 @@ Height = 0.6
 Weight = 23.3
 Kind = Dragon Egg
 Pokedex = When a Munna egg is placed in the care of a brooding dragon, it hatches into this form. It will repeatedly headbutt Togepi if placed near one.
-Evolutions = MMUSHARNA,Level,27
+Evolutions = MMUSHARNA,Level,37
 #-------------------------------
 [MMUSHARNA]
 Name = M. Musharna

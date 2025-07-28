@@ -26,6 +26,13 @@ ShowArea = true
 Bicycle = true
 BattleBack = forest
 #-------------------------------
+[002]
+# LuxTech Center FIX THIS
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 6,25,32
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
