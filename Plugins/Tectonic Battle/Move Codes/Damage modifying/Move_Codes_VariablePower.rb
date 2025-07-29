@@ -15,7 +15,7 @@ class PokeBattle_Move_ScalesWithUserHP < PokeBattle_Move
         detailsList << _INTL("Does more damage the more HP the user has left. Affected by Overhealing.")
         detailsList << _INTL("Range 65-195")
         detailsList << _INTL("<u>50% HP:</u> 65 BP")
-        detailsList << _INTL("<u>75 HP%:</u> 95 BP")
+        detailsList << _INTL("<u>75% HP:</u> 95 BP")
         detailsList << _INTL("<u>100% HP:</u> 130 BP")
         detailsList << _INTL("<u>125% HP:</u> 160 BP")
         detailsList << _INTL("<u>150% HP:</u> 195 BP")
