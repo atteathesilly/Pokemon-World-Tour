@@ -1098,6 +1098,11 @@ Description = Transforms into Midnight Form at the Full Moon. Ability becomes No
 Name = Whirler
 Description = Upon entry, traps each opponent in a whirlpool for two turns.
 #-------------------------------
+[WHITESMOKE]
+Name = White Smoke
+Description = Prevents stat steps from being lowered (except when self-inflicted).
+Flags = OtherStatDropImmunity
+#-------------------------------
 [WILLBREAK]
 Name = Bizarre
 Description = Its special attacks reduce the target's Sp. Def.

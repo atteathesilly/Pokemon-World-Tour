@@ -14,6 +14,10 @@ Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
 Flags = RainstormSynergy
 #-------------------------------
+[ADAPTED]
+Name = Adapted
+Description = Powers up moves of the same type by 33%.
+#-------------------------------
 [ADAPTIVESKIN]
 Name = Adaptive Skin
 Description = After being hit, the Pokémon raises either Defense or Sp. Def based on the attack's category. Caps out at +4.
@@ -1510,6 +1514,10 @@ Description = Special moves against the Pokémon have a 30% chance to leech the 
 Name = Pure Energy
 Description = Raises the Pokémon's Sp. Atk by 50%, including Style Values and other bonuses.
 #-------------------------------
+[PUREFORCE]
+Name = Pure Force
+Description = Raises the Pokémon's Attack by 50%, including Style Values and other bonuses.
+#-------------------------------
 [PURERAGE]
 Name = Pure Rage
 Description = The Pokémon's Dragon-type hits deal additional damage equal to half the Pokémon's level.
@@ -1646,6 +1654,11 @@ Flags = RainstormSynergy
 [SANDBURST]
 Name = Sand Burst
 Description = Summons a sandstorm for four turns when hit by an attack.
+Flags = SandstormSynergy
+#-------------------------------
+[SANDSHROUD]
+Name = Sand Shroud
+Description = Takes 30% less damage in a sandstorm.
 Flags = SandstormSynergy
 #-------------------------------
 [SANDSMACABRE]
@@ -2144,10 +2157,6 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
-#-------------------------------
-[UNNERVE]
-Name = Unnerve
-Description = Makes the foe nervous and unable to eat Berries or Leftovers.
 #-------------------------------
 [VANDAL]
 Name = Vandal
