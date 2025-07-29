@@ -19,13 +19,6 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
-[015]
-# Starting town
-Outdoor = true
-ShowArea = true
-Bicycle = true
-BattleBack = forest
-#-------------------------------
 [002]
 # Your room
 Outdoor = false
@@ -34,11 +27,18 @@ Bicycle = false
 HealingSpot = 15,14,9
 #-------------------------------
 [003]
-# Your house
+# Your house downstairs
 Outdoor = false
 ShowArea = false
 Bicycle = false
 HealingSpot = 15,14,9
+#-------------------------------
+[015]
+# Starting town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = forest
 #-------------------------------
 [147]
 # PokEstate
