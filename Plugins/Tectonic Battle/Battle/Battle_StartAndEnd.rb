@@ -480,10 +480,10 @@ class PokeBattle_Battle
 
                     # Ability popups for triggered extra turn abilities
                     eachBattler do |b|
-                        next unless b.extraMovesPerTurn >= 1
-                        next unless b.hasActiveAbility?(:HEAVENSCROWN) && totalEclipse?
-                        pbShowAbilitySplash(b,:HEAVENSCROWN)
-                        pbDisplay(_INTL("{1} is blessed by the shattered sky!", b.pbThis))
+                        next unless b.hasActiveAbility?(:TEMPORALDISTORTION) && (b.turnCount % 3 == 0)
+                        pbShowAbilitySplash(b,:TEMPORALDISTORTION)
+                        pbDisplay(_INTL("{1} takes control of time itself!", b.pbThis))
+                        b.applyEffect(:TemporalDistortion)
                         pbHideAbilitySplash(b)
                     end
 
