@@ -25,7 +25,7 @@ class PokeBattle_Move_ScalesWithTargetHP < PokeBattle_Move
 end
 
 #===============================================================================
-# Power increases the quicker the target is than the user. (Gyro Ball)
+# Power increases the quicker the target is than the user. (Gyro Ball, Sugar Ball)
 #===============================================================================
 class PokeBattle_Move_ScalesSlowerThanTarget < PokeBattle_Move
     def pbBaseDamage(_baseDmg, user, target)
@@ -35,6 +35,16 @@ class PokeBattle_Move_ScalesSlowerThanTarget < PokeBattle_Move
         basePower = 40 if basePower < 40
         return basePower
     end
+	
+    def getDetailsForMoveDex(detailsList = [])
+        detailsList << _INTL("Does more damage the slower the user is compared to the target. Range 40-150")
+        detailsList << _INTL("<u>1/2 of the target's speed:</u> 50 BP")
+        detailsList << _INTL("<u>1/3 of the target's speed:</u> 75 BP")
+        detailsList << _INTL("<u>1/4 of the target's speed:</u> 100 BP")
+        detailsList << _INTL("<u>1/5 of the target's speed:</u> 125 BP")
+        detailsList << _INTL("<u>1/6 of the target's speed:</u> 150 BP")
+    end
+	
 end
 
 #===============================================================================
