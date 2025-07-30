@@ -1,7 +1,7 @@
 module Settings
     # The version of your game. It has to adhere to the MAJOR.MINOR.PATCH format.
-    GAME_VERSION = "3.3.2"
-    DEV_VERSION  = false
+    GAME_VERSION = "0.0.1"
+    DEV_VERSION  = true
   
     #=============================================================================
   
@@ -36,7 +36,7 @@ module Settings
     # The maximum amount of soot the player can have.
     MAX_SOOT             = 9_999
     # The maximum length, in characters, that the player's name can be.
-    MAX_PLAYER_NAME_SIZE = 10
+    MAX_PLAYER_NAME_SIZE = 30
     # The maximum number of Pokémon that can be in the party.
     MAX_PARTY_SIZE       = 6
   
