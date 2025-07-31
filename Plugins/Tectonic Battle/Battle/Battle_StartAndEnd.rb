@@ -477,16 +477,7 @@ class PokeBattle_Battle
                     end
 
                     resetMoveUsageState
-
-                    # Ability popups for triggered extra turn abilities
-                    eachBattler do |b|
-                        next unless b.hasActiveAbility?(:TEMPORALDISTORTION) && (b.turnCount % 3 == 0)
-                        pbShowAbilitySplash(b,:TEMPORALDISTORTION)
-                        pbDisplay(_INTL("{1} takes control of time itself!", b.pbThis))
-                        b.applyEffect(:TemporalDistortion)
-                        pbHideAbilitySplash(b)
-                    end
-
+                    
                     # Command phase
                     PBDebug.logonerr { pbExtraCommandPhase }
                     break if @decision > 0
