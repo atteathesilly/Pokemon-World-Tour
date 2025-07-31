@@ -1490,7 +1490,7 @@ Kind = Scratch Cat
 Pokedex = It's impulsive, selfish, and fickle. It's very popular with some Trainers who like giving it the attention it needs.
 Generation = 7
 WildItemUncommon = PEARL
-Evolutions = APERSIAN,Item,ALOLANWREATH
+Evolutions = APERSIAN,Level,31
 #-------------------------------
 [APERSIAN]
 Name = A. Persian
@@ -1531,7 +1531,7 @@ Kind = Scratch Cat
 Pokedex = These daring Pokémon have coins on their foreheads. Darker coins are harder, and harder coins garner more respect among Meowth.
 Generation = 8
 WildItemUncommon = PEARL
-Evolutions = PERRSERKER,Item,GALARICAWREATH
+Evolutions = PERRSERKER,Level,31
 #-------------------------------
 [PERRSERKER]
 Name = Perrserker
@@ -2206,7 +2206,7 @@ Weight = 24.0
 Kind = Unique Horn
 Pokedex = This Pokémon will look into your eyes and read the contents of your heart. If it finds evil there, it promptly hides away.
 Generation = 8
-Evolutions = GRAPIDASH,Item,GALARICAWREATH
+Evolutions = GRAPIDASH,Level,34
 #-------------------------------
 [GRAPIDASH]
 Name = G. Rapidash
@@ -2462,7 +2462,7 @@ Kind = Wild Duck
 Pokedex = The stalks of leeks are thicker and longer in the Galar region. Farfetch'd that adapted to these stalks took on a unique form.
 Generation = 8
 WildItemUncommon = STRENGTHHERB
-Evolutions = SIRFETCHD,Item,GALARICAWREATH
+Evolutions = SIRFETCHD,Level,35
 #-------------------------------
 [SIRFETCHD]
 Name = Sirfetch'd
@@ -17642,7 +17642,7 @@ Kind = Bugle Beak
 Pokedex = It can bend the tip of its beak to produce over a hundred different cries at will.
 Generation = 7
 WildItemUncommon = RAWSTBERRY
-Evolutions = TOUCANNON,Item,ALOLANWREATH
+Evolutions = TOUCANNON,Level,34
 #-------------------------------
 [TOUCANNON]
 Name = Toucannon
@@ -17845,7 +17845,7 @@ Kind = Bee Fly
 Pokedex = Cutiefly is able to detect the aura of living things, which it uses to find flowers. Cutiefly tend to gather around beings feeling strong emotions.
 Generation = 7
 WildItemUncommon = HONEY
-Evolutions = RIBOMBEE,Item,ALOLANWREATH
+Evolutions = RIBOMBEE,Level,34
 #-------------------------------
 [RIBOMBEE]
 Name = Ribombee
@@ -18070,7 +18070,7 @@ Kind = Sickle Grass
 Pokedex = When the sun rises, Fomantis spreads its four leaves and bathes in the sunlight. The tip of its head has a pleasant aroma.
 Generation = 7
 WildItemUncommon = MIRACLESEED
-Evolutions = LURANTIS,Item,ALOLANWREATH
+Evolutions = LURANTIS,Level,37
 #-------------------------------
 [LURANTIS]
 Name = Lurantis
@@ -18155,7 +18155,7 @@ Weight = 4.8
 Kind = Toxic Lizard
 Pokedex = The males will do whatever the females tell them. They give the females most of their food.
 Generation = 7
-Evolutions = SALAZZLE,Item,ALOLANWREATH
+Evolutions = SALAZZLE,Level,30
 #-------------------------------
 [SALAZZLE]
 Name = Salazzle
@@ -18943,7 +18943,7 @@ Weight = 55.5
 Kind = Parasite
 Pokedex = A life-form from another world, it was dubbed a UB and is thought to produce a strong neurotoxin.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [BUZZWOLE]
 Name = Buzzwole
@@ -18966,7 +18966,7 @@ Weight = 333.6
 Kind = Swollen
 Pokedex = Although it's alien to this world and a danger here, it's apparently a common organism in the world where it normally lives.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [PHEROMOSA]
 Name = Pheromosa
@@ -18989,7 +18989,7 @@ Weight = 25.0
 Kind = Lissome
 Pokedex = A life-form that lives in another world, its body is thin and supple, but it also possesses great power.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [XURKITREE]
 Name = Xurkitree
@@ -19011,7 +19011,7 @@ Weight = 100.0
 Kind = Glowing
 Pokedex = One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [CELESTEELA]
 Name = Celesteela
@@ -19034,7 +19034,7 @@ Weight = 999.9
 Kind = Launch
 Pokedex = One of the dangerous UBs, high energy readings can be detected coming from both of its huge arms.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [KARTANA]
 Name = Kartana
@@ -19057,7 +19057,7 @@ Weight = 0.1
 Kind = Drawn Sword
 Pokedex = This Ultra Beast's body, which is as thin as paper, is like a sharpened sword.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [GUZZLORD]
 Name = Guzzlord
@@ -19080,7 +19080,7 @@ Weight = 888.0
 Kind = Junkivore
 Pokedex = A dangerous Ultra Beast, it appears to be eating constantly, but for some reason its droppings have never been found.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [POIPOLE]
 Name = Poipole
@@ -19102,7 +19102,7 @@ Weight = 1.8
 Kind = Poison Pin
 Pokedex = This Ultra Beast is well enough liked to be chosen as a first partner in its own world.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 Evolutions = NAGANADEL,Level,40
 #-------------------------------
 [NAGANADEL]
@@ -19125,7 +19125,7 @@ Weight = 150.0
 Kind = Poison Pin
 Pokedex = It stores hundreds of liters of poisonous liquid inside its body. It is one of the organisms known as UBs.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [STAKATAKA]
 Name = Stakataka
@@ -19148,7 +19148,7 @@ Weight = 820.0
 Kind = Rampart
 Pokedex = It appeared from an Ultra Wormhole. Each one appears to be made up of many life-forms stacked one on top of each other.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [BLACEPHALON]
 Name = Blacephalon
@@ -19171,7 +19171,7 @@ Weight = 13.0
 Kind = Fireworks
 Pokedex = It slithers toward people. Then, without warning, it triggers the explosion of its own head. It's apparently one kind of Ultra Beast.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [MAGEARNA]
 Name = Magearna
@@ -19676,7 +19676,7 @@ Weight = 2.2
 Kind = Flowering
 Pokedex = It whirls around in the wind while singing a joyous song. This delightful display has charmed many into raising this Pokémon.
 Generation = 8
-Evolutions = ELDEGOSS,Item,GALARICAWREATH
+Evolutions = ELDEGOSS,Level,28
 #-------------------------------
 [ELDEGOSS]
 Name = Eldegoss
@@ -20401,7 +20401,7 @@ Kind = Serene
 Pokedex = Using the braids on its head, it pummels foes to get them to quiet down. One blow from those braids would knock out a professional boxer.
 Generation = 8
 WildItemUncommon = FAIRYFEATHER
-Evolutions = HATTERENE,Item,GALARICAWREATH
+Evolutions = HATTERENE,Level,38
 #-------------------------------
 [HATTERENE]
 Name = Hatterene
@@ -20462,7 +20462,7 @@ Weight = 12.5
 Kind = Devious
 Pokedex = With sly cunning, it tries to lure people into the woods. Some believe it to have the power to make crops grow.
 Generation = 8
-Evolutions = GRIMMSNARL,Item,GALARICAWREATH
+Evolutions = GRIMMSNARL,Level,38
 #-------------------------------
 [GRIMMSNARL]
 Name = Grimmsnarl
