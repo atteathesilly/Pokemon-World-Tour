@@ -33,6 +33,12 @@ ShowArea = false
 Bicycle = false
 HealingSpot = 15,14,9
 #-------------------------------
+[004]
+# Starter Town buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
