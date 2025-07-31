@@ -18943,7 +18943,7 @@ Weight = 55.5
 Kind = Parasite
 Pokedex = A life-form from another world, it was dubbed a UB and is thought to produce a strong neurotoxin.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [BUZZWOLE]
 Name = Buzzwole
@@ -18966,7 +18966,7 @@ Weight = 333.6
 Kind = Swollen
 Pokedex = Although it's alien to this world and a danger here, it's apparently a common organism in the world where it normally lives.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [PHEROMOSA]
 Name = Pheromosa
@@ -18989,7 +18989,7 @@ Weight = 25.0
 Kind = Lissome
 Pokedex = A life-form that lives in another world, its body is thin and supple, but it also possesses great power.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [XURKITREE]
 Name = Xurkitree
@@ -19011,7 +19011,7 @@ Weight = 100.0
 Kind = Glowing
 Pokedex = One of the mysterious life-forms known as Ultra Beasts. Astonishing electric shocks emanate from its entire body, according to witnesses.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [CELESTEELA]
 Name = Celesteela
@@ -19034,7 +19034,7 @@ Weight = 999.9
 Kind = Launch
 Pokedex = One of the dangerous UBs, high energy readings can be detected coming from both of its huge arms.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [KARTANA]
 Name = Kartana
@@ -19057,7 +19057,7 @@ Weight = 0.1
 Kind = Drawn Sword
 Pokedex = This Ultra Beast's body, which is as thin as paper, is like a sharpened sword.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [GUZZLORD]
 Name = Guzzlord
@@ -19080,7 +19080,7 @@ Weight = 888.0
 Kind = Junkivore
 Pokedex = A dangerous Ultra Beast, it appears to be eating constantly, but for some reason its droppings have never been found.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [POIPOLE]
 Name = Poipole
@@ -19102,7 +19102,7 @@ Weight = 1.8
 Kind = Poison Pin
 Pokedex = This Ultra Beast is well enough liked to be chosen as a first partner in its own world.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 Evolutions = NAGANADEL,Level,40
 #-------------------------------
 [NAGANADEL]
@@ -19125,7 +19125,7 @@ Weight = 150.0
 Kind = Poison Pin
 Pokedex = It stores hundreds of liters of poisonous liquid inside its body. It is one of the organisms known as UBs.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [STAKATAKA]
 Name = Stakataka
@@ -19148,7 +19148,7 @@ Weight = 820.0
 Kind = Rampart
 Pokedex = It appeared from an Ultra Wormhole. Each one appears to be made up of many life-forms stacked one on top of each other.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [BLACEPHALON]
 Name = Blacephalon
@@ -19171,7 +19171,7 @@ Weight = 13.0
 Kind = Fireworks
 Pokedex = It slithers toward people. Then, without warning, it triggers the explosion of its own head. It's apparently one kind of Ultra Beast.
 Generation = 7
-Flags = Legendary
+Flags = Legendary,UltraBeast
 #-------------------------------
 [MAGEARNA]
 Name = Magearna
