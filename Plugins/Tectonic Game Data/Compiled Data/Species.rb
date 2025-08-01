@@ -50,6 +50,8 @@ module GameData
 
         BASE_DATA = {} # Data that hasn't been extended
 
+        FORM_SPECIFIC_MOVES = {}
+
         extend ClassMethods
         include InstanceMethods
 
@@ -523,13 +525,7 @@ module GameData
         end
 
         def form_specific_moves
-            formMoves = []
-            # is there a better way to do this than iterating over every species? it makes "compiling battle metadata" take a while
-            GameData::Species.each do |formData|
-                next unless formData.species == @species
-                formMoves[formData.form] = formData.form_move
-            end
-            return formMoves
+            return FORM_SPECIFIC_MOVES[@species]
         end
 
         def available_by?(level)
@@ -972,6 +968,10 @@ module Compiler
             species.evolutions.each do |evo|
                 all_evos[evo[0]] = [species.species, evo[1], evo[2], true] if !evo[3] && !all_evos[evo[0]]
             end
+            if GameData::Species::FORM_SPECIFIC_MOVES[species.species].nil?
+                GameData::Species::FORM_SPECIFIC_MOVES[species.species] = []
+            end
+            GameData::Species::FORM_SPECIFIC_MOVES[species.species][species.form] = species.form_move
         end
         GameData::Species.each do |species|   # Distribute prevolutions
             next if species.form == 0 # Looking at alternate forms only
