@@ -42,6 +42,7 @@ module GameData
         attr_reader :notes
         attr_accessor :earliest_available
         attr_reader :flags
+        attr_reader :formalizer
 
         DATA = {}
         DATA_FILENAME = "species.dat"
@@ -91,6 +92,7 @@ module GameData
               "Weight"            => [0, "f"],
               "Generation"        => [0, "i"],
               "Flags"             => [0, "*s"],
+              "Formalizer"        => [0, "*i"],
               "BattlerPlayerX"    => [0, "i"],
               "BattlerPlayerY"    => [0, "i"],
               "BattlerEnemyX"     => [0, "i"],
@@ -181,6 +183,7 @@ module GameData
             @tribes                = hash[:tribes]                || []
             @defined_in_extension  = hash[:defined_in_extension]  || false
             @flags                 = hash[:flags]                 || []
+            @formalizer            = hash[:formalizer]            || []
 
             legalityChecks
         end
@@ -751,6 +754,7 @@ module Compiler
                       :weight                => contents["Weight"],
                       :generation            => contents["Generation"],
                       :flags                 => contents["Flags"],
+                      :formalizer            => contents["Formalizer"],
                       :notes                 => contents["Notes"],
                       :tribes                => contents["Tribes"],
                       :defined_in_extension  => !baseFile,
@@ -1145,6 +1149,7 @@ module Compiler
         end
         f.write(format("Generation = %d\r\n", species.generation)) if species.generation != 0
         f.write(format("Flags = %s\r\n", species.flags.join(","))) if !species.flags.empty?
+        f.write(format("Formalizer = %s\r\n", species.formalizer.join(","))) if !species.formalizer.empty?
         f.write(format("WildItemCommon = %s\r\n", species.wild_item_common)) if species.wild_item_common
         f.write(format("WildItemUncommon = %s\r\n", species.wild_item_uncommon)) if species.wild_item_uncommon
         f.write(format("WildItemRare = %s\r\n", species.wild_item_rare)) if species.wild_item_rare

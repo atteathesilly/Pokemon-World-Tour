@@ -10469,6 +10469,7 @@ Pokedex = DNA from a space virus mutated and became a Pokémon. It appears where
 FormName = Normal
 Generation = 3
 Flags = Legendary
+Formalizer = 0,1,2,3
 #-------------------------------
 [TURTWIG]
 Name = Turtwig
@@ -11823,6 +11824,7 @@ Kind = Plasma
 Pokedex = Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc.
 FormName = Rotom
 Generation = 4
+Formalizer = 0,1,2,3,4,5
 #-------------------------------
 [UXIE]
 Name = Uxie
@@ -13545,6 +13547,7 @@ Kind = Blazing
 Pokedex = Its internal fire burns at 2,500 degrees Fahrenheit, making enough power that it can destroy a dump truck with one punch.
 FormName = Standard Mode
 Generation = 5
+Formalizer = 0,1
 #-------------------------------
 [GDARUMAKA]
 Name = G. Darumaka
@@ -13565,6 +13568,7 @@ Weight = 40.0
 Kind = Zen Charm
 Pokedex = The colder they get, the more energetic they are. They freeze their breath to make snowballs, using them as ammo for playful snowball fights.
 Generation = 8
+Formalizer = 0,1
 Evolutions = GDARMANITAN,Item,ICESTONE
 #-------------------------------
 [GDARMANITAN]
@@ -14300,6 +14304,7 @@ Kind = Season
 Pokedex = The turning of the seasons changes the color and scent of this Pokémon's fur. People use it to mark the seasons.
 FormName = Spring
 Generation = 5
+Formalizer = 0,1,2,3
 Evolutions = SAWSBUCK,Level,36
 #-------------------------------
 [SAWSBUCK]
@@ -14320,6 +14325,7 @@ Kind = Season
 Pokedex = They migrate according to the seasons, so some people call Sawsbuck the harbingers of spring.
 FormName = Spring
 Generation = 5
+Formalizer = 0,1,2,3
 #-------------------------------
 [EMOLGA]
 Name = Emolga
@@ -15777,6 +15783,7 @@ Pokedex = Its melodies are sung with a special vocalization method that can cont
 FormName = Aria
 Generation = 5
 Flags = Legendary
+Formalizer = 0,1
 WildItemCommon = STARPIECE
 WildItemUncommon = STARPIECE
 WildItemRare = STARPIECE
@@ -17822,6 +17829,7 @@ Kind = Dancing
 Pokedex = It wins the hearts of its enemies with its passionate dancing and then uses the opening it creates to burn them up with blazing flames.
 FormName = Baile Style
 Generation = 7
+Formalizer = 0,1,2,3
 WildItemUncommon = HONEY
 #-------------------------------
 [CUTIEFLY]
@@ -17904,6 +17912,7 @@ Kind = Wolf
 Pokedex = The sharp rocks in its mane can cut like knives. Lycanroc wears its prey down by degrees before finishing them off.
 FormName = Midday
 Generation = 7
+Formalizer = 0,2
 #-------------------------------
 [WISHIWASHI]
 Name = Wishiwashi
@@ -21074,6 +21083,7 @@ Pokedex = Inhabiting the mountains of a distant region, this Pokémon races acro
 FormName = Single Strike
 Generation = 8
 Flags = Legendary
+Formalizer = 0,1
 #-------------------------------
 [ZARUDE]
 Name = Zarude
