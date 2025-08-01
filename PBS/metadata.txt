@@ -1,7 +1,7 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [000]
-Home = 32,9,7,2
+Home = 2,9,7,2
 WildBattleBGM = Battle-Sticker-Star.ogg
 TrainerBattleBGM = Red-Streamer-Battle.ogg
 AvatarBattleBGM = Event-battle.ogg
@@ -39,12 +39,21 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[005]
+# Chespin Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
 ShowArea = true
 Bicycle = true
 BattleBack = forest
+Environment = TallGrass
 #-------------------------------
 [147]
 # PokEstate

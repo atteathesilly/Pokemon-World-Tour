@@ -47,13 +47,13 @@ Pokemon = LUVDISC,8
 Pokemon = SEEDOT,8
     AbilityIndex = 0 # Air Lock
 #-------------------------------
-[LASS2,Sienna]
-Pokemon = PICHU,8
-    Moves = THUNDERSHOCK,PRANK,NUZZLE
-    AbilityIndex = 0 # Extreme Voltage
-Pokemon = PONYTA,8
-    Moves = KINDLE,TREADON
-    AbilityIndex = 1 # Heavy Duty Hooves
+[BUGCATCHER2,Dipper]
+Pokemon = SCATTERBUG,8
+    Moves = POWDERSNOW,CLACKACLACK,STRINGSHOT,DRAFT
+    AbilityIndex = 1 # Shed Skin
+Pokemon = NIDORANfE,8
+    Moves = SANDTOSS,SMOG,PRANK
+    AbilityIndex = 0 # Rugged Scales
 #-------------------------------
 [HIKER,Dave]
 Pokemon = GEODUDE,8

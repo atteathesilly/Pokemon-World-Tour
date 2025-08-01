@@ -1,5 +1,19 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[005] # Chespin Forest
+Land,20
+    40,CHESPIN,9,11
+    20,FENNEKIN,9,11
+    20,GZIGZAGOON,9,11
+    20,PICHU,9,11
+    20,RIOLU,9,11
+Puddle,20
+    20,AZURILL,9,11
+    20,BIDOOF,9,11
+    20,FROAKIE,9,11
+    20,SURSKIT,9,11
+    20,TYMPOLE,9,11
+#-------------------------------
 [015] # Starting town
 Land,20
     40,YUNGOOS,9,11
