@@ -13568,7 +13568,6 @@ Weight = 40.0
 Kind = Zen Charm
 Pokedex = The colder they get, the more energetic they are. They freeze their breath to make snowballs, using them as ammo for playful snowball fights.
 Generation = 8
-Formalizer = 0,1
 Evolutions = GDARMANITAN,Item,ICESTONE
 #-------------------------------
 [GDARMANITAN]
@@ -13589,6 +13588,7 @@ Kind = Blazing
 Pokedex = Though it has a gentle disposition, it's also very strong. It will quickly freeze the snowball on its head before going for a headbutt.
 FormName = Standard Mode
 Generation = 8
+Formalizer = 0,1
 #-------------------------------
 [MARACTUS]
 Name = Maractus
