@@ -58,16 +58,17 @@ class PokeBattle_Battler
                 PBDebug.log("[Lingering effect] #{target.pbThis}'s Beak Blast")
                 user.applyBurn(target) if move.physicalMove? && user.canBurn?(target, true, move)
             end
-            # Shard Surge
-            if target.effectActive?(:ShardSurge)
-                PBDebug.log("[Lingering effect] #{target.pbThis}'s Shard Surge")
-                return if user.pbOpposingSide.effectAtMax?(:Spikes)
-                target.pbOpposingSide.incrementEffect(:Spikes) if move.specialMove? 
-            end
             # Condensate
             if target.effectActive?(:Condensate)
                 PBDebug.log("[Lingering effect] #{target.pbThis}'s Condensate")
                 user.applyFrostbite(target) if move.specialMove? && user.canFrostbite?(target, true, move)
+            end
+            # Shard Surge
+            if target.effectActive?(:ShardSurge)
+                PBDebug.log("[Lingering effect] #{target.pbThis}'s Shard Surge")
+                if move.specialMove? && !user.pbOpposingSide.effectAtMax?(:Spikes)
+                    target.pbOpposingSide.incrementEffect(:Spikes)
+                end
             end
             # Are set to move, but haven't yet
             if @battle.choices[target.index][0] == :UseMove && !target.movedThisRound?
