@@ -42,10 +42,10 @@ Pokemon = GOLDEEN,9
 #-------------------------------
 [YOUNGSTER,Harvey]
 Policies = REMARKONSTARTER
-Pokemon = LUVDISC,8
+Pokemon = LUVDISC,10
     Moves = WIPEOUT,EAGERTICKLING,CHARM
     AbilityIndex = 0 # Moist Skin
-Pokemon = SEEDOT,8
+Pokemon = SEEDOT,10
     AbilityIndex = 0 # Air Lock
 #-------------------------------
 [BUGCATCHER2,Dipper]
@@ -55,6 +55,14 @@ Pokemon = SCATTERBUG,8
 Pokemon = NIDORANfE,8
     Moves = SANDTOSS,SMOG,PRANK
     AbilityIndex = 0 # Rugged Scales
+#-------------------------------
+[LADY2,Mabel]
+Pokemon = IGGLYBUFF,9
+    Moves = POUND,LULLABY,DISARMINGVOICE,SHOUT
+    AbilityIndex = 0 # Staggering Slaps
+Pokemon = BUIZEL,9
+    Moves = QUICKATTACK,SMASH,WIPEOUT,DAZZLE
+    AbilityIndex = 0 # Moxie
 #-------------------------------
 [HIKER,Dave]
 Pokemon = GEODUDE,8
