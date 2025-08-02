@@ -2802,6 +2802,7 @@ BaseEXP = 250
 Rareness = 35
 Happiness = 50
 Abilities = RADIATE,GRAVITAS
+Moves = 60,TITANIXMOVE
 StepsToHatch = 6630
 Height = 10.5
 Weight = 1632.1

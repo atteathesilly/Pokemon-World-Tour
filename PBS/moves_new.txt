@@ -3522,6 +3522,20 @@ Flags = CanSnatch
 Description = The user heals itself for half of their max HP, and extends the current weather by one turn.
 Animation = RECOVER
 #-------------------------------
+[TITANIXMOVE]
+Name = Titanix Move
+Type = STEEL
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+Priority = -3
+FunctionCode = SetupSpikesBeforeUserActs
+Flags = CanProtect,Uninvocable
+Description = TODO.
+Animation = FLASHCANNON
+#-------------------------------
 [VANGUARD]
 Name = Vanguard
 Type = STEEL

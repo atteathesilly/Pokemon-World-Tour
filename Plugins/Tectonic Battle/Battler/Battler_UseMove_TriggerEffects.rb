@@ -58,6 +58,12 @@ class PokeBattle_Battler
                 PBDebug.log("[Lingering effect] #{target.pbThis}'s Beak Blast")
                 user.applyBurn(target) if move.physicalMove? && user.canBurn?(target, true, move)
             end
+            # Titanix Move
+            if target.effectActive?(:TitanixMove)
+                PBDebug.log("[Lingering effect] #{target.pbThis}'s Titanix Move")
+                return if user.pbOpposingSide.effectAtMax?(:Spikes)
+                target.pbOpposingSide.incrementEffect(:Spikes)
+            end
             # Condensate
             if target.effectActive?(:Condensate)
                 PBDebug.log("[Lingering effect] #{target.pbThis}'s Condensate")

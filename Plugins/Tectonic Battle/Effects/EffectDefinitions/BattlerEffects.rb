@@ -35,6 +35,17 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :TitanixMove,
+    :real_name => "Titanix Move",
+    :resets_battlers_eot => true,
+    :resets_battlers_sot => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbCommonAnimation("BeakBlast", battler)
+        battle.pbDisplay(_INTL("{1} todo", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :Condensate,
     :real_name => "Condensate",
     :resets_battlers_eot => true,

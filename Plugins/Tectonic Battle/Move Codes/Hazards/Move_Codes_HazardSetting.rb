@@ -326,3 +326,18 @@ class PokeBattle_Move_LiveWire < PokeBattle_Move
         return getHazardSettingEffectScore(user, target, scoringWeight)
     end
 end
+
+#===============================================================================
+# If a Pokémon attacks the user before it uses this move, set up Spikes
+# (Titanix Move)
+#===============================================================================
+class PokeBattle_Move_SetupSpikesBeforeUserActs < PokeBattle_Move
+    def pbDisplayChargeMessage(user)
+        user.applyEffect(:TitanixMove)
+    end
+
+    def getEffectScore(user, target)
+        return 0 if damagingMove? && target.pbOwnSide.effectAtMax?(:Spikes)
+        return getHazardSettingEffectScore(user, target)
+    end
+end
