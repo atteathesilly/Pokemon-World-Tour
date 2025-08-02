@@ -1636,7 +1636,7 @@ Target = NearOther
 Priority = -3
 FunctionCode = BurnAttackerBeforeUserActs
 Flags = CanProtect,Uninvocable
-Description = The user heats up its beak before attacking. Physically attacking in this time results in a burn.
+Description = The user heats up its beak before attacking. If hit by a foe's physical move, burns the attacker.
 #-------------------------------
 [BLEAKWINDSTORM]
 Name = Bleakwind Storm
@@ -3778,7 +3778,7 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesPhysicalDamage
 Flags = CanProtect,Uninvocable
-Description = The user rigs its shell to explode. If it is hit by a physical move this turn, the shell detonates and hurts all near foes.
+Description = The user rigs its shell to explode. If hit by a foe's physical move, the shell detonates and hurts all near foes.
 #-------------------------------
 [VCREATE]
 Name = V-create
