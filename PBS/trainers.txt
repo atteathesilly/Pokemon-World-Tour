@@ -33,14 +33,15 @@ Pokemon = PIKACHU,10
 Pokemon = SEEDOT,10
     AbilityIndex = 0 # Air Lock
 #-------------------------------
-[BUGCATCHER_F,Caitlyn]
-Policies = REMARKONSTARTER
-Pokemon = KRICKETOT,8
-    AbilityIndex = 0 # Fascinate
-Pokemon = MVULPIX,9
-    AbilityIndex = 0 # Gild
+[BIRDKEEPER_F,Lark]
+Pokemon = ARCHEN,8
+    AbilityIndex = 1 # Perfectionist
+Pokemon = GOLDEEN,9
+    Moves = WIPEOUT,EAGERTICKLING,PECK
+    AbilityIndex = 0 # Dancer
 #-------------------------------
 [YOUNGSTER,Harvey]
+Policies = REMARKONSTARTER
 Pokemon = LUVDISC,8
     Moves = WIPEOUT,EAGERTICKLING,CHARM
     AbilityIndex = 0 # Moist Skin

@@ -16,10 +16,12 @@ Puddle,20
 #-------------------------------
 [015] # Starting town
 Land,20
-    40,YUNGOOS,9,11
+    20,NIDORANfE,9,11
+    20,NIDORANmA,9,11
     20,ROOKIDEE,9,11
     20,SKWOVET,9,11
     20,WURMPLE,9,11
+    20,YUNGOOS,9,11
 FloweryGrass,21
     20,PANPOUR,9,11
     20,PANSAGE,9,11
