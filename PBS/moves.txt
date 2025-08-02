@@ -3550,7 +3550,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
-Flags = CanProtect
+Flags = CanProtect,Wind
 Description = The user engulfs the target in fierce flames, trapping and damaging it for three turns.
 #-------------------------------
 [FLAMECHARGE]
