@@ -333,7 +333,7 @@ end
 #===============================================================================
 class PokeBattle_Move_SetupSpikesBeforeUserActs < PokeBattle_Move
     def pbDisplayChargeMessage(user)
-        user.applyEffect(:TitanixMove)
+        user.applyEffect(:ShardSurge)
     end
 
     def getEffectScore(user, target)

@@ -35,13 +35,13 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :TitanixMove,
-    :real_name => "Titanix Move",
+    :id => :ShardSurge,
+    :real_name => "Shard Surge",
     :resets_battlers_eot => true,
     :resets_battlers_sot => true,
     :apply_proc => proc do |battle, battler, _value|
-        battle.pbCommonAnimation("BeakBlast", battler)
-        battle.pbDisplay(_INTL("{1} todo", battler.pbThis))
+        battle.pbCommonAnimation("StanceAttack", battler)
+        battle.pbDisplay(_INTL("{1} lines up metal shards!", battler.pbThis))
     end,
 })
 

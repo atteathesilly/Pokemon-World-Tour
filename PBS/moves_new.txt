@@ -3395,6 +3395,20 @@ Flags = CanProtect,Punch
 Description = The user launches a fist with extreme force. This attack is popular with children.
 Animation = BULLETPUNCH
 #-------------------------------
+[SHARDSURGE]
+Name = Shard Surge
+Type = STEEL
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+Priority = -3
+FunctionCode = SetupSpikesBeforeUserActs
+Flags = CanProtect,Uninvocable
+Description = The user lines up shards before attacking. If hit by a foe's special move, lays a hazard layer of Spikes at their feet.
+Animation = POWERGEM
+#-------------------------------
 [SHATTERVISE]
 Name = Shatter Vise
 Type = STEEL
@@ -3521,20 +3535,6 @@ FunctionCode = HealUserHalfOfTotalHPExtendWeather1
 Flags = CanSnatch
 Description = The user heals itself for half of their max HP, and extends the current weather by one turn.
 Animation = RECOVER
-#-------------------------------
-[TITANIXMOVE]
-Name = Titanix Move
-Type = STEEL
-Category = Special
-Power = 100
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-Priority = -3
-FunctionCode = SetupSpikesBeforeUserActs
-Flags = CanProtect,Uninvocable
-Description = TODO.
-Animation = FLASHCANNON
 #-------------------------------
 [VANGUARD]
 Name = Vanguard
@@ -4698,7 +4698,7 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesSpecialDamage
 Flags = CanProtect,Uninvocable,Blade
-Description = The user hides its blade. If it is hit by a special move, it unsheathes it quickly, slashing all near foes.
+Description = The user hides its blade. If hit by a foe's special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
 [MISTLETOE]
