@@ -5705,7 +5705,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberPhysical
 Flags = CanProtect
-Description = The user gets all the party Pokémon to attack the foe with punches and kicks.
+Description = Hits once for each party Pokemon. Deals more damage based on their Attack.
 #-------------------------------
 [BITE]
 Name = Bite

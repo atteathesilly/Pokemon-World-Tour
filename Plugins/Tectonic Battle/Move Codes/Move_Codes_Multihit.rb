@@ -111,7 +111,7 @@ end
 # Hits X times, where X is the number of non-user unfainted status-free Pokémon
 # in the user's party (not including partner trainers). Fails if X is 0.
 # Base power of each hit depends on the base Attack stat for the species of that
-# hit's participant. (Beat Up)
+# hit's participant. (Winter Ops)
 #===============================================================================
 class PokeBattle_Move_HitOncePerUserTeamMemberPhysical < PokeBattle_PartyAttackMove
     def initialize(battle, move)

@@ -1235,7 +1235,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberSpecial
 Flags = CanProtect
-Description = The user gets all the party Pokémon to attack the foe with aerial projectiles.
+Description = Hits once for each party Pokemon. Deals more damage based on their Sp. Atk.
 #-------------------------------
 [WINDTUNNEL]
 Name = Wind Tunnel
@@ -6378,8 +6378,8 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberPhysical
-Flags = CanProtect,CanRandomCrit
-Description = The user hunts with its allies. The more party Pokémon, the more damage. Can random critical hit.
+Flags = CanProtect
+Description = Hits once for each party Pokemon. Deals more damage based on their Attack.
 Animation = ICEPUNCH
 #-------------------------------
 #		DRAGON MOVES
