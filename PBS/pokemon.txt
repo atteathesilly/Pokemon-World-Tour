@@ -10290,8 +10290,8 @@ Name = Regigigas
 Type1 = NORMAL
 Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 110,160,110,100,80,110
-# Total = 670
+BaseStats = 120,160,110,120,80,110
+# Total = 700
 GenderRate = Genderless
 BaseEXP = 302
 Rareness = 5
