@@ -7783,6 +7783,18 @@ Animation = TRANSFORM
 #-------------------------------
 #		FLEX MOVES
 #-------------------------------
+[FIGHTINGCHANCE]
+Name = Fighting Chance
+Type = FLEX
+Category = Adaptive
+Power = 110
+Accuracy = 50
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseUserAccIfMisses
+Flags = CanProtect
+Description = The user makes an risky, difficult attack. If it misses, the user's Accuracy is raised.
+#-------------------------------
 [LONGSHOT]
 Name = Long Shot
 Type = FLEX
