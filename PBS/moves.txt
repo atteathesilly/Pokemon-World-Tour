@@ -4337,7 +4337,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserSpAtk4
-Flags = CanProtect
+Flags = CanProtect,Wind
 Description = A storm of sharp leaves is whipped up. Lowers the user's Sp. Atk by four steps.
 #-------------------------------
 [LEECHSEED]
