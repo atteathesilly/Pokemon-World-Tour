@@ -3840,10 +3840,10 @@ Power = 60
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = Waterlog
+FunctionCode = LowerTargetSpd1
 Flags = CanProtect
-EffectChance = 30
-Description = A spray of bubbles is forcefully ejected at the target. It has a 30% chance to waterlog.
+EffectChance = 100
+Description = A spray of bubbles is forcefully ejected at the target. It also lowers the foe's Speed stat.
 #-------------------------------
 [CLAMP]
 Name = Clamp
