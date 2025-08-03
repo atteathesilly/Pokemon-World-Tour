@@ -350,7 +350,7 @@ Description = Changes to the form of your choosing after switching out.
 #-------------------------------
 [COTTONDECOY]
 Name = Cotton Decoy
-Description = Upon entry, creates a substitute from 1/4th of its HP.
+Description = Upon entry, creates a Substitute from 1/4th of its HP.
 #-------------------------------
 [COUNTERFLOW]
 Name = Counter Flow
