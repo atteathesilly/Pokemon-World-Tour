@@ -47,6 +47,14 @@ Bicycle = true
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[006]
+# Ever Green City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = city
+Environment = None
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true

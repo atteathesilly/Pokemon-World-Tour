@@ -14,6 +14,18 @@ Puddle,20
     20,SURSKIT,9,11
     20,TYMPOLE,9,11
 #-------------------------------
+[006] # Ever Green City
+Land,20
+    20,AXEW,9,11
+    20,ESPURR,9,11
+    20,RHYHORN,9,11
+    20,DRIFLOON,9,11
+FloweryGrass,21
+    20,MEOWTH,9,11
+    20,PANCHAM,9,11
+    20,TIMBURR,9,11
+    20,SMOOCHUM,9,11
+#-------------------------------
 [015] # Starting town
 Land,20
     20,NIDORANfE,9,11
