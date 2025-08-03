@@ -995,7 +995,7 @@ Description = The user relentlessly rampages with its whip-like hands for two tu
 Name = Air Strike
 Type = FLYING
 Category = Physical
-Power = 90
+Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -1195,7 +1195,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = Flinch
 Flags = CanProtect
-EffectChance = 30
+EffectChance = 40
 Description = The user strikes the target with a dart of air. It has a 40% chance to flinch the target.
 #-------------------------------
 [STRAFE]
@@ -1664,7 +1664,7 @@ Target = NearOther
 FunctionCode = RaiseUserSpd1
 Flags = CanProtect
 EffectChance = 100
-Description = The user propels itself forward with a wave of mud which also slams into the target. The user's speed is raised.
+Description = The user propels itself forward with a wave of mud which also slams into the target. The user's Speed is raised.
 Animation = MUDBOMB
 #-------------------------------
 [MUDSLING]
@@ -2222,7 +2222,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveScreensSubstituteProtections
 Flags = Blade
-Description = The user slams the target with a rocky blade. Destroys screens, substitute, and protection on the target.
+Description = The user slams the target with a rocky blade. Destroys screens, Substitutes, and protections on the target.
 Animation = ROCKSMASH
 #-------------------------------
 [SINGINGSTONE]
@@ -2822,7 +2822,7 @@ TotalPP = 10
 Target = UserOrNearOther
 FunctionCode = UserOrTargetMakesSubstitute25
 Flags = CanProtect,CanMagicCoat
-Description = The user forces itself or the target to make a substitute by turning it into a doll.
+Description = The user forces itself or the target to make a Substitute by turning it into a doll.
 #-------------------------------
 [DRIFTOFF]
 Name = Drift Off
@@ -7405,7 +7405,7 @@ TotalPP = 12
 Target = AllNearFoes
 FunctionCode = AlwaysHits
 Flags = Sound
-Description = An enchanting outcry. This attack never misses and skips protections.
+Description = An enchanting outcry. Can't miss and skips protections.
 Animation = SING
 #-------------------------------
 [FLORALGRAMARYE]
