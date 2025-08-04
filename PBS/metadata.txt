@@ -364,12 +364,6 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
-[046]
-# Secret Room 2
-Outdoor = false
-ShowArea = false
-Bicycle = false
-#-------------------------------
 [047]
 # Grand Hotel
 Outdoor = false
