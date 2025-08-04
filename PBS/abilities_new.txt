@@ -965,6 +965,10 @@ Name = Hyper Speed
 Description = Doubles Speed. Dashes to avoid hazards when entering.
 Flags = HazardImmunity
 #-------------------------------
+[IAIJUTSU]
+Name = Iaijutsu
+Description = Doubles the power of blade moves on the first turn.
+#-------------------------------
 [ICEBLOCK]
 Name = Ice Block
 Description = It can avoid being knocked out by using its face. The face then melts.
@@ -1179,10 +1183,6 @@ Flags = MoonglowSynergy
 [MAESTRO]
 Name = Maestro
 Description = The Pokémon's Speed is doubled while using Sound-based moves.
-#-------------------------------
-[MAGICSHIELD]
-Name = Magic Shield
-Description = Negates enemy status moves that target the Pokémon or create hazards around it.
 #-------------------------------
 [MAGNETTRAP]
 Name = Magnet Trap
@@ -2147,11 +2147,6 @@ Description = Powers up Ice-type moves by 50%.
 [UNCANNYLUCK]
 Name = Uncanny Luck
 Description = If an attacker would activate a random added effect on the Pokémon, that effect is placed on the attacker instead.
-#-------------------------------
-[UNCONQUERABLE]
-Name = Unconquerable
-Description = Blocks random added effects of attacks taken, and prevents critical hits.
-Flags = CritImmunity
 #-------------------------------
 [UNCONVENTIONAL]
 Name = Unconventional
