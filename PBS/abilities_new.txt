@@ -2197,6 +2197,10 @@ Description = At the end of each turn, itself and each ally heals for 1/16th of 
 Name = Wall Ninja
 Description = The Pokémon's attacks are always critical if there is an active Room.
 #-------------------------------
+[WARDING]
+Name = Warding
+Description = Negates enemy status moves that target the Pokémon or create hazards around it.
+#-------------------------------
 [WARPINGEFFECT]
 Name = Warping Effect
 Description = Double Sp. Def in eclipse.
