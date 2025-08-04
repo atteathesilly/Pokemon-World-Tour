@@ -17382,8 +17382,8 @@ Name = Volcanion
 Type1 = FIRE
 Type2 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 100,70,120,80,130,130
-# Total = 630
+BaseStats = 95,65,115,75,125,125
+# Total = 600
 GenderRate = Genderless
 BaseEXP = 270
 Rareness = 5
@@ -18855,8 +18855,8 @@ Name = Solgaleo
 Type1 = PSYCHIC
 Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 137,137,107,97,113,89
-# Total = 680
+BaseStats = 125,125,95,85,105,85
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 306
 Rareness = 5
@@ -18877,8 +18877,8 @@ Name = Lunala
 Type1 = PSYCHIC
 Type2 = GHOST
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 137,113,89,97,137,107
-# Total = 680
+BaseStats = 125,105,85,85,125,95
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 306
 Rareness = 5
@@ -19263,7 +19263,7 @@ Evolutions = MELMETAL,Level,44
 Name = Melmetal
 Type1 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 135,143,143,34,80,65
+BaseStats = 130,145,145,35,80,65
 # Total = 600
 GenderRate = Genderless
 BaseEXP = 270
@@ -20907,8 +20907,8 @@ Generation = 8
 Name = Zacian
 Type1 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 92,130,115,138,80,115
-# Total = 670
+BaseStats = 85,120,105,130,75,105
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 335
 Rareness = 5
@@ -20930,8 +20930,8 @@ Flags = Legendary
 Name = Zamazenta
 Type1 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 92,130,115,138,80,115
-# Total = 670
+BaseStats = 85,120,130,105,75,105
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 335
 Rareness = 5
@@ -20954,8 +20954,8 @@ Name = Eternatus
 Type1 = POISON
 Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 140,85,95,130,145,95
-# Total = 690
+BaseStats = 130,75,85,115,130,85
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 345
 Rareness = 5
