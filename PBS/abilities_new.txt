@@ -1598,6 +1598,10 @@ Description = When hit with a physical move, hits back instantly with Leafage.
 Name = Rending Claws
 Description = Critical hits lower all of the victim's stats.
 #-------------------------------
+[REPETITION]
+Name = Repetition
+Description = "Two to five" multi-hit moves hit an additional time.
+#-------------------------------
 [RESOLUTE]
 Name = Resolute
 Description = Immune to Dark-type and Bug-type moves.
