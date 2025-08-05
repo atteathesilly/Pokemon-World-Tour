@@ -2406,8 +2406,8 @@ Pokemon = SNEASLER,70
     EV = 0,15,15,20,15,0
 Pokemon = ATLACROSS,70
     Moves = ARMTHRUST,PINMISSILE,ROCKBLAST,DEEPBREATHING
-    AbilityIndex = 0 # Skill Link
-    Item = SCOPELENS
+    AbilityIndex = 0 # Repetition
+    Item = LOADEDDICE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,3,20,7
 Pokemon = WALREIN,70

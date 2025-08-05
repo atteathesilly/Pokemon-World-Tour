@@ -1575,7 +1575,7 @@ Description = Before using a status move against a single foe, lowers their Sp. 
 #-------------------------------
 [REFRACTIVE]
 Name = Refractive
-Description = Pulse moves change the Pokémon's secondary type and their power is boosted by 30%.
+Description = Light moves change the Pokémon's secondary type and their power is boosted by 30%.
 #-------------------------------
 [REFRESHMENTS]
 Name = Refreshments
@@ -1593,6 +1593,10 @@ Description = When hit with a physical move, hits back instantly with Leafage.
 [RENDINGCLAWS]
 Name = Rending Claws
 Description = Critical hits lower all of the victim's stats.
+#-------------------------------
+[REPETITION]
+Name = Repetition
+Description = "Two to five" multi-hit moves hit an additional time.
 #-------------------------------
 [RESOLUTE]
 Name = Resolute
@@ -2043,7 +2047,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [TERRORIZE]
 Name = Terrorize
-Description = Flinching moves always activate their random effects.
+Description = Flinching moves always activate their random effects. However, the Pokemon deals 10% less move damage.
 #-------------------------------
 [TESLACOILS]
 Name = Tesla Coils
