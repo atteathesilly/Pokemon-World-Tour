@@ -62,7 +62,7 @@ BattleHandlers::DamageCalcUserAbility.add(:MEGALAUNCHER,
 
 BattleHandlers::DamageCalcUserAbility.add(:REFRACTIVE,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
-    if move.pulseMove?
+    if move.lightMove?
       mults[:base_damage_multiplier] *= 1.3
       user.aiLearnsAbility(ability) unless aiCheck
     end

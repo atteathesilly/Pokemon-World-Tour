@@ -3429,6 +3429,20 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = This attack's power increases by 10 for every one of the target's positive stat steps.
 #-------------------------------
+[ULTRAVIOLETPULSE]
+Name = Ultraviolet Pulse
+Type = DARK
+Category = Special
+Power = 105
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Pulse
+EffectChance = 100
+Description = The user pulses powerful darkness to expose the target's motives. This lowers their Sp. Def by two steps.
+Animation = DARKPULSE
+#-------------------------------
 #		FAIRY MOVES
 #-------------------------------
 [ANGELSKISS]
