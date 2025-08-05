@@ -2051,7 +2051,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [TERRORIZE]
 Name = Terrorize
-Description = Flinching moves always activate their random effects.
+Description = Flinching moves always activate their random effects. However, the Pokemon deals 10% less move damage.
 #-------------------------------
 [TESLACOILS]
 Name = Tesla Coils

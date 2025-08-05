@@ -827,3 +827,10 @@ BattleHandlers::DamageCalcUserAbility.add(:SLINKY,
     end
   }
 )
+
+BattleHandlers::DamageCalcUserAbility.add(:TERRORIZE,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    mults[:base_damage_multiplier] *= 0.9
+    user.aiLearnsAbility(ability) unless aiCheck
+  }
+)
