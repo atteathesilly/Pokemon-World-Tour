@@ -21,19 +21,20 @@ Pokemon = SLAKING,70
     AbilityIndex = 1 # Truant
 #-------------------------------
 [RIVAL_SALLY,Sally]
+Flags = NoPerfect
 Pokemon = DUCKLETT,13
     Moves = GLITTERBOMB,PECK,TAILWIND,TIDEPULL
     AbilityIndex = 1 # Slipstream
-Pokemon = NIDORANfE,13
+Pokemon = NIDORANfE,12
     Moves = SMOG,SANDTOSS,POISONSPIKES,POISONGAS
     AbilityIndex = 0 # Rugged Scales
-Pokemon = FROAKIE,13
+Pokemon = FROAKIE,10
     Moves = BUBBLE,PILFER,IRONARROW,DAZZLE
     AbilityIndex = 1 # Wise Hunter
-Pokemon = PANSAGE,13
+Pokemon = PANSAGE,10
     Moves = SCRATCH,ESSENCEARROW,RECYCLE,FAKEOUT
-    Item = SITRUSBERRY
     AbilityIndex = 1 # Reclamation
+    Item = SITRUSBERRY
 #-------------------------------
 [ROLLERSKATER_M,Lane Tester]
 Pokemon = MACHOP,10
