@@ -55,6 +55,24 @@ Bicycle = true
 BattleBack = city
 Environment = None
 #-------------------------------
+[007]
+# Ever Green Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[008]
+# Ever Green Poke Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[009]
+# Ever Green Mart
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
