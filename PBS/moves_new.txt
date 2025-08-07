@@ -5535,7 +5535,7 @@ Animation = LOVELYKISS
 [DREAMABSORB]
 Name = Dream Absorb
 Type = PSYCHIC
-Category = Special
+Category = Adaptive
 Power = 60
 Accuracy = 100
 TotalPP = 12
@@ -5548,8 +5548,8 @@ Animation = DREAMEATER
 [DREAMFEAST]
 Name = Dream Feast
 Type = PSYCHIC
-Category = Physical
-Power = 60
+Category = Adaptive
+Power = 75
 Accuracy = 100
 TotalPP = 12
 Target = NearOther
