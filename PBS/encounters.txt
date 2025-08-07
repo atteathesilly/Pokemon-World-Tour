@@ -21,10 +21,12 @@ Land,20
     20,ESPURR,9,11
     20,RHYHORN,9,11
 FloweryGrass,21
+    20,AUDINO,9,11
     20,MEOWTH,9,11
     20,PANCHAM,9,11
     20,SMOOCHUM,9,11
-    20,TIMBURR,9,11
+Special
+    1,TIMBURR,15
 #-------------------------------
 [015] # Starting town
 Land,20

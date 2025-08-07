@@ -73,6 +73,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[010]
+# Ever Green Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
