@@ -5702,7 +5702,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetSpDef1
-Flags = CanProtect
+Flags = CanProtect,Pulse
 EffectChance = 20
 Description = The target is hit by a weak telekinetic force. It has a 20% chance to lower the target's Sp. Def.
 Animation = CONFUSION
@@ -5866,7 +5866,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimes
-Flags = CanProtect
+Flags = CanProtect,Pulse
 Description = The user sends waves of cosmic energy to overwhelm the target's senses. Multi-hits two to five times.
 Animation = CONFUSION
 #-------------------------------
