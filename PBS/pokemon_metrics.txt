@@ -648,12 +648,6 @@ FrontSprite = 0,15
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
-[BLASFEMMIE]
-BackSprite = 0,0
-FrontSprite = 0,4
-ShadowX = 0
-ShadowSize = 3
-#-------------------------------
 [BLASTOISE]
 BackSprite = 0,17
 FrontSprite = 0,12

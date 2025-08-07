@@ -2386,12 +2386,6 @@ Pokemon = TEAMUJIN,70
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,0,20,20
-Pokemon = BLASFEMMIE,70
-    Moves = SWEETKISS,GLAMOURFLASH,MOONBLAST,RAPIDSPIN
-    AbilityIndex = 1 # Hubris
-    Item = LEFTOVERS
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,0,0,20,10
 Pokemon = SNEASLER,70
     Moves = CROSSPOISON,CROSSCHOP,ADAMANTINEPRESS,SWORDSDANCE
     AbilityIndex = 1 # Frustrate

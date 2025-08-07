@@ -20462,18 +20462,19 @@ Weight = 0.3
 Kind = Cream
 Pokedex = They say that any patisserie visited by Milcery is guaranteed success and good fortune.
 Generation = 8
-Evolutions = ALCREMIE,Level,24
+Evolutions = ALCREMIE,Level,31
 #-------------------------------
 [ALCREMIE]
 Name = Alcremie
 Type1 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 85,50,105,50,85,65
-# Total = 440
+BaseStats = 105,50,131,50,100,80
+# Total = 516
 BaseEXP = 173
 Rareness = 80
 Happiness = 50
 Abilities = TANTALIZING,HUBRIS
+Moves = 0,PROFANE,1,PROFANE
 LineMoves = CALMMIND,DIZZYPUNCH,DRAINPUNCH,ENCORE,FAKETEARS,GIGADRAIN,GIGAIMPACT,GLAMOURFLASH,HYPERBEAM,LIGHTSCREEN,MAGICALLEAF,MYSTICALFIRE,PSYCHIC,SOLARBEAM,TRIATTACK
 StepsToHatch = 5396
 Height = 0.3
@@ -20482,25 +20483,6 @@ Kind = Cream
 Pokedex = When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer.
 FormName = Vanilla Strawberry
 Generation = 8
-Evolutions = BLASFEMMIE,Level,44
-#-------------------------------
-[BLASFEMMIE]
-Name = Blasfemmie
-Type1 = FAIRY
-# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 105,65,131,59,110,80
-# Total = 550
-BaseEXP = 173
-Rareness = 80
-Happiness = 50
-Abilities = TANTALIZING,HUBRIS
-Moves = 0,PROFANE,1,PROFANE
-Tribes = FORTUNE,SCOURGE
-StepsToHatch = 5396
-Height = 6.1
-Weight = 851.0
-Kind = Temptation
-Pokedex = So tall it seems to defy the heavens, it lords its elevated position over other Pokémon. It grants its Trainer knowledge of sweet and sour.
 #-------------------------------
 [FALINKS]
 Name = Falinks
