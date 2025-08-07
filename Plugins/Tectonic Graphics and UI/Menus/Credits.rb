@@ -80,6 +80,8 @@ DiegoWT<s>PurpleZaffre
 Taiga
 
 Trainer Sprites
+Raffs07
+manycrows
 Mr. Gela<s>theo
 
 Taiga's Trainer Collection (X/Y)
