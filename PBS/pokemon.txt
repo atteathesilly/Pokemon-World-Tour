@@ -20480,6 +20480,7 @@ Height = 0.3
 Weight = 0.5
 Kind = Cream
 Pokedex = When Alcremie is content, the cream it secretes from its hands becomes sweeter and richer.
+FormName = Vanilla Strawberry
 Generation = 8
 Evolutions = BLASFEMMIE,Level,44
 #-------------------------------

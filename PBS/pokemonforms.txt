@@ -938,3 +938,189 @@ FormName = White-Striped
 Kind = Mellow
 Pokedex = It differs from other Basculin in several respects, including demeanor. It is much gentler than other color variants.
 Evolutions = BASCULEGION,Level,42
+#-------------------------------
+[ALCREMIE,1]
+FormName = Vanilla Berry
+#-------------------------------
+[ALCREMIE,2]
+FormName = Vanilla Love
+#-------------------------------
+[ALCREMIE,3]
+FormName = Vanilla Star
+#-------------------------------
+[ALCREMIE,4]
+FormName = Vanilla Clover
+#-------------------------------
+[ALCREMIE,5]
+FormName = Vanilla Flower
+#-------------------------------
+[ALCREMIE,6]
+FormName = Vanilla Ribbon
+#-------------------------------
+[ALCREMIE,7]
+FormName = Ruby Strawberry
+#-------------------------------
+[ALCREMIE,8]
+FormName = Ruby Berry
+#-------------------------------
+[ALCREMIE,9]
+FormName = Ruby Love
+#-------------------------------
+[ALCREMIE,10]
+FormName = Ruby Star
+#-------------------------------
+[ALCREMIE,11]
+FormName = Ruby Clover
+#-------------------------------
+[ALCREMIE,12]
+FormName = Ruby Flower
+#-------------------------------
+[ALCREMIE,13]
+FormName = Ruby Ribbon
+#-------------------------------
+[ALCREMIE,14]
+FormName = Matcha Strawberry
+#-------------------------------
+[ALCREMIE,15]
+FormName = Matcha Berry
+#-------------------------------
+[ALCREMIE,16]
+FormName = Matcha Love
+#-------------------------------
+[ALCREMIE,17]
+FormName = Matcha Star
+#-------------------------------
+[ALCREMIE,18]
+FormName = Matcha Clover
+#-------------------------------
+[ALCREMIE,19]
+FormName = Matcha Flower
+#-------------------------------
+[ALCREMIE,20]
+FormName = Matcha Ribbon
+#-------------------------------
+[ALCREMIE,21]
+FormName = Mint Strawberry
+#-------------------------------
+[ALCREMIE,22]
+FormName = Mint Berry
+#-------------------------------
+[ALCREMIE,23]
+FormName = Mint Love
+#-------------------------------
+[ALCREMIE,24]
+FormName = Mint Star
+#-------------------------------
+[ALCREMIE,25]
+FormName = Mint Clover
+#-------------------------------
+[ALCREMIE,26]
+FormName = Mint Flower
+#-------------------------------
+[ALCREMIE,27]
+FormName = Mint Ribbon
+#-------------------------------
+[ALCREMIE,28]
+FormName = Lemon Strawberry
+#-------------------------------
+[ALCREMIE,29]
+FormName = Lemon Berry
+#-------------------------------
+[ALCREMIE,30]
+FormName = Lemon Love
+#-------------------------------
+[ALCREMIE,31]
+FormName = Lemon Star
+#-------------------------------
+[ALCREMIE,32]
+FormName = Lemon Clover
+#-------------------------------
+[ALCREMIE,33]
+FormName = Lemon Flower
+#-------------------------------
+[ALCREMIE,34]
+FormName = Lemon Ribbon
+#-------------------------------
+[ALCREMIE,35]
+FormName = Salted Strawberry
+#-------------------------------
+[ALCREMIE,36]
+FormName = Salted Berry
+#-------------------------------
+[ALCREMIE,37]
+FormName = Salted Love
+#-------------------------------
+[ALCREMIE,38]
+FormName = Salted Star
+#-------------------------------
+[ALCREMIE,39]
+FormName = Salted Clover
+#-------------------------------
+[ALCREMIE,40]
+FormName = Salted Flower
+#-------------------------------
+[ALCREMIE,41]
+FormName = Salted Ribbon
+#-------------------------------
+[ALCREMIE,42]
+FormName = Swirl Strawberry
+#-------------------------------
+[ALCREMIE,43]
+FormName = Swirl Berry
+#-------------------------------
+[ALCREMIE,44]
+FormName = Swirl Love
+#-------------------------------
+[ALCREMIE,45]
+FormName = Swirl Star
+#-------------------------------
+[ALCREMIE,46]
+FormName = Swirl Clover
+#-------------------------------
+[ALCREMIE,47]
+FormName = Swirl Flower
+#-------------------------------
+[ALCREMIE,48]
+FormName = Swirl Ribbon
+#-------------------------------
+[ALCREMIE,49]
+FormName = Caramel Strawberry
+#-------------------------------
+[ALCREMIE,50]
+FormName = Caramel Berry
+#-------------------------------
+[ALCREMIE,51]
+FormName = Caramel Love
+#-------------------------------
+[ALCREMIE,52]
+FormName = Caramel Star
+#-------------------------------
+[ALCREMIE,53]
+FormName = Caramel Clover
+#-------------------------------
+[ALCREMIE,54]
+FormName = Caramel Flower
+#-------------------------------
+[ALCREMIE,55]
+FormName = Caramel Ribbon
+#-------------------------------
+[ALCREMIE,56]
+FormName = Rainbow Strawberry
+#-------------------------------
+[ALCREMIE,57]
+FormName = Rainbow Berry
+#-------------------------------
+[ALCREMIE,58]
+FormName = Rainbow Love
+#-------------------------------
+[ALCREMIE,59]
+FormName = Rainbow Star
+#-------------------------------
+[ALCREMIE,60]
+FormName = Rainbow Clover
+#-------------------------------
+[ALCREMIE,61]
+FormName = Rainbow Flower
+#-------------------------------
+[ALCREMIE,62]
+FormName = Rainbow Ribbon
