@@ -28,6 +28,20 @@ FloweryGrass,21
 Special
     1,TIMBURR,15
 #-------------------------------
+[011] # Oaken path
+Land,20
+    40,WEEDLE,9,11
+    20,CATERPIE,9,11
+    20,DEERLING,9,11
+    20,MILCERY,9,11
+    20,SKITTY,9,11
+LandTall,20
+    20,HERACROSS,9,11
+    20,LITLEO,9,11
+    20,SHINX,9,11
+    20,SHUPPET,9,11
+    20,SWABLU,9,11
+#-------------------------------
 [015] # Starting town
 Land,20
     20,NIDORANfE,9,11

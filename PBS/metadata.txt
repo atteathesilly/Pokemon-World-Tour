@@ -79,6 +79,14 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[011]
+# Oaken path
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
