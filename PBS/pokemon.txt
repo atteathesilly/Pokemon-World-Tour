@@ -20318,6 +20318,49 @@ Weight = 0.4
 Kind = Ice Tea
 Pokedex = Despite its refreshing scent, those who drink of its colorful liquid are swiftly put into a deep sleep.
 #-------------------------------
+[POLTCHAGEIST]
+Name = Poltchageist
+Type1 = GRASS
+Type2 = GHOST
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 50,55,45,70,89,55
+# Total = 364
+GenderRate = Genderless
+BaseEXP = 62
+Rareness = 155
+Happiness = 50
+Abilities = FIREFIGHTER,LEECHINGMATCHA
+Moves = 1,EMBER,1,SMIRK,4,ESSENCEARROW,8,WATERGUN,12,AROMATHERAPY,16,HOTSHOT,20,HEX,24,MAGICALLEAF,28,WILLOWISP,32,BACKHAND,36,SUFFOCATE,40,PETALTEMPEST,44,FLAMETHROWER,48,LEAFSTORM,52,FIREBLAST,56,PHANTOMGATE,60,SHELLSMASH
+LineMoves = ABSORB,AIMTRUE,ASTONISH,BRINE,CHACHING,COLDSHOULDER,CONCENTRATE,CURSEDOATH,DARKALLURE,DARKPULSE,DEADEND,DEATHKNELL,DIRGE,DISTURB,DREAMDANCE,EERIEIMPULSE,EMBER,ENDURE,ENERGYBALL,ERUPTION,EXPLOSION,FACADE,FIREBLAST,FIREPULSE,FIREPUNCH,FIRESPIN,FLAMECHARGE,FLAMETHROWER,FLAREBLITZ,FLAREUP,FLING,FOULPLAY,GEYSER,GIGADRAIN,HAIL,HARSHVOICE,HELPINGHAND,HEX,HYPERBEAM,LEAFAGE,LEAFBLADE,LIGHTSCREEN,MEGADRAIN,MEMENTO,MINDWAVES,NIGHTCHILL,PACIFY,PAYBACK,PAYDAY,PETALDANCE,PHANTOMFORCE,PRANK,PROTECT,PSYBEAM,PSYCHIC,PSYPIERCE,PULSAR,RAZORLEAF,REFLECT,REST,RETREAT,RISINGPOWER,ROUND,SAPPINGJEALOUSY,SEANCE,SELFDESTRUCT,SHADOWBALL,SHIVER,SLEEPTALK,SNIPESHOT,SNORE,SOULEATER,STRENGTHSAP,SUBSTITUTE,SWEETKISS,TEASE,TERADRAIN,THINAIR,TRICK,TRUMPCARD,VANGUARD,WATERGUN,WHELM,WILLOWISP
+Tribes = ANIMATED,NOBLE
+StepsToHatch = 5396
+Height = 0.1
+Weight = 0.2
+Kind = Matcha
+Pokedex = Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon.
+Generation = 9
+Evolutions = SINISTCHA,Item,FIRESTONE
+#-------------------------------
+[SINISTCHA]
+Name = Sinistcha
+Type1 = GRASS
+Type2 = GHOST
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 71,60,106,70,121,80
+# Total = 508
+GenderRate = Genderless
+BaseEXP = 178
+Rareness = 50
+Happiness = 50
+Abilities = FIREFIGHTER,LEECHINGMATCHA
+Moves = 0,MATCHAGOTCHA,1,MATCHAGOTCHA
+StepsToHatch = 5396
+Height = 0.2
+Weight = 0.4
+Kind = Matcha
+Pokedex = It pretends to be tea, trying to fool people into drinking it so it can drain their life-force. Its ruse is generally unsuccessful.
+Generation = 9
+#-------------------------------
 [HATENNA]
 Name = Hatenna
 Type1 = PSYCHIC

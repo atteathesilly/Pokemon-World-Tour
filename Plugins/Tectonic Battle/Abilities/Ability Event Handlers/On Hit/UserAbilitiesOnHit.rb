@@ -167,6 +167,13 @@ BattleHandlers::UserAbilityOnHit.add(:SEEDSOWING,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:LEECHINGMATCHA,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless move.specialMove?
+    randomStatusProcUserAbility(ability, :LEECHED, 30, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)
+
 BattleHandlers::UserAbilityOnHit.add(:SIPHONSNIPER,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
     next unless user.firstTurn?

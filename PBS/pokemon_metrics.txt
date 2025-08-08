@@ -4818,6 +4818,12 @@ FrontSprite = 0,17
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[POLTCHAGEIST]
+BackSprite = 0,34
+FrontSprite = 0,38
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [POLTEAGEIST]
 BackSprite = 0,18
 FrontSprite = 0,22
@@ -5601,6 +5607,12 @@ ShadowSize = 2
 [SIMISEAR]
 BackSprite = 0,18
 FrontSprite = 0,24
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[SINISTCHA]
+BackSprite = 0,18
+FrontSprite = 0,22
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

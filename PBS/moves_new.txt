@@ -4600,6 +4600,18 @@ Flags = CanProtect,Uninvocable,Blade
 Description = The user hides its blade. If it is hit by a special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
+[MATCHAGOTCHA]
+Name = Matcha Gotcha
+Type = GRASS
+Category = Special
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect
+Description = The user attacks the opposing side. The user's HP is restored by 50% of the damage dealt.
+#-------------------------------
 [MISTLETOE]
 Name = Mistletoe
 Type = GRASS

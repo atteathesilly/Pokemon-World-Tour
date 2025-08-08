@@ -1086,6 +1086,10 @@ Flags = Immutable
 Name = Late Bloomer
 Description = Deals 30% more damage when it's slower than the target.
 #-------------------------------
+[LEECHINGMATCHA]
+Name = Leeching Matcha
+Description = Special moves have a 30% chance to leech targets.
+#-------------------------------
 [LEVIATHAN]
 Name = Leviathan
 Description = Protected from critical hits. Can't be burned or frostbitten.
