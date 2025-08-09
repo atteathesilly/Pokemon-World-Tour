@@ -28,7 +28,7 @@ FloweryGrass,21
 Special
     1,TIMBURR,15
 #-------------------------------
-[011] # Oaken path
+[011] # Oaken Path
 Land,20
     40,WEEDLE,9,11
     20,CATERPIE,9,11

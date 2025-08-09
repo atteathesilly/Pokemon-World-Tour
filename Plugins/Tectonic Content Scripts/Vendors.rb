@@ -651,6 +651,17 @@ def gemVendor
 	)
 end
 
+def ballman
+	basicBallStock = %i[
+		POKEBALL
+	]
+	pbPokemonMart(
+		basicBallStock,
+		_INTL("I'm the Ball Man. need Pokeballs, I got 'em."),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
 def earlyBallVendor
 	basicBallStock = %i[
 		SLICEBALL

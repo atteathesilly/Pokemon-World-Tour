@@ -20,14 +20,14 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [002]
-# Your room
+# Your Room
 Outdoor = false
 ShowArea = false
 Bicycle = false
 HealingSpot = 15,14,9
 #-------------------------------
 [003]
-# Your house downstairs
+# Your House Downstairs
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -66,6 +66,7 @@ Bicycle = false
 Outdoor = false
 ShowArea = false
 Bicycle = false
+HealingSpot = 6,20,30
 #-------------------------------
 [009]
 # Ever Green Mart
@@ -80,7 +81,7 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [011]
-# Oaken path
+# Oaken Path
 Outdoor = true
 ShowArea = true
 Bicycle = true

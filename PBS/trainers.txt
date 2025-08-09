@@ -31,10 +31,6 @@ Pokemon = NIDORANfE,12
 Pokemon = FROAKIE,10
     Moves = BUBBLE,PILFER,IRONARROW,DAZZLE
     AbilityIndex = 1 # Wise Hunter
-Pokemon = PANSAGE,10
-    Moves = SCRATCH,ESSENCEARROW,RECYCLE,FAKEOUT
-    AbilityIndex = 1 # Reclamation
-    Item = SITRUSBERRY
 #-------------------------------
 [ROLLERSKATER_M,Lane Tester]
 Pokemon = MACHOP,10
@@ -107,24 +103,23 @@ Pokemon = HOUNDOUR,13
 Pokemon = BULBASAUR,13
     AbilityIndex = 0 # Poison Absorb
 #-------------------------------
-[AROMALADY,Hannah]
-Pokemon = BUDEW,12
-    Moves = LEAFAGE,POISONSTING,ENVENOM,AROMATHERAPY
-    AbilityIndex = 1 # Merciless
-Pokemon = FLABEBE,12
-    AbilityIndex = 1 # Sentry
+[POKEMONBREEDER_F,Janice]
+Pokemon = TURTWIG,12
+    AbilityIndex = 1 # Living Armor
+Pokemon = CHIMCHAR,12
+    AbilityIndex = 1 # Monkey Mischief
 Pokemon = PIPLUP,12
     AbilityIndex = 0 # Imperious
 #-------------------------------
-[SAILOR,Dylan]
+[HIKER3,Asriel]
+Pokemon = MUNCHLAX,14
+    Gender = female
+    Moves = STOCKPILE,SWALLOW,TACKLE,BITE
+    AbilityIndex = 1 # Thick Fat
 Pokemon = AZURILL,14
-    Moves = WIPEOUT,TICKLE,EAGERTICKLING,CHARM
     AbilityIndex = 1 # Pure Force
-Pokemon = WINGULL,14
-    AbilityIndex = 0 # Cheek Pouch
-Pokemon = TEPIG,14
-    Moves = KINDLE,LEER,SCUFFLE
-    AbilityIndex = 0 # Roast
+Pokemon = WYNAUT,14
+    AbilityIndex = 0 # Shadow Tag
 #-------------------------------
 [LADY2,Rebecca]
 Pokemon = AMEOWTH,14
