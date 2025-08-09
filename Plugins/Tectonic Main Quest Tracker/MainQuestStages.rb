@@ -28,7 +28,7 @@ def getMainQuestStages
         :DEFEAT_THE_AVATAR              =>
             [
                 _INTL("Defeat the Avatar!"),
-                _INTL("You found Lambert in a small Grotto on the far west end of Bluepoint Beach, defeated by an Avatar of Vigoroth. Defeat the Avatar and free up Lambert."),
+                _INTL("You found Lambert in a small Grotto on the far west end of Bluepoint Beach, defeated by an boss of Vigoroth. Defeat the Avatar and free up Lambert."),
             ],
         :DEFEAT_LAMBERT                 =>
             [

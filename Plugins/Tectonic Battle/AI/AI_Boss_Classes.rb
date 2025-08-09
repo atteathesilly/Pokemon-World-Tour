@@ -242,10 +242,10 @@ class PokeBattle_AI_DEOXYS < PokeBattle_AI_Boss
         super
         @beforePhaseChange.push(proc { |user, _battle|
             if user.avatarPhase == 0
-                formChangeMessage = _INTL("The avatar of Deoxys turns to Attack Form!")
+                formChangeMessage = _INTL("The boss of Deoxys turns to Attack Form!")
                 user.pbChangeForm(1, formChangeMessage)
             elsif user.avatarPhase == 1
-                formChangeMessage = _INTL("The avatar of Deoxys turns to Defense Form!")
+                formChangeMessage = _INTL("The boss of Deoxys turns to Defense Form!")
                     user.pbChangeForm(2, formChangeMessage)
             end
         })
@@ -257,7 +257,7 @@ end
 ##################################################
 def calyrexArrives(user, battle, version = 0)
     battle.pbDisplayBossNarration(_INTL("Except, what's this!?"))
-    battle.pbDisplayBossNarration(_INTL("The Avatar of Calyrex has arrived to save its steed!"))
+    battle.pbDisplayBossNarration(_INTL("The Boss of Calyrex has arrived to save its steed!"))
     
     newAvatar = generateAvatarPokemon(:CALYREX,70,version)
     
@@ -351,7 +351,7 @@ class PokeBattle_AI_GENESECT < PokeBattle_AI_Boss
         })
 
         @beginBattle.push(proc { |user, battle|
-            battle.pbDisplayBossNarration(_INTL("The avatar of Genesect is analyzing your whole team for weaknesses..."))
+            battle.pbDisplayBossNarration(_INTL("The boss of Genesect is analyzing your whole team for weaknesses..."))
             weakToElectric	= 0
             weakToFire	= 0
             weakToIce	= 0

@@ -21,6 +21,7 @@ Pokemon = SLAKING,70
     AbilityIndex = 1 # Truant
 #-------------------------------
 [RIVAL_SALLY,Sally]
+Policies = SALLY1
 Flags = NoPerfect
 Pokemon = DUCKLETT,13
     Moves = GLITTERBOMB,PECK,TAILWIND,TIDEPULL
@@ -94,14 +95,16 @@ Pokemon = NINCADA,12
     Moves = FEEDON,HARDEN,RUMBLE,BITE
     AbilityIndex = 0 # Speed Boost
 #-------------------------------
-[FIREBREATHER,Antonio]
-Pokemon = MAGBY,13
-    AbilityIndex = 1 # Scalding Smoke
-Pokemon = HOUNDOUR,13
-    Moves = SMIRK,EMBER,IGNITE,HARSHVOICE
-    AbilityIndex = 1 # Berserk
-Pokemon = BULBASAUR,13
-    AbilityIndex = 0 # Poison Absorb
+[DRAGONTAMER,Don]
+Pokemon = MEOWTH,13
+    Moves = FAKEOUT,ASSIST,PAYDAY
+    AbilityIndex = 1 # All That Glitters
+Pokemon = BAGON,13
+    Moves = CLASH,TACKLE,LEER,IGNITE
+    AbilityIndex = 0 # Intimidate
+Pokemon = BERGMITE,13
+    Moves = SNOWBALL,CLASH,CURSEDOATH,BITE
+    AbilityIndex = 0 # Chilled Body
 #-------------------------------
 [POKEMONBREEDER_F,Janice]
 Pokemon = TURTWIG,12
@@ -121,12 +124,13 @@ Pokemon = AZURILL,14
 Pokemon = WYNAUT,14
     AbilityIndex = 0 # Shadow Tag
 #-------------------------------
-[LADY2,Rebecca]
-Pokemon = AMEOWTH,14
-    AbilityIndex = 0 # Fur Coat
-Pokemon = CHIKORITA,14
-    Moves = ESSENCEARROW,SUNSHINE,FAIRYWIND
-    AbilityIndex = 1 # Heat Savor
+[PARASOLLADY2,Jaiden]
+Pokemon = SILICOBRA,14
+    Moves = SANDTOSS,GUST,SMOG,DAZZLE
+    AbilityIndex = 1 # Disorienting
+Pokemon = WINGULL,14
+    Moves = IMMERSE,DRAFT,SHOUT,GROWL
+    AbilityIndex = 1 # Dreary Clouds
 #-------------------------------
 [TUBER_M,Peter]
 Policies = PRIORITIZESTATDOWN

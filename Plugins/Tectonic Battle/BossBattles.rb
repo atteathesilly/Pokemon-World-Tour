@@ -132,7 +132,7 @@ def generateAvatarPokemon(species, level, version = 0, summon = false)
             healthPercent = 0.4
         else
             healthPercent = 0.4 + 0.6 * (level - SUMMON_MIN_HEALTH_LEVEL) / (SUMMON_MAX_HEALTH_LEVEL - SUMMON_MIN_HEALTH_LEVEL).to_f
-            echoln("Summoning #{species} avatar at health fraction #{healthPercent}")
+            echoln("Summoning #{species} boss at health fraction #{healthPercent}")
         end
         newPokemon.hp = (newPokemon.totalhp * healthPercent).ceil
     end

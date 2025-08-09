@@ -231,7 +231,7 @@ class PokeBattle_Battler
             elsif !boss?
                 return lowerCase ? _INTL("the wild {1}", name) : _INTL("The wild {1}", name)
             else
-                return lowerCase ? _INTL("the avatar of {1}", name) : _INTL("The avatar of {1}", name)
+                return lowerCase ? _INTL("the boss of {1}", name) : _INTL("The boss of {1}", name)
             end
         elsif !pbOwnedByPlayer?
             return lowerCase ? _INTL("the ally {1}", name) : _INTL("The ally {1}", name)

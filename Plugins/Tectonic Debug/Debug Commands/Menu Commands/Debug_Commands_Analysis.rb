@@ -757,7 +757,7 @@ end
       GameData::Avatar.each do |avatarData|
           speciesData = GameData::Species.get(avatarData.id)
           if !speciesData.abilities.include?(avatarData.ability.to_sym)
-              echoln("ERROR: #{avatarData.ability} not a legal ability on the avatar of #{speciesData.real_name}")
+              echoln("ERROR: #{avatarData.ability} not a legal ability on the boss of #{speciesData.real_name}")
           end
       end
   
