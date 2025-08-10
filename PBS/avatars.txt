@@ -54,10 +54,10 @@ Moves1 = BRINE
 Turns = 1
 HPMult = 2.0
 #-------------------------------
-[VIGOROTH]
-Ability = VITALSPIRIT
-Moves1 = SCRATCH,BITE,PRIMEVALDRAGONDANCE
-Moves2 = CLASH
+[HAKAMOO]
+Ability = PLOTARMOR
+Moves1 = CLASH,VALORBOLT,PRIMEVALHAIL
+Moves2 = POWDERSNOW
 HPMult = 3.0
 #-------------------------------
 [BIDOOF]
