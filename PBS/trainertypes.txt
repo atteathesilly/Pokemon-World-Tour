@@ -1662,6 +1662,12 @@ Gender = Male
 BaseMoney = 24
 IntroBGM = POKEFAN
 #-------------------------------
+[SURFER]
+Name = Surfer
+Gender = Male
+BaseMoney = 16
+IntroBGM = CYCLING
+#-------------------------------
 [SUSPICIOUSMAN]
 Name = Suspicious Man
 Gender = Male
