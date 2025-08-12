@@ -649,6 +649,153 @@ Kind = Mouse
 Pokedex = It can loose 100,000-volt bursts of electricity, instantly downing foes several times its size.
 Generation = 7
 #-------------------------------
+[COSPLAYPIKACHU]
+Name = C. Pikachu
+Type1 = ELECTRIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 60,85,50,90,85,70
+# Total = 440
+GenderRate = AlwaysFemale
+BaseEXP = 112
+Rareness = 155
+Happiness = 50
+Abilities = EXTREMEVOLTAGE,BREAKTHROUGH
+Moves = 1,PRANK,1,THUNDERSHOCK,4,NUZZLE,8,RAINSTORM,12,AGILITY,16,ELECTROBALL,18,SPARK,20,SWIFT,24,CHARGE,28,RAPIDHERTZ,30,THUNDERPUNCH,32,THUNDERBOLT
+LineMoves = AGILITY,AIMTRUE,ASSURANCE,BESTOW,BODYSLAM,BREACH,CALMMIND,CHACHING,CHARGE,CHARGEBEAM,CHARM,CONCENTRATE,COVET,CURRENTCRASH,DETACHMENT,DISARMINGVOICE,DISCHARGE,DIZZYPUNCH,DRAININGKISS,DREAMDANCE,EAGERTICKLING,ECHOEDVOICE,EERIEIMPULSE,ELECTROBALL,ELECTROSLASH,ENCORE,ENDURE,FACADE,FLING,FLOWSTATE,FOCUSENERGY,FOLLOWME,FROLIC,GRASSKNOT,HEADBUTT,HEARTSWAP,HELPINGHAND,HOLDBACK,HYPERBEAM,IMMERSE,LASERFOCUS,LATHER,LAUNDER,LIGHTNINGDANCE,LIGHTSCREEN,LIVEWIRE,LONGSHOT,LUCKYCHANT,MAGICCOAT,MEGAPUNCH,NULLPULSE,NUMB,PAYDAY,PIXIEPUNCH,PLAYROUGH,PROTECT,PURSUIT,RECYCLE,REFLECT,REST,REVERSAL,RISINGPOWER,ROUND,SEERSTRIKE,SHOCKWAVE,SHORTCIRCUIT,SHOUT,SLEEPTALK,SNIPESHOT,SNORE,STELLARATE,STORMDRIVE,SUBSTITUTE,SURGESNARE,SWIFT,THUNDER,THUNDERBOLT,THUNDERCAGE,THUNDERPUNCH,THUNDERSHOCK,TICKLE,UPROAR,VOLTTACKLE,WATERGUN,WHELM,WILDCHARGE,WIPEOUT,WISH,ZAPCANNON
+Tribes = RADIANT,LOYAL
+StepsToHatch = 2805
+Height = 0.4
+Weight = 6.0
+Kind = Mouse
+Pokedex = An extremely adaptive Pikachu, made to be able to adapt to the various contest traits.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+Evolutions = PIKACHULIBRE,Item,THUNDERSTONE,PIKACHUROCKSTAR,Item,FIRESTONE,PIKACHUPOPSTAR,Item,WATERSTONE,PIKACHUBELLE,Item,ICESTONE,PIKACHUPHD,Item,MOONSTONE,PARTNERPIKACHU,Item,ALOLANWREATH
+#-------------------------------
+[PIKACHULIBRE]
+Name = Pikachu Libre
+Type1 = ELECTRIC
+Type2 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 100,110,70,100,65,65
+# Total = 510
+GenderRate = AlwaysFemale
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = TOUGHCOUNTERATTACK,BREAKTHROUGH
+Moves = 0,THUNDERCLOUDPRESS,32,DRAINPUNCH,36,ELECTROSLASH,40,STORMTHROW,44,REFLECT,48,CLOSECOMBAT,52,VOLTTACKLE,56,FOCUSPUNCH,60,BAR
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Wearing a wrestler outfit gives it the ability to use many tough fighting moves.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[PIKACHUROCKSTAR]
+Name = Pikachu Rockstar
+Type1 = ELECTRIC
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,110,100,65,65,100
+# Total = 510
+GenderRate = AlwaysFemale
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = IRONFIST,BREAKTHROUGH
+Moves = 0,COOLIT,32,BULLETTRAIN,36,ELECTROSLASH,40,METEORMASH,44,REFLECT,48,CLOSECOMBAT,52,VOLTTACKLE,56,IRONTAIL,60,BAR
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Wearing a rockstar outfit, it now has some cool heavy metal abilities.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[PIKACHUPOPSTAR]
+Name = Pikachu Popstar
+Type1 = ELECTRIC
+Type2 = FAIRY
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 65,65,100,70,110,100
+# Total = 510
+GenderRate = AlwaysFemale
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = ENVY,BREAKTHROUGH
+Moves = 0,DRAININGKISS,34,CHARM,36,DISCHARGE,36,MOONBLAST,40,BAR,44,CUTESHOWOFF,48,WARDPRESS,52,DREAMDANCE,56,ENTRAINMENT,60,MISTBURST
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Wearing a popstar outfit, it now have some cute fairy skills. It is quite the show off
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[PIKACHUBELLE]
+Name = Pikachu Belle
+Type1 = ELECTRIC
+Type2 = ICE
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 110,100,65,90,100,70
+# Total = 535
+GenderRate = AlwaysFemale
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = FLASHFREEZE,BREAKTHROUGH
+Moves = 0,COLDPARESIS,32,FRIGIDJEALOUSY,36,DISCHARGE,40,ICESHARD,44,REFLECT,48,ICICLESPEAR,52,VOLTTACKLE,56,ICEPICK,60,LOOMINGWINTER
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Wearing a lovely dress, it now has some beautifully bitter ice powers, it may be one of the cruelest cosplay Pikachu.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[PIKACHUPHD]
+Name = Pikachu Ph.D.
+Type1 = ELECTRIC
+Type2 = PSYCHIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 65,65,70,100,110,100
+# Total = 510
+GenderRate = AlwaysFemale
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = NEUROFORCE,BREAKTHROUGH
+Moves = 0,PSYCHIC,34,CHARM,36,DISCHARGE,36,OMNISCIENTBLOW,40,BAR,44,QUICKNCLEVER,48,BRAINFREEZE,52,DREAMDANCE,56,ENTRAINMENT,60,PSYCHICOVERLOAD
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Wearing a scientist outfit, it is now incredibly intelligent, even gaining psychic powers.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[PARTNERPIKACHU]
+Name = Partner Pikachu
+Type1 = ELECTRIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,45,65,110,120,120
+# Total = 530
+BaseEXP = 218
+Rareness = 60
+Happiness = 100
+Abilities = PLOTARMOR,BREAKTHROUGH
+Moves = 0,ECLIPSE,1,ECLIPSE,40,THUNDER,44,LIGHTNINGDANCE,48,LIGHTNINGSLAM,52,HELPINGHAND,56,ENCORE,60,MILLIONVOLTBOLT
+StepsToHatch = 2805
+Height = 0.8
+Weight = 30.0
+Kind = Mouse
+Pokedex = Pikachu that is a big fan of some twerp from Kanto. No clue why its stronger than most.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
 [SANDSHREW]
 Name = Sandshrew
 Type1 = GROUND

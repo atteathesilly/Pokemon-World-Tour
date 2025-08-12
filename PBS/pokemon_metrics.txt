@@ -1194,6 +1194,12 @@ FrontSprite = 0,25
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[COSPLAYPIKACHU]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [COTTONEE]
 BackSprite = 0,34
 FrontSprite = 0,38
@@ -4590,6 +4596,12 @@ FrontSprite = 0,18
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[PARTNERPIKACHU]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [PASSIMIAN]
 BackSprite = 0,15
 FrontSprite = 0,20
@@ -4743,6 +4755,36 @@ ShadowSize = 2
 [PIKACHU,16]
 BackSprite = 0,27
 FrontSprite = 0,29
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PIKACHUBELLE]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PIKACHULIBRE]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PIKACHUPHD]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PIKACHUPOPSTAR]
+BackSprite = 0,27
+FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PIKACHUROCKSTAR]
+BackSprite = 0,27
+FrontSprite = 0,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

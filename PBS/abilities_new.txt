@@ -2045,6 +2045,10 @@ Description = Restores its HP by 50% of the damage it deals to sleeping targets.
 Name = Tough
 Description = Takes half damage from Fighting- and Rock-type moves.
 #-------------------------------
+[TOUGHCOUNTERATTACK]
+Name = Tough Counter-attack
+Description = Uses Flying Press if an attack lowers its HP to half or below.
+#-------------------------------
 [TOXICATTITUDE]
 Name = Toxic Attitude
 Description = Powers up Poison-type moves of itself and its allies by 50%.

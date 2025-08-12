@@ -3102,6 +3102,20 @@ Flags = CanProtect
 Description = A reckless charge that forces the user to switch out if it misses. Always goes first.
 Animation = SMARTSTRIKE
 #-------------------------------
+[COOLIT]
+Name = Cool It
+Type = STEEL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Frostbite
+Flags = CanProtect
+EffectChance = 100
+Description = The target is punched with a cool steel fist. Frostbites the target.
+Animation = ICEPUNCH
+#-------------------------------
 [EVERHONE]
 Name = Everhone
 Type = STEEL
@@ -4934,6 +4948,20 @@ Flags = CanProtect
 Description = The user surges with electricity. If it deals less than 50% of the target's max health, the user takes the difference as recoil.
 Animation = DISCHARGE
 #-------------------------------
+[COLDPARESIS]
+Name = Cold Paresis
+Type = ELECTRIC
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect
+EffectChance = 50
+Description = The user freeze with ice so cold that it has a 50% chance to numb.
+Animation = FREEZESHOCK
+#-------------------------------
 [CURRENTCRASH]
 Name = Current Crash
 Type = ELECTRIC
@@ -5138,6 +5166,18 @@ Target = User
 FunctionCode = UseHighestBasePowerMoveFromUserParty
 Description = The user finds the highest base power move among your able party members, and uses it.
 #-------------------------------
+[MILLIONVOLTBOLT]
+Name = 1 Million Volt Bolt
+Type = ELECTRIC
+Category = Adaptive
+Power = 160
+Accuracy = 0
+TotalPP = 1
+Target = NearOther
+FunctionCode = Basic
+Description = The user unleashes its ultimate move. Changes depending on user type. Only one use per battle.
+Animation = GIGAVOLTHAVOC
+#-------------------------------
 [NUMB]
 Name = Numb
 Type = ELECTRIC
@@ -5265,6 +5305,19 @@ FunctionCode = RecoilFullDamageDealt
 Flags = CanProtect
 Description = The user takes an entire grid of power into its belly to slam the target. The user takes 100% recoil.
 Animation = BODYSLAM
+#-------------------------------
+[THUNDERCLOUDPRESS]
+Name = Thundercloud Press
+Type = ELECTRIC
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = EffectivenessIncludesFlyingType
+Flags = CanProtect
+Description = The user dives down onto the target from the sky. This move is also Flying-type.
+Animation = VOLTTACKLE
 #-------------------------------
 [VOLTSEEKERS]
 Name = Volt Seekers
@@ -5694,6 +5747,20 @@ FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
 Description = The user sends two to five waves of cosmic energy to overwhelm the target's senses.
 Animation = CONFUSION
+#-------------------------------
+[QUICKNCLEVER]
+Name = Quick 'n' Clever
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 1
+FunctionCode = FailsIfTargetActed
+Flags = CanProtect
+Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
+Animation = SHATTEREDPSYCHE
 #-------------------------------
 [REVERBWARD]
 Name = Reverb Ward
@@ -7177,6 +7244,19 @@ Flags = CanProtect
 EffectChance = 100
 Description = Leeches the target by kissing them with its thin mouth.
 Animation = DRAININGKISS
+#-------------------------------
+[CUTESHOWOFF]
+Name = Cute Show-off
+Type = FAIRY
+Category = Special
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = AllNearOthers
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user cutely show offs to damage opponents. The user's HP is restored by 50% the damage dealt.
+Animation = ENCORE
 #-------------------------------
 [DREAMDANCE]
 Name = Dream Dance

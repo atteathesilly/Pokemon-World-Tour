@@ -88,6 +88,16 @@ Bicycle = true
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[013]
+# Trop Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = sand
+Environment = TallGrass
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true

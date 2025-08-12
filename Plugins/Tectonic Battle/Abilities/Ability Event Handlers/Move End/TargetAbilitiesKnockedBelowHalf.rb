@@ -42,6 +42,12 @@ BattleHandlers::TargetAbilityKnockedBelowHalf.add(:EMERGENCYPOWER,
     }
 )
 
+BattleHandlers::TargetAbilityKnockedBelowHalf.add(:TOUGHCOUNTERATTACK,
+    proc { |ability, target, user, move, _switched, battle|
+        battle.forceUseMove(target, :FLYINGPRESS, ability: ability)
+    }
+)
+
 BattleHandlers::TargetAbilityKnockedBelowHalf.add(:MALICE,
     proc { |ability, target, user, move, _switched, battle|
         next if user.effectActive?(:Curse)
