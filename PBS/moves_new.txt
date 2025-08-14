@@ -5175,7 +5175,7 @@ Accuracy = 0
 TotalPP = 1
 Target = NearOther
 FunctionCode = Basic
-Description = The user unleashes its ultimate move. Changes depending on user type. Only one use per battle.
+Description = The user unleashes its ultimate move. Only one use per battle.
 Animation = GIGAVOLTHAVOC
 #-------------------------------
 [NUMB]

@@ -42,6 +42,20 @@ LandTall,20
     20,SHUPPET,9,11
     20,SWABLU,9,11
 #-------------------------------
+[013] # Trop Town
+Land,20
+    20,AIPOM,9,11
+    20,ELEKID,9,11
+    20,MAGBY,9,11
+    20,SCRAGGY,9,11
+    20,SPRITZEE,9,11
+Puddle,20
+    20,BINACLE,9,11
+    20,CARVANHA,9,11
+    20,SLOWPOKE,9,11
+    20,TOXEL,9,11
+    20,WYNAUT,9,11
+#-------------------------------
 [015] # Starting town
 Land,20
     20,NIDORANfE,9,11
