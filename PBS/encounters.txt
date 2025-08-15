@@ -55,6 +55,8 @@ Puddle,20
     20,SLOWPOKE,9,11
     20,TOXEL,9,11
     20,WYNAUT,9,11
+Special
+    1,BOUNSWEET,15
 #-------------------------------
 [015] # Starting town
 Land,20
