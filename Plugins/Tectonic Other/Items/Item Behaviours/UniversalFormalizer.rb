@@ -28,17 +28,18 @@ ItemHandlers::UseOnPokemon.add(:UNIVERSALFORMALIZER,proc { |item,pkmn,scene|
 })
 
 
-def getFormSelectionChoices(species,currentForm=0)
-	possibleForms = []
-	possibleFormNames = []
-	GameData::Species.each do |species_data|
-		next unless species_data.species == species
-		next if species_data.form == currentForm
-		possibleForms.push(species_data)
-		possibleFormNames.push(species_data.form_name)
-	end
-	possibleFormNames.push(_INTL("Cancel"))
-	return possibleForms, possibleFormNames
+def getFormSelectionChoices(species,currentForm=0,allow = [])
+    possibleForms = []
+    possibleFormNames = []
+    GameData::Species.each do |species_data|
+        next unless species_data.species == species
+        next if species_data.form == currentForm
+    next unless allow.empty? || allow.include?(species_data.form)
+        possibleForms.push(species_data)
+        possibleFormNames.push(species_data.form_name)
+    end
+    possibleFormNames.push(_INTL("Cancel"))
+    return possibleForms, possibleFormNames
 end
 
 ItemHandlers::UseOnPokemon.add(:ZYGARDECUBE,proc { |item,pkmn,scene|
