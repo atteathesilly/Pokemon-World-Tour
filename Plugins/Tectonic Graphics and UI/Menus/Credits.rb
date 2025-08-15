@@ -84,6 +84,9 @@ Raffs07
 manycrows
 Mr. Gela<s>theo
 
+Various free to use sprites
+deoxysacid, magneclair
+
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
 Neo-Spriteman<s>Vanilla Sunshine
