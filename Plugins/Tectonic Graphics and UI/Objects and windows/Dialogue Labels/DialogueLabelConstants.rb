@@ -11,6 +11,8 @@ SINA = _INTL("Sina")
 DEXIO = _INTL("Dexio")
 TORY = _INTL("Tory")
 MAGGIE = _INTL("Maggie")
+CHARLES = _INTL("Charles")
+CHARLESHERO = _INTL("Accelguard")
 
 # Gym leaders
 RIDDLE = _INTL("Riddle")

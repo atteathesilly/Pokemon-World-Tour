@@ -84,6 +84,12 @@ Raffs07
 manycrows
 Mr. Gela<s>theo
 
+Kukui, Mina, Sina and Dexio trainer sprites
+Beliot419
+
+Carmine Trainer sprites
+kyledove
+
 Various free to use sprites
 deoxysacid, magneclair
 
