@@ -360,7 +360,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = Numb
-Flags = CanProtect
+Flags = CanProtect,Field
 EffectChance = 50
 Description = The user sticks out its head and attacks by charging into the foe. It has a 50% chance to numb.
 #-------------------------------
@@ -524,7 +524,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
-Flags = CanSnatch
+Flags = CanSnatch,Field
 Description = The user restores its own HP by up to half of its max HP.
 #-------------------------------
 [MULTIATTACK]
@@ -898,7 +898,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
-Flags = CanSnatch
+Flags = CanSnatch,Field
 Description = The user restores its own HP by up to half of its max HP.
 #-------------------------------
 [SPITUP]
@@ -1577,7 +1577,7 @@ Flags = CanProtect,Blade
 Description = The user cuts with its long horn. The odd power contained in it does physical damage to the foe.
 #-------------------------------
 [SMASH]
-Name = Smash
+Name = Rock Smash
 Type = FIGHTING
 Category = Physical
 Power = 40
@@ -1585,7 +1585,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = LowerTargetDef1
-Flags = CanProtect,Punch
+Flags = CanProtect,Field,Punch
 EffectChance = 20
 Description = The user attacks with a strong punch. It has a 20% chance to lower Defense.
 #-------------------------------
@@ -1775,7 +1775,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = Dizzy
-Flags = CanProtect,Sound
+Flags = CanProtect,Sound,Field
 EffectChance = 100
 Description = The user attacks using a sound wave based on words it has learned. It also dizzies the target.
 #-------------------------------
@@ -1787,7 +1787,7 @@ Accuracy = 0
 TotalPP = 12
 Target = NearOther
 FunctionCode = Defog
-Flags = CanProtect,CanMagicCoat,Wind
+Flags = CanProtect,CanMagicCoat,Field
 Description = The user whips up a wind to blow away the target's protective screens. Also removes hazards on both sides.
 #-------------------------------
 [DRAGONASCENT]
@@ -1846,7 +1846,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInSky
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The user soars, becoming invulnerable, then strikes on the second turn.
 #-------------------------------
 [GUST]
@@ -2238,7 +2238,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderground
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The user burrows, becoming invulnerable, then attacks on the second turn.
 #-------------------------------
 [DRILLRUN]
@@ -3522,7 +3522,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = EffectDependsOnEnvironment
-Flags = CanProtect
+Flags = CanProtect,Field
 EffectChance = 30
 Description = The user attacks with a secret power. Its added effects vary depending on the user's environment.
 #-------------------------------
@@ -4014,7 +4014,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderwater
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = Diving on the first turn, becoming invulnerable, the user rises and hits from below water on the second turn.
 #-------------------------------
 [FISHIOUSREND]
@@ -4205,7 +4205,7 @@ Accuracy = 100
 TotalPP = 12
 Target = AllNearOthers
 FunctionCode = WaterlogTargetHitsDivers
-Flags = CanProtect
+Flags = CanProtect,Field
 EffectChance = 10
 Description = It swamps the area with a giant wave, hitting every battler nearby and underwater. Has a 10% chance to waterlog.
 #-------------------------------
@@ -4230,7 +4230,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = Flinch
-Flags = CanProtect
+Flags = CanProtect,Field
 EffectChance = 40
 Description = The user charges at the target and has a 40% chance to make it flinch.
 #-------------------------------

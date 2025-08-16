@@ -456,7 +456,7 @@ Description = The user pulverizes the target with both its fists. This raises th
 Animation = MEGAPUNCH
 #-------------------------------
 [PUMMEL]
-Name = Pummel
+Name = Strength
 Type = NORMAL
 Category = Physical
 Power = 40
@@ -464,7 +464,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseUserAttack2
-Flags = CanProtect,Punch
+Flags = CanProtect,Field
 EffectChance = 100
 Description = The user warms up by treating the target as a punching bag, damaging them and raising Attack by two steps.
 Animation = MEGAPUNCH
@@ -1029,7 +1029,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInSky
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The user soars up high, becoming invulnerable, then strikes on the second turn by dive bombing the target.
 Animation = FLY
 #-------------------------------
@@ -1809,7 +1809,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderground
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The user burrows deep, becoming invulnerable, then attacks with devastating power on the second turn.
 #-------------------------------
 #		ROCK MOVES
@@ -4030,7 +4030,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderwater
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The user dives deep on the first turn, becoming invulnerable, then rises and strikes with explosive strength on the second turn.
 Animation = DIVE
 #-------------------------------
@@ -4174,7 +4174,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
-Flags = CanProtect
+Flags = CanProtect,Field
 Description = The foe is pulled into a huge whirlpool, trapping and damaging it for three turns.
 Animation = WHIRLPOOL
 #-------------------------------

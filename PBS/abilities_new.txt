@@ -1230,6 +1230,10 @@ Name = Mist Form
 Description = Slips past hazards. Takes 50% less damage if it switched in this turn.
 Flags = HazardImmunity
 #-------------------------------
+[MODELWORKER]
+Name = Model Worker
+Description = The Pokémon's Speed is doubled while using field moves.
+#-------------------------------
 [MOISTSKIN]
 Name = Moist Skin
 Description = If an attack lowers its HP to half or less, waterlogs the attacker.
