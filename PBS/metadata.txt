@@ -98,6 +98,13 @@ Humidity = Wet
 BattleBack = sand
 Environment = TallGrass
 #-------------------------------
+[014]
+# Coastline Station 2319
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 13,28,22
+#-------------------------------
 [015]
 # Starting town
 Outdoor = true
@@ -105,6 +112,12 @@ ShowArea = true
 Bicycle = true
 BattleBack = forest
 Environment = TallGrass
+#-------------------------------
+[016]
+# Trop City Cafe
+Outdoor = false
+ShowArea = false
+Bicycle = false
 #-------------------------------
 [147]
 # PokEstate
