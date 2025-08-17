@@ -611,6 +611,10 @@ module GameData
             return @flags.include?("Test")
         end
 
+        def isHidden?
+            return @flags.include?("Hidden")
+        end
+
         def canTutorAny?
             return @flags.include?("TutorAny")
         end

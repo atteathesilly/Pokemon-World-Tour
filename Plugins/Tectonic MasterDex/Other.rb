@@ -156,6 +156,7 @@ def speciesInfoViewable?(speciesID)
     return false if speciesData.isTest?
     return true if $Trainer.seen?(speciesID)
     return false if speciesData.isLegendary?
+		return false if speciesData.isHidden?
     return true
 end
 

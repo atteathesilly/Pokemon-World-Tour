@@ -906,6 +906,10 @@ Name = High-rise
 Description = The Pokémon and its allies are immune to weather downsides.
 Flags = AllWeatherSynergy
 #-------------------------------
+[HMMULE]
+Name = HM Mule
+Description = Raises Attack whenever any Pokémon uses a field move.
+#-------------------------------
 [HOLIDAYCHEER]
 Name = Holiday Cheer
 Description = When entering battle, heals self and allies for 25% of their max health.

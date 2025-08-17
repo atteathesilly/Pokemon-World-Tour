@@ -25,3 +25,10 @@ BattleHandlers::AnyoneAbilityEndOfMove.add(:GROOVY,
         battler.pbRaiseMultipleStatSteps([:ATTACK, 1], user, ability: ability)
     }
 )
+
+BattleHandlers::AnyoneAbilityEndOfMove.add(:HMMULE,
+    proc { |ability, battler, user, targets, move, battle|
+        next unless move.fieldMove?
+        battler.pbRaiseMultipleStatSteps([:ATTACK, 1], user, ability: ability)
+    }
+)
