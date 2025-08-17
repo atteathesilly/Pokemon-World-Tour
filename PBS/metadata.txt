@@ -119,6 +119,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[017]
+# Redwood Labs
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

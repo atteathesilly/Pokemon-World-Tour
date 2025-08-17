@@ -75,3 +75,7 @@ FloweryGrass,21
     5,FLABEBE_2,9,11
     5,FLABEBE_3,9,11
     5,FLABEBE_4,9,11
+#-------------------------------
+[016] # Trop City Cafe
+Special
+    1,LICKITUNG,15
