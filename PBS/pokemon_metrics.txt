@@ -1254,6 +1254,12 @@ FrontSprite = -3,14
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CRBEWEAR]
+BackSprite = 0,14
+FrontSprite = 0,18
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [CRESSELIA]
 BackSprite = 0,12
 FrontSprite = 0,2
@@ -1275,6 +1281,12 @@ ShadowSize = 2
 [CROCONAW]
 BackSprite = 0,22
 FrontSprite = 0,15
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[CRSTUFFUL]
+BackSprite = 0,28
+FrontSprite = 0,31
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

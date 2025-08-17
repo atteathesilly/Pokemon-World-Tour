@@ -1912,7 +1912,7 @@ Kind = Tadpole
 Pokedex = This Pokémon's sweat is a slimy mucus. When captured, Poliwhirl can slither from its enemies' grasp and escape.
 Generation = 1
 WildItemUncommon = MYSTICWATER
-Evolutions = POLIWRATH,Level,34,POLITOED,Item,WATERSTONE
+Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,Level,34
 #-------------------------------
 [POLIWRATH]
 Name = Poliwrath
@@ -18361,6 +18361,49 @@ Weight = 135.0
 Kind = Strong Arm
 Pokedex = It waves its hands wildly in intimidation and warning. Life is over for anyone who doesn't run away as fast as possible.
 Generation = 7
+#-------------------------------
+[CRSTUFFUL]
+Name = Cr. Stufful
+Type1 = NORMAL
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 80,60,55,40,45,65
+# Total = 345
+BaseEXP = 68
+Rareness = 110
+Happiness = 50
+Abilities = GOOEY,TOUGHCLAWS
+Moves = 1,NASTYNIP,1,TACKLE,4,LEER,8,BABYDOLLEYES,12,ENDURE,16,PUMMEL,20,POISONFANG,24,POISONGAS,28,MACHPUNCH,32,SCHEME,36,GUNKSHOT,40,CLOUDBREAK,44,WIDEGUARD,48,THRASH,52,MEGAPUNCH,56,CHAOSWHEEL,60,EXPLOSION
+LineMoves = ADAMANTINEPRESS,AERIALACE,AIMTRUE,ARMTHRUST,BODYPRESS,BODYSLAM,BRICKBREAK,BRUTALSWING,BULKUP,BULLDOZE,CHARM,CLOSECOMBAT,COACHING,CURLUP,DIZZYPUNCH,DRAGONCLAW,DRAINPUNCH,DUALCHOP,EARTHQUAKE,ENDURE,FACADE,FLING,GIGAIMPACT,GRIMEGRAPPLE,HEADBUTT,HYPERBEAM,ICEPUNCH,IRONHEAD,LATHER,LAUNDER,LONGSHOT,LOWKICK,LOWSWEEP,MEGAPUNCH,NIGHTFELLING,PAINSPLIT,PAYBACK,POISONJAB,PROTECT,REND,REST,REVENGE,REVERSAL,ROAR,ROCKROLL,ROCKTOMB,ROLEPLAY,ROUND,RUMBLE,SEERSTRIKE,SHADOWCLAW,SHARPEN,SLEEPTALK,SMASH,SNORE,STAMPDOWN,STOMPINGTANTRUM,SUBSTITUTE,SUPERPOWER,SWEETSELENE,SWORDSDANCE,TAUNT,TRAMPLE,VENOMORTAR,WAILINGBLOW,WIDEGUARD,WORKUP,ZENHEADBUTT
+Tribes = DECEIVER,CHARMER
+StepsToHatch = 4096
+Height = 0.5
+Weight = 6.8
+Kind = Teddy
+Pokedex = A goo creature that hid inside a plus animal. While it may not seem related to Stufful, it is a mammal.
+Generation = 7
+Flags = Hidden
+Evolutions = CRBEWEAR,Level,27
+#-------------------------------
+[CRBEWEAR]
+Name = Cr. Bewear
+Type1 = NORMAL
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 140,100,85,40,55,110
+# Total = 530
+BaseEXP = 175
+Rareness = 55
+Happiness = 50
+Abilities = GOOEY,TOUGHCLAWS
+Moves = 0,REGOOVAL,1,REGOOVAL
+StepsToHatch = 4096
+Height = 2.1
+Weight = 135.0
+Kind = Groozly
+Pokedex = It tried to expand the plush but it just burst open, dropping the disguise and going all out on offense.
+Generation = 7
+Flags = Hidden
 #-------------------------------
 [BOUNSWEET]
 Name = Bounsweet

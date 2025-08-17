@@ -1408,6 +1408,19 @@ Flags = CanMagicCoat
 Description = The user lays poison spikes on the foe's side. One layer hurts switched in foes, two layers poisons.
 Animation = TOXICSPIKES
 #-------------------------------
+[REGOOVAL]
+Name = Regooval
+Type = POISON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = GiveUserStatusToTargetDamagingMove
+Flags = CanProtect
+Description = The user flings some goo off of it. It transfers any status condition to the target.
+Animation = GUNKSHOT
+#-------------------------------
 [SLIMEBALL]
 Name = Slimeball
 Type = POISON
