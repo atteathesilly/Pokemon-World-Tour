@@ -1,13 +1,13 @@
 DOCK_LOCATIONS = {
-    :CASABA_VILLA_DOCK => {
-        :map_name => "Casaba Villa",
-        :map_id => 136,
-        :event_id => 39,
+    :TROP_TOWN => {
+        :map_name => "Gerenia Region",
+        :map_id => 13,
+        :event_id => 27,
     },
-    :FEEBAS_FIN => {
-        :map_name => "Feebas' Fin",
-        :map_id => 59,
-        :event_id => 24,
+    :CARNIE_REGION => {
+        :map_name => "Carnie Region",
+        :map_id => 18,
+        :event_id => 1,
     },
     :ELEIG_BOATING_DOCK => {
         :map_name => "Eleig Boating Dock",
