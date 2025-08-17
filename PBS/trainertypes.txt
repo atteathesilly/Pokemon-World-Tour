@@ -905,6 +905,12 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader 2
 #-------------------------------
+[LEADER_RIDDLE]
+Name = Gym Leader
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle Gym Leader 1
+#-------------------------------
 [LEADER_Rafael]
 Name = Gym Leader
 Gender = Male
@@ -1024,6 +1030,12 @@ Name = Medium
 Gender = Female
 BaseMoney = 48
 IntroBGM = MONK
+#-------------------------------
+[MOTORCYCLIST]
+Name = Motorcyclist
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle eifion
 #-------------------------------
 [NECKBEARD]
 Name = Neckbeard
@@ -1656,6 +1668,12 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = CYCLING2
 #-------------------------------
+[SUBWAYBOSS]
+Name = Subway Boss
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle eifion
+#-------------------------------
 [SUPERNERD]
 Name = Super Nerd
 Gender = Male
@@ -1807,6 +1825,30 @@ Name = Tourist
 Gender = Male
 BaseMoney = 16
 IntroBGM = BUSINESSMAN
+#-------------------------------
+[TRAINERCARMINE]
+Name = Kitakami Trainer
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle eifion
+#-------------------------------
+[TRAINERDEXIO]
+Name = Kalos Trainer
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle eifion
+#-------------------------------
+[TRAINERSINA]
+Name = Kalos Trainer
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle eifion
+#-------------------------------
+[TRAINERTORY]
+Name = Vankyo Trainer
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle eifion
 #-------------------------------
 [TRAINER_Alessa]
 Name = Pokémon Trainer
@@ -1990,6 +2032,12 @@ Name = Waitress
 Gender = Female
 BaseMoney = 32
 IntroBGM = AROMALADY
+#-------------------------------
+[WANDERER]
+Name = Wanderer
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle eifion
 #-------------------------------
 [WILDPACK]
 Name = Wild Pack
