@@ -6,8 +6,8 @@ DOCK_LOCATIONS = {
     },
     :CARNIE_REGION => {
         :map_name => "Carnie Region",
-        :map_id => 18,
-        :event_id => 1,
+        :map_id => 19,
+        :event_id => 2,
     },
     :ELEIG_BOATING_DOCK => {
         :map_name => "Eleig Boating Dock",
