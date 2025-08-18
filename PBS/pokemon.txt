@@ -2629,6 +2629,51 @@ Pokedex = After deflecting attacks with its hard leaf shield, it strikes back wi
 Generation = 8
 WildItemUncommon = STRENGTHHERB
 #-------------------------------
+[CRFARFETCHD]
+Name = Cr. Farfetch'd
+Type1 = FIGHTING
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,95,64,84,60,77
+# Total = 450
+BaseEXP = 132
+Rareness = 95
+Happiness = 50
+Abilities = BANDITLASSO,SANDSNIPER
+Moves = 1,FOCUSENERGY,1,KARATECHOP,1,SHARPEN,4,PECK,8,LEAFAGE,12,SANDSTORM,16,LOWSWEEP,20,VINEBIND,24,AERIALACE,28,ARTOFWAR,32,POWERWHIP,36,DRILLPECK,40,LEAFBLADE,44,SWORDSDANCE,48,BRAVEBIRD,52,WOODHAMMER,56,DEEPBREATHING,60,SUPERPOWER
+LineMoves = ASSURANCE,BAR,BODYSLAM,BRAVEBIRD,BRICKBREAK,BRUTALSWING,CLOSECOMBAT,COACHING,COUNTER,COVET,DEEPBREATHING,DOUBLEEDGE,DUALWINGBEAT,ENDURE,FACADE,FINALGAMBIT,FLAIL,FOCUSENERGY,HARDEN,HEADBUTT,HELPINGHAND,INCISION,IRONARROW,IRONDEFENSE,JAVELIN,LEAFBLADE,LUNGE,METEORASSAULT,NIGHTFELLING,NIGHTSLASH,PALEBLADE,POISONJAB,PROTECT,PSYCHOCUT,PSYCHOSCISSION,QUICKATTACK,QUICKGUARD,REST,RETALIATE,REVENGE,REVERSAL,SEVER,SHARPEN,SIMPLEBEAM,SLAY,SLEEPTALK,SMASH,SNORE,SOLARGLIDE,STEELWING,STINGINGJEALOUSY,STRAFE,SUBSTITUTE,SUPERPOWER,SWORDSDANCE,THROATCHOP,TRUMPCARD,VOLLEY,WOODHAMMER,WORKUP,XSCISSOR
+Tribes = WARRIOR,LOYAL
+StepsToHatch = 5355
+Height = 0.8
+Weight = 42.0
+Kind = Deputy
+Pokedex = It dispenses swift justice with the expert command of its trusty lasso. The deserts it inhabits are safer because of its presence.
+Generation = 8
+Flags = Hidden
+Evolutions = CRSIRFETCHD,Level,35
+#-------------------------------
+[CRSIRFETCHD]
+Name = Cr. Sirfetch'd
+Type1 = FIGHTING
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 82,135,74,92,65,82
+# Total = 530
+BaseEXP = 177
+Rareness = 35
+Happiness = 50
+Abilities = BANDITLASSO,SANDSNIPER
+Moves = 0,WINDLASSO,1,WINDLASSO
+Tribes = WARRIOR,LOYAL
+StepsToHatch = 5396
+Height = 1.6
+Weight = 117.0
+Kind = Sheriff
+Pokedex = It can now do lasso tricks effortlessly around its giant cranium. A good Carnan Sirfetch'd can rival a knight.
+Generation = 8
+Flags = Hidden
+WildItemUncommon = STRENGTHHERB
+#-------------------------------
 [DODUO]
 Name = Doduo
 Type1 = NORMAL

@@ -1198,6 +1198,19 @@ FunctionCode = HitOncePerUserTeamMemberSpecial
 Flags = CanProtect
 Description = The user gets all the party Pokémon to attack the foe with aerial projectiles.
 #-------------------------------
+[WINDLASSO]
+Name = Wind Lasso
+Type = FLYING
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect
+Description = The user gracefully maneuvers its lasso ensnareing the target, trapping and damaging it for three turns.
+Animation = RAZORWIND
+#-------------------------------
 [WINDTUNNEL]
 Name = Wind Tunnel
 Type = FLYING

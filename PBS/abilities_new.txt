@@ -148,6 +148,10 @@ Description = Deals more damage to targets the faster it is than them. Up to a 5
 Name = Ball Mimic
 Description = Your Poké Balls are 50% more effective.
 #-------------------------------
+[BANDITLASSO]
+Name = Bandit Lasso
+Description = Prevents foes whose Atk is less than its from fleeing.
+#-------------------------------
 [BARRIERMAKER]
 Name = Barrier Maker
 Description = Sets a Reflect for 4 turns upon entering the battle.

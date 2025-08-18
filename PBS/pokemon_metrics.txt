@@ -1266,6 +1266,12 @@ FrontSprite = 0,2
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CRFARFETCHD]
+BackSprite = 0,22
+FrontSprite = 0,20
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [CROAGUNK]
 BackSprite = 0,26
 FrontSprite = -3,22
@@ -1281,6 +1287,12 @@ ShadowSize = 2
 [CROCONAW]
 BackSprite = 0,22
 FrontSprite = 0,15
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[CRSIRFETCHD]
+BackSprite = 0,2
+FrontSprite = 0,5
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

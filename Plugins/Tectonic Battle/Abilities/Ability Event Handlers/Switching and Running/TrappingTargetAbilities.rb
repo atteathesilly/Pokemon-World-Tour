@@ -40,6 +40,12 @@ BattleHandlers::TrappingTargetAbility.add(:NOHOPE,
   }
 )
 
+BattleHandlers::TrappingTargetAbility.add(:BANDITLASSO,
+  proc { |ability, switcher, bearer, _battle|
+      next true if bearer.pbAttack > switcher.pbAttack
+  }
+)
+
 BattleHandlers::TrappingTargetAbility.add(:HELIOCENTRISM,
   proc { |ability, switcher, _bearer, battle|
       next true if battle.gravityIntensified?
