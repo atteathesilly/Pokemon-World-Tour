@@ -79,3 +79,19 @@ FloweryGrass,21
 [016] # Trop City Cafe
 Special
     1,LICKITUNG,15
+#-------------------------------
+[019] # Bozo Port
+LandSparse,20
+    20,DWEBBLE,16,18
+    20,HELIOLISK,16,18
+    20,PHANPY,16,18
+    20,TYROGUE,16,18
+    20,WINGULL,16,18
+Puddle,20
+    20,CHEWTLE,16,18
+    20,CHINCHOU,16,18
+    20,CHINGLING,16,18
+    20,FRILLISH,16,18
+    6,BASCULIN,16,18
+    6,BASCULIN_1,16,18
+    6,BASCULIN_2,16,18

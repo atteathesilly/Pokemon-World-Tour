@@ -125,6 +125,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[019]
+# Bozo Port
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

@@ -75,6 +75,29 @@ DarkDragonn<s>rafa-cac
 Newtiteuf<s>moca
 Jaggedthorn<s>Raindropsonwhiskers
 
+
+TILESETS AND AUTOTILES:
+
+Ready to use Tilesets:
+https://reliccastle.com/resources/15/
+
+- Akizakura16
+- LotusKing
+- Kaliser
+- JesusCarrasco
+- WilsonScarloxy
+- SailorVicious
+- Magiscarf
+- Kyle Dove
+
+OTHER MISC TILES AND BATTLE BACKGROUNDS FROM DEVIANTART:
+
+- ChaoticCherryCake
+- Carchagui
+- Aveontrainer
+- Phyromatical
+
+
 Charsets
 DiegoWT<s>PurpleZaffre
 Taiga
