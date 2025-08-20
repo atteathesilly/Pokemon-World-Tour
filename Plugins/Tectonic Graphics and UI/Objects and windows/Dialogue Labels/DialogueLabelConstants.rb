@@ -40,6 +40,7 @@ PAUL = _INTL("Paul Eclipse")
 KELPIE = _INTL("Kelpie")
 MEL = _INTL("Mel")
 SPRIGGAN = _INTL("Spriggan")
+HARMONY = _INTL("Harmony")
 
 # Other
 HANNAH = _INTL("Hannah")

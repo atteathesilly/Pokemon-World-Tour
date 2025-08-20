@@ -136,7 +136,7 @@ BattleBack = sand
 Environment = Sand
 #-------------------------------
 [020]
-# Redwood Labs
+# Bozo Port Auditorium 
 Outdoor = false
 ShowArea = false
 Bicycle = false
