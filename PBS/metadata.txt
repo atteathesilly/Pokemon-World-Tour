@@ -135,6 +135,12 @@ Humidity = Dry
 BattleBack = sand
 Environment = Sand
 #-------------------------------
+[020]
+# Redwood Labs
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
