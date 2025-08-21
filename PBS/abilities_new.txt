@@ -435,6 +435,10 @@ Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose 
 Name = Dire Diversion
 Description = It can avoid being knocked out by sacrificing its held item.
 #-------------------------------
+[DISCOLIGHTS]
+Name = Disco Lights
+Description = The user adds the type of whatever dance move they use.
+#-------------------------------
 [DISCONNECTION]
 Name = Disconnection
 Description = On the first turn, its attacks numb the target.

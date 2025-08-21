@@ -1,0 +1,3 @@
+﻿Name      = Makyan Voltorb
+Requires  = Tectonic Modding Base
+Credits   = Attea the Silly
