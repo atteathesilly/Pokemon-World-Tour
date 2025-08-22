@@ -148,6 +148,12 @@ ShowArea = false
 Bicycle = false
 HealingSpot = 19,32,12
 #-------------------------------
+[022]
+# Bozo Port Shop
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

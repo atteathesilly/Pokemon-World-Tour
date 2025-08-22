@@ -4151,6 +4151,19 @@ Flags = CanProtect
 Description = The user propels a geyser of water at the target. Lowers the user's Sp. Atk and Sp. Def by two steps.
 Animation = WATERSPOUT
 #-------------------------------
+[GUTPUNCH]
+Name = Gut Punch
+Type = WATER
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = ScalesWithLostHP
+Flags = CanProtect
+Description = The user punches using its guts. It becomes more powerful the less HP the user has.
+Animation = DYNAMICPUNCH
+#-------------------------------
 [HARBORBREAKER]
 Name = Harbor Breaker
 Type = WATER

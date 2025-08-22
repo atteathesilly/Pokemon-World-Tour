@@ -96,6 +96,10 @@ Puddle,20
     6,BASCULIN_1,16,18
     6,BASCULIN_2,16,18
 #-------------------------------
+[020] # Bozo Port Auditorium 
+Special
+    1,PYUKUMUKU,15
+#-------------------------------
 [021] # Bozo Center
 LandSparse,20
     20,HOUNDOUR,16,18
