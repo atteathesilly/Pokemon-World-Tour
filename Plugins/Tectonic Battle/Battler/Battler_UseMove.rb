@@ -742,6 +742,19 @@ class PokeBattle_Battler
                     preTarget = user.index if nextUser.opposes?(user) || !nextUser.opposes?(preTarget)
                     @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :MartialDiscipline, ability: :MARTIALDISCIPLINE)
                 end
+            end   
+            # All Terrain Fish
+            if !effectActive?(:AllTerrainFish) && (move.fieldMove?)
+                terrainfish = []
+                @battle.pbPriority(true).each do |b|
+                    terrainfish.push(b) if b.index != user.index && b.hasActiveAbility?(:ALLTERRAINFISH)
+                end
+                while terrainfish.length > 0
+                    nextUser = terrainfish.pop
+                    preTarget = choice[3]
+                    preTarget = user.index if nextUser.opposes?(user) || !nextUser.opposes?(preTarget)
+                    @battle.forceUseMove(nextUser, move.id, preTarget, moveUsageEffect: :AllTerrainFish, ability: :ALLTERRAINFISH)
+                end
             end
         end
     end

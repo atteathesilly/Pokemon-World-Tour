@@ -500,6 +500,10 @@ class PokeBattle_Move
             if user.effectActive?(:MartialDiscipline)
                 multipliers[:final_damage_multiplier] *= 0.50
             end
+            # All Terrain Fish
+            if user.effectActive?(:AllTerrainFish)
+                multipliers[:final_damage_multiplier] *= 0.50
+            end
             # Refuge
             if target.effectActive?(:RefugeDamageReduction)
                 multipliers[:final_damage_multiplier] *= 0.7

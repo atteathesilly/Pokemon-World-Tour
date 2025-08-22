@@ -188,6 +188,11 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :AllTerrainFish,
+    :real_name => "AllTerrainFish",
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :DefenseCurl,
     :real_name => "Curled Up",
 })

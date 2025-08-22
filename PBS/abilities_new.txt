@@ -46,6 +46,10 @@ Description = HP-fraction-based damage effects deal 50% more damage to opponents
 Name = All-Consuming
 Description = When another Pokémon faints, consumes their item, ability, and stat steps.
 #-------------------------------
+[ALLTERRAINFISH]
+Name = All Terrain Fish
+Description = Repeats another Pokémon's field moves immediately at 50% power.
+#-------------------------------
 [ALLTHATGLITTERS]
 Name = All That Glitters
 Description = Can hold two different items, if both are Gems.
@@ -334,7 +338,7 @@ Description = When hit with a physical move, traps and damages the attacker for 
 #-------------------------------
 [COREPROVENANCE]
 Name = Core Provenance
-Description = Using or being hit by a physical move leaves a rock on the field. Status moves collect them, healing by 1/4th each.
+Description = Using or being hit by a physical move leaves a rock. Status moves collect them, healing by 1/4th each.
 #-------------------------------
 [COSTUMECHANGE]
 Name = Costume Change
@@ -397,7 +401,7 @@ Description = Boosts Attack by 50%, but physical moves deal 25% damage back as r
 #-------------------------------
 [DEEPTEETH]
 Name = Deep Teeth
-Description = Foes aren't released from its trapping moves even when the Pokémon leaves the field.
+Description = Foes aren't released from its trapping moves even when the Pokémon leaves active battle.
 #-------------------------------
 [DELAYEDREACTION]
 Name = Delayed Reaction
@@ -487,7 +491,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [DRIFTINGMIST]
 Name = Drifting Mist
-Description = Creates Grey Mist for three turns when entering the battlefield.
+Description = Creates Grey Mist for three turns when entering.
 Flags = SetupCounterAI
 #-------------------------------
 [DYNAMICENTRANCE]

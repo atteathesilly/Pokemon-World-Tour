@@ -83,7 +83,7 @@ Special
 [019] # Bozo Port
 LandSparse,20
     20,DWEBBLE,16,18
-    20,HELIOLISK,16,18
+    20,HELIOPTILE,16,18
     20,PHANPY,16,18
     20,TYROGUE,16,18
     20,WINGULL,16,18
@@ -95,3 +95,11 @@ Puddle,20
     6,BASCULIN,16,18
     6,BASCULIN_1,16,18
     6,BASCULIN_2,16,18
+#-------------------------------
+[021] # Bozo Center
+LandSparse,20
+    20,HOUNDOUR,16,18
+    20,LITTEN,16,18
+    20,NICKIT,16,18
+    20,PORYGON,16,18
+    20,RATTATA,16,18

@@ -48,7 +48,7 @@ Pokemon = ARCHEN,8
     AbilityIndex = 1 # Perfectionist
 Pokemon = GOLDEEN,9
     Moves = WIPEOUT,EAGERTICKLING,PECK
-    AbilityIndex = 0 # Dancer
+    AbilityIndex = 0 # All Terrain Fish
 #-------------------------------
 [BUGCATCHER2,Dipper]
 Pokemon = SCATTERBUG,8

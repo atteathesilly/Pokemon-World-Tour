@@ -141,6 +141,13 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[021]
+# Bozo Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 19,32,12
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
