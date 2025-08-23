@@ -3220,6 +3220,19 @@ EffectChance = 100
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
+[GIGATONHAMMER]
+Name = Gigaton Hammer
+Type = STEEL
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = MoveDisablesSelf
+Flags = CanProtect
+Description = The user bash the target with a hammer. Then, this move is disabled.
+Animation = GIGAIMPACT
+#-------------------------------
 [HAIRCURL]
 Name = Hair Curl
 Type = STEEL

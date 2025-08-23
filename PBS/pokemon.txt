@@ -21448,3 +21448,69 @@ Weight = 61.0
 Kind = Boss
 Pokedex = Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family.
 Generation = 9
+#-------------------------------
+[TINKATINK]
+Name = Tinkatink
+Type1 = FAIRY
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 50,45,45,58,35,64
+# Total = 297
+GenderRate = AlwaysFemale
+BaseEXP = 133
+Rareness = 105
+Happiness = 50
+Abilities = JUGGERNAUT,INDUSTRIALIZE
+Moves = 1,ASTONISH,1,BABYDOLLEYES,4,GLITTERBOMB,8,SHOTPUT,12,BRUTALSWING,16,METALCLAW,20,MISHAP,24,ILLWISHES,28,SUCKERPUNCH,32,SWEETSELENE,36,MISADVENTURE,40,METEORMASH,44,KNOCKOFF,48,SPIRITBREAK,52,TAUNT,56,ILLWISHES,60,INFINITEFORCE,64,MORNINGSTAR
+LineMoves = ADAMANTINEPRESS,ANCIENTPOWER,ASSURANCE,BODYSLAM,BRICKBREAK,BRUTALSWING,BULLETTRAIN,CHARGEBEAM,CRUNCH,DARKALLURE,DARKPULSE,DIZZYPUNCH,DRAGONHAMMER,DRAININGKISS,EAGERTICKLING,ENDURE,FACADE,FAKETEARS,FLASHCANNON,FLING,FLOWSTATE,FOCUSBLAST,FOCUSPUNCH,FOLLOWME,FOULPLAY,FRIGIDJEALOUSY,FROLIC,FROSTBARB,FROSTOVER,GIGAIMPACT,GRASSKNOT,HARDEN,HEADBUTT,HEARTSWAP,HELMBUTT,HELPINGHAND,HOLDBACK,HUMBLE,HYPERBEAM,ICEBEAM,ICEHAMMER,ICEPUNCH,ICYWIND,ILLWISHES,IRONDEFENSE,IRONHEAD,KNOCKOFF,LASERFOCUS,LASTRESORT,MAGNETRISE,MEGAPUNCH,METALBURST,MISADVENTURE,MISHAP,MOONGLOW,NIGHTCHILL,NIGHTFELLING,PAINSPLIT,PAYBACK,PIXIEPUNCH,PLAYROUGH,POWERUPPUNCH,PROTECT,PSYCHUP,RAILCANNON,REST,RETREAT,ROCKALANCHE,ROCKTOMB,SANDSTORM,SHARPEN,SLEEPTALK,SLUDGEWAVE,SMASH,SNATCH,SNORE,STARDANCE,STEALTHROCK,STONEEDGE,SUBSTITUTE,SUCKERPUNCH,SWORDSDANCE,TAUNT,THUNDERPUNCH,TICKLE,TORMENT,WOODHAMMER
+Tribes = CHARMER,INDUSTRIOUS
+StepsToHatch = 5355
+Height = 0.4
+Weight = 8.9
+Kind = Metalsmith
+Pokedex = It swings its handmade hammer around to protect itself, but the hammer is often stolen by Pokémon that eat metal.
+Generation = 9
+Evolutions = TINKATUFF,Level,21
+#-------------------------------
+[TINKATUFF]
+Name = Tinkatuff
+Type1 = FAIRY
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 65,55,55,78,45,82
+# Total = 380
+GenderRate = AlwaysFemale
+BaseEXP = 133
+Rareness = 105
+Happiness = 50
+Abilities = JUGGERNAUT,INDUSTRIALIZE
+Moves = 0,BULLETPUNCH,1,BULLETPUNCH
+Tribes = CHARMER,INDUSTRIOUS
+StepsToHatch = 5355
+Height = 0.7
+Weight = 59.1
+Kind = Hammer
+Pokedex = This Pokémon will attack groups of Pawniard and Bisharp, gathering metal from them in order to create a large and sturdy hammer.
+Generation = 9
+Evolutions = TINKATON,Level,37
+#-------------------------------
+[TINKATON]
+Name = Tinkaton
+Type1 = FAIRY
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 85,115,77,94,50,105
+# Total = 526
+GenderRate = AlwaysFemale
+BaseEXP = 133
+Rareness = 105
+Happiness = 50
+Abilities = JUGGERNAUT,INDUSTRIALIZE
+Moves = 0,GIGATONHAMMER,1,GIGATONHAMMER
+Tribes = CHARMER,INDUSTRIOUS
+StepsToHatch = 5355
+Height = 0.7
+Weight = 112.8
+Kind = Hammer
+Pokedex = This intelligent Pokémon has a very daring disposition. It knocks rocks into the sky with its hammer, aiming for flying Corviknight.
+Generation = 9

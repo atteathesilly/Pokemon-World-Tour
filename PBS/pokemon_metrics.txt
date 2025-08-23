@@ -6258,6 +6258,24 @@ FrontSprite = 0,32
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[TINKATINK]
+BackSprite = 0,0
+FrontSprite = 4,34
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
+[TINKATON]
+BackSprite = 0,0
+FrontSprite = 12,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[TINKATUFF]
+BackSprite = -8,0
+FrontSprite = 3,30
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [TIRTOUGA]
 BackSprite = 0,28
 FrontSprite = 0,34
