@@ -107,3 +107,17 @@ LandSparse,20
     20,NICKIT,16,18
     20,PORYGON,16,18
     20,RATTATA,16,18
+#-------------------------------
+[024] # Penny Province Path
+LandSparse,20
+    20,CRFARFETCHD,16,18
+    20,MUDBRAY,16,18
+    20,SANDILE,16,18
+    20,SILICOBRA,16,18
+    20,TRAPINCH,16,18
+Puddle,20
+    20,CACNEA,16,18
+    20,DARUMAKA,16,18
+    20,FEEBAS,16,18
+    20,POPPLIO,16,18
+    20,WOOPER,16,18

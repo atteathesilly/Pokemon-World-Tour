@@ -154,6 +154,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[024]
+# Penny Province Path
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
