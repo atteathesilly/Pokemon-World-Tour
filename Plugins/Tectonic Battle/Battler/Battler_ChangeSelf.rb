@@ -79,7 +79,7 @@ class PokeBattle_Battler
     end
 
     def getFractionalDamageAmount(fraction,basedOnCurrentHP=false,aggravate: false,struggle: false)
-        return 0 unless takesIndirectDamage?
+        return 0 unless takesIndirectDamage? || struggle
         fraction *= hpBasedEffectResistance if boss?
         fraction *= 1.5 if aggravate
         if basedOnCurrentHP
@@ -493,6 +493,7 @@ class PokeBattle_Battler
                 if @form != newForm
                     showMyAbilitySplash(:FORECAST, true)
                     hideMyAbilitySplash
+                    @battle.pbCommonAnimation("Forecast", self)
                     pbChangeForm(newForm, _INTL("{1} transformed!", pbThis))
                 end
             else
@@ -507,6 +508,7 @@ class PokeBattle_Battler
                 if @form != newForm
                     showMyAbilitySplash(:FLOWERGIFT, true)
                     hideMyAbilitySplash
+                    @battle.pbCommonAnimation("Forecast", self)
                     pbChangeForm(newForm, _INTL("{1} transformed!", pbThis))
                 end
             else
@@ -542,13 +544,15 @@ class PokeBattle_Battler
                 if form >= 7
                     newForm = @form - 7
                     showMyAbilitySplash(:SHIELDSDOWN, true)
-                    pbChangeForm(newForm, _INTL("{1} deactivated!", getAbilityName(:SHIELDSDOWN)))
                     hideMyAbilitySplash
+                    @battle.pbCommonAnimation("ShieldsUp", self)
+                    pbChangeForm(newForm, _INTL("{1} deactivated!", getAbilityName(:SHIELDSDOWN)))
                 end
             else # Turn into Core form
                 if form < 7
                     showMyAbilitySplash(:SHIELDSDOWN, true)
                     hideMyAbilitySplash
+                    @battle.pbCommonAnimation("ShieldsDown", self)
                     pbChangeForm(@form + 7, _INTL("{1} activated!", getAbilityName(:SHIELDSDOWN)))
                 end
             end
@@ -559,11 +563,13 @@ class PokeBattle_Battler
                 if @form != 1
                     showMyAbilitySplash(:SCHOOLING, true)
                     hideMyAbilitySplash
+                    @battle.pbCommonAnimation("SchoolForm", self)
                     pbChangeForm(1, _INTL("{1} formed a school!", pbThis))
                 end
             elsif @form != 0
                 showMyAbilitySplash(:SCHOOLING, true)
                 hideMyAbilitySplash
+                @battle.pbCommonAnimation("SchoolForm", self)
                 pbChangeForm(0, _INTL("{1} stopped schooling!", pbThis))
             end
         end
@@ -584,6 +590,28 @@ class PokeBattle_Battler
         disableEffect(:BaseSpecialDefense)
         disableEffect(:BaseSpeed)
     end
+
+def disableLoweredBaseStatEffects
+  base_stats = @pokemon&.baseStats
+  return if base_stats.nil?
+
+  {
+    BaseAttack: :ATTACK,
+    BaseDefense: :DEFENSE,
+    BaseSpecialAttack: :SPECIAL_ATTACK,
+    BaseSpecialDefense: :SPECIAL_DEFENSE,
+    BaseSpeed: :SPEED
+  }.each do |effect_sym, stat_sym|
+    current_effect = @effects[effect_sym]
+    next if current_effect.nil?
+
+    stat_data = GameData::Stat.get(stat_sym)
+    original_base = base_stats[stat_data.id]
+    next if original_base.nil?
+
+    disableEffect(effect_sym) if current_effect < original_base
+  end
+end
 
     def pbTransform(target)
         @battle.scene.pbChangePokemon(self, target.pokemon)
