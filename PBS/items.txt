@@ -2066,13 +2066,13 @@ Flags = Berry
 Description = If held by a Pokémon, this Berry will increase the holder's Sp. Def by four steps if it's hit with a special move.
 #-------------------------------
 [BICYCLE]
-Name = Bicycle
-NamePlural = Bicycles
+Name = Roller Skates
+NamePlural = Roller Skates
 Pocket = 8
 Price = 0
 FieldUse = Direct
 Flags = KeyItem
-Description = A folding Bicycle that enables much faster movement than the Running Shoes.
+Description = A pair of skates that enables much faster movement than the Running Shoes.
 #-------------------------------
 [TOWNMAP]
 Name = Region Map
