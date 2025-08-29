@@ -248,15 +248,16 @@ Pokemon = WHISMUR,17
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
 #-------------------------------
-[GUITARIST,Reece]
-Pokemon = BLITZLE,17
-    Moves = CURRENTCRASH,KINDLE,SCUFFLE,EERIEIMPULSE
-    AbilityIndex = 1 # Reckless
-Pokemon = SURSKIT,16
-    AbilityIndex = 1 # Intimidate
-Pokemon = SANDILE,16
-    Moves = SCHEME,MUDSLING,BRUTALSWING,RUMBLE
-    AbilityIndex = 0 # Tough
+[COLLECTOR2,Raymond]
+Pokemon = IVYSAUR,17
+    Moves = RAZORLEAF,POISONIVY,SMOG,GROWTH
+    AbilityIndex = 0 # Poison Absorb
+Pokemon = CHARMELEON,16
+    AbilityIndex = 0 # Pure Rage
+Pokemon = WARTORTLE,16
+    AbilityIndex = 1 # Mega Launcher
+Pokemon = PIKACHU,16
+    AbilityIndex = 0 # Extreme Voltage
     Item = SITRUSBERRY
 #-------------------------------
 [INFIELDER,Jose]
@@ -282,35 +283,28 @@ Pokemon = GASTLY,17
 Pokemon = MVULLABY,17
     AbilityIndex = 0 # Sealing Body
 #-------------------------------
-[DANCER,Isai]
-Pokemon = COMBUSKEN,17
-    Moves = PECK,SMASH,KINDLE,FIRESPIN
-    AbilityIndex = 1 # Pecking Order
+[HARLEQUIN,Harleen]
+Pokemon = EXEGGCUTE,17
+    Moves = PSYBEAM,CLASH,KICKSTART,ESSENCEARROW
+    AbilityIndex = 0 # Radiate
     Item = SITRUSBERRY
-Pokemon = GROVYLE,17
-    Moves = SHARPEN,CLASH,PILFER,RAZORLEAF
-    AbilityIndex = 0 # Regenerator
-Pokemon = MARSHTOMP,17
-    Moves = WAVEBREAK,SMASH,SUPERSONIC,RUMBLE
-    AbilityIndex = 1 # Boulder Nest
+Pokemon = CARKOL,18
+    AbilityIndex = 1 # Fuel Hungry
+Pokemon = MUDBRAY,18
+    Moves = STAMPDOWN,SMASH,PROTECT,HEADBUTT
+    AbilityIndex = 0 # HM Mule
 #-------------------------------
-[ARTIST,Evan]
-Policies = PRIORITIZESTATDOWN
-Pokemon = SMEARGLE,18
-    Moves = HELPINGHAND,HEALPULSE,SCREECH,NOBLEROAR
-    AbilityIndex = 0 # Mental Block
+[TWINS3,Eva and Ava]
+Pokemon = IMPIDIMP,18
+    AbilityIndex = 1 # Ruinous
+Pokemon = HATENNA,16
+    Moves = PIXIEPUNCH,PILFER,BLINDSIDE
+    AbilityIndex = 1 # Berserk
+Pokemon = FLETCHINDER,17
+    AbilityIndex = 1 # Gale Wings
+Pokemon = DODUO,17
+    AbilityIndex = 0 # Fluster Flock
     Item = SITRUSBERRY
-Pokemon = MISDREAVUS,16
-    Moves = DISARMINGVOICE,OMINOUSWIND
-    AbilityIndex = 1 # Ear-Splitting
-#-------------------------------
-[HIKER2,Jude]
-Pokemon = ANORITH,17
-    Moves = WIPEOUT,BLUNTFORCE,BUGBITE
-    AbilityIndex = 0 # Selective Scutes
-Pokemon = BELDUM,17
-    Moves = BULLETPUNCH,JOLT,BLINDSIDE
-    AbilityIndex = 1 # Optimized Alloy
 #-------------------------------
 [SCIENTIST_M2,Dexter]
 Pokemon = GRIMER,20

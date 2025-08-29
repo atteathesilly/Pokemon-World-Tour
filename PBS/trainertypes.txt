@@ -361,6 +361,12 @@ Gender = Male
 BaseMoney = 64
 IntroBGM = POKEFAN
 #-------------------------------
+[COLLECTOR2]
+Name = Collector
+Gender = Male
+BaseMoney = 64
+IntroBGM = POKEFAN
+#-------------------------------
 [COOLTRAINERSQUAD_2]
 Name = Cool Squad
 Gender = Unknown

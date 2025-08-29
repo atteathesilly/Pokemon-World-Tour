@@ -164,6 +164,12 @@ Humidity = Dry
 BattleBack = sand
 Environment = Sand
 #-------------------------------
+[025]
+# Penny Province House
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
