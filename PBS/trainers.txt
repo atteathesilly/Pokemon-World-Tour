@@ -3501,19 +3501,22 @@ Pokemon = ARCANINE,40
     AbilityIndex = 0 # Intimidate
     Item = EJECTBUTTON
 #-------------------------------
-[TRAINER_Keoni,Keoni]
-Flags = NoPerfect
-Pokemon = MSENTRET,22
-    Moves = BULLDOZE,HEARTSTAMP,COVET,FLAMECHARGE
-    AbilityIndex = 0 # Filter
-    Item = PSYCHICGEM
-Pokemon = ARATTATA,22
-    Moves = TAKEDOWN,QUICKATTACK,PURSUIT,SUPERFANG
-    AbilityIndex = 1 # Gourmand
-Pokemon = GDARUMAKA,23
-    Moves = SNOWBALL
-    AbilityIndex = 0 # Gorilla Tactics
-    Item = METRONOME
+[TRAINERDEXIO,Dexio]
+Flags = Noperfect
+Pokemon = CRFARFETCHD,18
+    Moves = LOWSWEEP,VINEBIND,PECK,SANDSTORM
+    AbilityIndex = 1 # Sand Sniper
+Pokemon = SLOWPOKE,18
+    Moves = WAVEBREAK,BLINDSIDE,YAWN
+    AbilityIndex = 1 # Mental Block
+Pokemon = ABRA,18
+    Moves = PSYBEAM,SHINESHOT,RETREAT
+    AbilityIndex = 1 # Steelworker
+    Item = SITRUSBERRY
+Pokemon = COTTONEE,19
+    Moves = MISHAP,RAZORLEAF,ENCORE,COTTONSPORE
+    AbilityIndex = 1 # Pure Force
+    Item = KEEBERRY
 #-------------------------------
 [TRAINER_Keoni,Keoni,1]
 Flags = NoPerfect

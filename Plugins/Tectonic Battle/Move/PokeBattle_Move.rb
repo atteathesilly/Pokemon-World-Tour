@@ -139,6 +139,7 @@ class PokeBattle_Move
     def bitingMove?;            return @flags.include?("Biting"); end
     def punchingMove?;          return @flags.include?("Punch"); end
     def soundMove?;             return @flags.include?("Sound"); end
+    def fieldMove?;             return @flags.include?("Field"); end
     def pulseMove?;             return @flags.include?("Pulse"); end
     def danceMove?;             return @flags.include?("Dance"); end
     def bladeMove?;             return @flags.include?("Blade"); end
