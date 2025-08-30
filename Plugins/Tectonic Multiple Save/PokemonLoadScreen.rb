@@ -105,11 +105,7 @@ class PokemonLoadScreen
         end
         commands[cmd_new_game = commands.length]        = _INTL("New Game")
         commands[cmd_options = commands.length]         = _INTL("Options")
-        commands[cmd_achievements = commands.length]    = _INTL("Achievements")
-        commands[cmd_player_survey = commands.length]   = _INTL("Player Survey")
-        commands[cmd_website = commands.length]         = _INTL("Website")
         commands[cmd_discord = commands.length]         = _INTL("Discord")
-        commands[cmd_wiki = commands.length]            = _INTL("Wiki")
         commands[cmd_quit = commands.length]            = _INTL("Quit Game")
         @scene.pbStartScene(commands, false, nil, 0, 0)
         @scene.pbStartScene2
@@ -152,7 +148,7 @@ class PokemonLoadScreen
             when cmd_website
                 System.launch("https://www.tectonic-game.com/")
             when cmd_discord
-                System.launch("https://discord.gg/J3r7zRaMvP")
+                System.launch("https://discord.gg/U4usm3MDYw")
             when cmd_wiki
                 System.launch("https://pokemontectonic.wiki.gg/")
             when cmd_quit
