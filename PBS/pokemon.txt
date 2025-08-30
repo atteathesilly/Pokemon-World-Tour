@@ -4505,7 +4505,7 @@ Weight = 6.5
 Kind = Evolution
 Pokedex = Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives.
 Generation = 1
-Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,MOONSTONE,ESPEON,Item,DAWNSTONE,UMBREON,Item,DUSKSTONE,GIGANTEON,Level,40
+Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,SHINYSTONE,ESPEON,Item,SUNSTONE,UMBREON,Item,MOONSTONE,GIGANTEON,Level,40
 #-------------------------------
 [VAPOREON]
 Name = Vaporeon
@@ -19128,7 +19128,7 @@ Kind = Protostar
 Pokedex = The king who ruled Alola in times of antiquity called it the "cocoon of the stars" and built an altar to worship it.
 Generation = 7
 Flags = Legendary
-Evolutions = SOLGALEO,Item,DAWNSTONE,LUNALA,Item,DUSKSTONE
+Evolutions = SOLGALEO,Item,SUNSTONE,LUNALA,Item,MOONSTONE
 #-------------------------------
 [SOLGALEO]
 Name = Solgaleo

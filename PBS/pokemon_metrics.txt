@@ -1274,9 +1274,9 @@ ShadowSize = 2
 #-------------------------------
 [CRFARFETCHD]
 BackSprite = 0,22
-FrontSprite = 0,20
+FrontSprite = 0,17
 ShadowX = 0
-ShadowSize = 2
+ShadowSize = 3
 #-------------------------------
 [CROAGUNK]
 BackSprite = 0,26
