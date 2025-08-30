@@ -3879,6 +3879,17 @@ FunctionCode = ProtectUserBurnSpecAttacker
 Description = Protects the user from attacks. Also burns any attacker who specially attacks the user.
 Animation = WITHDRAW
 #-------------------------------
+[SEAOFFIRE]
+Name = Sea of Fire
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = SummonSeaofFire
+Description = A sea of fire affects the opposing side, damaging non-Fire-types for 1/8 at the end of each turn, for four turns
+Animation = FIREPLEDGE
+#-------------------------------
 [SHIMMERINGHEAT]
 Name = Shimmering Heat
 Type = FIRE
@@ -4267,6 +4278,17 @@ Target = NearOther
 FunctionCode = DamageBoost50PercentTargetHitUser
 Flags = CanProtect
 Description = Attacks with pressurized water. Deals 50% more damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
+[RAINBOWCONNECTION]
+Name = Rainbow Connection
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = SummonRainbow
+Description = A rainbow affects the field, making additional affects twice as likely for four turns.
+Animation = WATERPLEDGE
 #-------------------------------
 [RAMMINGSPEED]
 Name = Ramming Speed
@@ -4880,6 +4902,17 @@ FunctionCode = FailsIfTargetActed
 Flags = CanProtect
 Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
 Animation = SPIKECANNON
+#-------------------------------
+[SWAMPED]
+Name = Swamped
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = SummonSwamp
+Description = A swamp affects the opposing side, quartering their speed for four turns.
+Animation = GRASSPLEDGE
 #-------------------------------
 [SYMBIOSIS]
 Name = Symbiosis

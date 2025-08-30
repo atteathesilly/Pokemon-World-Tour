@@ -40,3 +40,36 @@ class PokeBattle_Move_WaterPledge < PokeBattle_PledgeMove
                    ["FirePledge", :Rainbow, nil,    nil],]
     end
 end
+
+#===============================================================================
+# Summoning rainbow (rainbow connection)
+#===============================================================================
+class PokeBattle_Move_SummonRainbow < PokeBattle_Move
+     def pbEffectGeneral(user)
+        unless user.pbOpposingSide.effectActive?(:Rainbow)
+            user.pbOpposingSide.applyEffect(:Rainbow, 4)
+        end
+    end
+end
+
+#===============================================================================
+# Summoning swamp (Swamped)
+#===============================================================================
+class PokeBattle_Move_SummonSwamp < PokeBattle_Move
+     def pbEffectGeneral(user)
+        unless user.pbOpposingSide.effectActive?(:Swamp)
+             user.pbOpposingSide.applyEffect(:Swamp, 4)
+        end
+    end
+end
+
+#===============================================================================
+# Summoning sea of fire (Sea of Fire)
+#===============================================================================
+class PokeBattle_Move_SummonSeaofFire < PokeBattle_Move
+     def pbEffectGeneral(user)
+        unless user.pbOpposingSide.effectActive?(:SeaOfFire)
+             user.pbOpposingSide.applyEffect(:SeaOfFire, 4)
+        end
+    end
+end
