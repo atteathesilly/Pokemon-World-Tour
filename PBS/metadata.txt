@@ -170,6 +170,13 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[026]
+# Penny-Wise Gatehouse
+Outdoor = false
+ShowArea = false
+Bicycle = true
+MapPosition = 0,21,18
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

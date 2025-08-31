@@ -6666,7 +6666,7 @@ Weight = 125.8
 Kind = Hibernator
 Pokedex = Although it has a large body, it is quite skilled at climbing trees. It eats and sleeps in the treetops.
 Generation = 2
-Evolutions = URSALUNA,Originize,44
+Evolutions = URSALUNA,Level,44
 #-------------------------------
 [URSALUNA]
 Name = Ursaluna
@@ -7129,7 +7129,7 @@ Weight = 71.2
 Kind = Big Horn
 Pokedex = The curved antlers subtly change the flow of air to create a strange space where reality is distorted.
 Generation = 2
-Evolutions = WYRDEER,Originize,34
+Evolutions = WYRDEER,Level,34
 #-------------------------------
 [WYRDEER]
 Name = Wyrdeer
@@ -13658,7 +13658,7 @@ Kind = Hostile
 Pokedex = Red and blue Basculin usually do not get along, but sometimes members of one school mingle with the other's school.
 FormName = Red-Striped
 Generation = 5
-Evolutions = BASCULEGION,Originize,42
+Evolutions = BASCULEGION,Level,42
 #-------------------------------
 [BASCULEGION]
 Name = Basculegion

@@ -937,7 +937,6 @@ Abilities = AUTUMNAL
 FormName = White-Striped
 Kind = Mellow
 Pokedex = It differs from other Basculin in several respects, including demeanor. It is much gentler than other color variants.
-Evolutions = BASCULEGION,Level,42
 #-------------------------------
 [ALCREMIE,1]
 FormName = Vanilla Berry
