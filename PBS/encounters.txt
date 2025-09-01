@@ -125,3 +125,17 @@ Puddle,20
 [026] # Penny-Wise Gatehouse
 Special
     1,EXEGGCUTE,15
+#-------------------------------
+[027] # Wise Man's Seat
+LandSparse,20
+    20,BUNNELBY,16,18
+    20,CRVOLTORB,16,18
+    20,DODUO,16,18
+    20,LARVITAR,16,18
+    20,SALANDIT,16,18
+DarkCave,20
+    20,DEINO,16,18
+    20,DUNSPARCE,16,18
+    20,ROLYCOLY,16,18
+    20,SANDSHREW,16,18
+    20,VAROOM,16,18

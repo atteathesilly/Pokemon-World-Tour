@@ -175,7 +175,16 @@ Bicycle = false
 Outdoor = false
 ShowArea = false
 Bicycle = true
-MapPosition = 0,21,18
+#-------------------------------
+[027]
+# Wise Man's Seat
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
 #-------------------------------
 [147]
 # PokEstate
