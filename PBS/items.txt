@@ -142,6 +142,15 @@ FieldUse = OnPokemon
 Flags = EvolutionItem,Clothing
 Description = A cool scarf. It makes a certain Pokémon evolve.
 #-------------------------------
+[LUXGRADE]
+Name = Luxgrade
+NamePlural = Luxgrades
+Pocket = 1
+Price = 3000
+FieldUse = OnPokemon
+Flags = EvolutionItem
+Description = A Luxtech branded upgrade. It makes a certain Pokémon evolve.
+#-------------------------------
 [ALOLANWREATH]
 Name = Alolan Wreath
 NamePlural = Alolan Wreathes

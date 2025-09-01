@@ -3462,6 +3462,19 @@ FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
 Description = Sharp spikes are shot at the target in rapid succession. They hit two to five times in a row.
 #-------------------------------
+[SPINOUT]
+Name = Spin Out
+Type = STEEL
+Category = Physical
+Power = 110
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerUserSpd3
+Flags = CanProtect
+Description = The user spins furiously by straining its legs, inflicting damage on the target. Lowers the user's Speed by three steps.
+Animation = GIGAIMPACT
+#-------------------------------
 [STEELBEAM]
 Name = Steel Beam
 Type = STEEL

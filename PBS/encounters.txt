@@ -121,3 +121,7 @@ Puddle,20
     20,FEEBAS,16,18
     20,POPPLIO,16,18
     20,WOOPER,16,18
+#-------------------------------
+[026] # Penny-Wise Gatehouse
+Special
+    1,EXEGGCUTE,15

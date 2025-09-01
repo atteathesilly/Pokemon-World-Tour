@@ -5190,6 +5190,12 @@ FrontSprite = 0,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[REVAVROOM]
+BackSprite = -3,27
+FrontSprite = -3,24
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [RHYDON]
 BackSprite = 0,17
 FrontSprite = 0,11
@@ -6729,6 +6735,12 @@ ShadowSize = 2
 [VAPOREON]
 BackSprite = 0,22
 FrontSprite = -4,17
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[VAROOM]
+BackSprite = 0,27
+FrontSprite = 0,17
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
