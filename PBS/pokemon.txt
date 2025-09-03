@@ -17181,7 +17181,7 @@ Kind = Jewel
 Pokedex = Carbink are near extinction in the modern day in some regions, with Sableye hunting them ruthlessly, so some places have deemed them mythical.
 Generation = 6
 Flags = Legendary
-Evolutions = DIANCIE,Level,33
+Evolutions = DIANCIE,Level,37
 #-------------------------------
 [DIANCIE]
 Name = Diancie
@@ -19538,7 +19538,7 @@ Kind = Hex Nut
 Pokedex = It melts particles of iron and other metals found in the subsoil, so it can absorb them into its body of molten steel.
 Generation = 7
 Flags = Legendary
-Evolutions = MELMETAL,Level,33
+Evolutions = MELMETAL,Level,37
 #-------------------------------
 [MELMETAL]
 Name = Melmetal
@@ -21299,7 +21299,7 @@ Kind = Wushu
 Pokedex = If Kubfu pulls the long white hair on its head, its fighting spirit heightens and power wells up from the depths of its belly.
 Generation = 8
 Flags = Legendary
-Evolutions = URSHIFU,Level,33
+Evolutions = URSHIFU,Level,37
 #-------------------------------
 [URSHIFU]
 Name = Urshifu

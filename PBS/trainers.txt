@@ -316,15 +316,23 @@ Pokemon = VAROOM,19
 Pokemon = FLETCHINDER,19
     AbilityIndex = 1 # Gale Wings
 #-------------------------------
-[SCIENTIST_F,Marie]
-Pokemon = CARKOL,20
-    Moves = FLAMECHARGE,ROCKTHROW,RAPIDSPIN,IGNITE
-    AbilityIndex = 1 # Fuel Hungry
-Pokemon = KOFFING,20
-    Moves = POISONGAS,BOREALWIND,DAZZLE,CLEARSMOG
-    AbilityIndex = 1 # Fumigate
-Pokemon = SLUGMA,20
-    AbilityIndex = 1 # Flame Body
+[AROMALADY2,Katie]
+Pokemon = TEDDIURSA,20
+    AbilityIndex = 1 # Tough
+Pokemon = ROSELIA,17
+    AbilityIndex = 1 # Merciless
+Pokemon = SPRITZEE,20
+    AbilityIndex = 1 # Intoxicate
+#-------------------------------
+[RUINMANIAC,Nathaniel]
+Pokemon = HSNEASEL,18
+    Moves = CAPOEIRA,POISONTAIL,FURYCUTTER
+    AbilityIndex = 1 # Frustrate
+Pokemon = HZORUA,19
+    Moves = SWIFT,OMINOUSWIND,VACUUMWAVE
+    AbilityIndex = 0 # Illusion
+Pokemon = BRONZOR,19
+    AbilityIndex = 0 # Levitate
 #-------------------------------
 [LEADER_Eko,Eko]
 Policies = EKO
