@@ -6334,6 +6334,19 @@ FunctionCode = TargetActsLast
 Flags = CanProtect,Uninvocable
 Description = The user suppresses the target and makes its move go last.
 #-------------------------------
+[RUINATION]
+Name = Ruination
+Type = DARK
+Category = Special
+Power = 1
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamageHalfTargetHP
+Flags = CanProtect
+Description = The user summons a ruinous disaster. It cuts the target's HP to half.
+Animation = JUDGEMENT
+#-------------------------------
 [SNARL]
 Name = Snarl
 Type = DARK

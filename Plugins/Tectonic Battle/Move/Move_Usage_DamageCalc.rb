@@ -152,8 +152,20 @@ class PokeBattle_Move
                 multipliers[:base_damage_multiplier] *= 4 / 3.0
             end
         end
-        if @battle.pbCheckGlobalAbility(:RUINOUS)
+        if @battle.pbCheckGlobalAbility(:RUINOUS) 
             multipliers[:base_damage_multiplier] *= 1.4
+        end
+        if @battle.pbCheckGlobalAbility(:SWORDOFRUIN)
+            multipliers[:base_damage_multiplier] = 1.5
+        end
+        if @battle.pbCheckGlobalAbility(:BEADSOFRUIN)
+            multipliers[:base_damage_multiplier] = 1.5
+        end
+        if @battle.pbCheckGlobalAbility(:TABLETSOFRUIN)
+            multipliers[:base_damage_multiplier] = 0.5
+        end
+        if @battle.pbCheckGlobalAbility(:VESSELOFRUIN)
+            multipliers[:base_damage_multiplier] = 0.5
         end
         # User or user ally ability effects that alter damage
         user.eachAbilityShouldApply(aiCheck) do |ability|

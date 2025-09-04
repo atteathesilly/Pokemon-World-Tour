@@ -34,6 +34,10 @@ Description = Reduces a sleeping foe's HP by 1/8th at the end of a round.
 Name = Battery
 Description = Powers up ally Pokémon's special moves by 30%.
 #-------------------------------
+[BEADSOFRUIN]
+Name = Beads of Ruin
+Description = All Pokémon deal 50% more move damage.
+#-------------------------------
 [BERSERK]
 Name = Berserk
 Description = Raises Attack and Sp. Atk by two steps when its HP is lowered below half.
@@ -578,9 +582,17 @@ Name = Swift Swim
 Description = Doubles the Pokémon's Speed in rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
+[SWORDOFRUIN]
+Name = Sword of Ruin
+Description = All Pokémon deal 50% more move damage.
+#-------------------------------
 [SYNCHRONIZE]
 Name = Synchronize
 Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokemon also gets that condition.
+#-------------------------------
+[TABLETSOFRUIN]
+Name = Tablets of Ruin
+Description = All Pokémon deal 50% less move damage.
 #-------------------------------
 [TANGLINGHAIR]
 Name = Tangling Hair
@@ -629,6 +641,10 @@ Description = Doubles the Pokémon's Speed if its held item is consumed or lost.
 [UNSEENFIST]
 Name = Unseen Fist
 Description = Physical moves negate all protection effects.
+#-------------------------------
+[VESSELOFRUIN]
+Name = Vessel of Ruin
+Description = All Pokémon deal 50% less move damage.
 #-------------------------------
 [VICTORYSTAR]
 Name = Victory Star
