@@ -139,3 +139,17 @@ DarkCave,20
     20,ROLYCOLY,16,18
     20,SANDSHREW,16,18
     20,VAROOM,16,18
+#-------------------------------
+[028] # Krusty Kavetown
+LandSparse,20
+    20,CLEFFA,16,18
+    20,MAKUHITA,16,18
+    20,MINCCINO,16,18
+    20,WHISMUR,16,18
+    20,ZUBAT,16,18
+Mud,20
+    20,MIMEJR,16,18
+    20,MISDREAVUS,16,18
+    20,NOSEPASS,16,18
+    20,ROGGENROLA,16,18
+    20,TEDDIURSA,16,18
