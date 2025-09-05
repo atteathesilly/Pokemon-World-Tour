@@ -186,6 +186,14 @@ Humidity = Dry
 BattleBack = sand
 Environment = Sand
 #-------------------------------
+[028]
+# Krusty Kavetown
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

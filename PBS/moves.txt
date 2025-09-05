@@ -6345,7 +6345,7 @@ Target = NearOther
 FunctionCode = FixedDamageHalfTargetHP
 Flags = CanProtect
 Description = The user summons a ruinous disaster. It cuts the target's HP to half.
-Animation = JUDGEMENT
+Animation = FIERYWRATH
 #-------------------------------
 [SNARL]
 Name = Snarl
