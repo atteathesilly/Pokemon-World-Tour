@@ -1001,12 +1001,6 @@ Pokemon = XATU,70
     Item = PINPOINTROCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,15,0,0,15
-Pokemon = MNINETALES,70
-    Moves = SLAG,SHADOWBALL,WEATHERBURST,ENERGYBALL
-    AbilityIndex = 0 # Gild
-    Item = EJECTPACK
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
 Pokemon = NINETALES,70
     Moves = SWEETKISS,WARDPRESS,CRIMSONSTORM,WEATHERBURST
     AbilityIndex = 1 # Feedback
@@ -1063,12 +1057,6 @@ Pokemon = DRAGONITE,70
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
-Pokemon = MNINETALES,70
-    Moves = REFLECT,HEX,SLAG,ENERGYBALL
-    AbilityIndex = 1 # Luxury Taste
-    Item = ROCKYHELMET
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,10,20,0,0
 #-------------------------------
 [RICHBOY2,Cole]
 Pokemon = SKARMORY,70

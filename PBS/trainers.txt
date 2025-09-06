@@ -579,9 +579,6 @@ Pokemon = KROKOROK,22
     Moves = BRUTALSWING,BULLDOZE,TORMENT,SNARL
     AbilityIndex = 1 # Regenerator
     Item = GROUNDGEM
-Pokemon = VOLTORB,22
-    Moves = SELFDESTRUCT
-    AbilityIndex = 0 # Bunker Down
 #-------------------------------
 [RICHBOY2,Theodore]
 Pokemon = MAWILE,18
@@ -1516,9 +1513,6 @@ Pokemon = SPOINK,28
     AbilityIndex = 0 # Thick Fat
 #-------------------------------
 [HOOPSTER,Jerel]
-Pokemon = VOLTORB,28
-    Moves = ELECTROBALL,SWIFT,SELFDESTRUCT,ROCKROLL
-    AbilityIndex = 0 # Bunker Down
 Pokemon = SKORUPI,28
     Moves = FEINTATTACK,POISONFANG,SUCKBLOOD,ENVENOM
     AbilityIndex = 1 # Merciless
@@ -1701,12 +1695,6 @@ Pokemon = BELLOSSOM,30
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,6,0,20,4
-Pokemon = MNINETALES,30
-    Position = 1
-    Moves = DREAMDANCE,SPITEFULCHANT,SHINESHOT,DUSTDEVIL
-    AbilityIndex = 0 # Gild
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
 Pokemon = DHELMISE,30
     Moves = ADAMANTINEPRESS,ROOTWRACK,WEIGHANCHOR,SHADOWSNEAK
     AbilityIndex = 0 # Rust & Wrack
@@ -2066,9 +2054,6 @@ Pokemon = OBSTAGOON,40
     Moves = OBSTRUCT,THROATCHOP,CHAOSWHEEL,SLACKOFF
     AbilityIndex = 1 # Frustrate
     Item = LEFTOVERS
-Pokemon = SIRFETCHD,40
-    Moves = ARTOFWAR,SACREDSWORD,LEAFBLADE,DRILLPECK
-    AbilityIndex = 1 # Super Luck
 Pokemon = GSLOWKING,40
     Moves = PIERCINGDOUBT,SLUDGEWAVE,ENVENOM,VENOSHOCK
     AbilityIndex = 1 # Exorcist
@@ -2571,8 +2556,6 @@ Pokemon = SHUPPET,7
     AbilityIndex = 1 # Razor's Edge
 Pokemon = MIMIKYU,5
     AbilityIndex = 0 # Disguise
-Pokemon = MNINETALES,70
-    AbilityIndex = 0 # Gild
 Pokemon = DELCATTY,70
     Shiny = yes
     AbilityIndex = 0 # Above It All
@@ -2707,10 +2690,6 @@ Pokemon = MARACTUS,70
     Moves = THORNRATTLE,SHOREUP,LEECHSEED,SPIKYSHIELD
     AbilityIndex = 0 # Grit
     Item = SITRUSBERRY
-Pokemon = MNINETALES,70
-    Moves = SHADOWBALL,FLASHCANNON,STEELBEAM,PULVERIZERCHORD
-    AbilityIndex = 1 # Luxury Taste
-    Item = ASSAULTVEST
 Pokemon = WISHIWASHI,70
     Moves = EBBFLOW,DEPTHCHARGE,PROTECT,WATERLOG
     AbilityIndex = 0 # Schooling
@@ -3007,10 +2986,6 @@ Pokemon = APPLETUN,35
     Moves = DRAGONPULSE,GIGADRAIN,LEECHSEED,CONFIDE
     AbilityIndex = 0 # Ripen
     Item = SITRUSBERRY
-Pokemon = MNINETALES,36
-    Moves = SOULEATER,FLASHCANNON,DEADEND,IRONDEFENSE
-    AbilityIndex = 0 # Gild
-    Item = ROCKYHELMET
 Pokemon = MCARNIVINE,37
     Moves = KNOCKOFF,STRAFE
     AbilityIndex = 1 # Pestilent
@@ -3122,10 +3097,6 @@ Pokemon = MANERGETIC,59
 #-------------------------------
 [JUGGLER,Youcef]
 Flags = NoPerfect
-Pokemon = ELECTRODE,44
-    Moves = EXPLOSION,DISCHARGE
-    AbilityIndex = 0 # Bunker Down
-    Item = NORMALGEM
 Pokemon = WEEZING,44
     Moves = EXPLOSION,MIASMA,COLDFRONT
     AbilityIndex = 0 # Neutralizing Gas
@@ -7441,9 +7412,6 @@ Pokemon = STARMIE,60
 Pokemon = DITTO,58
     AbilityIndex = 0 # Imposter
     Item = SEVENLEAGUEBOOTS
-Pokemon = ELECTRODE,60
-    Moves = ELECTROBALL,FOULPLAY,EXPLOSION,PETRIFY
-    AbilityIndex = 0 # Bunker Down
 Pokemon = MJELLICENT,59
     Moves = ELECTROSLASH,SIXFEETUNDER,LIQUIDATION,LEECHLIFE
     AbilityIndex = 1 # No Hope
@@ -7834,8 +7802,6 @@ Pokemon = JELLICENT,70
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,5]
 Flags = NoPerfect
-Pokemon = ELECTRODE,70
-    AbilityIndex = 0 # Bunker Down
 Pokemon = CLAWITZER,70
     AbilityIndex = 0 # Mega Launcher
 Pokemon = ARCTOVISH,70
@@ -7844,8 +7810,6 @@ Pokemon = DRAGAPULT,70
     AbilityIndex = 1 # Infiltrator
 Pokemon = ACCELGOR,70
     AbilityIndex = 1 # Afterimage
-Pokemon = SIRFETCHD,70
-    AbilityIndex = 1 # Super Luck
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,6]
 Flags = NoPerfect
@@ -7864,8 +7828,6 @@ Pokemon = ALAKAZAM,70
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,7]
 Flags = NoPerfect
-Pokemon = MNINETALES,70
-    AbilityIndex = 0 # Gild
 Pokemon = SLOWKING,70
     AbilityIndex = 1 # Realist
 Pokemon = MILOTIC,70
@@ -8777,12 +8739,6 @@ Pokemon = HONCHKROW,70
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
-Pokemon = MNINETALES,70
-    Moves = ENERGYBALL,SOULEATER,SLAG,SCORCHINGSANDS
-    AbilityIndex = 1 # Luxury Taste
-    Item = ASSAULTVEST
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,15,0,15,15,0
 Pokemon = GOREBYSS,70
     Moves = BUBBLEBLASTER,MOONBLAST,GIGADRAIN,CRUELKISS
     AbilityIndex = 1 # Illuminance
@@ -9106,10 +9062,6 @@ Pokemon = HUNTAIL,70
 Pokemon = DIGGERSBY,70
     Moves = DRILLRUN,CLOUDBREAK,SWORDSDANCE,ADAMANTINEPRESS
     AbilityIndex = 1 # Paranoid
-Pokemon = SIRFETCHD,70
-    Moves = DRILLPECK,LEAFBLADE,PSYCHOSCISSION,ARTOFWAR
-    AbilityIndex = 1 # Super Luck
-    Item = SCOPELENS
 #-------------------------------
 [HARLEQUIN,Regis]
 Pokemon = PACHIRISU,70
@@ -9291,8 +9243,6 @@ Pokemon = GDARMANITAN,70
     AbilityIndex = 1 # Gorilla Tactics
 #-------------------------------
 [IDEALTRAINER,of Freedom]
-Pokemon = MNINETALES,70
-    AbilityIndex = 1 # Luxury Taste
 Pokemon = ABSOLUS,70
     AbilityIndex = 1 # Vengeance
 Pokemon = EMOLGA,70
