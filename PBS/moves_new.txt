@@ -65,6 +65,17 @@ EffectChance = 20
 Description = The user engages the target in a head-to-head fight. The damage is based on the target's Attack rather than their Defense.
 Animation = HEADBUTT
 #-------------------------------
+[CALLHELPER]
+Name = Call Helper
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = NearOther
+FunctionCode = SummonStage1Helpers
+Flags = CanSnatch
+Description = The user chooses between summoning Krabby, Solosis, and Rolycoly
+#-------------------------------
 [CENTER]
 Name = Center
 Type = NORMAL
@@ -1893,6 +1904,17 @@ EffectChance = 30
 Description = The user bludgeons the target's arms and legs with a large rock. This has a 50% chance to fracture it.
 Animation = ROCKTOMB
 #-------------------------------
+[CALLROLYCOLY]
+Name = Call Rolycoly
+Type = ROCK
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = CallRolycoly
+Description = The user calls an allied Rolycoly. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
+#-------------------------------
 [CRANIALGUARD]
 Name = Cranial Guard
 Type = ROCK
@@ -2337,6 +2359,18 @@ Flags = CanProtect
 EffectChance = 100
 Description = The user preys on the target's fear of insects, giving it a weakness to the Bug type.
 #-------------------------------
+[CRITICALERROR]
+Name = Critical Error
+Type = BUG
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysCriticalHit
+Flags = CanProtect
+Description = The user causes a glitch in reality. This attack always results in a critical hit.
+#-------------------------------
 [DRONING]
 Name = Droning
 Type = BUG
@@ -2700,18 +2734,6 @@ Flags = CanProtect
 EffectChance = 100
 Description = The user attacks with bitter emotion. This lowers the target's Attack and Sp. Atk by two steps if in hail.
 Animation = PHANTOMFORCE
-#-------------------------------
-[CRITICALERROR]
-Name = Critical Error
-Type = GHOST
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = AlwaysCriticalHit
-Flags = CanProtect
-Description = The user causes a glitch in reality. This attack always results in a critical hit.
 #-------------------------------
 [CURSEDOATH]
 Name = Cursed Oath
@@ -4083,6 +4105,17 @@ FunctionCode = LowerTargetSpd1
 Flags = CanProtect
 EffectChance = 20
 Description = A blast of bubbles is shot at the target. It has a 20% chance to lower the target's Speed stat.
+#-------------------------------
+[CALLKRABBY]
+Name = Call Krabby
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = CallKrabby
+Description = The user calls an allied Krabby. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
 #-------------------------------
 [DEPTHCHARGE]
 Name = Depth Charge
@@ -5494,6 +5527,17 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user slows the target's mind with a psychically infused blow. This has a 30% chance to frostbite.
 Animation = ICEPUNCH
+#-------------------------------
+[CALLSOLOSIS]
+Name = Call Solosis
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = CallSolosis
+Description = The user calls an allied Solosis. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
 #-------------------------------
 [CENSOR]
 Name = Censor

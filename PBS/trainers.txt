@@ -1542,7 +1542,7 @@ Pokemon = DREDNAW,28
     AbilityIndex = 1 # Trapper
     Item = SITRUSBERRY
 Pokemon = PORYGON2,28
-    Moves = SWIFT,HEX,NUMB,SIGNALBEAM
+    Moves = SWIFT,NUMB,SIGNALBEAM
     AbilityIndex = 0 # Realist
 #-------------------------------
 [CLOWN,Klemens]
@@ -2022,7 +2022,7 @@ Pokemon = SHIFTRY,37
     Moves = COLDFRONT,DARKPULSE,MAGICALLEAF,SCHEME
     AbilityIndex = 1 # Gale Force
 Pokemon = PORYGONZ,38
-    Moves = CRITICALERROR,TRIATTACK,HEX,NUMB
+    Moves = CRITICALERROR,TRIATTACK,NUMB
     AbilityIndex = 0 # Realist
     Item = SITRUSBERRY
 #-------------------------------
@@ -5034,7 +5034,7 @@ Pokemon = RATTATA,10
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
 Pokemon = PORYGONZ,55
-    Moves = STELLARATE,CRITICALERROR,PHANTOMGATE,ICEBEAM
+    Moves = STELLARATE,CRITICALERROR,ICEBEAM
     AbilityIndex = 0 # Realist
 Pokemon = HAXORUS,55
     Moves = CRUELTY,DRAGONDANCE,POISONJAB,XSCISSOR
@@ -5264,7 +5264,7 @@ Pokemon = RATTATA,10
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
 Pokemon = PORYGONZ,65
-    Moves = FACADE,CRITICALERROR,PHANTOMGATE,ICEBEAM
+    Moves = FACADE,CRITICALERROR,ICEBEAM
     AbilityIndex = 0 # Realist
 Pokemon = HAXORUS,65
     Moves = CRUELTY,DRAGONDANCE,POISONJAB,XSCISSOR
@@ -6291,7 +6291,7 @@ Pokemon = FORRETRESS,70
     Moves = SWARMBURST,GYROBALL,LATCHON,VOLTSWITCH
     AbilityIndex = 0 # Natural Cure
 Pokemon = PORYGONZ,70
-    Moves = TRIATTACK,PHANTOMGATE,PSYCHIC,ICEBEAM
+    Moves = TRIATTACK,PSYCHIC,ICEBEAM
     AbilityIndex = 0 # Realist
 #-------------------------------
 [ANOTHERPOSSIBLEALESSA,Alessa,1]
@@ -6975,7 +6975,7 @@ Pokemon = RATTATA,10
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,15,0,20,15
 Pokemon = PORYGONZ,55
-    Moves = FACADE,CRITICALERROR,PHANTOMGATE,ICEBEAM
+    Moves = FACADE,CRITICALERROR,ICEBEAM
     AbilityIndex = 0 # Realist
 Pokemon = HAXORUS,55
     Moves = CRUELTY,DRAGONDANCE,POISONJAB,XSCISSOR
@@ -8575,7 +8575,7 @@ Pokemon = MMUSHARNA,70
     AbilityIndex = 1 # Fatigued
     Item = CHESTOBERRY
 Pokemon = PORYGONZ,70
-    Moves = TRIATTACK,DISCHARGE,HEX,NUMB
+    Moves = TRIATTACK,DISCHARGE,NUMB
     AbilityIndex = 1 # Adapted
 Pokemon = INCINEROAR,70
     Moves = SUBMISSION,KNOCKOFF,BLAZEKICK,BULKUP

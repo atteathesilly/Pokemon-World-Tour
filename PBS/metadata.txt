@@ -194,6 +194,12 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[029]
+# Kavetown Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
