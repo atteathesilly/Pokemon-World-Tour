@@ -12892,7 +12892,7 @@ StepsToHatch = 4080
 Height = 1.7
 Weight = 260.0
 Kind = Compressed
-Pokedex = In Makyan myth, they were born from meteors that fell when the moon was split by an angry god. Their unfathomably dense armor deflects most anything.
+Pokedex = This hardy Pokémon can often be found on construction sites and in mines, working alongside people and Copperajah.
 Generation = 5
 WildItemUncommon = HEATROCK
 #-------------------------------
