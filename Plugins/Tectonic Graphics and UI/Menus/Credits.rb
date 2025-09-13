@@ -116,6 +116,9 @@ kyledove
 Various free to use sprites
 deoxysacid, magneclair
 
+Mega Malamar Sprites
+sopita_yorita
+
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
 Neo-Spriteman<s>Vanilla Sunshine
@@ -135,9 +138,6 @@ Azria<s>Twitch
 
 Reborn Icons
 smeargletail<s>ARandomTalkingBush
-
-Making the game take longer to make
-kyledove
 
 Reborn Move Animations
 Smeargletail<s>Mde2001

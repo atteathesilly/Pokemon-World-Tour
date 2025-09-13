@@ -155,3 +155,18 @@ Mud,20
     20,NOSEPASS,16,18
     20,ROGGENROLA,16,18
     20,TEDDIURSA,16,18
+#-------------------------------
+[032] # Fossil Maniac's Room
+Special
+    1,AERODACTYL,15
+    1,AMAURA,15
+    1,ANORITH,15
+    1,ARCHEN,15
+    1,CRANIDOS,15
+    1,FURRET,15
+    1,KABUTO,15
+    1,LILEEP,15
+    1,OMANYTE,15
+    1,SHIELDON,15
+    1,TIRTOUGA,15
+    1,TYRUNT,15

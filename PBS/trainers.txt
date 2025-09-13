@@ -334,6 +334,20 @@ Pokemon = HZORUA,19
 Pokemon = BRONZOR,19
     AbilityIndex = 0 # Levitate
 #-------------------------------
+[WANDERER,Mirora B.]
+Pokemon = CRVOLTORB,18
+    Moves = CAPOEIRA,SMOLDERRAVE,SHINESHOT,ROCKOUT
+    AbilityIndex = 0 # Disco Lights
+Pokemon = TYRUNT,19
+    Moves = GRANITEHEAD,DRAGONTAIL,CHARM
+    AbilityIndex = 0 # Wrath Instinct
+Pokemon = LOTAD,19
+    Moves = MEGADRAIN,BUBBLEBEAM,FAKEOUT
+    AbilityIndex = 0 # Fiesta
+Pokemon = SANDYGAST,19
+    Moves = DUSTDEVIL,OMINOUSWIND,ROUND,IRONDEFENSE
+    AbilityIndex = 0 # Grit
+#-------------------------------
 [LEADER_Eko,Eko]
 Policies = EKO
 Flags = NoPerfect

@@ -200,6 +200,25 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[030]
+# Kavetown Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 28,17,23
+#-------------------------------
+[031]
+# Kavetown Kafe
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[032]
+# Fossil Maniac's Room
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
