@@ -69,3 +69,13 @@ class PokeBattle_Move_SummonStage1Helpers < PokeBattle_Move
         return # No animation
     end
 end
+#===============================================================================
+# Summon Ludicolo
+#===============================================================================
+class PokeBattle_Move_CallLudicolo < PokeBattle_Move
+    include EmpoweredMove
+
+    def pbEffectGeneral(user)
+        summonAvatar(user, :LUDICOLO, _INTL("{1} joins with an ally to dance!", user.pbThis))
+    end
+end

@@ -1528,7 +1528,7 @@ Pokemon = NOIVERN,70
     EV = 10,20,0,20,20,0
 Pokemon = ALAKAZAM,70
     Moves = MOONBLAST,PSYCHIC,TERRAFORM,ECLIPSE
-    AbilityIndex = 0 # Warping Effect
+    AbilityIndex = 0 # Magic Mastery
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0

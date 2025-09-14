@@ -60,6 +60,12 @@ Moves1 = CLAMP,METALCLAW,RAKE
 Turns = 1
 HPMult = 2.0
 #-------------------------------
+[LUDICOLO]
+Ability = FIESTA
+Moves1 = SNIPESHOT,GIGADRAIN,DREAMDANCE
+Turns = 1
+HPMult = 2.0
+#-------------------------------
 [SOLOSIS]
 Ability = JUGGERNAUT
 Moves1 = PSYBEAM,SLUDGE,SHOCKWAVE

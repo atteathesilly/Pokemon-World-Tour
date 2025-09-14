@@ -277,6 +277,11 @@ Description = Upon entry, consumes scattered coins to heal for 1/10th the amount
 Name = Challenger
 Description = Immune to Fighting-type moves, and raises Attack and Sp. Atk if hit by one.
 #-------------------------------
+[CHAMPDIFFERENCE]
+Name = Champ Difference
+Description = After knocking out a Pokémon with Cross Chop, transforms into its Champion form.
+Flags = Immutable
+#-------------------------------
 [CHILLEDBODY]
 Name = Chilled Body
 Description = Physical moves against the Pokémon have a 30% chance to frostbite the attacker.
@@ -1175,6 +1180,11 @@ Flags = MoonglowSynergy
 Name = Maestro
 Description = The Pokémon's Speed is doubled while using Sound-based moves.
 #-------------------------------
+[MAGICMASTERY]
+Name = Magic Mastery
+Description = After knocking out a Pokémon with Psychic, transforms into its Hocus form.
+Flags = Immutable
+#-------------------------------
 [MAGICSHIELD]
 Name = Magic Shield
 Description = Negates enemy status moves that target the Pokémon or create hazards around it.
@@ -1610,6 +1620,10 @@ Description = Heals 1/8th of its max HP each turn during sandstorm.
 Name = Rock Climber
 Description = Immune to Rock-type moves and to Stealth Rock, and raises Speed whenever one would hit it.
 #-------------------------------
+[ROCKSMASHER]
+Name = Rock Smasher
+Description = Immune to Rock-type moves, and raises Attack and Sp. Atk when hit by one.
+#-------------------------------
 [ROOTED]
 Name = Rooted
 Description = Gets 50% more healing from all sources.
@@ -1846,6 +1860,10 @@ Description = Leaves two layers of spikes after it self-destructs.
 [SPINTENSITY]
 Name = Spintensity
 Description = Speed is raised each turn. Speed is reset when hit, but the attacker takes 1/8th HP damage for each step lost.
+#-------------------------------
+[SPOONFED]
+Name = Spoon Fed
+Description = Immune to Steel-type moves, and raises Attack and Sp. Atk when hit by one.
 #-------------------------------
 [STABILITY]
 Name = Stability

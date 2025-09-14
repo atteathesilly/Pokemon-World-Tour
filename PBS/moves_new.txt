@@ -4627,6 +4627,18 @@ FunctionCode = ReviveGrassTypePartyMemberToFullHP
 Description = Restores a fainted Grass-type party member to full HP. Only one use per battle.
 Animation = GRASSYTERRAIN
 #-------------------------------
+[CALLLUDICOLO]
+Name = Call Dance Partner
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = CallLudicolo
+Flags = Dance
+Description = The user calls an allied Ludicolo. Fails if there are 3 Pokémon on this side already.
+Animation = TEETERDANCE
+#-------------------------------
 [CLASSICALPHYSICS]
 Name = Classical Physics
 Type = GRASS

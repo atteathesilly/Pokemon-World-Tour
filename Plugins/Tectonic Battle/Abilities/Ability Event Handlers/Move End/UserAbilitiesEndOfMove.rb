@@ -91,6 +91,36 @@ BattleHandlers::UserAbilityEndOfMove.add(:CITYRAZER,
   }
 )
 
+BattleHandlers::UserAbilityEndOfMove.add(:CHAMPDIFFERENCE,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+      next unless user.species == :MACHAMP
+      next unless user.form == 0
+      next unless move.id == :CROSSCHOP
+      next if battle.pbAllFainted?(user.idxOpposingSide)
+      numFainted = 0
+      targets.each { |b| numFainted += 1 if b.damageState.fainted }
+      next if numFainted == 0
+      battle.pbShowAbilitySplash(user, ability)
+      user.pbChangeForm(1, _INTL("{1}'s fighting spirit has grown too much!", user.pbThis))
+      battle.pbHideAbilitySplash(user)
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:MAGICMASTERY,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+      next unless user.species == :ALAKAZAM
+      next unless user.form == 0
+      next unless move.id == :PSYCHIC
+      next if battle.pbAllFainted?(user.idxOpposingSide)
+      numFainted = 0
+      targets.each { |b| numFainted += 1 if b.damageState.fainted }
+      next if numFainted == 0
+      battle.pbShowAbilitySplash(user, ability)
+      user.pbChangeForm(1, _INTL("{1}'s mind has become overpowering!", user.pbThis))
+      battle.pbHideAbilitySplash(user)
+  }
+)
+
 BattleHandlers::UserAbilityEndOfMove.add(:VICTORYMOLT,
   proc { |ability, user, targets, _move, battle, _switchedBattlers|
       next if battle.pbAllFainted?(user.idxOpposingSide)

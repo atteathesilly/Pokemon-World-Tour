@@ -11,6 +11,18 @@ BattleHandlers::MoveImmunityTargetAbility.add(:SAPSIPPER,
   }
 )
 
+BattleHandlers::MoveImmunityTargetAbility.add(:SPOONFED,
+  proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
+      next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :STEEL, ATTACKING_STATS_1, nil, battle, showMessages, aiCheck)
+  }
+)
+
+BattleHandlers::MoveImmunityTargetAbility.add(:ROCKSMASHER,
+  proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
+      next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :ROCK, ATTACKING_STATS_1, nil, battle, showMessages, aiCheck)
+  }
+)
+
 BattleHandlers::MoveImmunityTargetAbility.add(:AERODYNAMIC,
   proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
       next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :FLYING, :SPEED, 1, battle, showMessages, aiCheck)
