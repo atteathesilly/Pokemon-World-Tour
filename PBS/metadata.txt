@@ -219,6 +219,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[033]
+# Krusty Gatehouse
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

@@ -83,8 +83,8 @@ BallHandlers::ModifyCatchRate.add(:LEVELBALL, proc { |_ball, catchRate, battle, 
 
 BallHandlers::ModifyCatchRate.add(:LUREBALL, proc { |_ball, catchRate, _battle, _battler, _ultraBeast|
     multiplier = 5
-    catchRate *= multiplier if GameData::EncounterType.get($PokemonTemp.encounterType).type == :fishing
-    next [catchRate, 255].min
+    catchRate *= multiplier if battler.pbHasType?(:WATER)
+    next catchRate
 })
 
 BallHandlers::ModifyCatchRate.add(:HEAVYBALL, proc { |_ball, catchRate, _battle, battler, _ultraBeast|

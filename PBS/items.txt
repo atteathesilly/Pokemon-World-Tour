@@ -1521,7 +1521,7 @@ NamePlural = Master Balls
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,NoBallSwap
+Flags = PokeBall,NoBallSwap
 Description = The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail.
 #-------------------------------
 [RADIANTBALL]
@@ -1530,7 +1530,7 @@ NamePlural = Radiant Balls
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,NoBallSwap
+Flags = PokeBall,NoBallSwap
 Description = A ball with a mythical quality. It will catch any wild Pokémon without fail, and turn that Pokémon shiny.
 #-------------------------------
 [ULTRABALL]
@@ -1539,7 +1539,7 @@ NamePlural = Ultra Balls
 Pocket = 3
 Price = 800
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = An ultra-performance Ball with 2x the strength of a regular ball.
 #-------------------------------
 [GREATBALL]
@@ -1548,7 +1548,7 @@ NamePlural = Great Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A good, high-performance Ball with 1.5x strength compared to a regular ball.
 #-------------------------------
 [POKEBALL]
@@ -1557,7 +1557,7 @@ NamePlural = Poké Balls
 Pocket = 3
 Price = 200
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system.
 #-------------------------------
 [SAFARIBALL]
@@ -1566,7 +1566,7 @@ NamePlural = Safari Balls
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A special Poké Ball that is used only in the Safari Zone. It is decorated in a camouflage pattern.
 #-------------------------------
 [SPORTBALL]
@@ -1575,7 +1575,7 @@ NamePlural = Sport Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A special Poké Ball for the Bug-Catching Contest.
 #-------------------------------
 [NESTBALL]
@@ -1584,7 +1584,7 @@ NamePlural = Nest Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat different Poké Ball that works better the lower the Pokémon's level is below your level cap.
 #-------------------------------
 [REPEATBALL]
@@ -1593,7 +1593,7 @@ NamePlural = Repeat Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat different Poké Ball that works at 3.5x strength on Pokémon species that were previously caught.
 #-------------------------------
 [TIMERBALL]
@@ -1602,7 +1602,7 @@ NamePlural = Timer Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat different Ball that becomes up to 4x better the more turns there are in a battle.
 #-------------------------------
 [LUXURYBALL]
@@ -1611,7 +1611,7 @@ NamePlural = Luxury Balls
 Pocket = 3
 Price = 800
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A comfortable Poké Ball that makes a caught wild Pokémon gain happiness twice as quickly.
 #-------------------------------
 [PREMIERBALL]
@@ -1620,7 +1620,7 @@ NamePlural = Premier Balls
 Pocket = 3
 Price = 20
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort.
 #-------------------------------
 [HEALBALL]
@@ -1629,7 +1629,7 @@ NamePlural = Heal Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem.
 #-------------------------------
 [QUICKBALL]
@@ -1638,7 +1638,7 @@ NamePlural = Quick Balls
 Pocket = 3
 Price = 800
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat different Poké Ball which has 3x strength on the first turn of a wild encounter.
 #-------------------------------
 [CHERISHBALL]
@@ -1647,7 +1647,7 @@ NamePlural = Cherish Balls
 Pocket = 3
 Price = 800
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage,NoBallSwap
+Flags = PokeBall,SkipPocketMessage,NoBallSwap
 Description = A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort.
 #-------------------------------
 [FRIENDBALL]
@@ -1656,7 +1656,7 @@ NamePlural = Friend Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A Poké Ball that makes caught Pokémon more friendly.
 #-------------------------------
 [DREAMBALL]
@@ -1665,7 +1665,7 @@ NamePlural = Dream Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A somewhat different Poké Ball that makes it easier to catch wild Pokémon while they're asleep.
 #-------------------------------
 [BEASTBALL]
@@ -1674,7 +1674,7 @@ NamePlural = Beast Balls
 Pocket = 3
 Price = 1000
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage,NoBallSwap
+Flags = PokeBall,SkipPocketMessage,NoBallSwap
 Description = A special Poké Ball with 5x strength against Ultra Beasts.
 #-------------------------------
 [SLICEBALL]
@@ -1683,7 +1683,7 @@ NamePlural = Slice Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A sharp Poké Ball that damages the Pokémon for 1/4th of its HP if it fails to catch it.
 #-------------------------------
 [LEECHBALL]
@@ -1692,7 +1692,7 @@ NamePlural = Leech Balls
 Pocket = 3
 Price = 400
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A parasitic Poké Ball that leeches the Pokémon if it fails to catch it.
 #-------------------------------
 [POTIONBALL]
@@ -1701,7 +1701,7 @@ NamePlural = Potion Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A medicinal Poké Ball that heals the Pokémon for 1/4th of its HP if it fails to catch it.
 #-------------------------------
 [DISABLEBALL]
@@ -1710,7 +1710,7 @@ NamePlural = Disable Balls
 Pocket = 3
 Price = 300
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage
+Flags = PokeBall,SkipPocketMessage
 Description = A mentally disrupting Poké Ball that disables the Pokémon's last used move for 10 turns if it fails to catch it.
 #-------------------------------
 [ROYALBALL]
@@ -1719,8 +1719,89 @@ NamePlural = Royal Balls
 Pocket = 3
 Price = 1000
 BattleUse = OnFoe
-Flags = PokeBall,SnagBall,SkipPocketMessage,NoBallSwap
+Flags = PokeBall,SkipPocketMessage,NoBallSwap
 Description = A ball whose striking appearance makes it popular despite its poor performance.
+#-------------------------------
+[NETBALL]
+Name = Net Ball
+NamePlural = Net Balls
+Pocket = 3
+Price = 400
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A somewhat different Poké Ball that works at 3.5x strength on Water- and Bug-type Pokémon.
+#-------------------------------
+[DIVEBALL]
+Name = Dive Ball
+NamePlural = Dive Balls
+Pocket = 3
+Price = 400
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A somewhat different Poké Ball that works at a 3.5x strength on Pokémon that live underwater.
+#-------------------------------
+[DUSKBALL]
+Name = Dusk Ball
+NamePlural = Dusk Balls
+Pocket = 3
+Price = 400
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A somewhat different Poké Ball which has 3x strength at night or in dark places like caves.
+#-------------------------------
+[FASTBALL]
+Name = Fast Ball
+NamePlural = Fast Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball with 4x strength against Pokémon species with 100 or more base Speed.
+#-------------------------------
+[LEVELBALL]
+Name = Level Ball
+NamePlural = Level Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball which is purely cosmetic.
+#-------------------------------
+[LUREBALL]
+Name = Lure Ball
+NamePlural = Lure Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball with 5x strength against Water-type Pokemon
+#-------------------------------
+[HEAVYBALL]
+Name = Heavy Ball
+NamePlural = Heavy Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball whose strength varies with the Pokémon's weight.
+#-------------------------------
+[LOVEBALL]
+Name = Love Ball
+NamePlural = Love Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball with 8x strength against Pokémon that are the opposite gender, but same species, as yours.
+#-------------------------------
+[MOONBALL]
+Name = Moon Ball
+NamePlural = Moon Balls
+Pocket = 3
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall
+Description = A Poké Ball with 4x strength against Pokémon evolve with or from using a Moon Stone.
 #-------------------------------
 [CHERIBERRY]
 Name = Cheri Berry
@@ -2700,7 +2781,7 @@ NamePlural = Ball Launchers
 Pocket = 3
 Price = 0
 BattleUse = OnFoe
-Flags = KeyItem,PokeBall,SnagBall
+Flags = KeyItem,PokeBall
 Description = A device which creates then launches regular Poké Balls, never running out.
 #-------------------------------
 [PERFORMANCEANALYZER]

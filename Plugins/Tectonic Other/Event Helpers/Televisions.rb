@@ -12,19 +12,13 @@ def displayNewsProgram(map_id = -1)
 end
 
 WEATHER_REPORT_MAPS = {
-    56 => _INTL("Novo Town"),
-    217 => _INTL("Sweetrock Harbor"),
-    32 => _INTL("Prizca"),
-    187 => _INTL("Prizca"),
-    126 => _INTL("Casaba Villa"),
-    301 => _INTL("County Park"),
-    37 => _INTL("Svait"),
-    258 => _INTL("Whitebloom Town"),
-    186 => _INTL("Frostflow Farms"),
-    6 => _INTL("LuxTech Campus"),
-    130 => _INTL("Canal Desert"),
-    59 => _INTL("Feebas' Fin"),
-    53 => _INTL("The Shelf"),
+    15 => _INTL("Hoenn"),
+    19 => _INTL("Carnie"),
+    13 => _INTL("Mittigan"),
+    6 => _INTL("Oiho"),
+    24 => _INTL("Makya"),
+    27 => _INTL("Tumblecube Island"),
+    11 => _INTL("Holon")
 }
 
 def displayInterestingWeatherReport()
