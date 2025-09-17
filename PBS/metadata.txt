@@ -220,10 +220,20 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [033]
-# Krusty Gatehouse
+# Krusty-Kefka Gatehouse
 Outdoor = false
 ShowArea = false
 Bicycle = true
+#-------------------------------
+[034]
+# Kefka Highway
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
 #-------------------------------
 [147]
 # PokEstate

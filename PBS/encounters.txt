@@ -138,9 +138,9 @@ DarkCave,20
     20,CRVOLTORB,16,18
     20,DEINO,16,18
     20,DUNSPARCE,16,18
+    20,ROCKRUFF,16,18
     20,ROLYCOLY,16,18
     20,SANDSHREW,16,18
-    20,VAROOM,16,18
 #-------------------------------
 [028] # Krusty Kavetown
 LandSparse,20
@@ -170,3 +170,17 @@ Special
     1,SHIELDON,15
     1,TIRTOUGA,15
     1,TYRUNT,15
+#-------------------------------
+[034] # Kefka Highway
+LandSparse,20
+    20,ABRA,16,18
+    20,BLITZLE,16,18
+    20,MACHOP,16,18
+    20,RUFFLET,16,18
+    20,SKORUPI,16,18
+DarkCave,20
+    20,GEODUDE,16,18
+    20,HIPPOPOTAS,16,18
+    20,MEDITITE,16,18
+    20,VAROOM,16,18
+    20,VULLABY,16,18

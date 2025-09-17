@@ -2,7 +2,7 @@ def playWildEXPTutorial
     $PokemonGlobal.noWildEXPTutorialized = true
     tutorialMessages = 
     [
-        _INTL("Wild Pokemon don't give experience in Pokemon Tectonic."),
+        _INTL("Wild Pokemon don't give experience in Pokemon World Tour."),
         _INTL("Don't worry, there's an abundance of experience to gain in other ways."),
         _INTL("If you encounter a Pokemon you don't want, run away. It's guaranteed!")
     ]
@@ -75,7 +75,7 @@ def playTypeChartChangesTutorial
     $PokemonGlobal.typeChartChangesTutorialized = true
     tutorialMessages = 
     [
-        _INTL("Many type matchups were changed in Pokemon Tectonic."),
+        _INTL("Many type matchups were changed in Pokemon World Tour."),
         _INTL("To strengthen some types, we had to weaken others."),
         _INTL("Check the Masterdex or the Battle Guide to learn these changes.")
     ]

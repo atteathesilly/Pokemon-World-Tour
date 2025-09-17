@@ -6936,6 +6936,12 @@ FrontSprite = 0,18
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[WOCHIEN]
+BackSprite = 0,0
+FrontSprite = -3,16
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [WOOBAT]
 BackSprite = 0,30
 FrontSprite = 0,23
