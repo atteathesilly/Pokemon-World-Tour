@@ -348,6 +348,22 @@ Pokemon = SANDYGAST,19
     Moves = DUSTDEVIL,OMINOUSWIND,ROUND,IRONDEFENSE
     AbilityIndex = 0 # Grit
 #-------------------------------
+[MOTORCYCLIST,Charles]
+Pokemon = SHELMET,18
+    Moves = YAWN,SIGNALBEAM,CONCENTRATE,TEASE
+    AbilityIndex = 1 # Stainless Steel
+Pokemon = LITTEN,19
+    Moves = FAKEOUT,FIREFANG,BRUTALSWING
+    AbilityIndex = 0 # Intimidate
+Pokemon = BLITZLE,19
+    Moves = SPARK,FLAMECHARGE,SCUFFLE,NUMB
+    AbilityIndex = 0 # Sap Sipper
+Pokemon = BASCULIN,19
+    Form = 1 # Blue-Striped Form
+    Gender = female
+    Moves = SHADOWCLAW,SNAP,SHIVER
+    AbilityIndex = 0 # Juggernaut
+#-------------------------------
 [LEADER_Eko,Eko]
 Policies = EKO
 Flags = NoPerfect

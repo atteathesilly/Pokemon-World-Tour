@@ -257,6 +257,9 @@ Atteathesilly
 Legends ZA Hex Maniac
 CamiOfTargon
 
+Beta Testing World Tour
+Lalunesarts
+
 Spanish PokeDex Translations
 Everson
 
