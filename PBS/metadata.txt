@@ -106,7 +106,7 @@ Bicycle = false
 HealingSpot = 13,28,22
 #-------------------------------
 [015]
-# Starting town
+# Starter town
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -234,6 +234,24 @@ Temperature = Hot
 Humidity = Dry
 BattleBack = sand
 Environment = Sand
+#-------------------------------
+[035]
+# Kefka Highway Offshoot
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
+#-------------------------------
+[036]
+# Titanic Tomb
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
 #-------------------------------
 [147]
 # PokEstate

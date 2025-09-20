@@ -58,7 +58,7 @@ Puddle,20
 Special
     1,BOUNSWEET,15
 #-------------------------------
-[015] # Starting town
+[015] # Starter town
 Land,20
     20,NIDORANfE,9,11
     20,NIDORANmA,9,11
