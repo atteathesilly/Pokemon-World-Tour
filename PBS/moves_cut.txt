@@ -1873,7 +1873,7 @@ Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
+FunctionCode = Invalid
 Description = The user vanishes somewhere, charging and becoming invulnerable, then strikes on the second turn. Skips and destroys protections.
 #-------------------------------
 [POLTERGEIST]

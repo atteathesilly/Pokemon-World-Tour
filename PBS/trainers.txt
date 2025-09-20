@@ -5137,7 +5137,7 @@ Pokemon = GOTHITELLE,55
     Moves = CORECOLLAPSE,MASSDESTRUCTION,SWEETSELENE,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,55
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 Pokemon = CORVIKNIGHT,55
@@ -5367,7 +5367,7 @@ Pokemon = GOTHITELLE,65
     Moves = CORECOLLAPSE,MASSDESTRUCTION,SWEETSELENE,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,65
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 Pokemon = CORVIKNIGHT,65
@@ -5947,7 +5947,7 @@ Pokemon = PERSIAN,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
 Pokemon = MIMIKYU,70
-    Moves = SHADOWSNEAK,SWORDSDANCE,TANTRUM,PHANTOMFORCE
+    Moves = SHADOWSNEAK,SWORDSDANCE,TANTRUM,WAILINGBLOW
     AbilityIndex = 0 # Disguise
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
@@ -6473,7 +6473,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,FUTURESIGHT,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
@@ -6700,7 +6700,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,FUTURESIGHT,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
@@ -7092,7 +7092,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,PSYCHIC,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
