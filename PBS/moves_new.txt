@@ -3010,6 +3010,18 @@ Flags = CanProtect
 Description = The user buries the target with somber force. Then, this move is disabled.
 Animation = SHADOWPUNCH
 #-------------------------------
+[SOULDRAIN]
+Name = Soul Drain
+Type = GHOST
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDoneOverheal
+Flags = CanProtect
+Description = The user drains the target's soul. The user's HP is restored by 50% of the damage dealt. This can overheal.
+#-------------------------------
 [SPECTRALTONGUE]
 Name = Spectral Tongue
 Type = GHOST
