@@ -1,9 +1,9 @@
 # Summon Krabby
-class PokeBattle_Move_CallKrabby < PokeBattle_Move
+class PokeBattle_Move_CallMankey < PokeBattle_Move
     include EmpoweredMove
 
     def pbEffectGeneral(user)
-        summonAvatar(user, :KRABBY, _INTL("{1} joins with an ally!", user.pbThis))
+        summonAvatar(user, :MANKEY, _INTL("{1} joins with an ally!", user.pbThis))
     end
 end
 #===============================================================================
@@ -35,7 +35,7 @@ class PokeBattle_Move_SummonStage1Helpers < PokeBattle_Move
     def initialize(battle, move)
         super
         @validMoves = %i[
-            CALLKRABBY
+            CALLMANKEY
             CALLSOLOSIS
             CALLROLYCOLY
         ]

@@ -54,9 +54,9 @@ Moves1 = BRINE
 Turns = 1
 HPMult = 2.0
 #-------------------------------
-[KRABBY]
-Ability = BOTTOMFEEDER
-Moves1 = CLAMP,METALCLAW,RAKE
+[MANKEY]
+Ability = DEFIANT
+Moves1 = ASTONISH,KINDLE,ARMTHRUST
 Turns = 1
 HPMult = 2.0
 #-------------------------------
@@ -84,12 +84,11 @@ Moves1 = CLASH,VALORBOLT,PRIMEVALHAIL
 Moves2 = POWDERSNOW
 HPMult = 3.0
 #-------------------------------
-[BIDOOF]
-Ability = NORMALIZE
-Moves1 = BODYSLAM,PRIMEVALCALMMIND
-Moves2 = ZENHEADBUTT
-Turns = 1
-HPMult = 10.0
+[MAWILE]
+Ability = PUREFORCE
+Moves1 = METALCLAW,MISHAP,INNOCENTMASQUE,PRIMEVALHOWL
+Moves2 = BITE,INNOCENTMASQUE
+HPMult = 4.0
 #-------------------------------
 [ZERAORA]
 Ability = HYBRIDFIGHTER

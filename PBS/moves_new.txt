@@ -759,6 +759,17 @@ FunctionCode = UserAndAlliesTakeHalfDamageThisTurn
 Flags = CanSnatch
 Description = The user and its allies take 50% less attack damage this turn. Always fails if used in succession.
 #-------------------------------
+[CALLMANKEY]
+Name = Call Mankey
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = CallMankey
+Description = The user calls an allied Mankey. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
+#-------------------------------
 [CAPOEIRA]
 Name = Capoeira
 Type = FIGHTING
@@ -4105,17 +4116,6 @@ FunctionCode = LowerTargetSpd1
 Flags = CanProtect
 EffectChance = 20
 Description = A blast of bubbles is shot at the target. It has a 20% chance to lower the target's Speed stat.
-#-------------------------------
-[CALLKRABBY]
-Name = Call Krabby
-Type = WATER
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = User
-FunctionCode = CallKrabby
-Description = The user calls an allied Krabby. Fails if there are 3 Pokémon on this side already.
-Animation = UPROAR
 #-------------------------------
 [DEPTHCHARGE]
 Name = Depth Charge
