@@ -246,7 +246,23 @@ BattleBack = sand
 Environment = Sand
 #-------------------------------
 [036]
-# Titanic Tomb
+# Titanic Tomb Entrance
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[037]
+# Titanic Tomb Stone Area
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[038]
+# Titanic Tomb Ice Area
 Outdoor = false
 ShowArea = true
 Bicycle = true
