@@ -256,7 +256,7 @@ Environment = Cave
 [037]
 # Titanic Tomb Stone Area
 Outdoor = false
-ShowArea = true
+ShowArea = false
 Bicycle = true
 BattleBack = cave1
 Environment = Cave
@@ -264,7 +264,7 @@ Environment = Cave
 [038]
 # Titanic Tomb Ice Area
 Outdoor = false
-ShowArea = true
+ShowArea = false
 Bicycle = true
 BattleBack = cave1
 Environment = Cave
@@ -272,7 +272,7 @@ Environment = Cave
 [039]
 # Titanic Tomb Steel Area
 Outdoor = false
-ShowArea = true
+ShowArea = false
 Bicycle = true
 BattleBack = cave1
 Environment = Cave
@@ -280,9 +280,17 @@ Environment = Cave
 [040]
 # Titanic Tomb Main Area
 Outdoor = false
-ShowArea = true
+ShowArea = false
 Bicycle = true
 BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[041]
+# Lush Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = forest
 Environment = Cave
 #-------------------------------
 [147]

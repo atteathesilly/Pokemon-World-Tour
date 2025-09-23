@@ -184,3 +184,17 @@ DarkCave,20
     20,MEDITITE,16,18
     20,VAROOM,16,18
     20,VULLABY,16,18
+#-------------------------------
+[041] # Lush Cave
+LandSparse,20
+    20,CRSTUFFUL,16,18
+    20,ODDISH,16,18
+    20,PUMPKABOO,16,18
+    20,SEWADDLE,16,18
+    20,TINKATINK,16,18
+Land,20
+    20,BURMY,16,18
+    20,CRSTUFFUL,16,18
+    20,MASCHIFF,16,18
+    20,ROWLET,16,18
+    20,TANGELA,16,18
