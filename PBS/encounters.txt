@@ -185,6 +185,10 @@ DarkCave,20
     20,VAROOM,16,18
     20,VULLABY,16,18
 #-------------------------------
+[039] # Titanic Tomb Steel Area
+Special
+    1,MAWILE,15
+#-------------------------------
 [041] # Lush Cave
 LandSparse,20
     20,CRSTUFFUL,16,18
@@ -198,3 +202,11 @@ Land,20
     20,MASCHIFF,16,18
     20,ROWLET,16,18
     20,TANGELA,16,18
+#-------------------------------
+[042] # Chamber of the Tablets
+Land,20
+    20,CARNIVINE,16,18
+    20,COMFEY,16,18
+    20,SEVIPER,16,18
+    20,TROPIUS,16,18
+    20,ZANGOOSE,16,18

@@ -293,6 +293,14 @@ Bicycle = true
 BattleBack = forest
 Environment = Cave
 #-------------------------------
+[042]
+# Chamber of the Tablets
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

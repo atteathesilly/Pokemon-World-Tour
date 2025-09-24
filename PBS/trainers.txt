@@ -154,100 +154,6 @@ Pokemon = NICKIT,15
     Moves = PILFER,HONECLAWS,QUICKATTACK,ENCORE
     AbilityIndex = 1 # Sentry
 #-------------------------------
-[LEADER_Lambert,Lambert]
-Policies = LAMBERT
-Flags = NoPerfect
-Pokemon = ZORUA,15
-    Moves = HARSHVOICE,GRASSKNOT,SHOUT,EMBER
-    AbilityIndex = 0 # Illusion
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 1,20,10,19,20,0
-Pokemon = PANCHAM,15
-    Moves = SMASH,TAUNT,LEER,BITE
-    AbilityIndex = 1 # Juggernaut
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,10,11,15,10,4
-Pokemon = BINACLE,15
-    Moves = ROCKTHROW,KARATECHOP,RUMBLE,GLARE
-    AbilityIndex = 1 # Steel Absorb
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 18,10,11,0,10,11
-Pokemon = RIOLU,15
-    Name = Sangfroid
-    Gender = female
-    Moves = MAGNETWAVE,NERVEBLOCK,VALORBOLT,VANGUARD
-    AbilityIndex = 1 # Inner Focus
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
-Pokemon = CROAGUNK,15
-    Moves = FAKEOUT,NASTYNIP,KARATECHOP,NERVEBLOCK
-    AbilityIndex = 0 # Prankster
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,10,5,0,10,15
-#-------------------------------
-[LEADER_Lambert,Lambert,1]
-ExtendsVersion = 0
-Policies = CURSE_TORMENTED
-Pokemon = ZORUA,15
-    Item = NORMALGEM
-Pokemon = PANCHAM,15
-    Moves = SMASH,TAUNT,BULKUP,BITE
-Pokemon = BINACLE,15
-    Item = SITRUSBERRY
-Pokemon = RIOLU,15
-    Moves = MAGNETWAVE,SLINGSHOT,VALORBOLT,VANGUARD
-Pokemon = EKANS,15
-    Position = 4
-    Moves = ACID,BITE,GLARE,WIPEOUT
-    AbilityIndex = 0 # Intimidate
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 9,11,10,20,11,0
-Pokemon = CROAGUNK,15
-    Moves = MACHPUNCH,NASTYNIP,KARATECHOP,NERVEBLOCK
-    Item = LUMBERRY
-#-------------------------------
-[POKEMONTRAINER_Yezera,Yezera]
-Policies = YEZERA,METAGAMES_STAT_ITEMS
-Flags = NoPerfect,HideIdentity
-Pokemon = BUNNELBY,17
-    Moves = TREADON,HOP,TACKLE,BABYDOLLEYES
-    AbilityIndex = 1 # Paranoid
-    Item = CADOBERRY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,0,20,20
-Pokemon = SMOOCHUM,17
-    Moves = POWDERSNOW,MINDWAVES,LIGHTSCREEN,FAKETEARS
-    AbilityIndex = 0 # Fascinate
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,0,10,20,0
-Pokemon = JOLTIK,18
-    Moves = LIGHTSHOW,STICKYWEB,DISABLE,THUNDERSHOCK
-    AbilityIndex = 0 # Ocular
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
-Pokemon = NOIBAT,17
-    Moves = BOREALWIND,ABSORB,DEFOG,DRAGONBREATH
-    AbilityIndex = 0 # Terrorize
-    Item = FLYINGGEM
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,0,20,20,0
-#-------------------------------
-[POKEMONTRAINER_Yezera,Yezera,1]
-ExtendsVersion = 0
-Policies = CURSE_PERFECT_LUCK
-Pokemon = LARVESTA,18
-    Moves = EMBER,STRUGGLEBUG,ABSORB,PROTECT
-    AbilityIndex = 0 # Solar Power
-    Item = SITRUSBERRY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 10,20,20,0,20,0
-Pokemon = WHISMUR,17
-    Moves = VALORBOLT,SCREECH,ECHOEDVOICE,SHOUT
-    AbilityIndex = 1 # Loud
-    Item = THROATSPRAY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 0,20,15,0,20,15
-#-------------------------------
 [COLLECTOR2,Raymond]
 Pokemon = IVYSAUR,17
     Moves = RAZORLEAF,POISONIVY,SMOG,GROWTH
@@ -363,6 +269,64 @@ Pokemon = BASCULIN,19
     Gender = female
     Moves = SHADOWCLAW,SNAP,SHIVER
     AbilityIndex = 0 # Juggernaut
+#-------------------------------
+[BLACKBELT2,Jim]
+Pokemon = ELECTABUZZ,22
+    AbilityIndex = 1 # Adrenaline Rush
+Pokemon = SKIDDO,22
+    Moves = ROOTDRIVER,DOUBLEKICK,HOP,MILKDRINK
+    AbilityIndex = 1 # Rock Climber
+Pokemon = AGRAVELER,23
+    Moves = BLUNTFORCE,THUNDERPUNCH,FLAIL
+    AbilityIndex = 0 # Galvanize
+    Item = AIRBALLOON
+Pokemon = TYROGUE,24
+    Moves = FAKEOUT,DIZZYPUNCH,RETREAT,POWERUPPUNCH
+    AbilityIndex = 0 # Energetic
+#-------------------------------
+[BLACKBELT4,Tim]
+Pokemon = MAGMAR,22
+    Moves = FIREPULSE,CLEARSMOG,IGNITE,HOTSHOT
+    AbilityIndex = 1 # Scalding Smoke
+Pokemon = GURDURR,22
+    AbilityIndex = 0 # Expertise
+Pokemon = SPINDA,23
+    AbilityIndex = 0 # Wibble Wobble
+    Item = SITRUSBERRY
+Pokemon = COSPLAYPIKACHU,24
+    Moves = CHARGE,SWIFT,SPARK,AGILITY
+    AbilityIndex = 0 # Extreme Voltage
+#-------------------------------
+[POKEMONRANGER_F,Carmen]
+Pokemon = DRIFLOON,24
+    Moves = HEX,BURNINGJEALOUSY,BOREALWIND
+    AbilityIndex = 1 # Drifting Mist
+Pokemon = AIPOM,25
+    Moves = BULLETSEED,THIEF,FAKEOUT,ARMTHRUST
+    AbilityIndex = 0 # Sticky Fingers
+    Item = MUSCLEBAND
+Pokemon = BANETTE,23
+    Moves = SHADOWCLAW,SLASH,WILLOWISP,BLINDSIDE
+    AbilityIndex = 1 # Razor's Edge
+    Item = SITRUSBERRY
+Pokemon = SEEL,25
+    Moves = AURORABEAM,BRINE,SIGNALBEAM,CHILL
+    AbilityIndex = 0 # Bitter
+#-------------------------------
+[CLOWN,Dimesmart]
+Pokemon = VICTREEBEL,32
+    Moves = AERIALACE,POISONFANG,SNAPTRAP,LEAFBLADE
+    AbilityIndex = 1 # Flytrap
+    Item = SEVENLEAGUEBOOTS
+Pokemon = GMRMIME,32
+    Moves = KINETICGRIP,ICEPUNCH,PIXIEPUNCH,DISABLE
+    AbilityIndex = 0 # Slapstick
+Pokemon = BIBAREL,30
+    Moves = DRAINAGE,HEADBUTT,WHIRLPOOL,DIG
+    AbilityIndex = 1 # Model Worker
+Pokemon = MIGHTYENA,30
+    Moves = MIDNIGHTHUNT,PLANTDOUBT,ASSURANCE,FROLIC
+    AbilityIndex = 1 # Night Stalker
 #-------------------------------
 [LEADER_Eko,Eko]
 Policies = EKO
@@ -3843,19 +3807,6 @@ Pokemon = QUAGSIRE,48
     Moves = WATERFALL,EARTHQUAKE,PLAYROUGH,YAWN
     AbilityIndex = 1 # Water Absorb
     Item = LEFTOVERS
-#-------------------------------
-[CLOWN,Dimesmart]
-Pokemon = MIMIKYU,39
-    Moves = PLAYROUGH,VIMRIPPER,HONECLAWS,SHADOWSNEAK
-    AbilityIndex = 0 # Disguise
-    Item = LIFEORB
-Pokemon = GIGACHU,40
-    Moves = THUNDERBELLY,THUNDERBOLT,NUZZLE,BODYSLAM
-    AbilityIndex = 0 # Rain Dish
-Pokemon = MASQUERAIN,40
-    Moves = BUBBLEBLASTER,BUGBUZZ,BLUSTER
-    AbilityIndex = 0 # Hyper Speed
-    Item = WATERGEM
 #-------------------------------
 [WORKER2,Hugo]
 Pokemon = MACHAMP,44

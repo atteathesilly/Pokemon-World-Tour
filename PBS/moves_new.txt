@@ -5091,20 +5091,6 @@ Flags = CanProtect
 Description = The user surges with electricity. If it deals less than 50% of the target's max health, the user takes the difference as recoil.
 Animation = DISCHARGE
 #-------------------------------
-[COLDPARESIS]
-Name = Cold Paresis
-Type = ELECTRIC
-Category = Physical
-Power = 85
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = Numb
-Flags = CanProtect
-EffectChance = 50
-Description = The user freeze with ice so cold that it has a 50% chance to numb.
-Animation = FREEZESHOCK
-#-------------------------------
 [CURRENTCRASH]
 Name = Current Crash
 Type = ELECTRIC
@@ -6055,6 +6041,20 @@ Flags = CanProtect
 EffectChance = 10
 Description = The user grabs the target in a chilly embrace. It has a 10% chance to frostbite.
 Animation = ICEHAMMER
+#-------------------------------
+[COLDPARESIS]
+Name = Cold Paresis
+Type = ICE
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect
+EffectChance = 50
+Description = The user freezeS with ice so cold that it has a 50% chance to numb.
+Animation = FREEZESHOCK
 #-------------------------------
 [CRYOSLEEP]
 Name = Cryo Sleep
