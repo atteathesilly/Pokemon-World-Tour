@@ -13,6 +13,20 @@ FunctionCode = TargetActsNext
 Flags = Uninvocable
 Description = The user helps the target and makes it use its move right after the user.
 #-------------------------------
+[DIRECLAW]
+Name = Dire Claw
+Type = POISON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Poison
+Flags = CanProtect,CanRandomCrit
+EffectChance = 50
+Description = The user lashes out with its claws. 50% chance to poison. Can random critical hit.
+Animation = CROSSPOISON
+#-------------------------------
 [ASSIST]
 Name = Assist
 Type = NORMAL

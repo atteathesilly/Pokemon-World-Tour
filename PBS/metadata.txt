@@ -301,6 +301,14 @@ Bicycle = true
 BattleBack = forest
 Environment = Cave
 #-------------------------------
+[043]
+# Beppi Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = city
+Environment = None
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

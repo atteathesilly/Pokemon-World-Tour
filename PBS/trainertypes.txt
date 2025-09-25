@@ -1041,7 +1041,7 @@ IntroBGM = MONK
 Name = Motorcyclist
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Heartbreaker Charles
 #-------------------------------
 [NECKBEARD]
 Name = Neckbeard
@@ -1860,13 +1860,13 @@ BattleBGM = Battle eifion
 Name = Kalos Trainer
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Sina and Dexio
 #-------------------------------
 [TRAINERSINA]
 Name = Kalos Trainer
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Sina and Dexio
 #-------------------------------
 [TRAINERTORY]
 Name = Vankyo Trainer
@@ -2061,7 +2061,7 @@ IntroBGM = AROMALADY
 Name = Wanderer
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Mirora
 #-------------------------------
 [WILDPACK]
 Name = Wild Pack
