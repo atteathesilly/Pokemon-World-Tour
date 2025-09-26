@@ -210,3 +210,7 @@ Land,20
     20,SEVIPER,16,18
     20,TROPIUS,16,18
     20,ZANGOOSE,16,18
+#-------------------------------
+[043] # Beppi Town
+Special
+    1,INKAY,15

@@ -309,6 +309,13 @@ Bicycle = true
 BattleBack = city
 Environment = None
 #-------------------------------
+[044]
+# Beppi Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 43,25,30
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
