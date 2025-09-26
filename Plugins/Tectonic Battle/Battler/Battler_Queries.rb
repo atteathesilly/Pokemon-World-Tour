@@ -474,6 +474,7 @@ class PokeBattle_Battler
 
     def canHeal?(overheal = false)
         return false if fainted?
+        overheal = overheal || forceOverheal?
         if overheal
             return false if @hp >= @totalhp * 2
         else
@@ -991,6 +992,13 @@ class PokeBattle_Battler
             return true
         end
         return false
+    end
+
+    def forceOverheal?
+        #Field of Life
+        if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
+            return true
+        end
     end
 
     def moveOutcomePredictor

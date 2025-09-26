@@ -657,6 +657,10 @@ Flags = RainstormSynergy
 Name = Field of Death
 Description = While the Pokémon is on the field, all attacks drain 30% HP.
 #-------------------------------
+[FIELDOFLIFE]
+Name = Field of Life
+Description = While the Pokémon is on the field, all healing is boosted by 20% and can overheal.
+#-------------------------------
 [FIERYGLOW]
 Name = Fiery Glow
 Description = The Pokémon is also Fire-type.

@@ -277,7 +277,7 @@ class PokeBattle_Move_HealTargetHalfOfTotalHP < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.hp == target.totalhp && !target.forceOverheal?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -373,7 +373,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         failed = true
         @battle.eachSameSideBattler(user) do |b|
-            next if b.hp == b.totalhp
+            next if b.hp == b.totalhp && !b.forceOverheal?
             failed = false
             break
         end
@@ -385,7 +385,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.hp == target.totalhp && !target.forceOverheal?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -417,7 +417,7 @@ class PokeBattle_Move_HealTargetDependingOnMoonglow < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.hp == target.totalhp && !target.forceOverheal?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
