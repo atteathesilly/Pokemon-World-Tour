@@ -277,7 +277,7 @@ class PokeBattle_Move_HealTargetHalfOfTotalHP < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp && !target.forceOverheal?
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -373,7 +373,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         failed = true
         @battle.eachSameSideBattler(user) do |b|
-            next if b.hp == b.totalhp && !b.forceOverheal?
+            next if b.healthCapped?
             failed = false
             break
         end
@@ -385,7 +385,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp && !target.forceOverheal?
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -417,7 +417,7 @@ class PokeBattle_Move_HealTargetDependingOnMoonglow < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp && !target.forceOverheal?
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -658,12 +658,12 @@ class PokeBattle_Move_ForceUserAndTargetToRest < PokeBattle_Move
     def getEffectScore(user, target)
         score = 0
 
-        unless user.fullHealth?
+        unless user.healthCapped?
             score += user.applyFractionalHealing(1.0, aiCheck: true)
             score -= getSleepEffectScore(nil, user) * 0.45
             score += 45 if user.hasStatusNoSleep?
         end
-        unless target.fullHealth?
+        unless target.healthCapped?
             score -= target.applyFractionalHealing(1.0, aiCheck: true)
             score += getSleepEffectScore(nil, target)
             score -= 45 if target.hasStatusNoSleep?

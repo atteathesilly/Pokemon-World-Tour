@@ -1148,7 +1148,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:HOLIDAYCHEER,
   proc { |ability, battler, battle, aiCheck|
       anyHealing = false
       battle.eachSameSideBattler(battler.index) do |b|
-          next 0 if b.fullHealth?
+          next 0 if b.healthCapped?
           anyHealing = true
       end
       next 0 unless anyHealing

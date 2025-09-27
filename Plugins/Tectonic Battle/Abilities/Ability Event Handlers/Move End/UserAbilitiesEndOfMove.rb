@@ -556,7 +556,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:HYBRIDFIGHTER,
 
       if previousMoveData.kickingMove? && currentMoveData.bitingMove?
         user.showMyAbilitySplash(ability)
-        if user.fullHealth? && !user.forceOverheal?
+        if user.healthCapped?
           battle.pbDisplay(_INTL("{1}'s HP is full!", user.pbThis))
         else
           user.applyFractionalHealing(1.0/4.0)

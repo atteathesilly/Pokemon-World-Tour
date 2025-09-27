@@ -923,7 +923,7 @@ BattleHandlers::TargetAbilityOnHit.add(:QUILLERINSTINCT,
 BattleHandlers::TargetAbilityOnHit.add(:MULTISCALE,
     proc { |ability, user, target, move, _battle, aiCheck, aiNumHits|
         next unless aiCheck
-        next unless target.hp == target.totalhp
+        next unless target.fullHealth?
         next 20 # Value for breaking multiscale
     }
 )

@@ -651,7 +651,7 @@ class PokeBattle_HealingMove < PokeBattle_Move
     def canOverheal?(user); return false; end
 
     def pbMoveFailed?(user, _targets, show_message)
-        if user.fullHealth? && !user.forceOverheal?
+        if user.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", user.pbThis)) if show_message
             return true
         end

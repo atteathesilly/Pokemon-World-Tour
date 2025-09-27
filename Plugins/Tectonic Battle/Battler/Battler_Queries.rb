@@ -484,6 +484,11 @@ class PokeBattle_Battler
         return true
     end
 
+    def healthCapped?
+        return @hp >= @totalhp * 2 if forceOverheal?
+        return fullHealth?
+    end
+
     def movedThisRound?
         return @lastRoundMoved && @lastRoundMoved == @battle.turnCount
     end
