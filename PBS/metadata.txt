@@ -286,7 +286,7 @@ BattleBack = cave1
 Environment = Cave
 #-------------------------------
 [041]
-# Lush Cave
+# Geiru Cave
 Outdoor = false
 ShowArea = true
 Bicycle = true
@@ -315,6 +315,18 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 HealingSpot = 43,25,30
+#-------------------------------
+[045]
+# Beppi Town Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[046]
+# Type Boosting Items Shop
+Outdoor = false
+ShowArea = false
+Bicycle = false
 #-------------------------------
 [147]
 # PokEstate

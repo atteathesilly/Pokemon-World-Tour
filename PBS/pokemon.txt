@@ -14325,7 +14325,7 @@ Kind = Water Bird
 Pokedex = They are better at swimming than flying, and they happily eat their favorite food, peat moss, as they dive underwater.
 Generation = 5
 WildItemUncommon = FAIRYFEATHER
-Evolutions = SWANNA,Level,38
+Evolutions = SWANNA,Level,34
 #-------------------------------
 [SWANNA]
 Name = Swanna

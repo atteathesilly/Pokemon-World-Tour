@@ -28,12 +28,30 @@ Pokemon = DUCKLETT,13
     Gender = female
     Moves = GLITTERBOMB,PECK,TAILWIND,TIDEPULL
     AbilityIndex = 1 # Slipstream
-Pokemon = NIDORANfE,12
-    Moves = SMOG,SANDTOSS,POISONSPIKES,POISONGAS
-    AbilityIndex = 0 # Rugged Scales
+Pokemon = PANSEAR,12
+    Moves = FAKEOUT,EMBER,TICKLE,SCRATCH
+    AbilityIndex = 0 # Friend Guard
 Pokemon = FROAKIE,10
     Moves = BUBBLE,PILFER,IRONARROW,DAZZLE
     AbilityIndex = 1 # Wise Hunter
+#-------------------------------
+[RIVAL_SALLY,Sally,1]
+Policies = SALLY2
+Pokemon = DUCKLETT,20
+    Name = Ping
+    Gender = female
+    Moves = MISHAP,PLUCK,TAILWIND,METALCLAW
+    AbilityIndex = 1 # Slipstream
+    Item = SITRUSBERRY
+Pokemon = PANSEAR,20
+    Moves = CALLHELPER,HOTSHOT,FURYSWIPES,HELPINGHAND
+    AbilityIndex = 0 # Friend Guard
+Pokemon = FROGADIER,20
+    Moves = BUBBLEBEAM,TEASE,POISONSPIKES,WIDEGUARD
+    AbilityIndex = 1 # Wise Hunter
+Pokemon = GRAVELER,20
+    Moves = GRANITEHEAD,TREMOR,STEALTHROCK,ROCKPOLISH
+    AbilityIndex = 0 # Unbreakable
 #-------------------------------
 [ROLLERSKATER_M,Lane Tester]
 Pokemon = MACHOP,10

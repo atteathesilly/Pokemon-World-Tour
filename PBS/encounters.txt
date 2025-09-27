@@ -189,7 +189,7 @@ DarkCave,20
 Special
     1,MAWILE,15
 #-------------------------------
-[041] # Lush Cave
+[041] # Geiru Cave
 LandSparse,20
     20,CRSTUFFUL,16,18
     20,ODDISH,16,18
