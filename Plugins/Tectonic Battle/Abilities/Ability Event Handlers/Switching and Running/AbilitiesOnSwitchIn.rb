@@ -410,6 +410,15 @@ BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFDEATH,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFLIFE,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with life!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
