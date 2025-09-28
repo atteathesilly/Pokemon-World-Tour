@@ -73,7 +73,7 @@ module GameData
           end
         end
         return "Graphics/Items/000"
-    end
+      end
   
       def self.held_icon_filename(item)
         item_data = self.try_get(item)
@@ -304,7 +304,8 @@ module GameData
            :GIRATINA => [:GRISEOUSORB],
            :GENESECT => [:BURNDRIVE, :CHILLDRIVE, :DOUSEDRIVE, :SHOCKDRIVE],
            :KYOGRE   => [:BLUEORB],
-           :GROUDON  => [:REDORB]
+           :GROUDON  => [:REDORB],
+           :DIANCIE  => [:CRYSTALCALIBURN]
         }
         return combos[species] && combos[species].include?(@id)
       end
