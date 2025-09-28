@@ -212,5 +212,7 @@ Land,20
     20,ZANGOOSE,16,18
 #-------------------------------
 [043] # Beppi Town
-Special
-    1,INKAY,15
+FloweryGrass2,21
+    20,GRIMER,20,21
+    20,KOFFING,20,21
+    20,TRUBBISH,20,21

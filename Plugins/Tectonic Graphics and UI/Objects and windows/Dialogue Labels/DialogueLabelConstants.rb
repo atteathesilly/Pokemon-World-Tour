@@ -13,6 +13,7 @@ TORY = _INTL("Tory")
 MAGGIE = _INTL("Maggie")
 CHARLES = _INTL("Charles")
 CHARLESHERO = _INTL("Accelguard")
+CARMINE = _INTL("Carmine")
 
 # Gym leaders
 RIDDLE = _INTL("Riddle")
@@ -44,6 +45,7 @@ HARMONY = _INTL("Harmony")
 
 # Other
 HANNAH = _INTL("Hannah")
+CLOWN = _INTL("Clown")
 GRIND_RIVAL = _INTL("Vanya")
 SANG = _INTL("Sang")
 MAVIS = _INTL("Mavis")

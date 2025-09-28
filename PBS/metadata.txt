@@ -328,6 +328,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[047]
+# Beppi Town Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

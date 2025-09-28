@@ -162,7 +162,7 @@ InternalName = FAIRY
 Color = 240,182,188
 DarkColor = 208,96,184
 IsSpecialType = true
-Weaknesses = POISON,STEEL,BUG
+Weaknesses = POISON,STEEL
 Resistances = FIGHTING,DARK,DRAGON
 #-------------------------------
 [19]

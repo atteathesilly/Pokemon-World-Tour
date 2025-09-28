@@ -1,5 +1,5 @@
 BADGE_NAMES = [
-		"Loyalty",
+		"Clown",
 		"Perseverance",
 		"Patience",
 		"Reverence",

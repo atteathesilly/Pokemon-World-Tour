@@ -1456,7 +1456,7 @@ IntroBGM = ELITETRAINER
 Name = Rival
 Gender = Female
 BaseMoney = 100
-BattleBGM = Ludwig-Battle
+BattleBGM = Battle Sally
 #-------------------------------
 [ROLLERSKATER_F]
 Name = Roller Skater
@@ -1854,7 +1854,7 @@ IntroBGM = BUSINESSMAN
 Name = Kitakami Trainer
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Carmine
 #-------------------------------
 [TRAINERDEXIO]
 Name = Kalos Trainer
