@@ -908,7 +908,7 @@ Accuracy = 100
 TotalPP = 10
 Target = User
 FunctionCode = EatBerryRaiseDefenses1
-Description = The user eats its held Berry, then raises Defense and Sp. Def by three steps.
+Description = The user eats its held Berry, then raises Defense and Sp. Def by one step each.
 #-------------------------------
 [SUBSTITUTE]
 Name = Substitute
