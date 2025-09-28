@@ -648,7 +648,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:FITTOSURVIVE,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:NATURALPROTECTION, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:NaturalProtection, applyEffectDurationModifiers(4, battler))
+          battler.pbOwnSide.applyEffect(:NaturalProtection, applyEffectDurationModifiers(8, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
