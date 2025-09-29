@@ -321,6 +321,7 @@ Puddle,20,20
     20,MAREANIE,18,20
     20,REMORAID,18,20
     20,TENTACOOL,18,20
+    20,MANTYKE,18,20
 #-------------------------------
 [085] # Worried Man's House
 Special,20
