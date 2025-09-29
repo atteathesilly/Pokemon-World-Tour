@@ -370,9 +370,6 @@ MultipleForms.register(:MINIOR,{
   "getFormOnCreation" => proc { |pkmn|
     next rand(7)   # Meteor forms are 0-6, Core forms are 7-13
   },
-  "getFormOnEnteringBattle" => proc { |pkmn,wild|
-    next pkmn.form-7 if pkmn.form>=7
-  },
   "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
     next pkmn.form-7 if pkmn.form>=7 && endBattle
   }
