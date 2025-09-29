@@ -825,7 +825,7 @@ Pokemon = CROBAT,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = DURANT,45
-    Moves = XSCISSOR,IRONHEAD,PROTECT,EARTHQUAKE
+    Moves = XSCISSOR,IRONHEAD,PROTECT,TRAMPLE
     AbilityIndex = 0 # Hustle
     Item = WIDELENS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
