@@ -10378,6 +10378,7 @@ Kind = Sea Basin
 Pokedex = Kyogre is said to be the personification of the sea itself. Legends tell of its many clashes against Groudon, as each sought to gain the power of nature.
 Generation = 3
 Flags = Legendary
+StickyItems = BLUEORB
 #-------------------------------
 [GROUDON]
 Name = Groudon
@@ -10401,6 +10402,7 @@ Kind = Continent
 Pokedex = Groudon is said to be the personification of the land itself. Legends tell of its many clashes against Kyogre, as each sought to gain the power of nature.
 Generation = 3
 Flags = Legendary
+StickyItems = REDORB
 #-------------------------------
 [RAYQUAZA]
 Name = Rayquaza
@@ -11988,6 +11990,7 @@ Pokedex = This Pokémon is said to live in a world on the reverse side of ours, 
 FormName = Altered
 Generation = 4
 Flags = Legendary
+StickyItems = GRISEOUSORB
 #-------------------------------
 [CRESSELIA]
 Name = Cresselia
@@ -12117,6 +12120,7 @@ Pokedex = It is told in mythology that this Pokémon was born before the univers
 FormName = Arceus
 Generation = 4
 Flags = Legendary
+StickyItems = PRISMATICPLATE
 #-------------------------------
 [SNIVY]
 Name = Snivy
@@ -15815,6 +15819,7 @@ Pokedex = This Pokémon existed 300 million years ago. Team Plasma altered it an
 FormName = Genesect
 Generation = 5
 Flags = Legendary
+StickyItems = BURNDRIVE,CHILLDRIVE,DOUSEDRIVE,SHOCKDRIVE
 #-------------------------------
 [VICTINI]
 Name = Victini
@@ -16980,6 +16985,7 @@ Kind = Jewel
 Pokedex = It can instantly create many diamonds by compressing the carbon in the air between its hands.
 Generation = 6
 Flags = Legendary
+StickyItems = CRYSTALCALIBURN
 #-------------------------------
 [GOOMY]
 Name = Goomy
@@ -18499,6 +18505,7 @@ Pokedex = This is its form once it has awakened and evolved. Freed from its heav
 FormName = Type: Normal
 Generation = 7
 Flags = Legendary
+StickyItems = MEMORYSET
 #-------------------------------
 [MINIOR]
 Name = Minior

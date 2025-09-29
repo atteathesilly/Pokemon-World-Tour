@@ -298,16 +298,10 @@ module GameData
       end
   
       def unlosable?(species, ability)
-        combos = {
-           :ARCEUS   => [:PRISMATICPLATE],
-           :SILVALLY => [:MEMORYSET],
-           :GIRATINA => [:GRISEOUSORB],
-           :GENESECT => [:BURNDRIVE, :CHILLDRIVE, :DOUSEDRIVE, :SHOCKDRIVE],
-           :KYOGRE   => [:BLUEORB],
-           :GROUDON  => [:REDORB],
-           :DIANCIE  => [:CRYSTALCALIBURN]
-        }
-        return combos[species] && combos[species].include?(@id)
+        base_form_data = GameData::Species.get_species_form(species, 0)
+        return false if base_form_data.nil?
+        sticky_items = base_form_data.sticky_items
+        return sticky_items.include?(@id)
       end
 
       def legal?(isTrainer = false)
