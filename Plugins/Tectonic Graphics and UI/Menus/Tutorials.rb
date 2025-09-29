@@ -54,7 +54,7 @@ def playCustomSpeedTutorial
     $PokemonGlobal.customSpeedTutorialized = true
     tutorialMessages = 
     [
-        _INTL("Tectonic introduced many options that let you customize the game speed, especially in battles."),
+        _INTL("World Tour provides many options that let you customize the game speed, especially in battles."),
         _INTL("Make sure to go over all the options to determine what you want to enable.")
     ]
     playTutorial(tutorialMessages)
