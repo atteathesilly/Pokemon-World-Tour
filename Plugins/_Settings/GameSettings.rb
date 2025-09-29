@@ -300,10 +300,7 @@ module Settings
     # from.
     LANGUAGES = [
       ["English", "english.dat"],
-      ["Español", "spanish.dat"],
-      ["Simplified Chinese", "chinese_simplified.dat"],
-      ["Traditional Chinese", "chinese_traditional.dat"],
-    ]
+  ]
   
     #=============================================================================
   
