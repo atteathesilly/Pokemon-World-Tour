@@ -1808,7 +1808,7 @@ Pokemon = SHIFTRY,35
     Moves = SCHEME,SQUALLDART,SNARL,MAGICALLEAF
     AbilityIndex = 1 # Gale Force
 Pokemon = STEELIX,35
-    Moves = TERRAFORM,SHRAPNEL,MUDSHOT,STEALTHROCK
+    Moves = TERRAFORM,SHINESHOT,MUDSHOT,STEALTHROCK
     AbilityIndex = 0 # Radiate
     Item = SITRUSBERRY
 #-------------------------------
@@ -2084,7 +2084,7 @@ Pokemon = MNINETALES,40
     AbilityIndex = 0 # Gild
     Item = AMULETCOIN
 Pokemon = GWEEZING,40
-    Moves = CHACHING,CLEARSMOG,CHARITY,SELFDESTRUCT
+    Moves = CHACHING,CLEARSMOG,CHARITY,FLAMETHROWER
     AbilityIndex = 1 # Industrialize
 Pokemon = PERRSERKER,40
     Moves = PLUNDER,SUPERPOWER,UTURN,CHACHING
@@ -2094,7 +2094,7 @@ Pokemon = COFAGRIGUS,40
     AbilityIndex = 0 # Mummy
     Item = LEFTOVERS
 Pokemon = PERSIAN,40
-    Moves = SWORDSDANCE,SLASH,PSYCHOSCISSION,ELECTROSLASH
+    Moves = SWORDSDANCE,PALEBLADE,PSYCHOSCISSION,ELECTROSLASH
     AbilityIndex = 0 # Cash Out
     Item = WHETSTONE
 #-------------------------------
