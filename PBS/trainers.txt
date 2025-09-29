@@ -436,7 +436,7 @@ Pokemon = YAMASK,22
     AbilityIndex = 0 # Mummy
     Item = SITRUSBERRY
 Pokemon = ROSELIA,22
-    Moves = RAZORLEAF,ENVENOM,CROSSPOISON
+    Moves = RAZORLEAF,ENVENOM,POISONTAIL
     AbilityIndex = 1 # Merciless
     Item = GRASSGEM
 #-------------------------------
@@ -3882,7 +3882,7 @@ Pokemon = SLOWPOKE,26
     Moves = PSYCHOCUT,SLACKOFF,WAVEBREAK,DISABLE
     AbilityIndex = 1 # Mental Block
 Pokemon = WEEPINBELL,27
-    Moves = CROSSPOISON,RAZORLEAF,CLEARSMOG,AERIALACE
+    Moves = POISONFANG,ROOTDRIVER,CLEARSMOG,AERIALACE
     AbilityIndex = 1 # Flytrap
     Item = FLYINGGEM
 #-------------------------------
