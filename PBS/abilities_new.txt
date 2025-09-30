@@ -169,8 +169,8 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
-[BIGBAD]
-Name = Big Bad
+[CREEPINGHORROR]
+Name = Creeping Horror
 Description = Foretold moves take one turn longer to attack but deal 50% more damage.
 Flags = HailSynergy
 #-------------------------------
