@@ -786,6 +786,12 @@ FrontSprite = -2,9
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
+[MBUNEARY]
+BackSprite = 0,23
+FrontSprite = -2,9
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
 [BUNNELBY]
 BackSprite = 0,19
 FrontSprite = -2,20
@@ -2682,6 +2688,12 @@ FrontSprite = 0,14
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
+[MHAEROBIC]
+BackSprite = 0,13
+FrontSprite = 0,14
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
 [HAKAMOO]
 BackSprite = 0,14
 FrontSprite = 0,18
@@ -3469,6 +3481,12 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [LOPUNNY]
+BackSprite = 0,17
+FrontSprite = 0,14
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MLOPUNNY]
 BackSprite = 0,17
 FrontSprite = 0,14
 ShadowX = 0
