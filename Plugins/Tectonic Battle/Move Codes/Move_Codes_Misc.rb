@@ -816,7 +816,7 @@ class PokeBattle_Move_FailsIfUserNotAsleep < PokeBattle_Move
 end
 
 #===============================================================================
-# Uses each other Sound move the Pokemon knows. (Broadcast Blast)
+# Uses each other Sound move the Pokemon knows. (Wall of Sound)
 #===============================================================================
 class PokeBattle_Move_UseAllOtherSoundMoves < PokeBattle_Move
     def callsAnotherMove?; return true; end
@@ -846,5 +846,9 @@ class PokeBattle_Move_UseAllOtherSoundMoves < PokeBattle_Move
         moves.each do |sound_move|
             user.pbUseMoveSimple(sound_move)
         end
+    end
+
+    def getEffectScore(user, _target)
+        return getAllOtherSoundMoves(user).length * 100
     end
 end
