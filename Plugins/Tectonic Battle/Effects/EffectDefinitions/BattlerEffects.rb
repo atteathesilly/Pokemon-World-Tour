@@ -143,7 +143,7 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Warned,
+    :id => :PhysCurseWarned,
     :real_name => "Curse-Warned",
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, _value|
@@ -155,84 +155,126 @@ GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysNumbWarned,
     :real_name => "Numb-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will numb.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecNumbWarned,
     :real_name => "Numb-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will numb.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysPoisonWarned,
     :real_name => "Poison-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will poison.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecPoisonWarned,
     :real_name => "Poison-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will poison.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysBurnWarned,
     :real_name => "Burn-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will burn.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecBurnWarned,
     :real_name => "Burn-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will burn.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysFrostWarned,
     :real_name => "Frost-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will frostbite.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecFrostWarned,
     :real_name => "Frost-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will frostbite.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysDizzyWarned,
     :real_name => "Dizzy-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will dizzy.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecDizzyWarned,
     :real_name => "Dizzy-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will dizzy.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysLeechWarned,
     :real_name => "Leech-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will leech.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecLeechWarned,
     :real_name => "Leech-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will leech.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :PhysWaterlogWarned,
     :real_name => "Waterlog-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will waterlog.", battler.pbThis))
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :SpecWaterlogWarned,
     :real_name => "Waterlog-Warned",
     :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will waterlog.", battler.pbThis))
+    end,
 })
 
 CURSE_DAMAGE_FRACTION = 0.25
@@ -2433,4 +2475,36 @@ GameData::BattleEffect.register_effect(:Battler, {
 GameData::BattleEffect.register_effect(:Battler, {
     :id => :NoTimeSkip,
     :real_name => "No Time Skip",
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :ActionStar,
+    :real_name => "Action Star",
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The spotlight will boost {1}'s next Normal-type attack!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :ReducingSyrup,
+    :real_name => "Reducing Syrup",
+    :type => :Integer,
+    :ticks_down => true,
+    :baton_passed => true,
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} was covered in a sticky syrup!", battler.pbThis))
+        battle.pbDisplay(_INTL("It'll last for {1} more turns!", value-1))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} got rid of the sticky syrup!", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The sticky syrup around {1} disappeared!", battler.pbThis(true)))
+    end,
+    :eor_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The sticky syrup reduced {1}'s highest stat!", battler.pbThis(true)))
+        battler.pbLowerStatStep(battler.highestStat, 2)
+        battler.pbItemStatRestoreCheck
+    end,
 })
