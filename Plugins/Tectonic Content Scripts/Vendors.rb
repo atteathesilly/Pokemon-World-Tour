@@ -124,7 +124,8 @@ def reviveFossil(fossil)
 		:COVERFOSSIL => :TIRTOUGA,
 		:PLUMEFOSSIL => :ARCHEN,
 		:JAWFOSSIL => :TYRUNT,
-		:SAILFOSSIL => :AMAURA
+		:SAILFOSSIL => :AMAURA,
+		:ELDRITCHFOSSIL => :MOMANYTE
 	}
 
 	species = fossilsToSpecies[fossil] || nil
