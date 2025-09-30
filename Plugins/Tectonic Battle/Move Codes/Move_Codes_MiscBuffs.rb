@@ -182,7 +182,7 @@ class PokeBattle_Move_WishingWellScalesWithMoney < PokeBattle_Move
         end
 
         user.eachAlly do |b|
-            worthRatio += 5 unless b.fullHealth?
+            worthRatio += 5 unless b.healthCapped?
         end
 
         return [worthRatio * (applyEffectDurationModifiers([user.pbOwnSide.countEffect(:PayDay),1000].min) / 100).floor, 200].min

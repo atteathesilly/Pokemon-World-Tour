@@ -231,7 +231,7 @@ BattleHandlers::EORHealingItem.add(:LUNCHBOX,
 
 BattleHandlers::DamageCalcTargetItem.add(:LUNCHBOX,
   proc { |item,user,target,move,mults,baseDmg,type,aiCheck|
-    mults[:final_damage_multiplier] *= (2.0/3.0) if target.hp == target.totalhp
+    mults[:final_damage_multiplier] *= (2.0/3.0) if target.fullHealth?
   }
 )
 
