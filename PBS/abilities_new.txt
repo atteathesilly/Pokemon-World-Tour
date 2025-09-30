@@ -169,11 +169,6 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
-[CREEPINGHORROR]
-Name = Creeping Horror
-Description = Foretold moves take one turn longer to attack but deal 50% more damage.
-Flags = HailSynergy
-#-------------------------------
 [BITTERCOLD]
 Name = Bitter Cold
 Description = Causes hail to deal double damage and increase Defense of Ice-types by 2.0x instead of 1.5x.
@@ -360,6 +355,11 @@ Description = Upon entry, creates a Substitute from 1/4th of its HP.
 [COUNTERFLOW]
 Name = Counter Flow
 Description = When hit with a special move, hits back instantly with Breach.
+#-------------------------------
+[CREEPINGHORROR]
+Name = Creeping Horror
+Description = Foretold moves take one turn longer to attack but deal 50% more damage.
+Flags = HailSynergy
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
