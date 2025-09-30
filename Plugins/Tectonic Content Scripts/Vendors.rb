@@ -103,6 +103,14 @@ def purchaseStarters(type,price=0)
 	end
 end
 
+def isFossil?(item_symbol)
+	%i[HELIXFOSSIL DOMEFOSSIL OLDAMBER ROOTFOSSIL CLAWFOSSIL SKULLFOSSIL ARMORFOSSIL COVERFOSSIL PLUMEFOSSIL JAWFOSSIL SAILFOSSIL].include?(item_symbol)
+end
+
+def isFantasyFossil?(item_symbol)
+	%i[ELDRITCHFOSSIL].include?(item_symbol)
+end
+
 def isMixFossil?(item_symbol)
 	%i[FOSSILIZEDBIRD FOSSILIZEDDRAKE FOSSILIZEDFISH FOSSILIZEDDINO].include?(item_symbol)
 end
@@ -110,6 +118,11 @@ end
 def reviveFossil(fossil)
 	if isMixFossil?(fossil)
 		pbMessage(_INTL("My apologies, I don't know what to do with this type of fossil."))
+		return
+	end
+
+	if isFantasyFossil?(fossil)
+		pbMessage(_INTL("I... don't think I understand this fossil. Maybe try asking my assistant for help."))
 		return
 	end
 
