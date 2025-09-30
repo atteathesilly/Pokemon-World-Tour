@@ -977,7 +977,7 @@ class PokeBattle_Battler
             next if b.damageState.unaffected
             move.pbEffectAgainstTarget(user, b)
             #Field of Death
-            if user.battle.pbCheckGlobalAbility(:FIELDOFDEATH)
+            if @battle.pbCheckGlobalAbility(:FIELDOFDEATH)
                 unless b.damageState.hpLost <= 0
                     hpGain = (b.damageState.hpLost * 0.3).round
                     user.pbRecoverHPFromDrain(hpGain, b)
