@@ -1000,10 +1000,8 @@ class PokeBattle_Battler
     end
 
     def forceOverheal?
-        #Field of Life
-        if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
-            return true
-        end
+        return true if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
+        return false
     end
 
     def moveOutcomePredictor
