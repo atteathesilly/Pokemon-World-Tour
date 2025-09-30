@@ -153,7 +153,7 @@ class PokeBattle_Battler
         amt *= 1.5 if hasActiveAbility?(:ROOTED)
         amt *= 2.0 if hasActiveAbilityAI?(:GLOWSHROOM) && @battle.moonGlowing?
         amt *= 0.5 if effectActive?(:IcyInjection)
-        amt *= 1.2 unless @battle.pbCheckGlobalAbility(:FIELDOFLIFE).nil?
+        amt *= 1.2 if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
         amt = amt.round
 
         # Cap the healing
