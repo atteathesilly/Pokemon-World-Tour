@@ -81,7 +81,7 @@ class PokeBattle_Battler
     def getFractionalDamageAmount(fraction,basedOnCurrentHP=false,aggravate: false,struggle: false)
         return 0 unless takesIndirectDamage? || struggle
         fraction *= hpBasedEffectResistance if boss?
-        fraction *= 1.35 if aggravate
+        fraction *= 1.5 if aggravate
         if basedOnCurrentHP
             damageAmount = @hp * fraction
         else
@@ -540,13 +540,21 @@ class PokeBattle_Battler
         end
         # Minior - Shields Down
         if isSpecies?(:MINIOR) && hasAbility?(:SHIELDSDOWN)
-            expectedForm = aboveHalfHealth? ? form % 7 : (form % 7) + 7
-            if form != expectedForm
-                showMyAbilitySplash(:SHIELDSDOWN, true)
-                hideMyAbilitySplash
-                animation = aboveHalfHealth? ? "ShieldsUp" : "ShieldsDown"
-                @battle.pbCommonAnimation(animation, self)
-                pbChangeForm(expectedForm, _INTL("{1} #{aboveHalfHealth? ? 'deactivated' : 'activated'}!", getAbilityName(:SHIELDSDOWN)))
+            if aboveHalfHealth? # Turn into Meteor form
+                if form >= 7
+                    newForm = @form - 7
+                    showMyAbilitySplash(:SHIELDSDOWN, true)
+                    hideMyAbilitySplash
+                    @battle.pbCommonAnimation("ShieldsUp", self)
+                    pbChangeForm(newForm, _INTL("{1} deactivated!", getAbilityName(:SHIELDSDOWN)))
+                end
+            else # Turn into Core form
+                if form < 7
+                    showMyAbilitySplash(:SHIELDSDOWN, true)
+                    hideMyAbilitySplash
+                    @battle.pbCommonAnimation("ShieldsDown", self)
+                    pbChangeForm(@form + 7, _INTL("{1} activated!", getAbilityName(:SHIELDSDOWN)))
+                end
             end
         end
         # Wishiwashi - Schooling

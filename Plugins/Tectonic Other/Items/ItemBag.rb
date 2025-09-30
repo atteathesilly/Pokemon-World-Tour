@@ -42,20 +42,17 @@ class PokemonBag
     def reassignPockets
       hashOfAllItems = {}
       for i in 0..PokemonBag.numPockets
-        if @pockets[i]
           @pockets[i].each do |item_element|
-            itemID = item_element[0]
-            next unless GameData::Item.try_get(itemID)
-            itemCount = item_element[1]
-            if hashOfAllItems.has_key?(itemID)
-                hashOfAllItems[itemID] += itemCount
-            else
-                hashOfAllItems[itemID] = itemCount
-            end
+              itemID = item_element[0]
+              next unless GameData::Item.try_get(itemID)
+              itemCount = item_element[1]
+              if hashOfAllItems.has_key?(itemID)
+                  hashOfAllItems[itemID] += itemCount
+              else
+                  hashOfAllItems[itemID] = itemCount
+              end
           end
-        end
-        @pockets[i] = []
-        @choices[i] = 0
+          @pockets[i] = []
       end
   
       hashOfAllItems.each do |key, value|
@@ -74,7 +71,9 @@ class PokemonBag
     end
   
     def maxPocketSize(pocket)
-      return -1
+      maxsize = Settings::BAG_MAX_POCKET_SIZE[pocket]
+      return -1 if !maxsize
+      return maxsize
     end
   
     # Gets the index of the current selected item in the pocket

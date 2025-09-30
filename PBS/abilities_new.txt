@@ -14,10 +14,6 @@ Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
 Flags = RainstormSynergy
 #-------------------------------
-[ACTIONSTAR]
-Name = Action Star
-Description = After landing a super-effective or hyper-effective hit, deals 30% more damage on its next Normal-type move.
-#-------------------------------
 [ADAPTED]
 Name = Adapted
 Description = Powers up moves of the same type by 33%.
@@ -40,7 +36,7 @@ Description = Slips past all types of Spikes hazards. Deals 50% more damage to t
 #-------------------------------
 [AGGRAVATE]
 Name = Aggravate
-Description = HP-fraction-based damage effects deal 35% more damage to opponents.
+Description = HP-fraction-based damage effects deal 50% more damage to opponents.
 #-------------------------------
 [ALLCONSUMING]
 Name = All-Consuming
@@ -526,6 +522,10 @@ Description = Boosts power of the Pokémon's sound-based moves by 50%.
 Name = Earthshaker
 Description = In sandstorm, the Pokémon's Attack is boosted by 30%.
 Flags = SandstormSynergy
+#-------------------------------
+[ECCENTRIC]
+Name = Eccentric
+Description = If its stats would be changed, instead they're changed half as much in the opposite direction (rounded up).
 #-------------------------------
 [ECHO]
 Name = Echo
@@ -1079,17 +1079,9 @@ Description = Special moves have a 30% chance to poison targets.
 Name = Introvert
 Description = Takes 30% less damage until the first time it uses an attacking move.
 #-------------------------------
-[INVERSION]
-Name = Inversion
-Description = If its stats would be changed, instead they're changed half as much in the opposite direction (rounded up).
-#-------------------------------
 [INVESTIGATOR]
 Name = Investigator
 Description = At the beginning of each turn, gives clues about a foe's plan.
-#-------------------------------
-[IONIZEDALLOY]
-Name = Ionized Alloy
-Description = The Pokémon gains the Electric type in a rainstorm.
 #-------------------------------
 [IRONHEEL]
 Name = Iron Heel
@@ -2166,6 +2158,11 @@ Description = Powers up Poison-type moves of itself and its allies by 50%.
 Name = Toxin Tax
 Description = Heals based on the damage other battlers take from being poisoned.
 #-------------------------------
+[TRACTORBEAM]
+Name = Tractor Beam
+Description = Traps the foe during eclipse.
+Flags = EclipseSynergy
+#-------------------------------
 [TRAPPER]
 Name = Trapper
 Description = Takes 30% less damage from Pokémon that are trapped.
@@ -2227,10 +2224,6 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
-#-------------------------------
-[UPSIDEDOWN]
-Name = Upside Down
-Description = Uses Topsy Turvy on itself at the end of every turn.
 #-------------------------------
 [VANDAL]
 Name = Vandal

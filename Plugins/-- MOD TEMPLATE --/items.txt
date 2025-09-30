@@ -2,7 +2,7 @@
 [TESTITEM]
 Name = Test Item
 NamePlural = Test Items
-Pocket = 15
+Pocket = 6
 Price = 2
 Description = An item to test the PBS Extensions feature. It can be sold to shops for $1.
 #-------------------------------
