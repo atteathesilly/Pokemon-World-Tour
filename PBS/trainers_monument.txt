@@ -281,7 +281,7 @@ Pokemon = SAWSBUCK,70
     EV = 5,20,5,20,20,0
 Pokemon = LURANTIS,70
     Moves = SUPERPOWER,LEAFSTORM,STRAFE,POLLENPUFF
-    AbilityIndex = 0 # Contrary
+    AbilityIndex = 0 # Inversion
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,0,20,20
@@ -931,7 +931,7 @@ Pokemon = CINDERACE,70
     EV = 10,20,0,20,20,0
 Pokemon = SERPERIOR,70
     Moves = LEAFSTORM,DRACOMETEOR,THUNDERBOLT,PETRIFY
-    AbilityIndex = 1 # Eccentric
+    AbilityIndex = 1 # Victory Molt
     Item = CHOICESCARF
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,0,10,20
@@ -1155,7 +1155,7 @@ Pokemon = PINCURCHIN,70
     EV = 20,20,10,0,20,0
 Pokemon = SERPERIOR,70
     Moves = DRACOMETEOR,LEAFSTORM,FACADE,THUNDERBOLT
-    AbilityIndex = 1 # Eccentric
+    AbilityIndex = 1 # Victory Molt
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
@@ -1210,7 +1210,7 @@ Pokemon = INFERNAPE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = NIDOKING,70
-    Moves = POISONJAB,EARTHSPLITTER,BEDROCKBREAKER,BRICKBREAK
+    Moves = POISONJAB,EARTHSPLITTER,SUCKERPUNCH,REND
     AbilityIndex = 1 # Stressful
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1237,7 +1237,7 @@ Pokemon = JUMPLUFF,70
     EV = 10,20,0,20,20,0
 Pokemon = SERPERIOR,70
     Moves = LEAFSTORM,DRACOMETEOR,THUNDERBOLT,SYNTHESIS
-    AbilityIndex = 1 # Eccentric
+    AbilityIndex = 1 # Victory Molt
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,0,10,20
@@ -1281,7 +1281,7 @@ Pokemon = VOLCARONA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,0,0,20,0,20
 Pokemon = ARBOK,70
-    Moves = POISONJAB,SUCKERPUNCH,OVERHEAT,VENOMGUARD
+    Moves = POISONJAB,SUCKERPUNCH,FLAMETHROWER,VENOMGUARD
     AbilityIndex = 1 # Constrictor
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1357,7 +1357,7 @@ Pokemon = ROSERADE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,0,20,20,5
 Pokemon = RHYPERIOR,70
-    Moves = EARTHQUAKE,ADAMANTINEPRESS,LEAFSTORM,OVERHEAT
+    Moves = EARTHQUAKE,ADAMANTINEPRESS,SNIPESHOT,FLAMETHROWER
     AbilityIndex = 1 # Hard As
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1640,7 +1640,7 @@ Pokemon = TOGEDEMARU,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,10,20,5
 Pokemon = HAEROBIC,70
-    Moves = EXTREMESPEED,UTURN,CLOSECOMBAT,ICEPUNCH
+    Moves = EXTREMESPEED,UTURN,CLOSECOMBAT,GLACIALRAM
     AbilityIndex = 1 # Stubborn
     Item = FIGHTINGGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1648,7 +1648,7 @@ Pokemon = HAEROBIC,70
 #-------------------------------
 [VETERAN_F,Iva]
 Pokemon = GALVANTULA,70
-    Moves = STICKYWEB,THUNDER,SCALESTORM,VOLTSWITCH
+    Moves = STICKYWEB,THUNDER,BUGBUZZ,VOLTSWITCH
     AbilityIndex = 0 # Ocular
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1776,7 +1776,7 @@ Pokemon = URSALUNA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,20,0,20,10
 Pokemon = HUNTAIL,70
-    Moves = MASSDESTRUCTION,GEYSER,BLACKOUT,PSYCHIC
+    Moves = MASSDESTRUCTION,GEYSER,BLACKOUT,ICEBEAM
     AbilityIndex = 1 # Illuminance
     Item = CHOICESCARF
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2458,7 +2458,7 @@ Pokemon = TOWERPODA,70
 #-------------------------------
 [REPORTER2,Sabine]
 Pokemon = HAEROBIC,70
-    Moves = EXTREMESPEED,PLAYROUGH,CLOSECOMBAT,FAKEOUT
+    Moves = EXTREMESPEED,ICEBERGBASH,CLOSECOMBAT,FAKEOUT
     AbilityIndex = 1 # Stubborn
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

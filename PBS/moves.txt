@@ -907,8 +907,8 @@ Category = Status
 Accuracy = 100
 TotalPP = 10
 Target = User
-FunctionCode = EatBerryRaiseDefenses3
-Description = The user eats its held Berry, then raises Defense and Sp. Def by three steps.
+FunctionCode = EatBerryRaiseDefenses1
+Description = The user eats its held Berry, then raises Defense and Sp. Def by one step each.
 #-------------------------------
 [SUBSTITUTE]
 Name = Substitute
@@ -3153,7 +3153,7 @@ Type = STEEL
 Category = Physical
 Power = 1
 Accuracy = 100
-TotalPP = 5
+TotalPP = 15
 Target = NearOther
 FunctionCode = ScalesSlowerThanTarget
 Flags = CanProtect
