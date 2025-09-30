@@ -359,7 +359,6 @@ Description = When hit with a special move, hits back instantly with Breach.
 [CREEPINGHORROR]
 Name = Creeping Horror
 Description = Foretold moves take one turn longer to attack but deal 50% more damage.
-Flags = HailSynergy
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
