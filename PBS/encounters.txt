@@ -98,7 +98,7 @@ Puddle,20
 #-------------------------------
 [020] # Bozo Port Auditorium 
 Special
-    1,PYUKUMUKU,15
+    1,SUNKERN,15
 #-------------------------------
 [021] # Bozo Center
 LandSparse,20

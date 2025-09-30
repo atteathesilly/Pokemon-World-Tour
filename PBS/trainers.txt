@@ -227,6 +227,7 @@ Pokemon = HATENNA,16
 Pokemon = FLETCHINDER,17
     AbilityIndex = 1 # Gale Wings
 Pokemon = DODUO,17
+    Moves = PLUCK,HEADBANG,QUICKATTACK,SCARYFACE
     AbilityIndex = 0 # Fluster Flock
     Item = SITRUSBERRY
 #-------------------------------
