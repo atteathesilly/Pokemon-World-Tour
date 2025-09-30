@@ -1369,7 +1369,8 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     def pbEffectAgainstTarget(user, target)
         return if @battle.futureSight # Attack is hitting
         count = @turnCount
-        count -= 2 if user.hasActiveAbility?([:BADOMEN])
+        count -= 2 if user.hasActiveAbility?(:BADOMEN)
+        count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
         count = 1 if count < 1
         target.position.applyEffect(:FutureSightCounter, count)
         target.position.applyEffect(:FutureSightMove, @id)

@@ -275,6 +275,15 @@ BattleHandlers::DamageCalcUserAbility.add(:BADOMEN,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:CREEPINGHORROR,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.foretoldMove?
+      mults[:base_damage_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:GORGING,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.healingMove?
