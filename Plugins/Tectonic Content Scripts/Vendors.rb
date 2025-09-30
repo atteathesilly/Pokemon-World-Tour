@@ -124,8 +124,7 @@ def reviveFossil(fossil)
 		:COVERFOSSIL => :TIRTOUGA,
 		:PLUMEFOSSIL => :ARCHEN,
 		:JAWFOSSIL => :TYRUNT,
-		:SAILFOSSIL => :AMAURA,
-		:ELDRITCHFOSSIL => :MOMANYTE
+		:SAILFOSSIL => :AMAURA
 	}
 
 	species = fossilsToSpecies[fossil] || nil
@@ -146,6 +145,42 @@ def reviveFossil(fossil)
 	}
 	
 	pbMessage(_INTL("It's done! Here is your newly revived Pokemon!"))
+	
+	pbAddPokemon(species,15)
+end
+
+def reviveFantasyFossil(fossil)
+	if isMixFossil?(fossil)
+		pbMessage(_INTL("Those fossils are a bit too crazy for me, sorry."))
+		return
+	end
+	if isFossil?(fossil)
+		pbMessage(_INTL("Talk to my boss for these fossils, I can't revive them."))
+		return
+	end
+
+	fossilsToSpecies = {
+		:ELDRITCHFOSSIL => :MOMANYTE
+	}
+
+	species = fossilsToSpecies[fossil] || nil
+	
+	if species.nil?
+		pbMessage(_INTL("Error! Could not determine how to revive the given fossil."))
+		return
+	end
+	item_data = GameData::Item.get(fossil)
+	
+	pbMessage(_INTL("\\PN hands over the {1} and $3000.",item_data.name))
+	
+	pbMessage(_INTL("The procedure has started, now just to wait..."))
+	
+	blackFadeOutIn(30) {
+		$Trainer.money = $Trainer.money - 3000
+		$PokemonBag.pbDeleteItem(fossil)
+	}
+	
+	pbMessage(_INTL("It's alive! I've figured it out! Here is your newly revived Pokemon!"))
 	
 	pbAddPokemon(species,15)
 end
