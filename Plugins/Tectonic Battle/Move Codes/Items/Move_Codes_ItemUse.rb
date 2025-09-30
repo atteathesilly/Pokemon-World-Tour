@@ -411,7 +411,7 @@ end
 #===============================================================================
 # Consumes berry and raises the user's Defense and Sp. Def by 3 steps. (Stuff Cheeks)
 #===============================================================================
-class PokeBattle_Move_EatBerryRaiseDefenses1 < PokeBattle_Move
+class PokeBattle_Move_EatBerryRaiseDefenses3 < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         unless user.hasAnyBerry?
             @battle.pbDisplay(_INTL("But it failed, because {1} has no berries!", user.pbThis(true))) if show_message
@@ -425,7 +425,7 @@ class PokeBattle_Move_EatBerryRaiseDefenses1 < PokeBattle_Move
     end
 
     def pbEffectGeneral(user)
-        user.pbRaiseMultipleStatSteps([:DEFENSE, 1, :SPECIAL_DEFENSE, 1], user, move: self)
+        user.pbRaiseMultipleStatSteps([:DEFENSE, 3, :SPECIAL_DEFENSE, 3], user, move: self)
         user.eachActiveItem do |item|
             next unless GameData::Item.get(item).is_berry?
             user.pbHeldItemTriggerCheck(item, false)
@@ -434,7 +434,7 @@ class PokeBattle_Move_EatBerryRaiseDefenses1 < PokeBattle_Move
     end
 
     def getEffectScore(user, target)
-        score = getMultiStatUpEffectScore([:DEFENSE, 1, :SPECIAL_DEFENSE, 1], user, target)
+        score = getMultiStatUpEffectScore([:DEFENSE, 3, :SPECIAL_DEFENSE, 3], user, target)
         user.eachAIKnownActiveItem do |item|
             next unless GameData::Item.get(item).is_berry?
             score += 40
@@ -505,6 +505,11 @@ end
 # The user equips a Crystal Caliburn and enters Royal Form. (Gemforged Oath)
 #===============================================================================
 class PokeBattle_Move_GrantUserCrystalCaliburnChangeUserDiancieForm < PokeBattle_Move
+    def pbMoveFailed?(user, _targets, show_message)
+        return 
+        
+    end
+
     def pbMoveFailed?(user, _targets, show_message)
         if !user.countsAs?(:DIANCIE)
             @battle.pbDisplay(_INTL("But {1} can't use the move!", user.pbThis(true))) if show_message

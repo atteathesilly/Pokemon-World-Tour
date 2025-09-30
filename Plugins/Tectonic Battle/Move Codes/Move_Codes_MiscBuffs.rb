@@ -71,7 +71,7 @@ end
 #===============================================================================
 class PokeBattle_Move_RaiseUserSpAtk3StartUserAttacksSpread < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
-        if user.effectActive?(:FlareWitch) && !user.pbCanRaiseStatStep?(:SPECIAL_ATTACK, user, self, false) # don't show message since if this fails we'll show the one below
+        if user.effectActive?(:FlareWitch) && !user.pbCanRaiseStatStep?(:SPECIAL_ATTACK, user, self, true)
             @battle.pbDisplay(_INTL("But it failed, since {1} can't raise its Sp. Atk and already activated its witch powers!", user.pbThis(true))) if show_message
             return true
         end
@@ -96,7 +96,7 @@ end
 #===============================================================================
 class PokeBattle_Move_EnsureCriticalHits3 < PokeBattle_Move
     def pbEffectGeneral(user)
-        user.applyEffect(:LaserFocus, applyEffectDurationModifiers(4, user))
+        user.applyEffect(:LaserFocus, applyEffectDurationModifiers(4))
         @battle.pbDisplay(_INTL("{1} concentrated intensely!", user.pbThis))
     end
 

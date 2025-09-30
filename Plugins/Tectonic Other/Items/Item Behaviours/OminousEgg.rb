@@ -90,5 +90,5 @@ end
 
 ItemHandlers::UseInField.add(:OMINOUSEGG,proc { |item|
     checkOminousEggProgress
-    next 1
+    next true
 })

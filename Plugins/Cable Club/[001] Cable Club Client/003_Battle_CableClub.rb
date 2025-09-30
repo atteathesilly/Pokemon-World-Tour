@@ -410,11 +410,11 @@ end
 #===============================================================================
 class PokeBattle_Move_ReplaceMoveWithTargetLastMoveUsed
   alias _cc_pbMoveFailed? pbMoveFailed?
-  def pbMoveFailed?(user, targets, show_message)
+  def pbMoveFailed?(user, targets)
     if CableClub::DISABLE_SKETCH_ONLINE && !@battle.internalBattle
-      @battle.pbDisplay(_INTL("But it failed!")) if show_message
+      @battle.pbDisplay(_INTL("But it failed!"))
       return true
     end
-    return _cc_pbMoveFailed?(user, targets, show_message)
+    return _cc_pbMoveFailed?(user, targets)
   end
 end

@@ -44,7 +44,6 @@ module GameData
         attr_accessor :earliest_available
         attr_reader :flags
         attr_reader :formalizer
-        attr_reader :sticky_items
 
         DATA = {}
         DATA_FILENAME = "species.dat"
@@ -122,7 +121,6 @@ module GameData
                 ret["GrowthRate"]   = [0, "e", :GrowthRate]
                 ret["GenderRate"]   = [0, "e", :GenderRatio]
                 ret["Evolutions"]   = [0, "*ses", nil, :Evolution, nil]
-                ret["StickyItems"]   = [0, "*e", :Item]
             end
             return ret
         end
@@ -192,7 +190,6 @@ module GameData
             @defined_in_extension  = hash[:defined_in_extension]  || false
             @flags                 = hash[:flags]                 || []
             @formalizer            = hash[:formalizer]            || []
-            @sticky_items          = hash[:sticky_items]          || []
 
             legalityChecks
         end
@@ -766,7 +763,6 @@ module Compiler
                       :generation            => contents["Generation"],
                       :flags                 => contents["Flags"],
                       :formalizer            => contents["Formalizer"],
-                      :sticky_items          => contents["StickyItems"],
                       :notes                 => contents["Notes"],
                       :tribes                => contents["Tribes"],
                       :defined_in_extension  => !baseFile,
@@ -1192,7 +1188,6 @@ module Compiler
         f.write(format("WildItemCommon = %s\r\n", species.wild_item_common)) if species.wild_item_common
         f.write(format("WildItemUncommon = %s\r\n", species.wild_item_uncommon)) if species.wild_item_uncommon
         f.write(format("WildItemRare = %s\r\n", species.wild_item_rare)) if species.wild_item_rare
-        f.write(format("StickyItems = %s\r\n", species.sticky_items.join(","))) if species.sticky_items.length > 0
         if species.evolutions.any? { |evo| !evo[3] }
             f.write("Evolutions = ")
             need_comma = false

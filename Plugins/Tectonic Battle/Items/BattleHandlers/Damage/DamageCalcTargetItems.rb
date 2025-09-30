@@ -114,7 +114,7 @@ BattleHandlers::DamageCalcTargetItem.add(:EVIOLITE,
       #       affected by Eviolite.
       unless target.pokemon.species_data.get_evolutions(true).empty?
         mults[:defense_multiplier] *= 1.5
-        target.aiLearnsItem(item) unless aiCheck
+        user.aiLearnsItem(item) unless aiCheck
       end
   }
 )
@@ -122,6 +122,6 @@ BattleHandlers::DamageCalcTargetItem.add(:EVIOLITE,
 BattleHandlers::DamageCalcTargetItem.add(:COVERTCLOAK,
   proc { |item, user, target, _move, mults, _baseDmg, _type, aiCheck|
     mults[:final_damage_multiplier] *= 0.9
-    target.aiLearnsItem(item) unless aiCheck
+    user.aiLearnsItem(item) unless aiCheck
   }
 )

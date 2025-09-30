@@ -983,7 +983,7 @@ Category = Special
 Power = 90
 Accuracy = 100
 TotalPP = 10
-Target = ClosestNearFoe
+Target = NearOther
 FunctionCode = RampageAlwaysCriticalHit
 Flags = CanProtect
 Description = The user relentlessly rampages with its whip-like hands for two turns. Each hit will always be a critical hit.
@@ -1645,7 +1645,7 @@ Type = GROUND
 Category = Physical
 Power = 130
 Accuracy = 100
-TotalPP = 5
+TotalPP = 10
 Target = NearOther
 FunctionCode = LowerUserAtk4
 Flags = CanProtect
@@ -2488,19 +2488,6 @@ EffectChance = 40
 Description = The user attacks with small beams of light. It has a 40% chance to make the target flinch.
 Animation = SIGNALBEAM
 #-------------------------------
-[LUMINACHAIN]
-Name = Lumina Chain
-Type = BUG
-Category = Special
-Power = 120
-Accuracy = 100
-TotalPP = 10
-Target = ClosestNearFoe
-FunctionCode = Rampage
-Flags = CanProtect,Light
-Description = The user emits rapid bursts of light and rampages for two turns.
-Animation = SIGNALBEAM
-#-------------------------------
 [LUMINBURST]
 Name = Lumin Burst
 Type = BUG
@@ -2635,7 +2622,7 @@ Type = BUG
 Category = Physical
 Power = 130
 Accuracy = 100
-TotalPP = 5
+TotalPP = 10
 Target = NearOther
 FunctionCode = LowerUserAtk4
 Flags = CanProtect
@@ -5543,7 +5530,7 @@ Accuracy = 0
 TotalPP = 1
 Target = User
 FunctionCode = UseAllOtherSoundMoves
-Flags = Sound,Uninvocable
+Flags = Sound
 Description = The user rocks out by using each Sound-based move they know. Only one use per battle.
 Animation = UPROAR
 #-------------------------------
@@ -6307,7 +6294,7 @@ Type = ICE
 Category = Physical
 Power = 130
 Accuracy = 100
-TotalPP = 5
+TotalPP = 10
 Target = NearOther
 FunctionCode = LowerUserAtk4
 Flags = CanProtect
@@ -6745,17 +6732,6 @@ Flags = CanProtect
 Description = Attacks all foes with hidden draconic energy. Power increases by 50% in eclipse.
 Animation = DRAGONPULSE
 #-------------------------------
-[REDUCINGSYRUP]
-Name = Reducing Syrup
-Type = DRAGON
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = NearOther
-FunctionCode = ApplyReducingSyrupToTarget
-Flags = CanMagicCoat
-Description = The user sprays the target with a sticky syrup. For the next three turns, the target's highest stat will be reduced by two steps.
-#-------------------------------
 [REND]
 Name = Rend
 Type = DRAGON
@@ -7015,6 +6991,18 @@ FunctionCode = DisableTargetBladeMoves3
 Flags = CanProtect
 EffectChance = 100
 Description = The user disarms the target's blade. The target cannot use blade-based moves for two turns.
+#-------------------------------
+[DIVINATION]
+Name = Divination
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = HealUserHalfOfTotalHPRaiseDefSpDefCriticalHitRate1
+Flags = CanSnatch
+Description = The user heals itself by half of its max HP and raises their Defense, Sp. Def, and critical hit chance by two steps.
+Animation = COSMICPOWER
 #-------------------------------
 [DROWN]
 Name = Drown
@@ -7711,7 +7699,7 @@ Type = FAIRY
 Category = Physical
 Power = 130
 Accuracy = 100
-TotalPP = 5
+TotalPP = 10
 Target = NearOther
 FunctionCode = LowerUserAtk4
 Flags = CanProtect
@@ -7875,7 +7863,7 @@ Type = FAIRY
 Category = Special
 Power = 1
 Accuracy = 100
-TotalPP = 15
+TotalPP = 5
 Target = NearOther
 FunctionCode = ScalesSlowerThanTarget
 Flags = CanProtect
