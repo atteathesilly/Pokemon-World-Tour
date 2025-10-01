@@ -17,14 +17,16 @@ module QuestModule
   
   QUEST_ALESSA = {
     :Name => _INTL("Kayfabe"),
-    :Stage1 => _INTL("Find her in the sewers."),
-    :Stage2 => _INTL("Find her north of the Eleig."),
-    :Stage3 => _INTL("Find her after your 7th badge."),
-    :Stage4 => _INTL("Find her after the tournament."),
-    :Location1 => _INTL("Luxtech Sewers"),
-    :Location2 => _INTL("Prizca East"),
-    :Location3 => _INTL("Volcanic Shore"),
-    :Location4 => _INTL("Hollowed Layer"),
+    :Stage1 => _INTL("Fight her in Novo Town."),
+    :Stage2 => _INTL("Find her in the sewers."),
+    :Stage3 => _INTL("Find her north of the Eleig."),
+    :Stage4 => _INTL("Find her after your 7th badge."),
+    :Stage5 => _INTL("Find her after the tournament."),
+    :Location1 => _INTL("Novo Town"),
+    :Location2 => _INTL("Luxtech Sewers"),
+    :Location3 => _INTL("Prizca East"),
+    :Location4 => _INTL("Volcanic Shore"),
+    :Location5 => _INTL("Hollowed Layer"),
     :QuestDescription => _INTL("A confident young woman who trains Pokémon for a price. Dueling her could be good practice – but she looks at you with unnerving familiarity. She knows more than she lets on."),
   }
   
@@ -43,14 +45,16 @@ module QuestModule
   
   QUEST_KEONI = {
     :Name => _INTL("When in Makya"),
-    :Stage1 => _INTL("Find him north of the Eleig."),
-    :Stage2 => _INTL("Find him in the sewers."),
-    :Stage3 => _INTL("Find him after your 8th badge."),
-    :Stage4 => _INTL("Find him after the tournament."),
-    :Location1 => _INTL("Eleig Stretch"),
-    :Location2 => _INTL("Sewer Junction"),
-    :Location3 => _INTL("Novo College"),
-    :Location4 => _INTL("Velenz Menagerie"),
+    :Stage1 => _INTL("Fight him in East Tunnel."),
+    :Stage2 => _INTL("Find him north of the Eleig."),
+    :Stage3 => _INTL("Find him in the sewers."),
+    :Stage4 => _INTL("Find him after your 8th badge."),
+    :Stage5 => _INTL("Find him after the tournament."),
+    :Location1 => _INTL("East Tunnel"),
+    :Location2 => _INTL("Eleig Stretch"),
+    :Location3 => _INTL("Sewer Junction"),
+    :Location4 => _INTL("Novo College"),
+    :Location5 => _INTL("Velenz Menagerie"),
     :QuestDescription => _INTL("A studious man, foreign to Makya. He studies regional forms for his research. Something strange is afoot in the region – perhaps you can work together to find out what."),
   }
   
