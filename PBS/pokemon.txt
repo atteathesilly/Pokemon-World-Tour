@@ -4590,8 +4590,8 @@ Tribes = TYRANNICAL,MYSTIC
 StepsToHatch = 7905
 Height = 0.4
 Weight = 7.5
-Kind = Eldritch Horror
-Pokedex = Placeholder.
+Kind = Mini Boss
+Pokedex = This Pokemon likes to team up with the strongest Pokémon it can find. Some researchers fear its dormant power.
 Generation = 1
 Evolutions = MOMASTAR,Level,36
 #-------------------------------
@@ -4609,8 +4609,8 @@ Moves = 0,SOULDRAIN
 StepsToHatch = 7905
 Height = 1.0
 Weight = 35.0
-Kind = Eldritch Horror
-Pokedex = Placeholder.
+Kind = Final Boss
+Pokedex = Some people claim this Pokémon ruled over an unnatural subterranean realm long ago. It resembles an enemy from a popular video game.
 #-------------------------------
 [KABUTO]
 Name = Kabuto
