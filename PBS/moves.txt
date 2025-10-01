@@ -5003,6 +5003,7 @@ Target = User
 FunctionCode = SwapPhysicalStats
 Flags = CanSnatch
 Description = The user employs psychic power to switch its unmodified Attack with its unmodified Defense.
+Animation = CALMMIND
 #-------------------------------
 [PSYBEAM]
 Name = Psybeam
