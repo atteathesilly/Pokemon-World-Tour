@@ -360,6 +360,10 @@ Description = Upon entry, creates a Substitute from 1/4th of its HP.
 Name = Counter Flow
 Description = When hit with a special move, hits back instantly with Breach.
 #-------------------------------
+[CREEPINGHORROR]
+Name = Creeping Horror
+Description = Foretold moves take one turn longer to attack but deal 50% more damage.
+#-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
 Description = When a foe hits the Pokémon with a physical move, they are warned. If they do it again, they become cursed.
@@ -652,6 +656,14 @@ Description = Double the Pokémon's Speed if any enemy is below half health.
 Name = Ferrofluid
 Description = Takes 30% less damage in a rainstorm.
 Flags = RainstormSynergy
+#-------------------------------
+[FIELDOFDEATH]
+Name = Field of Death
+Description = While the Pokémon is on the field, all attacks drain 30% of damage dealt.
+#-------------------------------
+[FIELDOFLIFE]
+Name = Field of Life
+Description = While the Pokémon is on the field, all healing is boosted by 20% and can overheal.
 #-------------------------------
 [FIERYGLOW]
 Name = Fiery Glow

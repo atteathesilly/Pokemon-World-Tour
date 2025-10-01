@@ -170,7 +170,7 @@ end
 class PokeBattle_Move_StartUserSideLessDamageFromNonAttackDamage < PokeBattle_Move
     def initialize(battle, move)
         super
-        @enchantmentDuration = 8
+        @enchantmentDuration = 10
     end
 
     def pbEffectGeneral(user)

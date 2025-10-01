@@ -146,10 +146,14 @@ class PokeBattle_Battler
         end
         raise _INTL("Told to recover a negative amount") if amt.negative?
 
+        # Apply Field of Life
+        canOverheal = canOverheal || forceOverheal?
+
         # Apply healing modifiers
         amt *= 1.5 if hasActiveAbility?(:ROOTED)
         amt *= 2.0 if hasActiveAbilityAI?(:GLOWSHROOM) && @battle.moonGlowing?
         amt *= 0.5 if effectActive?(:IcyInjection)
+        amt *= 1.2 if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
         amt = amt.round
 
         # Cap the healing
@@ -540,21 +544,13 @@ class PokeBattle_Battler
         end
         # Minior - Shields Down
         if isSpecies?(:MINIOR) && hasAbility?(:SHIELDSDOWN)
-            if aboveHalfHealth? # Turn into Meteor form
-                if form >= 7
-                    newForm = @form - 7
-                    showMyAbilitySplash(:SHIELDSDOWN, true)
-                    hideMyAbilitySplash
-                    @battle.pbCommonAnimation("ShieldsUp", self)
-                    pbChangeForm(newForm, _INTL("{1} deactivated!", getAbilityName(:SHIELDSDOWN)))
-                end
-            else # Turn into Core form
-                if form < 7
-                    showMyAbilitySplash(:SHIELDSDOWN, true)
-                    hideMyAbilitySplash
-                    @battle.pbCommonAnimation("ShieldsDown", self)
-                    pbChangeForm(@form + 7, _INTL("{1} activated!", getAbilityName(:SHIELDSDOWN)))
-                end
+            expectedForm = aboveHalfHealth? ? form % 7 : (form % 7) + 7
+            if form != expectedForm
+                showMyAbilitySplash(:SHIELDSDOWN, true)
+                hideMyAbilitySplash
+                animation = aboveHalfHealth? ? "ShieldsUp" : "ShieldsDown"
+                @battle.pbCommonAnimation(animation, self)
+                pbChangeForm(expectedForm, _INTL("{1} #{aboveHalfHealth? ? 'deactivated' : 'activated'}!", getAbilityName(:SHIELDSDOWN)))
             end
         end
         # Wishiwashi - Schooling

@@ -907,8 +907,8 @@ Category = Status
 Accuracy = 100
 TotalPP = 10
 Target = User
-FunctionCode = EatBerryRaiseDefenses3
-Description = The user eats its held Berry, then raises Defense and Sp. Def by three steps.
+FunctionCode = EatBerryRaiseDefenses1
+Description = The user eats its held Berry, then raises Defense and Sp. Def by one step each.
 #-------------------------------
 [SUBSTITUTE]
 Name = Substitute
@@ -2583,7 +2583,7 @@ Description = The user calls out its underlings to heal it. The user heals itsel
 Name = Infestation
 Type = BUG
 Category = Special
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -2914,17 +2914,6 @@ Target = AllBattlers
 FunctionCode = StartPerishCountsForAllBattlers
 Flags = Sound
 Description = Any Pokémon that hears this song faints in three turns, unless it switches out of battle.
-#-------------------------------
-[PHANTOMFORCE]
-Name = Phantom Force
-Type = GHOST
-Category = Physical
-Power = 90
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
-Description = The user vanishes somewhere, charging and becoming invulnerable, then strikes on the second turn. Skips and destroys protections.
 #-------------------------------
 [SCARYFACE]
 Name = Scary Face
@@ -3522,7 +3511,7 @@ Description = The target is punched with a fiery fist. It has a 10% chance to bu
 Name = Fire Spin
 Type = FIRE
 Category = Special
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -3825,7 +3814,7 @@ Description = A spray of bubbles is forcefully ejected at the target. It also lo
 Name = Clamp
 Type = WATER
 Category = Physical
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther

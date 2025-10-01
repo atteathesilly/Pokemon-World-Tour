@@ -74,7 +74,7 @@ BattleHandlers::DamageCalcTargetAbility.add(:PARANOID,
 
 BattleHandlers::DamageCalcTargetAbility.add(:MULTISCALE,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
-    if target.hp == target.totalhp
+    if target.fullHealth?
       mults[:final_damage_multiplier] /= 2
       target.aiLearnsAbility(ability) unless aiCheck
     end

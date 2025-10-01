@@ -73,7 +73,7 @@ module GameData
           end
         end
         return "Graphics/Items/000"
-    end
+      end
   
       def self.held_icon_filename(item)
         item_data = self.try_get(item)
@@ -298,15 +298,10 @@ module GameData
       end
   
       def unlosable?(species, ability)
-        combos = {
-           :ARCEUS   => [:PRISMATICPLATE],
-           :SILVALLY => [:MEMORYSET],
-           :GIRATINA => [:GRISEOUSORB],
-           :GENESECT => [:BURNDRIVE, :CHILLDRIVE, :DOUSEDRIVE, :SHOCKDRIVE],
-           :KYOGRE   => [:BLUEORB],
-           :GROUDON  => [:REDORB]
-        }
-        return combos[species] && combos[species].include?(@id)
+        base_form_data = GameData::Species.get_species_form(species, 0)
+        return false if base_form_data.nil?
+        sticky_items = base_form_data.sticky_items
+        return sticky_items.include?(@id)
       end
 
       def legal?(isTrainer = false)
