@@ -124,6 +124,7 @@ Generation = 1
 [SQUIRTLE]
 Name = Squirtle
 Type1 = WATER
+Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 45,45,65,40,60,65
 # Total = 320
@@ -1516,6 +1517,7 @@ WildItemUncommon = PEARL
 [GMEOWTH]
 Name = G. Meowth
 Type1 = STEEL
+Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 40,95,90,40,40,65
 # Total = 370
@@ -6440,6 +6442,7 @@ Generation = 8
 [TEDDIURSA]
 Name = Teddiursa
 Type1 = NORMAL
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 95,100,75,45,30,45
 # Total = 390
@@ -6980,6 +6983,7 @@ Flags = TutorAny
 [LARVITAR]
 Name = Larvitar
 Type1 = ROCK
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 60,65,60,40,45,60
 # Total = 330
@@ -7234,6 +7238,7 @@ Generation = 3
 [TORCHIC]
 Name = Torchic
 Type1 = FIRE
+Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 45,65,55,40,55,50
 # Total = 310
@@ -7748,6 +7753,7 @@ WildItemUncommon = MENTALHERB
 [SEEDOT]
 Name = Seedot
 Type1 = GRASS
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,40,65,45,55,50
 # Total = 310
@@ -9360,6 +9366,7 @@ Generation = 3
 [CORPHISH]
 Name = Corphish
 Type1 = WATER
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 70,70,85,35,40,55
 # Total = 355
@@ -10517,6 +10524,7 @@ Formalizer = 0,1,2,3
 [TURTWIG]
 Name = Turtwig
 Type1 = GRASS
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,70,65,30,45,55
 # Total = 320
@@ -10573,6 +10581,7 @@ Generation = 4
 [CHIMCHAR]
 Name = Chimchar
 Type1 = FIRE
+Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 45,60,45,60,60,45
 # Total = 315
@@ -10629,6 +10638,7 @@ Generation = 4
 [PIPLUP]
 Name = Piplup
 Type1 = WATER
+Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,60,55,40,60,55
 # Total = 325
@@ -10815,6 +10825,7 @@ WildItemUncommon = METRONOME
 [SHINX]
 Name = Shinx
 Type1 = ELECTRIC
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,75,45,55,50,45
 # Total = 325
@@ -12220,6 +12231,7 @@ Generation = 5
 [TEPIG]
 Name = Tepig
 Type1 = FIRE
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 65,55,55,40,35,55
 # Total = 305
@@ -13088,6 +13100,7 @@ WildItemUncommon = REINFORCINGROD
 [TYMPOLE]
 Name = Tympole
 Type1 = POISON
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 75,60,55,55,60,45
 # Total = 350
@@ -13925,6 +13938,7 @@ Generation = 5
 [TRUBBISH]
 Name = Trubbish
 Type1 = POISON
+Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 65,45,65,50,55,65
 # Total = 345
@@ -17545,6 +17559,7 @@ Generation = 8
 [LITTEN]
 Name = Litten
 Type1 = FIRE
+Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 45,65,40,70,60,40
 # Total = 320
@@ -17604,6 +17619,7 @@ Generation = 7
 [POPPLIO]
 Name = Popplio
 Type1 = WATER
+Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 50,55,55,40,65,55
 # Total = 320
@@ -19143,6 +19159,7 @@ Flags = Legendary,UltraBeast
 [POIPOLE]
 Name = Poipole
 Type1 = POISON
+Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 65,75,65,75,75,65
 # Total = 420
@@ -19619,6 +19636,7 @@ Generation = 8
 [BLIPBUG]
 Name = Blipbug
 Type1 = BUG
+Type2 = PSYCHIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 45,40,40,65,45,65
 # Total = 300
