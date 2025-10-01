@@ -213,18 +213,3 @@ BattleHandlers::EOREffectAbility.add(:DISTORTEDGRAVITY,
     battler.hideMyAbilitySplash
   }
 )
-
-BattleHandlers::EOREffectAbility.add(:SLEEPINGHORROR,
-  proc { |ability, battler, battle|
-  next unless battler.asleep?
-  battler.showMyAbilitySplash(ability)
-    battle.eachOtherSideBattler do |b|
-      if b.takesIndirectDamage?(true)
-        battle.pbDisplay(_INTL("{1} is hurt by the eldritch knowledge!", b.pbThis))
-        damageFraction = 1.0 / 12.0
-        b.applyFractionalDamage(damageFraction, false)
-      end
-    end
-    battler.hideMyAbilitySplash
-  }
-)
