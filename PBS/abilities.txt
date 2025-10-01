@@ -104,11 +104,11 @@ Description = Raises Attack by four steps when a stat is lowered by a foe.
 #-------------------------------
 [DELTASTREAM]
 Name = Delta Stream
-Description = Changes the weather to Strong Winds, which remove Flying-type's weaknesses. Lingers for three turns after leaving.
+Description = Summons Strong Winds, which remove Flying-type's weaknesses. Lingers for three turns after leaving.
 #-------------------------------
 [DESOLATELAND]
 Name = Desolate Land
-Description = Changes the weather to Harsh Sunlight, which debuffs most attacks and prevents them from critting. Lingers for three turns after leaving.
+Description = Summons Harsh Sunlight, which prevents most moves from critting. Lingers for three turns after leaving.
 Flags = SunshineSynergy
 #-------------------------------
 [DISGUISE]
@@ -131,7 +131,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [DROUGHT]
 Name = Drought
-Description = Turns the weather to sunshine for four turns upon entry.
+Description = Summons sunshine for four turns upon entry.
 Flags = SunshineSynergy
 #-------------------------------
 [DRYSKIN]
@@ -400,7 +400,7 @@ Description = The Pokémon raises the foe's PP usage.
 #-------------------------------
 [PRIMORDIALSEA]
 Name = Primordial Sea
-Description = Changes the weather to Heavy Rain, which debuffs most attacks and prevents their random added effects. Lingers for three turns after leaving.
+Description = Summons Heavy Rain, which prevents most moves' random added effects. Lingers for three turns after leaving.
 Flags = RainstormSynergy
 #-------------------------------
 [PRISMARMOR]
