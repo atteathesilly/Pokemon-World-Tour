@@ -555,6 +555,11 @@ class PokeBattle_Battle
         @scene.animateIntroNewAvatar(battlerIndexNew)
         pbOnActiveOne(newBattler)
         pbCalculatePriority
+
+        # Initialize Known Ability and Known Item entries
+        initializeKnownAbilities(newPokemon)
+        initializeKnownMoves(newPokemon)
+        initializeKnownItems(newPokemon)
     end
 
     def summonAvatarBattler(species, level, version = 0, sideIndex = 1)
