@@ -141,7 +141,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [EMERGENCYEXIT]
 Name = Emergency Exit
-Description = Switches out if its HP becomes half or less.
+Description = Switches out if its HP is lowered below half.
 #-------------------------------
 [FAIRYAURA]
 Name = Fairy Aura
@@ -652,7 +652,7 @@ Description = Physical attacks against the Pokémon raise its Speed by two steps
 #-------------------------------
 [WIMPOUT]
 Name = Wimp Out
-Description = Cowardly switches out if its HP becomes half or less.
+Description = Cowardly switches out if its HP is lowered below half.
 #-------------------------------
 [WONDERGUARD]
 Name = Wonder Guard
