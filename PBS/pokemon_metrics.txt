@@ -6235,7 +6235,7 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [TINKATINK]
-BackSprite = 0,0
+BackSprite = 0,20
 FrontSprite = 4,34
 ShadowX = 0
 ShadowSize = 1

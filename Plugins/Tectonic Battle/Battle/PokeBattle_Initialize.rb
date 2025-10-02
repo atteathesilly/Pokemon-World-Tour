@@ -212,10 +212,10 @@ class PokeBattle_Battle
         return unless pokemon.getAbilityList.length == 1
         abilityToKnow = pokemon.getAbilityList[0][0]
         @knownAbilities[pokemon.personalID].push(abilityToKnow)
-        unless is_online? # Prevent debug cheating online
-            echoln("Player's side pokemon #{pokemon.name}'s ability #{abilityToKnow} is known by the AI, since species only has one legal ability.")
-        end
+        echoln("Player's side pokemon #{pokemon.name}'s ability #{abilityToKnow} is known by the AI, since species only has one legal ability.")
     end
+end
+
 
     def initializeKnownMoves(pokemon)
         knownMovesArray = []
@@ -223,11 +223,9 @@ class PokeBattle_Battle
         pokemon.moves.each do |move|
             next unless pokemon.boss? || aiAutoKnowsMove?(move,pokemon)
             knownMovesArray.push(move.id)
-            unless is_online? # Prevent debug cheating online
                 echoln("Pokemon #{pokemon.name}'s move #{move.name} is known by the AI")
             end
         end
-    end
 
     def initializeKnownItems(pokemon)
         knownItemsArray = []
@@ -235,11 +233,9 @@ class PokeBattle_Battle
         pokemon.items.each do |item|
             next # TO DO
             knownItemsArray.push(item)
-            unless is_online? # Prevent debug cheating online
                 echoln("Pokemon #{pokemon.name}'s item #{getItemName(item)} is known by the AI")
             end
         end
-    end
 
     def aiAutoKnowsMove?(move,pokemon)
         autoKnow = getBattleMoveInstanceFromID(move.id).aiAutoKnows?(pokemon)
@@ -273,4 +269,3 @@ class PokeBattle_Battle
             end
         end
     end
-end
