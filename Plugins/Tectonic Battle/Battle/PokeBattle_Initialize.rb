@@ -172,13 +172,13 @@ class PokeBattle_Battle
         
         # System for learning the player's abilities
         @knownAbilities = {}
+        echoln("===PARTY 1 KNOWN ABILITIES===")
         @party1.each do |pokemon|
-            @knownAbilities[pokemon.personalID] = []
-
-            next unless pokemon.getAbilityList.length == 1
-            abilityToKnow = pokemon.getAbilityList[0][0]
-            @knownAbilities[pokemon.personalID].push(abilityToKnow)
-            echoln("Player's side pokemon #{pokemon.name}'s ability #{abilityToKnow} is known by the AI, since species only has one legal ability.")
+            initializeKnownAbilities(pokemon)
+        end
+        echoln("===PARTY 2 KNOWN ABILITIES===")
+        @party2.each do |pokemon|
+            initializeKnownAbilities(pokemon)
         end
 
         # System for learning the player's moves
@@ -207,13 +207,25 @@ class PokeBattle_Battle
         setMaxPPs(true)
     end
 
+    def initializeKnownAbilities(pokemon)
+        @knownAbilities[pokemon.personalID] = []
+        return unless pokemon.getAbilityList.length == 1
+        abilityToKnow = pokemon.getAbilityList[0][0]
+        @knownAbilities[pokemon.personalID].push(abilityToKnow)
+        unless is_online? # Prevent debug cheating online
+            echoln("Player's side pokemon #{pokemon.name}'s ability #{abilityToKnow} is known by the AI, since species only has one legal ability.")
+        end
+    end
+
     def initializeKnownMoves(pokemon)
         knownMovesArray = []
         @knownMoves[pokemon.personalID] = knownMovesArray
         pokemon.moves.each do |move|
             next unless pokemon.boss? || aiAutoKnowsMove?(move,pokemon)
             knownMovesArray.push(move.id)
-            echoln("Pokemon #{pokemon.name}'s move #{move.name} is known by the AI")
+            unless is_online? # Prevent debug cheating online
+                echoln("Pokemon #{pokemon.name}'s move #{move.name} is known by the AI")
+            end
         end
     end
 
@@ -223,7 +235,9 @@ class PokeBattle_Battle
         pokemon.items.each do |item|
             next # TO DO
             knownItemsArray.push(item)
-            echoln("Pokemon #{pokemon.name}'s item #{getItemName(item)} is known by the AI")
+            unless is_online? # Prevent debug cheating online
+                echoln("Pokemon #{pokemon.name}'s item #{getItemName(item)} is known by the AI")
+            end
         end
     end
 
