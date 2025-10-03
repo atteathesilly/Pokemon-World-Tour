@@ -4993,18 +4993,6 @@ FunctionCode = AverageUserTargetOffenses
 Flags = CanProtect
 Description = The user employs psychic power to average its unmodified Attack and Sp. Atk stats with those of the target.
 #-------------------------------
-[POWERTRICK]
-Name = Power Trick
-Type = PSYCHIC
-Category = Status
-Accuracy = 0
-TotalPP = 10
-Target = User
-FunctionCode = SwapPhysicalStats
-Flags = CanSnatch
-Description = The user employs psychic power to switch its unmodified Attack with its unmodified Defense.
-Animation = CALMMIND
-#-------------------------------
 [PSYBEAM]
 Name = Psybeam
 Type = PSYCHIC

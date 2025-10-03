@@ -5729,17 +5729,6 @@ Target = BothSides
 FunctionCode = StartEclipse6
 Description = Summons eclipse for six turns, boosting Psychic-type attacks and heralding the total eclipse.
 #-------------------------------
-[ENERGYTRICK]
-Name = Energy Trick
-Type = PSYCHIC
-Category = Status
-Accuracy = 0
-TotalPP = 10
-Target = User
-FunctionCode = SwapSpecialStats
-Flags = CanSnatch
-Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
-#-------------------------------
 [ESPERDIVE]
 Name = Esper Dive
 Type = PSYCHIC

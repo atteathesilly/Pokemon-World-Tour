@@ -3008,6 +3008,17 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user eats its foe's dreams. It absorbs half the damage caused to heal its HP and doubles in power if the foe is asleep.
 #-------------------------------
+[ENERGYTRICK]
+Name = Energy Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
+#-------------------------------
 [EXPANDINGFORCE]
 Name = Expanding Force
 Type = PSYCHIC
@@ -3192,6 +3203,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user employs its psychic power to switch changes to its Attack and Sp. Atk with the target.
+#-------------------------------
+[POWERTRICK]
+Name = Power Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user employs psychic power to switch its unmodified Attack with its unmodified Defense.
+Animation = CALMMIND
 #-------------------------------
 [PSYCHICTERRAIN]
 Name = Psychic Terrain
