@@ -2346,6 +2346,20 @@ Flags = CanSnatch
 Description = The user withdraws its body into its hard shell, raising both defensive stats by two steps and gaining Shell Armor.
 Animation = WITHDRAW
 #-------------------------------
+[SNAP]
+Name = Snap
+Type = WATER
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Biting
+EffectChance = 40
+Description = The user snaps like a fish at the target. This has a 40% chance to make it flinch.
+Animation = FISHIOUSREND
+#-------------------------------
 [SOAK]
 Name = Soak
 Type = WATER
