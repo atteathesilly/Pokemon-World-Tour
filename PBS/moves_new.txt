@@ -175,16 +175,27 @@ FunctionCode = Drainage
 Flags = CanProtect
 Description = This attack inflicts double damage on a waterlogged foe. It also cures the target's waterlogging, however.
 #-------------------------------
+[ELEMENTALCRUNCH]
+Name = Elemental Crunch
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UseChoiceOfElementalCrunches
+Flags = CanSnatch
+Description = The user chooses between Searing Crunch, Glacial Crunch, Aquatic Crunch, and Volt Crunch to use this turn.
+#-------------------------------
 [ELEMENTALFANG]
 Name = Elemental Fang
 Type = NORMAL
 Category = Status
 Accuracy = 100
-TotalPP = 20
+TotalPP = 8
 Target = NearOther
-FunctionCode = UseChoiceOf3ElementalFangs
+FunctionCode = UseChoiceOfElementalFangs
 Flags = CanSnatch
-Description = The user chooses between Fire Fang, Thunder Fang, or Ice Fang to use this turn.
+Description = The user chooses between Fire Fang, Ice Fang, Hydro Fang, or Thunder Fang to use this turn.
 #-------------------------------
 [EVERNALIZE]
 Name = Evernalize
@@ -2921,6 +2932,18 @@ Flags = CanProtect
 Description = Spectral hands reach from the ground to trip the target. The heavier the target, the greater the damage.
 Animation = CRUSHGRIP
 #-------------------------------
+[GHOSTLYTALE]
+Name = Ghostly Tale
+Type = GHOST
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Flags = Foretold,Light
+Description = Two turns after this move is used, the user scares the target with a terrifying tale.
+#-------------------------------
 [MACHINATE]
 Name = Machinate
 Type = GHOST
@@ -3010,6 +3033,18 @@ FunctionCode = MoveDisablesSelf
 Flags = CanProtect
 Description = The user buries the target with somber force. Then, this move is disabled.
 Animation = SHADOWPUNCH
+#-------------------------------
+[SOULDRAIN]
+Name = Soul Drain
+Type = GHOST
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDoneOverheal
+Flags = CanProtect
+Description = The user drains the target's soul. The user's HP is restored by 50% of the damage dealt. This can overheal.
 #-------------------------------
 [SPECTRALTONGUE]
 Name = Spectral Tongue
@@ -3332,7 +3367,7 @@ Animation = FLASHCANNON
 Name = Magnetize
 Type = STEEL
 Category = Physical
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -3953,6 +3988,20 @@ FunctionCode = ProtectUserBurnSpecAttacker
 Description = Protects the user from attacks. Also burns any attacker who specially attacks the user.
 Animation = WITHDRAW
 #-------------------------------
+[SEARINGCRUNCH]
+Name = Searing Crunch
+Type = FIRE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BurnTargetLowerTargetDef2
+Flags = CanProtect,Biting,FakeRandomEffect
+EffectChance = 100
+Description = The user chomps down with burning fangs. It has a 20% chance to burn and a 20% chance to lower Defense by two steps.
+Animation = FIREFANG
+#-------------------------------
 [SHIMMERINGHEAT]
 Name = Shimmering Heat
 Type = FIRE
@@ -4068,6 +4117,20 @@ Description = The user creates a storm using its flaming body, damaging everythi
 Animation = INFERNOOVERDRIVE
 #-------------------------------
 #		WATER MOVES
+#-------------------------------
+[AQUATICCRUNCH]
+Name = Aquatic Crunch
+Type = WATER
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = WaterlogTargetLowerTargetDef2
+Flags = CanProtect,Biting
+EffectChance = 100
+Description = The user bites with watery fangs. It has a 20% chance to waterlog and a 20% chance to lower Defense by two steps.
+Animation = FISHIOUSREND
 #-------------------------------
 [ARCHEANDELUGE]
 Name = Archean Deluge
@@ -4276,6 +4339,20 @@ Flags = CanProtect
 Description = The user crashes into the target like a tsunami. The user also takes 33% recoil.
 Animation = WATERFALL
 #-------------------------------
+[HYDROFANG]
+Name = Hydro Fang
+Type = WATER
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = WaterlogTargetLowerTargetDef2
+Flags = CanProtect,Biting
+EffectChance = 100
+Description = The user bites with watery fangs. It has a 20% chance to waterlog and a 20% chance to lower Defense by two steps.
+Animation = FISHIOUSREND
+#-------------------------------
 [IMMERSE]
 Name = Immerse
 Type = WATER
@@ -4428,20 +4505,6 @@ FunctionCode = BindTarget3
 Flags = CanProtect
 Description = The target is crushed in the user's shell, mouth, or claws, trapping and damaging it for three turns.
 Animation = CLAMP
-#-------------------------------
-[SNAP]
-Name = Snap
-Type = WATER
-Category = Physical
-Power = 65
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-FunctionCode = Flinch
-Flags = CanProtect,Biting
-EffectChance = 40
-Description = The user snaps like a fish at the target. This has a 40% chance to make it flinch.
-Animation = FISHIOUSREND
 #-------------------------------
 [SPATTERINGRAM]
 Name = Spattering Ram
@@ -5477,7 +5540,7 @@ Animation = FLASH
 Name = Surge Snare
 Type = ELECTRIC
 Category = Special
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -5498,6 +5561,20 @@ FunctionCode = RecoilFullDamageDealt
 Flags = CanProtect
 Description = The user takes an entire grid of power into its belly to slam the target. The user takes 100% recoil.
 Animation = BODYSLAM
+#-------------------------------
+[VOLTCRUNCH]
+Name = Volt Crunch
+Type = ELECTRIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = NumbTargetLowerTargetDef2
+Flags = CanProtect,Biting,FakeRandomEffect
+EffectChance = 100
+Description = The user chomps down with high-voltage fangs. It has a 20% chance to numb and a 20% chance to lower Defense by two steps.
+Animation = THUNDERFANG
 #-------------------------------
 [VOLTSEEKERS]
 Name = Volt Seekers
@@ -5652,17 +5729,6 @@ Target = BothSides
 FunctionCode = StartEclipse6
 Description = Summons eclipse for six turns, boosting Psychic-type attacks and heralding the total eclipse.
 #-------------------------------
-[ENERGYTRICK]
-Name = Energy Trick
-Type = PSYCHIC
-Category = Status
-Accuracy = 0
-TotalPP = 10
-Target = User
-FunctionCode = SwapSpecialStats
-Flags = CanSnatch
-Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
-#-------------------------------
 [ESPERDIVE]
 Name = Esper Dive
 Type = PSYCHIC
@@ -5757,7 +5823,7 @@ Animation = CRUSHGRIP
 Name = Mage Hand
 Type = PSYCHIC
 Category = Physical
-Power = 50
+Power = 45
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -6209,6 +6275,20 @@ Target = FoeSide
 FunctionCode = FrostSpikes
 Flags = CanMagicCoat
 Description = The user lays a hazard layer of frozen spikes on the foe's side. One layer hurts switched in foes, two layers frostbites.
+#-------------------------------
+[GLACIALCRUNCH]
+Name = Glacial Crunch
+Type = ICE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FrostbiteTargetLowerTargetDef2
+Flags = CanProtect,Biting,FakeRandomEffect
+EffectChance = 100
+Description = The user chomps down with icy cold fangs. It has a 20% chance to frostbite and a 20% chance to lower Defense by two steps.
+Animation = ICEFANG
 #-------------------------------
 [GLACIALRAM]
 Name = Glacial Ram

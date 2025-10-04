@@ -4140,6 +4140,18 @@ FrontSprite = 0,8
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[MOMANYTE]
+BackSprite = 0,31
+FrontSprite = 0,27
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MOMASTAR]
+BackSprite = 0,23
+FrontSprite = 0,19
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [MONFERNO]
 BackSprite = 0,21
 FrontSprite = 4,16

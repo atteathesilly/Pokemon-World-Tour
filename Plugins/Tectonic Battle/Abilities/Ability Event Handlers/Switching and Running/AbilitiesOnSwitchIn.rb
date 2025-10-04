@@ -401,6 +401,24 @@ BattleHandlers::AbilityOnSwitchIn.add(:LIGHTTRICK,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFDEATH,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with death!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFLIFE,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with life!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
@@ -1130,7 +1148,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:HOLIDAYCHEER,
   proc { |ability, battler, battle, aiCheck|
       anyHealing = false
       battle.eachSameSideBattler(battler.index) do |b|
-          next 0 if b.fullHealth?
+          next 0 if b.healthCapped?
           anyHealing = true
       end
       next 0 unless anyHealing

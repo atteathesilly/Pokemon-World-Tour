@@ -2029,7 +2029,7 @@ Pokemon = AGGRON,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BEWEAR,70
-    Moves = MACHPUNCH,DRAINPUNCH,SWORDSDANCE,WAILINGBLOW
+    Moves = MACHPUNCH,DRAINPUNCH,SWORDSDANCE,PAYBACK
     AbilityIndex = 0 # Intimidate
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

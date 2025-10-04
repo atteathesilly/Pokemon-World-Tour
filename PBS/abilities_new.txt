@@ -173,6 +173,10 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
+[BITEY]
+Name = Bitey
+Description = Boosts the power of biting moves by 30%.
+#-------------------------------
 [BITTERCOLD]
 Name = Bitter Cold
 Description = Causes hail to deal double damage and increase Defense of Ice-types by 2.0x instead of 1.5x.
@@ -359,6 +363,10 @@ Description = Upon entry, creates a Substitute from 1/4th of its HP.
 [COUNTERFLOW]
 Name = Counter Flow
 Description = When hit with a special move, hits back instantly with Breach.
+#-------------------------------
+[CREEPINGHORROR]
+Name = Creeping Horror
+Description = Foretold moves take one turn longer to attack but deal 50% more damage.
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
@@ -565,7 +573,7 @@ Description = The Pokemon's Fighting-type attacks become spread and deal 35% mor
 #-------------------------------
 [EVENTHORIZON]
 Name = Event Horizon
-Description = Changes the weather to star storm, which increases its damage over time. Lingers for three turns after leaving.
+Description = Changes the weather to Star Storm, which increases its damage over time. Lingers for three turns after leaving.
 Flags = SandstormSynergy
 #-------------------------------
 [EXCAVATOR]
@@ -652,6 +660,14 @@ Description = Double the Pokémon's Speed if any enemy is below half health.
 Name = Ferrofluid
 Description = Takes 30% less damage in a rainstorm.
 Flags = RainstormSynergy
+#-------------------------------
+[FIELDOFDEATH]
+Name = Field of Death
+Description = While the Pokémon is on the field, all attacks drain 30% of damage dealt.
+#-------------------------------
+[FIELDOFLIFE]
+Name = Field of Life
+Description = While the Pokémon is on the field, all healing is boosted by 20% and can overheal.
 #-------------------------------
 [FIERYGLOW]
 Name = Fiery Glow
@@ -898,7 +914,7 @@ Description = Immune to Dark-type moves, and boosts Attack and Sp. Atk when hit 
 #-------------------------------
 [HEATDEATH]
 Name = Heat Death
-Description = Changes the weather to ice age, which damages and prevents healing. Lingers for three turns after leaving.
+Description = Changes the weather to Ice Age, which damages and prevents healing. Lingers for three turns after leaving.
 Flags = HailSynergy
 #-------------------------------
 [HEATSAVOR]
@@ -1750,7 +1766,7 @@ Description = Special moves have a 30% chance to waterlog targets.
 #-------------------------------
 [SATURNALSKY]
 Name = Saturnal Sky
-Description = Changes the weather to ring eclipse, which heralds the total ring eclipse. Lingers for three turns after leaving.
+Description = Changes the weather to Ring Eclipse, which heralds the total Ring Eclipse. Lingers for three turns after leaving.
 Flags = EclipseSynergy
 #-------------------------------
 [SCALDINGSMOKE]

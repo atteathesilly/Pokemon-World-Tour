@@ -68,7 +68,7 @@ Pokemon = GROWLITHE,10
     AbilityIndex = 0 # Intimidate
 Pokemon = CHEWTLE,10
     Moves = HEADBANG,BREACH,BITE
-    AbilityIndex = 0 # Strong Jaw
+    AbilityIndex = 0 # Bitey
 #-------------------------------
 [NINJABOY,Matthew]
 Pokemon = BONSLY,12
@@ -129,7 +129,7 @@ Pokemon = TOTODILE,13
     AbilityIndex = 0 # Ferocious
 Pokemon = TRAPINCH,13
     Moves = TREADON,DAZZLE,SMUSH,BITE
-    AbilityIndex = 1 # Strong Jaw
+    AbilityIndex = 1 # Bitey
 #-------------------------------
 [BATTLEGIRL,Eliza]
 Pokemon = MAKUHITA,15
@@ -469,7 +469,7 @@ Pokemon = LICKITUNG,22
 #-------------------------------
 [LASS,Tara]
 Pokemon = ARROKUDA,23
-    Moves = FURYPECKS,SNAP,BITE,AQUAJET
+    Moves = FURYPECKS,HYDROFANG,BITE,AQUAJET
     AbilityIndex = 1 # Straight Ahead
     Item = WATERGEM
 Pokemon = PIDGEOTTO,22
@@ -3360,8 +3360,8 @@ Pokemon = MPOLTEAGEIST,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BRUXISH,45
-    Moves = CRUNCH,PSYCHICFANGS,FIREFANG,SNAP
-    AbilityIndex = 1 # Strong Jaw
+    Moves = CRUNCH,PSYCHICFANGS,ELEMENTALCRUNCH
+    AbilityIndex = 1 # Bitey
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,5,20,20,5
@@ -3868,7 +3868,7 @@ Pokemon = DUSCLOPS,30
     Moves = WILLOWISP,CONFUSERAY,SHADOWSNEAK,SHADOWPUNCH
     AbilityIndex = 0 # Aggravate
 Pokemon = SHARPEDO,30
-    Moves = SNAP,POISONFANG,AQUAJET,BRUTALSWING
+    Moves = HYDROFANG,POISONFANG,AQUAJET,BRUTALSWING
     AbilityIndex = 1 # Armor Piercing
 Pokemon = PINSIR,30
     Moves = FURYPECKS,CAPOEIRA,BUGBITE,BULKUP
@@ -5137,7 +5137,7 @@ Pokemon = GOTHITELLE,55
     Moves = CORECOLLAPSE,MASSDESTRUCTION,SWEETSELENE,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,55
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 Pokemon = CORVIKNIGHT,55
@@ -5367,7 +5367,7 @@ Pokemon = GOTHITELLE,65
     Moves = CORECOLLAPSE,MASSDESTRUCTION,SWEETSELENE,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,65
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 Pokemon = CORVIKNIGHT,65
@@ -5947,7 +5947,7 @@ Pokemon = PERSIAN,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
 Pokemon = MIMIKYU,70
-    Moves = SHADOWSNEAK,SWORDSDANCE,TANTRUM,PHANTOMFORCE
+    Moves = SHADOWSNEAK,SWORDSDANCE,TANTRUM,WAILINGBLOW
     AbilityIndex = 0 # Disguise
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
@@ -6473,7 +6473,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,FUTURESIGHT,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
@@ -6700,7 +6700,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,FUTURESIGHT,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
@@ -7092,7 +7092,7 @@ Pokemon = GOTHITELLE,70
     Moves = CORECOLLAPSE,PLANTDOUBT,PSYCHIC,BLACKOUT
     AbilityIndex = 0 # Moon Basking
 Pokemon = SHEDINJA,70
-    Moves = PHANTOMFORCE,XSCISSOR,PSYCHOSCISSION,WILLOWISP
+    Moves = WAILINGBLOW,XSCISSOR,PSYCHOSCISSION,WILLOWISP
     AbilityIndex = 0 # Wonder Guard
     Item = FOCUSSASH
 #-------------------------------
@@ -7456,8 +7456,8 @@ Pokemon = TITANIX,57
     AbilityIndex = 1 # Gravitas
     Item = SHELLBELL
 Pokemon = BOLTUND,57
-    Moves = THUNDERFANG,SNAP,CRUNCH,PSYCHICFANGS
-    AbilityIndex = 0 # Strong Jaw
+    Moves = VOLTCRUNCH,AQUATICCRUNCH,CRUNCH,PSYCHICFANGS
+    AbilityIndex = 0 # Bitey
 #-------------------------------
 [GUITARIST3,Athena]
 Pokemon = MSEVIPER,58
@@ -7973,7 +7973,7 @@ Pokemon = KLEFKI,70
 Pokemon = SMEARGLE,70
     AbilityIndex = 0 # Mental Block
 Pokemon = BOLTUND,70
-    AbilityIndex = 0 # Strong Jaw
+    AbilityIndex = 0 # Bitey
 Pokemon = AMBIPOM,70
     AbilityIndex = 1 # Skill Link
 Pokemon = WAILORD,70
