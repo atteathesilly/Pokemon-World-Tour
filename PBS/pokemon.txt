@@ -11315,7 +11315,7 @@ Name = M. Buneary
 Type1 = NORMAL
 Type2 = ROCK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 55,60,50,85,45,55
+BaseStats = 55,45,55,85,60,50
 # Total = 350
 BaseEXP = 70
 Rareness = 145
@@ -11337,7 +11337,7 @@ Name = M. Lopunny
 Type1 = NORMAL
 Type2 = ROCK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 65,95,70,105,50,90
+BaseStats = 65,50,90,105,95,70
 # Total = 475
 BaseEXP = 168
 Rareness = 50
@@ -11356,7 +11356,7 @@ Name = M. Haerobic
 Type1 = NORMAL
 Type2 = ROCK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 80,115,90,120,60,105
+BaseStats = 80,60,115,120,115,80
 # Total = 570
 BaseEXP = 248
 Rareness = 35
