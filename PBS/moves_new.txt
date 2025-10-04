@@ -2113,6 +2113,19 @@ Flags = CanProtect,CanMagicCoat
 Description = The user numbs the target, then welcomes in sandstorm for eight turns.
 Animation = SANDSTORM
 #-------------------------------
+[LUNASUCRE]
+Name = Luna Sucre
+Type = ROCK
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ExpCandy
+Flags = CanProtect
+Description = The target's item is blasted away with lunar power and replaced with an XP Candy M.
+Animation = POWERGEM
+#-------------------------------
 [MEGALITHRITE]
 Name = Megalith Rite
 Type = ROCK
