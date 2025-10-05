@@ -1986,7 +1986,6 @@ Description = Its attacks are critical against waterlogged targets.
 [STICKYFINGERS]
 Name = Sticky Fingers
 Description = Can hold a second item by stealing it.
-Flags = MultipleItems
 #-------------------------------
 [STICKYMOLD]
 Name = Sticky Mold
