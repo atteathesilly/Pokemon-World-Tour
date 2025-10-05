@@ -5,7 +5,6 @@ BattleHandlers::ItemOnStatLoss.add(:EJECTPACK,
       next if move&.switchOutMove?
       # code adapted from Move_Helpers.rb switchOutUser()
       next unless battle.pbCanSwitch?(battler.index)
-      next unless battle.pbCanChooseNonActive?(battler.index)
       battle.pbCommonAnimation("UseItem", battler)
       battle.pbDisplay(_INTL("{1} is switched out with the {2}!", battler.pbThis, getItemName(item)))
       battler.consumeItem(item)
