@@ -1293,7 +1293,7 @@ Pokemon = BARRASKEWDA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = GARDEVOIR,70
-    Moves = PSYCHIC,DRAININGKISS,CALMMIND,COLDFRONT
+    Moves = PSYCHIC,DRAININGKISS,CALMMIND,THUNDERBOLT
     AbilityIndex = 0 # Arcane Finale
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

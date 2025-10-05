@@ -3490,7 +3490,7 @@ Pokemon = AZUMARILL,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = GALLADE,70
-    Moves = PSYCHOCUT,CLOSECOMBAT,XSCISSOR,INFINITEFORCE
+    Moves = PSYCHOSCISSION,SACREDSWORD,XSCISSOR,INFINITEFORCE
     AbilityIndex = 1 # Swordplay
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -5952,7 +5952,7 @@ Pokemon = MIMIKYU,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
 Pokemon = GARDEVOIR,70
-    Moves = PSYCHIC,SHADOWBALL,MYSTICALFIRE,MOONBLAST
+    Moves = PIERCINGDOUBT,SHADOWBALL,ICEBEAM,MOONBLAST
     AbilityIndex = 0 # Arcane Finale
     Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -6651,7 +6651,7 @@ Pokemon = KINGAMBIT,70
     AbilityIndex = 1 # Sturdy
 Pokemon = GALLADE,70
     Gender = female
-    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = ASSAULTVEST
 Pokemon = GRAPIDASH,70
@@ -6878,7 +6878,7 @@ Pokemon = KINGAMBIT,70
     AbilityIndex = 1 # Sturdy
 Pokemon = GALLADE,70
     Gender = female
-    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = ASSAULTVEST
 Pokemon = GRAPIDASH,70
@@ -7044,7 +7044,7 @@ Flags = NoPerfect
 Pokemon = GALLADE,70
     Name = Jeanne
     Gender = female
-    Moves = PSYCHOSCISSION,CLOSECOMBAT,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,CLOSECOMBAT,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = STRIKEVEST
 Pokemon = STARAPTOR,70
