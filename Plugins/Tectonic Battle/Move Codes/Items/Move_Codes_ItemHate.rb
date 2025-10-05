@@ -370,8 +370,9 @@ end
 #===============================================================================
 # Target is forced to hold an EXP Candy M, dropping its item if neccessary. (Luna Sucre)
 #===============================================================================
-class PokeBattle_Move_ExpCandy < PokeBattle_Move
-    def pbEffectAgainstTarget(user, target)
+class PokeBattle_Move_GiveExpCandy < PokeBattle_Move
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
         giveCandy = false
         if target.canAddItem?(:EXPCANDYM)
             giveCandy = true

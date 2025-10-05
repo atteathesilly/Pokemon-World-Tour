@@ -2121,8 +2121,9 @@ Power = 80
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
-FunctionCode = ExpCandy
+FunctionCode = GiveExpCandy
 Flags = CanProtect
+EffectChance = 100
 Description = The target's item is blasted away with lunar power and replaced with an XP Candy M.
 Animation = POWERGEM
 #-------------------------------
