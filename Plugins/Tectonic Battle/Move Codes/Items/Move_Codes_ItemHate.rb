@@ -366,3 +366,41 @@ class PokeBattle_Move_EmpoweredEmbargo < PokeBattle_Move
         transformType(user, :DARK)
     end
 end
+
+#===============================================================================
+# Target is forced to hold an EXP Candy M, dropping its item if neccessary. (Luna Sucre)
+#===============================================================================
+class PokeBattle_Move_GiveExpCandy < PokeBattle_Move
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
+        giveCandy = false
+        if target.canAddItem?(:EXPCANDYM)
+            giveCandy = true
+        else
+            removedAny = false
+            target.eachItemWithName do |item, itemName|
+                next if item == :EXPCANDYM
+                next unless canRemoveItem?(user, target, item)
+                target.removeItem(item)
+                @battle.pbDisplay(_INTL("{1} dropped its {2}!", target.pbThis, itemName))
+                removedAny = true
+                break
+            end
+
+            giveCandy = true if removedAny
+        end
+
+        if giveCandy
+            @battle.pbDisplay(_INTL("{1} was gifted an {2}!", target.pbThis, getItemName(:EXPCANDYM)))
+            target.giveItem(:EXPCANDYM)
+        end
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        score = 0
+        if target.canAddItem?(:EXPCANDYM) && canRemoveItem?(user, target, target.firstItem, checkingForAI: true)
+        score += 50
+        end
+        return score
+    end
+end
