@@ -5341,7 +5341,7 @@ Pokemon = ARCANINE,55
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,55
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN,Crimson,11]
@@ -5570,7 +5570,7 @@ Pokemon = ARCANINE,65
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,65
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN2,Teal,11]
@@ -6664,7 +6664,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,70
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN,Crimson,23]
@@ -6891,7 +6891,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,70
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN2,Teal,23]
@@ -7070,7 +7070,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
 Pokemon = GOLURK,70
     Name = Prometheus
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [TRAINER_Imogene_A,Imogene,1]
@@ -7878,7 +7878,7 @@ Pokemon = WEAVILE,70
     Moves = SEVER,WINTEROPS,SWORDSDANCE,ICESHARD
     AbilityIndex = 0 # Inner Focus
 Pokemon = GOLURK,70
-    Moves = SIXFEETUNDER,DYNAMICPUNCH,ZAPCANNON,VENOMORTAR
+    Moves = SIXFEETUNDER,DYNAMICPUNCH,ZAPCANNON,PULVERIZERCHORD
     AbilityIndex = 1 # No Guard
 Pokemon = DRAGALGE,70
     Moves = DRAGONTAIL,CRUELTY,RECOVER,GREYMIST
