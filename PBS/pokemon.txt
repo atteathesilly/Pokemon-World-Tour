@@ -11327,8 +11327,8 @@ Tribes = CHARMER,RADIANT,WARRIOR
 StepsToHatch = 5355
 Height = 0.4
 Weight = 5.5
-Kind = Candy Bunny
-Pokedex = This Pokemon eats only the sweetest food it can find. Researchers say it needs sweets to maintain a normal blood sugar level.
+Kind = Lunar Hare
+Pokedex = According to legend, the Buneary of Makya came from the moon. They have incredible control of their prehensile ears.
 Generation = 4
 Evolutions = MLOPUNNY,Level,24
 #-------------------------------
@@ -11346,8 +11346,8 @@ Abilities = MOONPRISMPOWER,HEARTOFJUSTICE
 StepsToHatch = 5355
 Height = 1.2
 Weight = 33.3
-Kind = Ore Bunny
-Pokedex = Scientists learned to process Saccharite into EXP Candy by observing this Pokemon's habit of eating the raw ore.
+Kind = Lunar Hare
+Pokedex = The blue crystals that adorn Makyan Lopunny's fur resemble saccharite, but analysis shows that they're structurally distinct.
 Generation = 4
 Evolutions = MHAEROBIC,Item,MOONSTONE
 #-------------------------------
@@ -11366,8 +11366,8 @@ Moves = 0,LUNASUCRE
 StepsToHatch = 5355
 Height = 1.3
 Weight = 28.3
-Kind = Moon Bunny
-Pokedex = This Pokemon has a strong connection to the moon. Some believe this to mean that the entire moon is made of EXP Candy.
+Kind = Lunar Hero
+Pokedex = A wanderer, Makyan Haerobic has a deep sense of justice and will use the full force its lunar powers to rescue weaker Pokemon.
 #-------------------------------
 [GLAMEOW]
 Name = Glameow
