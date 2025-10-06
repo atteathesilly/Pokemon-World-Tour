@@ -68,7 +68,7 @@ Pokemon = GROWLITHE,10
     AbilityIndex = 0 # Intimidate
 Pokemon = CHEWTLE,10
     Moves = HEADBANG,BREACH,BITE
-    AbilityIndex = 0 # Strong Jaw
+    AbilityIndex = 0 # Bitey
 #-------------------------------
 [NINJABOY,Matthew]
 Pokemon = BONSLY,12
@@ -129,7 +129,7 @@ Pokemon = TOTODILE,13
     AbilityIndex = 0 # Ferocious
 Pokemon = TRAPINCH,13
     Moves = TREADON,DAZZLE,SMUSH,BITE
-    AbilityIndex = 1 # Strong Jaw
+    AbilityIndex = 1 # Bitey
 #-------------------------------
 [BATTLEGIRL,Eliza]
 Pokemon = MAKUHITA,15
@@ -469,7 +469,7 @@ Pokemon = LICKITUNG,22
 #-------------------------------
 [LASS,Tara]
 Pokemon = ARROKUDA,23
-    Moves = FURYPECKS,SNAP,BITE,AQUAJET
+    Moves = FURYPECKS,HYDROFANG,BITE,AQUAJET
     AbilityIndex = 1 # Straight Ahead
     Item = WATERGEM
 Pokemon = PIDGEOTTO,22
@@ -3360,8 +3360,8 @@ Pokemon = MPOLTEAGEIST,45
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BRUXISH,45
-    Moves = CRUNCH,PSYCHICFANGS,FIREFANG,SNAP
-    AbilityIndex = 1 # Strong Jaw
+    Moves = CRUNCH,PSYCHICFANGS,ELEMENTALCRUNCH
+    AbilityIndex = 1 # Bitey
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,5,20,20,5
@@ -3868,7 +3868,7 @@ Pokemon = DUSCLOPS,30
     Moves = WILLOWISP,CONFUSERAY,SHADOWSNEAK,SHADOWPUNCH
     AbilityIndex = 0 # Aggravate
 Pokemon = SHARPEDO,30
-    Moves = SNAP,POISONFANG,AQUAJET,BRUTALSWING
+    Moves = HYDROFANG,POISONFANG,AQUAJET,BRUTALSWING
     AbilityIndex = 1 # Armor Piercing
 Pokemon = PINSIR,30
     Moves = FURYPECKS,CAPOEIRA,BUGBITE,BULKUP
@@ -7456,8 +7456,8 @@ Pokemon = TITANIX,57
     AbilityIndex = 1 # Gravitas
     Item = SHELLBELL
 Pokemon = BOLTUND,57
-    Moves = THUNDERFANG,SNAP,CRUNCH,PSYCHICFANGS
-    AbilityIndex = 0 # Strong Jaw
+    Moves = VOLTCRUNCH,AQUATICCRUNCH,CRUNCH,PSYCHICFANGS
+    AbilityIndex = 0 # Bitey
 #-------------------------------
 [GUITARIST3,Athena]
 Pokemon = MSEVIPER,58
@@ -7973,7 +7973,7 @@ Pokemon = KLEFKI,70
 Pokemon = SMEARGLE,70
     AbilityIndex = 0 # Mental Block
 Pokemon = BOLTUND,70
-    AbilityIndex = 0 # Strong Jaw
+    AbilityIndex = 0 # Bitey
 Pokemon = AMBIPOM,70
     AbilityIndex = 1 # Skill Link
 Pokemon = WAILORD,70

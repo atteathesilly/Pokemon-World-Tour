@@ -84,7 +84,7 @@ class PokeBattle_Move
                 immunityPierced = true
                 ret /= 2
             elsif user.targetTypeModImmune?(user, target, self, ret, !uiOnlyCheck)
-                ret = 4.0 # Weird effectiveness stuff present here
+                ret = 0.5
                 immunityPierced = true
             end
         end
