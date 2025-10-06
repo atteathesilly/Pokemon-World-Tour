@@ -2124,7 +2124,7 @@ Target = NearOther
 FunctionCode = GiveExpCandy
 Flags = CanProtect
 EffectChance = 100
-Description = The target's item is blasted away with lunar power and replaced with an XP Candy M.
+Description = The target's item is blasted away with lunar power. Additionally, the target is given an Exp. Candy M.
 Animation = POWERGEM
 #-------------------------------
 [MEGALITHRITE]
