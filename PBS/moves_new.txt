@@ -26,6 +26,17 @@ Flags = CanSnatch
 Description = The user steadies its eyes, mind, and body in order to maximize its Accuracy.
 Animation = MINDREADER
 #-------------------------------
+[BARETEETH]
+Name = Bare Teeth
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = LowerTargetDef4
+Flags = CanProtect,CanMagicCoat,Biting
+Description = The user exposes its teeth in a menacing way, reducing the target's Defense by four steps.
+#-------------------------------
 [BEDFELLOWS]
 Name = Bedfellows
 Type = NORMAL
@@ -895,7 +906,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = Numb
 Flags = CanProtect,CanMagicCoat
-Description = The user strikes the target's pressure points, numbing it.
+Description = The user strikes the target's pressure points with precise punches, numbing it.
 #-------------------------------
 [RIGHTEOUSKICK]
 Name = Righteous Kick
@@ -2458,7 +2469,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = Poison
 Flags = CanProtect,CanMagicCoat
-Description = Venom is strategically introduced into the target, poisoning it.
+Description = Venom is introduced into the target with fangs or spines, poisoning it.
 Animation = POISONSTING
 #-------------------------------
 [FEEDON]

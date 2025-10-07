@@ -646,6 +646,17 @@ FunctionCode = Invalid
 Flags = CanSnatch
 Description = The user creates a protective field that prevents status problems for ten turns.
 #-------------------------------
+[SCREECH]
+Name = Screech
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat,Sound
+Description = The user's earsplitting screech reduces the target's Defense stat by four steps.
+#-------------------------------
 [SING]
 Name = Sing
 Type = NORMAL
