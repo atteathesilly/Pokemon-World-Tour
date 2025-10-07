@@ -2955,7 +2955,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = AttackTwoTurnsLater
-Flags = Foretold,Light
+Flags = Foretold
 Description = Two turns after this move is used, the user scares the target with a terrifying tale.
 #-------------------------------
 [MACHINATE]
@@ -3372,7 +3372,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetSpd1
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 20
 Description = The user attacks with reflected light. It has a 20% chance to lower Sp. Def.
 Animation = FLASHCANNON
