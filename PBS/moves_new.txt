@@ -2124,7 +2124,7 @@ Target = NearOther
 FunctionCode = GiveExpCandy
 Flags = CanProtect
 EffectChance = 100
-Description = The target is spelled with Lunar Magic that transforms any held item into an Exp. Candy M.
+Description = The target's item is spelled away with Lunar Magic. Additionally, the target is given an EXP Candy M.
 Animation = POWERGEM
 #-------------------------------
 [MEGALITHRITE]
