@@ -369,7 +369,7 @@ class MoveDex_Scene
         dexlist = generateMoveList
         dexlist = dexlist.find_all do |dex_item|
             next false if autoDisqualifyFromSearch(dex_item[:move])
-            next !@dexlist.any? { |current_item| current_item[:move] == dex_item[:move] }
+            next !@moveList.any? { |current_item| current_item[:move] == dex_item[:move] }
         end
         return dexlist
     end
