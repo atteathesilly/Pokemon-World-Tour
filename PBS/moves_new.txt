@@ -3035,6 +3035,18 @@ Flags = CanProtect
 Description = The user summons apparitions that dance around hypnotically before they multi-hit two to five times.
 Animation = WILLOWISP
 #-------------------------------
+[SHADOWBOXING]
+Name = Shadow Boxing
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserAtkSpdAcc1
+Flags = CanSnatch,Punch
+Description = The user practices its punches against ghostly illusions, raising its Attack, Speed, and Accuracy.
+Animation = SPITE
+#-------------------------------
 [SHIVER]
 Name = Shiver
 Type = GHOST
@@ -7976,6 +7988,18 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user causes nearby objects to fall onto the target. This has a 30% chance of jinxing them.
 Animation = POLTERGEIST
+#-------------------------------
+[SYLPHSPELL]
+Name = Sylph Spell
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserSpAtkSpdAcc1
+Flags = CanSnatch,Wind
+Description = A spirited wind blesses the user, raising its Sp. Atk, Speed, and Accuracy.
+Animation = FAIRYWIND
 #-------------------------------
 [TANTRUM]
 Name = Tantrum
