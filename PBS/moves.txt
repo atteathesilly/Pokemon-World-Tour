@@ -739,17 +739,6 @@ FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
 Description = Hard, pointed, and sharp claws rake the target to inflict damage. Can random critical hit.
 #-------------------------------
-[SCREECH]
-Name = Screech
-Type = NORMAL
-Category = Status
-Accuracy = 100
-TotalPP = 30
-Target = NearOther
-FunctionCode = LowerTargetDef4
-Flags = CanProtect,CanMagicCoat,Sound
-Description = The user's earsplitting screech reduces the target's Defense stat by four steps.
-#-------------------------------
 [SELFDESTRUCT]
 Name = Self-Destruct
 Type = NORMAL
@@ -5996,7 +5985,7 @@ Target = User
 Priority = 4
 FunctionCode = StealAndUseBeneficialStatusMove
 Flags = Uninvocable
-Description = The user steals the effects of any healing or stat-changing move the foe attempts to use.
+Description = This turn, the user steals the effects of healing, buffing, or protective screen moves a foe uses.
 #-------------------------------
 [SUCKERPUNCH]
 Name = Sucker Punch

@@ -229,7 +229,7 @@ Pokemon = LARVESTA,18
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = WHISMUR,17
-    Moves = AURAPULSE,SCREECH,ECHOEDVOICE,SHOUT
+    Moves = AURAPULSE,BARETEETH,ECHOEDVOICE,SHOUT
     AbilityIndex = 1 # Loud
     Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -285,7 +285,7 @@ Pokemon = MARSHTOMP,17
 [ARTIST,Evan]
 Policies = PRIORITIZESTATDOWN
 Pokemon = SMEARGLE,18
-    Moves = HELPINGHAND,HEALPULSE,SCREECH,NOBLEROAR
+    Moves = HELPINGHAND,HEALPULSE,BARETEETH,NOBLEROAR
     AbilityIndex = 0 # Mental Block
     Item = SITRUSBERRY
 Pokemon = MISDREAVUS,16
@@ -997,7 +997,7 @@ Pokemon = BARBARACLE,35
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,10,0,20,10
 Pokemon = MALAMAR,35
-    Moves = PSYCHICFANGS,INCISION,SCREECH,EERIEIMPULSE
+    Moves = PSYCHICFANGS,INCISION,BARETEETH,EERIEIMPULSE
     AbilityIndex = 0 # Contrary
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
@@ -8343,7 +8343,7 @@ Pokemon = TAUROS,70
     Moves = THRASH,RAGINGFURY,DIELECTRICBREAKDOWN,PETALDANCE
     AbilityIndex = 0 # Wreak Havoc
 Pokemon = HAWLUCHA,70
-    Moves = ACROBATICS,CLOSECOMBAT,SWORDSDANCE,XSCISSOR
+    Moves = ACROBATICS,CLOSECOMBAT,LASERFOCUS,XSCISSOR
     AbilityIndex = 1 # Unburden
     Item = WHITEHERB
 Pokemon = AEXEGGUTOR,70
@@ -9261,7 +9261,7 @@ Pokemon = HUNTAIL,70
     Moves = BUBBLEBLASTER,BLACKOUT,DREAMDANCE,ICEBEAM
     AbilityIndex = 0 # Intimidate
 Pokemon = DIGGERSBY,70
-    Moves = DRILLRUN,MEGAPUNCH,SWORDSDANCE,ADAMANTINEPRESS
+    Moves = DRILLRUN,MEGAPUNCH,SHADOWBOXING,ADAMANTINEPRESS
     AbilityIndex = 1 # Paranoid
 Pokemon = SIRFETCHD,70
     Moves = DRILLPECK,LEAFBLADE,PSYCHOSCISSION,ARTOFWAR

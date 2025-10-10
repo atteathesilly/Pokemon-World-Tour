@@ -26,6 +26,17 @@ Flags = CanSnatch
 Description = The user steadies its eyes, mind, and body in order to maximize its Accuracy.
 Animation = MINDREADER
 #-------------------------------
+[BARETEETH]
+Name = Bare Teeth
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = LowerTargetDef4
+Flags = CanProtect,CanMagicCoat,Biting
+Description = The user exposes its teeth in a menacing way, reducing the target's Defense by four steps.
+#-------------------------------
 [BEDFELLOWS]
 Name = Bedfellows
 Type = NORMAL
@@ -895,7 +906,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = Numb
 Flags = CanProtect,CanMagicCoat
-Description = The user strikes the target's pressure points, numbing it.
+Description = The user strikes the target's pressure points with precise punches, numbing it.
 #-------------------------------
 [RIGHTEOUSKICK]
 Name = Righteous Kick
@@ -2113,6 +2124,20 @@ Flags = CanProtect,CanMagicCoat
 Description = The user numbs the target, then welcomes in sandstorm for eight turns.
 Animation = SANDSTORM
 #-------------------------------
+[LUNASUCRE]
+Name = Luna Sucre
+Type = ROCK
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = GiveExpCandy
+Flags = CanProtect
+EffectChance = 100
+Description = The target's item is spelled away with Lunar Magic. Additionally, the target is given an EXP Candy M.
+Animation = POWERGEM
+#-------------------------------
 [MEGALITHRITE]
 Name = Megalith Rite
 Type = ROCK
@@ -2444,7 +2469,7 @@ TotalPP = 10
 Target = NearFoe
 FunctionCode = Poison
 Flags = CanProtect,CanMagicCoat
-Description = Venom is strategically introduced into the target, poisoning it.
+Description = Venom is introduced into the target with fangs or spines, poisoning it.
 Animation = POISONSTING
 #-------------------------------
 [FEEDON]
@@ -2941,7 +2966,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = AttackTwoTurnsLater
-Flags = Foretold,Light
+Flags = Foretold
 Description = Two turns after this move is used, the user scares the target with a terrifying tale.
 #-------------------------------
 [MACHINATE]
@@ -3009,6 +3034,18 @@ FunctionCode = HitTwoToFiveTimes
 Flags = CanProtect
 Description = The user summons apparitions that dance around hypnotically before they multi-hit two to five times.
 Animation = WILLOWISP
+#-------------------------------
+[SHADOWBOXING]
+Name = Shadow Boxing
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserAtkSpdAcc1
+Flags = CanSnatch,Punch
+Description = The user practices its punches against ghostly illusions, raising its Attack, Speed, and Accuracy.
+Animation = SPITE
 #-------------------------------
 [SHIVER]
 Name = Shiver
@@ -3358,7 +3395,7 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetSpd1
-Flags = CanProtect
+Flags = CanProtect,Light
 EffectChance = 20
 Description = The user attacks with reflected light. It has a 20% chance to lower Sp. Def.
 Animation = FLASHCANNON
@@ -7951,6 +7988,18 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user causes nearby objects to fall onto the target. This has a 30% chance of jinxing them.
 Animation = POLTERGEIST
+#-------------------------------
+[SYLPHSPELL]
+Name = Sylph Spell
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserSpAtkSpdAcc1
+Flags = CanSnatch,Wind
+Description = A spirited wind blesses the user, raising its Sp. Atk, Speed, and Accuracy.
+Animation = FAIRYWIND
 #-------------------------------
 [TANTRUM]
 Name = Tantrum

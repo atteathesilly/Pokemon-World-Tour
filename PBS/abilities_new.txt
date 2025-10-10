@@ -1325,6 +1325,11 @@ Name = Moonlighter
 Description = When hit in moonglow, steals the attacker's item, or knocks it away.
 Flags = MoonglowSynergy
 #-------------------------------
+[MOONPRISMPOWER]
+Name = Moon Prism Power
+Description = When the Full Moon rises, heals for 50% of its total HP. This can overheal.
+Flags = MoonglowSynergy
+#-------------------------------
 [MULTIHEADED]
 Name = Multiheaded
 Description = While the Pokémon is below half health, takes 33% less damage from attacks.
@@ -1986,7 +1991,6 @@ Description = Its attacks are critical against waterlogged targets.
 [STICKYFINGERS]
 Name = Sticky Fingers
 Description = Can hold a second item by stealing it.
-Flags = MultipleItems
 #-------------------------------
 [STICKYMOLD]
 Name = Sticky Mold
