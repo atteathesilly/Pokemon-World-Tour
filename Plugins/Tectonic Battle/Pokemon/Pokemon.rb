@@ -267,16 +267,17 @@ class Pokemon
         @status = new_status.id
     end
 
-    def getStatusImageIndex
+    def getStatusImageIndex(miniIcons = false)
         if afraid?
-            statusIndex = GameData::Status::DATA.keys.length / 2
+            statusIndex = GameData::Status::DATA.keys.length / 2 + 1
         elsif fainted?
-            statusIndex = GameData::Status::DATA.keys.length / 2 - 1
+            statusIndex = GameData::Status::DATA.keys.length / 2
         elsif status != :NONE
-            statusIndex = GameData::Status.get(status).id_number(statusCount > 0) - 1
+            statusIndex = GameData::Status.get(status).id_number(statusCount > 0)
         else
-            statusIndex = -1
+            statusIndex = 0
         end
+        statusIndex -= 1 if miniIcons
         return statusIndex
     end
 
