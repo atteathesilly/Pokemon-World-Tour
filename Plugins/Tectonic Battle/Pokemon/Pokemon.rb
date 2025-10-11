@@ -367,7 +367,7 @@ class Pokemon
     end
 
     def asleep?
-        return @status == SLEEP
+        return @status == :SLEEP
     end
 
     def poisoned?
