@@ -478,12 +478,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:POISON, user, showMessages, move)
     end
 
-    def applyPoison(user = nil, msg = nil, toxic = false)
-        if boss && toxic
-            @battle.pbDisplay("The projection's power blunts the toxin.")
-            toxic = false
-        end
-        pbInflictStatus(:POISON, toxic ? 1 : 0, msg, user)
+    def applyPoison(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:POISON, severe ? 1 : 0, msg, user)
     end
 
     def getPoisonDoublings
@@ -507,8 +503,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:BURN, user, showMessages, move)
     end
 
-    def applyBurn(user = nil, msg = nil)
-        pbInflictStatus(:BURN, 0, msg, user)
+    def applyBurn(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:BURN, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -522,8 +518,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:FROSTBITE, user, showMessages, move)
     end
 
-    def applyFrostbite(user = nil, msg = nil)
-        pbInflictStatus(:FROSTBITE, 0, msg, user)
+    def applyFrostbite(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:FROSTBITE, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -537,8 +533,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:NUMB, user, showMessages, move)
     end
 
-    def applyNumb(user = nil, msg = nil)
-        pbInflictStatus(:NUMB, 0, msg, user)
+    def applyNumb(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:NUMB, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -565,8 +561,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:DIZZY, user, showMessages, move)
     end
 
-    def applyDizzy(user = nil, msg = nil)
-        pbInflictStatus(:DIZZY, 0, msg, user)
+    def applyDizzy(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:DIZZY, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -580,8 +576,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:LEECHED, user, showMessages, move)
     end
 
-    def applyLeeched(user = nil, msg = nil)
-        pbInflictStatus(:LEECHED, 0, msg, user)
+    def applyLeeched(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:LEECHED, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -595,8 +591,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:WATERLOG, user, showMessages, move)
     end
 
-    def applyWaterlog(user = nil, msg = nil)
-        pbInflictStatus(:WATERLOG, 0, msg, user)
+    def applyWaterlog(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:WATERLOG, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================

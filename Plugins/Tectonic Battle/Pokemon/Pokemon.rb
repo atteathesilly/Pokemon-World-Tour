@@ -273,7 +273,7 @@ class Pokemon
         elsif fainted?
             statusIndex = GameData::Status::DATA.keys.length / 2 - 1
         elsif status != :NONE
-            statusIndex = GameData::Status.get(status).id_number - 1
+            statusIndex = GameData::Status.get(status).id_number(statusCount > 0) - 1
         else
             statusIndex = -1
         end

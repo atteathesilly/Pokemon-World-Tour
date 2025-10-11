@@ -211,7 +211,7 @@ class PokeBattle_Move_GiveUserStatusToTargetDamagingMove < PokeBattle_Move
                 when :SLEEP
                     target.applySleep
                 when :POISON
-                    target.applyPoison(user, nil, user.statusCount != 0)
+                    target.applyPoison(user)
                 when :BURN
                     target.applyBurn(user)
                 when :NUMB
