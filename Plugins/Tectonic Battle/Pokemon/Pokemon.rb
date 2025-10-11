@@ -365,6 +365,38 @@ class Pokemon
         end
     end
 
+    def asleep?
+        return @status == SLEEP
+    end
+
+    def poisoned?
+        return @status == :POISON
+    end
+
+    def burned?
+        return @status == :BURN
+    end
+
+    def frostbitten?
+        return @status == :FROSTBITE
+    end
+
+    def numbed?
+        return @status == :NUMB
+    end
+
+    def waterlogged?
+        return @status == :WAtERLOG
+    end
+
+    def leeched?
+        return @status == :LEECHED
+    end
+
+    def dizzy?
+        return @status == :DIZZY
+    end
+
     #=============================================================================
     # Types
     #=============================================================================

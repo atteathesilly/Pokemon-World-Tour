@@ -1,6 +1,6 @@
 def pbAfterBattle(decision,canLose)
     $Trainer.party.each do |pkmn|
-      pkmn.statusCount = 0 if pkmn.status == :POISON   # Bad poison becomes regular
+      pkmn.statusCount = 0 unless pkmn.asleep?
       pkmn.makeUnmega
       pkmn.makeUnprimal
     end

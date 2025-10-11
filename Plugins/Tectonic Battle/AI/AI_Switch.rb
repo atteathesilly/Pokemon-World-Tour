@@ -52,7 +52,7 @@ class PokeBattle_AI
                 factor = (maxpercent < hppercent) ? 30 : 50
             end
             case thispkmn.status
-            when :SLEEP, :FROZEN
+            when :SLEEP
                 factor += 20
             when :POISON, :BURN
                 factor += 10

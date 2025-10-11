@@ -244,7 +244,7 @@ end
 class PokeBattle_Move_CureTargetBurn < PokeBattle_Move
     def pbAdditionalEffect(_user, target)
         return if target.fainted? || target.damageState.substitute
-        return if target.status != :BURN
+        return if !target.burned?
         target.pbCureStatus(true, :BURN)
     end
 
@@ -267,7 +267,7 @@ end
 class PokeBattle_Move_CureTargetFrostbite < PokeBattle_Move
     def pbAdditionalEffect(_user, target)
         return if target.fainted? || target.damageState.substitute
-        return if target.status != :FROSTBITE
+        return if !target.frostbitten?
         target.pbCureStatus(true, :FROSTBITE)
     end
 
