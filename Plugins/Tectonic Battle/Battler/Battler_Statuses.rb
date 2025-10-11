@@ -555,7 +555,7 @@ immuneTypeRealName))
             next if enemyPartyMember.nil?
             next if enemyPartyMember.fainted?
             next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
-            next if enemyPartyMember.status == :DIZZY
+            next if enemyPartyMember.dizzy?
             return true
         end
         return false
