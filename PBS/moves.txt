@@ -31,7 +31,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = MaxUserAtkLoseHalfOfTotalHP
-Flags = CanSnatch,Sound
+Flags = CanSnatch
 Description = The user maximizes its Attack stat in exchange for HP equal to half its max HP.
 #-------------------------------
 [BESTOW]

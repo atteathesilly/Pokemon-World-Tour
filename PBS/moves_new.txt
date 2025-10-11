@@ -6992,6 +6992,18 @@ Flags = CanProtect,CanMagicCoat
 Description = The user insults the target using a compliment. Their Attack and Sp. Atk are raised by three steps, but they hurt themselves in confusion.
 Animation = FLATTER
 #-------------------------------
+[BADBLOOD]
+Name = Bad Blood
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = MaxUserSpAtkLoseHalfOfTotalHP
+Flags = CanSnatch
+Description = The user maximizes its Sp. Atk stat in exchange for HP equal to half its max HP.
+Animation = NASTYPLOT
+#-------------------------------
 [BLACKHOLE]
 Name = Black Hole
 Type = DARK
