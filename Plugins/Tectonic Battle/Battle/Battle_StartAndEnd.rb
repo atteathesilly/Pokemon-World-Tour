@@ -581,7 +581,7 @@ class PokeBattle_Battle
                     next unless partyMember
                     next if partyMember.fainted?
                     next unless partyMember.hasAbility?(:AUTOPILOT)
-                    next if partyMember.status == :DIZZY
+                    next if partyMember.dizzy?
                     next if pokemonIsActiveBattler?(partyMember)
                     if @turnCount % 5 == 0
                         autoPilots.push(partyIndex)

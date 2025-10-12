@@ -706,10 +706,6 @@ Description = Powers up priority moves by 30%.
 Name = Fit to Survive
 Description = Upon entry, summons Natural Protection for four turns.
 #-------------------------------
-[FLAMEWINGS]
-Name = Flame Wings
-Description = Flying-type attacks have a 40% chance to burn.
-#-------------------------------
 [FLASHFREEZE]
 Name = Flash Freeze
 Description = On the first turn, its attacks frostbite the target.
@@ -790,10 +786,6 @@ Name = Frost Scatter
 Description = Summons a hail for four turns when hit by an attack.
 Flags = HailSynergy
 #-------------------------------
-[FROSTWINGS]
-Name = Frost Wings
-Description = Flying-type attacks have a 40% chance to frostbite.
-#-------------------------------
 [FRUSTRATE]
 Name = Frustrate
 Description = Upon entry, lowers the foe's Speed stat by two steps.
@@ -819,6 +811,10 @@ Description = Random added effects of wind-based moves are +50% more likely to o
 Name = Gale Force
 Description = Boosts the power of wind-based moves by 50%.
 #-------------------------------
+[GALVANICWINGS]
+Name = Galvanic Wings
+Description = Foes that become numbed are severely so. The Pokémon's Flying-type moves have a 30% chance to severely numb.
+#-------------------------------
 [GARGANTUAN]
 Name = Gargantuan
 Description = Completely protects allies from foes' spread moves.
@@ -830,6 +826,10 @@ Description = Pokémon that swap in for this have their Speed raised and their P
 [GILD]
 Name = Gild
 Description = Turns the held item of a Pokémon it hits into scattered gold coins for you to take.
+#-------------------------------
+[GLACIALWINGS]
+Name = Glacial Wings
+Description = Foes that become frostbitten are severely so. The Pokémon's Flying-type moves have a 30% chance to severely frostbite.
 #-------------------------------
 [GLASSFIRING]
 Name = Glass Firing
@@ -1796,6 +1796,10 @@ Flags = SandstormSynergy
 Name = Sealing Body
 Description = Moves used on the Pokémon are disabled for two turns.
 #-------------------------------
+[SEARINGWINGS]
+Name = Searing Wings
+Description = Foes that become burned are severely so. The Pokémon's Flying-type moves have a 30% chance to severely burn.
+#-------------------------------
 [SECRETIONSECRET]
 Name = Secretion Secret
 Description = When targeted by a status move, the offending Pokémon becomes poisoned.
@@ -1835,10 +1839,6 @@ Description = Punching moves change the Pokémon's secondary type and their powe
 [SHOCKSTYLE]
 Name = Shock Style
 Description = Powers up Fighting-type moves by 50%.
-#-------------------------------
-[SHOCKWINGS]
-Name = Shock Wings
-Description = Flying-type attacks have a 40% chance to numb.
 #-------------------------------
 [SICKENING]
 Name = Sickening

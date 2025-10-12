@@ -1,11 +1,15 @@
 def getSleepExplanation; return _INTL("It'll skip its next two moves"); end
-def getBurnExplanation; return _INTL("Its physical damage is reduced by a third"); end
 def getPoisonExplanation; return _INTL("The poison will worsen over time"); end
+def getBurnExplanation; return _INTL("Its physical damage is reduced by a third"); end
 def getFrostbiteExplanation; return _INTL("Its special damage is reduced by a third"); end
 def getNumbExplanation; return _INTL("Its Speed is halved, and it'll deal less damage"); end
 def getDizzyExplanation; return _INTL("Its ability is suppressed, and it'll take more damage"); end
 def getLeechExplanation; return _INTL("Its HP will be siphoned by the opposing side"); end
 def getWaterlogExplanation; return _INTL("Its Speed is halved, and it'll take more damage"); end
+
+def getSevereBurnExplanation; return _INTL("It'll take one third recoil from its own attacks"); end
+def getSevereFrostbiteExplanation; return _INTL("Frostbite damage is double below half health"); end
+def getSevereNumbExplanation; return _INTL("Its highest stat is lowered each turn"); end
 
 POISON_DOUBLING_TURNS = 2
 
@@ -223,7 +227,6 @@ immuneTypeRealName))
                 when :POISON		then msg = _INTL("{1} cannot be poisoned!", pbThis)
                 when :BURN			then msg = _INTL("{1} cannot be burned!", pbThis)
                 when :NUMB			then msg = _INTL("{1} cannot be numbed!", pbThis)
-                when :FROZEN	    then msg = _INTL("{1} cannot be chilled!", pbThis)
                 when :FROSTBITE	    then msg = _INTL("{1} cannot be frostbitten!", pbThis)
                 when :DIZZY	        then msg = _INTL("{1} cannot be dizzied!", pbThis)
                 when :LEECHED	    then msg = _INTL("{1} cannot become leeched!", pbThis)
@@ -307,7 +310,17 @@ immuneTypeRealName))
             return
         end
 
-        newStatusCount = sleepDuration if newStatusCount <= 0 && newStatus == :SLEEP
+        # Apply automatic changes to the status count
+        case newStatus
+        when :SLEEP
+            newStatusCount = sleepDuration if newStatusCount <= 0
+        when :BURN
+            newStatusCount = 1 if @battle.pbCheckOpposingAbility(:SEARINGWINGS, @index)
+        when :NUMB
+            newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GALVANICWINGS, @index)
+        when :FROSTBITE
+            newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GLACIALWINGS, @index)
+        end
 
         statusCheck = false
         eachAbility do |ability|
@@ -346,11 +359,23 @@ immuneTypeRealName))
                     when :POISON
                         @battle.pbDisplay(_INTL("{1} was poisoned! {2}!", pbThis, getPoisonExplanation))
                     when :BURN
-                        @battle.pbDisplay(_INTL("{1} was burned! {2}!", pbThis, getBurnExplanation))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} was severely burned! {2}!", pbThis, getSevereBurnExplanation))
+                        else
+                            @battle.pbDisplay(_INTL("{1} was burned! {2}!", pbThis, getBurnExplanation))
+                        end
                     when :NUMB
-                        @battle.pbDisplay(_INTL("{1} is numbed! {2}!", pbThis, getNumbExplanation))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} is severely numbed! {2}!", pbThis, getSevereNumbExplanation))
+                        else
+                            @battle.pbDisplay(_INTL("{1} is numbed! {2}!", pbThis, getNumbExplanation))
+                        end
                     when :FROSTBITE
-                        @battle.pbDisplay(_INTL("{1} was frostbitten! {2}!", pbThis, getFrostbiteExplanation))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} was severely frostbitten! {2}!", pbThis, getSevereFrostbiteExplanation))
+                        else
+                            @battle.pbDisplay(_INTL("{1} was frostbitten! {2}!", pbThis, getFrostbiteExplanation))
+                        end
                     when :DIZZY
                         @battle.pbDisplay(_INTL("{1} is dizzy! {2}!", pbThis, getDizzyExplanation))
                     when :LEECHED
@@ -365,11 +390,23 @@ immuneTypeRealName))
                     when :POISON
                         @battle.pbDisplay(_INTL("{1} was poisoned!", pbThis))
                     when :BURN
-                        @battle.pbDisplay(_INTL("{1} was burned!", pbThis))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} was severely burned!", pbThis))
+                        else
+                            @battle.pbDisplay(_INTL("{1} was burned!", pbThis))
+                        end
                     when :NUMB
-                        @battle.pbDisplay(_INTL("{1} is numbed!", pbThis))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} is severely numbed!", pbThis))
+                        else
+                            @battle.pbDisplay(_INTL("{1} is numbed!", pbThis))
+                        end
                     when :FROSTBITE
-                        @battle.pbDisplay(_INTL("{1} was frostbitten!", pbThis))
+                        if newStatusCount > 0
+                            @battle.pbDisplay(_INTL("{1} was severely frostbitten!", pbThis))
+                        else
+                            @battle.pbDisplay(_INTL("{1} was frostbitten!", pbThis))
+                        end
                     when :DIZZY
                         @battle.pbDisplay(_INTL("{1} is dizzy!", pbThis))
                     when :LEECHED
@@ -479,12 +516,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:POISON, user, showMessages, move)
     end
 
-    def applyPoison(user = nil, msg = nil, toxic = false)
-        if boss && toxic
-            @battle.pbDisplay("The projection's power blunts the toxin.")
-            toxic = false
-        end
-        pbInflictStatus(:POISON, toxic ? 1 : 0, msg, user)
+    def applyPoison(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:POISON, severe ? 1 : 0, msg, user)
     end
 
     def getPoisonDoublings
@@ -508,8 +541,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:BURN, user, showMessages, move)
     end
 
-    def applyBurn(user = nil, msg = nil)
-        pbInflictStatus(:BURN, 0, msg, user)
+    def applyBurn(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:BURN, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -523,8 +556,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:FROSTBITE, user, showMessages, move)
     end
 
-    def applyFrostbite(user = nil, msg = nil)
-        pbInflictStatus(:FROSTBITE, 0, msg, user)
+    def applyFrostbite(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:FROSTBITE, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -538,8 +571,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:NUMB, user, showMessages, move)
     end
 
-    def applyNumb(user = nil, msg = nil)
-        pbInflictStatus(:NUMB, 0, msg, user)
+    def applyNumb(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:NUMB, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -556,7 +589,7 @@ immuneTypeRealName))
             next if enemyPartyMember.nil?
             next if enemyPartyMember.fainted?
             next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
-            next if enemyPartyMember.status == :DIZZY
+            next if enemyPartyMember.dizzy?
             return true
         end
         return false
@@ -566,8 +599,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:DIZZY, user, showMessages, move)
     end
 
-    def applyDizzy(user = nil, msg = nil)
-        pbInflictStatus(:DIZZY, 0, msg, user)
+    def applyDizzy(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:DIZZY, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -581,8 +614,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:LEECHED, user, showMessages, move)
     end
 
-    def applyLeeched(user = nil, msg = nil)
-        pbInflictStatus(:LEECHED, 0, msg, user)
+    def applyLeeched(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:LEECHED, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -596,8 +629,8 @@ immuneTypeRealName))
         return pbCanInflictStatus?(:WATERLOG, user, showMessages, move)
     end
 
-    def applyWaterlog(user = nil, msg = nil)
-        pbInflictStatus(:WATERLOG, 0, msg, user)
+    def applyWaterlog(user = nil, msg = nil, severe: false)
+        pbInflictStatus(:WATERLOG, severe ? 1 : 0, msg, user)
     end
 
     #=============================================================================
@@ -665,9 +698,25 @@ immuneTypeRealName))
                     end
                 end
             when :BURN
-                @battle.pbDisplay(_INTL("{1} was hurt by its burn!", pbThis)) if showMessages
+                if showMessages
+                    if getStatusCount(:BURN) > 0
+                        @battle.pbDisplay(_INTL("{1} was hurt by its severe burn!", pbThis))
+                    else
+                        @battle.pbDisplay(_INTL("{1} was hurt by its burn!", pbThis))
+                    end
+                end
             when :FROSTBITE
-                @battle.pbDisplay(_INTL("{1} was hurt by frostbite!", pbThis)) if showMessages
+                if showMessages
+                    if getStatusCount(:FROSTBITE) > 0
+                        if belowHalfHealth?
+                            @battle.pbDisplay(_INTL("{1} was intensely hurt by severe frostbite!", pbThis))
+                        else
+                            @battle.pbDisplay(_INTL("{1} was hurt by severe frostbite!", pbThis))
+                        end
+                    else
+                        @battle.pbDisplay(_INTL("{1} was hurt by frostbite!", pbThis))
+                    end
+                end
             when :LEECHED
                 @battle.pbDisplay(_INTL("{1}'s health was sapped!", pbThis)) if showMessages
             end
