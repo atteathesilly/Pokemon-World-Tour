@@ -71,7 +71,7 @@ module GameData
   GameData::Status.register({
     :id        => :BURN,
     :id_number => 3,
-    :id_number_severe => 9,
+    :id_number_severe => 10,
     :name      => _INTL("Burn"),
     :animation => "Burn"
   })
@@ -79,7 +79,7 @@ module GameData
   GameData::Status.register({
     :id        => :NUMB,
     :id_number => 4,
-    :id_number_severe => 10,
+    :id_number_severe => 11,
     :name      => _INTL("Numb"),
     :animation => "Paralysis"
   })
@@ -87,7 +87,7 @@ module GameData
   GameData::Status.register({
     :id        => :FROSTBITE,
     :id_number => 5,
-    :id_number_severe => 11,
+    :id_number_severe => 12,
     :name      => _INTL("Frostbitten"),
     :animation => "Frozen"
   })
