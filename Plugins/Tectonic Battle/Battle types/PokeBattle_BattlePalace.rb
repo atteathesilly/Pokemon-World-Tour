@@ -146,7 +146,7 @@ class PokeBattle_BattlePalace < PokeBattle_Battle
 
   def pbPinchChange(battler)
     return if !battler || battler.fainted?
-    return if battler.effectActive?(:Pinch) || battler.status == :SLEEP
+    return if battler.effectActive?(:Pinch) || battler.asleep?
     return if battler.hp > battler.totalhp / 2
     nature = battler.nature.id
     battler.applyEffect(:Pinch)
