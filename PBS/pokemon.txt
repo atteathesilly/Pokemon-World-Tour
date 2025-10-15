@@ -592,7 +592,7 @@ Kind = Mouse
 Pokedex = This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.
 Generation = 1
 WildItemUncommon = AGILITYHERB
-Evolutions = RAICHU,Item,THUNDERSTONE,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,DAWNSTONE
+Evolutions = RAICHU,Level,36,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,DAWNSTONE
 #-------------------------------
 [RAICHU]
 Name = Raichu
@@ -1536,7 +1536,7 @@ Kind = Scratch Cat
 Pokedex = These daring Pokémon have coins on their foreheads. Darker coins are harder, and harder coins garner more respect among Meowth.
 Generation = 8
 WildItemUncommon = PEARL
-Evolutions = PERRSERKER,Item,GALARICAWREATH
+Evolutions = PERRSERKER,Item,ICESTONE
 #-------------------------------
 [PERRSERKER]
 Name = Perrserker
@@ -1630,7 +1630,7 @@ Weight = 32.0
 Kind = Pig Monkey
 Pokedex = It has been known to become so angry that it dies as a result. Its face looks peaceful in death, however.
 Generation = 1
-Evolutions = ANNIHILAPE,Level,36
+Evolutions = ANNIHILAPE,Item,DUSKSTONE
 #-------------------------------
 [ANNIHILAPE]
 Name = Annihilape
@@ -1772,7 +1772,7 @@ Kind = Tadpole
 Pokedex = This Pokémon's sweat is a slimy mucus. When captured, Poliwhirl can slither from its enemies' grasp and escape.
 Generation = 1
 WildItemUncommon = MYSTICWATER
-Evolutions = POLIWRATH,Level,34,POLITOED,Item,WATERSTONE
+Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,Level,34
 #-------------------------------
 [POLIWRATH]
 Name = Poliwrath
@@ -1914,7 +1914,7 @@ Kind = Superpower
 Pokedex = Machoke works out every day even as it helps with tough labor. On its days off, this Pokémon heads to the fields and mountains to exercise and train.
 Generation = 1
 WildItemUncommon = MUSCLEBAND
-Evolutions = MACHAMP,Level,36
+Evolutions = MACHAMP,Item,FIRESTONE
 #-------------------------------
 [MACHAMP]
 Name = Machamp
@@ -1972,7 +1972,7 @@ Weight = 6.4
 Kind = Flycatcher
 Pokedex = If its prey is bigger than its mouth, it slices up the victim with sharp leaves, then eats every morsel.
 Generation = 1
-Evolutions = VICTREEBEL,Item,LEAFSTONE
+Evolutions = VICTREEBEL,Level,34
 #-------------------------------
 [VICTREEBEL]
 Name = Victreebel
@@ -2253,7 +2253,7 @@ Kind = Dopey
 Pokedex = Slowpoke uses its tail to catch prey by dipping it in rivers. However, it often forgets what it's doing and spends entire days just loafing at water's edge.
 Generation = 1
 WildItemUncommon = LAGGINGTAIL
-Evolutions = SLOWBRO,Level,37,SLOWKING,Item,WATERSTONE
+Evolutions = SLOWBRO,Item,WATERSTONE,SLOWKING,Level,37
 #-------------------------------
 [SLOWBRO]
 Name = Slowbro
@@ -3333,7 +3333,7 @@ Weight = 120.0
 Kind = Drill
 Pokedex = Rhydon has a horn that serves as a drill. This Pokémon occasionally rams into streams of magma, but the armor-like hide prevents it from feeling the heat.
 Generation = 1
-Evolutions = RHYPERIOR,Level,41
+Evolutions = RHYPERIOR,Item,DAWNSTONE
 #-------------------------------
 [RHYPERIOR]
 Name = Rhyperior
@@ -4014,7 +4014,7 @@ Kind = Spitfire
 Pokedex = When it breathes deeply, heat mirages form around its body, making it hard to see clearly.
 Generation = 1
 WildItemUncommon = CHARCOAL
-Evolutions = MAGMORTAR,Item,FIRESTONE
+Evolutions = MAGMORTAR,Level,42
 #-------------------------------
 [MAGMORTAR]
 Name = Magmortar
@@ -4053,7 +4053,7 @@ Weight = 55.0
 Kind = Stag Beetle
 Pokedex = Although it's tough, it can't handle cold well. When night falls, it buries itself in leafage and sleeps.
 Generation = 1
-Evolutions = SCARAPACE,Level,44
+Evolutions = SCARAPACE,Item,LEAFSTONE
 #-------------------------------
 [SCARAPACE]
 Name = Scarapace
@@ -4278,7 +4278,7 @@ Weight = 6.5
 Kind = Evolution
 Pokedex = Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives.
 Generation = 1
-Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,MOONSTONE,ESPEON,Item,DAWNSTONE,UMBREON,Item,DUSKSTONE,GIGANTEON,Level,40
+Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,DAWNSTONE,ESPEON,Item,SUNSTONE,UMBREON,Item,MOONSTONE,GIGANTEON,Level,40
 #-------------------------------
 [VAPOREON]
 Name = Vaporeon
@@ -4497,7 +4497,7 @@ Weight = 32.5
 Kind = Virtual
 Pokedex = With planetary development software installed, it became capable of working in space.
 Generation = 2
-Evolutions = PORYGONZ,Item,DUSKSTONE,PORYGONMAV,Item,THUNDERSTONE
+Evolutions = PORYGONZ,Item,DUSKSTONE,PORYGONMAV,Item,FIRESTONE
 #-------------------------------
 [PORYGONZ]
 Name = Porygon-Z
@@ -4808,7 +4808,7 @@ GenderRate = Genderless
 BaseEXP = 261
 Rareness = 5
 Happiness = 35
-Abilities = FROSTWINGS
+Abilities = GLACIALWINGS
 Moves = 1,CHILL,1,GUST,4,POWDERSNOW,8,REFLECT,12,AGILITY,16,BOREALWIND,20,ANCIENTPOWER,24,TAILWIND,28,ICYWIND,32,ROOST,36,FRIGIDJEALOUSY,40,HAIL,44,COLDFRONT,48,AURORAVEIL,52,BLIZZARD,56,LOOMINGWINTER,60,AURORAFLASH
 LineMoves = AERIALACE,AGILITY,AIMTRUE,AIRSLASH,AQUATICCRUNCH,AURORAVEIL,BLIZZARD,BRAVEBIRD,BUBBLE,BUBBLEBARRAGE,BUBBLEBEAM,BUBBLEBLASTER,CLAMP,CRYOSLEEP,CRYSTALGLEAM,DEFOG,DIAMONDFORCE,DIVEBOMB,DUALWINGBEAT,ENDURE,FACADE,FLASHCANNON,FLIPTURN,FLY,FOLLOWME,FRIGIDFLURRY,FROSTBREATH,GIGAIMPACT,GLACIALRAM,GLIMMERPULSE,HAIL,HALTINGCOLD,HEALBELL,HYDROFANG,HYPERBEAM,HYPOTHERMIATE,ICEBEAM,ICEBERGBASH,ICEPICK,ICICLESPEAR,ICYWIND,LASERFOCUS,LUSTER,METALCLAW,POWERHAMMER,RAINSTORM,REFLECT,RIPTIDE,ROAR,ROOST,ROUND,SHINESHOT,SHOTPUT,SKYFALL,SLAMSHUT,SLINGSHOT,SNORE,SQUALLDART,STEELWING,STELLARATE,SUBLIMATE,SUBSTITUTE,SUNSHINE,SUPERCOOL,SWIFT,TAILWIND,TEMPEST,TRUMPCARD,VANGUARD,VOLLEY,WATERFALL,WATERPULSE,WEATHERBURST,WINDTUNNEL,WIPEOUT
 Tribes = MYSTIC,CARETAKER
@@ -4831,8 +4831,8 @@ GenderRate = Genderless
 BaseEXP = 261
 Rareness = 5
 Happiness = 35
-Abilities = SHOCKWINGS
-Moves = 1,NUMB,1,PECK,4,THUNDERSHOCK,8,LIGHTSCREEN,12,PLUCK,16,AGILITY,20,ANCIENTPOWER,24,CHARGE,28,DRILLPECK,32,ROOST,36,ARCLAMP,40,RAINSTORM,44,AIRSLASH,48,PROTECT,52,THUNDER,56,ZAPCANNON,60,SPLITTHESKY
+Abilities = GALVANICWINGS
+Moves = 1,NUMB,1,PECK,4,THUNDERSHOCK,8,LIGHTSCREEN,12,AGILITY,16,PLUCK,20,ANCIENTPOWER,24,CHARGE,28,DRILLPECK,32,ROOST,36,ARCLAMP,40,RAINSTORM,44,AIRSLASH,48,PROTECT,52,THUNDER,56,ZAPCANNON,60,SPLITTHESKY
 LineMoves = AERIALACE,AGILITY,AIMTRUE,AIRSLASH,ARCLAMP,BRAVEBIRD,CHARGEBEAM,DEFOG,DIVEBOMB,DIVININGTALON,DUALWINGBEAT,EERIEIMPULSE,ENDURE,FACADE,FLY,GIGAIMPACT,HAIL,HEATWAVE,HYPERBEAM,LASERFOCUS,LIGHTSCREEN,NUMB,RAINSTORM,RAPIDHERTZ,REFLECT,RETREAT,ROAR,ROOST,ROUND,SANDSTORM,SHOCKWAVE,SIGNALBEAM,SNORE,SQUALLDART,STEELWING,STELLARATE,STORMDRIVE,SUBSTITUTE,SUNSHINE,SWIFT,TAILWIND,TEMPEST,THUNDER,THUNDERBOLT,THUNDERSHOCK,TRUMPCARD,UTURN,VANGUARD,VOLTSWITCH,WEATHERBURST,WILDCHARGE,WINDTUNNEL
 Tribes = MYSTIC,BUSHWHACKER
 StepsToHatch = 20655
@@ -4854,8 +4854,8 @@ GenderRate = Genderless
 BaseEXP = 261
 Rareness = 5
 Happiness = 35
-Abilities = FLAMEWINGS
-Moves = 1,GUST,1,LEER,4,EMBER,8,NATURALPROTECTION,12,SQUALLDART,16,AGILITY,20,ANCIENTPOWER,24,INCINERATE,28,AIRSLASH,32,ROOST,36,HEATWAVE,40,SUNSHINE,44,TEMPEST,48,ENDURE,52,BURNUP,56,DIVEBOMB,60,PROMINENCE
+Abilities = SEARINGWINGS
+Moves = 1,IGNITE,1,LEER,4,EMBER,8,NATURALPROTECTION,12,AGILITY,16,SQUALLDART,20,ANCIENTPOWER,24,INCINERATE,28,AIRSLASH,32,ROOST,36,HEATWAVE,40,SUNSHINE,44,TEMPEST,48,ENDURE,52,BURNUP,56,DIVEBOMB,60,PROMINENCE
 LineMoves = AERIALACE,AGILITY,AIMTRUE,AIRSLASH,BLASTBURN,BRAVEBIRD,BURNINGJEALOUSY,CRIMSONSTORM,DEFOG,DIVEBOMB,DUALWINGBEAT,DUSTDEVIL,EMBER,ENDURE,ERUPTION,FACADE,FIREBLAST,FIREPULSE,FIRESPIN,FIREWORKS,FLAMECHARGE,FLAMETHROWER,FLAREBLITZ,FLAREUP,FLY,GIGAIMPACT,HEATWAVE,HYPERBEAM,IGNITE,LASERFOCUS,MYSTICALFIRE,NATURALPROTECTION,OVERHEAT,REFLECT,ROAR,ROOST,ROUND,SANDSTORM,SANDTOSS,SCORCHINGSANDS,SNORE,SOLARBEAM,SQUALLDART,STEELWING,STELLARATE,SUBSTITUTE,SWIFT,TAILWIND,TEMPEST,TRUMPCARD,UTURN,VANGUARD,WEATHERBURST,WINDTUNNEL,WINGCRASH
 Tribes = MYSTIC,RADIANT
 StepsToHatch = 20655
@@ -5379,7 +5379,7 @@ Weight = 8.5
 Kind = String Spit
 Pokedex = It lies still in the same pose for days in its web, waiting for its unsuspecting prey to wander close.
 Generation = 2
-Evolutions = ARIADOS,Level,34
+Evolutions = ARIADOS,Item,DUSKSTONE
 #-------------------------------
 [ARIADOS]
 Name = Ariados
@@ -6681,7 +6681,7 @@ Weight = 12.0
 Kind = Jet
 Pokedex = Using its dorsal fin as a suction pad, it clings to a Mantine's underside to scavenge for leftovers.
 Generation = 2
-Evolutions = OCTILLERY,Level,27
+Evolutions = OCTILLERY,Item,FIRESTONE
 #-------------------------------
 [OCTILLERY]
 Name = Octillery
@@ -8100,7 +8100,7 @@ Weight = 46.5
 Kind = Wild Monkey
 Pokedex = Its stress level rises if it cannot keep moving constantly. Too much stress makes it feel sick.
 Generation = 3
-Evolutions = SLAKING,Level,40
+Evolutions = SLAKING,Item,LEAFSTONE
 #-------------------------------
 [SLAKING]
 Name = Slaking
@@ -8381,7 +8381,7 @@ Kind = Darkness
 Pokedex = It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself.
 Generation = 3
 WildItemUncommon = WIDELENS
-Evolutions = RUBARIOR,Item,SHINYSTONE
+Evolutions = RUBARIOR,Level,44
 #-------------------------------
 [RUBARIOR]
 Name = Rubarior
@@ -8484,7 +8484,7 @@ Kind = Iron Armor
 Pokedex = During territorial disputes, Lairon fight by slamming into each other. Close inspection of their steel armor reveals scratches and dents.
 Generation = 3
 WildItemUncommon = HARDSTONE
-Evolutions = AGGRON,Level,42
+Evolutions = AGGRON,Item,THUNDERSTONE
 #-------------------------------
 [AGGRON]
 Name = Aggron
@@ -11291,7 +11291,7 @@ Weight = 33.3
 Kind = Rabbit
 Pokedex = The ears appear to be delicate. If they are touched roughly, it kicks with its graceful legs.
 Generation = 4
-Evolutions = HAEROBIC,Level,45
+Evolutions = HAEROBIC,Item,SHINYSTONE
 #-------------------------------
 [HAEROBIC]
 Name = Haerobic
@@ -11719,7 +11719,7 @@ Weight = 12.0
 Kind = Scorpion
 Pokedex = It burrows under the sand to lie in wait for prey. Its tail claws can inject its prey with a savage poison.
 Generation = 4
-Evolutions = DRAPION,Level,40
+Evolutions = DRAPION,Item,DUSKSTONE
 #-------------------------------
 [DRAPION]
 Name = Drapion
@@ -13301,7 +13301,7 @@ Kind = Leaf-Wrapped
 Pokedex = It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests.
 Generation = 5
 WildItemUncommon = MENTALHERB
-Evolutions = LEAVANNY,Level,34
+Evolutions = LEAVANNY,Item,LEAFSTONE
 #-------------------------------
 [LEAVANNY]
 Name = Leavanny
@@ -14155,7 +14155,7 @@ Kind = Chinchilla
 Pokedex = These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms.
 Generation = 5
 WildItemUncommon = SILKSCARF
-Evolutions = CINCCINO,Level,36
+Evolutions = CINCCINO,Item,SHINYSTONE
 #-------------------------------
 [CINCCINO]
 Name = Cinccino
@@ -14817,7 +14817,7 @@ Weight = 22.0
 Kind = EleFish
 Pokedex = These Pokémon have a big appetite. When they spot their prey, they attack it and paralyze it with electricity.
 Generation = 5
-Evolutions = EELEKTROSS,Level,43
+Evolutions = EELEKTROSS,Item,THUNDERSTONE
 #-------------------------------
 [EELEKTROSS]
 Name = Eelektross
@@ -14919,7 +14919,7 @@ Weight = 13.0
 Kind = Lamp
 Pokedex = It arrives near the moment of death and steals spirit from the body.
 Generation = 5
-Evolutions = CHANDELURE,Item,FIRESTONE
+Evolutions = CHANDELURE,Level,39
 #-------------------------------
 [CHANDELURE]
 Name = Chandelure
@@ -15456,7 +15456,7 @@ Weight = 9.0
 Kind = Tiny House
 Pokedex = It stomps on smaller opponents with its powerful legs, sometimes toppling in the process. If its house is broken, terrible wailing emits until it is repaired.
 WildItemUncommon = SPELLTAG
-Evolutions = MMANDIBUZZ,Level,31
+Evolutions = MMANDIBUZZ,Item,DUSKSTONE
 #-------------------------------
 [MMANDIBUZZ]
 Name = M. Mandibuzz
@@ -15599,7 +15599,7 @@ Weight = 28.8
 Kind = Torch
 Pokedex = The base of volcanoes is where they make their homes. They shoot fire from their five horns to repel attacking enemies.
 Generation = 5
-Evolutions = VOLCARONA,Level,44
+Evolutions = VOLCARONA,Item,SUNSTONE
 #-------------------------------
 [VOLCARONA]
 Name = Volcarona
@@ -16800,7 +16800,7 @@ Weight = 7.3
 Kind = Mock Kelp
 Pokedex = It looks just like rotten kelp. It hides from foes while storing up power for its evolution.
 Generation = 6
-Evolutions = DRAGALGE,Level,34
+Evolutions = DRAGALGE,Item,WATERSTONE
 #-------------------------------
 [DRAGALGE]
 Name = Dragalge
@@ -18536,7 +18536,7 @@ Kind = Sand Heap
 Pokedex = It likes the shovel on its head, so Sandygast will get serious and fight any children who come to take it back.
 Generation = 7
 WildItemUncommon = SOFTSAND
-Evolutions = PALOSSAND,Level,30
+Evolutions = PALOSSAND,Item,WATERSTONE
 #-------------------------------
 [PALOSSAND]
 Name = Palossand
@@ -19602,7 +19602,7 @@ BaseEXP = 55
 Rareness = 195
 Happiness = 50
 Abilities = CHEEKPOUCH,UNAWARE
-Moves = 1,LEER,1,TACKLE,4,ROCKTHROW,8,STUFFCHEEKS,12,RECYCLE,16,COVET,20,SPITUP,20,STOCKPILE,20,SWALLOW,24,ROCKBLAST,28,NATURALGIFT,32,BODYSLAM,36,ADAMANTINEPRESS,40,REST,44,DOUBLEEDGE,48,BESTOW,52,WISH,56,STONEEDGE,60,FACADE,64,LASTRESORT
+Moves = 1,LEER,1,TACKLE,4,ROCKTHROW,8,BESTOW,12,RECYCLE,16,COVET,20,SPITUP,20,STOCKPILE,20,SWALLOW,24,ROCKBLAST,28,NATURALGIFT,32,BODYSLAM,36,ADAMANTINEPRESS,40,REST,44,DOUBLEEDGE,48,STUFFCHEEKS,52,WISH,56,STONEEDGE,60,FACADE,64,LASTRESORT
 LineMoves = AMNESIA,ASSURANCE,BEDROCKBREAKER,BITE,BODYPRESS,BODYSLAM,BREACH,BRUTALSWING,BULKUP,BULLETSEED,BURNINGJEALOUSY,CENTER,COLDEMBRACE,COUNTER,COVET,CREEPINGSTRIKE,CRUNCH,CURLUP,CURRENTCRASH,DOUBLEEDGE,DROPKICK,ENDURE,FACADE,FIGHTINGCHANCE,FIREFANG,FLAMEWHEEL,FLAREBLITZ,FLASHSEED,FLING,FLOWSTATE,FRIGIDJEALOUSY,FROSTBARB,GIGAIMPACT,GLACIALCRUNCH,GLACIALRAM,GRANITEHEAD,HARBORBREAKER,HARDEN,HEADBANG,HEADBUTT,HYPERBEAM,HYPERFANG,HYPERVOICE,ICEBERGBASH,ICEFANG,ICEHAMMER,INFERNOIMPACT,IRONDEFENSE,KINDLE,LASHOUT,LASTRESORT,LEAFAGE,LIQUIDATION,LONGSHOT,MEGAPUNCH,MIRRORCOAT,MULTISTRIKE,PAYBACK,PILFER,POWERWHIP,PSYCHICFANGS,RAZINGVINES,ROCKBLAST,ROCKROLL,ROCKTOMB,ROUND,RUIN,SCUFFLE,SEARINGCRUNCH,SHARPEN,SNORE,SNOWBALL,SUBMISSION,SUBSTITUTE,SUPERFANG,THIEF,THUNDERFANG,UPROAR,VINEWHIP,VOLTCRUNCH,VOLTTACKLE,WAVEBREAK,WILDCHARGE,WOODHAMMER
 Tribes = SCAVENGER
 StepsToHatch = 5396
@@ -19733,7 +19733,7 @@ Weight = 19.5
 Kind = Radome
 Pokedex = As it grows inside its shell, it uses its psychic abilities to monitor the outside world and prepare for evolution.
 Generation = 8
-Evolutions = ORBEETLE,Level,37
+Evolutions = ORBEETLE,Item,MOONSTONE
 #-------------------------------
 [ORBEETLE]
 Name = Orbeetle
@@ -20014,7 +20014,7 @@ Kind = Coal
 Pokedex = By rapidly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,800 degrees Fahrenheit.
 Generation = 8
 WildItemUncommon = CHARCOAL
-Evolutions = COALOSSAL,Level,34
+Evolutions = COALOSSAL,Item,FIRESTONE
 #-------------------------------
 [COALOSSAL]
 Name = Coalossal
@@ -20174,7 +20174,7 @@ Kind = Sand Snake
 Pokedex = Its unique style of coiling allows it to blast sand out of its sand sac more efficiently.
 Generation = 8
 WildItemUncommon = SOFTSAND
-Evolutions = SAHARICANE,Level,45
+Evolutions = SAHARICANE,Item,SUNSTONE
 #-------------------------------
 [SAHARICANE]
 Name = Saharicane
@@ -20434,7 +20434,7 @@ Weight = 0.2
 Kind = Black Tea
 Pokedex = The teacup in which this Pokémon makes its home is a famous piece of antique tableware. Many forgeries are in circulation.
 Generation = 8
-Evolutions = POLTEAGEIST,Item,LEAFSTONE
+Evolutions = POLTEAGEIST,Level,30
 #-------------------------------
 [POLTEAGEIST]
 Name = Polteageist
@@ -20475,7 +20475,7 @@ Height = 0.2
 Weight = 0.2
 Kind = Ice Tea
 Pokedex = It spends days relaxing on the beach. Its rest is often interrupted by someone who confuses it for a drink.
-Evolutions = MPOLTEAGEIST,Item,ICESTONE
+Evolutions = MPOLTEAGEIST,Level,30
 #-------------------------------
 [MPOLTEAGEIST]
 Name = M. Polteageist
@@ -20742,7 +20742,7 @@ Weight = 3.8
 Kind = Worm
 Pokedex = It eats snow that piles up on the ground. The more snow it eats, the bigger and more impressive the spikes on its back grow.
 Generation = 8
-Evolutions = FROSMOTH,Level,44
+Evolutions = FROSMOTH,Item,ICESTONE
 #-------------------------------
 [FROSMOTH]
 Name = Frosmoth
@@ -21017,7 +21017,7 @@ Weight = 40.0
 Kind = Alloy
 Pokedex = The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain.
 Generation = 8
-Evolutions = TOWERPODA,Level,34,ARCHALUDON,Item,SHINYSTONE
+Evolutions = TOWERPODA,Level,34,ARCHALUDON,Item,THUNDERSTONE
 #-------------------------------
 [TOWERPODA]
 Name = Towerpoda

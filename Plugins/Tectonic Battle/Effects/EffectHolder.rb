@@ -50,6 +50,21 @@ module EffectHolder
         end
     end
 
+    def decrementEffect(effect, decrementAmount = 1)
+        validateCorrectLocation(effect)
+        effectData = GameData::BattleEffect.get(effect)
+        validateInteger(effectData)
+        oldValue = @effects[effect]
+        newValue = oldValue - decrementAmount
+        if effectData.default && newValue < effectData.default
+            echoln("[EFFECT] Effect decremented while already at default value: #{effectData.real_name}")
+            return oldValue
+        else
+            @effects[effect] = newValue
+            return newValue
+        end
+    end
+
     # Returns true if the value did not expire, false if it did
     def tickDownAndProc(effect)
         validateCorrectLocation(effect)
