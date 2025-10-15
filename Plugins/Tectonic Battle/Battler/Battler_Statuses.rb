@@ -280,8 +280,7 @@ immuneTypeRealName))
         immuneType = nil
         case status
         when :POISON
-            unless applicator&.hasActiveAbility?(:CORROSION)
-                immuneType = :STEEL if pbHasType?(:STEEL)
+            unless @battle.pbCheckOpposingAbility(:PIERCINGPOISON, @index)
                 immuneType = :POISON if pbHasType?(:POISON)
             end
         when :BURN
@@ -320,6 +319,8 @@ immuneTypeRealName))
             newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GALVANICWINGS, @index)
         when :FROSTBITE
             newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GLACIALWINGS, @index)
+        when :POISON
+            newStatusCount = 2 if @battle.pbCheckOpposingAbility(:PIERCINGPOISON, @index)
         end
 
         statusCheck = false
@@ -530,6 +531,18 @@ immuneTypeRealName))
         return doublings
     end
 
+    def neurotoxined?
+        return false unless poisoned?
+        @battle.pbOpposingParty(@index).each do |enemyPartyMember|
+            next if enemyPartyMember.nil?
+            next if enemyPartyMember.fainted?
+            next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
+            next if enemyPartyMember.dizzy?
+            return true
+        end
+        return false
+    end
+
     #=============================================================================
     # Burn
     #=============================================================================
@@ -579,20 +592,7 @@ immuneTypeRealName))
     # Dizzy
     #=============================================================================
     def dizzy?
-        return true if neurotoxined?
         return pbHasStatus?(:DIZZY)
-    end
-
-    def neurotoxined?
-        return false unless poisoned?
-        @battle.pbOpposingParty(@index).each do |enemyPartyMember|
-            next if enemyPartyMember.nil?
-            next if enemyPartyMember.fainted?
-            next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
-            next if enemyPartyMember.dizzy?
-            return true
-        end
-        return false
     end
 
     def canDizzy?(user, showMessages, move = nil)

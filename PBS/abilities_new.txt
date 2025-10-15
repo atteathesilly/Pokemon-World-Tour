@@ -1366,7 +1366,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [NEUROTOXIN]
 Name = Neurotoxin
-Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes also suffer from dizzy.
+Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes cannot use the same move twice in a row. 
 #-------------------------------
 [NIGHTLIFE]
 Name = Night Life
@@ -2374,3 +2374,7 @@ Description = Uses Dragon Dance if an attack lowers its HP to half or below.
 [WREAKHAVOC]
 Name = Wreak Havoc
 Description = Boosts the power of rampaging moves by 30%, and makes them physical or special based on which would be more effective.
+#-------------------------------
+[PIERCINGPOISON]
+Name = Piercing Poison
+Description = Poison-type foes can be poisoned. Poison applied to foes starts already worsened.

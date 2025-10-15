@@ -86,7 +86,7 @@ class PokeBattle_BattlePalace < PokeBattle_Battle
       return false
     end
     # though incorrect, just for convenience (actually checks Torment later)
-    if thispkmn.effectActive?(:Torment) && thispkmn.lastMoveUsed
+    if thispkmn.tormented? && thispkmn.lastMoveUsed
       return false if thismove.id==thispkmn.lastMoveUsed
     end
     return true

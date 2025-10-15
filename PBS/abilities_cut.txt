@@ -1219,3 +1219,7 @@ Description = Upon entry, creates a Wonder Room for five turns, swapping base De
 Name = Zen Mode
 Description = Changes the Pokémon's shape when HP is halved.
 Flags = Immutable
+#-------------------------------
+[CORROSION]
+Name = Corrosion
+Description = Can poison the target even if it's a Steel or Poison-type.
