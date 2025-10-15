@@ -169,6 +169,7 @@ DarkCave,20,20
 #-------------------------------
 [037] # Svait
 Land,20,20
+    25,CRYSCROSS,23,25
     25,MHOOTHOOT,23,25
     25,MIENFOO,23,25
     25,MISDREAVUS,23,25
