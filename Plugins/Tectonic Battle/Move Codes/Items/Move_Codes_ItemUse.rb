@@ -411,7 +411,7 @@ end
 #===============================================================================
 # Consumes berry and raises the user's Defense and Sp. Def by 3 steps. (Stuff Cheeks)
 #===============================================================================
-class PokeBattle_Move_EatBerryRaiseDefenses3 < PokeBattle_Move
+class PokeBattle_Move_EatBerryRaiseDefenses1 < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         unless user.hasAnyBerry?
             @battle.pbDisplay(_INTL("But it failed, because {1} has no berries!", user.pbThis(true))) if show_message
@@ -425,7 +425,7 @@ class PokeBattle_Move_EatBerryRaiseDefenses3 < PokeBattle_Move
     end
 
     def pbEffectGeneral(user)
-        user.pbRaiseMultipleStatSteps([:DEFENSE, 3, :SPECIAL_DEFENSE, 3], user, move: self)
+        user.pbRaiseMultipleStatSteps([:DEFENSE, 1, :SPECIAL_DEFENSE, 1], user, move: self)
         user.eachActiveItem do |item|
             next unless GameData::Item.get(item).is_berry?
             user.pbHeldItemTriggerCheck(item, false)
@@ -434,7 +434,7 @@ class PokeBattle_Move_EatBerryRaiseDefenses3 < PokeBattle_Move
     end
 
     def getEffectScore(user, target)
-        score = getMultiStatUpEffectScore([:DEFENSE, 3, :SPECIAL_DEFENSE, 3], user, target)
+        score = getMultiStatUpEffectScore([:DEFENSE, 1, :SPECIAL_DEFENSE, 1], user, target)
         user.eachAIKnownActiveItem do |item|
             next unless GameData::Item.get(item).is_berry?
             score += 40
@@ -498,5 +498,38 @@ class PokeBattle_Move_GrantUserPearlOfWisdom < PokeBattle_Move
 
     def getEffectScore(_user, _target)
         return 150
+    end
+end
+
+#===============================================================================
+# The user equips a Crystal Caliburn and enters Royal Form. (Gemforged Oath)
+#===============================================================================
+class PokeBattle_Move_GrantUserCrystalCaliburnChangeUserDiancieForm < PokeBattle_Move
+    def pbMoveFailed?(user, _targets, show_message)
+        if !user.countsAs?(:DIANCIE)
+            @battle.pbDisplay(_INTL("But {1} can't use the move!", user.pbThis(true))) if show_message
+            return true
+        elsif user.form != 0
+            @battle.pbDisplay(_INTL("But {1} can't use it the way it is now!", user.pbThis(true))) if show_message
+            return true
+        elsif !user.canAddItem?(:CRYSTALCALIBURN)
+            @battle.pbDisplay(_INTL("But {1} can't hold the {2}!", user.pbThis(true), getItemName(:CRYSTALCALIBURN))) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbEffectGeneral(user)
+        user.giveItem(:CRYSTALCALIBURN)
+        user.pbChangeForm(1, _INTL("{1} draws the {2} from the stone!", user.pbThis, getItemName(:CRYSTALCALIBURN)))
+    end
+
+    def getEffectScore(_user, _target)
+        return 150
+    end
+
+    def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
+        @battle.pbCommonAnimation("MegaEvolution", user)
+        super
     end
 end

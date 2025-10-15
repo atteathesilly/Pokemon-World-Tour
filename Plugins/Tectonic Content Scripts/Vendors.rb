@@ -103,6 +103,14 @@ def purchaseStarters(type,price=0)
 	end
 end
 
+def isFossil?(item_symbol)
+	%i[HELIXFOSSIL DOMEFOSSIL OLDAMBER ROOTFOSSIL CLAWFOSSIL SKULLFOSSIL ARMORFOSSIL COVERFOSSIL PLUMEFOSSIL JAWFOSSIL SAILFOSSIL].include?(item_symbol)
+end
+
+def isFantasyFossil?(item_symbol)
+	%i[ELDRITCHFOSSIL].include?(item_symbol)
+end
+
 def isMixFossil?(item_symbol)
 	%i[FOSSILIZEDBIRD FOSSILIZEDDRAKE FOSSILIZEDFISH FOSSILIZEDDINO].include?(item_symbol)
 end
@@ -110,6 +118,11 @@ end
 def reviveFossil(fossil)
 	if isMixFossil?(fossil)
 		pbMessage(_INTL("My apologies, I don't know what to do with this type of fossil."))
+		return
+	end
+
+	if isFantasyFossil?(fossil)
+		pbMessage(_INTL("I... don't think I understand this fossil. Maybe try asking my assistant for help."))
 		return
 	end
 
@@ -145,6 +158,42 @@ def reviveFossil(fossil)
 	}
 	
 	pbMessage(_INTL("It's done! Here is your newly revived Pokemon!"))
+	
+	pbAddPokemon(species,15)
+end
+
+def reviveFantasyFossil(fossil)
+	if isMixFossil?(fossil)
+		pbMessage(_INTL("Those fossils are a bit too crazy for me, sorry."))
+		return
+	end
+	if isFossil?(fossil)
+		pbMessage(_INTL("Talk to my boss for these fossils, I can't revive them."))
+		return
+	end
+
+	fossilsToSpecies = {
+		:ELDRITCHFOSSIL => :MOMANYTE
+	}
+
+	species = fossilsToSpecies[fossil] || nil
+	
+	if species.nil?
+		pbMessage(_INTL("Error! Could not determine how to revive the given fossil."))
+		return
+	end
+	item_data = GameData::Item.get(fossil)
+	
+	pbMessage(_INTL("\\PN hands over the {1} and $3000.",item_data.name))
+	
+	pbMessage(_INTL("The procedure has started, now just to wait..."))
+	
+	blackFadeOutIn(30) {
+		$Trainer.money = $Trainer.money - 3000
+		$PokemonBag.pbDeleteItem(fossil)
+	}
+	
+	pbMessage(_INTL("It's alive! I've figured it out! Here is your newly revived Pokemon!"))
 	
 	pbAddPokemon(species,15)
 end
@@ -541,7 +590,9 @@ end
 
 def switchOutTMShop
 	tmsStock = %i[
+		TMRETREAT
 		TMVOLTSWITCH
+		TMPSYCHESWITCH
 		TMUTURN
 		TMFLIPTURN
 		TMPARTINGSHOT

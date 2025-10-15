@@ -515,9 +515,9 @@ def getMultiStatUpEffectScore(statUpArray, user, target, fakeStepModifier: 0, ev
     if target.hasActiveAbilityAI?(:CONTRARY)
         score *= -1
         echoln("\t\t[EFFECT SCORING] The target has Contrary! Inverting the score.")
-    elsif target.hasActiveAbilityAI?(:ECCENTRIC)
+    elsif target.hasActiveAbilityAI?(:INVERSION)
         score *= -0.5
-        echoln("\t\t[EFFECT SCORING] The target has Eccentric! Inverting and halving the score.")
+        echoln("\t\t[EFFECT SCORING] The target has INVERSION! Inverting and halving the score.")
     end
 
     if user.opposes?(target)
@@ -604,7 +604,7 @@ def getMultiStatDownEffectScore(statDownArray, user, target, fakeStepModifier: 0
     if target.hasActiveAbilityAI?(:CONTRARY)
         score *= -1
         echoln("\t\t[EFFECT SCORING] The target has Contrary! Inverting the score.")
-    elsif target.hasActiveAbilityAI?(:ECCENTRIC)
+    elsif target.hasActiveAbilityAI?(:INVERSION)
         score *= -0.5
     end
 
@@ -782,10 +782,10 @@ def predictedEOTDamage(battle,battler)
     damage += battle.applyHailDamage(battler, aiCheck: true) if battle.icy?
 
     # Status DOTs
-    damage += battle.damageFromDOTStatus(battler, :POISON, true) if battler.poisoned?
-    damage += battle.damageFromDOTStatus(battler, :LEECHED, true) if battler.leeched?
-    damage += battle.damageFromDOTStatus(battler, :BURN, true) if battler.burned?
-    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, true) if battler.frostbitten?
+    damage += battle.damageFromDOTStatus(battler, :POISON, aiCheck: true) if battler.poisoned?
+    damage += battle.damageFromDOTStatus(battler, :LEECHED, aiCheck: true) if battler.leeched?
+    damage += battle.damageFromDOTStatus(battler, :BURN, aiCheck: true) if battler.burned?
+    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, aiCheck: true) if battler.frostbitten?
 
     # Check for aggravate
     aggravate = battle.pbCheckOpposingAbility(:AGGRAVATE, battler.index)
@@ -949,15 +949,20 @@ def getLightScreenEffectScore(user, baseDuration = nil, move = nil)
     return getScreenEffectScore(user, :LightScreen, baseDuration, move)
 end
 
+def getDiamondFieldEffectScore(user, baseDuration = nil, move = nil)
+    return getScreenEffectScore(user, :DiamondField, baseDuration, move)
+end
+
 def getScreenEffectScore(user, effect, baseDuration = nil, move = nil)
     score = 0
     # Current turn value
-    unless user.pbOwnSide.effectActive?(:LightScreen)
+    unless user.pbOwnSide.effectActive?(effect)
         user.eachOpposing do |b|
             next if b.ignoreScreens?(true)
             next if effect == :Reflect && !b.hasSpecialAttack?
             next if effect == :LightScreen && !b.hasSpecialAttack?
             next if effect == :AuroraVeil && !b.hasDamagingAttack?
+            next if effect == :DiamondField && !b.hasDamagingAttack?
 
             score += 60 if !move || user.battle.battleAI.userMovesFirst?(move, user, b)
         end
@@ -966,7 +971,14 @@ def getScreenEffectScore(user, effect, baseDuration = nil, move = nil)
     user.eachOpposing do |opp|
         next unless opp.hasScreenRemovalMove?
         foeCanBreak = true
+        score /= 2
         break  
+    end
+    foeIgnoresScreens = false
+    user.eachOpposing do |opp|
+        next unless opp.ignoreScreens?(true)
+        foeIgnoresScreens = true
+        break
     end
     unless foeCanBreak
         duration = baseDuration ? user.getScreenDuration(baseDuration,aiCheck: true) : user.getScreenDuration(aiCheck: true)
@@ -977,6 +989,9 @@ def getScreenEffectScore(user, effect, baseDuration = nil, move = nil)
             score += 10 * duration  
         end
         score = (score * 1.3).ceil if user.fullHealth?
+    end
+    if foeIgnoresScreens
+        score = (score * 0.7).floor
     end
     return score  
 end

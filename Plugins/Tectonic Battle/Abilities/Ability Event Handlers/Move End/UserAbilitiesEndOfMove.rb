@@ -235,8 +235,8 @@ BattleHandlers::UserAbilityEndOfMove.add(:SPACEINTERLOPER,
 BattleHandlers::UserAbilityEndOfMove.add(:SPARESCALES,
   proc { |ability, user, _targets, move, _battle, _switchedBattlers|
       next unless %i[GRASS GROUND STEEL].include?(move.calcType)
-      healingMessage = _INTL("{1} gathered up material.", battler.pbThis)
-      battler.applyFractionalHealing(1.0 / 5.0, ability: ability, customMessage: healingMessage, canOverheal: true)
+      healingMessage = _INTL("{1} gathered up material.", user.pbThis)
+      user.applyFractionalHealing(1.0 / 5.0, ability: ability, customMessage: healingMessage, canOverheal: true)
   }
 )
 
@@ -337,6 +337,28 @@ BattleHandlers::UserAbilityEndOfMove.add(:TORPORSAP,
       end
       next if asleepTargets.length == 0
       user.pbRecoverHPFromMultiDrain(asleepTargets, 0.50, ability: ability)
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:VICIOUSCYCLE,
+  proc { |ability, user, targets, move, battle, _switchedBattlers, aiCheck|
+      next if battle.futureSight
+      next unless move.damagingMove?
+      next unless move.calcType == :DRAGON
+      # AI learns ability if move spreads or drain happens
+      user.aiLearnsAbility(ability) if ( !aiCheck && ( targets.size() > 1 || user.hp != user.totalhp) )
+      user.pbRecoverHPFromMultiDrain(targets, 0.33, ability: ability)
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:HORDETACTICS,
+  proc { |ability, user, targets, move, battle, _switchedBattlers, aiCheck|
+      next if battle.futureSight
+      next unless move.damagingMove?
+      next unless move.calcType == :NORMAL
+      # AI learns ability if move spreads or drain happens
+      user.aiLearnsAbility(ability) if ( !aiCheck && ( targets.size() > 1 || user.hp != user.totalhp) )
+      user.pbRecoverHPFromMultiDrain(targets, 0.33, ability: ability)
   }
 )
 
@@ -534,7 +556,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:HYBRIDFIGHTER,
 
       if previousMoveData.kickingMove? && currentMoveData.bitingMove?
         user.showMyAbilitySplash(ability)
-        if user.fullHealth?
+        if user.healthCapped?
           battle.pbDisplay(_INTL("{1}'s HP is full!", user.pbThis))
         else
           user.applyFractionalHealing(1.0/4.0)
@@ -590,5 +612,53 @@ BattleHandlers::UserAbilityEndOfMove.add(:BLINDING,
         b.tryLowerStat(:SPECIAL_DEFENSE, user, increment: 1, showFailMsg: true)
       end
       battle.pbHideAbilitySplash(user)
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:TANGLINGVINES,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+    next unless move.damagingMove?
+    targets.each do |b|
+      next if b.fainted?
+      if b.pointsAt?(:TanglingVines, user)
+        b.disableEffect(:TanglingVines)
+      end
+    end
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:FRIGHTENINGFANGS,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+      next if battle.futureSight
+      next unless move.bitingMove?
+      targets.each do |b|
+          next if b.fainted?
+          battle.pbShowAbilitySplash(user, ability)
+          if b.pbAttack > b.pbSpAtk
+          b.pbLowerMultipleStatSteps([:ATTACK,2], user, move: self)
+          else
+          b.pbLowerMultipleStatSteps([:SPECIAL_ATTACK,2], user, move: self)
+          end
+      battle.pbHideAbilitySplash(user)
+      end
+  }
+)
+
+BattleHandlers::UserAbilityEndOfMove.add(:ACTIONSTAR,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+    next if user.effectActive?(:ActionStar)
+
+    ability_proc = false
+    targets.each do |b| 
+      next if b.damageState.unaffected
+      next unless Effectiveness.super_effective?(b.damageState.typeMod)
+      ability_proc = true
+      break
+    end
+    next unless ability_proc
+    
+    battle.pbShowAbilitySplash(user, ability)
+    user.applyEffect(:ActionStar)
+    battle.pbHideAbilitySplash(user)
   }
 )

@@ -401,6 +401,24 @@ BattleHandlers::AbilityOnSwitchIn.add(:LIGHTTRICK,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFDEATH,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with death!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFLIFE,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with life!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
@@ -519,7 +537,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:STORMTOTEM,
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:TurbulentSky, 6)
+          battler.pbOwnSide.applyEffect(:TurbulentSky, applyEffectDurationModifiers(6, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -535,7 +553,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:FOGTOTEM,
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:MisdirectingFog, 6)
+          battler.pbOwnSide.applyEffect(:MisdirectingFog, applyEffectDurationModifiers(6, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -551,7 +569,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:WILDTOTEM,
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:PrimalForest, 6)
+          battler.pbOwnSide.applyEffect(:PrimalForest, applyEffectDurationModifiers(6, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -567,7 +585,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:FLUTTERTOTEM,
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:CruelCocoon, 6)
+          battler.pbOwnSide.applyEffect(:CruelCocoon, applyEffectDurationModifiers(6, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -583,7 +601,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:GARLANDGUARDIAN,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:SAFEGUARD, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:Safeguard, 10)
+          battler.pbOwnSide.applyEffect(:Safeguard, applyEffectDurationModifiers(10, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -596,7 +614,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:CLOVERSONG,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:LUCKYCHANT, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:LuckyChant, 10)
+          battler.pbOwnSide.applyEffect(:LuckyChant, applyEffectDurationModifiers(10, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -609,7 +627,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:ONTHEWIND,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:TAILWIND, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:Tailwind, 4)
+          battler.pbOwnSide.applyEffect(:Tailwind, applyEffectDurationModifiers(4, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -622,7 +640,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:GRAVITAS,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:GRAVITY, battler, nil, 0)
-          battle.field.applyEffect(:Gravity, 4)
+          battle.field.applyEffect(:Gravity, applyEffectDurationModifiers(4, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -635,7 +653,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:DRIFTINGMIST,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:GREYMIST, battler, nil, 0)
-          battle.field.applyEffect(:GreyMist, 3)
+          battle.field.applyEffect(:GreyMist, applyEffectDurationModifiers(3, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -648,7 +666,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:FITTOSURVIVE,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:NATURALPROTECTION, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:NaturalProtection, 4)
+          battler.pbOwnSide.applyEffect(:NaturalProtection, applyEffectDurationModifiers(8, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -949,6 +967,17 @@ BattleHandlers::AbilityOnSwitchIn.add(:HAUNTED,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:IONIZEDALLOY,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      next unless battle.rainy?
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("Ions in the atmosphere react to {1}!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+      battle.scene.pbRefresh
+  }
+)
+
 BattleHandlers::AbilityOnSwitchIn.add(:BRUTEFORCE,
   proc { |ability, battler, battle, aiCheck|
       next 0 if aiCheck
@@ -1119,7 +1148,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:HOLIDAYCHEER,
   proc { |ability, battler, battle, aiCheck|
       anyHealing = false
       battle.eachSameSideBattler(battler.index) do |b|
-          next 0 if b.fullHealth?
+          next 0 if b.healthCapped?
           anyHealing = true
       end
       next 0 unless anyHealing

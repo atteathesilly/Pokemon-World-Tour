@@ -85,6 +85,10 @@ Puddle,20,20
 Special,20
     1,SKITTY,15
 #-------------------------------
+[016] # LuxTech Center
+Special,20
+    1,MBUNEARY,15
+#-------------------------------
 [019] # Reading Ribombee Café
 Special,20
     1,MILCERY,15
@@ -103,8 +107,6 @@ Land,20,20
     33,TYROGUE,18,20
     16,GOTHITA,18,20
     16,PAWNIARD,18,20
-Special,20
-    1,TENTACOOL,10
 #-------------------------------
 [026] # Bluepoint Grotto
 DarkCave,20,15
@@ -251,8 +253,6 @@ Puddle,20,20
     20,BARBOACH,19,21
     20,SURSKIT,19,21
     20,TYMPOLE,19,21
-Special,20
-    1,REMORAID,15
 #-------------------------------
 [056] # Novo Town
 FloweryGrass,20,20
@@ -280,8 +280,6 @@ Puddle,20,20
     20,MSKRELP,13,15
     10,SHELLOS,13,15
     10,SHELLOS_1,13,15
-Special,20
-    1,CARVANHA,15
 #-------------------------------
 [060] # Shipping Lane
 Land,20,20
@@ -313,7 +311,15 @@ LandSparse,20,15
 #-------------------------------
 [071] # Room 103
 Special,20
-    1,MAREANIE,15
+    1,EEVEE,15
+#-------------------------------
+[081] # East Tunnel
+Puddle,20,20
+    20,CARVANHA,18,20
+    20,MANTYKE,18,20
+    20,MAREANIE,18,20
+    20,REMORAID,18,20
+    20,TENTACOOL,18,20
 #-------------------------------
 [085] # Worried Man's House
 Special,20
@@ -430,11 +436,17 @@ Special,20
 #-------------------------------
 [135] # Nebula Ruins
 Cloud,20,25
-    20,BLIPBUG,22,24
     20,CLEFFA,22,24
-    20,MINIOR,22,24
-    20,STONJOURNER,22,24
-    20,WOOBAT,22,24
+    15,BLIPBUG,22,24
+    15,STONJOURNER,22,24
+    15,WOOBAT,22,24
+    5,MINIOR_10,22,24
+    5,MINIOR_11,22,24
+    5,MINIOR_12,22,24
+    5,MINIOR_13,22,24
+    5,MINIOR_7,22,24
+    5,MINIOR_8,22,24
+    5,MINIOR_9,22,24
 #-------------------------------
 [136] # Casaba Villa
 Land,20,10
@@ -722,10 +734,16 @@ DarkCave,20,20
 [215] # Tempest Realm
 Cloud,20,60
     20,CASTFORM,64,66
-    20,CRYOGONAL,64,66
-    20,DRIFLOON,64,66
-    20,MINIOR,64,66
-    20,WAILMER,64,66
+    15,CRYOGONAL,64,66
+    15,DRIFLOON,64,66
+    15,WAILMER,64,66
+    5,MINIOR_10,64,66
+    5,MINIOR_11,64,66
+    5,MINIOR_12,64,66
+    5,MINIOR_13,64,66
+    5,MINIOR_7,64,66
+    5,MINIOR_8,64,66
+    5,MINIOR_9,64,66
 #-------------------------------
 [216] # Highland Lake
 Land,20,40
@@ -744,8 +762,8 @@ Special,60
 [217] # Sweetrock Harbor
 Land,20,60
     40,APPLIN,49,51
-    20,COMFEY,49,51
     20,FALINKS,49,51
+    20,MBUNEARY,49,51
     20,MILCERY,49,51
 #-------------------------------
 [218] # Abyssal Cavern

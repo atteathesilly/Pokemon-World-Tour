@@ -74,7 +74,7 @@ BattleHandlers::DamageCalcTargetAbility.add(:PARANOID,
 
 BattleHandlers::DamageCalcTargetAbility.add(:MULTISCALE,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
-    if target.hp == target.totalhp
+    if target.fullHealth?
       mults[:final_damage_multiplier] /= 2
       target.aiLearnsAbility(ability) unless aiCheck
     end
@@ -286,7 +286,7 @@ BattleHandlers::DamageCalcTargetAbility.add(:LIMINAL,
 BattleHandlers::DamageCalcTargetAbility.add(:MISTFORM,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
     if target.effectActive?(:SwitchedIn)
-      mults[:final_damage_multiplier] *= 0.33
+      mults[:final_damage_multiplier] *= 0.66
       target.aiLearnsAbility(ability) unless aiCheck
     end
   }
@@ -378,6 +378,15 @@ BattleHandlers::DamageCalcTargetAbility.add(:ROLLINGBLOWS,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
     if target.effectActive?(:TwoTurnAttack) || target.effectActive?(:HyperBeam)
       mults[:final_damage_multiplier] *= 0.5
+      target.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+BattleHandlers::DamageCalcTargetAbility.add(:MULTIHEADED,
+  proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
+    if target.belowHalfHealth?
+      mults[:final_damage_multiplier] *= 0.66
       target.aiLearnsAbility(ability) unless aiCheck
     end
   }
