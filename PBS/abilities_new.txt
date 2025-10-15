@@ -1510,7 +1510,7 @@ Description = The Pokémon's moves deal 50% more damage if they're a different t
 #-------------------------------
 [PINDOWN]
 Name = Pin Down
-Description = The user's moves cannot miss against trapped targets.
+Description = The user's moves cannot miss against trapped targets. Takes 20% less damage from Pokemon that are trapped.
 #-------------------------------
 [PITFIGHTER]
 Name = Pit Fighter
