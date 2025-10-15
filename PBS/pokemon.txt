@@ -15057,7 +15057,7 @@ Kind = Crystal
 Pokedex = When the weather gets hot, these Pokémon turn into water vapor. Cryscross are almost never seen during summer.
 Generation = 5
 WildItemUncommon = NEVERMELTICE
-Evolutions = CRYOGONAL,Level,33
+Evolutions = CRYOGONAL,Item,SHINYSTONE
 #-------------------------------
 [CRYOGONAL]
 Name = Cryogonal
