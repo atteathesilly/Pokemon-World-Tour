@@ -466,7 +466,7 @@ Pokemon = ARIADOS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = CLAWITZER,70
-    Moves = AURASPHERE,FLASHCANNON,BUBBLEBLASTER,GLIMMERPULSE
+    Moves = AURASPHERE,ENERGYBALL,BUBBLEBLASTER,GLIMMERPULSE
     AbilityIndex = 0 # Mega Launcher
     Item = ROCKGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1116,7 +1116,7 @@ Pokemon = DITTO,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,6,6,6,6,12
 Pokemon = ALAKAZAM,70
-    Moves = PSYCHIC,FLASHCANNON,MOONBLAST,GLIMMERPULSE
+    Moves = PSYCHIC,FLASHCANNON,MOONBLAST,ENERGYBALL
     AbilityIndex = 1 # Steelworker
     Item = PSYCHICGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1545,7 +1545,7 @@ Pokemon = NOIVERN,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = ALAKAZAM,70
-    Moves = MOONBLAST,PSYCHIC,TERRAFORM,ECLIPSE
+    Moves = MOONBLAST,PSYCHIC,FOULPLAY,ECLIPSE
     AbilityIndex = 0 # Warping Effect
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1979,7 +1979,7 @@ Pokemon = SWAMPERT,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 12,20,0,18,20,0
 Pokemon = CLAWITZER,70
-    Moves = SLUDGEWAVE,ICEBEAM,BUBBLEBLASTER,HOLDFIRE
+    Moves = AIRSLASH,DETACHMENT,BUBBLEBLASTER,HOLDFIRE
     AbilityIndex = 1 # Cloudburst
     Item = WATERGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
