@@ -281,12 +281,11 @@ end
 
 #===============================================================================
 # Target is forced to hold a Black Sludge, dropping its item if neccessary. (Trash Treasure)
-# Also lower's the target's Sp. Def.
 #===============================================================================
-class PokeBattle_Move_TrashTreasure < PokeBattle_Move
+class PokeBattle_Move_GrantBlackSludgeReplaceItem < PokeBattle_Move
     def pbFailsAgainstTarget?(user, target, show_message)
-        if !target.canAddItem?(:BLACKSLUDGE) && !canRemoveItem?(user, target, target.firstItem) && target.pbCanLowerStatStep?(:SPECIAL_DEFENSE,user,self)
-            @battle.pbDisplay(_INTL("But it failed, since {1} can't be given a Black Sludge or have its Sp. Def lowered!", target.pbThis)) if show_message
+        if !target.canAddItem?(:BLACKSLUDGE) && !canRemoveItem?(user, target, target.firstItem)
+            @battle.pbDisplay(_INTL("But it failed, since {1} can't be given a Black Sludge!", target.pbThis)) if show_message
             return true
         end
         return false
@@ -314,20 +313,17 @@ class PokeBattle_Move_TrashTreasure < PokeBattle_Move
             @battle.pbDisplay(_INTL("{1} was forced to hold a {2}!", target.pbThis, getItemName(:BLACKSLUDGE)))
             target.giveItem(:BLACKSLUDGE)
         end
-        
-        target.tryLowerStat(:SPECIAL_DEFENSE, user, move: self)
     end
 
     def getTargetAffectingEffectScore(user, target)
         score = 0
         if target.canAddItem?(:BLACKSLUDGE) && canRemoveItem?(user, target, target.firstItem, checkingForAI: true)
             if target.pbHasTypeAI?(:POISON)
-                score -= 50
+                score -= 60
             else
-                score += 50
+                score += target.hasAnyItem? ? 120 : 60
             end
         end
-        score += getMultiStatDownEffectScore([:SPECIAL_DEFENSE,1],user,target)
         return score
     end
 end

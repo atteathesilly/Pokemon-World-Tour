@@ -1577,9 +1577,9 @@ Category = Status
 Accuracy = 100
 TotalPP = 12
 Target = NearOther
-FunctionCode = TrashTreasure
+FunctionCode = GrantBlackSludgeReplaceItem
 Flags = CanProtect,CanMagicCoat
-Description = The target is given a Black Sludge, replacing their item if any. Their Sp. Def is lowered.
+Description = The target is given a Black Sludge, replacing their item if any.
 #-------------------------------
 [VENOMGUARD]
 Name = Venom Guard
