@@ -6397,7 +6397,7 @@ TotalPP = 5
 Target = NearOther
 Priority = 1
 FunctionCode = FailsIfTargetActed
-Flags = CanProtect
+Flags = CanProtect,Punch
 Description = This move enables the user to attack first. It fails if the target is not readying an attack, however.
 #-------------------------------
 [SWITCHEROO]
