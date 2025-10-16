@@ -688,9 +688,9 @@ immuneTypeRealName))
                     if newPoisonCount % POISON_DOUBLING_TURNS == 0
                         if showMessages
                             if newPoisonCount == POISON_DOUBLING_TURNS
-                                @battle.pbDisplaySlower(_INTL("The poison worsened! Its damage will be doubled until {1} leaves the field.", pbThis(true)))
+                                @battle.pbDisplaySlower(_INTL("{1}'s poison worsened! The damage will be doubled until it leaves the field.", pbThis))
                             else
-                                @battle.pbDisplaySlower(_INTL("The poison doubled yet again!", pbThis))
+                                @battle.pbDisplaySlower(_INTL("{1}'s poison doubled yet again!", pbThis))
                             end
                         else
                             @battle.pbDisplay(_INTL("{1}'s poison worsened!", pbThis))
