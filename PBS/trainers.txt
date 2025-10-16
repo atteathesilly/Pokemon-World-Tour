@@ -303,7 +303,7 @@ Pokemon = BELDUM,17
 [SCIENTIST_M2,Dexter]
 Pokemon = GRIMER,20
     Moves = POISONGAS,SLUDGE,DISABLE,MUDSHOT
-    AbilityIndex = 0 # Corrosion
+    AbilityIndex = 0 # Piercing Poison
 Pokemon = CHARMELEON,20
     Moves = IGNITE,VACUUMWAVE,FIREFANG,TWISTER
     AbilityIndex = 0 # Pure Rage
@@ -3587,7 +3587,7 @@ Pokemon = GLIGAR,27
 Flags = NoPerfect
 Pokemon = GRIMER,30
     Moves = POISONGAS,SLUDGE,FIREPULSE,DISSOLUTION
-    AbilityIndex = 0 # Corrosion
+    AbilityIndex = 0 # Piercing Poison
     Item = EVIOLITE
 Pokemon = MIGHTYENA,30
     Moves = ASSURANCE,FROLIC,PLANTDOUBT,MIDNIGHTHUNT
@@ -9070,7 +9070,7 @@ Pokemon = GLACEON,70
     Item = LEFTOVERS
 Pokemon = MUK,70
     Moves = VENOSHOCK,FLAMETHROWER,POISONGAS,GIGADRAIN
-    AbilityIndex = 0 # Corrosion
+    AbilityIndex = 0 # Piercing Poison
     Item = SITRUSBERRY
 #-------------------------------
 [TOURISTM,Francois]

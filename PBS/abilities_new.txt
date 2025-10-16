@@ -1366,7 +1366,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [NEUROTOXIN]
 Name = Neurotoxin
-Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes also suffer from dizzy.
+Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes cannot use the same move twice in a row.
 #-------------------------------
 [NIGHTLIFE]
 Name = Night Life
@@ -1508,9 +1508,13 @@ Description = Whenever a foe raises their stats, the Pokémon follows suit.
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
 #-------------------------------
+[PIERCINGPOISON]
+Name = Piercing Poison
+Description = Poison-type foes can be poisoned. Poison applied to foes starts already worsened.
+#-------------------------------
 [PINDOWN]
 Name = Pin Down
-Description = The user's moves cannot miss against trapped targets.
+Description = The user's moves cannot miss against trapped targets. Takes 20% less damage from Pokemon that are trapped.
 #-------------------------------
 [PITFIGHTER]
 Name = Pit Fighter
