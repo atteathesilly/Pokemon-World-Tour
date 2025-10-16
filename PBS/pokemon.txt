@@ -18375,8 +18375,8 @@ Generation = 7
 Name = Bounsweet
 Type1 = GRASS
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 50,65,55,40,45,75
-# Total = 330
+BaseStats = 45,70,55,35,40,80
+# Total = 325
 BaseEXP = 42
 Rareness = 180
 Happiness = 50
@@ -18396,7 +18396,7 @@ Evolutions = STEENEE,Level,16
 Name = Steenee
 Type1 = GRASS
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 60,95,75,50,55,100
+BaseStats = 55,95,75,50,55,105
 # Total = 435
 BaseEXP = 102
 Rareness = 95
