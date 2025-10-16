@@ -183,6 +183,10 @@ Description = The Pokémon's accuracy is boosted.
 Name = Conviction
 Description = Upon entry, uses the move Endure on itself.
 #-------------------------------
+[CORROSION]
+Name = Corrosion
+Description = Can poison the target even if it's a Steel or Poison-type.
+#-------------------------------
 [COSMICCONTACT]
 Name = Cosmic Contact
 Description = Takes 35% less damage while using a status move.
