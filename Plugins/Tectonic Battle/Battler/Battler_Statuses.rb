@@ -418,7 +418,10 @@ immuneTypeRealName))
                 end
             end
         end
-        if newStatus == :SLEEP
+
+        # Status application triggers
+        case newStatus
+        when :SLEEP
             PBDebug.log("[Status change] #{pbThis}'s sleep count is #{newStatusCount}")
 
             # Dream Weaver
@@ -436,6 +439,12 @@ immuneTypeRealName))
                     b.applyEffect(:Yawn,2)
                 end
                 hideMyAbilitySplash
+            end
+        when :POISON
+            neuroToxinSource = neurotoxined?
+            if neuroToxinSource
+                @battle.pbDisplay(_INTL("A neurotoxin emitter is in the opposing party!"))
+                @battle.pbDisplay(_INTL("Due to {1}, {2} will be unable to use the same move twice in a row.", neuroToxinSource.name, pbThis(true)))
             end
         end
         # Form change check
@@ -532,15 +541,15 @@ immuneTypeRealName))
     end
 
     def neurotoxined?
-        return false unless poisoned?
+        return nil unless poisoned?
         @battle.pbOpposingParty(@index).each do |enemyPartyMember|
             next if enemyPartyMember.nil?
             next if enemyPartyMember.fainted?
             next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
             next if enemyPartyMember.dizzy?
-            return true
+            return enemyPartyMember
         end
-        return false
+        return nil
     end
 
     #=============================================================================
