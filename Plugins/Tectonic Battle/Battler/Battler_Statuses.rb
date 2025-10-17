@@ -280,8 +280,7 @@ immuneTypeRealName))
         immuneType = nil
         case status
         when :POISON
-            unless applicator&.hasActiveAbility?(:CORROSION)
-                immuneType = :STEEL if pbHasType?(:STEEL)
+            unless @battle.pbCheckOpposingAbility(:PIERCINGPOISON, @index)
                 immuneType = :POISON if pbHasType?(:POISON)
             end
         when :BURN
@@ -320,6 +319,8 @@ immuneTypeRealName))
             newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GALVANICWINGS, @index)
         when :FROSTBITE
             newStatusCount = 1 if @battle.pbCheckOpposingAbility(:GLACIALWINGS, @index)
+        when :POISON
+            newStatusCount = 2 if @battle.pbCheckOpposingAbility(:PIERCINGPOISON, @index)
         end
 
         statusCheck = false
@@ -417,7 +418,10 @@ immuneTypeRealName))
                 end
             end
         end
-        if newStatus == :SLEEP
+
+        # Status application triggers
+        case newStatus
+        when :SLEEP
             PBDebug.log("[Status change] #{pbThis}'s sleep count is #{newStatusCount}")
 
             # Dream Weaver
@@ -435,6 +439,12 @@ immuneTypeRealName))
                     b.applyEffect(:Yawn,2)
                 end
                 hideMyAbilitySplash
+            end
+        when :POISON
+            neuroToxinSource = neurotoxined?
+            if neuroToxinSource
+                @battle.pbDisplay(_INTL("A neurotoxin emitter is in the opposing party!"))
+                @battle.pbDisplay(_INTL("Due to {1}, {2} will be unable to use the same move twice in a row.", neuroToxinSource.name, pbThis(true)))
             end
         end
         # Form change check
@@ -530,6 +540,18 @@ immuneTypeRealName))
         return doublings
     end
 
+    def neurotoxined?
+        return nil unless poisoned?
+        @battle.pbOpposingParty(@index).each do |enemyPartyMember|
+            next if enemyPartyMember.nil?
+            next if enemyPartyMember.fainted?
+            next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
+            next if enemyPartyMember.dizzy?
+            return enemyPartyMember
+        end
+        return nil
+    end
+
     #=============================================================================
     # Burn
     #=============================================================================
@@ -579,20 +601,7 @@ immuneTypeRealName))
     # Dizzy
     #=============================================================================
     def dizzy?
-        return true if neurotoxined?
         return pbHasStatus?(:DIZZY)
-    end
-
-    def neurotoxined?
-        return false unless poisoned?
-        @battle.pbOpposingParty(@index).each do |enemyPartyMember|
-            next if enemyPartyMember.nil?
-            next if enemyPartyMember.fainted?
-            next unless enemyPartyMember.hasAbility?(:NEUROTOXIN)
-            next if enemyPartyMember.dizzy?
-            return true
-        end
-        return false
     end
 
     def canDizzy?(user, showMessages, move = nil)
@@ -688,9 +697,9 @@ immuneTypeRealName))
                     if newPoisonCount % POISON_DOUBLING_TURNS == 0
                         if showMessages
                             if newPoisonCount == POISON_DOUBLING_TURNS
-                                @battle.pbDisplaySlower(_INTL("The poison worsened! Its damage will be doubled until {1} leaves the field.", pbThis(true)))
+                                @battle.pbDisplaySlower(_INTL("{1}'s poison worsened! The damage will be doubled until it leaves the field.", pbThis))
                             else
-                                @battle.pbDisplaySlower(_INTL("The poison doubled yet again!", pbThis))
+                                @battle.pbDisplaySlower(_INTL("{1}'s poison doubled yet again!", pbThis))
                             end
                         else
                             @battle.pbDisplay(_INTL("{1}'s poison worsened!", pbThis))

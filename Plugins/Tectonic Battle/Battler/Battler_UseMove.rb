@@ -594,6 +594,13 @@ class PokeBattle_Battler
                         recoilMessage = _INTL("{1} cringes from their severe burn!", user.pbThis)
                         user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
                     end
+
+                    # Summer Festivals
+                    if user.pbOwnSide.effectActive?(:SummerFestivalsEnd)
+                        recoilDamage = targetBattler.damageState.totalHPLost / 4.0
+                        recoilMessage = _INTL("{1} got too rowdy!", user.pbThis)
+                        user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
+                    end
                 end
             end
 
