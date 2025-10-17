@@ -192,6 +192,13 @@ module EffectHolder
         end
     end
 
+    def processEffectsSOR
+        eachEffect(true) do |effect, value, data|
+            # Active end of round effects
+            @sor_proc.call(data)
+        end
+    end
+
     def processEffectsEOR
         eachEffect(true) do |effect, value, data|
             # Active end of round effects

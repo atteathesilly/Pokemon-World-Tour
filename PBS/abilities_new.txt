@@ -2366,6 +2366,22 @@ Description = After knocking out any Pokémon, raises its Sp. Atk and Sp. Def.
 Name = Wish Maker
 Description = The random added effects of moves by all battlers always activate.
 #-------------------------------
+[WISHOFAUTUMN]
+Name = Wish of Autumn
+Description = Upon entry, summons Autumn Harvests on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFSPRING]
+Name = Wish of Spring
+Description = Upon entry, summons Spring Plantings on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFSUMMER]
+Name = Wish of Summer
+Description = Upon entry, summons Summer Festivals on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFWINTER]
+Name = Wish of Winter
+Description = Upon entry, summons Winter Hunts on the Pokémon's side for four turns.
+#-------------------------------
 [WORLDQUAKE]
 Name = Worldquake
 Description = Ground-type moves deal 50% more damage in eclipse.
