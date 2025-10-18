@@ -603,10 +603,17 @@ class PokeBattle_Battle
 
         pbCalculatePriority           # recalculate speeds
         priority = pbPriority(true)   # in order of fastest -> slowest speeds only
-        
-        pbSORWeather(priority) unless @turnCount == 0
 
-        # Switch Pokémon in if possible
+        unless @turnCount == 0
+            # Tick down or reset battle effects
+            allEffectHolders do |effectHolder|
+                effectHolder.processEffectsSOR
+            end
+            
+            pbSORWeather(priority)
+        end
+
+        # Switch Pokémon in if needed
         pbEORSwitch
     end
 
