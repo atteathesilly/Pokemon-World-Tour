@@ -217,7 +217,7 @@ NamePlural = Root Fossils
 Pocket = 16
 Price = 5000
 Flags = Fossil
-Description = A fossil of an ancient Pokémon that lived in the sea. It resembles Cradily.
+Description = A fossil of an ancient Pokémon that lived in the sea. It resembles Lileep.
 #-------------------------------
 [CLAWFOSSIL]
 Name = Claw Fossil
