@@ -875,3 +875,10 @@ GameData::BattleEffect.register_effect(:Side, {
         battle.pbDisplay(_INTL("{1} is no longer blessed by the Wishing Well.", teamName))
     end,
 })
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :IceSculptureTurns,
+    :real_name => "Turns Until Freeze",
+    :type => :Integer,
+    :ticks_down => true
+})
