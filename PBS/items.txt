@@ -996,6 +996,20 @@ Pocket = 13
 Price = 4000
 Description = Consumed to heal for one third of max HP when the Pokémon uses a pulse move. This can overheal.
 #-------------------------------
+[WHITENINGPASTE]
+Name = Whitening Paste
+NamePlural = Whitening Pastes
+Pocket = 13
+Price = 4000
+Description = Consumed to blind all foes when the Pokémon uses a bite move.
+#-------------------------------
+[FLASHBULB]
+Name = Flash Bulb
+NamePlural = Flash Bulbs
+Pocket = 13
+Price = 4000
+Description = Consumed to blind all foes when the Pokémon uses a light move.
+#-------------------------------
 [UTILITYUMBRELLA]
 Name = Utility Umbrella
 NamePlural = Utility Umbrellas

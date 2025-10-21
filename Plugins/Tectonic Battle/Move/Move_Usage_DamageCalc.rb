@@ -272,6 +272,10 @@ class PokeBattle_Move
         if user.effectActive?(:Fracture)
             multipliers[:final_damage_multiplier] *= 0.66
         end
+        #Blindness
+        if user.effectActive?(:Blindness)
+            multipliers[:final_damage_multiplier] *= 0.5
+        end
     end
 
     def pbCalcProtectionsDamageMultipliers(user,target,multipliers,checkingForAI=false)

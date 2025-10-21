@@ -2508,3 +2508,21 @@ GameData::BattleEffect.register_effect(:Battler, {
         battler.pbItemStatRestoreCheck
     end,
 })
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Blindness,
+    :real_name => "Blinded",
+    :baton_passed => true,
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} is blinded!", battler.pbThis))
+        battle.pbDisplay(_INTL("It'll deal half as much damage on its next attack!"))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer blinded.", battler.pbThis))
+    end,
+    :stay_in_rating_proc => proc do |battle, battler, value, stay_in_rating|
+        stay_in_rating -= 10 if battler.hasDamagingAttack?
+        next stay_in_rating
+    end
+})
