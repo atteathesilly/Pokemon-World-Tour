@@ -1478,7 +1478,7 @@ Description = Immune to Flying-type moves and deals 50% more damage with them.
 #-------------------------------
 [PERENNIALPAYLOAD]
 Name = Perennial Payload
-Description = After fainting from exploding, revives after six turns.
+Description = After fainting from exploding, revives after five turns.
 #-------------------------------
 [PERFECTIONIST]
 Name = Perfectionist
