@@ -627,6 +627,11 @@ Description = Raises one attacking or defending stat by three steps and lowers a
 Name = Moon Bubble
 Description = Doubles Defense in moonglow.
 #-------------------------------
+[MOONLIGHTER]
+Name = Moonlighter
+Description = When hit in moonglow, steals the attacker's item, or knocks it away.
+Flags = MoonglowSynergy
+#-------------------------------
 [MORPHINGGUARD]
 Name = Morphing Guard
 Description = After being attacked, gains immunity to that move's type but loses other morphed immunities.
