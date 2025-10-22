@@ -7754,7 +7754,6 @@ WildItemUncommon = MENTALHERB
 [SEEDOT]
 Name = Seedot
 Type1 = GRASS
-Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,40,65,45,55,50
 # Total = 310
