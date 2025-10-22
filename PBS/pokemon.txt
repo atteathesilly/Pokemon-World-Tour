@@ -10976,6 +10976,7 @@ Kind = Bagworm
 Pokedex = If its cloak is broken in battle, it quickly remakes the cloak with materials nearby.
 FormName = Plant Cloak
 Generation = 4
+Formalizer = 0,1,2
 Evolutions = WORMADAM,Ability1,26,MOTHIM,Ability0,26
 #-------------------------------
 [WORMADAM]
@@ -10997,6 +10998,7 @@ Kind = Bagworm
 Pokedex = When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed.
 FormName = Plant Cloak
 Generation = 4
+Formalizer = 0,1,2
 WildItemUncommon = SILVERPOWDER
 #-------------------------------
 [MOTHIM]
