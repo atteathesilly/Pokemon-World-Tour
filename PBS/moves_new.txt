@@ -5557,7 +5557,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackOneTurnInRainstorm
 Flags = CanProtect
 Description = The user charges, then attacks on the second turn. Charges instantly in rainstorm.
-Animation = WILDCHARGE
+Animation = BOLTSTRIKE
 #-------------------------------
 [STUNNINGDISPLAY]
 Name = Stunning Display
