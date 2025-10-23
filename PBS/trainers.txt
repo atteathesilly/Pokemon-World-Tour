@@ -985,7 +985,7 @@ Pokemon = DARTRIX,25
 Policies = YEZERA,METAGAMES_STAT_ITEMS
 Flags = NoPerfect
 Pokemon = ILLUMISE,35
-    Moves = WISH,ILLWISHES,REFLECT,ENCORE
+    Moves = WISH,SUPERSTITION,REFLECT,ENCORE
     AbilityIndex = 0 # Prankster
     Item = MENTALHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
