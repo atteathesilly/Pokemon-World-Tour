@@ -726,11 +726,11 @@ Mud,40,40
 #-------------------------------
 [214] # Team Chasm HQ
 DarkCave,20,20
-    20,CARBINK,18,20
-    20,DURALUDON,18,20
-    20,ELGYEM,18,20
-    20,GOLETT,18,20
-    20,MUNNA,18,20
+    33,DURALUDON,18,20
+    16,CARBINK,18,20
+    16,ELGYEM,18,20
+    16,GOLETT,18,20
+    16,MUNNA,18,20
 #-------------------------------
 [215] # Tempest Realm
 Cloud,20,60
