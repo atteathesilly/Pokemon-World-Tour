@@ -411,7 +411,7 @@ class PokeBattle_AI_DARKRAI < PokeBattle_AI_Boss
                 anyAsleep = false
                 user.battle.battlers.each do |b|
                     next if !b || !user.opposes?(b)
-                    anyAsleep = true if b.asleep?
+                    anyAsleep = true if b.asleep? || b.effectActive?(:Yawn)
                 end
                 next !anyAsleep
             },
