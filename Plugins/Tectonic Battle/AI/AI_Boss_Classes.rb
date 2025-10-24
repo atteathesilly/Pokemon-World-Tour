@@ -473,7 +473,7 @@ class PokeBattle_AI_ELECTRODE < PokeBattle_AI_Boss
                 next battle.turnCount >= TURNS_TO_EXPLODE
             },
             :warning => proc { |_move, user, _targets, _battle|
-                _INTL("{1} is fully charged. Its about to explode!",user.pbThis)
+                _INTL("{1} is fully charged. It's about to explode!",user.pbThis)
             },
         })
 
