@@ -5557,7 +5557,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackOneTurnInRainstorm
 Flags = CanProtect
 Description = The user charges, then attacks on the second turn. Charges instantly in rainstorm.
-Animation = WILDCHARGE
+Animation = BOLTSTRIKE
 #-------------------------------
 [STUNNINGDISPLAY]
 Name = Stunning Display
@@ -6230,7 +6230,7 @@ Name = Cryo Sleep
 Type = ICE
 Category = Status
 Accuracy = 100
-TotalPP = 5
+TotalPP = 3
 Target = NearOther
 FunctionCode = SleepTargetTwoTurnAttack
 Flags = CanProtect,Uninvocable

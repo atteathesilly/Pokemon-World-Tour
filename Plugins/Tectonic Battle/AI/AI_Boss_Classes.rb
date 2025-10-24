@@ -407,14 +407,18 @@ class PokeBattle_AI_DARKRAI < PokeBattle_AI_Boss
     def initialize(user, battle)
         super
         @warnedIFFMove.add(:CALLOFTHEVOID, {
-            :condition => proc { |_move, user, _target, battle|
-                next battle.turnCount % 3 == 0
+            :condition => proc { |_move, user, _target, _battle|
+                anyAsleep = false
+                user.battle.battlers.each do |b|
+                    next if !b || !user.opposes?(b)
+                    anyAsleep = true if b.asleep? || b.effectActive?(:Yawn)
+                end
+                next !anyAsleep
             },
             :warning => proc { |_move, user, _targets, _battle|
                 _INTL("The air around {1} turns dark and distorted.",user.pbThis(true))
             },
         })
-        @requiredMoves.push(:LULLABY)
     end
 end
 
@@ -473,7 +477,7 @@ class PokeBattle_AI_ELECTRODE < PokeBattle_AI_Boss
                 next battle.turnCount >= TURNS_TO_EXPLODE
             },
             :warning => proc { |_move, user, _targets, _battle|
-                _INTL("{1} is fully charged. Its about to explode!",user.pbThis)
+                _INTL("{1} is fully charged. It's about to explode!",user.pbThis)
             },
         })
 
@@ -601,11 +605,11 @@ class PokeBattle_AI_SAWSBUCK < PokeBattle_AI_Boss
 end
 
 class PokeBattle_AI_ROTOM < PokeBattle_AI_Boss
-    FORM_1_MOVESET = %i[HEATWAVE DISCHARGE]
-    FORM_2_MOVESET = %i[SURF DISCHARGE]
+    FORM_1_MOVESET = %i[HEATWAVE ARCLAMP]
+    FORM_2_MOVESET = %i[SURF ARCLAMP]
     FORM_3_MOVESET = %i[FROSTBREATH THUNDERBOLT]
     FORM_4_MOVESET = %i[AIRSLASH THUNDERBOLT]
-    FORM_5_MOVESET = %i[PETALTEMPEST DISCHARGE]
+    FORM_5_MOVESET = %i[PETALTEMPEST ARCLAMP]
     MOVESETS = [FORM_1_MOVESET,FORM_2_MOVESET,FORM_3_MOVESET,FORM_4_MOVESET,FORM_5_MOVESET]
 
     def initialize(user, battle)
