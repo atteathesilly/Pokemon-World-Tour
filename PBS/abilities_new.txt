@@ -1320,11 +1320,6 @@ Name = Moon Gaze
 Description = Summons moonglow for four turns upon entry.
 Flags = MoonglowSynergy
 #-------------------------------
-[MOONLIGHTER]
-Name = Moonlighter
-Description = When hit in moonglow, steals the attacker's item, or knocks it away.
-Flags = MoonglowSynergy
-#-------------------------------
 [MOONPRISMPOWER]
 Name = Moon Prism Power
 Description = When the Full Moon rises, heals for 50% of its total HP. This can overheal.
