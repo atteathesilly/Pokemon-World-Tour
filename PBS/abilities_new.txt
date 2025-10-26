@@ -419,13 +419,13 @@ Flags = MoonglowSynergy
 Name = Deep Sting
 Description = Boosts Attack by 50%, but physical moves deal 25% damage back as recoil.
 #-------------------------------
-[DEEPTEETH]
-Name = Deep Teeth
-Description = Foes aren't released from its trapping moves even when the Pokémon leaves the field.
-#-------------------------------
 [DELAYEDREACTION]
 Name = Delayed Reaction
 Description = 33% of all move damage taken by the Pokémon is instead taken at the end of the next turn.
+#-------------------------------
+[DENTICLEDEBRIS]
+Name = Denticle Debris
+Description = When this Pokémon traps and binds a target, one hazard layer of Spikes is placed around the target.
 #-------------------------------
 [DESERTARMOR]
 Name = Desert Armor
@@ -874,6 +874,10 @@ Description = Heals 1/16th HP every turn. Protected from being poisoned.
 [GYRESPINNER]
 Name = Gyre Spinner
 Description = Upon entry, traps each opponent in a whirlpool for two turns.
+#-------------------------------
+[HANDOFF]
+Name = Hand Off
+Description = Trapping effects against an enemy are passed over to a Pokémon that swaps in for this.
 #-------------------------------
 [HARBINGER]
 Name = Harbinger
