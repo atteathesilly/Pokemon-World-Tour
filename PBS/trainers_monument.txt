@@ -1704,7 +1704,7 @@ Pokemon = TOXAPEX,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,5,0,20,5
 Pokemon = KROOKODILE,70
-    Moves = STAREDOWN,EARTHQUAKE,KNOCKOFF,SLUDGEWAVE
+    Moves = STAREDOWN,EARTHQUAKE,KNOCKOFF,JAVELIN
     AbilityIndex = 1 # Regenerator
     Item = ASSAULTVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
