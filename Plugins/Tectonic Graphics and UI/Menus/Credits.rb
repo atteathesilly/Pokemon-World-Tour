@@ -1,6 +1,11 @@
 CHASM_CREDITs = <<_END_
 
-Major Contributors
+Major Contributors to World Tour
+AttteatheSilly
+manycrows
+Ace60
+
+Major Contributors to Tectonic Engine
 Brickbat<s>Zinnia
 Divock<s>Agentbla
 Wakarimasensei<s>Drawingbox
@@ -118,6 +123,9 @@ deoxysacid, magneclair
 
 Mega Malamar Sprites
 sopita_yorita
+
+Mega Starmie Sprites
+Raffs07
 
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
@@ -259,6 +267,11 @@ CamiOfTargon
 
 Beta Testing World Tour
 Lalunesarts
+Feutor
+Riptidecord
+Jake
+REI-03
+Zinnia
 
 Spanish PokeDex Translations
 Everson
