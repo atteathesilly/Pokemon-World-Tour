@@ -651,7 +651,7 @@ class PokeBattle_HealingMove < PokeBattle_Move
     def canOverheal?(user); return false; end
 
     def pbMoveFailed?(user, _targets, show_message)
-        if user.fullHealth?
+        if user.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", user.pbThis)) if show_message
             return true
         end
@@ -829,11 +829,11 @@ class PokeBattle_WeatherMove < PokeBattle_Move
     end
 
     def pbEffectGeneral(user)
-        @battle.pbStartWeather(user, @weatherType, @durationSet, false) unless @battle.primevalWeatherPresent?
+        @battle.pbStartWeather(user, @weatherType, applyEffectDurationModifiers(@durationSet, user), false) unless @battle.primevalWeatherPresent?
     end
 
     def getEffectScore(user, _target)
-        return getWeatherSettingEffectScore(@weatherType, user, @battle, @durationSet)
+        return getWeatherSettingEffectScore(@weatherType, user, @battle, applyEffectDurationModifiers(@durationSet, user))
     end
 end
 
@@ -911,17 +911,17 @@ class PokeBattle_PledgeMove < PokeBattle_Move
         case @comboEffect
         when :SeaOfFire # Grass + Fire
             unless user.pbOpposingSide.effectActive?(:SeaOfFire)
-                user.pbOpposingSide.applyEffect(:SeaOfFire, 4)
+                user.pbOpposingSide.applyEffect(:SeaOfFire, applyEffectDurationModifiers(4, user))
                 animName = user.opposes? ? "SeaOfFire" : "SeaOfFireOpp"
             end
         when :Rainbow # Fire + Water
             unless user.pbOpposingSide.effectActive?(:Rainbow)
-                user.pbOpposingSide.applyEffect(:Rainbow, 4)
+                user.pbOpposingSide.applyEffect(:Rainbow, applyEffectDurationModifiers(4, user))
                 animName = user.opposes? ? "RainbowOpp" : "Rainbow"
             end
         when :Swamp # Water + Grass
             unless user.pbOpposingSide.effectActive?(:Swamp)
-                user.pbOpposingSide.applyEffect(:Swamp, 4)
+                user.pbOpposingSide.applyEffect(:Swamp, applyEffectDurationModifiers(4, user))
                 animName = user.opposes? ? "Swamp" : "SwampOpp"
             end
         end
@@ -1031,7 +1031,7 @@ class PokeBattle_RoomMove < PokeBattle_Move
     end
 
     def pbEffectGeneral(user)
-        @battle.pbStartRoom(@roomEffect, user, duration: @duration)
+        @battle.pbStartRoom(@roomEffect, user, duration: applyEffectDurationModifiers(@duration, user))
     end
 
     def getEffectScore(user, _target)
@@ -1078,20 +1078,18 @@ class PokeBattle_InviteMove < PokeBattle_Move
     end
 
     def pbFailsAgainstTarget?(user, target, show_message)
-        if @battle.primevalWeatherPresent?(false) && target.pbCanInflictStatus?(@statusToApply, user, false,
-self) && show_message
+        if @battle.primevalWeatherPresent?(false) && target.pbCanInflictStatus?(@statusToApply, user, false, self) && show_message
             @battle.pbDisplay(_INTL("But it failed, since {1} can't gain the status and the weather can't be set!", target.pbThis(true)))
         end
     end
 
     def pbEffectAgainstTarget(user, target)
-        target.pbInflictStatus(@statusToApply, 0, nil, user) if target.pbCanInflictStatus?(@statusToApply, user,
-true, self)
-        @battle.pbStartWeather(user, @weatherType, @durationSet, false) unless @battle.primevalWeatherPresent?
+        target.pbInflictStatus(@statusToApply, 0, nil, user) if target.pbCanInflictStatus?(@statusToApply, user, true, self)
+        @battle.pbStartWeather(user, @weatherType, applyEffectDurationModifiers(@durationSet, user), false) unless @battle.primevalWeatherPresent?
     end
 
     def getEffectScore(user, target)
-        weatherScore = getWeatherSettingEffectScore(@weatherType, user, @battle, @durationSet)
+        weatherScore = getWeatherSettingEffectScore(@weatherType, user, @battle, applyEffectDurationModifiers(@durationSet, user))
         statusScore = getStatusSettingEffectScore(@statusToApply, user, target)
         return weatherScore + statusScore
     end
@@ -1371,7 +1369,8 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     def pbEffectAgainstTarget(user, target)
         return if @battle.futureSight # Attack is hitting
         count = @turnCount
-        count -= 2 if user.hasActiveAbility?([:BADOMEN])
+        count -= 2 if user.hasActiveAbility?(:BADOMEN)
+        count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
         count = 1 if count < 1
         target.position.applyEffect(:FutureSightCounter, count)
         target.position.applyEffect(:FutureSightMove, @id)
@@ -1442,7 +1441,7 @@ class PokeBattle_StatDrainHealingMove < PokeBattle_Move
         #       works even if the stat step cannot be changed due to an ability or
         #       other effect.
         statName = GameData::Stat.get(@statToReduce).name
-        if !@battle.moldBreaker && target.hasActiveAbility?(%i[CONTRARY ECCENTRIC]) &&
+        if !@battle.moldBreaker && target.hasActiveAbility?(%i[CONTRARY INVERSION]) &&
            target.statStepAtMax?(@statToReduce)
             if show_message
                 @battle.pbDisplay(_INTL("But it failed, since {1}'s {2} can't go any higher!", target.pbThis(true), statName))
@@ -1613,5 +1612,36 @@ class PokeBattle_Move_RaiseCriticalHitRate < PokeBattle_Move
 
     def getEffectScore(user, _target)
         return getCriticalRateBuffEffectScore(user,@critStages)
+    end
+end
+
+#===============================================================================
+# Has a chance to apply a status, and a chance to lower the target's Defense by 2 steps
+# Used for the elemental fangs and elemental crunches.
+# Child classes must define @statusToApply
+#===============================================================================
+class PokeBattle_Move_StatusTargetLowerTargetDef2 < PokeBattle_Move
+    def initialize(battle, move)
+        super
+        @subEffectChance = 20
+    end
+
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
+        chance = pbAdditionalEffectChance(user, target, @calcType, @subEffectChance)
+        return if chance == 0
+        if @battle.pbRandom(100) < chance && target.pbCanInflictStatus?(@statusToApply, user, false, self) && canApplyRandomAddedEffects?(user,target,true)
+            target.pbInflictStatus(@statusToApply, 0, nil, user)
+        end 
+        if @battle.pbRandom(100) < chance && canApplyRandomAddedEffects?(user,target,true)
+            target.tryLowerStat(:DEFENSE, user, move: self, increment: 2)
+        end
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        score = 0
+        score += ((@subEffectChance/100.0) * getStatusSettingEffectScore(@statusToApply, user, target)).floor
+        score += ((@subEffectChance/100.0) * getMultiStatDownEffectScore([:DEFENSE, 2], user, target)).floor
+        return score
     end
 end

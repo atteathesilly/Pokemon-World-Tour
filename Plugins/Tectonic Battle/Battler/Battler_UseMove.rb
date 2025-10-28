@@ -580,11 +580,27 @@ class PokeBattle_Battler
                 move.pbEffectAfterAllHits(user, targetBattler)
                 move.pbEffectOnNumHits(user, targetBattler, realNumHits)
 
-                # Empowered Destiny Bond
-                if targetBattler.effectActive?(:EmpoweredDestinyBond) && targetBattler.damageState.totalHPLost > 0 
-                    recoilDamage = targetBattler.damageState.totalHPLost / 3.0
-                    recoilMessage = _INTL("{1}'s destiny is bonded with {2}!", user.pbThis, targetBattler.pbThis(true))
-                    user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
+                if targetBattler.damageState.totalHPLost > 0 
+                    # Empowered Destiny Bond
+                    if targetBattler.effectActive?(:EmpoweredDestinyBond)
+                        recoilDamage = targetBattler.damageState.totalHPLost / 3.0
+                        recoilMessage = _INTL("{1}'s destiny is bonded with {2}!", user.pbThis, targetBattler.pbThis(true))
+                        user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
+                    end
+
+                    # Severe burn
+                    if user.burned? && user.getStatusCount(:BURN) > 0
+                        recoilDamage = targetBattler.damageState.totalHPLost / 3.0
+                        recoilMessage = _INTL("{1} cringes from their severe burn!", user.pbThis)
+                        user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
+                    end
+
+                    # Summer Festivals
+                    if user.pbOwnSide.effectActive?(:SummerFestivalsEnd)
+                        recoilDamage = targetBattler.damageState.totalHPLost / 4.0
+                        recoilMessage = _INTL("{1} got too rowdy!", user.pbThis)
+                        user.applyRecoilDamage(recoilDamage, false, true, recoilMessage)
+                    end
                 end
             end
 
@@ -861,6 +877,18 @@ class PokeBattle_Battler
             next unless b.damageState.bubbleBarrier > 0
             @battle.pbDisplay(_INTL("The bubble surrounding {1} reduced the damage!", b.pbThis))
         end
+        #Action Star proc message
+        if user.effectActive?(:ActionStar) && move.damagingMove? && move.calcType == :NORMAL
+            @battle.pbDisplay(_INTL("{1} lands a flashy hit!", user.pbThis))
+            user.disableEffect(:ActionStar)
+        end
+        #Tangling Vines proc message
+        targets.each do |t|
+            if t.pointsAt?(:TanglingVines, user)
+                user.battle.pbDisplay(_INTL("The tangling vines strengthened the hit!"))
+                break #Only trigger once, even if multiple targets are affected
+            end
+        end
         # Messages about missed target(s) (relevant for multi-target moves only)
         unless move.pbRepeatHit?
             targets.each do |b|
@@ -936,7 +964,7 @@ class PokeBattle_Battler
             if !user.poisoned?
                 # Secretion Secret
                 targets.each do |target|
-                    next if target.damageState.unaffected
+                    next if target.damageState.unaffected || move.foretoldMove?
                     next unless target.hasActiveAbility?(:SECRETIONSECRET) && user.opposes?(target)
                     battle.pbShowAbilitySplash(target, :SECRETIONSECRET)
                     user.applyPoison(target, nil) if user.canPoison?(target, true)
@@ -964,6 +992,13 @@ class PokeBattle_Battler
         targets.each do |b|
             next if b.damageState.unaffected
             move.pbEffectAgainstTarget(user, b)
+            #Field of Death
+            if @battle.pbCheckGlobalAbility(:FIELDOFDEATH)
+                unless b.damageState.hpLost <= 0
+                    hpGain = (b.damageState.hpLost * 0.3).round
+                    user.pbRecoverHPFromDrain(hpGain, b)
+                end
+            end
         end
         move.pbEffectGeneral(user)
         # use this until the field change method applies to all field changes

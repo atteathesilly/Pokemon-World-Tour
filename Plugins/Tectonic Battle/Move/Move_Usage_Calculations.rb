@@ -84,7 +84,7 @@ class PokeBattle_Move
                 immunityPierced = true
                 ret /= 2
             elsif user.targetTypeModImmune?(user, target, self, ret, !uiOnlyCheck)
-                ret = 4.0 # Weird effectiveness stuff present here
+                ret = 0.5
                 immunityPierced = true
             end
         end
@@ -176,10 +176,12 @@ class PokeBattle_Move
         target.eachActiveItem do |item|
             BattleHandlers.triggerAccuracyCalcTargetItem(item, modifiers, user, target, self, typeToUse)
         end
+        
         # Other effects, inc. ones that set accuracy_multiplier or evasion_step to
         # specific values
         modifiers[:accuracy_multiplier] *= 2.0 if @battle.gravityIntensified?
         modifiers[:accuracy_multiplier] *= 1.5 if user.effectActive?(:Spotting)
+        modifiers[:accuracy_multiplier] *= 1.5 if user.pbOwnSide.effectActive?(:WinterHunts)
 
         if aiCheck
             modifiers[:evasion_step] = 0 if @function == "IgnoreTargetDefSpDefEvaStatStages" # Chip Away
@@ -422,7 +424,6 @@ showMessages)
         end
 
         ret *= 2 if user.pbOwnSide.effectActive?(:Rainbow)
-        ret /= 2 if target.hasTribeBonus?(:SERENE)
         if ret < 100 && user.shouldItemApply?(:LUCKHERB, aiCheck)
             ret = 100
             user.applyEffect(:LuckHerbConsumed) unless aiCheck

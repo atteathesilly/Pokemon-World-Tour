@@ -65,10 +65,6 @@ Description = Raises Sp. Atk by four steps when a stat is lowered by a foe.
 Name = Contrary
 Description = Makes stat changes have an opposite effect.
 #-------------------------------
-[CORROSION]
-Name = Corrosion
-Description = Can poison the target even if it's a Steel or Poison-type.
-#-------------------------------
 [COTTONDOWN]
 Name = Cotton Down
 Description = Lowers everyone else's Speed by two steps when hit by an attack.
@@ -104,11 +100,11 @@ Description = Raises Attack by four steps when a stat is lowered by a foe.
 #-------------------------------
 [DELTASTREAM]
 Name = Delta Stream
-Description = Changes the weather to Strong Winds, which remove Flying-type's weaknesses. Lingers for three turns after leaving.
+Description = Summons Strong Winds, which remove Flying-type's weaknesses. Lingers for three turns after leaving.
 #-------------------------------
 [DESOLATELAND]
 Name = Desolate Land
-Description = Changes the weather to Harsh Sunlight, which debuffs most attacks and prevents them from critting. Lingers for three turns after leaving.
+Description = Summons Harsh Sunlight, which prevents most moves from critting. Lingers for three turns after leaving.
 Flags = SunshineSynergy
 #-------------------------------
 [DISGUISE]
@@ -131,7 +127,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [DROUGHT]
 Name = Drought
-Description = Turns the weather to sunshine for four turns upon entry.
+Description = Summons sunshine for four turns upon entry.
 Flags = SunshineSynergy
 #-------------------------------
 [DRYSKIN]
@@ -141,7 +137,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [EMERGENCYEXIT]
 Name = Emergency Exit
-Description = Switches out if its HP becomes half or less.
+Description = Switches out if its HP is lowered below half.
 #-------------------------------
 [FAIRYAURA]
 Name = Fairy Aura
@@ -400,7 +396,7 @@ Description = The Pokémon raises the foe's PP usage.
 #-------------------------------
 [PRIMORDIALSEA]
 Name = Primordial Sea
-Description = Changes the weather to Heavy Rain, which debuffs most attacks and prevents their random added effects. Lingers for three turns after leaving.
+Description = Summons Heavy Rain, which prevents most moves' random added effects. Lingers for three turns after leaving.
 Flags = RainstormSynergy
 #-------------------------------
 [PRISMARMOR]
@@ -568,7 +564,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [SYNCHRONIZE]
 Name = Synchronize
-Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokemon also gets that condition.
+Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokémon also gets that condition.
 #-------------------------------
 [TANGLINGHAIR]
 Name = Tangling Hair
@@ -652,7 +648,7 @@ Description = Physical attacks against the Pokémon raise its Speed by two steps
 #-------------------------------
 [WIMPOUT]
 Name = Wimp Out
-Description = Cowardly switches out if its HP becomes half or less.
+Description = Cowardly switches out if its HP is lowered below half.
 #-------------------------------
 [WONDERGUARD]
 Name = Wonder Guard

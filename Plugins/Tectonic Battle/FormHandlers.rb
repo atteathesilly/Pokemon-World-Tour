@@ -179,18 +179,6 @@ MultipleForms.register(:RAYQUAZA,{
   }
 })
 
-MultipleForms.register(:BURMY,{
-  "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
-    next 0 if pkmn.fainted? || endBattle
-  }
-})
-
-MultipleForms.register(:WORMADAM,{
-  "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
-    next 0 if pkmn.fainted? || endBattle
-  }
-})
-
 MultipleForms.register(:CHERRIM,{
   "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
     next 0
@@ -369,9 +357,6 @@ MultipleForms.register(:SILVALLY,{
 MultipleForms.register(:MINIOR,{
   "getFormOnCreation" => proc { |pkmn|
     next rand(7)   # Meteor forms are 0-6, Core forms are 7-13
-  },
-  "getFormOnEnteringBattle" => proc { |pkmn,wild|
-    next pkmn.form-7 if pkmn.form>=7
   },
   "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
     next pkmn.form-7 if pkmn.form>=7 && endBattle
@@ -557,4 +542,14 @@ MultipleForms.register(:INDEEDEE,{
   "getFormOnCreation" => proc { |pkmn|
     next pkmn.gender
   },
+})
+
+MultipleForms.register(:DIANCIE, {
+    "getForm" => proc { |pkmn|
+      next 1 if pkmn.hasItem?(:CRYSTALCALIBURN)
+      next 0
+    },
+    "getFormOnLeavingBattle" => proc { |pkmn, _battle, _usedInBattle, endBattle|
+        next 0 if pkmn.form == 1 && (pkmn.fainted? || endBattle)
+    },
 })

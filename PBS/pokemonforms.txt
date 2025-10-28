@@ -607,13 +607,19 @@ Height = 1.7
 Weight = 39.0
 Pokedex = Supersized Gourgeist aren't picky. They will forcefully drag anyone off to the afterlife.
 #-------------------------------
+[DIANCIE,1]
+FormName = Royal
+BaseStats = 75,120,100,95,120,100
+# Total = 610
+Abilities = MAGICBOUNCE
+#-------------------------------
 [XERNEAS,1]
 FormName = Active Mode
 #-------------------------------
 [ZYGARDE,1]
 FormName = 10%
-BaseStats = 55,90,70,115,70,85
-# Total = 485
+BaseStats = 65,105,85,135,75,85
+# Total = 550
 Height = 1.2
 Weight = 33.5
 Pokedex = This is Zygarde when about 10% of its pieces have been assembled. It leaps at its opponent's chest and sinks its sharp fangs into them.
@@ -638,7 +644,7 @@ Type2 = DARK
 BaseStats = 70,140,55,70,150,115
 # Total = 600
 Abilities = BREAKTHROUGH,JUGGERNAUT
-Moves = 1,HELPINGHAND,1,MINDWAVES,4,ASTONISH,8,MAGICCOAT,12,LIGHTSCREEN,16,PSYBEAM,20,SKILLSWAP,24,POWERSPLIT,28,GUARDSPLIT,32,PHANTOMFORCE,36,ZENHEADBUTT,40,SHADOWBALL,44,SWITCHEROO,48,DESTINYBOND,52,DREAMDANCE,56,PSYCHIC,60,HYPERSPACEFURY,70,TRICKROOM
+Moves = 1,HELPINGHAND,1,MINDWAVES,4,ASTONISH,8,MAGICCOAT,12,LIGHTSCREEN,16,PSYBEAM,20,SKILLSWAP,24,POWERSPLIT,28,GUARDSPLIT,32,GHOSTLYTALE,36,ZENHEADBUTT,40,SHADOWBALL,44,SWITCHEROO,48,DESTINYBOND,52,DREAMDANCE,56,PSYCHIC,60,HYPERSPACEFURY,70,TRICKROOM
 Height = 6.5
 Weight = 490.0
 #-------------------------------

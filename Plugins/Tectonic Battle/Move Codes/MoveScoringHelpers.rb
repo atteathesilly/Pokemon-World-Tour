@@ -515,9 +515,9 @@ def getMultiStatUpEffectScore(statUpArray, user, target, fakeStepModifier: 0, ev
     if target.hasActiveAbilityAI?(:CONTRARY)
         score *= -1
         echoln("\t\t[EFFECT SCORING] The target has Contrary! Inverting the score.")
-    elsif target.hasActiveAbilityAI?(:ECCENTRIC)
+    elsif target.hasActiveAbilityAI?(:INVERSION)
         score *= -0.5
-        echoln("\t\t[EFFECT SCORING] The target has Eccentric! Inverting and halving the score.")
+        echoln("\t\t[EFFECT SCORING] The target has INVERSION! Inverting and halving the score.")
     end
 
     if user.opposes?(target)
@@ -604,7 +604,7 @@ def getMultiStatDownEffectScore(statDownArray, user, target, fakeStepModifier: 0
     if target.hasActiveAbilityAI?(:CONTRARY)
         score *= -1
         echoln("\t\t[EFFECT SCORING] The target has Contrary! Inverting the score.")
-    elsif target.hasActiveAbilityAI?(:ECCENTRIC)
+    elsif target.hasActiveAbilityAI?(:INVERSION)
         score *= -0.5
     end
 
@@ -782,10 +782,10 @@ def predictedEOTDamage(battle,battler)
     damage += battle.applyHailDamage(battler, aiCheck: true) if battle.icy?
 
     # Status DOTs
-    damage += battle.damageFromDOTStatus(battler, :POISON, true) if battler.poisoned?
-    damage += battle.damageFromDOTStatus(battler, :LEECHED, true) if battler.leeched?
-    damage += battle.damageFromDOTStatus(battler, :BURN, true) if battler.burned?
-    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, true) if battler.frostbitten?
+    damage += battle.damageFromDOTStatus(battler, :POISON, aiCheck: true) if battler.poisoned?
+    damage += battle.damageFromDOTStatus(battler, :LEECHED, aiCheck: true) if battler.leeched?
+    damage += battle.damageFromDOTStatus(battler, :BURN, aiCheck: true) if battler.burned?
+    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, aiCheck: true) if battler.frostbitten?
 
     # Check for aggravate
     aggravate = battle.pbCheckOpposingAbility(:AGGRAVATE, battler.index)

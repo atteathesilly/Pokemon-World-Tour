@@ -14,6 +14,10 @@ Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
 Flags = RainstormSynergy
 #-------------------------------
+[ACTIONSTAR]
+Name = Action Star
+Description = After landing a super-effective or hyper-effective hit, deals 30% more damage on its next Normal-type move.
+#-------------------------------
 [ADAPTED]
 Name = Adapted
 Description = Powers up moves of the same type by 33%.
@@ -36,7 +40,7 @@ Description = Slips past all types of Spikes hazards. Deals 50% more damage to t
 #-------------------------------
 [AGGRAVATE]
 Name = Aggravate
-Description = HP-fraction-based damage effects deal 50% more damage to opponents.
+Description = HP-fraction-based damage effects deal 35% more damage to opponents.
 #-------------------------------
 [ALLCONSUMING]
 Name = All-Consuming
@@ -168,6 +172,10 @@ Description = After using a sound move, all foes are tormented.
 Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
+#-------------------------------
+[BITEY]
+Name = Bitey
+Description = Boosts the power of biting moves by 30%.
 #-------------------------------
 [BITTERCOLD]
 Name = Bitter Cold
@@ -356,6 +364,10 @@ Description = Upon entry, creates a Substitute from 1/4th of its HP.
 Name = Counter Flow
 Description = When hit with a special move, hits back instantly with Breach.
 #-------------------------------
+[CREEPINGHORROR]
+Name = Creeping Horror
+Description = Foretold moves take one turn longer to attack but deal 50% more damage.
+#-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
 Description = When a foe hits the Pokémon with a physical move, they are warned. If they do it again, they become cursed.
@@ -407,13 +419,13 @@ Flags = MoonglowSynergy
 Name = Deep Sting
 Description = Boosts Attack by 50%, but physical moves deal 25% damage back as recoil.
 #-------------------------------
-[DEEPTEETH]
-Name = Deep Teeth
-Description = Foes aren't released from its trapping moves even when the Pokémon leaves the field.
-#-------------------------------
 [DELAYEDREACTION]
 Name = Delayed Reaction
 Description = 33% of all move damage taken by the Pokémon is instead taken at the end of the next turn.
+#-------------------------------
+[DENTICLEDEBRIS]
+Name = Denticle Debris
+Description = When this Pokémon traps and binds a target, one hazard layer of Spikes is placed around the target.
 #-------------------------------
 [DESERTARMOR]
 Name = Desert Armor
@@ -519,10 +531,6 @@ Name = Earthshaker
 Description = In sandstorm, the Pokémon's Attack is boosted by 30%.
 Flags = SandstormSynergy
 #-------------------------------
-[ECCENTRIC]
-Name = Eccentric
-Description = If its stats would be changed, instead they're changed half as much in the opposite direction (rounded up).
-#-------------------------------
 [ECHO]
 Name = Echo
 Description = Repeats another Pokémon's sound and pulse moves immediately at 50% power.
@@ -565,7 +573,7 @@ Description = The Pokemon's Fighting-type attacks become spread and deal 35% mor
 #-------------------------------
 [EVENTHORIZON]
 Name = Event Horizon
-Description = Changes the weather to star storm, which increases its damage over time. Lingers for three turns after leaving.
+Description = Changes the weather to Star Storm, which increases its damage over time. Lingers for three turns after leaving.
 Flags = SandstormSynergy
 #-------------------------------
 [EXCAVATOR]
@@ -653,6 +661,14 @@ Name = Ferrofluid
 Description = Takes 30% less damage in a rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
+[FIELDOFDEATH]
+Name = Field of Death
+Description = While the Pokémon is on the field, all attacks drain 30% of damage dealt.
+#-------------------------------
+[FIELDOFLIFE]
+Name = Field of Life
+Description = While the Pokémon is on the field, all healing is boosted by 20% and can overheal.
+#-------------------------------
 [FIERYGLOW]
 Name = Fiery Glow
 Description = The Pokémon is also Fire-type.
@@ -689,10 +705,6 @@ Description = Powers up priority moves by 30%.
 [FITTOSURVIVE]
 Name = Fit to Survive
 Description = Upon entry, summons Natural Protection for four turns.
-#-------------------------------
-[FLAMEWINGS]
-Name = Flame Wings
-Description = Flying-type attacks have a 40% chance to burn.
 #-------------------------------
 [FLASHFREEZE]
 Name = Flash Freeze
@@ -756,6 +768,10 @@ Name = Friend to All
 Description = Counts as every tribe.
 Flags = Immutable
 #-------------------------------
+[FRIGHTENINGFANGS]
+Name = Frightening Fangs
+Description = After using a Bite move, lowers the target's highest attacking stat by 2 steps.
+#-------------------------------
 [FRIGIDREFLECTION]
 Name = Frigid Reflection
 Description = When hit with a special move, hits back instantly with that same move.
@@ -769,10 +785,6 @@ Flags = HailSynergy
 Name = Frost Scatter
 Description = Summons a hail for four turns when hit by an attack.
 Flags = HailSynergy
-#-------------------------------
-[FROSTWINGS]
-Name = Frost Wings
-Description = Flying-type attacks have a 40% chance to frostbite.
 #-------------------------------
 [FRUSTRATE]
 Name = Frustrate
@@ -799,6 +811,10 @@ Description = Random added effects of wind-based moves are +50% more likely to o
 Name = Gale Force
 Description = Boosts the power of wind-based moves by 50%.
 #-------------------------------
+[GALVANICWINGS]
+Name = Galvanic Wings
+Description = Foes that become numbed are severely so. The Pokémon's Flying-type moves have a 30% chance to severely numb.
+#-------------------------------
 [GARGANTUAN]
 Name = Gargantuan
 Description = Completely protects allies from foes' spread moves.
@@ -810,6 +826,10 @@ Description = Pokémon that swap in for this have their Speed raised and their P
 [GILD]
 Name = Gild
 Description = Turns the held item of a Pokémon it hits into scattered gold coins for you to take.
+#-------------------------------
+[GLACIALWINGS]
+Name = Glacial Wings
+Description = Foes that become frostbitten are severely so. The Pokémon's Flying-type moves have a 30% chance to severely frostbite.
 #-------------------------------
 [GLASSFIRING]
 Name = Glass Firing
@@ -855,6 +875,10 @@ Description = Heals 1/16th HP every turn. Protected from being poisoned.
 Name = Gyre Spinner
 Description = Upon entry, traps each opponent in a whirlpool for two turns.
 #-------------------------------
+[HANDOFF]
+Name = Hand Off
+Description = Trapping effects against an enemy are passed over to a Pokémon that swaps in for this.
+#-------------------------------
 [HARBINGER]
 Name = Harbinger
 Description = Summons eclipse for four turns upon entry.
@@ -894,7 +918,7 @@ Description = Immune to Dark-type moves, and boosts Attack and Sp. Atk when hit 
 #-------------------------------
 [HEATDEATH]
 Name = Heat Death
-Description = Changes the weather to ice age, which damages and prevents healing. Lingers for three turns after leaving.
+Description = Changes the weather to Ice Age, which damages and prevents healing. Lingers for three turns after leaving.
 Flags = HailSynergy
 #-------------------------------
 [HEATSAVOR]
@@ -1055,6 +1079,10 @@ Name = Inner Light
 Description = Summons sunshine for four turns when hit by an attack.
 Flags = SunshineSynergy
 #-------------------------------
+[INSECTCOLLECTOR]
+Name = Insect Collector
+Description = Hits opponent with Covet when switched out.
+#-------------------------------
 [INSIGHTAURA]
 Name = Insight Aura
 Description = Upon entry, creates an Insight Room for four turns, giving everyone a fifth move.
@@ -1067,9 +1095,17 @@ Description = Special moves have a 30% chance to poison targets.
 Name = Introvert
 Description = Takes 30% less damage until the first time it uses an attacking move.
 #-------------------------------
+[INVERSION]
+Name = Inversion
+Description = If its stats would be changed, instead they're changed half as much in the opposite direction (rounded up).
+#-------------------------------
 [INVESTIGATOR]
 Name = Investigator
 Description = At the beginning of each turn, gives clues about a foe's plan.
+#-------------------------------
+[IONIZEDALLOY]
+Name = Ionized Alloy
+Description = The Pokémon gains the Electric type in a rainstorm.
 #-------------------------------
 [IRONHEEL]
 Name = Iron Heel
@@ -1288,14 +1324,10 @@ Name = Moon Gaze
 Description = Summons moonglow for four turns upon entry.
 Flags = MoonglowSynergy
 #-------------------------------
-[MOONLIGHTER]
-Name = Moonlighter
-Description = When hit in moonglow, steals the attacker's item, or knocks it away.
+[MOONPRISMPOWER]
+Name = Moon Prism Power
+Description = When the Full Moon rises, heals for 50% of its total HP. This can overheal.
 Flags = MoonglowSynergy
-#-------------------------------
-[MOTHBURGLAR]
-Name = Moth Burglar
-Description = Hits opponent with Thief when switched out.
 #-------------------------------
 [MULTIHEADED]
 Name = Multiheaded
@@ -1333,7 +1365,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [NEUROTOXIN]
 Name = Neurotoxin
-Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes also suffer from dizzy.
+Description = While the Pokémon is unfainted (in battle or switched out), poisoned foes cannot use the same move twice in a row.
 #-------------------------------
 [NIGHTLIFE]
 Name = Night Life
@@ -1445,7 +1477,7 @@ Description = Immune to Flying-type moves and deals 50% more damage with them.
 #-------------------------------
 [PERENNIALPAYLOAD]
 Name = Perennial Payload
-Description = After fainting from exploding, revives after six turns.
+Description = After fainting from exploding, revives after five turns.
 #-------------------------------
 [PERFECTIONIST]
 Name = Perfectionist
@@ -1475,9 +1507,13 @@ Description = Whenever a foe raises their stats, the Pokémon follows suit.
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
 #-------------------------------
+[PIERCINGPOISON]
+Name = Piercing Poison
+Description = Poison-type foes can be poisoned. Poison applied to foes starts already worsened.
+#-------------------------------
 [PINDOWN]
 Name = Pin Down
-Description = The user's moves cannot miss against trapped targets.
+Description = The user's moves cannot miss against trapped targets. Takes 20% less damage from Pokemon that are trapped.
 #-------------------------------
 [PITFIGHTER]
 Name = Pit Fighter
@@ -1630,6 +1666,10 @@ Description = Pokémon that swap in for this have their non-volatile status cond
 Name = Reluctant Warrior
 Description = Below half health, it has a doubled crit chance and has +30% attack.
 #-------------------------------
+[REMANENTVOLTAGE]
+Name = Remanent Voltage
+Description = The Pokémon can use Electric-type moves when recharging from an exhausting move, but cannot switch out during them.
+#-------------------------------
 [RENDINGCLAWS]
 Name = Rending Claws
 Description = Critical hits lower all of the victim's stats.
@@ -1734,7 +1774,7 @@ Description = Special moves have a 30% chance to waterlog targets.
 #-------------------------------
 [SATURNALSKY]
 Name = Saturnal Sky
-Description = Changes the weather to ring eclipse, which heralds the total ring eclipse. Lingers for three turns after leaving.
+Description = Changes the weather to Ring Eclipse, which heralds the total Ring Eclipse. Lingers for three turns after leaving.
 Flags = EclipseSynergy
 #-------------------------------
 [SCALDINGSMOKE]
@@ -1758,6 +1798,10 @@ Flags = SandstormSynergy
 [SEALINGBODY]
 Name = Sealing Body
 Description = Moves used on the Pokémon are disabled for two turns.
+#-------------------------------
+[SEARINGWINGS]
+Name = Searing Wings
+Description = Foes that become burned are severely so. The Pokémon's Flying-type moves have a 30% chance to severely burn.
 #-------------------------------
 [SECRETIONSECRET]
 Name = Secretion Secret
@@ -1798,10 +1842,6 @@ Description = Punching moves change the Pokémon's secondary type and their powe
 [SHOCKSTYLE]
 Name = Shock Style
 Description = Powers up Fighting-type moves by 50%.
-#-------------------------------
-[SHOCKWINGS]
-Name = Shock Wings
-Description = Flying-type attacks have a 40% chance to numb.
 #-------------------------------
 [SICKENING]
 Name = Sickening
@@ -1954,7 +1994,6 @@ Description = Its attacks are critical against waterlogged targets.
 [STICKYFINGERS]
 Name = Sticky Fingers
 Description = Can hold a second item by stealing it.
-Flags = MultipleItems
 #-------------------------------
 [STICKYMOLD]
 Name = Sticky Mold
@@ -2146,11 +2185,6 @@ Description = Powers up Poison-type moves of itself and its allies by 50%.
 Name = Toxin Tax
 Description = Heals based on the damage other battlers take from being poisoned.
 #-------------------------------
-[TRACTORBEAM]
-Name = Tractor Beam
-Description = Traps the foe during eclipse.
-Flags = EclipseSynergy
-#-------------------------------
 [TRAPPER]
 Name = Trapper
 Description = Takes 30% less damage from Pokémon that are trapped.
@@ -2212,6 +2246,10 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
+#-------------------------------
+[UPSIDEDOWN]
+Name = Upside Down
+Description = Uses Topsy Turvy on itself at the end of every turn.
 #-------------------------------
 [VANDAL]
 Name = Vandal
@@ -2326,6 +2364,22 @@ Description = After knocking out any Pokémon, raises its Sp. Atk and Sp. Def.
 [WISHMAKER]
 Name = Wish Maker
 Description = The random added effects of moves by all battlers always activate.
+#-------------------------------
+[WISHOFAUTUMN]
+Name = Wish of Autumn
+Description = Upon entry, summons Autumn Harvests on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFSPRING]
+Name = Wish of Spring
+Description = Upon entry, summons Spring Plantings on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFSUMMER]
+Name = Wish of Summer
+Description = Upon entry, summons Summer Festivals on the Pokémon's side for four turns.
+#-------------------------------
+[WISHOFWINTER]
+Name = Wish of Winter
+Description = Upon entry, summons Winter Hunts on the Pokémon's side for four turns.
 #-------------------------------
 [WORLDQUAKE]
 Name = Worldquake
