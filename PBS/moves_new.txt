@@ -532,9 +532,9 @@ Animation = JUDGMENT
 Name = Season's End
 Type = NORMAL
 Category = Physical
-Power = 95
+Power = 105
 Accuracy = 100
-TotalPP = 20
+TotalPP = 15
 Target = NearOther
 FunctionCode = ChangeUserDeerlingSawsbuckForm
 Flags = CanProtect
@@ -1621,6 +1621,19 @@ Animation = POISONFANG
 #-------------------------------
 #		GROUND MOVES
 #-------------------------------
+[CRUSHINGCHASM]
+Name = Crushing Chasm
+Type = GROUND
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect
+Description = The user opens a rift beneath the target, trapping and damaging it for three turns.
+Animation = SANDTOMB
+#-------------------------------
 [DEVOURINGDUST]
 Name = Devouring Dust
 Type = GROUND
@@ -1763,6 +1776,19 @@ FunctionCode = TwoTurnMoveHealTargetHalfOfTotalHP
 Flags = CanProtect,CanMagicCoat
 Description = The user shapes primal clay to heal a nearby ally for their max HP. This can overheal. The user is exhausted on the next turn.
 Animation = HEALPULSE
+#-------------------------------
+[PITFALL]
+Name = Pitfall
+Type = GROUND
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect
+Description = The user opens a pit beneath the target, trapping and damaging it for three turns.
+Animation = SANDTOMB
 #-------------------------------
 [PULVERIZERCHORD]
 Name = Pulverizer Chord
@@ -5854,7 +5880,6 @@ Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
 Description = The user conjures a giant fist to crush the target, trapping and damaging it for three turns.
-Animation = CRUSHGRIP
 #-------------------------------
 [MAGEHAND]
 Name = Mage Hand
@@ -5867,7 +5892,7 @@ Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
 Description = The user grabs the target with a conjured hand, trapping and damaging it for three turns.
-Animation = CRUSHGRIP
+Animation = KINETICGRIP
 #-------------------------------
 [MEMORYREMOVAL]
 Name = Memory Removal
@@ -6260,7 +6285,7 @@ Target = AllNearFoes
 FunctionCode = Frostbite
 Flags = CanProtect,Wind
 EffectChance = 30
-Description = The user summons a wind that drains vitality from all nearby. This has a 30% chance to frostbite them.
+Description = The user summons a wind that drains vitality from all nearby foes. This has a 30% chance to frostbite them.
 Animation = ICYWIND
 #-------------------------------
 [FRIGIDJEALOUSY]
