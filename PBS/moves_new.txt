@@ -6285,7 +6285,7 @@ Target = AllNearFoes
 FunctionCode = Frostbite
 Flags = CanProtect,Wind
 EffectChance = 30
-Description = The user summons a wind that drains vitality from all nearby. This has a 30% chance to frostbite them.
+Description = The user summons a wind that drains vitality from all nearby foes. This has a 30% chance to frostbite them.
 Animation = ICYWIND
 #-------------------------------
 [FRIGIDJEALOUSY]
