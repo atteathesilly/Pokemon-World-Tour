@@ -3318,7 +3318,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = FeatherWard
 Flags = CanMagicCoat
-Description = The user lays a hazard of sharp feathers around the foe. It hurts foes that switch into battle.
+Description = The user lays a levitating hazard of sharp feathers around the foe. It deals Steel-typed 1/8th HP damage.
 #-------------------------------
 [FLECHETTES]
 Name = Flechettes
@@ -5420,7 +5420,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = LiveWire
 Flags = CanMagicCoat
-Description = The user lays an electrical hazard which hurts foes that switch into battle. It deals double damage in rainstorm.
+Description = The user lays a hazard around the foe. It deals Electric-typed 1/12th HP damage, or double that in rainstorm.
 #-------------------------------
 [LUCKYCHEER]
 Name = Lucky Cheer

@@ -2430,7 +2430,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = StealthRock
 Flags = CanMagicCoat
-Description = The user lays a hazard of levitating stones around the foe. The hazard hurts foes that switch into battle.
+Description = The user lays a levitating hazard around the foe. It deals Rock-typed 1/8th HP damage.
 #-------------------------------
 [STONEAXE]
 Name = Stone Axe
