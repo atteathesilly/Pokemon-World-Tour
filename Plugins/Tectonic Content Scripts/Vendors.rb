@@ -164,11 +164,14 @@ end
 
 def reviveFantasyFossil(fossil)
 	if isMixFossil?(fossil)
-		pbMessage(_INTL("Those fossils are a bit too crazy for me, sorry."))
+		pbMessage(_INTL("What!? You want me to make a combo fossil? Not a chance."))
+		pbMessage(_INTL("Maybe someone else is interested in creative torture, but I sure am not."))
 		return
 	end
+
 	if isFossil?(fossil)
-		pbMessage(_INTL("Talk to my boss for these fossils, I can't revive them."))
+		pbMessage(_INTL("I uh... can't actually revive this. Haven't completed the relevant coursework yet."))
+		pbMessage(_INTL("Go talk to my supervisor. She can help you."))
 		return
 	end
 
@@ -186,16 +189,20 @@ def reviveFantasyFossil(fossil)
 	
 	pbMessage(_INTL("\\PN hands over the {1} and $3000.",item_data.name))
 	
-	pbMessage(_INTL("The procedure has started, now just to wait..."))
+	pbMessage(_INTL("Is that...? Very intriguing."))
+	pbMessage(_INTL("Feels... familiar. Something I played long ago..."))
+	pbMessage(_INTL("I'll see what I can do."))
 	
 	blackFadeOutIn(30) {
 		$Trainer.money = $Trainer.money - 3000
 		$PokemonBag.pbDeleteItem(fossil)
 	}
 	
-	pbMessage(_INTL("It's alive! I've figured it out! Here is your newly revived Pokemon!"))
-	
+	pbMessage(_INTL("Yes! It's aliiiiiiive! Muahahahahaha!"))
+
 	pbAddPokemon(species,15)
+
+	pbMessage(_INTL("Okay, now go away. I won't suffer any more EXP waste."))
 end
 
 def reviveMixFossils(fossil1,fossil2)

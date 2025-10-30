@@ -1152,7 +1152,7 @@ TotalPP = 12
 Target = AllNearFoes
 FunctionCode = CantMissLowerTargetDefSpDefEvasion3
 Flags = CanMagicCoat,Sound
-Description = A high pitched screech lowers the target's Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
+Description = A high pitched screech lowers all nearby foes' Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
 Animation = SUPERSONIC
 #-------------------------------
 [FURYPECKS]
@@ -2031,7 +2031,7 @@ Category = Status
 Accuracy = 0
 TotalPP = 20
 Target = UserSide
-FunctionCode = StartPreventCriticalHitsAndRandomEffectsAgainstUserSide10
+FunctionCode = StartPreventCriticalHitsAndReduceDamageAgainstUserSide5
 Flags = CanSnatch,Light
 Description = A diamond-tough force-field protects the user's side for 5 turns from critical hits, and reduces move damage taken.
 Animation = LIGHTSCREEN
@@ -3318,7 +3318,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = FeatherWard
 Flags = CanMagicCoat
-Description = The user lays a hazard of sharp feathers around the foe. It hurts foes that switch into battle.
+Description = The user lays a levitating hazard of sharp feathers around the foe. It deals Steel-typed 1/8th HP damage.
 #-------------------------------
 [FLECHETTES]
 Name = Flechettes
@@ -5420,7 +5420,7 @@ TotalPP = 15
 Target = FoeSide
 FunctionCode = LiveWire
 Flags = CanMagicCoat
-Description = The user lays an electrical hazard which hurts foes that switch into battle. It deals double damage in rainstorm.
+Description = The user lays a hazard around the foe. It deals Electric-typed 1/12th HP damage, or double that in rainstorm.
 #-------------------------------
 [LUCKYCHEER]
 Name = Lucky Cheer
@@ -7445,7 +7445,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetAtk1
 Flags = CanProtect
 EffectChance = 100
-Description = The user slashes all around them, creating deep scars. This lowers each target's Attack.
+Description = The user slashes all around them, creating deep scars on all nearby foes. This lowers each target's Attack.
 #-------------------------------
 [SCHEME]
 Name = Scheme
@@ -7482,7 +7482,7 @@ TotalPP = 5
 Target = AllNearOthers
 FunctionCode = UserFaintsExplosiveScalesWithEnemySideSpikes
 Flags = CanProtect
-Description = Explodes, dealing an extra 30 base power to all foes for each Spikes hazard layer underneath them. The user faints.
+Description = Explodes, dealing an extra 30 base power to all nearby for each Spikes hazard layer underneath them. The user faints.
 Animation = EXPLOSION
 #-------------------------------
 [SPOTTING]
