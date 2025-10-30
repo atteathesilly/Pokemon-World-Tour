@@ -669,7 +669,7 @@ Pokemon = ARCLAMOR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = ABSOLUS,70
-    Moves = FLEURCANNON,KNOCKOFF,CLOSECOMBAT,ADAMANTINEPRESS
+    Moves = FLEURCANNON,KNOCKOFF,ZENHEADBUTT,GLACIALRAM
     AbilityIndex = 1 # Vengeance
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -784,7 +784,7 @@ Pokemon = DUSKNOIR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = ABSOLUS,70
-    Moves = LOOMINGWINTER,FUTURESIGHT,SEVER,PLAYROUGH
+    Moves = LOOMINGWINTER,FUTURESIGHT,PLANAHEAD,PLAYROUGH
     AbilityIndex = 0 # Bad Omen
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2579,7 +2579,7 @@ Pokemon = RELICANTH,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 13,20,0,17,20,0
 Pokemon = MFURRET,70
-    Moves = STOMPINGTANTRUM,PSYCHOSCISSION,COIL,RIPTIDE
+    Moves = STOMPINGTANTRUM,PSYCHOSCISSION,COIL,MORNINGSTAR
     AbilityIndex = 0 # Filter
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
