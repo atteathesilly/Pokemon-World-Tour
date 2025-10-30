@@ -21,7 +21,7 @@ end
 #===============================================================================
 # Protects the user's side from critical hits and some damage. (Diamond Field)
 #===============================================================================
-class PokeBattle_Move_StartPreventCriticalHitsAndRandomEffectsAgainstUserSide10 < PokeBattle_Move
+class PokeBattle_Move_StartPreventCriticalHitsAndReduceDamageAgainstUserSide5 < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         if user.pbOwnSide.effectActive?(:DiamondField)
             @battle.pbDisplay(_INTL("But it failed, since a Diamond Field is already present!")) if show_message
