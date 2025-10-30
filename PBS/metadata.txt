@@ -334,6 +334,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[049]
+# Three Isle Port
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = sand
+Environment = Sand
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

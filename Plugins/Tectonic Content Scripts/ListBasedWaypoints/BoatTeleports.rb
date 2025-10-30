@@ -9,10 +9,10 @@ DOCK_LOCATIONS = {
         :map_id => 19,
         :event_id => 2,
     },
-    :ELEIG_BOATING_DOCK => {
-        :map_name => "Eleig Boating Dock",
-        :map_id => 185,
-        :event_id => 5,
+    :THREE_ISLAND => {
+        :map_name => "Three Island",
+        :map_id => 49,
+        :event_id => 1,
         :unlock_switch => 301,
     },
     :SWEETROCK_DOCK => {
