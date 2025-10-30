@@ -1152,7 +1152,7 @@ TotalPP = 12
 Target = AllNearFoes
 FunctionCode = CantMissLowerTargetDefSpDefEvasion3
 Flags = CanMagicCoat,Sound
-Description = A high pitched screech lowers the target's Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
+Description = A high pitched screech lowers all nearby foes' Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
 Animation = SUPERSONIC
 #-------------------------------
 [FURYPECKS]
@@ -7445,7 +7445,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetAtk1
 Flags = CanProtect
 EffectChance = 100
-Description = The user slashes all around them, creating deep scars. This lowers each target's Attack.
+Description = The user slashes all around them, creating deep scars on all nearby foes. This lowers each target's Attack.
 #-------------------------------
 [SCHEME]
 Name = Scheme
@@ -7482,7 +7482,7 @@ TotalPP = 5
 Target = AllNearOthers
 FunctionCode = UserFaintsExplosiveScalesWithEnemySideSpikes
 Flags = CanProtect
-Description = Explodes, dealing an extra 30 base power to all foes for each Spikes hazard layer underneath them. The user faints.
+Description = Explodes, dealing an extra 30 base power to all nearby for each Spikes hazard layer underneath them. The user faints.
 Animation = EXPLOSION
 #-------------------------------
 [SPOTTING]
