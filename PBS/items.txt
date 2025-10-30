@@ -1048,7 +1048,7 @@ NamePlural = Covert Cloaks
 Pocket = 12
 Price = 3000
 Flags = Clothing
-Description = A held item. The holder is protected from the random added effects and takes 10% less move damage.
+Description = A held item. Moves used against the holder deal 10% less move damage and can't trigger random added effects.
 #-------------------------------
 [COURAGEBADGE]
 Name = Courage Badge
