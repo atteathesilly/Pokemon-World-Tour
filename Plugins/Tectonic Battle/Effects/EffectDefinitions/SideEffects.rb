@@ -791,10 +791,116 @@ GameData::BattleEffect.register_effect(:Side, {
     :type => :Integer,
     :maximum => 4,
     :increment_proc => proc do |battle, _side, teamName, _value, increment|
+        teamName[0] = teamName[0].downcase
         battle.pbDisplay(_INTL("A rock lands on the ground around {1}.", teamName))
     end,
     :disable_proc => proc do |battle, _side, teamName|
+        teamName[0] = teamName[0].downcase
         battle.pbDisplay(_INTL("Each rock on the ground around {1} was absorbed!", teamName))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :FeathersDropped,
+    :real_name => "Feathers Dropped",
+    :type => :Integer,
+    :maximum => 3,
+    :increment_proc => proc do |battle, _side, teamName, value, increment|
+        teamName[0] = teamName[0].downcase
+        if increment == 1
+            case value
+            when 1
+                battle.pbDisplay(_INTL("A feather fell to the ground around {1}.", teamName))
+            when 2
+                battle.pbDisplay(_INTL("The second feather fell to the ground around {1}.", teamName))
+            when 3
+                battle.pbDisplay(_INTL("The third and final feather fell to the ground around {1}.", teamName))
+            end
+        else
+            battle.pbDisplay(_INTL("{1} feathers fell to the ground around {2}.", increment, teamName))
+        end
+    end,
+    :disable_proc => proc do |battle, _side, teamName|
+        teamName[0] = teamName[0].downcase
+        battle.pbDisplay(_INTL("The feathers around {1} were absorbed!", teamName))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :ScalesDropped,
+    :real_name => "Scales Dropped",
+    :type => :Integer,
+    :maximum => 3,
+    :increment_proc => proc do |battle, _side, teamName, value, increment|
+        teamName[0] = teamName[0].downcase
+        if increment == 1
+            case value
+            when 1
+                battle.pbDisplay(_INTL("A scale fell to the ground around {1}.", teamName))
+            when 2
+                battle.pbDisplay(_INTL("The second scale fell to the ground around {1}.", teamName))
+            when 3
+                battle.pbDisplay(_INTL("The third and final scale fell to the ground around {1}.", teamName))
+            end
+        else
+            battle.pbDisplay(_INTL("{1} scales fell to the ground around {2}.", increment, teamName))
+        end
+    end,
+    :disable_proc => proc do |battle, _side, teamName|
+        teamName[0] = teamName[0].downcase
+        battle.pbDisplay(_INTL("The scales around {1} were absorbed!", teamName))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :FangsDropped,
+    :real_name => "Fangs Dropped",
+    :type => :Integer,
+    :maximum => 3,
+    :increment_proc => proc do |battle, _side, teamName, value, increment|
+        teamName[0] = teamName[0].downcase
+        if increment == 1
+            case value
+            when 1
+                battle.pbDisplay(_INTL("A fang fell to the ground around {1}.", teamName))
+            when 2
+                battle.pbDisplay(_INTL("The second fang fell to the ground around {1}.", teamName))
+            when 3
+                battle.pbDisplay(_INTL("The third and final fang fell to the ground around {1}.", teamName))
+            end
+        else
+            battle.pbDisplay(_INTL("{1} fang fell to the ground around {2}.", increment, teamName))
+        end
+    end,
+    :disable_proc => proc do |battle, _side, teamName|
+        teamName[0] = teamName[0].downcase
+        battle.pbDisplay(_INTL("The fangs around {1} were absorbed!", teamName))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Side, {
+    :id => :ScutesDropped,
+    :real_name => "Scutes Dropped",
+    :type => :Integer,
+    :maximum => 3,
+    :increment_proc => proc do |battle, _side, teamName, value, increment|
+        teamName[0] = teamName[0].downcase
+        if increment == 1
+            case value
+            when 1
+                battle.pbDisplay(_INTL("A scute fell to the ground around {1}.", teamName))
+            when 2
+                battle.pbDisplay(_INTL("The second scute fell to the ground around {1}.", teamName))
+            when 3
+                battle.pbDisplay(_INTL("The third and final scute fell to the ground around {1}.", teamName))
+            end
+        else
+            battle.pbDisplay(_INTL("{1} scutes fell to the ground around {2}.", increment, teamName))
+        end
+    end,
+    :disable_proc => proc do |battle, _side, teamName|
+        teamName[0] = teamName[0].downcase
+        battle.pbDisplay(_INTL("The scutes around {1} were absorbed!", teamName))
     end,
 })
 
