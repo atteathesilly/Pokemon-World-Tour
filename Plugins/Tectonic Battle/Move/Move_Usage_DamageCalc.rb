@@ -297,9 +297,9 @@ class PokeBattle_Move
                 end
             elsif target.pbOwnSide.effectActive?(:Sanctuary)
                 if @battle.pbSideBattlerCount(target) > 1
-                    multipliers[:final_damage_multiplier] *= 3 / 4.0
+                    multipliers[:final_damage_multiplier] *= 4 / 5.0
                 else
-                    multipliers[:final_damage_multiplier] *= 2 / 3.0
+                    multipliers[:final_damage_multiplier] *= 3 / 4.0
                 end
             end
         else
