@@ -149,20 +149,20 @@ GameData::BattleEffect.register_effect(:Side, {
 })
 
 GameData::BattleEffect.register_effect(:Side, {
-    :id => :DiamondField,
-    :real_name => "Diamond Field",
+    :id => :Sanctuary,
+    :real_name => "Sanctuary",
     :type => :Integer,
     :ticks_down => true,
     :is_screen => true,
     :apply_proc => proc do |battle, _side, teamName, value|
-        battle.pbDisplay(_INTL("{1} is protected by a diamond sheen!", teamName))
+        battle.pbDisplay(_INTL("{1} is protected by a blessed wall of light!", teamName))
         battle.pbDisplay(_INTL("They can't be crit and take less damage for {1} more turns!", value - 1))
     end,
     :disable_proc => proc do |battle, _side, teamName|
-        battle.pbDisplay(_INTL("{1}'s Diamond Field was removed!", teamName))
+        battle.pbDisplay(_INTL("{1}'s Sanctuary was removed!", teamName))
     end,
     :expire_proc => proc do |battle, _side, teamName|
-        battle.pbDisplay(_INTL("{1} is no longer protected by Diamond Field.", teamName))
+        battle.pbDisplay(_INTL("{1} is no longer protected by Sanctuary.", teamName))
     end,
 })
 

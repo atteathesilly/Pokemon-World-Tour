@@ -2937,7 +2937,7 @@ Pokemon = SUDOWOODO,40
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
 Pokemon = BASTIODON,40
-    Moves = DIAMONDFIELD,BODYPRESS,STOMPINGTANTRUM,WIDEGUARD
+    Moves = SHIELDINGBASH,BODYPRESS,STOMPINGTANTRUM,WIDEGUARD
     AbilityIndex = 1 # Battle-Hardened
     Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
