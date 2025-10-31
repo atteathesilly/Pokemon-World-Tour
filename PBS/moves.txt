@@ -1054,7 +1054,7 @@ Accuracy = 0
 TotalPP = 10
 Target = NearOther
 FunctionCode = TransformUserIntoTarget
-Flags = Uninvocable
+Flags = Uninvocable,ForceSignature
 Description = The user transforms into a copy of the target right down to having the same move set.
 #-------------------------------
 [TRIATTACK]
