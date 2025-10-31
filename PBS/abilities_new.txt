@@ -1270,7 +1270,7 @@ Description = All Pokémon's damage is decreased proportional to their health re
 #-------------------------------
 [MENDINGFEATHERCHARM]
 Name = Mending Feather Charm
-Description = When the Pokémon is hit thrice, all party members heal for 1/8th HP. The attacker switches out to an ally of your choice.
+Description = When the Pokémon is hit thrice, all party members heal for 1/8th HP. The attacker is forced to switch out.
 #-------------------------------
 [MENTALBLOCK]
 Name = Mental Block
