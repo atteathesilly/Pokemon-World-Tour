@@ -5170,7 +5170,7 @@ TotalPP = 15
 Target = UserSide
 FunctionCode = StartWeakenDamageAgainstUserSideIfInHail5
 Flags = CanSnatch,Light
-Description = This move reduces damage from attacks for five turns. This can be used only in hail.
+Description = The user puts up a rainbow-colored veil to reduce move damage for five turns. This can only be used in hail.
 #-------------------------------
 [BLIZZARD]
 Name = Blizzard

@@ -537,7 +537,7 @@ TotalPP = 15
 Target = UserSide
 FunctionCode = StartPreventCriticalHitsAndReduceDamageAgainstUserSide5
 Flags = CanSnatch,Light
-Description = A blessed wall of light protects the user's side for 5 turns from critical hits, and reduces move damage taken.
+Description = A blessed wall of light protects the user's side from critical hits for five turns, and reduces move damage taken.
 Animation = LUCKYCHANT
 #-------------------------------
 [SEASONSEND]
