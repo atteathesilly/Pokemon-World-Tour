@@ -738,23 +738,23 @@ FieldUse = TM
 Flags = SkipPocketMessage
 Move = ICEBEAM
 #-------------------------------
-[TMBRICKBREAK]
+[TMCROSSCHOP]
 Name = Unnamed
 NamePlural = Unnamed
 Pocket = 5
 Price = 4000
 FieldUse = TM
 Flags = SkipPocketMessage
-Move = BRICKBREAK
+Move = CROSSCHOP
 #-------------------------------
-[TMAURASPHERE]
+[TMADRENALASH]
 Name = Unnamed
 NamePlural = Unnamed
 Pocket = 5
 Price = 4000
 FieldUse = TM
 Flags = SkipPocketMessage
-Move = AURASPHERE
+Move = ADRENALASH
 #-------------------------------
 [TMPOISONJAB]
 Name = Unnamed
@@ -971,6 +971,42 @@ Price = 4000
 FieldUse = TM
 Flags = SkipPocketMessage
 Move = CLEARSMOG
+#-------------------------------
+[TMBRICKBREAK]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = BRICKBREAK
+#-------------------------------
+[TMSEISMICWAVE]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SEISMICWAVE
+#-------------------------------
+[TMRAZINGVINES]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = RAZINGVINES
+#-------------------------------
+[TMSKYFALL]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SKYFALL
 #-------------------------------
 [TMCRUELTY]
 Name = Unnamed
