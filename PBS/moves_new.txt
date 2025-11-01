@@ -1879,6 +1879,7 @@ Target = NearOther
 FunctionCode = RemoveScreens
 Flags = CanProtect,Sound
 Description = The user attacks with a tectonic vibration. It also breaks any screens protecting the target's side.
+Animation = EARTHPOWER
 #-------------------------------
 [SIROCCO]
 Name = Sirocco
@@ -2509,6 +2510,7 @@ Target = NearOther
 FunctionCode = RemoveScreens
 Flags = CanProtect
 Description = A swarm of insects is sent to gnaw at the target. It also breaks any screens protecting the target's side.
+Animation = INFESTATION
 #-------------------------------
 [DRONING]
 Name = Droning
