@@ -464,6 +464,18 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :FlinchNextTurn,
+    :real_name => "Flinch Next Turn",
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis(true)))
+    end,
+    :sor_proc => proc do |_battle, battler, _value|
+        battler.disableEffect(:FlinchNextTurn)
+        battler.applyEffect(:Flinch)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :Flinch,
     :real_name => "Flinch",
     :resets_eor	=> true,
@@ -2503,5 +2515,15 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("The sticky syrup reduced {1}'s highest stat!", battler.pbThis(true)))
         battler.pbLowerStatStep(battler.highestStat, 2)
         battler.pbItemStatRestoreCheck
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :FeatherForceSwitch,
+    :real_name => "Feather Charm Force Switch",
+    :info_displayed => false,
+    :resets_eor => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} is carried off by feathers!", battler.pbThis))
     end,
 })

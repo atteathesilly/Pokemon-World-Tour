@@ -548,7 +548,7 @@ def tmShop
 		TMELECTROSLASH TMTHUNDERBOLT
 		TMGLACIALRAM TMICEBEAM
 
-		TMBRICKBREAK TMAURASPHERE
+		TMCROSSCHOP TMADRENALASH
 		TMPOISONJAB TMMIASMA
 		TMTRAMPLE TMEARTHPOWER
 
@@ -608,6 +608,21 @@ def switchOutTMShop
 	pbPokemonMart(
 		tmsStock,
 		_INTL("I'm sure you'll appreciate one of these."),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def effectHateTMShop
+	tmsStock = %i[
+		TMBRICKBREAK
+		TMSEISMICWAVE
+		TMRAZINGVINES
+		TMSKYFALL
+	]
+
+	pbPokemonMart(
+		tmsStock,
+		_INTL("I've got the tools. Just don't tell anyone."),
 		!CAN_SELL_IN_VENDORS
 	)
 end
