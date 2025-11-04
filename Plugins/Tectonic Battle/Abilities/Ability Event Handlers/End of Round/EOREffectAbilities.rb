@@ -108,19 +108,21 @@ BattleHandlers::EOREffectAbility.add(:EXTREMEPOWER,
 BattleHandlers::EOREffectAbility.copy(:EXTREMEPOWER,:EXTREMEVOLTAGE,:LIVEFAST,:BURDENED)
 
 BattleHandlers::EOREffectAbility.add(:TENDERIZE,
-  proc { |ability, battler, _battle|
+  proc { |ability, battler, battle|
       battler.eachOther do |b|
           next unless b.numbed?
           b.pbLowerMultipleStatSteps(DEFENDING_STATS_2, battler, ability: ability)
+          battle.pbHideAbilitySplash(battler)
       end
   }
 )
 
 BattleHandlers::EOREffectAbility.add(:SINKINGFEELING,
-  proc { |ability, battler, _battle|
+  proc { |ability, battler, battle|
       battler.eachOther do |b|
           next unless b.waterlogged?
           b.pbLowerMultipleStatSteps(ATTACKING_STATS_2, battler, ability: ability)
+          battle.pbHideAbilitySplash(battler)
       end
   }
 )

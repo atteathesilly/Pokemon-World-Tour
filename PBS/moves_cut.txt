@@ -1579,6 +1579,18 @@ Description = The user spins a sandstorm around the target, trapping and damagin
 #-------------------------------
 #		ROCK MOVES
 #-------------------------------
+[DIAMONDFIELD]
+Name = Diamond Field
+Type = ROCK
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserSide
+FunctionCode = Invalid
+Flags = CanSnatch,Light
+Description = A diamond-tough force-field protects the user's side for 5 turns from critical hits, and reduces move damage taken.
+Animation = LIGHTSCREEN
+#-------------------------------
 [HEADSMASH]
 Name = Head Smash
 Type = ROCK
