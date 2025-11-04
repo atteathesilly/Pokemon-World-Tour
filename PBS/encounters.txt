@@ -216,3 +216,16 @@ FloweryGrass2,21
     20,GRIMER,20,21
     20,KOFFING,20,21
     20,TRUBBISH,20,21
+#-------------------------------
+[049] # Three Isle Port
+Land,20
+    40,DUNSPARCE,20,21
+    20,EEVEE,20,21
+    20,LUVDISC,20,21
+    20,TOGEPI,20,21
+Puddle,20
+    20,MANTINE,20,21
+    20,SEEL,20,21
+    20,SQUIRTLE,20,21
+    20,TENTACOOL,20,21
+    20,WAILMER,20,21
