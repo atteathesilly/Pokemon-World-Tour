@@ -1031,7 +1031,7 @@ class PokeBattle_RoomMove < PokeBattle_Move
     end
 
     def pbEffectGeneral(user)
-        @battle.pbStartRoom(@roomEffect, user, duration: applyEffectDurationModifiers(@duration, user))
+        @battle.pbStartRoom(@roomEffect, user)
     end
 
     def getEffectScore(user, _target)
