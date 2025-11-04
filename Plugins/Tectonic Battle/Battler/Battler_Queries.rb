@@ -702,7 +702,7 @@ class PokeBattle_Battler
     def getRoomDuration(baseDuration = 8, aiCheck: false)
         ret = baseDuration
         ret *= 2 if shouldItemApply?(:REINFORCINGROD,aiCheck)
-        ret = (ret.to_f * 1.5).floor if hasTribeBonus?(:SERENE)
+        ret = applyEffectDurationModifiers(ret, self)
         return ret
     end
 
@@ -711,7 +711,7 @@ class PokeBattle_Battler
         ret += 3 if shouldItemApply?(:LIGHTCLAY,aiCheck)
         ret += 6 if shouldItemApply?(:BRIGHTCLAY,aiCheck)
         ret += 2 if shouldAbilityApply?(:PLANARVEIL,aiCheck)
-        ret = (ret.to_f * 1.5).floor if hasTribeBonus?(:SERENE)
+        ret = applyEffectDurationModifiers(ret, self)
         return ret
     end
 
@@ -912,6 +912,7 @@ class PokeBattle_Battler
             eachActiveItem(true) do |item|
                 duration = BattleHandlers.triggerWeatherExtenderItem(item, weatherType, duration, self, @battle)
             end
+            duration = applyEffectDurationModifiers(duration, self)
         end
         return duration
     end
