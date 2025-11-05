@@ -1094,10 +1094,6 @@ Pokemon = ELECTRIKE,20
     AbilityIndex = 1 # Fascinate
 Pokemon = STUFFUL,20
     AbilityIndex = 0 # Intimidate
-Pokemon = FERROSEED,20
-    Moves = ROOTWRACK,SPIKES,METALCLAW
-    AbilityIndex = 0 # Iron Barbs
-    Item = CADOBERRY
 #-------------------------------
 [KIMONOGIRL,Haera]
 Flags = NoPerfect
@@ -3143,10 +3139,6 @@ Flags = NoPerfect
 Pokemon = WEEZING,44
     Moves = EXPLOSION,MIASMA,COLDFRONT
     AbilityIndex = 0 # Neutralizing Gas
-Pokemon = FERROTHORN,45
-    Moves = EXPLOSION,POWERWHIP,GYROBALL
-    AbilityIndex = 0 # Iron Barbs
-    Item = IRONBALL
 Pokemon = FORRETRESS,45
     Moves = EXPLOSION,GYROBALL,PAYBACK
     AbilityIndex = 0 # Natural Cure
@@ -3681,10 +3673,6 @@ Pokemon = RELICANTH,38
     Moves = GRANITEHEAD,PETRIFY,WATERFALL,SURF
     AbilityIndex = 1 # Reawakened Power
     Item = CUSTAPBERRY
-Pokemon = FERROTHORN,38
-    Moves = IMPALINGSPIKE,ROOTWRACK,GYROBALL
-    AbilityIndex = 0 # Iron Barbs
-    Item = LEFTOVERS
 Pokemon = GLISCOR,38
     Moves = FLY,KNOCKOFF,TREMOR,FEINTATTACK
     AbilityIndex = 0 # Grotesque Vitals
@@ -6130,12 +6118,6 @@ Pokemon = DRAGONITE,70
 #-------------------------------
 [TRAINER_Zain,Zain,2]
 Flags = NoPerfect
-Pokemon = FERROTHORN,70
-    Moves = SPIKES,KNOCKOFF,LEECHSEED,BODYPRESS
-    AbilityIndex = 0 # Iron Barbs
-    Item = OCCABERRY
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,20,0,0,10
 Pokemon = SENSIBELLE,70
     Moves = WARDPRESS,RECOVER,YAWN,FLAMETHROWER
     AbilityIndex = 1 # Regenerator
@@ -6170,8 +6152,6 @@ Pokemon = MGIGALITH,70
 [TRAINER_Zain,Zain,3]
 ExtendsVersion = 2
 Policies = CURSE_SUPER_ITEMS
-Pokemon = FERROTHORN,70
-    Item = OCCAFEAST
 Pokemon = SENSIBELLE,70
     Item = LUNUSBERRY
 Pokemon = SERPERIOR,70
@@ -6237,9 +6217,6 @@ Policies = ALTERNATE_ZAIN
 Pokemon = LIEPARD,70
     Moves = FOULPLAY,YAWN,FAKEOUT,NUMB
     AbilityIndex = 1 # Prankster
-Pokemon = FERROTHORN,70
-    Moves = SPIKES,KNOCKOFF,LEECHSEED,BODYPRESS
-    AbilityIndex = 0 # Iron Barbs
 Pokemon = BLAZIKEN,70
     Moves = BULKUP,CLOSECOMBAT,BLAZEKICK,EARTHQUAKE
     AbilityIndex = 0 # Speed Boost
@@ -6260,8 +6237,6 @@ Pokemon = SERPERIOR,70
 ExtendsVersion = 0
 Pokemon = LIEPARD,70
     Item = FOCUSSASH
-Pokemon = FERROTHORN,70
-    Item = OCCABERRY
 Pokemon = BLAZIKEN,70
     Item = LUMBERRY
 Pokemon = GIRATINA,70
@@ -7222,9 +7197,6 @@ Pokemon = KOMALA,60
 #-------------------------------
 [LOST_RANGER_GREEN,Farid]
 Flags = NoPerfect
-Pokemon = FERROTHORN,60
-    Moves = POWERWHIP,IMPALINGSPIKE,LEECHSEED,SWORDSDANCE
-    AbilityIndex = 0 # Iron Barbs
 Pokemon = REUNICLUS,60
     Moves = PIERCINGDOUBT,ACIDBALL,STINGINGJEALOUSY,THUNDERBOLT
     AbilityIndex = 1 # Juggernaut

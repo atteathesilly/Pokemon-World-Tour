@@ -1944,18 +1944,6 @@ FrontSprite = -7,9
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
-[FERROSEED]
-BackSprite = 0,30
-FrontSprite = 0,32
-ShadowX = 0
-ShadowSize = 1
-#-------------------------------
-[FERROTHORN]
-BackSprite = 0,29
-FrontSprite = 0,32
-ShadowX = 0
-ShadowSize = 2
-#-------------------------------
 [FINNEON]
 BackSprite = 0,33
 FrontSprite = 1,22
@@ -4467,6 +4455,18 @@ ShadowSize = 2
 [ODDISH]
 BackSprite = 0,30
 FrontSprite = 0,26
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[OFERROSEED]
+BackSprite = 0,35
+FrontSprite = 0,32
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
+[OFERROTHORN]
+BackSprite = 0,35
+FrontSprite = 0,32
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

@@ -125,3 +125,47 @@ Kind = Wild Duck
 Pokedex = After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek stalk. The leek stalk is both weapon and food.
 Generation = 8
 WildItemUncommon = STRENGTHHERB
+#-------------------------------
+[FERROSEED]
+Name = Ferroseed
+Type1 = GRASS
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 48,66,90,15,45,81
+# Total = 345
+BaseEXP = 61
+Rareness = 195
+Happiness = 50
+Abilities = IRONBARBS,SUNCHASER
+Moves = 1,DAZZLE,1,VINEWHIP,4,SHOTPUT,8,INGRAIN,12,SPIKES,16,ROOTWRACK,20,SUNSHINE,24,SPIKECANNON,28,SELFDESTRUCT,32,PROTECT,36,IMPALINGSPIKE,40,POWERWHIP,44,EXPLOSION,48,SOLARGLIDE,52,BLOCK,56,WOODHAMMER,60,LEECHSEED
+LineMoves = ABSORB,ACIDSPRAY,AERIALACE,AIMTRUE,ASSURANCE,BLOCK,BODYPRESS,BRUTALSWING,BULLDOZE,BULLETSEED,BULLETTRAIN,EERIEIMPULSE,ENDEAVOR,ENDURE,ENERGYBALL,EXPLOSION,FACADE,FARADAYCAGE,FLASHCANNON,FLECHETTES,FRAGMENTATION,FRENZYPLANT,GIGADRAIN,GIGAIMPACT,GRASSKNOT,GRAVITY,GYROBALL,HARDEN,HEAVYSLAM,HYPERBEAM,IRONARROW,IRONDEFENSE,IRONHEAD,JAVELIN,KNOCKOFF,LEECHSEED,MAGNETIZE,MAGNETRISE,MEGADRAIN,METALCLAW,NATUREPOWER,NUMB,PAYBACK,PINMISSILE,POISONJAB,POWERWHIP,PROTECT,RAILCANNON,REST,REVENGE,ROCKPOLISH,SANDSTORM,SAPPINGJEALOUSY,SEEDBOMB,SELFDESTRUCT,SHADOWCLAW,SHARPEN,SHRAPNEL,SHREDSHOT,SLEEPTALK,SNORE,SOLARBEAM,SPIKECANNON,SPIKES,STEALTHROCK,STEELBEAM,STINGINGJEALOUSY,SUBSTITUTE,SUNSHINE,SWORDSDANCE,TERADRAIN
+Tribes = ANIMATED,ARTILLERY
+StepsToHatch = 5355
+Height = 0.6
+Weight = 18.8
+Kind = Thorn Seed
+Pokedex = It absorbs the iron it finds in the rock while clinging to the ceiling. It shoots spikes when in danger.
+Generation = 5
+WildItemUncommon = STICKYBARB
+Evolutions = FERROTHORN,Level,33
+#-------------------------------
+[FERROTHORN]
+Name = Ferrothorn
+Type1 = GRASS
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 69,94,126,25,69,111
+# Total = 494
+BaseEXP = 171
+Rareness = 70
+Happiness = 50
+Abilities = IRONBARBS,SUNCHASER
+Moves = 0,GYROBALL,1,GYROBALL
+StepsToHatch = 5355
+Height = 1.0
+Weight = 110.0
+Kind = Thorn Pod
+Pokedex = They attach themselves to cave ceilings, firing steel spikes at targets passing beneath them.
+Generation = 5
+WildItemUncommon = STICKYBARB
+#-------------------------------
