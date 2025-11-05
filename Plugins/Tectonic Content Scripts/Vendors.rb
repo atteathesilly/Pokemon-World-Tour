@@ -627,6 +627,40 @@ def effectHateTMShop
 	)
 end
 
+def statusTMVendor
+	spikeTMStock = %i[
+		TMPOISONGAS
+		TMIGNITE
+		TMCHILL
+		TMNUMB
+		TMWATERLOG
+		TMLEECHSEED
+		TMCONFUSERAY
+	]
+	pbPokemonMart(
+		spikeTMStock,
+		_INTL("Any interest in buying?"),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def healingTMVendor
+	spikeTMStock = %i[
+		TMRECOVER
+		TMSLACKOFF
+		TMROOST
+		TMTAKESHELTER
+		TMSYNTHESIS
+		TMSHOREUP
+		TMSWEETSELENE
+	]
+	pbPokemonMart(
+		spikeTMStock,
+		_INTL("Trust me, nobody needs these more than you."),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
 def naturesGallery
 	stock = %i[
 		HEATROCK DAMPROCK SMOOTHROCK ICYROCK MIRROREDROCK PINPOINTROCK
@@ -924,23 +958,6 @@ def typeBoostingVendor
 	pbPokemonMart(
 		herbStock,
 		_INTL("What're ya buyin'?"),
-		!CAN_SELL_IN_VENDORS
-	)
-end
-
-def statusTMVendor()
-	spikeTMStock = %i[
-		TMPOISONGAS
-		TMIGNITE
-		TMCHILL
-		TMNUMB
-		TMWATERLOG
-		TMLEECHSEED
-		TMCONFUSERAY
-	]
-	pbPokemonMart(
-		spikeTMStock,
-		_INTL("Any interest in buying?"),
 		!CAN_SELL_IN_VENDORS
 	)
 end

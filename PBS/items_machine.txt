@@ -1205,3 +1205,66 @@ Price = 4000
 FieldUse = TM
 Flags = SkipPocketMessage
 Move = RAILCANNON
+#-------------------------------
+[TMRECOVER]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = RECOVER
+#-------------------------------
+[TMSLACKOFF]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SLACKOFF
+#-------------------------------
+[TMROOST]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = ROOST
+#-------------------------------
+[TMTAKESHELTER]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = TAKESHELTER
+#-------------------------------
+[TMSYNTHESIS]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SYNTHESIS
+#-------------------------------
+[TMSHOREUP]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SHOREUP
+#-------------------------------
+[TMSWEETSELENE]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = SWEETSELENE
