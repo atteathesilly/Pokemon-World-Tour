@@ -34,10 +34,12 @@ class PokemonSaveScreen
         deleteCommand = -1
         quitCommand = -1
         cancelCommand = -1
+        returnCommand = -1
         cmds = []
         cmds[saveCommand = cmds.length] = _INTL("Just Save")
         cmds[mainMenuCommand = cmds.length] = _INTL("Save & Quit to Menu") if quitting
         cmds[quitCommand = cmds.length] = _INTL("Save & Quit to Desktop") if quitting
+        cmds[returnCommand = cmds.length] = _INTL("Quit to Menu") if quitting
         cmds[deleteCommand = cmds.length] = _INTL("Delete") if deleting
         cmds[cancelCommand = cmds.length] = _INTL("Cancel")
         saveChoice = pbCustomMessageForSave(_INTL("What do you want to do?"), cmds, cmds.length)
@@ -45,6 +47,8 @@ class PokemonSaveScreen
           return 1 if inGameSaveScreen(count)
         elsif quitCommand >= 0 && saveChoice == quitCommand
           return 2 if inGameSaveScreen(count)
+        elsif returnCommand >= 0 && saveChoice == returnCommand
+          return 3 # Just quit to title screen
         elsif saveCommand >= 0 && saveChoice == saveCommand
           inGameSaveScreen(count)
         elsif deleteCommand >= 0 && saveChoice == deleteCommand
