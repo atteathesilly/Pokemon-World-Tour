@@ -43,12 +43,8 @@ class PokeBattle_Battler
         ret.delete(:ICE) if effectActive?(:Sublimate)
         # Dry Heat erases the Water-type.
         ret.delete(:WATER) if effectActive?(:DryHeat)
-        # Roost erases the Flying-type. If there are no types left, adds the Normal-
-        # type.
-        if effectActive?(:Roost)
-            ret.delete(:FLYING)
-            ret.push(:NORMAL) if ret.length.zero?
-        end
+        # Roost erases the Flying-type.
+        ret.delete(:FLYING) if effectActive?(:Roost)
         # Add the third type specially.
         ret.push(@effects[:Type3]) if withType3 && effectActive?(:Type3) && !ret.include?(@effects[:Type3])
         ret.uniq!
