@@ -114,6 +114,15 @@ BattleHandlers::DamageCalcUserAbility.add(:STONEMANE,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:BITEY,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.bitingMove?
+      mults[:base_damage_multiplier] *= 1.3
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:STRONGJAW,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.bitingMove?
@@ -270,6 +279,15 @@ BattleHandlers::DamageCalcUserAbility.add(:BADOMEN,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.foretoldMove?
       mults[:base_damage_multiplier] *= 1.3
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+BattleHandlers::DamageCalcUserAbility.add(:CREEPINGHORROR,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.foretoldMove?
+      mults[:base_damage_multiplier] *= 1.5
       user.aiLearnsAbility(ability) unless aiCheck
     end
   }
@@ -893,10 +911,17 @@ BattleHandlers::DamageCalcUserAbility.add(:TANGLINGVINES,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if target.pointsAt?(:TanglingVines, user)
       mults[:base_damage_multiplier] *= 1.3
-      unless aiCheck
-        user.battle.pbDisplay(_INTL("The tangling vines strengthened the hit!"))
-        user.aiLearnsAbility(ability)
-      end
+      user.aiLearnsAbility(ability) unless aiCheck
     end
+  }
+)
+
+BattleHandlers::DamageCalcUserAbility.add(:ACTIONSTAR,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    next unless user.effectActive?(:ActionStar)
+    next unless move.damagingMove?
+    next unless type == :NORMAL
+    mults[:base_damage_multiplier] *= 1.3
+    user.aiLearnsAbility(ability) unless aiCheck
   }
 )

@@ -646,6 +646,17 @@ FunctionCode = Invalid
 Flags = CanSnatch
 Description = The user creates a protective field that prevents status problems for ten turns.
 #-------------------------------
+[SCREECH]
+Name = Screech
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanMagicCoat,Sound
+Description = The user's earsplitting screech reduces the target's Defense stat by four steps.
+#-------------------------------
 [SING]
 Name = Sing
 Type = NORMAL
@@ -1568,6 +1579,18 @@ Description = The user spins a sandstorm around the target, trapping and damagin
 #-------------------------------
 #		ROCK MOVES
 #-------------------------------
+[DIAMONDFIELD]
+Name = Diamond Field
+Type = ROCK
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserSide
+FunctionCode = Invalid
+Flags = CanSnatch,Light
+Description = A diamond-tough force-field protects the user's side for 5 turns from critical hits, and reduces move damage taken.
+Animation = LIGHTSCREEN
+#-------------------------------
 [HEADSMASH]
 Name = Head Smash
 Type = ROCK
@@ -1865,6 +1888,17 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user makes the foe see a frightening mirage. It inflicts damage matching the user's level.
 #-------------------------------
+[PHANTOMFORCE]
+Name = Phantom Force
+Type = GHOST
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Description = The user vanishes somewhere, charging and becoming invulnerable, then strikes on the second turn. Skips and destroys protections.
+#-------------------------------
 [POLTERGEIST]
 Name = Poltergeist
 Type = GHOST
@@ -2040,6 +2074,17 @@ FunctionCode = Invalid
 Flags = CanProtect
 EffectChance = 30
 Description = The user looses a flash of energy from its polished body. It has a 30% chance to lower accuracy.
+#-------------------------------
+[SMARTHORN]
+Name = Smart Horn
+Type = STEEL
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Description = The user stabs the target with a sharp horn. Can't miss and skips protections.
 #-------------------------------
 [SMARTSTRIKE]
 Name = Smart Strike
@@ -2334,6 +2379,20 @@ FunctionCode = Invalid
 Flags = CanSnatch
 Description = The user withdraws its body into its hard shell, raising both defensive stats by two steps and gaining Shell Armor.
 Animation = WITHDRAW
+#-------------------------------
+[SNAP]
+Name = Snap
+Type = WATER
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Biting
+EffectChance = 40
+Description = The user snaps like a fish at the target. This has a 40% chance to make it flinch.
+Animation = FISHIOUSREND
 #-------------------------------
 [SOAK]
 Name = Soak
@@ -2983,6 +3042,17 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user eats its foe's dreams. It absorbs half the damage caused to heal its HP and doubles in power if the foe is asleep.
 #-------------------------------
+[ENERGYTRICK]
+Name = Energy Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user employs psychic power to switch its unmodified Sp. Atk with its unmodified Sp. Def.
+#-------------------------------
 [EXPANDINGFORCE]
 Name = Expanding Force
 Type = PSYCHIC
@@ -3167,6 +3237,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user employs its psychic power to switch changes to its Attack and Sp. Atk with the target.
+#-------------------------------
+[POWERTRICK]
+Name = Power Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user employs psychic power to switch its unmodified Attack with its unmodified Defense.
+Animation = CALMMIND
 #-------------------------------
 [PSYCHICTERRAIN]
 Name = Psychic Terrain

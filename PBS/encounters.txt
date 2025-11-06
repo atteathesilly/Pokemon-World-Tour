@@ -85,6 +85,10 @@ Puddle,20,20
 Special,20
     1,SKITTY,15
 #-------------------------------
+[016] # LuxTech Center
+Special,20
+    1,MBUNEARY,15
+#-------------------------------
 [019] # Reading Ribombee Café
 Special,20
     1,MILCERY,15
@@ -101,10 +105,8 @@ LandSparse,20,60
 Land,20,20
     33,RUFFLET,18,20
     33,TYROGUE,18,20
-    16,GOTHITA,18,20
-    16,PAWNIARD,18,20
-Special,20
-    1,TENTACOOL,10
+    17,GOTHITA,18,20
+    17,PAWNIARD,18,20
 #-------------------------------
 [026] # Bluepoint Grotto
 DarkCave,20,15
@@ -126,8 +128,8 @@ Special,40
 Land,20,15
     33,RALTS,8,10
     33,ROCKRUFF,8,10
-    16,HOPPIP,8,10
-    16,MAREEP,8,10
+    17,HOPPIP,8,10
+    17,MAREEP,8,10
 LandTall,20,15
     40,MWURMPLE,8,10
     20,STARLY,8,10
@@ -167,6 +169,7 @@ DarkCave,20,20
 #-------------------------------
 [037] # Svait
 Land,20,20
+    25,CRYSCROSS,23,25
     25,MHOOTHOOT,23,25
     25,MIENFOO,23,25
     25,MISDREAVUS,23,25
@@ -175,10 +178,10 @@ Land,20,20
 [038] # Bluepoint Beach
 Land,20,15
     33,EXEGGCUTE,9,11
+    17,HOUNDOUR,9,11
+    17,SANDYGAST,9,11
+    17,WINGULL,9,11
     16,GRUBBIN,9,11
-    16,HOUNDOUR,9,11
-    16,SANDYGAST,9,11
-    16,WINGULL,9,11
 Puddle,20,15
     33,CLAMPERL,9,11
     17,HORSEA,9,11
@@ -225,10 +228,10 @@ Land,20,20
     20,ZORUA,22,24
 Mud,40,20
     33,SLOWPOKE,22,24
+    17,PANPOUR,22,24
+    17,STUFFUL,22,24
+    17,WOOPER,22,24
     16,EKANS,22,24
-    16,PANPOUR,22,24
-    16,STUFFUL,22,24
-    16,WOOPER,22,24
 LandTall,20,20
     40,ODDISH,22,24
     20,PANSAGE,22,24
@@ -251,8 +254,6 @@ Puddle,20,20
     20,BARBOACH,19,21
     20,SURSKIT,19,21
     20,TYMPOLE,19,21
-Special,20
-    1,REMORAID,15
 #-------------------------------
 [056] # Novo Town
 FloweryGrass,20,20
@@ -280,8 +281,6 @@ Puddle,20,20
     20,MSKRELP,13,15
     10,SHELLOS,13,15
     10,SHELLOS_1,13,15
-Special,20
-    1,CARVANHA,15
 #-------------------------------
 [060] # Shipping Lane
 Land,20,20
@@ -313,11 +312,12 @@ LandSparse,20,15
 #-------------------------------
 [071] # Room 103
 Special,20
-    1,MAREANIE,15
+    1,EEVEE,15
 #-------------------------------
 [081] # East Tunnel
 Puddle,20,20
     20,CARVANHA,18,20
+    20,MANTYKE,18,20
     20,MAREANIE,18,20
     20,REMORAID,18,20
     20,TENTACOOL,18,20
@@ -413,9 +413,9 @@ Special,20
 [129] # Barren Crater
 Land,20,20
     33,NINCADA,24,26
-    16,BONSLY,24,26
-    16,MTANGELA,24,26
-    16,SPOINK,24,26
+    17,BONSLY,24,26
+    17,MTANGELA,24,26
+    17,SPOINK,24,26
     16,VULLABY,24,26
 Special,20
     1,LILLIPUP,15
@@ -688,10 +688,10 @@ Land,20,20
     20,YUNGOOS,25,27
 LandTall,20,20
     33,WURMPLE,25,27
+    17,PATRAT,25,27
+    17,SKWOVET,25,27
+    17,ZIGZAGOON,25,27
     16,ARATTATA,25,27
-    16,PATRAT,25,27
-    16,SKWOVET,25,27
-    16,ZIGZAGOON,25,27
 LandSparse,20,20
     20,GPONYTA,25,27
     20,GYAMASK,25,27
@@ -700,21 +700,21 @@ LandSparse,20,20
     20,VULPIX,25,27
 Puddle,20,20
     33,GSLOWPOKE,25,27
+    17,BELLSPROUT,25,27
+    17,HOOTHOOT,25,27
+    17,TANGELA,25,27
     16,AGRIMER,25,27
-    16,BELLSPROUT,25,27
-    16,HOOTHOOT,25,27
-    16,TANGELA,25,27
 FloweryGrass,20,20
     33,PETILIL,25,27
+    17,FOMANTIS,25,27
+    17,GFARFETCHD,25,27
+    17,SENTRET,25,27
     16,FARFETCHD,25,27
-    16,FOMANTIS,25,27
-    16,GFARFETCHD,25,27
-    16,SENTRET,25,27
 DarkCave,20,20
     33,BURMY,25,27
-    16,ADIGLETT,25,27
-    16,AGEODUDE,25,27
-    16,GMEOWTH,25,27
+    17,ADIGLETT,25,27
+    17,AGEODUDE,25,27
+    17,GMEOWTH,25,27
     16,ROGGENROLA,25,27
 Mud,40,40
     20,CARNIVINE,34,36
@@ -726,11 +726,11 @@ Mud,40,40
 #-------------------------------
 [214] # Team Chasm HQ
 DarkCave,20,20
-    20,CARBINK,18,20
-    20,DURALUDON,18,20
-    20,ELGYEM,18,20
-    20,GOLETT,18,20
-    20,MUNNA,18,20
+    33,DURALUDON,18,20
+    17,ELGYEM,18,20
+    17,GOLETT,18,20
+    17,MUNNA,18,20
+    16,CARBINK,18,20
 #-------------------------------
 [215] # Tempest Realm
 Cloud,20,60
@@ -763,8 +763,8 @@ Special,60
 [217] # Sweetrock Harbor
 Land,20,60
     40,APPLIN,49,51
-    20,COMFEY,49,51
     20,FALINKS,49,51
+    20,MBUNEARY,49,51
     20,MILCERY,49,51
 #-------------------------------
 [218] # Abyssal Cavern

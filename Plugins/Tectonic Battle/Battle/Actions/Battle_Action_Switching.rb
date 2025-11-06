@@ -452,7 +452,8 @@ class PokeBattle_Battle
         unless battler.immuneToHazards?(aiCheck)
             # Stealth Rock
             if battler.pbOwnSide.effectActive?(:StealthRock) && battler.takesIndirectDamage?(false,aiCheck)
-                getTypedHazardHPRatio = getTypedHazardHPRatio(:ROCK, battler)
+                stealthRocksRation = 1.0 / 10.0
+                getTypedHazardHPRatio = getTypedHazardHPRatio(:ROCK, battler, ratio: stealthRocksRation)
                 if getTypedHazardHPRatio > 0
                     # Rock Climber
                     if battler.shouldAbilityApply?(:ROCKCLIMBER,aiCheck)
@@ -571,8 +572,8 @@ class PokeBattle_Battle
                         otherHazardScore += 15
                         echoln("\t[HAZARD SCORING] #{battler.pbThis} will absorb a status spikes (+15)")
                     else
-                        battler.pbOwnSide.disableEffect(effect)
-                        pbDisplay(_INTL("{1} absorbed the {2}!", battler.pbThis, data.name))
+                        pbDisplay(_INTL("{1} absorbed a layer of the {2}!", battler.pbThis, data.name))
+                        battler.pbOwnSide.decrementEffect(effect)
                     end
                 elsif   battler.pbCanInflictStatus?(status, nil, false) &&
                         !battler.immuneToHazards?(aiCheck) &&

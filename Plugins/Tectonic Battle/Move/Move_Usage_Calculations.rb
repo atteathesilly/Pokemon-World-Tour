@@ -84,7 +84,7 @@ class PokeBattle_Move
                 immunityPierced = true
                 ret /= 2
             elsif user.targetTypeModImmune?(user, target, self, ret, !uiOnlyCheck)
-                ret = 4.0 # Weird effectiveness stuff present here
+                ret = 0.5
                 immunityPierced = true
             end
         end
@@ -176,10 +176,12 @@ class PokeBattle_Move
         target.eachActiveItem do |item|
             BattleHandlers.triggerAccuracyCalcTargetItem(item, modifiers, user, target, self, typeToUse)
         end
+        
         # Other effects, inc. ones that set accuracy_multiplier or evasion_step to
         # specific values
         modifiers[:accuracy_multiplier] *= 2.0 if @battle.gravityIntensified?
         modifiers[:accuracy_multiplier] *= 1.5 if user.effectActive?(:Spotting)
+        modifiers[:accuracy_multiplier] *= 1.5 if user.pbOwnSide.effectActive?(:WinterHunts)
 
         if aiCheck
             modifiers[:evasion_step] = 0 if @function == "IgnoreTargetDefSpDefEvaStatStages" # Chip Away
@@ -307,10 +309,10 @@ class PokeBattle_Move
             return true
         end
 
-        # Diamond Field
-        if target.pbOwnSide.effectActive?(:DiamondField) && !(user && user.hasActiveAbility?(:INFILTRATOR))
+        # Sanctuary
+        if target.pbOwnSide.effectActive?(:Sanctuary) && !(user && user.hasActiveAbility?(:INFILTRATOR))
             unless checkingForAI
-                battle.pbDisplay(_INTL("The sheen around {1} prevented the hit from being critical!", target.pbTeam(true)))
+                battle.pbDisplay(_INTL("The sanctuary around {1} prevented the hit from being critical!", target.pbTeam(true)))
             end
             return true
         end

@@ -782,10 +782,10 @@ def predictedEOTDamage(battle,battler)
     damage += battle.applyHailDamage(battler, aiCheck: true) if battle.icy?
 
     # Status DOTs
-    damage += battle.damageFromDOTStatus(battler, :POISON, true) if battler.poisoned?
-    damage += battle.damageFromDOTStatus(battler, :LEECHED, true) if battler.leeched?
-    damage += battle.damageFromDOTStatus(battler, :BURN, true) if battler.burned?
-    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, true) if battler.frostbitten?
+    damage += battle.damageFromDOTStatus(battler, :POISON, aiCheck: true) if battler.poisoned?
+    damage += battle.damageFromDOTStatus(battler, :LEECHED, aiCheck: true) if battler.leeched?
+    damage += battle.damageFromDOTStatus(battler, :BURN, aiCheck: true) if battler.burned?
+    damage += battle.damageFromDOTStatus(battler, :FROSTBITE, aiCheck: true) if battler.frostbitten?
 
     # Check for aggravate
     aggravate = battle.pbCheckOpposingAbility(:AGGRAVATE, battler.index)
@@ -949,8 +949,8 @@ def getLightScreenEffectScore(user, baseDuration = nil, move = nil)
     return getScreenEffectScore(user, :LightScreen, baseDuration, move)
 end
 
-def getDiamondFieldEffectScore(user, baseDuration = nil, move = nil)
-    return getScreenEffectScore(user, :DiamondField, baseDuration, move)
+def getSanctuaryEffectScore(user, baseDuration = nil, move = nil)
+    return getScreenEffectScore(user, :Sanctuary, baseDuration, move)
 end
 
 def getScreenEffectScore(user, effect, baseDuration = nil, move = nil)
@@ -962,7 +962,7 @@ def getScreenEffectScore(user, effect, baseDuration = nil, move = nil)
             next if effect == :Reflect && !b.hasSpecialAttack?
             next if effect == :LightScreen && !b.hasSpecialAttack?
             next if effect == :AuroraVeil && !b.hasDamagingAttack?
-            next if effect == :DiamondField && !b.hasDamagingAttack?
+            next if effect == :Sanctuary && !b.hasDamagingAttack?
 
             score += 60 if !move || user.battle.battleAI.userMovesFirst?(move, user, b)
         end

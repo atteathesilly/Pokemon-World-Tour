@@ -3774,6 +3774,12 @@ FrontSprite = 3,31
 ShadowX = 2
 ShadowSize = 3
 #-------------------------------
+[MBUNEARY]
+BackSprite = 0,23
+FrontSprite = 2,20
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
 [MCARNIVINE]
 BackSprite = 0,19
 FrontSprite = 2,5
@@ -3921,6 +3927,12 @@ ShadowSize = 3
 [MGOLDEEN]
 BackSprite = 0,20
 FrontSprite = 6,22
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MHAEROBIC]
+BackSprite = 0,13
+FrontSprite = -4,14
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -4074,6 +4086,12 @@ FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[MLOPUNNY]
+BackSprite = 0,17
+FrontSprite = -3,23
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [MMANDIBUZZ]
 BackSprite = 0,2
 FrontSprite = -11,8
@@ -4121,6 +4139,18 @@ BackSprite = 0,17
 FrontSprite = 0,8
 ShadowX = 0
 ShadowSize = 3
+#-------------------------------
+[MOMANYTE]
+BackSprite = 0,31
+FrontSprite = 0,27
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MOMASTAR]
+BackSprite = 0,23
+FrontSprite = 0,19
+ShadowX = 0
+ShadowSize = 2
 #-------------------------------
 [MONFERNO]
 BackSprite = 0,21

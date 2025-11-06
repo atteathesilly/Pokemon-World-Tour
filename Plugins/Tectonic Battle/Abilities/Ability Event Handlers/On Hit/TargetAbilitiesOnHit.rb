@@ -54,7 +54,7 @@ BattleHandlers::TargetAbilityOnHit.add(:GRAVITYWELL,
         else
             battle.pbShowAbilitySplash(target, ability)
             battle.pbAnimation(:GRAVITY, target, nil, 0)
-            battle.field.applyEffect(:Gravity, applyEffectDurationModifiers(4, battler))
+            battle.field.applyEffect(:Gravity, applyEffectDurationModifiers(4, target))
             battle.pbHideAbilitySplash(target)
         end
     }
@@ -339,7 +339,7 @@ BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
         next if user.effectActive?(:Constricted)
         next if target.effectActive?(:SwitchedIn)
         battle.pbShowAbilitySplash(target, ability)
-        user.applyEffect(:Constricted, applyEffectDurationModifiers(3, battler))
+        user.applyEffect(:Constricted, applyEffectDurationModifiers(3, target))
         user.pointAt(:TrappingUser, target)
         battle.pbHideAbilitySplash(target)
   }
@@ -397,7 +397,7 @@ BattleHandlers::TargetAbilityOnHit.add(:LOUDSLEEPER,
 BattleHandlers::TargetAbilityOnHit.add(:STATIC,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :NUMB
+        next if user.numbed?
         if aiCheck
             if user.effectActive?(:PhysNumbWarned) || aiNumHits > 1
                 next -getNumbEffectScore(target, user)
@@ -419,7 +419,7 @@ BattleHandlers::TargetAbilityOnHit.add(:STATIC,
 BattleHandlers::TargetAbilityOnHit.add(:PETRIFYING,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :NUMB
+        next if user.numbed?
         if aiCheck
             if user.effectActive?(:SpecNumbWarned) || aiNumHits > 1
                 next -getNumbEffectScore(target, user)
@@ -444,7 +444,7 @@ BattleHandlers::TargetAbilityOnHit.add(:PETRIFYING,
 BattleHandlers::TargetAbilityOnHit.add(:POISONPOINT,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :POISON
+        next if user.poisoned?
         if aiCheck
             if user.effectActive?(:PhysPoisonWarned) || aiNumHits > 1
                 next -getPoisonEffectScore(target, user)
@@ -466,7 +466,7 @@ BattleHandlers::TargetAbilityOnHit.add(:POISONPOINT,
 BattleHandlers::TargetAbilityOnHit.add(:POISONPUNISH,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :POISON
+        next if user.poisoned?
         if aiCheck
             if user.effectActive?(:SpecPoisonWarned) || aiNumHits > 1
                 next -getPoisonEffectScore(target, user)
@@ -491,7 +491,7 @@ BattleHandlers::TargetAbilityOnHit.add(:POISONPUNISH,
 BattleHandlers::TargetAbilityOnHit.add(:FLAMEBODY,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :BURN
+        next if user.burned?
         if aiCheck
             if user.effectActive?(:PhysBurnWarned) || aiNumHits > 1
                 next -getBurnEffectScore(target, user)
@@ -513,7 +513,7 @@ BattleHandlers::TargetAbilityOnHit.add(:FLAMEBODY,
 BattleHandlers::TargetAbilityOnHit.add(:FIERYSPIRIT,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :BURN
+        next if user.burned?
         if aiCheck
             if user.effectActive?(:SpecBurnWarned) || aiNumHits > 1
                 next -getBurnEffectScore(target, user)
@@ -538,7 +538,7 @@ BattleHandlers::TargetAbilityOnHit.add(:FIERYSPIRIT,
 BattleHandlers::TargetAbilityOnHit.add(:CHILLEDBODY,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :FROSTBITE
+        next if user.frostbitten?
         if aiCheck
             if user.effectActive?(:PhysFrostWarned) || aiNumHits > 1
                 next -getFrostbiteEffectScore(target, user)
@@ -560,7 +560,7 @@ BattleHandlers::TargetAbilityOnHit.add(:CHILLEDBODY,
 BattleHandlers::TargetAbilityOnHit.add(:SUDDENCHILL,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :FROSTBITE
+        next if user.frostbitten?
         if aiCheck
             if user.effectActive?(:SpecFrostWarned) || aiNumHits > 1
                 next -getFrostbiteEffectScore(target, user)
@@ -585,7 +585,7 @@ BattleHandlers::TargetAbilityOnHit.add(:SUDDENCHILL,
 BattleHandlers::TargetAbilityOnHit.add(:DISORIENT,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :DIZZY
+        next if user.dizzy?
         if aiCheck
             if user.effectActive?(:PhysDizzyWarned) || aiNumHits > 1
                 next -getDizzyEffectScore(target, user)
@@ -607,7 +607,7 @@ BattleHandlers::TargetAbilityOnHit.add(:DISORIENT,
 BattleHandlers::TargetAbilityOnHit.add(:BEGUILING,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :DIZZY
+        next if user.dizzy?
         if aiCheck
             if user.effectActive?(:SpecDizzyWarned) || aiNumHits > 1
                 next -getDizzyEffectScore(target, user)
@@ -632,7 +632,7 @@ BattleHandlers::TargetAbilityOnHit.add(:BEGUILING,
 BattleHandlers::TargetAbilityOnHit.add(:KELPLINK,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :LEECHED
+        next if user.leeched?
         if aiCheck
             if user.effectActive?(:PhysLeechWarned) || aiNumHits > 1
                 next -getLeechEffectScore(target, user)
@@ -654,7 +654,7 @@ BattleHandlers::TargetAbilityOnHit.add(:KELPLINK,
 BattleHandlers::TargetAbilityOnHit.add(:PUNISHER,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :LEECHED
+        next if user.leeched?
         if aiCheck
             if user.effectActive?(:SpecLeechWarned) || aiNumHits > 1
                 next -getLeechEffectScore(target, user)
@@ -679,7 +679,7 @@ BattleHandlers::TargetAbilityOnHit.add(:PUNISHER,
 BattleHandlers::TargetAbilityOnHit.add(:SOPPING,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
-        next if user.status == :WATERLOG
+        next if user.waterlogged?
         if aiCheck
             if user.effectActive?(:PhysWaterlogWarned) || aiNumHits > 1
                 next -getWaterlogEffectScore(target, user)
@@ -701,7 +701,7 @@ BattleHandlers::TargetAbilityOnHit.add(:SOPPING,
 BattleHandlers::TargetAbilityOnHit.add(:BACKWASH,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
-        next if user.status == :WATERLOG
+        next if user.waterlogged?
         if aiCheck
             if user.effectActive?(:SpecWaterlogWarned) || aiNumHits > 1
                 next -getWaterlogEffectScore(target, user)
@@ -768,6 +768,125 @@ BattleHandlers::TargetAbilityOnHit.add(:PERISHBODY,
         target.applyEffect(:PerishSong, 3)
         user.applyEffect(:PerishSong, 3)
         battle.pbHideAbilitySplash(target)
+    }
+)
+
+#########################################
+# Force of Nature Therian abilities
+#########################################
+MENDING_FEATHER_CHARM_HEALING_FRACTION = 1.0 / 8.0
+BattleHandlers::TargetAbilityOnHit.add(:MENDINGFEATHERCHARM,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        if aiCheck
+            next -30 * aiNumHits
+        end
+        target.showMyAbilitySplash(ability)
+        target.pbOwnSide.incrementEffect(:FeathersDropped)
+        if target.pbOwnSide.effectAtMax?(:FeathersDropped)
+            battle.pbAnimation(:REFRESH, target, nil)
+            target.pbOwnSide.disableEffect(:FeathersDropped)
+
+            # Main effect
+            battle.pbAnimation(:AROMATHERAPY, target, nil)
+            battle.pbDisplay(_INTL("{1} heals its party members!", target.pbThis))
+            party = battle.pbParty(target.index)
+            previousHealthValues = []
+		    previousStatusIndices = []
+            party.each_with_index do |partyMember, i|
+                previousHealthValues.push(partyMember.hp)
+			    previousStatusIndices.push(partyMember.getStatusImageIndex)
+                next unless partyMember.able?
+                battler = battle.pbFindBattler(i, target)
+                if battler
+                    battler.applyFractionalHealing(MENDING_FEATHER_CHARM_HEALING_FRACTION, anim: false, anyAnim: false, showMessage: false)
+                else
+                    partyMember.healByFraction(MENDING_FEATHER_CHARM_HEALING_FRACTION)
+                end
+            end
+            showPartyHealing(party,previousHealthValues,previousStatusIndices)
+
+            # Attacker effect
+            battle.pbAnimation(:FEATHERDANCE, target, [user])
+            user.applyEffect(:FeatherForceSwitch)
+        end
+        target.hideMyAbilitySplash
+    }
+)
+
+BattleHandlers::TargetAbilityOnHit.add(:RAGINGSCALECHARM,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        if aiCheck
+            next -30 * aiNumHits
+        end
+        target.showMyAbilitySplash(ability)
+        target.pbOwnSide.incrementEffect(:ScalesDropped)
+        if target.pbOwnSide.effectAtMax?(:ScalesDropped)
+            battle.pbAnimation(:REFRESH, target, nil)
+            target.pbOwnSide.disableEffect(:ScalesDropped)
+
+            # Main effect
+            unless user.pbOwnSide.effectActive?(:LiveWire)
+                battle.pbAnimation(:LIVEWIRE, target, nil)
+                user.pbOwnSide.applyEffect(:LiveWire)
+            end
+
+            # Attacker effect
+            battle.pbAnimation(:SWAGGER, target, [user])
+            user.pbConfusionDamage(_INTL("{1} hurt itself in an extreme rage!",user.pbThis), false, selfHitBasePower(user.level)*2)
+        end
+        target.hideMyAbilitySplash
+    }
+)
+
+BattleHandlers::TargetAbilityOnHit.add(:RENDINGFANGCHARM,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        if aiCheck
+            next -30 * aiNumHits
+        end
+        target.showMyAbilitySplash(ability)
+        target.pbOwnSide.incrementEffect(:FangsDropped)
+        if target.pbOwnSide.effectAtMax?(:FangsDropped)
+            battle.pbAnimation(:REFRESH, target, nil)
+            target.pbOwnSide.disableEffect(:FangsDropped)
+
+            # Main effect
+            unless user.pbOwnSide.effectAtMax?(:Spikes)
+                battle.pbAnimation(:SPIKES, target, nil)
+                user.pbOwnSide.incrementEffect(:Spikes,2)
+            end
+
+            # Attacker effect
+            battle.pbAnimation(:ASTONISH, target, [user])
+            user.applyEffect(:FlinchNextTurn)
+        end
+        target.hideMyAbilitySplash
+    }
+)
+
+BattleHandlers::TargetAbilityOnHit.add(:CALMINGSCUTECHARM,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        if aiCheck
+            next -30 * aiNumHits
+        end
+        target.showMyAbilitySplash(ability)
+        target.pbOwnSide.incrementEffect(:ScutesDropped)
+        if target.pbOwnSide.effectAtMax?(:ScutesDropped)
+            battle.pbAnimation(:REFRESH, target, nil)
+            target.pbOwnSide.disableEffect(:ScutesDropped)
+
+            # Main effect
+            unless target.pbOwnSide.effectActive?(:Sanctuary)
+                battle.pbAnimation(:SANCTUARY, target, nil)
+                target.pbOwnSide.applyEffect(:Sanctuary, target.getScreenDuration)
+            end
+
+            # Attacker effect
+            if user.canSleep?(target, true)
+                battle.pbAnimation(:YAWN, target, [user])
+                user.applyEffect(:Yawn, 2)
+            end
+        end
+        target.hideMyAbilitySplash
     }
 )
 
@@ -901,7 +1020,9 @@ BattleHandlers::TargetAbilityOnHit.add(:COREPROVENANCE,
         if aiCheck
             next (target.aboveHalfHealth? ? -10 : 0) * aiNumHits
         end
+        target.showMyAbilitySplash(ability)
         target.pbOwnSide.incrementEffect(:ErodedRock)
+        target.hideMyAbilitySplash
     }
 )
 
@@ -923,7 +1044,7 @@ BattleHandlers::TargetAbilityOnHit.add(:QUILLERINSTINCT,
 BattleHandlers::TargetAbilityOnHit.add(:MULTISCALE,
     proc { |ability, user, target, move, _battle, aiCheck, aiNumHits|
         next unless aiCheck
-        next unless target.hp == target.totalhp
+        next unless target.fullHealth?
         next 20 # Value for breaking multiscale
     }
 )
@@ -934,7 +1055,8 @@ BattleHandlers::TargetAbilityOnHit.copy(:MULTISCALE,:DOMINEERING,:SHADOWSHIELD)
 BattleHandlers::TargetAbilityOnHit.add(:COLORCOLLECTOR,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next if target.fainted?
-
+        next -10 if aiCheck
+        
         type = move.calcType
 
         next if target.pbHasType?(type)

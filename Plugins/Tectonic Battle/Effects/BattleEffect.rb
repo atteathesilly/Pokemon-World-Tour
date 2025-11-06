@@ -62,7 +62,7 @@ module GameData
         # and that battler leaves the battlefield, disable the effects in the array stored in disable_effecs_on_exit
         # Only used for :Position type effects
         attr_reader :disable_effects_on_other_exit
-        attr_reader :deep_teeth # However, don't do the above if the user has the ability Deep Teeth
+        attr_reader :hand_off # However, don't do the above if the user has the ability Hand Off
 
         attr_reader :protection_info
 
@@ -93,8 +93,8 @@ module GameData
         end
 
         # The effects that track the applyer of trapping
-        def deep_teeth?
-            return @deep_teeth
+        def hand_off?
+            return @hand_off
         end
 
         # Focus Energy, etc.
@@ -161,6 +161,10 @@ module GameData
             return !@eor_proc.nil?
         end
 
+        def has_sor_proc?
+            return !@sor_proc.nil?
+        end
+
         def has_remain_proc?
             return !@remain_proc.nil?
         end
@@ -223,8 +227,11 @@ module GameData
             # Called when the effect is applied by an action
             @apply_proc             = hash[:apply_proc]
 
-            # Called every round if active.
+            # Called at the end of every round if active.
             @eor_proc               = hash[:eor_proc]
+
+            # Called at the start of every round if active.
+            @sor_proc               = hash[:sor_proc]
 
             # Called when the effect is disabled
             @disable_proc			= hash[:disable_proc]
@@ -258,7 +265,7 @@ module GameData
             @others_lose_track = hash[:others_lose_track] || false
 
             @disable_effects_on_other_exit = hash[:disable_effects_on_other_exit] || []
-            @deep_teeth     = hash[:deep_teeth] || false
+            @hand_off     = hash[:hand_off] || false
             @sub_effects	= hash[:sub_effects] || []
 
             @protection_effect	= hash[:protection_effect] || false
@@ -509,6 +516,31 @@ module GameData
         def eor_field(battle)
             value = battle.field.effects[@id]
             @eor_proc.call(battle, value) if @eor_proc
+        end
+
+        ### Methods dealing with effects at the start of each round
+        def sor_battler(battle, battler)
+            value = battler.effects[@id]
+            @sor_proc.call(battle, battler, value) if @sor_proc
+        end
+
+        def sor_position(battle, index)
+            position = battle.positions[index]
+            battler = battle.battlers[index]
+            return if battler.nil? || battler.fainted?
+            value = position.effects[@id]
+            @sor_proc.call(battle, index, position, battler, value) if @sor_proc
+        end
+
+        def sor_side(battle, side)
+            teamName = battle.battlers[side.index].pbTeam
+            value = side.effects[@id]
+            @sor_proc.call(battle, side, teamName, value) if @sor_proc
+        end
+
+        def sor_field(battle)
+            value = battle.field.effects[@id]
+            @sor_proc.call(battle, value) if @sor_proc
         end
 
         ### Methods dealing with the effect being incremented (call afterwards)

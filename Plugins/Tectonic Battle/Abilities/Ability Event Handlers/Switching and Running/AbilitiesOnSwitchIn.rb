@@ -401,6 +401,24 @@ BattleHandlers::AbilityOnSwitchIn.add(:LIGHTTRICK,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFDEATH,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with death!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFLIFE,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} saturates the field with life!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
@@ -509,17 +527,19 @@ BattleHandlers::AbilityOnSwitchIn.add(:WILLAURA,
 ##########################################
 # Totem abilities
 ##########################################
+TOTEM_EFFECT_DEFAULT_DURATION = 6
+
 BattleHandlers::AbilityOnSwitchIn.add(:STORMTOTEM,
   proc { |ability, battler, battle, aiCheck|
       if aiCheck
-          scoringDuration = 6
+          scoringDuration = TOTEM_EFFECT_DEFAULT_DURATION
           if battler.pbOwnSide.effectActive?(:TurbulentSky)
               scoringDuration -= battler.pbOwnSide.countEffect(:TurbulentSky)
           end
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:TurbulentSky, applyEffectDurationModifiers(6, battler))
+          battler.pbOwnSide.applyEffect(:TurbulentSky, applyEffectDurationModifiers(TOTEM_EFFECT_DEFAULT_DURATION, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -528,14 +548,14 @@ BattleHandlers::AbilityOnSwitchIn.add(:STORMTOTEM,
 BattleHandlers::AbilityOnSwitchIn.add(:FOGTOTEM,
   proc { |ability, battler, battle, aiCheck|
       if aiCheck
-          scoringDuration = 6
+          scoringDuration = TOTEM_EFFECT_DEFAULT_DURATION
           if battler.pbOwnSide.effectActive?(:MisdirectingFog)
               scoringDuration -= battler.pbOwnSide.countEffect(:MisdirectingFog)
           end
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:MisdirectingFog, applyEffectDurationModifiers(6, battler))
+          battler.pbOwnSide.applyEffect(:MisdirectingFog, applyEffectDurationModifiers(TOTEM_EFFECT_DEFAULT_DURATION, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -544,14 +564,14 @@ BattleHandlers::AbilityOnSwitchIn.add(:FOGTOTEM,
 BattleHandlers::AbilityOnSwitchIn.add(:WILDTOTEM,
   proc { |ability, battler, battle, aiCheck|
       if aiCheck
-          scoringDuration = 6
+          scoringDuration = TOTEM_EFFECT_DEFAULT_DURATION
           if battler.pbOwnSide.effectActive?(:PrimalForest)
               scoringDuration -= battler.pbOwnSide.countEffect(:PrimalForest)
           end
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:PrimalForest, applyEffectDurationModifiers(6, battler))
+          battler.pbOwnSide.applyEffect(:PrimalForest, applyEffectDurationModifiers(TOTEM_EFFECT_DEFAULT_DURATION, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -560,14 +580,83 @@ BattleHandlers::AbilityOnSwitchIn.add(:WILDTOTEM,
 BattleHandlers::AbilityOnSwitchIn.add(:FLUTTERTOTEM,
   proc { |ability, battler, battle, aiCheck|
       if aiCheck
-          scoringDuration = 6
+          scoringDuration = TOTEM_EFFECT_DEFAULT_DURATION
           if battler.pbOwnSide.effectActive?(:CruelCocoon)
               scoringDuration -= battler.pbOwnSide.countEffect(:CruelCocoon)
           end
           next 20 * scoringDuration
       else
           battle.pbShowAbilitySplash(battler, ability)
-          battler.pbOwnSide.applyEffect(:CruelCocoon, applyEffectDurationModifiers(6, battler))
+          battler.pbOwnSide.applyEffect(:CruelCocoon, applyEffectDurationModifiers(TOTEM_EFFECT_DEFAULT_DURATION, battler))
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
+##########################################
+# Genie Wish abilities
+##########################################
+GENIE_WISH_EFFECT_DEFAULT_DURATION = 4
+
+BattleHandlers::AbilityOnSwitchIn.add(:WISHOFSPRING,
+  proc { |ability, battler, battle, aiCheck|
+      if aiCheck
+          scoringDuration = GENIE_WISH_EFFECT_DEFAULT_DURATION
+          if battler.pbOwnSide.effectActive?(:SpringPlantings)
+              scoringDuration -= battler.pbOwnSide.countEffect(:SpringPlantings)
+          end
+          next 20 * scoringDuration
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          battler.pbOwnSide.applyEffect(:SpringPlantings, applyEffectDurationModifiers(GENIE_WISH_EFFECT_DEFAULT_DURATION, battler))
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:WISHOFSUMMER,
+  proc { |ability, battler, battle, aiCheck|
+      if aiCheck
+          scoringDuration = GENIE_WISH_EFFECT_DEFAULT_DURATION
+          if battler.pbOwnSide.effectActive?(:SummerFestivals)
+              scoringDuration -= battler.pbOwnSide.countEffect(:SummerFestivals)
+          end
+          next 20 * scoringDuration
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          battler.pbOwnSide.applyEffect(:SummerFestivals, applyEffectDurationModifiers(GENIE_WISH_EFFECT_DEFAULT_DURATION, battler))
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:WISHOFAUTUMN,
+  proc { |ability, battler, battle, aiCheck|
+      if aiCheck
+          scoringDuration = GENIE_WISH_EFFECT_DEFAULT_DURATION
+          if battler.pbOwnSide.effectActive?(:AutumnHarvests)
+              scoringDuration -= battler.pbOwnSide.countEffect(:AutumnHarvests)
+          end
+          next 20 * scoringDuration
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          battler.pbOwnSide.applyEffect(:AutumnHarvests, applyEffectDurationModifiers(GENIE_WISH_EFFECT_DEFAULT_DURATION, battler))
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:WISHOFWINTER,
+  proc { |ability, battler, battle, aiCheck|
+      if aiCheck
+          scoringDuration = GENIE_WISH_EFFECT_DEFAULT_DURATION
+          if battler.pbOwnSide.effectActive?(:WinterHunts)
+              scoringDuration -= battler.pbOwnSide.countEffect(:WinterHunts)
+          end
+          next 20 * scoringDuration
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          battler.pbOwnSide.applyEffect(:WinterHunts, applyEffectDurationModifiers(GENIE_WISH_EFFECT_DEFAULT_DURATION, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -648,7 +737,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:FITTOSURVIVE,
       else
           battle.pbShowAbilitySplash(battler, ability)
           battle.pbAnimation(:NATURALPROTECTION, battler, nil, 0)
-          battler.pbOwnSide.applyEffect(:NaturalProtection, applyEffectDurationModifiers(4, battler))
+          battler.pbOwnSide.applyEffect(:NaturalProtection, applyEffectDurationModifiers(8, battler))
           battle.pbHideAbilitySplash(battler)
       end
   }
@@ -1130,7 +1219,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:HOLIDAYCHEER,
   proc { |ability, battler, battle, aiCheck|
       anyHealing = false
       battle.eachSameSideBattler(battler.index) do |b|
-          next 0 if b.fullHealth?
+          next 0 if b.healthCapped?
           anyHealing = true
       end
       next 0 unless anyHealing
