@@ -46,13 +46,13 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Condensate,
-    :real_name => "Condensate",
+    :id => :ColdSnap,
+    :real_name => "Cold Snap",
     :resets_battlers_eot => true,
     :resets_battlers_sot => true,
     :apply_proc => proc do |battle, battler, _value|
-        battle.pbCommonAnimation("Shiver", battler)
-        battle.pbDisplay(_INTL("{1} rapidly cooled the air!", battler.pbThis))
+        battle.pbCommonAnimation("Ice Burn charging", battler)
+        battle.pbDisplay(_INTL("Ancient cold crystallizes around {1}!", battler.pbThis))
     end,
 })
 
@@ -143,11 +143,137 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Warned,
+    :id => :PhysCurseWarned,
     :real_name => "Curse-Warned",
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, _value|
         battle.pbDisplay(_INTL("{1} was warned not to attack it again!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysNumbWarned,
+    :real_name => "Numb-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will numb.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecNumbWarned,
+    :real_name => "Numb-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will numb.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysPoisonWarned,
+    :real_name => "Poison-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will poison.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecPoisonWarned,
+    :real_name => "Poison-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will poison.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysBurnWarned,
+    :real_name => "Burn-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will burn.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecBurnWarned,
+    :real_name => "Burn-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will burn.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysFrostWarned,
+    :real_name => "Frost-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will frostbite.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecFrostWarned,
+    :real_name => "Frost-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will frostbite.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysDizzyWarned,
+    :real_name => "Dizzy-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will dizzy.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecDizzyWarned,
+    :real_name => "Dizzy-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will dizzy.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysLeechWarned,
+    :real_name => "Leech-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will leech.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecLeechWarned,
+    :real_name => "Leech-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will leech.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :PhysWaterlogWarned,
+    :real_name => "Waterlog-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next physical hit from {1} will waterlog.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SpecWaterlogWarned,
+    :real_name => "Waterlog-Warned",
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The next special hit from {1} will waterlog.", battler.pbThis))
     end,
 })
 
@@ -165,8 +291,9 @@ GameData::BattleEffect.register_effect(:Battler, {
     :eor_proc => proc do |battle, battler, _value|
         if battler.takesIndirectDamage?
             battle.pbDisplay(_INTL("{1} is afflicted by the curse!", battler.pbThis))
+            pharaohsCurse = battler.effectActive?(:PharaohsCurse)
             curseDamage = battler.applyFractionalDamage(CURSE_DAMAGE_FRACTION, false)
-            if battler.effectActive?(:PharaohsCurse)
+            if pharaohsCurse
                 moneyEarned = curseDamage * 10
                 moneyEarned = (battle.moneyMult * moneyEarned).floor
                 battler.pbOpposingSide.incrementEffect(:PayDay, moneyEarned)
@@ -334,6 +461,18 @@ GameData::BattleEffect.register_effect(:Battler, {
     :real_name => "First Pledge",
     :type => :String,
     :info_displayed => false,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :FlinchNextTurn,
+    :real_name => "Flinch Next Turn",
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis(true)))
+    end,
+    :sor_proc => proc do |_battle, battler, _value|
+        battler.disableEffect(:FlinchNextTurn)
+        battler.applyEffect(:Flinch)
+    end,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
@@ -570,6 +709,21 @@ GameData::BattleEffect.register_effect(:Battler, {
         fraction = ingrainHealingFraction(battler)
         healMessage = _INTL("{1} absorbed nutrients with its roots!", battler.pbThis)
         battler.applyFractionalHealing(fraction, customMessage: healMessage)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Stuck,
+    :real_name => "Cannot Escape",
+    :type => :Integer,
+    :ticks_down => true,
+    :baton_passed => true,
+    :trapping => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} is stuck! It can't be moved!", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer stuck.", battler.pbThis))
     end,
 })
 
@@ -1027,11 +1181,6 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Rage,
-    :real_name => "Rage",
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
     :id => :Roost,
     :real_name => "Roosting",
     :resets_eor	=> true,
@@ -1203,6 +1352,28 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :TypeRestricted,
+    :real_name => "Type Restricted",
+    :type => :Type,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} can only use {2}-type moves!", battler.pbThis, _value.name.capitalize))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer being type-restricted.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :TypeRestrictedTurns,
+    :real_name => "Type Restricted Turns",
+    :type => :Integer,
+    :ticks_down => true,
+    :expire_proc => proc do |battle, battler|
+        battler.disableEffect(:TypeRestricted)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :Telekinesis,
     :real_name => "Telekinesis Turns",
     :type => :Integer,
@@ -1285,31 +1456,34 @@ GameData::BattleEffect.register_effect(:Battler, {
     :remain_proc => proc do |battle, battler, _value|
         moveName = battler.getMoveData(:TrappingMove).name
         case battler.effects[:TrappingMove]
-        when :BIND, :VINEBIND               then battle.pbCommonAnimation("Bind", battler)
         when :CLAMP, :SLAMSHUT              then battle.pbCommonAnimation("Clamp", battler)
         when :FIRESPIN, :CRIMSONSTORM       then battle.pbCommonAnimation("FireSpin", battler)
         when :MAGMASTORM                    then battle.pbCommonAnimation("MagmaStorm", battler)
-        when :SANDTOMB, :SANDVORTEX         then battle.pbCommonAnimation("SandTomb", battler)
+        when :PITFALL, :CRUSHINGCHASM       then battle.pbCommonAnimation("SandTomb", battler)
         when :INFESTATION, :TERRORSWARM     then battle.pbCommonAnimation("Infestation", battler)
-        when :SNAPTRAP                      then battle.pbCommonAnimation("SnapTrap", battler)
-        when :THUNDERCAGE                   then battle.pbCommonAnimation("ThunderCage", battler)
-        when :WHIRLPOOL, :MAELSTROM         then battle.pbCommonAnimation("Whirlpool", battler)
+        when :SURGESNARE, :THUNDERCAGE      then battle.pbCommonAnimation("ThunderCage", battler)
         when :BEARHUG	                    then battle.pbCommonAnimation("BearHug", battler)
-        when :MAGICHAND,:KINETICGRIP        then battle.pbCommonAnimation("CrushGrip", battler)
+        when :MAGEHAND,:KINETICGRIP         then battle.pbCommonAnimation("KineticGrip", battler)
         when :MAGNETIZE,:FARADAYCAGE        then battle.pbCommonAnimation("MagnetBomb", battler)
         else battle.pbCommonAnimation("Wrap", battler)
         end
         if battler.takesIndirectDamage?
             fraction = trappingDamageFraction(battler)
             battle.pbDisplay(_INTL("{1} is hurt by {2}!", battler.pbThis, moveName))
-            damage = battler.applyFractionalDamage(fraction)
 
+            bottomFeeders = []
             battler.eachOpposing do |opp|
                 next unless opp.hasActiveAbility?(:BOTTOMFEEDER)
                 next unless battler.pointsAt?(:TrappingUser, opp)
-                opp.showMyAbilitySplash(:BOTTOMFEEDER)
-                opp.pbRecoverHPFromDrain(damage, battler)
-                opp.hideMyAbilitySplash
+                bottomFeeders.push(opp)
+            end
+
+            damage = battler.applyFractionalDamage(fraction)
+
+            bottomFeeders.each do |feeder|
+                feeder.showMyAbilitySplash(:BOTTOMFEEDER)
+                feeder.pbRecoverHPFromDrain(damage, battler)
+                feeder.hideMyAbilitySplash
             end
         end
     end,
@@ -1328,7 +1502,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :real_name => "Trapped By",
     :type => :Position,
     :disable_effects_on_other_exit => [:Trapping, :Constricted],
-    :deep_teeth => true,
+    :hand_off => true,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
@@ -1534,7 +1708,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :type => :Position,
     :baton_passed => true,
     :disable_effects_on_other_exit => [:JawLock],
-    :deep_teeth => true,
+    :hand_off => true,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
@@ -1568,7 +1742,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :real_name => "Octolocked By",
     :type => :Position,
     :disable_effects_on_other_exit => [:Octolock],
-    :deep_teeth => true,
+    :hand_off => true,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
@@ -2292,4 +2466,82 @@ GameData::BattleEffect.register_effect(:Battler, {
     :id => :ColorCollector,
     :real_name => "Collecting Colors",
     :type => :Array,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id =>  :TanglingVines,
+    :real_name => "Tangling Vines",
+    :type => :Position,
+    :disable_effects_on_other_exit => [:TanglingVines],
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} is bound in {2}'s tangling vines!", battler.pbThis, battle.battlers[_value].pbThis))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer bound in tangling vines.", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :NoTimeSkip,
+    :real_name => "No Time Skip",
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :ActionStar,
+    :real_name => "Action Star",
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The spotlight will boost {1}'s next Normal-type attack!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :ReducingSyrup,
+    :real_name => "Reducing Syrup",
+    :type => :Integer,
+    :ticks_down => true,
+    :baton_passed => true,
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} was covered in a sticky syrup!", battler.pbThis))
+        battle.pbDisplay(_INTL("It'll last for {1} more turns!", value-1))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} got rid of the sticky syrup!", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The sticky syrup around {1} disappeared!", battler.pbThis(true)))
+    end,
+    :eor_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("The sticky syrup reduced {1}'s highest stat!", battler.pbThis(true)))
+        battler.pbLowerStatStep(battler.highestStat, 2)
+        battler.pbItemStatRestoreCheck
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Blindness,
+    :real_name => "Blinded",
+    :baton_passed => true,
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} is blinded!", battler.pbThis))
+        battle.pbDisplay(_INTL("It'll deal half as much damage on its next attack!"))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer blinded.", battler.pbThis))
+    end,
+    :stay_in_rating_proc => proc do |battle, battler, value, stay_in_rating|
+        stay_in_rating -= 10 if battler.hasDamagingAttack?
+        next stay_in_rating
+    end
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :FeatherForceSwitch,
+    :real_name => "Feather Charm Force Switch",
+    :info_displayed => false,
+    :resets_eor => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} is carried off by feathers!", battler.pbThis))
+    end,
 })

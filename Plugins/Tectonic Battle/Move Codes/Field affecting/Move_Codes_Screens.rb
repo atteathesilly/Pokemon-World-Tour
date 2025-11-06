@@ -8,37 +8,48 @@ class PokeBattle_Move_StartPreventCriticalHitsAgainstUserSide10 < PokeBattle_Mov
     end
 
     def pbEffectGeneral(user)
-        user.pbOwnSide.applyEffect(:LuckyChant, @luckyChantDuration)
+        duration = applyEffectDurationModifiers(@luckyChantDuration, user)
+        user.pbOwnSide.applyEffect(:LuckyChant, duration)
     end
 
     def getEffectScore(user, _target)
-        return getLuckyChantEffectScore(user, @luckyChantDuration)
+        duration = applyEffectDurationModifiers(@luckyChantDuration, user)
+        return getLuckyChantEffectScore(user, duration)
     end
 end
 
 #===============================================================================
-# Protects the user's side from critical hits and some damage. (Diamond Field)
+# Protects the user's side from critical hits and some damage. (Sanctuary)
 #===============================================================================
-class PokeBattle_Move_StartPreventCriticalHitsAndRandomEffectsAgainstUserSide10 < PokeBattle_Move
+class PokeBattle_Move_StartPreventCriticalHitsAndReduceDamageAgainstUserSide5 < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
-        if user.pbOwnSide.effectActive?(:DiamondField)
-            @battle.pbDisplay(_INTL("But it failed, since a Diamond Field is already present!")) if show_message
+        return false if damagingMove?
+        if user.pbOwnSide.effectActive?(:Sanctuary)
+            @battle.pbDisplay(_INTL("But it failed, since a Sanctuary is already present!")) if show_message
             return true
         end
         return false
     end
 
+    def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
+        super
+        if damagingMove? && showAnimation && !user.pbOwnSide.effectActive?(:Sanctuary)
+            @battle.pbAnimation(:LUCKYCHANT, user, nil, hitNum)
+        end
+    end
+
     def pbEffectGeneral(user)
-        user.pbOwnSide.applyEffect(:DiamondField, user.getScreenDuration)
+        return if damagingMove?
+        user.pbOwnSide.applyEffect(:Sanctuary, user.getScreenDuration)
+    end
+
+    def pbAdditionalEffect(user, target)
+        return if user.pbOwnSide.effectActive?(:Sanctuary)
+        user.pbOwnSide.applyEffect(:Sanctuary, user.getScreenDuration)
     end
 
     def getEffectScore(user, _target)
-        score = 0
-        @battle.eachSameSideBattler(user.index) do |b|
-            score += 40
-            score += 40 if b.aboveHalfHealth?
-        end
-        return score
+        return getSanctuaryEffectScore(user, nil, self)
     end
 end
 

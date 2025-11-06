@@ -14,6 +14,17 @@ BattleHandlers::AbilityOnSwitchOut.add(:NATURALCURE,
   }
 )
 
+BattleHandlers::AbilityOnSwitchOut.add(:RAPIDREFRESH,
+  proc { |ability, battler, battle, endOfBattle|
+      next if endOfBattle
+      battler.pbRecoverHP(battler.totalhp / 2.0, false, false, false)
+      if battler.pbHasAnyStatus?
+        battler.pbCureStatus(false)
+        battler.aiLearnsAbility(ability)
+      end
+  }
+)
+
 BattleHandlers::AbilityOnSwitchOut.add(:FLYBY,
   proc { |ability, battler, battle, endOfBattle|
       next if endOfBattle
@@ -61,10 +72,10 @@ BattleHandlers::AbilityOnSwitchOut.add(:MAGMATRAIL,
   }
 )
 
-BattleHandlers::AbilityOnSwitchOut.add(:MOTHBURGLAR,
+BattleHandlers::AbilityOnSwitchOut.add(:INSECTCOLLECTOR,
   proc { |ability, battler, battle, endOfBattle|
       next if endOfBattle
-      battle.forceUseMove(battler, :THIEF, ability: ability)
+      battle.forceUseMove(battler, :COVET, ability: ability)
   }
 )
 

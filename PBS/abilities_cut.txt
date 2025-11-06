@@ -36,6 +36,10 @@ Description = Rather than take recoil damage, it swaps out, and its replacement 
 Name = Aloof
 Description = Reduces move damage taken by 50% when HP is full. Can't be dizzied.
 #-------------------------------
+[ANCESTRALDANCE]
+Name = Ancestral Dance
+Description = Raises Defense and Sp. Def whenever any Pokémon uses a dance move. Caps out at +4.
+#-------------------------------
 [ANGERPOINT]
 Name = Anger Point
 Description = The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat.
@@ -159,6 +163,10 @@ Description = Ignores screens, Substitute, and Abilities that would affect its m
 Name = Cloud Nine
 Description = Eliminates the effects of weather.
 #-------------------------------
+[CLOVERSONG]
+Name = Clover Song
+Description = Sets a Lucky Chant upon entry, protecting from critical hits for 10 turns.
+#-------------------------------
 [COLDPROOF]
 Name = Cold Proof
 Description = Takes 50% less damage from Ice-type moves.
@@ -174,6 +182,10 @@ Description = The Pokémon's accuracy is boosted.
 [CONVICTION]
 Name = Conviction
 Description = Upon entry, uses the move Endure on itself.
+#-------------------------------
+[CORROSION]
+Name = Corrosion
+Description = Can poison the target even if it's a Steel or Poison-type.
 #-------------------------------
 [COSMICCONTACT]
 Name = Cosmic Contact
@@ -210,6 +222,10 @@ Description = On the first turn, its attacks burn the target.
 [DAZZLING]
 Name = Dazzling
 Description = Makes foes unable to use priority attacks.
+#-------------------------------
+[DEEPTEETH]
+Name = Deep Teeth
+Description = Foes aren't released from its trapping moves even when the Pokémon leaves the field.
 #-------------------------------
 [DIGGINGFIST]
 Name = Excavator
@@ -301,6 +317,10 @@ Description = Gain priority with Grass-type moves.
 Name = Fiesta
 Description = Heals by 1/8th HP whenever any Pokémon uses a dance or sound move.
 #-------------------------------
+[FLAMEWINGS]
+Name = Flame Wings
+Description = Flying-type attacks have a 40% chance to burn.
+#-------------------------------
 [FLAREBOOST]
 Name = Flare Boost
 Description = Boosts Sp. Atk by 50% attacks when burned.
@@ -333,9 +353,18 @@ Description = The Pokémon can check a foe's held item. Makes wild Pokémon have
 Name = Frost Heal
 Description = Restores 1/12th HP each turn if frostbitten. Ignores frostbite special damage reduction.
 #-------------------------------
+[FROSTPITALITY]
+Name = Frostpitality
+Description = Traps the foe during hail.
+Flags = HailSynergy
+#-------------------------------
 [FROSTSONG]
 Name = Arctic Ariette
 Description = Sound-based attacks turn Ice-type and are boosted by 30%.
+#-------------------------------
+[FROSTWINGS]
+Name = Frost Wings
+Description = Flying-type attacks have a 40% chance to frostbite.
 #-------------------------------
 [FUNGALFLURRY]
 Name = Fungal Flurry
@@ -472,6 +501,10 @@ Description = Can hold two items, but drops one when swapping out.
 Name = Klutz
 Description = The Pokémon can't use any held items.
 #-------------------------------
+[LATEBLOOMER]
+Name = Late Bloomer
+Description = Deals 30% more damage when it's slower than the target.
+#-------------------------------
 [LEGSTRENGTH]
 Name = Leg Strength
 Description = Boosts the power of kicking moves by 30%.
@@ -597,6 +630,11 @@ Description = Raises one attacking or defending stat by three steps and lowers a
 [MOONBUBBLE]
 Name = Moon Bubble
 Description = Doubles Defense in moonglow.
+#-------------------------------
+[MOONLIGHTER]
+Name = Moonlighter
+Description = When hit in moonglow, steals the attacker's item, or knocks it away.
+Flags = MoonglowSynergy
 #-------------------------------
 [MORPHINGGUARD]
 Name = Morphing Guard
@@ -790,6 +828,10 @@ Flags = Uncopyable
 Name = Refrigerate
 Description = Normal-type moves become Ice-type and power up by 30%.
 #-------------------------------
+[RELUCTANTBLADE]
+Name = Reluctant Blade
+Description = When hit with a physical move, hits back instantly with Leafage.
+#-------------------------------
 [RESONANCE]
 Name = Planar Veil
 Description = Sets screens for twice as long during eclipse.
@@ -900,6 +942,10 @@ Flags = CritImmunity
 [SHIELDWALL]
 Name = Shield Wall
 Description = Takes 50% less damage from hyper-effective attacks.
+#-------------------------------
+[SHOCKWINGS]
+Name = Shock Wings
+Description = Flying-type attacks have a 40% chance to numb.
 #-------------------------------
 [SHRIEKING]
 Name = Ear-Splitting
@@ -1082,6 +1128,11 @@ Description = Powers up Poison-type moves of itself and its allies by 50%.
 Name = Trace
 Description = The Pokémon copies a foe's Ability.
 Flags = Uncopyable
+#-------------------------------
+[TRACTORBEAM]
+Name = Tractor Beam
+Description = Traps the foe during eclipse.
+Flags = EclipseSynergy
 #-------------------------------
 [TRICKSTER]
 Name = Trickster

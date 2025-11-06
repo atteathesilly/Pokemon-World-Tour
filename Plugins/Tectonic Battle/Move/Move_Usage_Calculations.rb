@@ -45,28 +45,25 @@ class PokeBattle_Move
         ret = Effectiveness.calculate_one(moveType, defType)
         # Ring Target
         if target&.hasActiveItem?(:RINGTARGET) && Effectiveness.ineffective_type?(moveType, defType)
-            ret = Effectiveness::NORMAL_EFFECTIVE_ONE
+            ret = Effectiveness::NORMAL_EFFECTIVE
         end
         # Delta Stream's weather
         if @battle&.pbWeather == :StrongWinds && (defType == :FLYING && Effectiveness.super_effective_type?(moveType, defType))
-            ret = Effectiveness::NORMAL_EFFECTIVE_ONE
+            ret = Effectiveness::NORMAL_EFFECTIVE
         end
         # Grounded Flying-type Pokémon become susceptible to Ground moves
-        ret = Effectiveness::NORMAL_EFFECTIVE_ONE if !target&.airborne? && (defType == :FLYING && moveType == :GROUND)
+        ret = Effectiveness::NORMAL_EFFECTIVE if !target&.airborne? && (defType == :FLYING && moveType == :GROUND)
         # Inured
         ret /= 2 if target&.effectActive?(:Inured) && Effectiveness.super_effective_type?(moveType, defType)
         # Break Through
         if user&.hasActiveAbility?(:BREAKTHROUGH) && Effectiveness.ineffective_type?(moveType, defType)
-            ret = Effectiveness::NORMAL_EFFECTIVE_ONE
+            ret = Effectiveness::NORMAL_EFFECTIVE
         end
         return ret
     end
 
     def pbCalcTypeMod(moveType, user, target, uiOnlyCheck = false)
         return Effectiveness::NORMAL_EFFECTIVE unless moveType
-        if moveType == :GROUND && target.pbHasType?(:FLYING) && target.hasActiveItem?(:IRONBALL)
-            return Effectiveness::NORMAL_EFFECTIVE
-        end
 
         # Determine types
         tTypes = target.pbTypes(true, uiOnlyCheck)
@@ -74,15 +71,11 @@ class PokeBattle_Move
         immunityPierced = false
 
         # Get effectivenesses
-        typeMods = [Effectiveness::NORMAL_EFFECTIVE_ONE] * 3 # 3 types max
-        tTypes.each_with_index do |type, i|
-            newTypeMod = pbCalcTypeModSingle(moveType, type, user, target)
-            typeMods[i] = newTypeMod
-        end
-
-        # Multiply all effectivenesses together
         ret = 1
-        typeMods.each { |m| ret *= m }
+        tTypes.each do |type|
+            next if moveType == :GROUND && type == :FLYING && target.hasActiveItem?(:IRONBALL)
+            ret *= pbCalcTypeModSingle(moveType, type, user, target)
+        end
 
         # Partially pierce immunities
         if inherentImmunitiesPierced?(user, target)
@@ -91,7 +84,7 @@ class PokeBattle_Move
                 immunityPierced = true
                 ret /= 2
             elsif user.targetTypeModImmune?(user, target, self, ret, !uiOnlyCheck)
-                ret = 4.0 # Weird effectiveness stuff present here
+                ret = 0.5
                 immunityPierced = true
             end
         end
@@ -183,10 +176,12 @@ class PokeBattle_Move
         target.eachActiveItem do |item|
             BattleHandlers.triggerAccuracyCalcTargetItem(item, modifiers, user, target, self, typeToUse)
         end
+        
         # Other effects, inc. ones that set accuracy_multiplier or evasion_step to
         # specific values
         modifiers[:accuracy_multiplier] *= 2.0 if @battle.gravityIntensified?
         modifiers[:accuracy_multiplier] *= 1.5 if user.effectActive?(:Spotting)
+        modifiers[:accuracy_multiplier] *= 1.5 if user.pbOwnSide.effectActive?(:WinterHunts)
 
         if aiCheck
             modifiers[:evasion_step] = 0 if @function == "IgnoreTargetDefSpDefEvaStatStages" # Chip Away
@@ -314,10 +309,10 @@ class PokeBattle_Move
             return true
         end
 
-        # Diamond Field
-        if target.pbOwnSide.effectActive?(:DiamondField) && !(user && user.hasActiveAbility?(:INFILTRATOR))
+        # Sanctuary
+        if target.pbOwnSide.effectActive?(:Sanctuary) && !(user && user.hasActiveAbility?(:INFILTRATOR))
             unless checkingForAI
-                battle.pbDisplay(_INTL("The sheen around {1} prevented the hit from being critical!", target.pbTeam(true)))
+                battle.pbDisplay(_INTL("The sanctuary around {1} prevented the hit from being critical!", target.pbTeam(true)))
             end
             return true
         end
@@ -382,6 +377,12 @@ showMessages)
             end
             return false
         end
+        if target.pbOwnSide.effectActive?(:WishingWell)
+            if showMessages
+                battle.pbDisplay(_INTL("The Wishing Well protects {1} from a random added effect!", target.pbThis))
+            end
+            return false
+        end
         if target.shouldItemApply?(:COVERTCLOAK, aiCheck) && user.opposes?(target)
             if showMessages
                 battle.pbDisplay(_INTL("{1}'s {2} protects it from a random added effect!", target.pbThis, getItemName(:COVERTCLOAK)))
@@ -423,7 +424,6 @@ showMessages)
         end
 
         ret *= 2 if user.pbOwnSide.effectActive?(:Rainbow)
-        ret /= 2 if target.hasTribeBonus?(:SERENE)
         if ret < 100 && user.shouldItemApply?(:LUCKHERB, aiCheck)
             ret = 100
             user.applyEffect(:LuckHerbConsumed) unless aiCheck

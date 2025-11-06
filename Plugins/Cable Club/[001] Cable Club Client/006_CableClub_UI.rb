@@ -152,6 +152,7 @@ class CableClub_Scene
          (cmdDoubleBattle>=0 && cmd==cmdDoubleBattle) ||
          (cmdTripleBattle>=0 && cmd==cmdTripleBattle)
         rules=PokemonOnlineRules.new
+        rules.setTeamPreview(30)
         rules.setNumberRange(1,6)
         rules.addPokemonRule(NonEggRestriction)
         if cmd == cmdDoubleBattle # double battle
@@ -924,7 +925,8 @@ class TeamPreview_Scene
       @sprites["party_l#{i}"] = PokemonIconSprite.new(pkmn,@viewport)
       @sprites["party_l#{i}"].x = base_x + 32
       @sprites["party_l#{i}"].y = base_y + 52
-      @sprites["item_l#{i}"] = HeldItemIconSprite.new((base_x+72),(base_y+96),pkmn,@viewport)
+      @sprites["item_l#{i}"] = HeldItemIconSprite.new((base_x+72),(base_y+96),pkmn.items[0],@viewport)
+      @sprites["item_l2#{i}"] = HeldItemIconSprite.new((base_x+80),(base_y+100),pkmn.items[1],@viewport)
     end
     right_party.each_with_index do |pkmn, i|
       base_x = ((i%2)*128)
@@ -932,7 +934,8 @@ class TeamPreview_Scene
       @sprites["party_r#{i}"] = PokemonIconSprite.new(pkmn,@viewport)
       @sprites["party_r#{i}"].x = base_x + 288
       @sprites["party_r#{i}"].y = base_y + 52
-      @sprites["item_r#{i}"] = HeldItemIconSprite.new((base_x+328),(base_y+96),pkmn,@viewport)
+      @sprites["item_r#{i}"] = HeldItemIconSprite.new((base_x+328),(base_y+96),pkmn.items[0],@viewport)
+      @sprites["item_r2#{i}"] = HeldItemIconSprite.new((base_x+336),(base_y+100),pkmn.items[1],@viewport)
     end
     @sprites["timer"] = Window_AdvancedTextPokemon.newWithSize("",0,Graphics.height-64,Graphics.width,64)
     @sprites["timer"].viewport = @viewport

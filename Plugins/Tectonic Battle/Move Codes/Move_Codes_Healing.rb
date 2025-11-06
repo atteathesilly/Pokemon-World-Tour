@@ -277,7 +277,7 @@ class PokeBattle_Move_HealTargetHalfOfTotalHP < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -373,7 +373,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)
         failed = true
         @battle.eachSameSideBattler(user) do |b|
-            next if b.hp == b.totalhp
+            next if b.healthCapped?
             failed = false
             break
         end
@@ -385,7 +385,7 @@ class PokeBattle_Move_HealUserAndAlliesQuarterOfTotalHP < PokeBattle_Move
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -417,7 +417,7 @@ class PokeBattle_Move_HealTargetDependingOnMoonglow < PokeBattle_Move
     def healingMove?; return true; end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.hp == target.totalhp
+        if target.healthCapped?
             @battle.pbDisplay(_INTL("{1}'s HP is full!", target.pbThis)) if show_message
             return true
         elsif !target.canHeal?
@@ -658,12 +658,12 @@ class PokeBattle_Move_ForceUserAndTargetToRest < PokeBattle_Move
     def getEffectScore(user, target)
         score = 0
 
-        unless user.fullHealth?
+        unless user.healthCapped?
             score += user.applyFractionalHealing(1.0, aiCheck: true)
             score -= getSleepEffectScore(nil, user) * 0.45
             score += 45 if user.hasStatusNoSleep?
         end
-        unless target.fullHealth?
+        unless target.healthCapped?
             score -= target.applyFractionalHealing(1.0, aiCheck: true)
             score += getSleepEffectScore(nil, target)
             score -= 45 if target.hasStatusNoSleep?
@@ -722,6 +722,22 @@ class PokeBattle_Move_HealUserBasedOnWeightHalvesWeight < PokeBattle_HealingMove
     def pbEffectGeneral(user)
         super
         user.incrementEffect(:Refurbished)
+    end
+
+    def getDetailsForMoveDex(detailsList = [])
+        values = [1024, 512, 256, 128, 64]
+        unit = "kg"
+        if System.user_language[3..4] == "US" # If the user is in the United States
+            values.map! { |weight| (weight / 0.45359).round }
+            unit = "lbs"
+        end
+        detailsList << _INTL("Heals more the heavier the user is.")
+        detailsList << _INTL("<u>{1} {2} and more:</u> 100%", values[0], unit)
+        detailsList << _INTL("<u>{1} - {2} {3}:</u> 75%", values[1], values[0]-1, unit)
+        detailsList << _INTL("<u>{1} - {2} {3}:</u> 50%", values[2], values[1]-1, unit)
+        detailsList << _INTL("<u>{1} - {2} {3}:</u> 25%", values[3], values[2]-1, unit)
+        detailsList << _INTL("<u>{1} - {2} {3}:</u> 12.5%", values[4], values[3]-1, unit)
+        detailsList << _INTL("<u>{1} {2} and less:</u> 6.25%", values[4]-1, unit)
     end
 end
 

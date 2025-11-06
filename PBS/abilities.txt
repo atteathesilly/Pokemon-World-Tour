@@ -65,10 +65,6 @@ Description = Raises Sp. Atk by four steps when a stat is lowered by a foe.
 Name = Contrary
 Description = Makes stat changes have an opposite effect.
 #-------------------------------
-[CORROSION]
-Name = Corrosion
-Description = Can poison the target even if it's a Steel or Poison-type.
-#-------------------------------
 [COTTONDOWN]
 Name = Cotton Down
 Description = Lowers everyone else's Speed by two steps when hit by an attack.
@@ -104,11 +100,11 @@ Description = Raises Attack by four steps when a stat is lowered by a foe.
 #-------------------------------
 [DELTASTREAM]
 Name = Delta Stream
-Description = Changes the weather to Strong Winds, which remove Flying-type's weaknesses. Lingers for 3 turns after leaving.
+Description = Summons Strong Winds, which remove Flying-type's weaknesses. Lingers for three turns after leaving.
 #-------------------------------
 [DESOLATELAND]
 Name = Desolate Land
-Description = Changes the weather to Harsh Sunlight, which debuffs most attacks and prevents them from critting. Lingers for 3 turns after leaving.
+Description = Summons Harsh Sunlight, which prevents most moves from critting. Lingers for three turns after leaving.
 Flags = SunshineSynergy
 #-------------------------------
 [DISGUISE]
@@ -126,22 +122,22 @@ Description = Powers up Dragon-type moves by 50%.
 #-------------------------------
 [DRIZZLE]
 Name = Drizzle
-Description = Summons rainstorm for 4 turns upon entry.
+Description = Summons rainstorm for four turns upon entry.
 Flags = RainstormSynergy
 #-------------------------------
 [DROUGHT]
 Name = Drought
-Description = Turns the weather to sunshine for 4 turns upon entry.
+Description = Summons sunshine for four turns upon entry.
 Flags = SunshineSynergy
 #-------------------------------
 [DRYSKIN]
 Name = Dry Skin
-Description = Heals 1/8 HP in rainstorm, 1/4 when hit by Water-type moves. Loses 1/8 in sunshine, takes 25% more from Fire-type moves.
+Description = Heals 1/8th HP in rainstorm, 1/4th when hit by Water-type moves. Loses 1/8th in sunshine, takes 25% more from Fire-type moves.
 Flags = RainstormSynergy
 #-------------------------------
 [EMERGENCYEXIT]
 Name = Emergency Exit
-Description = Switches out if its HP becomes half or less.
+Description = Switches out if its HP is lowered below half.
 #-------------------------------
 [FAIRYAURA]
 Name = Fairy Aura
@@ -153,7 +149,7 @@ Description = Reduces damage from super-effective attacks by 25%.
 #-------------------------------
 [FLAMEBODY]
 Name = Flame Body
-Description = Physical moves against the Pokémon have a 30% chance to burn the attacker.
+Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become burned.
 #-------------------------------
 [FLOWERGIFT]
 Name = Flower Gift
@@ -340,7 +336,7 @@ Description = When the Pokémon is hit by an attack, the attacker's ability beco
 #-------------------------------
 [NATURALCURE]
 Name = Natural Cure
-Description = All non-volatile status conditions heal when it switches out.
+Description = All non-volatile status conditions heal when switched out.
 #-------------------------------
 [NEUROFORCE]
 Name = Neuroforce
@@ -365,12 +361,12 @@ Description = Child attacks after the parent, for 25% of the previous damage.
 #-------------------------------
 [PERISHBODY]
 Name = Perish Body
-Description = When it takes a hit, the Pokémon and the attacker both faint after 3 turns.
+Description = When it takes a hit, the Pokémon and the attacker both faint after three turns.
 Flags = SetupCounterAI
 #-------------------------------
 [POISONPOINT]
 Name = Poison Point
-Description = Physical attacks against the Pokémon have a 30% chance to poison the attacker.
+Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become poisoned.
 #-------------------------------
 [POISONTOUCH]
 Name = Poison Touch
@@ -388,7 +384,7 @@ Flags = Uncopyable
 #-------------------------------
 [POWERSPOT]
 Name = Power Spot
-Description = Powers up nearby allies moves by 30%.
+Description = Powers up nearby allies' moves by 30%.
 #-------------------------------
 [PRANKSTER]
 Name = Prankster
@@ -400,7 +396,7 @@ Description = The Pokémon raises the foe's PP usage.
 #-------------------------------
 [PRIMORDIALSEA]
 Name = Primordial Sea
-Description = Changes the weather to Heavy Rain, which debuffs most attacks and prevents their random added effects. Lingers for 3 turns after leaving.
+Description = Summons Heavy Rain, which prevents most moves' random added effects. Lingers for three turns after leaving.
 Flags = RainstormSynergy
 #-------------------------------
 [PRISMARMOR]
@@ -422,7 +418,7 @@ Description = Powers up moves that have recoil damage by 30%.
 #-------------------------------
 [REGENERATOR]
 Name = Regenerator
-Description = Restores 25% of max HP when withdrawn from battle.
+Description = Restores 25% of max HP when switched out.
 #-------------------------------
 [RIPEN]
 Name = Ripen
@@ -448,7 +444,7 @@ Flags = SandstormSynergy
 #-------------------------------
 [SANDSTREAM]
 Name = Sand Stream
-Description = Summons a sandstorm for 4 turns upon entry.
+Description = Summons a sandstorm for four turns upon entry.
 Flags = SandstormSynergy
 #-------------------------------
 [SAPSIPPER]
@@ -499,7 +495,7 @@ Description = Maximizes the frequency of "two to five" multi-hit moves.
 #-------------------------------
 [SLOWSTART]
 Name = Slow Start
-Description = Halves Attack and Speed for 3 turns.
+Description = Halves Attack and Speed for three turns.
 #-------------------------------
 [SLUSHRUSH]
 Name = Slush Rush
@@ -512,7 +508,7 @@ Description = Doubles the critical hit chance of random crit moves. Powers up cr
 #-------------------------------
 [SNOWWARNING]
 Name = Snow Warning
-Description = Summons a hailstorm for 4 turns upon entry.
+Description = Summons a hailstorm for four turns upon entry.
 Flags = HailSynergy
 #-------------------------------
 [SOLARPOWER]
@@ -539,7 +535,7 @@ Flags = Immutable
 #-------------------------------
 [STATIC]
 Name = Static
-Description = Physical attacks against the Pokémon have a 30% chance to cause numbing.
+Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become numbed.
 #-------------------------------
 [STEELWORKER]
 Name = Steelworker
@@ -568,7 +564,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [SYNCHRONIZE]
 Name = Synchronize
-Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokemon also gets that condition.
+Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokémon also gets that condition.
 #-------------------------------
 [TANGLINGHAIR]
 Name = Tangling Hair
@@ -652,7 +648,7 @@ Description = Physical attacks against the Pokémon raise its Speed by two steps
 #-------------------------------
 [WIMPOUT]
 Name = Wimp Out
-Description = Cowardly switches out if its HP becomes half or less.
+Description = Cowardly switches out if its HP is lowered below half.
 #-------------------------------
 [WONDERGUARD]
 Name = Wonder Guard

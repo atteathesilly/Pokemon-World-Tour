@@ -96,16 +96,14 @@ module PokemonDebugMenuCommands
             screen.pbRefreshSingle(pkmnid)
           else   # Give status problem
             count = 0
-            cancel = false
-            if ids[cmd] == :SLEEP
-              params = ChooseNumberParams.new
-              params.setRange(0, 9)
-              params.setDefaultValue(3)
-              count = pbMessageChooseNumber(
-                 _INTL("Set the Pokémon's sleep count."), params) { screen.pbUpdate }
-              cancel = true if count <= 0
-            end
-            if !cancel
+            # Choose count
+            params = ChooseNumberParams.new
+            max = ids[cmd] == :SLEEP ? 2 : 1
+            params.setRange(0, max)
+            params.setDefaultValue(2) if ids[cmd] == :SLEEP
+            count = pbMessageChooseNumber(
+                _INTL("Set the Pokémon's status count."), params) { screen.pbUpdate }
+            if ids[cmd] != :SLEEP || count > 0
               pkmn.status      = ids[cmd]
               pkmn.statusCount = count
               screen.pbRefreshSingle(pkmnid)
@@ -947,6 +945,7 @@ module PokemonDebugMenuCommands
     "effect"      => proc { |pkmn, pkmnid, heldpoke, settingUpBattle, screen|
       if screen.pbConfirm(_INTL("Are you sure you want to copy this Pokémon?"))
         clonedpkmn = pkmn.clone
+        clonedpkmn.items = pkmn.items.clone
         if screen.is_a?(PokemonPartyScreen) || screen.is_a?(TilingCardsPokemonMenu_Scene)
           pbStorePokemon(clonedpkmn)
           screen.pbHardRefresh

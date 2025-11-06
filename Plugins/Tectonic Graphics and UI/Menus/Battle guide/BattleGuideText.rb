@@ -102,7 +102,7 @@ def battleGuideStatsHash
         _INTL("Leveling and Evolution") => _INTL("Your Pokémon's stats will increase every time they level up. When Pokémon evolve, their stats change (almost always they increase)."),
         _INTL("Accuracy and Evasion") => _INTL("Accuracy and Evasion are two stats which are only active in battle, starting at 100% each. They are only modified by in-battle changing effects."),
         _INTL("Stat Steps") => _INTL("Effects can modify a Pokémon's stats during battle. These are called 'stat steps'. Stat steps multiply or divide the Pokémon's listed stat value."),
-        _INTL("Bounds of Stat Steps") => _INTL("Stat steps start at 0, and can increase up to +12 (4x) and down to -12 (.25x). Stat steps are reset if you swap the Pokémon out or it faints."),
+        _INTL("Bounds of Stat Steps") => _INTL("Stat steps start at 0, and can increase up to +8 (3x) and down to -8 (.33x). Stat steps are reset if you swap the Pokémon out or it faints."),
         _INTL("Checking Stat Steps") => _INTL("You can check the current stat steps of each Pokémon on the battlefield using the Info button. It lists the numerical step as well as resultant multiplier."),
     }
 end
@@ -139,11 +139,11 @@ def battleGuideStatusConditionsHash
         _INTL("Status Immunity") => _INTL("Type immunities do not prevent status moves. However, some types give immunities to certain status conditions. Don't confuse these two!"),
         _INTL("Burn") => _INTL("When burned, a Pokémon's Attack is reduced by 33%, and loses 1/8th HP every turn. Fire- and Ghost-types do the most burning. Fire is immune."),
         _INTL("Frostbite") => _INTL("When frostbitten, a Pokémon's Sp. Atk is reduced by 33%, and loses 1/8th HP every turn. Ice- and Flying-types do the most frostbiting. Ice is immune."),
-        _INTL("Poison") => _INTL("When poisoned, a Pokémon loses 1/12th HP every turn. This doubles every 2 turns. Poison- and Grass-types do the most poisoning. Poison/Steel are immune."),
+        _INTL("Poison") => _INTL("When poisoned, a Pokémon loses 1/12th HP every turn. This doubles every 2 turns. Poison- and Bug-types do the most poisoning. Poison is immune."),
         _INTL("Numb") => _INTL("When numbed, a Pokémon's Speed is halved, and it deals 25% less damage. Electric- and Fighting-types do the most numbing. Electric is immune."),
         _INTL("Waterlog") => _INTL("When waterlogged, a Pokémon's Speed is halved, and it takes 25% more attack damage. Water- and Dark-types do the most waterlogging. Water is immune."),
         _INTL("Dizzy") => _INTL("When dizzied, a Pokémon takes 25% more attack damage, and its ability doesn't function. Psychic- and Fairy-types do the most dizzying."),
-        _INTL("Leeched") => _INTL("When leeched, a Pokémon loses 1/12th HP every turn, and its opponent(s) split that health. Bug- and Dark-types do the most leeching. Grass is immune."),
+        _INTL("Leeched") => _INTL("When leeched, a Pokémon loses 1/12th HP every turn, and its opponent(s) split that health. Grass- and Dark-types do the most leeching. Grass is immune."),
         _INTL("Sleep") => _INTL("A rarer status that causes a Pokémon to be unable to do anything for 2 turns. Psychic- and Grass-types put Pokémon to sleep the most often."),
     }
 end

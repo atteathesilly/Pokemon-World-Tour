@@ -44,6 +44,7 @@ module GameData
         attr_accessor :earliest_available
         attr_reader :flags
         attr_reader :formalizer
+        attr_reader :sticky_items
 
         DATA = {}
         DATA_FILENAME = "species.dat"
@@ -121,6 +122,7 @@ module GameData
                 ret["GrowthRate"]   = [0, "e", :GrowthRate]
                 ret["GenderRate"]   = [0, "e", :GenderRatio]
                 ret["Evolutions"]   = [0, "*ses", nil, :Evolution, nil]
+                ret["StickyItems"]   = [0, "*e", :Item]
             end
             return ret
         end
@@ -190,6 +192,7 @@ module GameData
             @defined_in_extension  = hash[:defined_in_extension]  || false
             @flags                 = hash[:flags]                 || []
             @formalizer            = hash[:formalizer]            || []
+            @sticky_items          = hash[:sticky_items]          || []
 
             legalityChecks
         end
@@ -468,12 +471,18 @@ module GameData
             inherited_moves.each do |moveID|
                 nonInheritedTutorMoves.delete(moveID)
             end
+            GameData::Move.staple_moves do |moveID|
+                nonInheritedTutorMoves.delete(moveID)
+            end
             return nonInheritedTutorMoves
         end
 
         def non_inherited_line_moves
             nonInheritedLineMoves = (@line_moves || @egg_moves).clone
             inherited_moves.each do |moveID|
+                nonInheritedLineMoves.delete(moveID)
+            end
+            GameData::Move.staple_moves.each do |moveID|
                 nonInheritedLineMoves.delete(moveID)
             end
             return nonInheritedLineMoves
@@ -492,6 +501,9 @@ module GameData
         def recalculate_learnable_moves
             @learnableMoves = []
 
+            if !@flags.include?("NoStaples")
+              @learnableMoves.concat(GameData::Move.staple_moves)
+            end
             @learnableMoves.concat(inherited_tutor_moves)
             @learnableMoves.concat(@tutor_moves)
             @learnableMoves.concat(@line_moves || @egg_moves)
@@ -609,6 +621,12 @@ module GameData
 
         def isUltraBeast?
             return @flags.include?("UltraBeast")
+        end
+
+        def hasType?(type)
+            return true if @type1 == type
+            return true if @type2 == type
+            return false
         end
 
         def self.load
@@ -748,6 +766,7 @@ module Compiler
                       :generation            => contents["Generation"],
                       :flags                 => contents["Flags"],
                       :formalizer            => contents["Formalizer"],
+                      :sticky_items          => contents["StickyItems"],
                       :notes                 => contents["Notes"],
                       :tribes                => contents["Tribes"],
                       :defined_in_extension  => !baseFile,
@@ -1173,6 +1192,7 @@ module Compiler
         f.write(format("WildItemCommon = %s\r\n", species.wild_item_common)) if species.wild_item_common
         f.write(format("WildItemUncommon = %s\r\n", species.wild_item_uncommon)) if species.wild_item_uncommon
         f.write(format("WildItemRare = %s\r\n", species.wild_item_rare)) if species.wild_item_rare
+        f.write(format("StickyItems = %s\r\n", species.sticky_items.join(","))) if species.sticky_items.length > 0
         if species.evolutions.any? { |evo| !evo[3] }
             f.write("Evolutions = ")
             need_comma = false

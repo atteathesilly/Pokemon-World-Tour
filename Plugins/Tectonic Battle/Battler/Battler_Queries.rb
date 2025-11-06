@@ -474,6 +474,7 @@ class PokeBattle_Battler
 
     def canHeal?(overheal = false)
         return false if fainted?
+        overheal = overheal || forceOverheal?
         if overheal
             return false if @hp >= @totalhp * 2
         else
@@ -481,6 +482,11 @@ class PokeBattle_Battler
         end
         return false if effectActive?(:HealBlock)
         return true
+    end
+
+    def healthCapped?
+        return @hp >= @totalhp * 2 if forceOverheal?
+        return fullHealth?
     end
 
     def movedThisRound?
@@ -696,6 +702,7 @@ class PokeBattle_Battler
     def getRoomDuration(baseDuration = 8, aiCheck: false)
         ret = baseDuration
         ret *= 2 if shouldItemApply?(:REINFORCINGROD,aiCheck)
+        ret = applyEffectDurationModifiers(ret, self)
         return ret
     end
 
@@ -704,6 +711,7 @@ class PokeBattle_Battler
         ret += 3 if shouldItemApply?(:LIGHTCLAY,aiCheck)
         ret += 6 if shouldItemApply?(:BRIGHTCLAY,aiCheck)
         ret += 2 if shouldAbilityApply?(:PLANARVEIL,aiCheck)
+        ret = applyEffectDurationModifiers(ret, self)
         return ret
     end
 
@@ -904,6 +912,7 @@ class PokeBattle_Battler
             eachActiveItem(true) do |item|
                 duration = BattleHandlers.triggerWeatherExtenderItem(item, weatherType, duration, self, @battle)
             end
+            duration = applyEffectDurationModifiers(duration, self)
         end
         return duration
     end
@@ -988,6 +997,11 @@ class PokeBattle_Battler
             end
             return true
         end
+        return false
+    end
+
+    def forceOverheal?
+        return true if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
         return false
     end
 

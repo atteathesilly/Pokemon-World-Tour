@@ -14,14 +14,14 @@ from packaging.version import Version
 # This is the v19 version of the server. It is not compatible with earlier versions of the script
 
 HOST = r"0.0.0.0"
-PORT = 9999
+PORT = 9998  # This is the port for dev. Change to 9999 before updating live server
 PBS_DIR = r"./PBS"
 LOG_DIR = r"."
 RULES_DIR = "./OnlinePresets"
 # Aprox. in seconds
 RULES_REFRESH_RATE = 60
 
-GAME_VERSION = Version("3.3.0")
+GAME_VERSION = Version("3.4.0")
 POKEMON_MAX_NAME_SIZE = 10
 PLAYER_MAX_NAME_SIZE = 10
 MAXIMUM_LEVEL = 70
@@ -367,6 +367,14 @@ def make_party_validator(pbs_dir):
             move_syms.add(internal_id)
 
     with io.open(
+        os.path.join(pbs_dir, r"moves_primeval.txt"), "r", encoding="utf-8-sig"
+    ) as moves_pbs:
+        moves_pbs_ = configparser.ConfigParser()
+        moves_pbs_.read_file(moves_pbs)
+        for internal_id in moves_pbs_.sections():
+            move_syms.add(internal_id)
+
+    with io.open(
         os.path.join(pbs_dir, r"items.txt"), "r", encoding="utf-8-sig"
     ) as items_pbs:
         items_pbs_ = configparser.ConfigParser()
@@ -439,7 +447,9 @@ def make_party_validator(pbs_dir):
                     if item2 and item2 not in item_syms:
                         logging.debug("invalid item id: %s", item2)
                         errors.append("invalid item")
-                    item_type = record.str() # don't need to validate but do need to read for data alignment
+                    item_type = (
+                        record.str()
+                    )  # don't need to validate but do need to read for data alignment
                     can_use_sketch = not set(SKETCH_MOVE_IDS).isdisjoint(species_.moves)
                     for _ in range(record.int()):
                         move = record.str()
@@ -456,15 +466,18 @@ def make_party_validator(pbs_dir):
                             errors.append("invalid ppup")
                     for _ in range(record.int()):
                         move = record.str()
-                        if move:
-                            if can_use_sketch and move not in move_syms:
-                                logging.debug(
-                                    "invalid first move id (Sketched): %s", move
-                                )
-                                errors.append("invalid first move (Sketched)")
-                            elif move not in species_.moves and not can_use_sketch:
-                                logging.debug("invalid first move id: %s", move)
-                                errors.append("invalid first move")
+                        # Skip checking initial moves, since as long as the current moveset is legal
+                        # we don't care that much if it's hacked in. However, we still need to
+                        # read in the moves (above line) to keep things in sync
+                        # if move:
+                        #     if can_use_sketch and move not in move_syms:
+                        #         logging.debug(
+                        #             "invalid first move id (Sketched): %s", move
+                        #         )
+                        #         errors.append("invalid first move (Sketched)")
+                        #     elif move not in species_.moves and not can_use_sketch:
+                        #         logging.debug("invalid first move id: %s", move)
+                        #         errors.append("invalid first move")
                     gender = record.int()
                     if gender not in species_.genders:
                         logging.debug("invalid gender: %d", gender)

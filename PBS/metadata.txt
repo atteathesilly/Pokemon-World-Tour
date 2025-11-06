@@ -517,6 +517,7 @@ Bicycle = false
 Outdoor = false
 ShowArea = true
 Bicycle = true
+BattleBack = indoor2
 #-------------------------------
 [068]
 # Room 104
@@ -988,6 +989,7 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 BattleBack = elite7
+TeleportBlocked = true
 #-------------------------------
 [135]
 # Nebula Ruins
