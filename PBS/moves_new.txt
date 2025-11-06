@@ -720,6 +720,19 @@ FunctionCode = AlwaysHits
 Flags = Pulse
 Description = Aura deep within the user's body is spurred to pulse outward. Can't miss and skips protections.
 #-------------------------------
+[AURASTORM]
+Name = Aura Storm
+Type = FIGHTING
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnMoveHyperScalesWithLostHP
+Flags = CanProtect
+Description = This Pokémon charges up for a turn, then releases a powerful beam of aura. This does more damage the less HP the user has.
+Animation = SOLARBEAM
+#-------------------------------
 [BAR]
 Name = Bar
 Type = FIGHTING
