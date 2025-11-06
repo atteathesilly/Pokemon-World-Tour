@@ -2075,6 +2075,17 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user looses a flash of energy from its polished body. It has a 30% chance to lower accuracy.
 #-------------------------------
+[SMARTHORN]
+Name = Smart Horn
+Type = STEEL
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Description = The user stabs the target with a sharp horn. Can't miss and skips protections.
+#-------------------------------
 [SMARTSTRIKE]
 Name = Smart Strike
 Type = STEEL
