@@ -2914,7 +2914,7 @@ Pokemon = MTANGROWTH,40
 Pokemon = MANTINE,40
     Name = 1 Second
     Gender = male
-    Moves = WARDPRESS,COLDFRONT,SCALD,ICYWIND
+    Moves = WARDPRESS,COLDFRONT,SCALD,ENERGYBALL
     AbilityIndex = 1 # Free Ride
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,0,10,20
@@ -2937,7 +2937,7 @@ Pokemon = SUDOWOODO,40
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,10,0,10,10
 Pokemon = BASTIODON,40
-    Moves = DIAMONDFIELD,BODYPRESS,STOMPINGTANTRUM,WIDEGUARD
+    Moves = SHIELDINGBASH,BODYPRESS,STOMPINGTANTRUM,WIDEGUARD
     AbilityIndex = 1 # Battle-Hardened
     Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -3490,7 +3490,7 @@ Pokemon = AZUMARILL,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = GALLADE,70
-    Moves = PSYCHOCUT,CLOSECOMBAT,XSCISSOR,INFINITEFORCE
+    Moves = PSYCHOSCISSION,SACREDSWORD,XSCISSOR,INFINITEFORCE
     AbilityIndex = 1 # Swordplay
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -5341,7 +5341,7 @@ Pokemon = ARCANINE,55
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,55
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN,Crimson,11]
@@ -5570,7 +5570,7 @@ Pokemon = ARCANINE,65
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,65
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN2,Teal,11]
@@ -5952,7 +5952,7 @@ Pokemon = MIMIKYU,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
 Pokemon = GARDEVOIR,70
-    Moves = PSYCHIC,SHADOWBALL,MYSTICALFIRE,MOONBLAST
+    Moves = PIERCINGDOUBT,SHADOWBALL,ICEBEAM,MOONBLAST
     AbilityIndex = 0 # Arcane Finale
     Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -6651,7 +6651,7 @@ Pokemon = KINGAMBIT,70
     AbilityIndex = 1 # Sturdy
 Pokemon = GALLADE,70
     Gender = female
-    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = ASSAULTVEST
 Pokemon = GRAPIDASH,70
@@ -6664,7 +6664,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,70
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN,Crimson,23]
@@ -6878,7 +6878,7 @@ Pokemon = KINGAMBIT,70
     AbilityIndex = 1 # Sturdy
 Pokemon = GALLADE,70
     Gender = female
-    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,DRAINPUNCH,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = ASSAULTVEST
 Pokemon = GRAPIDASH,70
@@ -6891,7 +6891,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
     Item = FIREGEM
 Pokemon = GOLURK,70
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [MASKEDVILLAIN2,Teal,23]
@@ -7044,7 +7044,7 @@ Flags = NoPerfect
 Pokemon = GALLADE,70
     Name = Jeanne
     Gender = female
-    Moves = PSYCHOSCISSION,CLOSECOMBAT,HUMBLE,ICEPUNCH
+    Moves = PSYCHOSCISSION,CLOSECOMBAT,HUMBLE,ICECALIBUR
     AbilityIndex = 1 # Swordplay
     Item = STRIKEVEST
 Pokemon = STARAPTOR,70
@@ -7070,7 +7070,7 @@ Pokemon = ARCANINE,70
     AbilityIndex = 0 # Intimidate
 Pokemon = GOLURK,70
     Name = Prometheus
-    Moves = INFERNO,MUDSLIDE,PROFANE,ZAPCANNON
+    Moves = INFERNO,MUDSLIDE,SUNDERFATE,ZAPCANNON
     AbilityIndex = 1 # No Guard
 #-------------------------------
 [TRAINER_Imogene_A,Imogene,1]
@@ -7113,7 +7113,7 @@ Pokemon = GIGANTEON,70
     Moves = DOUBLEEDGE,HEALBELL,YAWN,SHADOWBALL
     AbilityIndex = 0 # Ultra Adapted
 Pokemon = OCTILLERY,70
-    Moves = TARVOLLEY,BUBBLEBLASTER,ENERGYBALL,CHARGEBEAM
+    Moves = TARVOLLEY,BUBBLEBLASTER,ENERGYBALL,ICEBEAM
     AbilityIndex = 0 # Juggernaut
 Pokemon = SCEPTILE,70
     Moves = DRAINPUNCH,EARTHQUAKE,CALAMITOUSSLASH,LEAFBLADE
@@ -7878,7 +7878,7 @@ Pokemon = WEAVILE,70
     Moves = SEVER,WINTEROPS,SWORDSDANCE,ICESHARD
     AbilityIndex = 0 # Inner Focus
 Pokemon = GOLURK,70
-    Moves = SIXFEETUNDER,DYNAMICPUNCH,ZAPCANNON,VENOMORTAR
+    Moves = SIXFEETUNDER,DYNAMICPUNCH,ZAPCANNON,PULVERIZERCHORD
     AbilityIndex = 1 # No Guard
 Pokemon = DRAGALGE,70
     Moves = DRAGONTAIL,CRUELTY,RECOVER,GREYMIST

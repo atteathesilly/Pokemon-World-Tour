@@ -548,7 +548,7 @@ def tmShop
 		TMELECTROSLASH TMTHUNDERBOLT
 		TMGLACIALRAM TMICEBEAM
 
-		TMBRICKBREAK TMAURASPHERE
+		TMCROSSCHOP TMADRENALASH
 		TMPOISONJAB TMMIASMA
 		TMTRAMPLE TMEARTHPOWER
 
@@ -608,6 +608,55 @@ def switchOutTMShop
 	pbPokemonMart(
 		tmsStock,
 		_INTL("I'm sure you'll appreciate one of these."),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def effectHateTMShop
+	tmsStock = %i[
+		TMBRICKBREAK
+		TMSEISMICWAVE
+		TMRAZINGVINES
+		TMSKYFALL
+	]
+
+	pbPokemonMart(
+		tmsStock,
+		_INTL("I've got the tools. Just don't tell anyone."),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def statusTMVendor
+	spikeTMStock = %i[
+		TMPOISONGAS
+		TMIGNITE
+		TMCHILL
+		TMNUMB
+		TMWATERLOG
+		TMLEECHSEED
+		TMCONFUSERAY
+	]
+	pbPokemonMart(
+		spikeTMStock,
+		_INTL("Any interest in buying?"),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def healingTMVendor
+	spikeTMStock = %i[
+		TMRECOVER
+		TMSLACKOFF
+		TMROOST
+		TMTAKESHELTER
+		TMSYNTHESIS
+		TMSHOREUP
+		TMSWEETSELENE
+	]
+	pbPokemonMart(
+		spikeTMStock,
+		_INTL("Trust me, nobody needs these more than you."),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -673,6 +722,7 @@ def advancedHeldItemsShop
 		THROATSPRAY WHETSTONE
 		PROTEINSHAKE STRESSBALL
 		PINWHEEL INSOLES
+		WHITENINGPASTE FLASHBULB
 		ROCKYHELMET HIVISJACKET
 	]
 
@@ -908,23 +958,6 @@ def typeBoostingVendor
 	pbPokemonMart(
 		herbStock,
 		_INTL("What're ya buyin'?"),
-		!CAN_SELL_IN_VENDORS
-	)
-end
-
-def statusTMVendor()
-	spikeTMStock = %i[
-		TMPOISONGAS
-		TMIGNITE
-		TMCHILL
-		TMNUMB
-		TMWATERLOG
-		TMLEECHSEED
-		TMCONFUSERAY
-	]
-	pbPokemonMart(
-		spikeTMStock,
-		_INTL("Any interest in buying?"),
 		!CAN_SELL_IN_VENDORS
 	)
 end

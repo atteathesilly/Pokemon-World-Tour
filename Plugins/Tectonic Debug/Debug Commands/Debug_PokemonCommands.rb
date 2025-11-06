@@ -945,6 +945,7 @@ module PokemonDebugMenuCommands
     "effect"      => proc { |pkmn, pkmnid, heldpoke, settingUpBattle, screen|
       if screen.pbConfirm(_INTL("Are you sure you want to copy this Pokémon?"))
         clonedpkmn = pkmn.clone
+        clonedpkmn.items = pkmn.items.clone
         if screen.is_a?(PokemonPartyScreen) || screen.is_a?(TilingCardsPokemonMenu_Scene)
           pbStorePokemon(clonedpkmn)
           screen.pbHardRefresh

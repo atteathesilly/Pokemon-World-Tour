@@ -528,6 +528,18 @@ EffectChance = 20
 Description = The user brings down a ruinous power on the target. This has a 20% chance of lowering all the target's stats.
 Animation = JUDGMENT
 #-------------------------------
+[SANCTUARY]
+Name = Sanctuary
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = UserSide
+FunctionCode = StartPreventCriticalHitsAndReduceDamageAgainstUserSide5
+Flags = CanSnatch,Light
+Description = A blessed wall of light protects the user's side from critical hits for five turns, and slightly reduces move damage taken.
+Animation = LUCKYCHANT
+#-------------------------------
 [SEASONSEND]
 Name = Season's End
 Type = NORMAL
@@ -708,6 +720,19 @@ FunctionCode = AlwaysHits
 Flags = Pulse
 Description = Aura deep within the user's body is spurred to pulse outward. Can't miss and skips protections.
 #-------------------------------
+[AURASTORM]
+Name = Aura Storm
+Type = FIGHTING
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnMoveHyperScalesWithLostHP
+Flags = CanProtect
+Description = This Pokémon charges up for a turn, then releases a powerful beam of aura. This does more damage the less HP the user has.
+Animation = SOLARBEAM
+#-------------------------------
 [BAR]
 Name = Bar
 Type = FIGHTING
@@ -853,7 +878,7 @@ Type = FIGHTING
 Category = Physical
 Power = 80
 Accuracy = 100
-TotalPP = 20
+TotalPP = 15
 Target = NearFoe
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect,Kick
@@ -1314,7 +1339,7 @@ Type = FLYING
 Category = Physical
 Power = 55
 Accuracy = 100
-TotalPP = 30
+TotalPP = 25
 Target = NearOther
 FunctionCode = RecoilFifthOfDamageDealt
 Flags = CanProtect
@@ -1856,6 +1881,19 @@ EffectChance = 10
 Description = The user tosses hot desert sand on the target. It has a 10% chance to burn.
 Animation = SCORCHINGSANDS
 #-------------------------------
+[SEISMICWAVE]
+Name = Seismic Wave
+Type = GROUND
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveScreens
+Flags = CanProtect,Sound
+Description = The user attacks with a tectonic vibration. It also breaks any screens protecting the target's side.
+Animation = EARTHPOWER
+#-------------------------------
 [SIROCCO]
 Name = Sirocco
 Type = GROUND
@@ -1967,7 +2005,7 @@ Type = ROCK
 Category = Physical
 Power = 120
 Accuracy = 100
-TotalPP = 10
+TotalPP = 12
 Target = NearOther
 FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect
@@ -2024,18 +2062,6 @@ Flags = CanProtect,CanRandomCrit
 Description = The user shoots a spike of diamond to strike the target. Can random critical hit.
 Animation = DIAMONDFORCE
 #-------------------------------
-[DIAMONDFIELD]
-Name = Diamond Field
-Type = ROCK
-Category = Status
-Accuracy = 0
-TotalPP = 20
-Target = UserSide
-FunctionCode = StartPreventCriticalHitsAndReduceDamageAgainstUserSide5
-Flags = CanSnatch,Light
-Description = A diamond-tough force-field protects the user's side for 5 turns from critical hits, and reduces move damage taken.
-Animation = LIGHTSCREEN
-#-------------------------------
 [DIAMONDFORCE]
 Name = Diamond Force
 Type = ROCK
@@ -2079,7 +2105,7 @@ Type = ROCK
 Category = Physical
 Power = 80
 Accuracy = 100
-TotalPP = 12
+TotalPP = 15
 Target = NearOther
 FunctionCode = RecoilQuarterOfDamageDealt
 Flags = CanProtect
@@ -2310,6 +2336,20 @@ EffectChance = 50
 Description = The user grinds stone into shrapnel and sprays it at the target. This has a 50% chance to fracture it.
 Animation = SANDATTACK
 #-------------------------------
+[SHIELDINGBASH]
+Name = Shielding Bash
+Type = ROCK
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartPreventCriticalHitsAndReduceDamageAgainstUserSide5
+Flags = CanProtect
+EffectChance = 100
+Description = The user headbutts the target while maintaining a defensive aura. Sets Sanctuary for 5 turns.
+Animation = HEADBUTT
+#-------------------------------
 [SIEGEBREAKER]
 Name = Siege Breaker
 Type = ROCK
@@ -2471,6 +2511,19 @@ FunctionCode = MakeTargetWeakerToBug
 Flags = CanProtect
 EffectChance = 100
 Description = The user preys on the target's fear of insects, giving it a weakness to the Bug type.
+#-------------------------------
+[DECOMPOSE]
+Name = Decompose
+Type = BUG
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveScreens
+Flags = CanProtect
+Description = A swarm of insects is sent to gnaw at the target. It also breaks any screens protecting the target's side.
+Animation = INFESTATION
 #-------------------------------
 [DRONING]
 Name = Droning
@@ -3655,17 +3708,6 @@ FunctionCode = SuperEffectiveAgainstDragon
 Flags = CanProtect,Blade
 Description = The user slashes at the target with a steel blade. Super effective versus Dragon-types.
 Animation = SACREDSWORD
-#-------------------------------
-[SMARTHORN]
-Name = Smart Horn
-Type = STEEL
-Category = Physical
-Power = 70
-Accuracy = 0
-TotalPP = 10
-Target = NearOther
-FunctionCode = AlwaysHits
-Description = The user stabs the target with a sharp horn. Can't miss and skips protections.
 #-------------------------------
 [TAKESHELTER]
 Name = Take Shelter
