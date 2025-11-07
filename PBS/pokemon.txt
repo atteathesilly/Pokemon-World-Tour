@@ -14805,7 +14805,7 @@ Weight = 0.3
 Kind = EleFish
 Pokedex = One alone can emit only a trickle of electricity, so a group of them gathers to unleash a powerful electric shock.
 Generation = 5
-Evolutions = EELEKTRIK,Level,26
+Evolutions = EELEKTRIK,Level,23
 #-------------------------------
 [EELEKTRIK]
 Name = Eelektrik
