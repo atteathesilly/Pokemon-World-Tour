@@ -127,6 +127,9 @@ sopita_yorita
 Mega Starmie Sprites
 Raffs07
 
+Various Regionals
+Raffs07
+
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
 Neo-Spriteman<s>Vanilla Sunshine
