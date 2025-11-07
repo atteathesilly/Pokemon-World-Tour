@@ -312,9 +312,11 @@ class PokemonStorageScreen
         box = @storage.boxes[boxNumber]
         if box.isLocked?
             box.unlock
+            @scene.pbHardRefresh
             pbDisplay(_INTL("Box {1} is no longer locked to sorting.", boxNumber + 1))
         else
             box.lock
+            @scene.pbHardRefresh
             pbDisplay(_INTL("Box {1} is now locked to sorting.", boxNumber + 1))
         end
     end
