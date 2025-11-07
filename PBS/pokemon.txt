@@ -4755,7 +4755,7 @@ Kind = Dragon
 Pokedex = Dratini continually molts and sloughs off its old skin. It does so because the life energy within its body steadily builds to reach uncontrollable levels.
 Generation = 1
 WildItemUncommon = DRAGONFANG
-Evolutions = DRAGONAIR,Level,30
+Evolutions = DRAGONAIR,Level,24
 #-------------------------------
 [DRAGONAIR]
 Name = Dragonair
@@ -4774,7 +4774,7 @@ Kind = Dragon
 Pokedex = Dragonair stores an enormous amount of energy inside its body. It is said to alter weather conditions in its vicinity via crystals on its neck and tail.
 Generation = 1
 WildItemUncommon = DRAGONFANG
-Evolutions = DRAGONITE,Level,47
+Evolutions = DRAGONITE,Level,44
 #-------------------------------
 [DRAGONITE]
 Name = Dragonite
@@ -7022,7 +7022,7 @@ Kind = Hard Shell
 Pokedex = Its shell is as hard as sheet rock, and it is also very strong. Its thrashing can topple a mountain.
 Generation = 2
 WildItemUncommon = SMOOTHROCK
-Evolutions = TYRANITAR,Level,47
+Evolutions = TYRANITAR,Level,42
 #-------------------------------
 [TYRANITAR]
 Name = Tyranitar
@@ -10116,7 +10116,7 @@ Kind = Rock Head
 Pokedex = Bagon is a solitary Pokémon that doesn't form groups with others of its kind. It also has a head hard enough to cleave a boulder in one strike.
 Generation = 3
 WildItemUncommon = DRAGONFANG
-Evolutions = SHELGON,Level,30
+Evolutions = SHELGON,Level,25
 #-------------------------------
 [SHELGON]
 Name = Shelgon
@@ -10135,7 +10135,7 @@ Kind = Endurance
 Pokedex = Shelgon ignores its hunger entirely, never eating any food. Apparently, Shelgon will evolve once all its energy stores are used up.
 Generation = 3
 WildItemUncommon = DRAGONFANG
-Evolutions = SALAMENCE,Level,50
+Evolutions = SALAMENCE,Level,45
 #-------------------------------
 [SALAMENCE]
 Name = Salamence
@@ -11579,7 +11579,7 @@ Kind = Cave
 Pokedex = Jewels are buried in the caves these Pokémon nest in, but you'll be torn apart by claws and fangs the moment you enter one of these caves.
 Generation = 4
 WildItemUncommon = DRAGONFANG
-Evolutions = GARCHOMP,Level,48
+Evolutions = GARCHOMP,Level,44
 #-------------------------------
 [GARCHOMP]
 Name = Garchomp
@@ -15560,7 +15560,7 @@ Weight = 17.3
 Kind = Irate
 Pokedex = Lacking sight, it's unaware of its surroundings, so it bumps into things and eats anything that moves.
 Generation = 5
-Evolutions = ZWEILOUS,Level,28
+Evolutions = ZWEILOUS,Level,25
 #-------------------------------
 [ZWEILOUS]
 Name = Zweilous
@@ -15580,7 +15580,7 @@ Weight = 50.0
 Kind = Hostile
 Pokedex = After it has eaten up all the food in its territory, it moves to another area. Its two heads do not get along.
 Generation = 5
-Evolutions = HYDREIGON,Level,50
+Evolutions = HYDREIGON,Level,45
 #-------------------------------
 [HYDREIGON]
 Name = Hydreigon
@@ -18837,7 +18837,7 @@ Kind = Scaly
 Pokedex = It smacks the scales on its head against rocks or against the ground to frighten its opponents. It can also contact its friends with these noises.
 Generation = 7
 WildItemUncommon = DRAGONFANG
-Evolutions = HAKAMOO,Level,27
+Evolutions = HAKAMOO,Level,25
 #-------------------------------
 [HAKAMOO]
 Name = Hakamo-o
@@ -21097,7 +21097,7 @@ Weight = 2.0
 Kind = Lingering
 Pokedex = If this weak Pokémon is by itself, a mere child could defeat it. But if Dreepy has friends to help it train, it can evolve and become much stronger.
 Generation = 8
-Evolutions = DRAKLOAK,Level,26
+Evolutions = DRAKLOAK,Level,25
 #-------------------------------
 [DRAKLOAK]
 Name = Drakloak
@@ -21116,7 +21116,7 @@ Weight = 11.0
 Kind = Caretaker
 Pokedex = Without a Dreepy to place on its head and care for, it gets so uneasy it'll try to substitute any Pokémon it finds for the missing Dreepy.
 Generation = 8
-Evolutions = DRAGAPULT,Level,50
+Evolutions = DRAGAPULT,Level,45
 #-------------------------------
 [DRAGAPULT]
 Name = Dragapult
