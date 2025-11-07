@@ -650,7 +650,7 @@ class PokemonStorageScene
         commands = []
         for i in 0...@storage.maxBoxes
             box = @storage[i]
-            commands.push(_INTL("{1} ({2}/{3})", box.name, box.nitems, box.length)) if box
+            commands.push(_INTL("{1} ({2}/{3})", box.getName(i), box.nitems, box.length)) if box
         end
         return pbShowCommands(msg, commands, @storage.currentBox)
     end
@@ -738,7 +738,7 @@ class PokemonStorageScene
         possibleboxes = {}
         unless found.empty?
             for i in 0..found.length - 1
-                opt = @storage.boxes[found[i][0]].name
+                opt = @storage.boxes[found[i][0]].getName(i)
                 possibleboxes[opt] = found[i][0]
             end
         end

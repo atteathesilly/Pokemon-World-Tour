@@ -118,7 +118,7 @@ class PokemonBoxSprite < SpriteWrapper
 
     def refresh
         if @refreshBox
-            boxname = @storage[@boxnumber].name
+            boxname = @storage[@boxnumber].getName(@boxnumber)
             getBoxBitmap
             @contents.blt(0, 0, @boxbitmap.bitmap, Rect.new(0, 0, 324, 296))
             pbSetSystemFont(@contents)
