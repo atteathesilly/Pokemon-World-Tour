@@ -472,17 +472,6 @@ FunctionCode = LowerTargetDef2
 Flags = CanProtect,CanMagicCoat
 Description = The user leers at nearby foes with sharp eyes. Their Defense stat is lowered by two steps.
 #-------------------------------
-[LUCKYCHANT]
-Name = Lucky Chant
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 25
-Target = UserSide
-FunctionCode = StartPreventCriticalHitsAgainstUserSide10
-Flags = CanSnatch,Sound
-Description = The user chants an incantation, preventing the foe from landing critical hits for 10 turns.
-#-------------------------------
 [MEFIRST]
 Name = Me First
 Type = NORMAL
