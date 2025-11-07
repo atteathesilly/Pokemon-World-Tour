@@ -23,6 +23,7 @@ class PokemonStorageScene
         @viewport.z = 99_999
         @selection = 0
         @quickswap = false
+        @filter = false
         @sprites = {}
         @choseFromParty = false
         @command = command
