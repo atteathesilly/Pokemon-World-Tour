@@ -2263,8 +2263,8 @@ Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
 #-------------------------------
-[UPSIDEDOWN]
-Name = Upside Down
+[OSCILLATION]
+Name = Oscillation
 Description = The Pokémon's stat steps are inverted at the end of every turn.
 #-------------------------------
 [VANDAL]

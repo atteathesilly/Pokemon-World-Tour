@@ -216,7 +216,7 @@ BattleHandlers::EOREffectAbility.add(:DISTORTEDGRAVITY,
   }
 )
 
-BattleHandlers::EOREffectAbility.add(:UPSIDEDOWN,
+BattleHandlers::EOREffectAbility.add(:OSCILLATION,
   proc { |ability, battler, battle|
   next unless battler.hasAlteredStatSteps?
   battler.showMyAbilitySplash(ability)
