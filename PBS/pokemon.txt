@@ -12134,7 +12134,7 @@ Flags = Legendary
 Name = Phione
 Type1 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 90,90,90,80,90,90
+BaseStats = 75,90,90,95,90,90
 # Total = 530
 GenderRate = Genderless
 BaseEXP = 216
