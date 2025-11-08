@@ -9656,3 +9656,41 @@ Pokemon = GIGANTEON,45
 Pokemon = GIGANTEON,45
     Moves = LASTRESORT,PROTECT
     AbilityIndex = 1 # Friend to All
+#-------------------------------
+[COOLTRAINER_F7,Iridia]
+Pokemon = HELECTRODE,35
+    Moves = SELFDESTRUCT,THUNDERBOLT,CHLOROBLAST,AROMATHERAPY
+    AbilityIndex = 0 # Perennial Payload
+    Item = NORMALGEM
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = GSTUNFISK,35
+    Moves = FARADAYCAGE,CRUSHINGCHASM,KINETICGRIP,SHOREUP
+    AbilityIndex = 0 # Denticle Debris
+    Item = LEFTOVERS
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,0,10,0,0,20
+Pokemon = YANMEGA,35
+    Moves = LUMINACHAIN,AIRSLASH,GIGADRAIN,PSYCHIC
+    AbilityIndex = 1 # Tinted Lens
+    Item = LIFEORB
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = GRAPPLOCT,35
+    Moves = ARMTHRUST,PINMISSILE,FURYPECKS,OCTOLOCK
+    AbilityIndex = 0 # Numbing Touch
+    Item = LOADEDDICE
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,0,20,20
+Pokemon = CLOYSTER,35
+    Moves = ICESHARD,SLAMSHUT,ICECALIBUR,ICICLEPIN
+    AbilityIndex = 0 # Tough
+    Item = ICEGEM
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,20,0,20,0
+Pokemon = LANTURN,35
+    Moves = ARCLAMP,BUBBLEBLASTER,MENDINGSPRING,RECOVER
+    AbilityIndex = 1 # Blinding
+    Item = LEFTOVERS
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 20,0,10,0,0,20
