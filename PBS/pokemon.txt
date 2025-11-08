@@ -12162,6 +12162,7 @@ GenderRate = Genderless
 BaseEXP = 270
 Rareness = 5
 Abilities = OVERFLOWINGHEART
+Moves = 0,SEABORNESACRAMENT
 StepsToHatch = 2805
 Height = 0.3
 Weight = 1.4
