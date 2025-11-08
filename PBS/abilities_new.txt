@@ -2263,9 +2263,9 @@ Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
 #-------------------------------
-[UPSIDEDOWN]
-Name = Upside Down
-Description = Uses Topsy Turvy on itself at the end of every turn.
+[OSCILLATION]
+Name = Oscillation
+Description = The Pokémon's stat steps are inverted at the end of every turn.
 #-------------------------------
 [VANDAL]
 Name = Vandal
