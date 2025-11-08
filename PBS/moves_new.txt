@@ -4584,6 +4584,17 @@ Flags = CanSnatch
 Description = The user rests in a riverbed, restoring its HP by half of max, and forming an Aqua Ring around themselves, healing 10% HP per turn.
 Animation = REST
 #-------------------------------
+[SEABORNESACRAMENT]
+Name = Seaborne Sacrament
+Type = WATER
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = WaterlogTargetStartHealUserEachTurn
+Flags = CanProtect,CanMagicCoat
+Description = The user communes with water from all around the world, surrounding itself with an Aqua Ring and waterlogging the target.
+#-------------------------------
 [SILTSURGE]
 Name = Silt Surge
 Type = WATER
