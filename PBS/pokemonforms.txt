@@ -1047,3 +1047,14 @@ FormName = White-Striped
 Kind = Mellow
 Pokedex = It differs from other Basculin in several respects, including demeanor. It is much gentler than other color variants.
 Evolutions = BASCULEGION,Level,42
+#-------------------------------
+[URSALUNA,1]
+FormName = Bloodmoon
+Type1 = DARK
+Type2 = GROUND
+BaseStats = 130,45,105,65,140,60
+# Total = 545
+Abilities = BREAKTHROUGH,NOGUARD
+Height = 2.7
+Weight = 330.0
+Pokedex = This special Ursaluna can see in the dark with its left eye and protects itself with mud that is as hard as iron.

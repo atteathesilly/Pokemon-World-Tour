@@ -221,19 +221,6 @@ Flags = CanProtect
 Description = The user draws power to attack by using a held Berry. The Berry used determines its type.
 Animation = NATURALGIFT
 #-------------------------------
-[EXTREMEEFFORT]
-Name = Extreme Effort
-Type = NORMAL
-Category = Physical
-Power = 150
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = UserMustUseRestNextTurn
-Flags = CanProtect
-Description = The user uses all their might to attack their opponent, forcing the user to use Rest on their next turn.
-Animation = GIGAIMPACT
-#-------------------------------
 [FIREFOREFFECT]
 Name = Fire For Effect
 Type = NORMAL
@@ -1724,6 +1711,19 @@ FunctionCode = IncreasedPriorityInSandstorm
 Flags = CanProtect
 Description = Attacks by blasting dirt and debris at the target. This move always goes first in sandstorm.
 Animation = SANDATTACK
+#-------------------------------
+[EXTREMEEFFORT]
+Name = Extreme Effort
+Type = GROUND
+Category = Adaptive
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserMustUseRestNextTurn
+Flags = CanProtect
+Description = The user uses all their might to attack their opponent, forcing the user to use Rest on their next turn.
+Animation = GIGAIMPACT
 #-------------------------------
 [GROUNDING]
 Name = Grounding
