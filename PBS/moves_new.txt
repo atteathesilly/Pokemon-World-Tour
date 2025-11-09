@@ -7549,6 +7549,19 @@ Priority = 5
 FunctionCode = PowerUpAndIncreaseAccOfAllyMove
 Description = The user assists an ally by boosting the power and Accuracy of its next attack by 50%.
 #-------------------------------
+[STALKING]
+Name = Stalking
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PursueSwitchingFoe
+Flags = CanProtect,Biting
+Description = The user darkly follows the target before striking. Inflicts double damage on a target that is switching out.
+Animation = PURSUIT
+#-------------------------------
 [STAREDOWN]
 Name = Stare Down
 Type = DARK
