@@ -6624,6 +6624,12 @@ FrontSprite = -1,21
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[URSALUNA,1]
+BackSprite = 0,8
+FrontSprite = -6,14
+ShadowX = 2
+ShadowSize = 3
+#-------------------------------
 [URSARING]
 BackSprite = 0,13
 FrontSprite = 0,10
