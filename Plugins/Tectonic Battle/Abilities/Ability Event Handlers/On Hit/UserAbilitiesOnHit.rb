@@ -277,3 +277,17 @@ BattleHandlers::UserAbilityOnHit.add(:COREPROVENANCE,
     user.pbOwnSide.incrementEffect(:ErodedRock)
   }
 )
+
+BattleHandlers::UserAbilityOnHit.add(:SCARAPACEABILITY,
+	proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+		next unless user.firstTurn?
+		next if target.fainted?
+		next if target.effectActive?(:Trapping)
+		next if target.effectActive?(:Constricted)
+		next if target.effectActive?(:Pinched)
+		battle.pbShowAbilitySplash(user, ability)
+		target.applyEffect(:Pinched, applyEffectDurationModifiers(3, target))
+		target.pointAt(:TrappingUser, user)
+		battle.pbHideAbilitySplash(user)
+	}
+)

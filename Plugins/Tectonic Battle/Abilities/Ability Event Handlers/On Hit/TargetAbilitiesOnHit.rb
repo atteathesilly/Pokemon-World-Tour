@@ -337,6 +337,7 @@ BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
         next -30 if aiCheck
         next if user.effectActive?(:Trapping)
         next if user.effectActive?(:Constricted)
+		next if user.effectActive?(:Pinched)
         next if target.effectActive?(:SwitchedIn)
         battle.pbShowAbilitySplash(target, ability)
         user.applyEffect(:Constricted, applyEffectDurationModifiers(3, target))

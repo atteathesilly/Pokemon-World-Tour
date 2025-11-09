@@ -1805,6 +1805,10 @@ Flags = EclipseSynergy
 Name = Scalding Smoke
 Description = Powers up Poison-type moves by 50%.
 #-------------------------------
+[SCARAPACEABILITY]
+Name = Scarapace Ability
+Description = On the first turn, its attacks trap the target and damage it for three turns.
+#-------------------------------
 [SCATHINGSYZYGY]
 Name = Scathing Syzygy
 Description = Boosts all of the Pokémon's move damage by 25% during eclipse.

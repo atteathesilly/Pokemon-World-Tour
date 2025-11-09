@@ -1533,6 +1533,33 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Pinched,
+    :real_name => "Pinched Turns",
+    :type => :Integer,
+    :ticks_down => true,
+    :trapping => true,
+    :swaps_with_battlers => true,
+    :apply_proc => proc do |battle, battler, value|
+        battle.pbDisplay(_INTL("{1} is trapped in the pincers!",battler.pbThis))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} was freed from the pincers!", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer trapped in the pincers.", battler.pbThis))
+    end,
+    :remain_proc => proc do |battle, battler, _value|
+        battle.pbCommonAnimation("Wrap", battler)
+        if battler.takesIndirectDamage?
+            fraction = trappingDamageFraction(battler)
+            battle.pbDisplay(_INTL("{1} is hurt by the pincers!", battler.pbThis))
+            battler.applyFractionalDamage(fraction)
+        end
+    end,
+    :sub_effects => %i[TrappingUser],
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :Magnetized,
     :real_name => "Magnet Trap Turns",
     :type => :Integer,
