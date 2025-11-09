@@ -6563,7 +6563,7 @@ Weight = 6.5
 Kind = Pig
 Pokedex = If it smells something enticing, it dashes off headlong to find the source of the aroma.
 Generation = 2
-Evolutions = PILOSWINE,Level,26
+Evolutions = PILOSWINE,Level,21
 #-------------------------------
 [PILOSWINE]
 Name = Piloswine
@@ -7458,7 +7458,7 @@ Kind = TinyRaccoon
 Pokedex = Thought to be the oldest form of Zigzagoon, it moves in zigzags and wreaks havoc upon its surroundings.
 Generation = 8
 WildItemUncommon = BLACKGLASSES
-Evolutions = GLINOONE,Level,26
+Evolutions = GLINOONE,Level,21
 #-------------------------------
 [GLINOONE]
 Name = G. Linoone
@@ -8530,7 +8530,7 @@ Weight = 11.2
 Kind = Meditate
 Pokedex = It eats just one berry a day. By enduring hunger, its spirit is tempered and made sharper.
 Generation = 3
-Evolutions = MEDICHAM,Level,28
+Evolutions = MEDICHAM,Level,23
 #-------------------------------
 [MEDICHAM]
 Name = Medicham
@@ -8586,7 +8586,7 @@ Weight = 15.2
 Kind = Lightning
 Pokedex = It stores static electricity in its fur for discharging. It gives off sparks if a storm approaches.
 Generation = 3
-Evolutions = MANECTRIC,Level,26
+Evolutions = MANECTRIC,Level,23
 #-------------------------------
 [MANECTRIC]
 Name = Manectric
@@ -8827,7 +8827,7 @@ Weight = 20.8
 Kind = Savage
 Pokedex = It lives in massive rivers that course through jungles. It swarms prey that enter its territory.
 Generation = 3
-Evolutions = SHARPEDO,Level,26
+Evolutions = SHARPEDO,Level,22
 #-------------------------------
 [SHARPEDO]
 Name = Sharpedo
@@ -9166,7 +9166,7 @@ Weight = 1.2
 Kind = Cotton Bird
 Pokedex = Swablu is very friendly towards humans, so a Swablu may land on your head and act like a fluffy hat.
 Generation = 3
-Evolutions = ALTARIA,Level,28
+Evolutions = ALTARIA,Level,24
 #-------------------------------
 [ALTARIA]
 Name = Altaria
@@ -9640,7 +9640,7 @@ Kind = Puppet
 Pokedex = It loves vengeful emotions and hangs in rows under the eaves of houses where vengeful people live.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = BANETTE,Level,27
+Evolutions = BANETTE,Level,22
 #-------------------------------
 [BANETTE]
 Name = Banette
@@ -9702,7 +9702,7 @@ Kind = Requiem
 Pokedex = If it finds bad children who won't listen to their parents, it will spirit them away--or so it's said.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = DUSCLOPS,Level,27
+Evolutions = DUSCLOPS,Level,23
 #-------------------------------
 [DUSCLOPS]
 Name = Dusclops
@@ -9863,7 +9863,7 @@ Weight = 16.8
 Kind = Snow Hat
 Pokedex = In Sinnoh, certain folklore says a house will prosper if a Snorunt lives there.
 Generation = 3
-Evolutions = GLALIE,Level,26,FROSLASS,Item,DAWNSTONE
+Evolutions = GLALIE,Level,25,FROSLASS,Item,DAWNSTONE
 #-------------------------------
 [GLALIE]
 Name = Glalie
@@ -10186,7 +10186,7 @@ Kind = Iron Ball
 Pokedex = From its rear, Beldum emits a magnetic force that rapidly pulls opponents in. They get skewered on Beldum's sharp claws.
 Generation = 3
 WildItemUncommon = MAGNET
-Evolutions = METANG,Level,26
+Evolutions = METANG,Level,21
 #-------------------------------
 [METANG]
 Name = Metang
@@ -11885,7 +11885,7 @@ Kind = Frost Tree
 Pokedex = In the spring, it grows berries with the texture of frozen treats around its belly.
 Generation = 4
 WildItemUncommon = NEVERMELTICE
-Evolutions = ABOMASNOW,Level,28
+Evolutions = ABOMASNOW,Level,25
 #-------------------------------
 [ABOMASNOW]
 Name = Abomasnow
@@ -14026,7 +14026,7 @@ Kind = Trash Bag
 Pokedex = Inhaling the gas they belch will make you sleep for a week. They prefer unsanitary places.
 Generation = 5
 WildItemCommon = NUGGET
-Evolutions = GARBODOR,Level,28
+Evolutions = GARBODOR,Level,25
 #-------------------------------
 [GARBODOR]
 Name = Garbodor
@@ -14270,7 +14270,7 @@ Kind = Cell
 Pokedex = They drive away attackers by unleashing psychic power. They can use telepathy to talk with others.
 Generation = 5
 WildItemCommon = RAREBONE
-Evolutions = DUOSION,Level,29
+Evolutions = DUOSION,Level,24
 #-------------------------------
 [DUOSION]
 Name = Duosion
@@ -16585,7 +16585,7 @@ Weight = 2.0
 Kind = Sword
 Pokedex = If anyone dares to grab its hilt, it wraps a blue cloth around that person's arm and drains that person's life energy completely.
 Generation = 6
-Evolutions = DOUBLADE,Level,26
+Evolutions = DOUBLADE,Level,24
 #-------------------------------
 [DOUBLADE]
 Name = Doublade
@@ -19683,7 +19683,7 @@ Weight = 1.8
 Kind = Tiny Bird
 Pokedex = Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents.
 Generation = 8
-Evolutions = CORVISQUIRE,Level,26
+Evolutions = CORVISQUIRE,Level,23
 #-------------------------------
 [CORVISQUIRE]
 Name = Corvisquire
