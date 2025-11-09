@@ -1,4 +1,6 @@
 Events.onWildPokemonCreate += proc {|sender,e|
+    pokemon = e[0]
+    next if pokemon.species == :WINGULL # don't overwrite wingull hits
     next unless $game_map.map_id == 239 && $catching_minigame.active? # Ocean fishing contest
     next if $Trainer.pokedex.owned?(:LUGIA)
 
