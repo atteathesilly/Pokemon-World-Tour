@@ -12,7 +12,6 @@ Events.onWildPokemonCreate += proc {|sender,e|
 
     next unless rand(200) < chance
 
-    pokemon = e[0]
     overwriteWildPokemonSpecies(pokemon,:LUGIA)
     pokemon.set_starting_level([getLevelCap,45].min)
     pokemon.reset_moves
