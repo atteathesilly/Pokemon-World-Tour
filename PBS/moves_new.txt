@@ -7538,17 +7538,6 @@ Flags = CanProtect
 Description = Explodes, dealing an extra 30 base power to all nearby for each Spikes hazard layer underneath them. The user faints.
 Animation = EXPLOSION
 #-------------------------------
-[SPOTTING]
-Name = Spotting
-Type = DARK
-Category = Status
-Accuracy = 0
-TotalPP = 15
-Target = NearAlly
-Priority = 5
-FunctionCode = PowerUpAndIncreaseAccOfAllyMove
-Description = The user assists an ally by boosting the power and Accuracy of its next attack by 50%.
-#-------------------------------
 [STALKING]
 Name = Stalking
 Type = DARK

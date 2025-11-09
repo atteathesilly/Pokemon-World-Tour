@@ -999,6 +999,10 @@ Description = Raises Sp. Atk after knocking out any Pokémon.
 Name = Huggable
 Description = When hit by a move with 95 or more base power, hits back instantly with Nuzzle.
 #-------------------------------
+[HULLHUNGER]
+Name = Hull Hunger
+Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
+#-------------------------------
 [HYBRIDFIGHTER]
 Name = Hybrid Fighter
 Description = Punches, Kicks, and Bites combo together to create special effects.
@@ -1998,10 +2002,6 @@ Flags = EclipseSynergy
 [STEAMPOWER]
 Name = Steam Power
 Description = Takes 50% less damage from Water-type moves. Raises Speed by four steps when hit by one.
-#-------------------------------
-[STEELABSORB]
-Name = Steel Absorb
-Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
 #-------------------------------
 [STEEPFLYING]
 Name = Steep Flying

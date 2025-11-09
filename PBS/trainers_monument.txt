@@ -2559,7 +2559,7 @@ Pokemon = SCARAPACE,70
     EV = 20,20,0,0,20,10
 Pokemon = BARBARACLE,70
     Moves = ARMTHRUST,ACCELEROCK,ROCKBLAST,SWORDSDANCE
-    AbilityIndex = 1 # Steel Absorb
+    AbilityIndex = 1 # Hull Hunger
     Item = LOADEDDICE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,5,0,20,5

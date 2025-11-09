@@ -156,7 +156,7 @@ Pokemon = PANCHAM,15
     EV = 10,10,11,15,10,4
 Pokemon = BINACLE,15
     Moves = ROCKTHROW,KARATECHOP,RUMBLE,GLARE
-    AbilityIndex = 1 # Steel Absorb
+    AbilityIndex = 1 # Hull Hunger
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 18,10,11,0,10,11
 Pokemon = RIOLU,15
@@ -2156,7 +2156,7 @@ Pokemon = BLASTOISE,40
     AbilityIndex = 1 # Mega Launcher
 Pokemon = BARBARACLE,41
     Moves = CROSSCHOP,ADAMANTINEPRESS,RAZORSHELL,ROCKPOLISH
-    AbilityIndex = 1 # Steel Absorb
+    AbilityIndex = 1 # Hull Hunger
 Pokemon = SENSIBELLE,42
     Moves = HEARTRHYTHM,NULLPULSE,PSYCHIC,SHOUT
     AbilityIndex = 1 # Regenerator
@@ -8390,7 +8390,7 @@ Pokemon = AMUK,70
     Item = BLACKSLUDGE
 Pokemon = BARBARACLE,70
     Moves = SHELLSMASH,CROSSCHOP,ADAMANTINEPRESS,ACCELEROCK
-    AbilityIndex = 1 # Steel Absorb
+    AbilityIndex = 1 # Hull Hunger
     Item = AGILITYHERB
 #-------------------------------
 [TAPU_FINI,Tapu Fini]
@@ -8691,7 +8691,7 @@ Pokemon = VILEPLUME,70
     AbilityIndex = 0 # Sickening
 Pokemon = BARBARACLE,70
     Moves = LIQUIDATION,CROSSCHOP,ADAMANTINEPRESS
-    AbilityIndex = 1 # Steel Absorb
+    AbilityIndex = 1 # Hull Hunger
     Item = STRIKEVEST
 Pokemon = EISCUE,70
     Moves = SHIVERSQUIRM,HYPOTHERMIATE,SUFFOCATE,BODYSLAM

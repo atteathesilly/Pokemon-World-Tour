@@ -1012,6 +1012,10 @@ Description = Raises Speed each time the Pokémon flinches.
 Name = Steam Engine
 Description = Maximizes Speed when hit by a Fire- or Water-type move.
 #-------------------------------
+[STEELABSORB]
+Name = Steel Absorb
+Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
+#-------------------------------
 [STEELYSHELL]
 Name = Steely Shell
 Description = Steel-type attacks deal 50% more damage, and the Pokémon is protected from critical hits.
