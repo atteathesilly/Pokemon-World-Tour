@@ -2401,7 +2401,7 @@ Target = NearOther
 FunctionCode = RaiseCriticalHitRate1
 Flags = CanProtect
 EffectChance = 100
-Description = A star falls on the target. Witnessing this lucky star also increases the user's critical hit chance.
+Description = A star falls on the target. Witnessing this lucky star also enables random critical hits and doubles the user's critical hit chance.
 Animation = DOOMDESIRE
 #-------------------------------
 [TERRAFORM]
