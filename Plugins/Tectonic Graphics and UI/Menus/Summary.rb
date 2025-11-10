@@ -317,6 +317,45 @@ class PokemonSummary_Scene
         pbFadeInAndShow(@sprites) { pbUpdate }
     end
 
+    def pbStartSingleExternalScene(pokemon)
+        @viewport = Viewport.new(0, 0, Graphics.width, Graphics.height)
+        @viewport.z = 99_999
+        @party      = nil
+        @partyindex = -1
+        @pokemon    = pokemon
+        @battle     = nil
+        @page = 4
+        @forget = true
+        @typebitmap = AnimatedBitmap.new(addLanguageSuffix(("Graphics/Pictures/types")))
+        @sprites = {}
+        @sprites["background"] = IconSprite.new(0, 0, @viewport)
+        @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
+        pbSetSystemFont(@sprites["overlay"].bitmap)
+        @sprites["pokemon"] = PokemonSprite.new(@viewport)
+        @sprites["pokemon"].setOffset(PictureOrigin::Center)
+        @sprites["pokemon"].x = 104
+        @sprites["pokemon"].y = 206
+        @sprites["pokemon"].setPokemonBitmap(@pokemon)
+        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
+        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
+        @sprites["pokeicon"].x       = 46
+        @sprites["pokeicon"].y       = 92
+        @sprites["pokeicon"].visible = false
+        createItemIcons
+        @sprites["movesel"] = MoveSelectionSprite.new(@viewport, false)
+        @sprites["movesel"].visible = false
+        @sprites["movesel"].visible = true
+
+        @sprites["movesel"].index = 0
+        new_move = nil
+        move_selected = @pokemon.moves[0]
+
+        createMoveInfoDisplay
+
+        drawSelectedMove(new_move, move_selected)
+        pbFadeInAndShow(@sprites)
+    end
+
     def createItemIcons
         path_1 = "Graphics/Pictures/Summary/item_bg"
         path_1 += "_dark" if darkMode?
@@ -1307,6 +1346,53 @@ class PokemonSummary_Scene
         return (selmove == Pokemon::MAX_MOVES) ? -1 : selmove
     end
 
+    def pbBrowseMoves
+        selmove = 0
+        hideItems
+        loop do
+            Graphics.update
+            Input.update
+            pbUpdate
+            selmove_prev = selmove
+            if Input.trigger?(Input::BACK)
+                selmove = Pokemon::MAX_MOVES
+                pbPlayCloseMenuSE
+                break
+            elsif Input.trigger?(Input::USE)
+                pbPlayDecisionSE
+                break
+            elsif Input.trigger?(Input::UP)
+                if selmove >= 2 && selmove < Pokemon::MAX_MOVES
+                    selmove -= 2
+                elsif selmove == 1 && move_to_learn
+                    selmove = Pokemon::MAX_MOVES # New move
+                end
+            elsif Input.trigger?(Input::DOWN)
+                if selmove < 2
+                    selmove += 2
+                elsif selmove == Pokemon::MAX_MOVES
+                    selmove = 1
+                end
+            elsif Input.trigger?(Input::LEFT)
+                selmove -= 1 if selmove % 2 == 1 && selmove != Pokemon::MAX_MOVES
+            elsif Input.trigger?(Input::RIGHT)
+                selmove += 1 if selmove % 2 == 0 && selmove != Pokemon::MAX_MOVES
+            end
+
+            if selmove != selmove_prev
+                selected_move = @pokemon.moves[selmove]
+                if selected_move
+                    @sprites["movesel"].index = selmove
+                    pbPlayCursorSE
+                    drawSelectedMove(nil, selected_move)
+                else
+                    selmove = selmove_prev
+                    pbPlayBuzzerSE
+                end
+            end
+        end
+    end
+
     def pbScene
         @pokemon.play_cry
         loop do
@@ -1451,6 +1537,12 @@ class PokemonSummaryScreen
         ret = @scene.pbScene
         @scene.pbEndScene
         return ret
+    end
+
+    def pbStartSingleExternalScene(pokemon)
+        @scene.pbStartSingleExternalScene(pokemon)
+        @scene.pbBrowseMoves
+        @scene.pbEndScene
     end
 end
 
