@@ -2552,7 +2552,7 @@ Pokemon = MLILLIGANT,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,18,10,12,18,0
 Pokemon = SCARAPACE,70
-    Moves = SWORDSDANCE,XSCISSOR,KNOCKOFF,CLOSECOMBAT
+    Moves = SWORDSDANCE,XSCISSOR,ICEBERGBASH,CLOSECOMBAT
     AbilityIndex = 0 # Victory Molt
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
