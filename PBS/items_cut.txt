@@ -4785,3 +4785,21 @@ Price = 4000
 FieldUse = TM
 Flags = SkipPocketMessage
 Move = AURASPHERE
+#-------------------------------
+[TMCLOUDBREAK]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = CLOUDBREAK
+#-------------------------------
+[TMDISSIPATION]
+Name = Unnamed
+NamePlural = Unnamed
+Pocket = 5
+Price = 4000
+FieldUse = TM
+Flags = SkipPocketMessage
+Move = DISSIPATION
