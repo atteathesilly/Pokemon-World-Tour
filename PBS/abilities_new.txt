@@ -1576,6 +1576,10 @@ Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insul
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.
 #-------------------------------
+[POWERPINCH]
+Name = Power Pinch
+Description = On the first turn, its attacks trap the target and damage it for three turns.
+#-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve
 Description = Right before the Pokémon is attacked, the attacker's stat changes are reset.
@@ -1804,10 +1808,6 @@ Flags = EclipseSynergy
 [SCALDINGSMOKE]
 Name = Scalding Smoke
 Description = Powers up Poison-type moves by 50%.
-#-------------------------------
-[SCARAPACEABILITY]
-Name = Scarapace Ability
-Description = On the first turn, its attacks trap the target and damage it for three turns.
 #-------------------------------
 [SCATHINGSYZYGY]
 Name = Scathing Syzygy

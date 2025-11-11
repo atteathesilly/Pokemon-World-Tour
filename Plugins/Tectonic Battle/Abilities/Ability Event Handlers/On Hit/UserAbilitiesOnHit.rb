@@ -278,15 +278,16 @@ BattleHandlers::UserAbilityOnHit.add(:COREPROVENANCE,
   }
 )
 
-BattleHandlers::UserAbilityOnHit.add(:SCARAPACEABILITY,
+BattleHandlers::UserAbilityOnHit.add(:POWERPINCH,
 	proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
 		next unless user.firstTurn?
+    next unless move.physicalMove?
 		next if target.fainted?
 		next if target.effectActive?(:Trapping)
 		next if target.effectActive?(:Constricted)
 		next if target.effectActive?(:Pinched)
 		battle.pbShowAbilitySplash(user, ability)
-		target.applyEffect(:Pinched, applyEffectDurationModifiers(3, target))
+		target.applyEffect(:Pinched, applyEffectDurationModifiers(3, user))
 		target.pointAt(:TrappingUser, user)
 		battle.pbHideAbilitySplash(user)
 	}

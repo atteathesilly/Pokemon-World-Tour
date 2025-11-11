@@ -1501,7 +1501,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :id => :TrappingUser,
     :real_name => "Trapped By",
     :type => :Position,
-    :disable_effects_on_other_exit => [:Trapping, :Constricted],
+    :disable_effects_on_other_exit => [:Trapping, :Constricted, :Pinched],
     :hand_off => true,
 })
 

@@ -3872,7 +3872,7 @@ Pokemon = SHARPEDO,30
     AbilityIndex = 1 # Armor Piercing
 Pokemon = PINSIR,30
     Moves = FURYPECKS,CAPOEIRA,BUGBITE,BULKUP
-    AbilityIndex = 1 # Scarapace Ability
+    AbilityIndex = 1 # Power Pinch
 #-------------------------------
 [BURGLAR,Barret]
 Pokemon = DUDUNSPARCE,26
@@ -4706,7 +4706,7 @@ Pokemon = DRAMPA,60
     AbilityIndex = 0 # Berserk
 Pokemon = SCARAPACE,60
     Moves = SUPERPOWER,XSCISSOR,MACHPUNCH,DIVEBOMB
-    AbilityIndex = 1 # Scarapace Ability
+    AbilityIndex = 1 # Power Pinch
 Pokemon = CHARIZARD,60
     Moves = DRACOMETEOR,WILDFIREMELT,FLAMETHROWER,OVERHEAT
     AbilityIndex = 0 # Pure Rage
