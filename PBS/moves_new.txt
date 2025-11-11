@@ -3253,19 +3253,6 @@ EffectChance = 50
 Description = The target is pestered by a giant tongue. This has a 50% chance to numb it.
 Animation = LICK
 #-------------------------------
-[UNDYINGRUSH]
-Name = Undying Rush
-Type = GHOST
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = RecoilThirdOfDamageDealtButCantFaint
-Flags = CanProtect
-Description = Clad in souls, the user crashes into the target. The user takes 33% recoil, but can't faint from it.
-Animation = PHANTOMFORCE
-#-------------------------------
 [VIMRIPPER]
 Name = Vim Ripper
 Type = GHOST

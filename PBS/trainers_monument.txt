@@ -1395,7 +1395,7 @@ Pokemon = KECLEON,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
-    Moves = SHADOWSNEAK,FLIPTURN,UNDYINGRUSH,HARBORBREAKER
+    Moves = SHADOWSNEAK,FLIPTURN,FROMBEYOND,HARBORBREAKER
     AbilityIndex = 0 # Juggernaut
     Item = PRISMATICPLATE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2526,7 +2526,7 @@ Pokemon = DURANT,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
-    Moves = SUPERPOWER,FLAREBLITZ,UNDYINGRUSH,HARBORBREAKER
+    Moves = SUPERPOWER,FLAREBLITZ,FROMBEYOND,HARBORBREAKER
     AbilityIndex = 1 # Expertise
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

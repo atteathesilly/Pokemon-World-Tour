@@ -4115,7 +4115,7 @@ Pokemon = ADUGTRIO,55
 #-------------------------------
 [AROMALADY3,Henrietta]
 Pokemon = DUSKNOIR,51
-    Moves = FROMBEYOND,STITCHUP,SHORTCIRCUIT,WILLOWISP
+    Moves = CURSEDOATH,STITCHUP,SHORTCIRCUIT,WILLOWISP
     AbilityIndex = 0 # Aggravate
     Item = ROCKYHELMET
 Pokemon = DUDUDUNSPARCE,52
@@ -6991,7 +6991,7 @@ Pokemon = LUXRAY,70
 Pokemon = BASCULEGION,70
     Name = Brokenribs
     Gender = male
-    Moves = UNDYINGRUSH,HARBORBREAKER,INFERNOIMPACT,SHADOWSNEAK
+    Moves = SIXFEETUNDER,HARBORBREAKER,INFERNOIMPACT,SHADOWSNEAK
     AbilityIndex = 1 # Expertise
     Item = SITRUSBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
