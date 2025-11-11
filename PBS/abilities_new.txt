@@ -1581,6 +1581,10 @@ Name = Pressure Valve
 Description = Right before the Pokémon is attacked, the attacker's stat changes are reset.
 Flags = SetupCounterAI
 #-------------------------------
+[PROTECTIVEINSTINCT]
+Name = Protective Instinct
+Description = While the Pokemon has an ally that isn't fully evolved, both Pokemon take 33% less move damage.
+#-------------------------------
 [PUFFUP]
 Name = Puff Up
 Description = Deals 25% more damage per stockpile.

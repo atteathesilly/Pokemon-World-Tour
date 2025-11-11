@@ -419,6 +419,16 @@ BattleHandlers::AbilityOnSwitchIn.add(:FIELDOFLIFE,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:PROTECTIVEINSTINCT,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      next unless battler.hasAnyNotFullyEvolvedAllies?
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} bonds with its younger allies!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 ##########################################
 # Screen setting abilities
 ##########################################
