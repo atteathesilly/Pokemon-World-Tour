@@ -135,6 +135,7 @@ def battleKeywordsImportant
         "energize",
         "substitutes",
         "substitute",
+        "sticky",
     ]
 end
 
