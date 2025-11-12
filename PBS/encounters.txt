@@ -225,7 +225,21 @@ Land,20
     20,TOGEPI,20,21
 Puddle,20
     20,LUVDISC,20,21
-    20,MANTINE,20,21
+    20,MANTYKE,20,21
     20,SEEL,20,21
     20,TENTACOOL,20,21
     20,WAILMER,20,21
+#-------------------------------
+[050] # Three Isle Port
+Land,20
+    40,BULBASAUR,20,21
+    20,MANKEY,20,21
+    20,BELLSPROUT,20,21
+    20,MUNCHLAX,20,21
+    20,MAREEP,20,21
+#-------------------------------
+[051] # Trop City Cafe
+Special
+    1,OFERROSEED,20
+    1,RFOONGUS,20
+    1,CRABRAWLER,20
