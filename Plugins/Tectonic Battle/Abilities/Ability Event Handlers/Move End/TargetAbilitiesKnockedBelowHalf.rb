@@ -84,3 +84,12 @@ BattleHandlers::TargetAbilityKnockedBelowHalf.add(:SUDDENTURN,
         battle.forceUseMove(target, :RAPIDSPIN, ability: ability)
     }
 )
+
+BattleHandlers::TargetAbilityKnockedBelowHalf.add(:STICKYSITUATION,
+    proc { |ability, target, user, move, _switched, battle|
+        next if user.effectActive?(:Sticky)
+        battle.pbShowAbilitySplash(target, ability)
+        user.applyEffect(:Sticky, applyEffectDurationModifiers(DEFAULT_STICKY_DURATION, target))
+        battle.pbHideAbilitySplash(target)
+    }
+)

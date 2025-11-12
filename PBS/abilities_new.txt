@@ -2023,6 +2023,10 @@ Description = Can hold a second item by stealing it.
 Name = Sticky Mold
 Description = If an attack lowers its HP to half or less, leeches the attacker.
 #-------------------------------
+[STICKYSITUATION]
+Name = Sticky Situation
+Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes sticky for three turns.
+#-------------------------------
 [STONEMANE]
 Name = Stone Mane
 Description = Prevents half the self-damage from recoil. Powers up moves that have recoil damage by 20%.

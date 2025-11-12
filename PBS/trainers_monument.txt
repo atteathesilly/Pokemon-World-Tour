@@ -2394,7 +2394,7 @@ Pokemon = TEAMUJIN,70
     EV = 10,20,0,0,20,20
 Pokemon = BLASFEMMIE,70
     Moves = SWEETKISS,GLAMOURFLASH,MOONBLAST,RAPIDSPIN
-    AbilityIndex = 1 # Hubris
+    AbilityIndex = 1 # Sticky Situation
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,0,20,10

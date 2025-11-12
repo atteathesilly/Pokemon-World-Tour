@@ -3820,6 +3820,16 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = The target is charmed into harshly lowering its Sp. Atk stat.
 #-------------------------------
+[DECORATE]
+Name = Decorate
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 12
+Target = NearAlly
+FunctionCode = Invalid
+Description = The user decorates the target, raising their Attack and Sp. Atk by five steps.
+#-------------------------------
 [FAIRPLAY]
 Name = Fair Play
 Type = FAIRY
