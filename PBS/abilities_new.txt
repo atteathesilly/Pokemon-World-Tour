@@ -1082,8 +1082,8 @@ Description = Pokémon take damage from non-volatile status conditions even whil
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
 #-------------------------------
-[INNERLIGHT]
-Name = Inner Light
+[INNERHEAT]
+Name = Inner Heat
 Description = Summons sunshine for four turns when hit by an attack.
 Flags = SunshineSynergy
 #-------------------------------
@@ -1575,6 +1575,10 @@ Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insul
 [POWERLIFTER]
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.
+#-------------------------------
+[PREEMINENCE]
+Name = Preeminence
+Description = Deals 30% more move damage to Pokemon slower than it.
 #-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve

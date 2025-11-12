@@ -1804,7 +1804,7 @@ Pokemon = NOCTOWL,70
 Policies = SUN_TEAM
 Pokemon = TORKOAL,70
     Moves = STEALTHROCK,RAPIDSPIN,GREYMIST,FLAMETHROWER
-    AbilityIndex = 1 # Drought
+    AbilityIndex = 1 # Inner Heat
     Item = HEATROCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,10,0,0,20

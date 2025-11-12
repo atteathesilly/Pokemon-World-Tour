@@ -477,6 +477,11 @@ Description = Prevents the Pokémon from getting poisoned.
 Name = Infinite Source
 Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
 #-------------------------------
+[INNERLIGHT]
+Name = Inner Light
+Description = Summons sunshine for four turns when hit by an attack.
+Flags = SunshineSynergy
+#-------------------------------
 [INSOMNIA]
 Name = Insomnia
 Description = Prevents the Pokémon from falling asleep.

@@ -2427,7 +2427,7 @@ Pokemon = HOUNDOMINUS,70
 Pokemon = MAGMORTAR,70
     AbilityIndex = 0 # Mega Launcher
 Pokemon = DARMANITAN,70
-    AbilityIndex = 1 # Extreme Power
+    AbilityIndex = 0 # Extreme Power
 Pokemon = CHANDELURE,70
     AbilityIndex = 0 # Light Trick
 Pokemon = TALONFLAME,70
@@ -3021,7 +3021,7 @@ Pokemon = EXEGGUTOR,42
     Item = LIFEORB
 Pokemon = RAPIDASH,43
     Moves = BLAZEKICK,TRAMPLE,STAMPDOWN,SOLARGLIDE
-    AbilityIndex = 0 # Sun Chaser
+    AbilityIndex = 0 # Drought
     Item = ASSAULTVEST
 #-------------------------------
 [SWIMMER_F3,Bree]
@@ -8432,7 +8432,7 @@ Policies = SUN_TEAM
 Flags = NoPerfect
 Pokemon = TORKOAL,70
     Moves = FLAMETHROWER,ERUPTION,PULVERIZERCHORD,PROTECT
-    AbilityIndex = 1 # Drought
+    AbilityIndex = 1 # Inner Heat
     Item = HEATROCK
 Pokemon = SOLROCK,70
     Moves = EVERNALFLUX,STONEEDGE,FLAREBLITZ,SYNTHESIS
