@@ -22,15 +22,6 @@ end
 # Protects the user's side from critical hits and some damage. (Sanctuary)
 #===============================================================================
 class PokeBattle_Move_StartPreventCriticalHitsAndReduceDamageAgainstUserSide5 < PokeBattle_Move
-    def pbMoveFailed?(user, _targets, show_message)
-        return false if damagingMove?
-        if user.pbOwnSide.effectActive?(:Sanctuary)
-            @battle.pbDisplay(_INTL("But it failed, since a Sanctuary is already present!")) if show_message
-            return true
-        end
-        return false
-    end
-
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
         super
         if damagingMove? && showAnimation && !user.pbOwnSide.effectActive?(:Sanctuary)
@@ -44,7 +35,6 @@ class PokeBattle_Move_StartPreventCriticalHitsAndReduceDamageAgainstUserSide5 < 
     end
 
     def pbAdditionalEffect(user, target)
-        return if user.pbOwnSide.effectActive?(:Sanctuary)
         user.pbOwnSide.applyEffect(:Sanctuary, user.getScreenDuration)
     end
 
@@ -110,14 +100,6 @@ end
 # For 5 rounds, lowers power of attacks with 100+ BP against the user's side. (Repulsion Field)
 #===============================================================================
 class PokeBattle_Move_StartWeaken100PowerOrHigherDamageAgainstUserSide5 < PokeBattle_Move
-    def pbMoveFailed?(user, _targets, show_message)
-        if user.pbOwnSide.effectActive?(:RepulsionField)
-            @battle.pbDisplay(_INTL("But it failed, since Repulsion Field is already active!")) if show_message
-            return true
-        end
-        return false
-    end
-
     def pbEffectGeneral(user)
         user.pbOwnSide.applyEffect(:RepulsionField, user.getScreenDuration)
     end

@@ -9,7 +9,7 @@ BattleHandlers::TargetAbilityOnHit.add(:SANDBURST,
     }
 )
 
-BattleHandlers::TargetAbilityOnHit.add(:INNERLIGHT,
+BattleHandlers::TargetAbilityOnHit.add(:INNERHEAT,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         score = pbBattleWeatherAbility(ability, :Sunshine, target, battle, false, true, aiCheck)
         next score * -1 if aiCheck

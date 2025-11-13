@@ -999,6 +999,10 @@ Description = Raises Sp. Atk after knocking out any Pokémon.
 Name = Huggable
 Description = When hit by a move with 95 or more base power, hits back instantly with Nuzzle.
 #-------------------------------
+[HULLHUNGER]
+Name = Hull Hunger
+Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
+#-------------------------------
 [HYBRIDFIGHTER]
 Name = Hybrid Fighter
 Description = Punches, Kicks, and Bites combo together to create special effects.
@@ -1078,8 +1082,8 @@ Description = Pokémon take damage from non-volatile status conditions even whil
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
 #-------------------------------
-[INNERLIGHT]
-Name = Inner Light
+[INNERHEAT]
+Name = Inner Heat
 Description = Summons sunshine for four turns when hit by an attack.
 Flags = SunshineSynergy
 #-------------------------------
@@ -1432,6 +1436,10 @@ Name = Optimized Alloy
 Description = Prevents stat steps from being lowered (except when self-inflicted). The Pokémon's weight is doubled.
 Flags = OtherStatDropImmunity
 #-------------------------------
+[OSCILLATION]
+Name = Oscillation
+Description = The Pokémon's stat steps are inverted at the end of every turn.
+#-------------------------------
 [OTHERWORLDLY]
 Name = Otherworldly
 Description = The Pokémon is also Fairy-type.
@@ -1568,10 +1576,18 @@ Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insul
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.
 #-------------------------------
+[PREEMINENCE]
+Name = Preeminence
+Description = Deals 30% more move damage to Pokemon slower than it.
+#-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve
 Description = Right before the Pokémon is attacked, the attacker's stat changes are reset.
 Flags = SetupCounterAI
+#-------------------------------
+[PROTECTIVEINSTINCT]
+Name = Protective Instinct
+Description = While the Pokemon has an ally that isn't fully evolved, both Pokemon take 33% less move damage.
 #-------------------------------
 [PUFFUP]
 Name = Puff Up
@@ -1995,10 +2011,6 @@ Flags = EclipseSynergy
 Name = Steam Power
 Description = Takes 50% less damage from Water-type moves. Raises Speed by four steps when hit by one.
 #-------------------------------
-[STEELABSORB]
-Name = Steel Absorb
-Description = Immune to Steel-type moves and restores 25% of max HP if hit by one.
-#-------------------------------
 [STEEPFLYING]
 Name = Steep Flying
 Description = Fly and Dive Bomb deal 50% more damage.
@@ -2014,6 +2026,10 @@ Description = Can hold a second item by stealing it.
 [STICKYMOLD]
 Name = Sticky Mold
 Description = If an attack lowers its HP to half or less, leeches the attacker.
+#-------------------------------
+[STICKYSITUATION]
+Name = Sticky Situation
+Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes sticky for three turns.
 #-------------------------------
 [STONEMANE]
 Name = Stone Mane
@@ -2113,6 +2129,10 @@ Description = Powers up Water-type moves by 50%.
 Name = Survivalist
 Description = It avoids hazards and can't be knocked out with one hit.
 Flags = HazardImmunity
+#-------------------------------
+[SWARMINSTINCT]
+Name = Swarm Instinct
+Description = When an ally switches in, the Pokémon's Speed is increased.
 #-------------------------------
 [SWIFTSTOMPS]
 Name = Swift Stomps
@@ -2262,10 +2282,6 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
-#-------------------------------
-[UPSIDEDOWN]
-Name = Upside Down
-Description = Uses Topsy Turvy on itself at the end of every turn.
 #-------------------------------
 [VANDAL]
 Name = Vandal

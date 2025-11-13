@@ -400,3 +400,12 @@ BattleHandlers::DamageCalcTargetAbility.add(:MULTIHEADED,
     end
   }
 )
+
+BattleHandlers::DamageCalcTargetAbility.add(:PROTECTIVEINSTINCT,
+  proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
+    if target.hasAnyNotFullyEvolvedAllies?
+      mults[:final_damage_multiplier] *= 0.66
+      target.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)

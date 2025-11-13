@@ -221,19 +221,6 @@ Flags = CanProtect
 Description = The user draws power to attack by using a held Berry. The Berry used determines its type.
 Animation = NATURALGIFT
 #-------------------------------
-[EXTREMEEFFORT]
-Name = Extreme Effort
-Type = NORMAL
-Category = Physical
-Power = 150
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = UserMustUseRestNextTurn
-Flags = CanProtect
-Description = The user uses all their might to attack their opponent, forcing the user to use Rest on their next turn.
-Animation = GIGAIMPACT
-#-------------------------------
 [FIREFOREFFECT]
 Name = Fire For Effect
 Type = NORMAL
@@ -1725,6 +1712,19 @@ Flags = CanProtect
 Description = Attacks by blasting dirt and debris at the target. This move always goes first in sandstorm.
 Animation = SANDATTACK
 #-------------------------------
+[EXTREMEEFFORT]
+Name = Extreme Effort
+Type = GROUND
+Category = Adaptive
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserMustUseRestNextTurn
+Flags = CanProtect
+Description = The user uses all their might to attack their opponent, forcing the user to use Rest on their next turn.
+Animation = GIGAIMPACT
+#-------------------------------
 [GROUNDING]
 Name = Grounding
 Type = GROUND
@@ -2401,7 +2401,7 @@ Target = NearOther
 FunctionCode = RaiseCriticalHitRate1
 Flags = CanProtect
 EffectChance = 100
-Description = A star falls on the target. Witnessing this lucky star also increases the user's critical hit chance.
+Description = A star falls on the target. Witnessing this lucky star also enables random critical hits and doubles the user's critical hit chance.
 Animation = DOOMDESIRE
 #-------------------------------
 [TERRAFORM]
@@ -3252,19 +3252,6 @@ Flags = CanProtect
 EffectChance = 50
 Description = The target is pestered by a giant tongue. This has a 50% chance to numb it.
 Animation = LICK
-#-------------------------------
-[UNDYINGRUSH]
-Name = Undying Rush
-Type = GHOST
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = RecoilThirdOfDamageDealtButCantFaint
-Flags = CanProtect
-Description = Clad in souls, the user crashes into the target. The user takes 33% recoil, but can't faint from it.
-Animation = PHANTOMFORCE
 #-------------------------------
 [VIMRIPPER]
 Name = Vim Ripper
@@ -4583,6 +4570,17 @@ FunctionCode = HealUserHalfOfTotalHPStartHealUserEachTurn
 Flags = CanSnatch
 Description = The user rests in a riverbed, restoring its HP by half of max, and forming an Aqua Ring around themselves, healing 10% HP per turn.
 Animation = REST
+#-------------------------------
+[SEABORNESACRAMENT]
+Name = Seaborne Sacrament
+Type = WATER
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = WaterlogTargetStartHealUserEachTurn
+Flags = CanProtect,CanMagicCoat
+Description = The user communes with water from all around the world, surrounding itself with an Aqua Ring and waterlogging the target.
 #-------------------------------
 [SILTSURGE]
 Name = Silt Surge
@@ -7527,16 +7525,18 @@ Flags = CanProtect
 Description = Explodes, dealing an extra 30 base power to all nearby for each Spikes hazard layer underneath them. The user faints.
 Animation = EXPLOSION
 #-------------------------------
-[SPOTTING]
-Name = Spotting
+[STALKING]
+Name = Stalking
 Type = DARK
-Category = Status
-Accuracy = 0
+Category = Physical
+Power = 80
+Accuracy = 100
 TotalPP = 15
-Target = NearAlly
-Priority = 5
-FunctionCode = PowerUpAndIncreaseAccOfAllyMove
-Description = The user assists an ally by boosting the power and Accuracy of its next attack by 50%.
+Target = NearOther
+FunctionCode = PursueSwitchingFoe
+Flags = CanProtect,Biting
+Description = The user darkly follows the target before striking. Inflicts double damage on a target that is switching out.
+Animation = PURSUIT
 #-------------------------------
 [STAREDOWN]
 Name = Stare Down

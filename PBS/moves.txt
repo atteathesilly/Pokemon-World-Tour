@@ -472,17 +472,6 @@ FunctionCode = LowerTargetDef2
 Flags = CanProtect,CanMagicCoat
 Description = The user leers at nearby foes with sharp eyes. Their Defense stat is lowered by two steps.
 #-------------------------------
-[LUCKYCHANT]
-Name = Lucky Chant
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 25
-Target = UserSide
-FunctionCode = StartPreventCriticalHitsAgainstUserSide10
-Flags = CanSnatch,Sound
-Description = The user chants an incantation, preventing the foe from landing critical hits for 10 turns.
-#-------------------------------
 [MEFIRST]
 Name = Me First
 Type = NORMAL
@@ -6140,16 +6129,6 @@ FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,Light
 EffectChance = 40
 Description = The user emits a powerful damaging flash. It has a 40% chance to lower Sp. Atk.
-#-------------------------------
-[DECORATE]
-Name = Decorate
-Type = FAIRY
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = NearAlly
-FunctionCode = RaiseTargetAtkSpAtk5
-Description = The user decorates the target, raising their Attack and Sp. Atk by five steps.
 #-------------------------------
 [DISARMINGVOICE]
 Name = Disarming Voice

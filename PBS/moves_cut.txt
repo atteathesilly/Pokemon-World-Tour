@@ -518,6 +518,17 @@ FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = With a scary face, the user tries to force a kiss on the target. If it suceeds, the target falls asleep.
 #-------------------------------
+[LUCKYCHANT]
+Name = Lucky Chant
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 25
+Target = UserSide
+FunctionCode = Invalid
+Flags = CanSnatch,Sound
+Description = The user chants an incantation, preventing the foe from landing critical hits for 10 turns.
+#-------------------------------
 [MEGAKICK]
 Name = Mega Kick
 Type = NORMAL
@@ -1959,6 +1970,19 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user harnesses its jealousy to attack the opponent with ghostly hugs, cursing them.
+#-------------------------------
+[UNDYINGRUSH]
+Name = Undying Rush
+Type = GHOST
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = Clad in souls, the user crashes into the target. The user takes 33% recoil, but can't faint from it.
+Animation = PHANTOMFORCE
 #-------------------------------
 #		STEEL MOVES
 #-------------------------------
@@ -3746,6 +3770,17 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = This attack's power increases by 10 for every one of the target's positive stat steps.
 #-------------------------------
+[SPOTTING]
+Name = Spotting
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearAlly
+Priority = 5
+FunctionCode = Invalid
+Description = The user assists an ally by boosting the power and Accuracy of its next attack by 50%.
+#-------------------------------
 [ULTRAVIOLETPULSE]
 Name = Ultraviolet Pulse
 Type = DARK
@@ -3784,6 +3819,16 @@ Target = AllNearFoes
 FunctionCode = Invalid
 Flags = CanProtect,CanMagicCoat
 Description = The target is charmed into harshly lowering its Sp. Atk stat.
+#-------------------------------
+[DECORATE]
+Name = Decorate
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 12
+Target = NearAlly
+FunctionCode = Invalid
+Description = The user decorates the target, raising their Attack and Sp. Atk by five steps.
 #-------------------------------
 [FAIRPLAY]
 Name = Fair Play
