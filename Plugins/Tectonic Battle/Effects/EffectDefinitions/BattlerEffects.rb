@@ -1498,92 +1498,53 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :TrappingAbility,
+    :real_name => "Trapping Ability",
+    :type => :Ability,
+    :info_displayed => false,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :TrappingUser,
     :real_name => "Trapped By",
     :type => :Position,
-    :disable_effects_on_other_exit => [:Trapping, :Constricted, :Pinched],
+    :disable_effects_on_other_exit => [:Trapping, :Binding],
     :hand_off => true,
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Constricted,
-    :real_name => "Constricted Turns",
+    :id => :Binding,
+    :real_name => "Binding Turns",
     :type => :Integer,
     :ticks_down => true,
     :trapping => true,
     :swaps_with_battlers => true,
-    :apply_proc => proc do |battle, battler, value|
-        battle.pbDisplay(_INTL("{1} is being constricted!",battler.pbThis))
-    end,
     :disable_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} was freed from constriction!", battler.pbThis))
+        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
+        trapAbility = battler.getAbilityData(:TrappingAbility).name
+        battle.pbDisplay(_INTL("{1} was freed from {2}!", battler.pbThis, trapAbility))
     end,
     :expire_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} is no longer constricted.", battler.pbThis))
+        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
+        trapAbility = battler.getAbilityData(:TrappingAbility).name
+        battle.pbDisplay(_INTL("{1} is no longer trapped by {2}!", battler.pbThis, trapAbility))
     end,
     :remain_proc => proc do |battle, battler, _value|
-        battle.pbCommonAnimation("Wrap", battler)
+        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
+        trapAbility = battler.getAbilityData(:TrappingAbility).name
+        case battler.effects[:TrappingAbility]
+        when :POWERPINCH    then battle.pbAnimation("ViceGrip", battler, nil)
+        when :CONSTRICTOR   then battle.pbCommonAnimation("Wrap", battler)
+        when :MAGNETTRAP    then battle.pbCommonAnimation("MagnetBomb", battler)
+        else battle.pbCommonAnimation("Wrap", battler)
+        end
         if battler.takesIndirectDamage?
             fraction = trappingDamageFraction(battler)
-            battle.pbDisplay(_INTL("{1} is hurt by constriction!", battler.pbThis))
+            battle.pbDisplay(_INTL("{1} is hurt by {2}!", battler.pbThis, trapAbility))
             battler.applyFractionalDamage(fraction)
         end
     end,
-    :sub_effects => %i[TrappingUser],
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Pinched,
-    :real_name => "Pinched Turns",
-    :type => :Integer,
-    :ticks_down => true,
-    :trapping => true,
-    :swaps_with_battlers => true,
-    :apply_proc => proc do |battle, battler, value|
-        battle.pbDisplay(_INTL("{1} is trapped in the pincers!",battler.pbThis))
-    end,
-    :disable_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} was freed from the pincers!", battler.pbThis))
-    end,
-    :expire_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} is no longer trapped in the pincers.", battler.pbThis))
-    end,
-    :remain_proc => proc do |battle, battler, _value|
-        battle.pbCommonAnimation("Wrap", battler)
-        if battler.takesIndirectDamage?
-            fraction = trappingDamageFraction(battler)
-            battle.pbDisplay(_INTL("{1} is hurt by the pincers!", battler.pbThis))
-            battler.applyFractionalDamage(fraction)
-        end
-    end,
-    :sub_effects => %i[TrappingUser],
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Magnetized,
-    :real_name => "Magnet Trap Turns",
-    :type => :Integer,
-    :ticks_down => true,
-    :trapping => true,
-    :swaps_with_battlers => true,
-    :apply_proc => proc do |battle, battler, value|
-        battle.pbDisplay(_INTL("{1} is being magnetized!",battler.pbThis))
-    end,
-    :disable_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} was freed from the magnet trap!", battler.pbThis))
-    end,
-    :expire_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} is no longer magnetized.", battler.pbThis))
-    end,
-    :remain_proc => proc do |battle, battler, _value|
-        battle.pbCommonAnimation("MagnetBomb", battler)
-        if battler.takesIndirectDamage?
-            fraction = trappingDamageFraction(battler)
-            battle.pbDisplay(_INTL("{1} is hurt by the magnet trap!", battler.pbThis))
-            battler.applyFractionalDamage(fraction)
-        end
-    end,
-    :sub_effects => %i[TrappingUser],
+    :sub_effects => %i[TrappingAbility TrappingUser],
 })
 
 GameData::BattleEffect.register_effect(:Battler, {

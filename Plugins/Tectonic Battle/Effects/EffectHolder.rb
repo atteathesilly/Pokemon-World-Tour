@@ -165,6 +165,12 @@ module EffectHolder
         return GameData::Move.get(@effects[effect])
     end
 
+    def getAbilityData(effect)
+        validateCorrectLocation(effect)
+        validateAbility(effect)
+        return GameData::Ability.get(@effects[effect])
+    end
+
     def getName(effect)
         validateCorrectLocation(effect)
         return getData(effect).name
@@ -234,5 +240,9 @@ module EffectHolder
 
     def validateMove(effect)
         raise _INTL("Invalid operation for non-move effect #{effect}") if getData(effect).type != :Move
+    end
+
+    def validateAbility(effect)
+        raise _INTL("Invalid operation for non-ability effect #{effect}") if getData(effect).type != :Ability
     end
 end

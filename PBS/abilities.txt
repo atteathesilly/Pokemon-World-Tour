@@ -566,10 +566,6 @@ Flags = RainstormSynergy
 Name = Synchronize
 Description = When the Pokémon is given a non-volatile status condition by another Pokémon, that Pokémon also gets that condition.
 #-------------------------------
-[TANGLINGHAIR]
-Name = Tangling Hair
-Description = Physical moves against it lower the attacker's Speed by three steps.
-#-------------------------------
 [TECHNICIAN]
 Name = Technician
 Description = Moves with base power 60 or less deal 50% more damage.

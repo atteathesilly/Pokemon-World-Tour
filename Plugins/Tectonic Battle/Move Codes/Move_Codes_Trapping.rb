@@ -6,6 +6,7 @@ class PokeBattle_Move_BindTarget3 < PokeBattle_Move
     def pbEffectAgainstTarget(user, target)
         return if target.fainted? || target.damageState.substitute
         return if target.effectActive?(:Trapping)
+        return if target.effectActive?(:Binding)
         # Set trapping effect duration and info
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)

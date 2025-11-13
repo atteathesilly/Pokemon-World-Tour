@@ -1170,6 +1170,10 @@ Name = Last Gasp
 Description = Cannot take damage or be switched out. Hears Perish Song upon entry, ensuring its demise.
 Flags = Immutable
 #-------------------------------
+[LAUOHOLASSO]
+Name = Lauoho Lasso
+Description = On the first turn, its special attacks trap the target and damage it for three turns.
+#-------------------------------
 [LEVIATHAN]
 Name = Leviathan
 Description = Protected from critical hits. Can't be burned or frostbitten.
@@ -1578,7 +1582,7 @@ Description = Its physical attacks go last but force the target to switch out af
 #-------------------------------
 [POWERPINCH]
 Name = Power Pinch
-Description = On the first turn, its attacks trap the target and damage it for three turns.
+Description = On the first turn, its physical attacks trap the target and damage it for three turns.
 #-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve
