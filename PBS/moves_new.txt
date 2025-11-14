@@ -1116,18 +1116,6 @@ EffectChance = 10
 Description = The user propels a gale-force wind at the target. It has a 10% chance to frostbite.
 Animation = GUST
 #-------------------------------
-[DIVEBOMB]
-Name = Dive Bomb
-Type = FLYING
-Category = Physical
-Power = 125
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableInSky
-Flags = CanProtect
-Description = The user soars up high, charging and becoming invulnerable, then dive bombs the target on the second turn.
-#-------------------------------
 [DIVININGTALON]
 Name = Divining Talon
 Type = FLYING
@@ -1228,6 +1216,20 @@ FunctionCode = RaiseUserSpd4GainFlyingType
 Flags = CanSnatch
 Description = The user takes off at sonic speeds, raising its Speed by four steps and gaining the Flying type.
 Animation = AGILITY
+#-------------------------------
+[POUNCE]
+Name = Pounce
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,Kick
+EffectChance = 10
+Description = The user quickly jumps high up, then falls onto the target. It has a 10% chance to numb.
+Animation = BOUNCE
 #-------------------------------
 [PRESSURESHOCK]
 Name = Pressure Shock
@@ -1971,18 +1973,6 @@ Target = AllNearOthers
 FunctionCode = HitsDiggers
 Flags = CanProtect
 Description = The user slams the earth, damaging all Pokémon around it and underground.
-#-------------------------------
-[UNDERMINE]
-Name = Undermine
-Type = GROUND
-Category = Physical
-Power = 125
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableUnderground
-Flags = CanProtect
-Description = The user burrows deep, charging and becoming invulnerable, then attacks with devastating power on the second turn.
 #-------------------------------
 #		ROCK MOVES
 #-------------------------------
@@ -4301,19 +4291,6 @@ Flags = CanProtect
 EffectChance = 20
 Description = A blast of bubbles is shot at the target. It has a 20% chance to lower the target's Speed stat.
 #-------------------------------
-[DEPTHCHARGE]
-Name = Depth Charge
-Type = WATER
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableUnderwater
-Flags = CanProtect
-Description = The user dives deep on the first turn, charging and becoming invulnerable, then rises and strikes with explosive strength on the second.
-Animation = DIVE
-#-------------------------------
 [DRAGBENEATH]
 Name = Drag Beneath
 Type = WATER
@@ -4805,6 +4782,17 @@ Target = None
 FunctionCode = ReviveGrassTypePartyMemberToFullHP
 Description = Restores a fainted Grass-type party member to full HP. Only one use per battle.
 Animation = GRASSYTERRAIN
+#-------------------------------
+[CAMOUFLAGE]
+Name = Camouflage
+Type = GRASS
+Category = Physical
+Power = 135
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableHiding
+Description = The user fades into the foliage, charging and becoming invulnerable, then strikes from stealth on the second turn.
 #-------------------------------
 [COCODROP]
 Name = Coco Drop
@@ -7331,6 +7319,18 @@ EffectChance = 30
 Description = The target is dragged viciously through water. This has a 30% chance to waterlog.
 Animation = SPATTERINGRAM
 #-------------------------------
+[LURK]
+Name = Lurk
+Type = DARK
+Category = Physical
+Power = 135
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableHiding
+Description = The user hides stealthily, charging and becoming invulnerable, then strikes from a blind spot on the second turn.
+Animation = PHANTOMFORCE
+#-------------------------------
 [MASSDESTRUCTION]
 Name = Mass Destruction
 Type = DARK
@@ -8040,6 +8040,19 @@ Target = BothSides
 FunctionCode = StartSwapAttackingStats8
 Description = The user creates a puzzling area for eight turns in which Pokémon's unmodified Attack and Sp. Atk are swapped.
 Animation = MAGICROOM
+#-------------------------------
+[STROKEOFMIDNIGHT]
+Name = Stroke of Midnight
+Type = FAIRY
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Flags = Foretold
+Description = Two turns after this move is used, a terrible fate befalls the target.
+Animation = LIGHTOFRUIN
 #-------------------------------
 [SUGARBALL]
 Name = Sugar Ball

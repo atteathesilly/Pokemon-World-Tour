@@ -1736,7 +1736,7 @@ Pokemon = HOUNDOMINUS,70
     AbilityIndex = 1 # Berserk
     Item = FOCUSSASH
 Pokemon = SCARAPACE,70
-    Moves = DIVEBOMB,XSCISSOR,CLOSECOMBAT,TRAMPLE
+    Moves = FLY,XSCISSOR,CLOSECOMBAT,TRAMPLE
     AbilityIndex = 0 # Victory Molt
     Item = STRIKEVEST
 Pokemon = MZANGOOSE,70
@@ -1759,7 +1759,7 @@ Pokemon = HOUNDOMINUS,70
     AbilityIndex = 1 # Berserk
     Item = FOCUSSASH
 Pokemon = SCARAPACE,70
-    Moves = DIVEBOMB,XSCISSOR,CLOSECOMBAT,TRAMPLE
+    Moves = FLY,XSCISSOR,CLOSECOMBAT,TRAMPLE
     AbilityIndex = 0 # Victory Molt
     Item = STRIKEVEST
 Pokemon = SAURENAID,70
@@ -1983,7 +1983,7 @@ Pokemon = EMOLGA,36
 #-------------------------------
 [WAITRESS,Carmilla]
 Pokemon = DURANT,37
-    Moves = CRUNCH,XSCISSOR,METALCLAW,TREADON
+    Moves = CRUNCH,XSCISSOR,METALCLAW,TREMOR
     AbilityIndex = 0 # Hustle
     Item = WIDELENS
 Pokemon = HIPPOWDON,38
@@ -2142,7 +2142,7 @@ Pokemon = SCRAFTY,42
     Moves = WHIRLWINDKICK,SUCKERPUNCH,BROWBEAT,SCHEME
     AbilityIndex = 1 # Moxie
 Pokemon = RAPIDASH,41
-    Moves = TRAMPLE,BLAZEKICK,BOUNCE,IGNITE
+    Moves = TRAMPLE,BLAZEKICK,POUNCE,IGNITE
     AbilityIndex = 1 # Heavy Duty Hooves
     Item = FIREGEM
 #-------------------------------
@@ -2919,7 +2919,7 @@ Pokemon = MANTINE,40
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,0,10,20
 Pokemon = GLISCOR,40
-    Moves = KNOCKOFF,ACROBATICS,UTURN,UNDERMINE
+    Moves = KNOCKOFF,ACROBATICS,UTURN,DIG
     AbilityIndex = 0 # Grotesque Vitals
     Item = POWERHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -3068,7 +3068,7 @@ Pokemon = WHIMSICOTT,48
     Moves = PLAYROUGH,LEAFBLADE,DEFOG,BULKUP
     AbilityIndex = 1 # Pure Force
 Pokemon = RAPIDASH,47
-    Moves = BLAZEKICK,TRAMPLE,IGNITE,BOUNCE
+    Moves = BLAZEKICK,TRAMPLE,IGNITE,POUNCE
     AbilityIndex = 1 # Heavy Duty Hooves
     Item = GROUNDGEM
 #-------------------------------
@@ -3947,7 +3947,7 @@ Pokemon = PORYGONMAV,48
     AbilityIndex = 1 # Swordplay
     Item = WHETSTONE
 Pokemon = SKUNTANK,48
-    Moves = CRUNCH,POISONJAB,UNDERMINE,STINKCOVER
+    Moves = CRUNCH,POISONJAB,DIG,STINKCOVER
     AbilityIndex = 0 # Offensive
 Pokemon = QUAGSIRE,48
     Moves = WATERFALL,EARTHQUAKE,PLAYROUGH,YAWN
@@ -4445,7 +4445,7 @@ Pokemon = DELPHOX,55
     Moves = TOTALCONTROL,WILLOWISP,WHITEFLAME,MOONBLAST
     AbilityIndex = 1 # Fascinate
 Pokemon = SWELLOW,56
-    Moves = DIVEBOMB,FACADE,DIVININGTALON,INFERNOIMPACT
+    Moves = FLY,FACADE,DIVININGTALON,INFERNOIMPACT
     AbilityIndex = 0 # Daring
     Item = FROSTORB
 Pokemon = AURORUS,57
@@ -4705,7 +4705,7 @@ Pokemon = DRAMPA,60
     Moves = YOUNGAGAIN,GUTTURALROAR,GLARE,WEATHERBURST
     AbilityIndex = 0 # Berserk
 Pokemon = SCARAPACE,60
-    Moves = SUPERPOWER,XSCISSOR,MACHPUNCH,DIVEBOMB
+    Moves = SUPERPOWER,XSCISSOR,MACHPUNCH,FLY
     AbilityIndex = 1 # Juggernaut
 Pokemon = CHARIZARD,60
     Moves = DRACOMETEOR,WILDFIREMELT,FLAMETHROWER,OVERHEAT
@@ -4798,7 +4798,7 @@ Pokemon = TOWERPODA,60
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = GARCHOMP,60
-    Moves = REND,POISONJAB,UNDERMINE,ADAMANTINEPRESS
+    Moves = REND,POISONJAB,DIG,ADAMANTINEPRESS
     AbilityIndex = 1 # Sands Macabre
     ExtraAbilities = SCOUREDSILHOUETTE
     Item = ASSAULTVEST
@@ -5249,7 +5249,7 @@ Pokemon = REGIROCK,55
     Moves = ADAMANTINEPRESS,ACCELEROCK,BODYPRESS,BULKUP
     AbilityIndex = 1 # Core Provenance
 Pokemon = MFURRET,55
-    Moves = UNDERMINE,STOMPINGTANTRUM,PSYCHICFANGS,POWERUPPUNCH
+    Moves = DIG,STOMPINGTANTRUM,PSYCHICFANGS,POWERUPPUNCH
     AbilityIndex = 1 # Apprehensive
     Item = ASSAULTVEST
 Pokemon = MPOLTEAGEIST,55
@@ -5478,7 +5478,7 @@ Pokemon = REGICE,65
     Moves = ICEBEAM,THUNDERBOLT,AURASPHERE,RECOVER
     AbilityIndex = 1 # Frigid Reflection
 Pokemon = MFURRET,65
-    Moves = UNDERMINE,STOMPINGTANTRUM,PSYCHICFANGS,POWERUPPUNCH
+    Moves = DIG,STOMPINGTANTRUM,PSYCHICFANGS,POWERUPPUNCH
     AbilityIndex = 1 # Apprehensive
     Item = ASSAULTVEST
 Pokemon = MPOLTEAGEIST,65
@@ -5831,7 +5831,7 @@ Pokemon = PANGORO,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = EXCADRILL,70
-    Moves = UNDERMINE,STEALTHROCK,METEORMASH,XSCISSOR
+    Moves = DIG,STEALTHROCK,METEORMASH,XSCISSOR
     AbilityIndex = 1 # Juggernaut
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
@@ -6218,7 +6218,7 @@ Pokemon = PALMANTRA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = DRAGONITE,70
-    Moves = TAILWIND,DRAGONDANCE,OUTRAGE,DIVEBOMB
+    Moves = TAILWIND,DRAGONDANCE,OUTRAGE,FLY
     AbilityIndex = 1 # Multiscale
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,10,20,0
@@ -6227,7 +6227,7 @@ Pokemon = DRAGONITE,70
 ExtendsVersion = 2
 Policies = CURSE_SUPER_ITEMS
 Pokemon = ARCHEOPS,70
-    Moves = EARTHQUAKE,ADAMANTINEPRESS,DIVEBOMB,UTURN
+    Moves = EARTHQUAKE,ADAMANTINEPRESS,FLY,UTURN
     Item = CHOICECROWN
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
@@ -6241,7 +6241,7 @@ Pokemon = HAWLUCHA,70
 Pokemon = PALMANTRA,70
     Item = BUGRING
 Pokemon = DRAGONITE,70
-    Moves = ROOST,DRAGONDANCE,OUTRAGE,DIVEBOMB
+    Moves = ROOST,DRAGONDANCE,OUTRAGE,FLY
     Item = LUNCHBOX
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,0,20,10,0
@@ -6463,7 +6463,7 @@ Pokemon = CORVIKNIGHT,70
     Moves = SLAY,DEFOG,UTURN,ROOST
     AbilityIndex = 0 # Mirror Armor
 Pokemon = GLISCOR,70
-    Moves = EARTHQUAKE,DIVEBOMB,BLIGHT,TAILWIND
+    Moves = EARTHQUAKE,FLY,BLIGHT,TAILWIND
     AbilityIndex = 0 # Grotesque Vitals
     Item = LEFTOVERS
 Pokemon = MSEVIPER,70
@@ -6622,7 +6622,7 @@ Pokemon = PHIONE,70
     AbilityIndex = 1 # Overflowing Heart
     Item = SALACBERRY
 Pokemon = GIGANTEON,70
-    Moves = QUICKATTACK,UNDERMINE,RECOVER,LASTRESORT
+    Moves = QUICKATTACK,DIG,RECOVER,LASTRESORT
     AbilityIndex = 0 # Ultra Adapted
 #-------------------------------
 [MASKEDVILLAIN,Crimson,21]
@@ -6690,7 +6690,7 @@ Pokemon = CORVIKNIGHT,70
     Moves = SLAY,DEFOG,UTURN,ROOST
     AbilityIndex = 0 # Mirror Armor
 Pokemon = GLISCOR,70
-    Moves = EARTHQUAKE,DIVEBOMB,BLIGHT,TAILWIND
+    Moves = EARTHQUAKE,FLY,BLIGHT,TAILWIND
     AbilityIndex = 0 # Grotesque Vitals
     Item = LEFTOVERS
 Pokemon = MSEVIPER,70
@@ -6849,7 +6849,7 @@ Pokemon = PHIONE,70
     AbilityIndex = 1 # Overflowing Heart
     Item = SALACBERRY
 Pokemon = GIGANTEON,70
-    Moves = QUICKATTACK,UNDERMINE,RECOVER,LASTRESORT
+    Moves = QUICKATTACK,DIG,RECOVER,LASTRESORT
     AbilityIndex = 0 # Ultra Adapted
 #-------------------------------
 [MASKEDVILLAIN2,Teal,21]
@@ -7028,7 +7028,7 @@ Pokemon = PHEROMOSA,70
     Moves = QUIVERDANCE,ELECTROWEB,BUGBUZZ,ICEBEAM
     AbilityIndex = 0 # Clean Freak
 Pokemon = CELESTEELA,70
-    Moves = HEAVYSLAM,LEECHSEED,DIVEBOMB,FLAMETHROWER
+    Moves = HEAVYSLAM,LEECHSEED,FLY,FLAMETHROWER
     AbilityIndex = 0 # Auto-Pilot
     Item = LEFTOVERS
 Pokemon = BEHEEYEM,70
@@ -7390,7 +7390,7 @@ Pokemon = CLOYSTER,60
     Moves = SHELLSMASH,GLACIALRAM,ICEBERGBASH,POISONJAB
     AbilityIndex = 0 # Tough
 Pokemon = GLISCOR,60
-    Moves = DIVEBOMB,UNDERMINE,ROOST,SWORDSDANCE
+    Moves = FLY,DIG,ROOST,SWORDSDANCE
     AbilityIndex = 0 # Grotesque Vitals
     Item = LEFTOVERS
 #-------------------------------
@@ -7545,7 +7545,7 @@ Pokemon = MAROMATISSE,60
     AbilityIndex = 0 # Reap What You Sow
     Item = WIDELENS
 Pokemon = GRAPPLOCT,60
-    Moves = OCTOLOCK,DRAINPUNCH,BULKUP,DEPTHCHARGE
+    Moves = OCTOLOCK,DRAINPUNCH,BULKUP,DIVE
     AbilityIndex = 1 # Realist
 Pokemon = DUGTRIO,60
     Moves = PROTECT,ROTARYHEADBUTT,PROPELLANT,ADAMANTINEPRESS
@@ -7731,7 +7731,7 @@ Pokemon = SUDOWOODO,60
 #-------------------------------
 [ANCIENTPRIEST,Radzayac]
 Pokemon = DIGGERSBY,60
-    Moves = SUPERFANG,MEGAPUNCH,UNDERMINE,GUNKSHOT
+    Moves = SUPERFANG,MEGAPUNCH,DIG,GUNKSHOT
     AbilityIndex = 1 # Paranoid
 Pokemon = MGIGALITH,60
     Moves = ABERRANTMOTE,SINGINGSTONE,BLOSSOM,LUMINBURST
@@ -7766,7 +7766,7 @@ Pokemon = QUAGSIRE,60
 #-------------------------------
 [ANCIENTPRIEST,Kazmilos]
 Pokemon = MCARNIVINE,60
-    Moves = DIVEBOMB,VERMINCLOUD,ROOST,SAPPINGJEALOUSY
+    Moves = FLY,VERMINCLOUD,ROOST,SAPPINGJEALOUSY
     AbilityIndex = 1 # Pestilent
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,10,15,0,10,15
@@ -8683,7 +8683,7 @@ Policies = CURSE_SELF_DEBUFFING
 #-------------------------------
 [BIRDKEEPER_M2,Vlasta]
 Pokemon = SWELLOW,70
-    Moves = DIVEBOMB,FACADE,DOUBLEEDGE
+    Moves = FLY,FACADE,DOUBLEEDGE
     AbilityIndex = 1 # Steep Flying
     Item = CHOICEBAND
 Pokemon = VILEPLUME,70
@@ -8825,7 +8825,7 @@ Pokemon = HYPNO,70
     Moves = OMNISCIENTBLOW,DRAINPUNCH,ICEPUNCH,THUNDERPUNCH
     AbilityIndex = 1 # Knuckleduster
 Pokemon = MANDIBUZZ,70
-    Moves = FOULPLAY,DIVEBOMB,TAUNT,CULL
+    Moves = FOULPLAY,FLY,TAUNT,CULL
     AbilityIndex = 0 # Impervious
 #-------------------------------
 [SPIRITGUARDIAN2,Sonya]
@@ -8901,7 +8901,7 @@ Pokemon = ORBEETLE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = DRAGONITE,70
-    Moves = DRAGONRIDE,DIVEBOMB,ROOST,POWERUPPUNCH
+    Moves = DRAGONRIDE,FLY,ROOST,POWERUPPUNCH
     AbilityIndex = 1 # Multiscale
     Item = YACHEBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -9119,7 +9119,7 @@ Pokemon = ROSERADE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,7,6,20,7
 Pokemon = GLISCOR,70
-    Moves = LEECHLIFE,ADAMANTINEPRESS,UNDERMINE,DIVEBOMB
+    Moves = LEECHLIFE,ADAMANTINEPRESS,DIG,FLY
     AbilityIndex = 0 # Grotesque Vitals
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -9639,7 +9639,7 @@ Pokemon = GENGAR,60
 [WAITER,Aaron]
 Flags = PlayerTeam:Ardub23
 Pokemon = GIGANTEON,45
-    Moves = MEGAPUNCH,UNDERMINE,POWDERBOMB,FLOWSTATE
+    Moves = MEGAPUNCH,DIG,POWDERBOMB,FLOWSTATE
     AbilityIndex = 1 # Friend to All
 Pokemon = HZOROARK,45
     Moves = MALEFACTION,SPIKES,RECOVER,RUIN

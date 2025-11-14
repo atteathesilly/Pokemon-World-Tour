@@ -127,6 +127,8 @@ class PokeBattle_Move
     def hitsFlyingTargets?;      return false; end
     def hitsDiggingTargets?;     return false; end
     def hitsDivingTargets?;      return false; end
+    def hitsHidingTargets?;      return false; end
+    def hitsCamouflagedTargets?; return false; end
     def ignoresReflect?;         return false; end   # For Brick Break
     def cannotRedirect?;         return false; end   # For Future Sight/Doom Desire
     def worksWithNoTargets?;     return false; end   # For Explosion

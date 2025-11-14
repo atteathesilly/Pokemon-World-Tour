@@ -581,7 +581,8 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
                     TwoTurnAttackInvulnerableInSky
                     TwoTurnAttackInvulnerableUnderground
                     TwoTurnAttackInvulnerableUnderwater
-                    TwoTurnAttackInvulnerableInSkyNumbTarget
+                    TwoTurnAttackInvulnerableHiding
+                    TwoTurnAttackInvulnerableInFoliage
                     TwoTurnAttackInvulnerableScalesFaster
                     TwoTurnAttackInvulnerableJinxFrostbite
                     TwoTurnAttackInvulnerableRemoveProtections].include?(@function)

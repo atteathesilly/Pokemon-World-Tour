@@ -746,7 +746,7 @@ Pokemon = BLASTOISE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = SALAMENCE,70
-    Moves = DIVEBOMB,REND,EARTHQUAKE,ACROBATICS
+    Moves = FLY,REND,EARTHQUAKE,ACROBATICS
     AbilityIndex = 0 # Intimidate
     Item = POWERHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -1583,7 +1583,7 @@ Pokemon = CHARIZARD,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = FURRET,70
-    Moves = UNDERMINE,UTURN,POWERHAMMER,GLACIALRAM
+    Moves = DIG,UTURN,POWERHAMMER,GLACIALRAM
     AbilityIndex = 1 # Slinky
     Item = CRYSTALVEIL
     ItemType = GROUND
