@@ -201,7 +201,7 @@ Description = Increase the EXP gained from battles in which it participates by 5
 #-------------------------------
 [BOTTOMFEEDER]
 Name = Bottom Feeder
-Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped.
+Description = Heals from binding damage it deals. Takes 25% less damage from Pokémon that are trapped.
 #-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest
@@ -350,7 +350,7 @@ Description = When hit with an attack, gains that attack's type.
 #-------------------------------
 [CONSTRICTOR]
 Name = Constrictor
-Description = When hit with a physical move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a physical move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [COREPROVENANCE]
 Name = Core Provenance
@@ -861,7 +861,7 @@ Description = Intensifies gravity for four turns when hit by an attack.
 #-------------------------------
 [GRIPSTRENGTH]
 Name = Grip Strength
-Description = Moves that trap and damage the opponent for three turns deal 50% more damage on the initial hit.
+Description = Moves that trap and bind the opponent deal 50% more damage on the initial hit.
 #-------------------------------
 [GRIT]
 Name = Grit
@@ -875,13 +875,9 @@ Description = Raises Attack and Sp. Atk whenever any Pokémon uses a dance move.
 Name = Grotesque Vitals
 Description = Heals 1/16th HP every turn. Protected from being poisoned.
 #-------------------------------
-[GYRESPINNER]
-Name = Gyre Spinner
-Description = Upon entry, traps each opponent in a whirlpool for two turns.
-#-------------------------------
 [HANDOFF]
 Name = Hand Off
-Description = Trapping effects against an enemy are passed over to a Pokémon that swaps in for this.
+Description = Trapping and binding effects against an enemy are passed over to an ally that swaps in for this Pokémon.
 #-------------------------------
 [HARBINGER]
 Name = Harbinger
@@ -1245,7 +1241,7 @@ Description = Pokémon that swap in for this have their Attack and Sp. Atk raise
 #-------------------------------
 [MAGNETTRAP]
 Name = Magnet Trap
-Description = When hit with a special move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a special move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [MALICE]
 Name = Malice

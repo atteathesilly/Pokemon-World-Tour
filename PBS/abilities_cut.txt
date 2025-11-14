@@ -410,6 +410,10 @@ Description = Its physical attacks reduce the target's Defense.
 Name = Guts
 Description = Boosts Attack by 33% if has a status condition. Ignores burn physical damage reduction.
 #-------------------------------
+[GYRESPINNER]
+Name = Gyre Spinner
+Description = Upon entry, traps each opponent in a whirlpool for two turns.
+#-------------------------------
 [HARDWORKER]
 Name = Hard Worker
 Description = Increases the money gained from battles in which it participates by 50%.
