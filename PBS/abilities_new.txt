@@ -265,6 +265,10 @@ Description = After the Pokémon is hit thrice, a Sanctuary is set on its side f
 Name = Candy Veil
 Description = Prevents itself and allies from being poisoned, leeched, or waterlogged.
 #-------------------------------
+[CANIDCRUSHER]
+Name = Canid Crusher
+Description = On the first turn, its attacks fracture the target.
+#-------------------------------
 [CASHOUT]
 Name = Cash Out
 Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
@@ -895,6 +899,10 @@ Description = If an attack lowers the Pokémon's HP to half or less, the attacke
 [HARDFALL]
 Name = Hard Fall
 Description = Deals 30% more move damage to Pokémon that are taller than it.
+#-------------------------------
+[HARRYINGSTRIKES]
+Name = Harrying Strikes
+Description = Biting moves deal 50% more damage if the last move was a non-biting attack, and vice versa.
 #-------------------------------
 [HARSH]
 Name = Harsh
@@ -2282,6 +2290,10 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
+#-------------------------------
+[UNNATURALRESISTANCE]
+Name = Unnatural Resistance
+Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
 #-------------------------------
 [VANDAL]
 Name = Vandal

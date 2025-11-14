@@ -3552,12 +3552,6 @@ FrontSprite = 0,22
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
-[LYCANROC,1]
-BackSprite = 0,13
-FrontSprite = -9,15
-ShadowX = 0
-ShadowSize = 3
-#-------------------------------
 [MACHAMP]
 BackSprite = 0,10
 FrontSprite = -10,5
@@ -5267,6 +5261,12 @@ BackSprite = 0,18
 FrontSprite = 0,15
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[ROUGAROC]
+BackSprite = 0,13
+FrontSprite = -9,15
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [ROWLET]
 BackSprite = 0,31

@@ -2404,6 +2404,20 @@ EffectChance = 100
 Description = A star falls on the target. Witnessing this lucky star also enables random critical hits and doubles the user's critical hit chance.
 Animation = DOOMDESIRE
 #-------------------------------
+[STORMSHARDS]
+Name = Stormshards
+Type = ROCK
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect
+EffectChance = 100
+Description = The user attacks with shards from their rocky mane. For the next 3 turns, the Pokémon in the targeted slot loses 1/8th of their max HP.
+Animation = ROCKSLIDE
+#-------------------------------
 [TERRAFORM]
 Name = Terraform
 Type = ROCK

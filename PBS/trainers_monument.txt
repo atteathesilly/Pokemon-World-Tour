@@ -432,10 +432,9 @@ Pokemon = ASANDSLASH,70
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,5,0,20,5
-Pokemon = LYCANROC,70
-    Form = 2 # Dusk Form
-    Moves = ADAMANTINEPRESS,CLOSECOMBAT,KNOCKOFF,POWDERBOMB
-    AbilityIndex = 0 # Tough Claws
+Pokemon = WOLFEROC,70
+    Moves = ADAMANTINEPRESS,POWDERBOMB,STRAFE,FLAMETHROWER
+    AbilityIndex = 0 # Stubborn
     Item = CHOICESCARF
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,14,16,20,0

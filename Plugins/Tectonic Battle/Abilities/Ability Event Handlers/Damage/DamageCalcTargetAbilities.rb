@@ -409,3 +409,12 @@ BattleHandlers::DamageCalcTargetAbility.add(:PROTECTIVEINSTINCT,
     end
   }
 )
+
+BattleHandlers::DamageCalcTargetAbility.add(:UNNATURALRESISTANCE,
+  proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
+    if user.battle.moonGlowing? && type != :STEEL
+      mults[:final_damage_multiplier] *= 0.65
+      target.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
