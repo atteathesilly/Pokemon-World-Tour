@@ -10,7 +10,7 @@ WildVictoryME = VICTORYWILDPOKEMONHGSS.ogg
 TrainerVictoryME = VICTORYTRAINERDPPT.ogg
 BicycleBGM = BICYCLE2.ogg
 PlayerA = POKEMONTRAINER_Masculine,masc_walk,masc_bike,masc_surf,masc_run,masc_surf,masc_fish_offset,masc_fish_offset
-PlayerB = POKEMONTRAINER_Feminine,fem_walk,fem_bike,fem_surf,fem_run,fem_surf,fem_fish_offset,fem_fish_offset
+PlayerB = POKEMONTRAINER_Feminine,fem_walk,fem_bike,fem_surfCCCE,fem_run,fem_surf,fem_fish_offset,fem_fish_offset
 PlayerC = POKEMONTRAINER_Androgynous,andro_walk,andro_bike,andro_surf,andro_run,andro_surf,andro_fish_offset,andro_fish_offset
 #-------------------------------
 [001]
@@ -354,6 +354,19 @@ Environment = None
 #-------------------------------
 [051]
 # Kin Town Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[052]
+# Kin Town Poke Center
+Outdoor = false
+ShowArea = false
+Bicycle = true
+HealingSpot = 50,32,37
+#-------------------------------
+[053]
+# Kin Town  Mart
 Outdoor = false
 ShowArea = false
 Bicycle = false
