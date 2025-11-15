@@ -8173,6 +8173,18 @@ FunctionCode = RaiseUserAccIfMisses
 Flags = CanProtect
 Description = The user makes an risky, difficult attack. If it misses, the user's Accuracy is raised.
 #-------------------------------
+[HIDDENSTRIKE]
+Name = Hidden Strike
+Type = FLEX
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableHiding
+Description = The user hides, charging and becoming invulnerable, then strikes the target on the second turn.
+Animation = PHANTOMFORCE
+#-------------------------------
 [LONGSHOT]
 Name = Long Shot
 Type = FLEX
