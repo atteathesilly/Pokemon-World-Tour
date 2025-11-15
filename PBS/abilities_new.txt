@@ -374,7 +374,7 @@ Description = Foretold moves take one turn longer to attack but deal 50% more da
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
-Description = When a foe hits the Pokémon with a physical move, they are warned. If they do it again, they become cursed.
+Description = When a foe hits the Pokémon, they are warned. If they do it again, they become cursed.
 #-------------------------------
 [CYNIC]
 Name = Cynic

@@ -726,21 +726,20 @@ BattleHandlers::TargetAbilityOnHit.add(:BACKWASH,
 
 BattleHandlers::TargetAbilityOnHit.add(:CURSEDTAIL,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-        next unless move.physicalMove?
         next if user.effectActive?(:Curse)
         if aiCheck
-            if user.effectActive?(:PhysCurseWarned) || aiNumHits > 1
+            if user.effectActive?(:CurseWarned) || aiNumHits > 1
                 next -30
             else
                 next -10
             end
         end
         battle.pbShowAbilitySplash(target, ability)
-        if user.effectActive?(:PhysCurseWarned)
+        if user.effectActive?(:CurseWarned)
             user.applyEffect(:Curse)
-            user.disableEffect(:PhysCurseWarned)
+            user.disableEffect(:CurseWarned)
         else
-            user.applyEffect(:PhysCurseWarned)
+            user.applyEffect(:CurseWarned)
         end
         battle.pbHideAbilitySplash(target)
     }
