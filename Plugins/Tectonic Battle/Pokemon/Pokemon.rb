@@ -389,7 +389,7 @@ class Pokemon
     end
 
     def waterlogged?
-        return @status == :WAtERLOG
+        return @status == :WATERLOG
     end
 
     def leeched?
