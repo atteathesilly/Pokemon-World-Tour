@@ -136,6 +136,9 @@ def battleKeywordsImportant
         "substitutes",
         "substitute",
         "sticky",
+        "binding",
+        "binds",
+        "bind",
     ]
 end
 
