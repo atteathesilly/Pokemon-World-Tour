@@ -293,6 +293,10 @@ Flags = HailSynergy
 Name = Evo-Armor
 Description = Boosts one defending stat by two steps according to the foe's attacking stats.
 #-------------------------------
+[EXCAVATOR]
+Name = Excavator
+Description = Dig and Undermine deal 50% more damage.
+#-------------------------------
 [EXOADAPTION]
 Name = Exo-Adaption
 Description = User heals by 25% after taking a special attack.
@@ -593,6 +597,10 @@ Description = Prevents Steel-type Pokémon from escaping.
 [MALINGERING]
 Name = Malingering
 Description = Pokémon take damage from status conditions even while switched out.
+#-------------------------------
+[MARINEMENACE]
+Name = Marine Menace
+Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARVELSCALE]
 Name = Marvel Scale
@@ -1029,6 +1037,10 @@ Description = Immune to Steel-type moves and restores 25% of max HP if hit by on
 Name = Steely Shell
 Description = Steel-type attacks deal 50% more damage, and the Pokémon is protected from critical hits.
 Flags = CritImmunity
+#-------------------------------
+[STEEPFLYING]
+Name = Steep Flying
+Description = Fly and Dive Bomb deal 50% more damage.
 #-------------------------------
 [STENCH]
 Name = Stench

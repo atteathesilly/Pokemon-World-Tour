@@ -572,7 +572,7 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
         pbChargingTurnMessage(user, targets) if @chargingTurn
         if @chargingTurn && @damagingTurn # Move only takes one turn to use
             pbShowAnimation(@id, user, targets, 1) # Charging anim
-            targets.each { |b| pbChargingTurnEffect(user, b) }
+            pbChargingTurnGeneralEffect(user)
             if @powerHerb
                 # Moves that would make the user semi-invulnerable will hide the user
                 # after the charging animation, so the "UseItem" animation shouldn't show
@@ -599,10 +599,11 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
 
     def pbAttackingTurnMessage(user, targets); end
 
+    # For effects that affect the target
     def pbChargingTurnEffect(user, target)
-        # Skull Bash/Sky Drop/Infinite Wing are the only two-turn moves with an effect here, and
-        # the latter just records the target is being Sky Dropped
     end
+
+    def pbChargingTurnGeneralEffect(user); end
 
     def pbAttackingTurnEffect(user, target); end
 
@@ -612,6 +613,10 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
         elsif @chargingTurn
             pbChargingTurnEffect(user, target)
         end
+    end
+
+    def pbEffectGeneral(user)
+        pbChargingTurnGeneralEffect(user) if @chargingTurn && !@damagingTurn
     end
 
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)

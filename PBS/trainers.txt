@@ -8684,7 +8684,7 @@ Policies = CURSE_SELF_DEBUFFING
 [BIRDKEEPER_M2,Vlasta]
 Pokemon = SWELLOW,70
     Moves = FLY,FACADE,DOUBLEEDGE
-    AbilityIndex = 1 # Steep Flying
+    AbilityIndex = 1 # High Flying
     Item = CHOICEBAND
 Pokemon = VILEPLUME,70
     Moves = SLUDGEWAVE,GIGADRAIN,SYNTHESIS,POISONIVY

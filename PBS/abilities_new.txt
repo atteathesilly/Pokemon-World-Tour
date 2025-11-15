@@ -580,10 +580,6 @@ Name = Event Horizon
 Description = Changes the weather to Star Storm, which increases its damage over time. Lingers for three turns after leaving.
 Flags = SandstormSynergy
 #-------------------------------
-[EXCAVATOR]
-Name = Excavator
-Description = Dig and Undermine deal 50% more damage.
-#-------------------------------
 [EXORCIST]
 Name = Exorcist
 Description = Takes half damage from Psychic- and Ghost-type attacks.
@@ -954,6 +950,11 @@ Name = Heroic Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Inner Focus.
 Flags = Immutable
 #-------------------------------
+[HIGHFLYING]
+Name = High Flying
+Description = Immune to weather downsides. Immune to hazards.
+Flags = HazardImmunity,AllWeatherSynergy
+#-------------------------------
 [HIGHJUDGE]
 Name = High Judge
 Description = Has Judgment as its 5th move.
@@ -1187,6 +1188,10 @@ Description = Deals 50% more damage to targets that switched in this turn. Takes
 Name = Linebacker
 Description = Doubles the damage and recoil of recoil moves.
 #-------------------------------
+[LIVEANDLURK]
+Name = Live and Lurk
+Description = When the Pokemon charges and becomes invulnerable, it heals for 25% HP. This can overheal.
+#-------------------------------
 [LIVEFAST]
 Name = Live Fast
 Description = Boosts Speed by 50%, but the Pokémon is hurt for 1/10th HP each turn.
@@ -1255,10 +1260,6 @@ Flags = MoonglowSynergy
 [MARINE]
 Name = Marine
 Description = Physical moves have a 30% chance to waterlog targets.
-#-------------------------------
-[MARINEMENACE]
-Name = Marine Menace
-Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARTIALDISCIPLINE]
 Name = Martial Discipline
@@ -1871,6 +1872,10 @@ Description = Punching moves change the Pokémon's secondary type and their powe
 Name = Shock Style
 Description = Powers up Fighting-type moves by 50%.
 #-------------------------------
+[SHOWOFF]
+Name = Show Off
+Description = When the Pokemon charges and becomes invulnerable, it lowers the Attack and Sp. Atk of all foes.
+#-------------------------------
 [SICKENING]
 Name = Sickening
 Description = Special moves against it lower the attacker's Speed and Sp. Atk.
@@ -1915,7 +1920,7 @@ Description = Can't be leeched, drained, or trapped.
 #-------------------------------
 [SLINKY]
 Name = Slinky
-Description = Two-turn retreat moves such as Dig deal double damage.
+Description = Two-turn semi-invulnerable moves such as Dig deal double damage.
 #-------------------------------
 [SLIPSTREAM]
 Name = Slipstream
@@ -2006,10 +2011,6 @@ Flags = EclipseSynergy
 [STEAMPOWER]
 Name = Steam Power
 Description = Takes 50% less damage from Water-type moves. Raises Speed by four steps when hit by one.
-#-------------------------------
-[STEEPFLYING]
-Name = Steep Flying
-Description = Fly and Dive Bomb deal 50% more damage.
 #-------------------------------
 [STERN]
 Name = Stern
