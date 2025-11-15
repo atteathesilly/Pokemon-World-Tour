@@ -840,7 +840,7 @@ class Pokemon
 
         # Item sets cannot contain duplicates
         if itemSet.length != itemSet.uniq.length
-            pbMessage(_INTL("{1} can't hold two of the same item!", getItemName(:CRYSTALVEIL))) if showMessages
+            pbMessage(_INTL("{1} can't hold two of the same item!", name)) if showMessages
             return false
         end
 
