@@ -669,8 +669,8 @@ Pokemon = ARCLAMOR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = ABSOLUS,70
-    Moves = FLEURCANNON,KNOCKOFF,ZENHEADBUTT,GLACIALRAM
-    AbilityIndex = 1 # Vengeance
+    Moves = FLEURCANNON,KNOCKOFF,TOTALCONTROL,ICEBEAM
+    AbilityIndex = 1 # Infamous
     Item = FAIRYGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
@@ -753,7 +753,7 @@ Pokemon = SALAMENCE,70
     EV = 10,20,0,20,20,0
 Pokemon = ABSOLUS,70
     Moves = INFINITEFORCE,THUNDERBOLT,ICEBEAM,DARKALLURE
-    AbilityIndex = 1 # Vengeance
+    AbilityIndex = 1 # Infamous
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
@@ -784,7 +784,7 @@ Pokemon = DUSKNOIR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = ABSOLUS,70
-    Moves = LOOMINGWINTER,FUTURESIGHT,PLANAHEAD,PLAYROUGH
+    Moves = LOOMINGWINTER,FUTURESIGHT,STROKEOFMIDNIGHT,DOOMDESIRE
     AbilityIndex = 0 # Bad Omen
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

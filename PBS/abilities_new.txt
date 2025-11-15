@@ -1079,6 +1079,10 @@ Description = Immune to Steel-type moves and raises Speed if hit by one.
 Name = Inexorable
 Description = Pokémon take damage from non-volatile status conditions even while switched out.
 #-------------------------------
+[INFAMOUS]
+Name = Infamous
+Description = On the first turn, its attacks jinx the target.
+#-------------------------------
 [INFECTED]
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
