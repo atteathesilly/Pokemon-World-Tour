@@ -6838,7 +6838,7 @@ Target = NearOther
 FunctionCode = DoesPhysicalDamage
 Flags = CanProtect,Sound
 Description = The user shakes the target with a deep, rumbling roar. This attack does physical damage.
-Animation = ROAR
+Animation = SNARL
 #-------------------------------
 [HELIOPAUSE]
 Name = Heliopause
