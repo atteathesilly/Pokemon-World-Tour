@@ -1563,9 +1563,9 @@ Pokemon = PYROAR,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = PROBOPASS,70
-    Moves = STEELBEAM,EARTHPOWER,MISTBURST,PETRIFY
+    Moves = STEELBEAM,PSYCHIC,MISTBURST,PETRIFY
     AbilityIndex = 0 # Magnet Trap
-    Item = ENERGYLOCK
+    Item = BINDINGBAND
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 #-------------------------------
@@ -2127,9 +2127,9 @@ Pokemon = MMUSHARNA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,0,0,20,10
 Pokemon = PROBOPASS,70
-    Moves = FLASHCANNON,TOPSYTURVY,DIAMONDFORCE,EARTHPOWER
+    Moves = FLASHCANNON,TOPSYTURVY,DIAMONDFORCE,PSYCHIC
     AbilityIndex = 0 # Magnet Trap
-    Item = ENERGYLOCK
+    Item = BINDINGBAND
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = MBEAUTIFLY,70
