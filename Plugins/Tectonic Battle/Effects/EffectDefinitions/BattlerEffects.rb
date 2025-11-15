@@ -143,7 +143,7 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :PhysCurseWarned,
+    :id => :CurseWarned,
     :real_name => "Curse-Warned",
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, _value|
