@@ -98,6 +98,10 @@ Flags = CritImmunity
 Name = Beast Boost
 Description = Boosts its best stat each time it deals a KO.
 #-------------------------------
+[BEGUILING]
+Name = Beguiling
+Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special hit from a foe, they become dizzied.
+#-------------------------------
 [BELLIGERENT]
 Name = Belligerent
 Description = Boosts Attack and Sp. Atk by three steps when a stat is lowered by a foe.
@@ -230,6 +234,10 @@ Description = Foes aren't released from its trapping moves even when the Pokémo
 [DIGGINGFIST]
 Name = Excavator
 Description = Dig and Undermine deal 50% more damage.
+#-------------------------------
+[DISORIENTING]
+Name = Disorienting
+Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become dizzied.
 #-------------------------------
 [DRAGONSCALES]
 Name = Dragon Scales

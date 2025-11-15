@@ -160,10 +160,6 @@ Description = Raises Defense and Sp. Def by three steps when its HP is lowered b
 Name = Beaming
 Description = Boosts power of light-based moves by 30%.
 #-------------------------------
-[BEGUILING]
-Name = Beguiling
-Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special hit from a foe, they become dizzied.
-#-------------------------------
 [BELLOWER]
 Name = Bellower
 Description = After using a sound move, all foes are tormented.
@@ -466,10 +462,6 @@ Description = It can avoid being knocked out by sacrificing its held item.
 [DISCONNECTION]
 Name = Disconnection
 Description = On the first turn, its attacks numb the target.
-#-------------------------------
-[DISORIENTING]
-Name = Disorienting
-Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become dizzied.
 #-------------------------------
 [DISTORTEDGRAVITY]
 Name = Distorted Gravity
