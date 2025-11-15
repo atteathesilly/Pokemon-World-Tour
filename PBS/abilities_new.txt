@@ -173,6 +173,10 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
+[BIRDOFPREY]
+Name = Bird of Prey
+Description = Deals 30% more damage to targets that are below half health or that swapped in this turn.
+#-------------------------------
 [BITEY]
 Name = Bitey
 Description = Boosts the power of biting moves by 30%.

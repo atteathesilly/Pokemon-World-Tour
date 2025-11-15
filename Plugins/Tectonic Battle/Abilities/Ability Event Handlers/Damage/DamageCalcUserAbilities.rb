@@ -349,6 +349,15 @@ BattleHandlers::DamageCalcUserAbility.add(:LIMINAL,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:BIRDOFPREY,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if target.effectActive?(:SwitchedIn) || target.belowHalfHealth?
+      mults[:attack_multiplier] *= 1.3
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:AFTERIMAGE,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if target.effectActive?(:SwitchedIn)
