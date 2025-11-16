@@ -1848,6 +1848,10 @@ Description = When targeted by a status move, the offending Pokémon becomes poi
 Name = Seed Sowing
 Description = Special moves have a 30% chance to leech targets.
 #-------------------------------
+[SEER]
+Name = Seer
+Description = Foretold moves deal 50% more damage.
+#-------------------------------
 [SELECTIVESCUTES]
 Name = Selective Scutes
 Description = Boosts one defending stat by two steps according to the foe's Attack and Sp. Atk.
