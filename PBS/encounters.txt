@@ -261,8 +261,6 @@ FloweryGrass,20,20
     25,DUCKLETT,14,16
     25,SMOOCHUM,14,16
     25,SWIRLIX,14,16
-Special,20
-    1,EEVEE,15
 #-------------------------------
 [057] # Novo Center
 Special,20

@@ -830,7 +830,7 @@ end
 class PokeBattle_Move_ApplyReducingSyrupToTarget < PokeBattle_Move
     def pbFailsAgainstTarget?(user, target, show_message)
         return false if damagingMove?
-        if target.effectActive?(:ReducingSyrup)
+        if target.effectActive?(:Sticky)
             @battle.pbDisplay(_INTL("But it failed, since {1} is already covered in syrup!", target.pbThis(true))) if show_message
             return true
         end
@@ -839,17 +839,17 @@ class PokeBattle_Move_ApplyReducingSyrupToTarget < PokeBattle_Move
 
     def pbEffectAgainstTarget(user, target)
         return if damagingMove?
-        target.applyEffect(:ReducingSyrup, applyEffectDurationModifiers(3, user))
+        target.applyEffect(:Sticky, applyEffectDurationModifiers(3, user))
     end
 
     def pbAdditionalEffect(user, target)
         return if target.damageState.substitute
-        return if target.effectActive?(:ReducingSyrup)
-        target.applyEffect(:ReducingSyrup, applyEffectDurationModifiers(3, user))
+        return if target.effectActive?(:Sticky)
+        target.applyEffect(:Sticky, applyEffectDurationModifiers(3, user))
     end
 
     def getEffectScore(user, target)
-        return 0 if target.effectActive?(:ReducingSyrup)
+        return 0 if target.effectActive?(:Sticky)
         return getMultiStatDownEffectScore([target.highestStat, 2], user, target) * 1.45 # 100% on first turn, 30% on second, 15% on third
     end
 end

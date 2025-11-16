@@ -77,6 +77,7 @@ def battleKeywordsImportant
         "disabled",
         "disables",
         "disable",
+        "sticky",
         "maximizes",
         "maximize",
         "minimized",
@@ -137,6 +138,10 @@ def battleKeywordsImportant
         "energize",
         "substitutes",
         "substitute",
+        "sticky",
+        "binding",
+        "binds",
+        "bind",
     ]
 end
 

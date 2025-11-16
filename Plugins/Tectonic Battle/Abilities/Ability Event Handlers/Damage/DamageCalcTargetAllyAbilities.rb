@@ -13,3 +13,12 @@ BattleHandlers::DamageCalcTargetAllyAbility.add(:MOONBLANKET,
     end
   }
 )
+
+BattleHandlers::DamageCalcTargetAllyAbility.add(:PROTECTIVEINSTINCT,
+  proc { |ability, user, target, _move, mults, _baseDmg, _type, aiCheck|
+    if target.notFullyEvolved?
+      mults[:final_damage_multiplier] *= 0.66
+      target.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)

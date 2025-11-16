@@ -812,6 +812,15 @@ BattleHandlers::DamageCalcUserAbility.add(:BALLLIGHTNING,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:PREEMINENCE,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+      if user.pbSpeed > target.pbSpeed
+        mults[:base_damage_multiplier] *= 1.3
+        user.aiLearnsAbility(ability) unless aiCheck
+      end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:LATEBLOOMER,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if user.pbSpeed < target.pbSpeed

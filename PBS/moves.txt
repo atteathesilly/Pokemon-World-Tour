@@ -2567,7 +2567,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user summons bugs to swarm the target, trapping and damaging it for three turns.
+Description = The user summons bugs to swarm the target, trapping and binding it for three turns.
 #-------------------------------
 [LEECHLIFE]
 Name = Leech Life
@@ -3495,7 +3495,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect,Wind
-Description = The user engulfs the target in fierce flames, trapping and damaging it for three turns.
+Description = The user engulfs the target in fierce flames, trapping and binding it for three turns.
 #-------------------------------
 [FLAMECHARGE]
 Name = Flame Charge
@@ -3620,7 +3620,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user spews magma around the target, trapping and damaging it for three turns.
+Description = The user spews magma around the target, trapping and binding it for three turns.
 #-------------------------------
 [MINDBLOWN]
 Name = Mind Blown
@@ -3798,7 +3798,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user clamps onto the target, trapping and damaging it for three turns.
+Description = The user clamps onto the target, trapping and binding it for three turns.
 #-------------------------------
 [DIVE]
 Name = Dive
@@ -4646,7 +4646,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user throws a cage of electricity around the target, trapping and damaging it for three turns.
+Description = The user throws a cage of electricity around the target, trapping and binding it for three turns.
 #-------------------------------
 [THUNDERFANG]
 Name = Thunder Fang
@@ -6129,16 +6129,6 @@ FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,Light
 EffectChance = 40
 Description = The user emits a powerful damaging flash. It has a 40% chance to lower Sp. Atk.
-#-------------------------------
-[DECORATE]
-Name = Decorate
-Type = FAIRY
-Category = Status
-Accuracy = 0
-TotalPP = 12
-Target = NearAlly
-FunctionCode = RaiseTargetAtkSpAtk5
-Description = The user decorates the target, raising their Attack and Sp. Atk by five steps.
 #-------------------------------
 [DISARMINGVOICE]
 Name = Disarming Voice

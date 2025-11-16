@@ -201,7 +201,7 @@ Description = Increase the EXP gained from battles in which it participates by 5
 #-------------------------------
 [BOTTOMFEEDER]
 Name = Bottom Feeder
-Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped.
+Description = Heals from binding damage it deals. Takes 25% less damage from Pokémon that are trapped.
 #-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest
@@ -350,7 +350,7 @@ Description = When hit with an attack, gains that attack's type.
 #-------------------------------
 [CONSTRICTOR]
 Name = Constrictor
-Description = When hit with a physical move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a physical move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [COREPROVENANCE]
 Name = Core Provenance
@@ -374,7 +374,7 @@ Description = Foretold moves take one turn longer to attack but deal 50% more da
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
-Description = When a foe hits the Pokémon with a physical move, they are warned. If they do it again, they become cursed.
+Description = When a foe hits the Pokémon, they are warned. If they do it again, they become cursed.
 #-------------------------------
 [CYNIC]
 Name = Cynic
@@ -861,7 +861,7 @@ Description = Intensifies gravity for four turns when hit by an attack.
 #-------------------------------
 [GRIPSTRENGTH]
 Name = Grip Strength
-Description = Moves that trap and damage the opponent for three turns deal 50% more damage on the initial hit.
+Description = Moves that trap and bind the opponent deal 50% more damage on the initial hit.
 #-------------------------------
 [GRIT]
 Name = Grit
@@ -875,13 +875,9 @@ Description = Raises Attack and Sp. Atk whenever any Pokémon uses a dance move.
 Name = Grotesque Vitals
 Description = Heals 1/16th HP every turn. Protected from being poisoned.
 #-------------------------------
-[GYRESPINNER]
-Name = Gyre Spinner
-Description = Upon entry, traps each opponent in a whirlpool for two turns.
-#-------------------------------
 [HANDOFF]
 Name = Hand Off
-Description = Trapping effects against an enemy are passed over to a Pokémon that swaps in for this.
+Description = Trapping and binding effects against an enemy are passed over to an ally that swaps in for this Pokémon.
 #-------------------------------
 [HARBINGER]
 Name = Harbinger
@@ -1082,8 +1078,8 @@ Description = Pokémon take damage from non-volatile status conditions even whil
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
 #-------------------------------
-[INNERLIGHT]
-Name = Inner Light
+[INNERHEAT]
+Name = Inner Heat
 Description = Summons sunshine for four turns when hit by an attack.
 Flags = SunshineSynergy
 #-------------------------------
@@ -1249,7 +1245,7 @@ Description = Pokémon that swap in for this have their Attack and Sp. Atk raise
 #-------------------------------
 [MAGNETTRAP]
 Name = Magnet Trap
-Description = When hit with a special move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a special move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [MALICE]
 Name = Malice
@@ -1584,10 +1580,18 @@ Description = Its physical attacks go last but force the target to switch out af
 Name = Power Pinch
 Description = On the first turn, its physical attacks trap the target and damage it for three turns.
 #-------------------------------
+[PREEMINENCE]
+Name = Preeminence
+Description = Deals 30% more move damage to Pokemon slower than it.
+#-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve
 Description = Right before the Pokémon is attacked, the attacker's stat changes are reset.
 Flags = SetupCounterAI
+#-------------------------------
+[PROTECTIVEINSTINCT]
+Name = Protective Instinct
+Description = While the Pokemon has an ally that isn't fully evolved, both Pokemon take 33% less move damage.
 #-------------------------------
 [PUFFUP]
 Name = Puff Up
@@ -2026,6 +2030,10 @@ Description = Can hold a second item by stealing it.
 [STICKYMOLD]
 Name = Sticky Mold
 Description = If an attack lowers its HP to half or less, leeches the attacker.
+#-------------------------------
+[STICKYSITUATION]
+Name = Sticky Situation
+Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes sticky for three turns.
 #-------------------------------
 [STONEMANE]
 Name = Stone Mane

@@ -742,7 +742,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user hugs the target intensely, trapping and damaging it for three turns.
+Description = The user hugs the target intensely, trapping and binding it for three turns.
 #-------------------------------
 [BREAKDANCE]
 Name = Breakdance
@@ -1643,7 +1643,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user opens a rift beneath the target, trapping and damaging it for three turns.
+Description = The user opens a rift beneath the target, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [DEVOURINGDUST]
@@ -1656,7 +1656,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The target is consumed by a desert storm, trapping and damaging it for three turns.
+Description = The target is consumed by a desert storm, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [DUSTDEVIL]
@@ -1812,7 +1812,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user opens a pit beneath the target, trapping and damaging it for three turns.
+Description = The user opens a pit beneath the target, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [PULVERIZERCHORD]
@@ -2401,7 +2401,7 @@ Target = NearOther
 FunctionCode = RaiseCriticalHitRate1
 Flags = CanProtect
 EffectChance = 100
-Description = A star falls on the target. Witnessing this lucky star also increases the user's critical hit chance.
+Description = A star falls on the target. Witnessing this lucky star also enables random critical hits and doubles the user's critical hit chance.
 Animation = DOOMDESIRE
 #-------------------------------
 [TERRAFORM]
@@ -2844,7 +2844,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user summons bugs to terrorize the target, trapping and damaging it for three turns.
+Description = The user summons bugs to terrorize the target, trapping and binding it for three turns.
 Animation = INFESTATION
 #-------------------------------
 [TUNEUP]
@@ -3253,19 +3253,6 @@ EffectChance = 50
 Description = The target is pestered by a giant tongue. This has a 50% chance to numb it.
 Animation = LICK
 #-------------------------------
-[UNDYINGRUSH]
-Name = Undying Rush
-Type = GHOST
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = RecoilThirdOfDamageDealtButCantFaint
-Flags = CanProtect
-Description = Clad in souls, the user crashes into the target. The user takes 33% recoil, but can't faint from it.
-Animation = PHANTOMFORCE
-#-------------------------------
 [VIMRIPPER]
 Name = Vim Ripper
 Type = GHOST
@@ -3359,7 +3346,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = Conductive materials ensnare the target, trapping and damaging it for three turns.
+Description = Conductive materials ensnare the target, trapping and binding it for three turns.
 Animation = MAGNETBOMB
 #-------------------------------
 [FEATHERWARD]
@@ -3490,7 +3477,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user strikes the target while magnetizing it, trapping and damaging it for three turns.
+Description = The user strikes the target while magnetizing it, trapping and binding it for three turns.
 Animation = MAGNETBOMB
 #-------------------------------
 [MIRRORSHIELD]
@@ -3824,7 +3811,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect,Wind
-Description = The foe is engulfed in a firestorm, trapping and damaging it for three turns.
+Description = The foe is engulfed in a firestorm, trapping and binding it for three turns.
 Animation = FIRESPIN
 #-------------------------------
 [DRYHEAT]
@@ -4620,7 +4607,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The target is crushed in the user's shell, mouth, or claws, trapping and damaging it for three turns.
+Description = The target is crushed in the user's shell, mouth, or claws, trapping and binding it for three turns.
 Animation = CLAMP
 #-------------------------------
 [SPATTERINGRAM]
@@ -5202,7 +5189,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user wraps the target in its vines, trapping and damaging it for three turns.
+Description = The user wraps the target in its vines, trapping and binding it for three turns.
 #-------------------------------
 [WHIPKICK]
 Name = Whip Kick
@@ -5663,7 +5650,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user creates an electric fueled cage, trapping and damaging it for three turns.
+Description = The user creates an electric fueled cage, trapping and binding it for three turns.
 Animation = THUNDERCAGE
 #-------------------------------
 [THUNDERBELLY]
@@ -5933,7 +5920,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user conjures a giant fist to crush the target, trapping and damaging it for three turns.
+Description = The user conjures a giant fist to crush the target, trapping and binding it for three turns.
 #-------------------------------
 [MAGEHAND]
 Name = Mage Hand
@@ -5945,7 +5932,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user grabs the target with a conjured hand, trapping and damaging it for three turns.
+Description = The user grabs the target with a conjured hand, trapping and binding it for three turns.
 Animation = KINETICGRIP
 #-------------------------------
 [MEMORYREMOVAL]
@@ -6852,7 +6839,7 @@ Target = NearOther
 FunctionCode = DoesPhysicalDamage
 Flags = CanProtect,Sound
 Description = The user shakes the target with a deep, rumbling roar. This attack does physical damage.
-Animation = ROAR
+Animation = SNARL
 #-------------------------------
 [HELIOPAUSE]
 Name = Heliopause
@@ -7863,7 +7850,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserFullHPBindsTarget
 Flags = CanSnatch
-Description = The user uses honey to fully restore its HP. However, this lures swarming insects, trapping and damaging the user for three turns.
+Description = The user uses honey to fully restore its HP. However, this lures swarming insects, trapping and binding the user for three turns.
 Animation = RECOVER
 #-------------------------------
 [HUMBLE]

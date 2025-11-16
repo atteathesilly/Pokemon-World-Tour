@@ -942,6 +942,19 @@ class PokeBattle_Battler
         return shouldAbilityApply?(GameData::Ability.getByFlag("HazardImmunity"), aiCheck)
     end
 
+    def notFullyEvolved?
+        return false unless @pokemon
+        return !@pokemon.species_data.get_evolutions(true).empty?
+    end
+
+    def hasAnyNotFullyEvolvedAllies?
+        eachAlly do |b|
+            next unless b.notFullyEvolved?
+            return true
+        end
+        return false
+    end
+
     def hasGem?
         eachActiveItem do |item|
             return true if GameData::Item.get(item).is_gem?

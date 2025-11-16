@@ -952,7 +952,7 @@ NamePlural = Heavy-Duty Boots
 Pocket = 12
 Price = 4000
 Flags = Clothing
-Description = These boots prevent the effects of traps set on the battlefield.
+Description = These boots prevent the effects of hazards set on the battlefield.
 #-------------------------------
 [THROATSPRAY]
 Name = Throat Spray
@@ -2453,14 +2453,14 @@ Name = Grass Token
 NamePlural = Grass Tokens
 Pocket = 16
 Price = 10000
-Description = A token which can be exchanged for a Grass-type at the Starter Store.
+Description = A token which can be exchanged for a Grass-type at the Starter Store in Novo Town.
 #-------------------------------
 [WATERTOKEN]
 Name = Water Token
 NamePlural = Water Tokens
 Pocket = 16
 Price = 10000
-Description = A token which can be exchanged for a Water-type at the Starter Store.
+Description = A token which can be exchanged for a Water-type at the Starter Store in Novo Town.
 #-------------------------------
 [ORIGINORE]
 Name = Origin Ore
@@ -2476,7 +2476,7 @@ Name = Fire Token
 NamePlural = Fire Tokens
 Pocket = 16
 Price = 10000
-Description = A token which can be exchanged for a Fire-type at the Starter Store.
+Description = A token which can be exchanged for a Fire-type at the Starter Store in Novo Town.
 #-------------------------------
 [DRATINIEGG]
 Name = Dratini Egg

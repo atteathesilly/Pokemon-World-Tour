@@ -410,6 +410,10 @@ Description = Its physical attacks reduce the target's Defense.
 Name = Guts
 Description = Boosts Attack by 33% if has a status condition. Ignores burn physical damage reduction.
 #-------------------------------
+[GYRESPINNER]
+Name = Gyre Spinner
+Description = Upon entry, traps each opponent in a whirlpool for two turns.
+#-------------------------------
 [HARDWORKER]
 Name = Hard Worker
 Description = Increases the money gained from battles in which it participates by 50%.
@@ -476,6 +480,11 @@ Description = Prevents the Pokémon from getting poisoned.
 [INFINITESOURCE]
 Name = Infinite Source
 Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
+#-------------------------------
+[INNERLIGHT]
+Name = Inner Light
+Description = Summons sunshine for four turns when hit by an attack.
+Flags = SunshineSynergy
 #-------------------------------
 [INSOMNIA]
 Name = Insomnia

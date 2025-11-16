@@ -143,7 +143,7 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :PhysCurseWarned,
+    :id => :CurseWarned,
     :real_name => "Curse-Warned",
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, _value|
@@ -2479,25 +2479,27 @@ GameData::BattleEffect.register_effect(:Battler, {
     end,
 })
 
+DEFAULT_STICKY_DURATION = 3
+
 GameData::BattleEffect.register_effect(:Battler, {
-    :id => :ReducingSyrup,
-    :real_name => "Reducing Syrup",
+    :id => :Sticky,
+    :real_name => "Sticky",
     :type => :Integer,
     :ticks_down => true,
     :baton_passed => true,
     :avatars_purge => true,
     :apply_proc => proc do |battle, battler, value|
-        battle.pbDisplay(_INTL("{1} was covered in a sticky syrup!", battler.pbThis))
+        battle.pbDisplay(_INTL("{1} was covered in a sticky goop!", battler.pbThis))
         battle.pbDisplay(_INTL("It'll last for {1} more turns!", value-1))
     end,
     :disable_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("{1} got rid of the sticky syrup!", battler.pbThis))
+        battle.pbDisplay(_INTL("{1} got rid of the sticky goop!", battler.pbThis))
     end,
     :expire_proc => proc do |battle, battler|
-        battle.pbDisplay(_INTL("The sticky syrup around {1} disappeared!", battler.pbThis(true)))
+        battle.pbDisplay(_INTL("The sticky goop around {1} disappeared!", battler.pbThis(true)))
     end,
     :eor_proc => proc do |battle, battler, _value|
-        battle.pbDisplay(_INTL("The sticky syrup reduced {1}'s highest stat!", battler.pbThis(true)))
+        battle.pbDisplay(_INTL("The sticky goop reduced {1}'s highest stat!", battler.pbThis(true)))
         battler.pbLowerStatStep(battler.highestStat, 2)
         battler.pbItemStatRestoreCheck
     end,
