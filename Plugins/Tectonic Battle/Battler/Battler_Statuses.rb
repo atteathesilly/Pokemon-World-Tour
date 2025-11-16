@@ -446,6 +446,13 @@ immuneTypeRealName))
                 @battle.pbDisplay(_INTL("A neurotoxin emitter is in the opposing party!"))
                 @battle.pbDisplay(_INTL("Due to {1}, {2} will be unable to use the same move twice in a row.", neuroToxinSource.name, pbThis(true)))
             end
+
+            piercingPoisoner = @battle.pbCheckOpposingAbility(:PIERCINGPOISON, @index)
+            if piercingPoisoner
+                piercingPoisoner.showMyAbilitySplash(:PIERCINGPOISON)
+                @battle.pbDisplay(_INTL("The poison starts already doubled!"))
+                piercingPoisoner.hideMyAbilitySplash
+            end
         end
         # Form change check
         pbCheckFormOnStatusChange
