@@ -290,6 +290,50 @@ BattleHandlers::TargetAbilityOnHit.add(:SPINTENSITY,
 )
 
 #########################################
+# Binding abilities
+#########################################
+
+BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        next unless move.physicalMove?
+        next if target.fainted?
+        next -30 if aiCheck
+        next if user.effectActive?(:Trapping)
+        next if user.effectActive?(:Binding)
+        next if target.effectActive?(:SwitchedIn)
+        trappingDuration = 3
+        trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        trappingDuration = applyEffectDurationModifiers(trappingDuration, user)
+        battle.pbShowAbilitySplash(target, ability)
+        battle.pbDisplay(_INTL("{1} is being constricted!", user.pbThis))
+        user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
+        user.applyEffect(:TrappingAbility, :CONSTRICTOR)
+        user.pointAt(:TrappingUser, target)
+        battle.pbHideAbilitySplash(target)
+  }
+)
+
+BattleHandlers::TargetAbilityOnHit.add(:MAGNETTRAP,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        next unless move.specialMove?
+        next if target.fainted?
+        next -30 if aiCheck
+        next if user.effectActive?(:Trapping)
+        next if user.effectActive?(:Binding)
+        next if target.effectActive?(:SwitchedIn)
+        trappingDuration = 3
+        trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        trappingDuration = applyEffectDurationModifiers(trappingDuration, user)
+        battle.pbShowAbilitySplash(target, ability)
+        battle.pbDisplay(_INTL("{1} is being magnetized!", user.pbThis))
+        user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
+        user.applyEffect(:TrappingAbility, :MAGNETTRAP)
+        user.pointAt(:TrappingUser, target)
+        battle.pbHideAbilitySplash(target)
+  }
+)
+
+#########################################
 # Move usage abilities
 #########################################
 
@@ -327,40 +371,6 @@ BattleHandlers::TargetAbilityOnHit.add(:BOUNCEBACK,
         next if target.fainted?
         next -20 if aiCheck
         battle.forceUseMove(target, :PAINSPLIT, user.index, ability: ability)
-  }
-)
-
-BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
-  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-        next unless move.physicalMove?
-        next if target.fainted?
-        next -30 if aiCheck
-        next if user.effectActive?(:Trapping)
-        next if user.effectActive?(:Binding)
-        next if target.effectActive?(:SwitchedIn)
-        battle.pbShowAbilitySplash(target, ability)
-        battle.pbDisplay(_INTL("{1} is being constricted!", user.pbThis))
-        user.applyEffect(:Binding, applyEffectDurationModifiers(3, target))
-        user.applyEffect(:TrappingAbility, :CONSTRICTOR)
-        user.pointAt(:TrappingUser, target)
-        battle.pbHideAbilitySplash(target)
-  }
-)
-
-BattleHandlers::TargetAbilityOnHit.add(:MAGNETTRAP,
-  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-        next unless move.specialMove?
-        next if target.fainted?
-        next -30 if aiCheck
-        next if user.effectActive?(:Trapping)
-        next if user.effectActive?(:Binding)
-        next if target.effectActive?(:SwitchedIn)
-        battle.pbShowAbilitySplash(target, ability)
-        battle.pbDisplay(_INTL("{1} is being magnetized!", user.pbThis))
-        user.applyEffect(:Binding, applyEffectDurationModifiers(3, target))
-        user.applyEffect(:TrappingAbility, :MAGNETTRAP)
-        user.pointAt(:TrappingUser, target)
-        battle.pbHideAbilitySplash(target)
   }
 )
 

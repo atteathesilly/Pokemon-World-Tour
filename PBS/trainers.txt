@@ -1,5 +1,13 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[BATTLEGIRL,Hot Girl Shit]
+Pokemon = AGOLEM,20
+    Moves = SPARK,BLUNTFORCE
+    AbilityIndex = 0 # Galvanize
+Pokemon = WAILORD,20
+    Moves = SLAMSHUT,COLDFRONT
+    AbilityIndex = 1 # Gargantuan
+#-------------------------------
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
     Moves = TACKLE
@@ -4109,7 +4117,7 @@ Pokemon = NIBELONG,55
     AbilityIndex = 1 # Fascinate
     Item = LOADEDDICE
 Pokemon = ADUGTRIO,55
-    Moves = SANDBLASTING,HAIRCURL,ENCHANTINGSONG,SHOREUP
+    Moves = SANDBLASTING,HAIRFLIP,ENCHANTINGSONG,SHOREUP
     AbilityIndex = 1 # Fascinate
     Item = SEVENLEAGUEBOOTS
 #-------------------------------
@@ -8286,7 +8294,7 @@ Pokemon = MIMIKYU,70
 [TAPU_LELE,Tapu Lele]
 Flags = NoPerfect
 Pokemon = ADUGTRIO,70
-    Moves = HAIRCURL,SANDBLASTING,MIASMA,STEALTHROCK
+    Moves = HAIRFLIP,SANDBLASTING,MIASMA,STEALTHROCK
     AbilityIndex = 1 # Fascinate
     Item = OCCABERRY
 Pokemon = FLORGES,70
@@ -9087,7 +9095,7 @@ Pokemon = MILTANK,70
     AbilityIndex = 0 # Thick Fat
     Item = LEFTOVERS
 Pokemon = ADUGTRIO,70
-    Moves = SHOREUP,SLUDGEWAVE,HAIRCURL,SANDBLASTING
+    Moves = SHOREUP,SLUDGEWAVE,HAIRFLIP,SANDBLASTING
     AbilityIndex = 1 # Fascinate
 #-------------------------------
 [OFFICEWORKER_M,Kurt]
@@ -9597,7 +9605,7 @@ Pokemon = MZANGOOSE,60
     AbilityIndex = 1 # Mental Damage
     Item = CHOICESCARF
 Pokemon = ADUGTRIO,60
-    Moves = HAIRCURL,EARTHPOWER,ENCHANTEDARROW,STINGINGJEALOUSY
+    Moves = HAIRFLIP,EARTHPOWER,ENCHANTEDARROW,STINGINGJEALOUSY
     AbilityIndex = 0 # Lauoho Lasso
     Item = STRIKEVEST
 Pokemon = JUMPLUFF,60

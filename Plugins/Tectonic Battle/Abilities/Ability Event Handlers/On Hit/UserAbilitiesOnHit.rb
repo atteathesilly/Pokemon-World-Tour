@@ -263,7 +263,7 @@ BattleHandlers::UserAbilityOnHit.add(:FATCHANCE,
 )
 
 #########################################
-# Trapping Abilities
+# Binding Abilities
 #########################################
 
 BattleHandlers::UserAbilityOnHit.add(:POWERPINCH,
