@@ -1,13 +1,5 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
-[BATTLEGIRL,Hot Girl Shit]
-Pokemon = AGOLEM,20
-    Moves = SPARK,BLUNTFORCE
-    AbilityIndex = 0 # Galvanize
-Pokemon = WAILORD,20
-    Moves = SLAMSHUT,COLDFRONT
-    AbilityIndex = 1 # Gargantuan
-#-------------------------------
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
     Moves = TACKLE
