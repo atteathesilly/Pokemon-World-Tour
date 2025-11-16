@@ -154,6 +154,7 @@ def battleGuideVolatileStatusesHash
         _INTL("Jinx") => _INTL("When jinxed, a Pokémon cannot Protect itself, and all attacks against it are guaranteed critical hits. Jinx wears off after 3 turns. Fairy-types do the most jinxing."),
         _INTL("Fractured") => _INTL("When fractured, a Pokémon deals 33% less damage with its moves. Fracture wears off after 3 turns. Rock-types do the most fracturing."),
         _INTL("Curse") => _INTL("When cursed, a Pokémon loses 25% of its HP every turn. Ghost-types do the most cursing."),
+        _INTL("Blindness") => _INTL("When blinded, a Pokemon deals 50% damage with its next attacking move. Blindness persists until a damaging move is used by the blinded Pokemon."),
         _INTL("Torment") => _INTL("When tormented, a Pokémon cannot use the same move twice in a row. If something prevents it from moving for a turn, it can choose the same move the following turn."),
         _INTL("Taunt") => _INTL("When taunted, a Pokémon is prevented from using status moves."),
         _INTL("Disable") => _INTL("When disabled, a Pokémon cannot use the move it last selected."),

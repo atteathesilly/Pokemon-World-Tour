@@ -59,18 +59,22 @@ def purchaseStarters(type,price=0)
 	end
 	pbMessage(_INTL("Which {1}-type starter Pokemon would you like to look at?",typeName))
 	
-	starterArray = []
+	starterArray = [_INTL("None")]
 	case type
 	when :GRASS
-		starterArray = ["None","Bulbasaur","Chikorita","Treecko","Turtwig","Snivy","Chespin","Rowlet","Grookey"]
+		starterName = ["Bulbasaur","Chikorita","Treecko","Turtwig","Snivy","Chespin","Rowlet","Grookey"]
 	when :FIRE
-		starterArray = ["None","Charmander","Cyndaquil","Torchic","Chimchar","Tepig","Fennekin","Litten","Scorbunny"]
+		starterName = ["Charmander","Cyndaquil","Torchic","Chimchar","Tepig","Fennekin","Litten","Scorbunny"]
 	when :WATER
-		starterArray = ["None","Squirtle","Totodile","Mudkip","Piplup","Oshawott","Froakie","Popplio","Sobble"]
+		starterName = ["Squirtle","Totodile","Mudkip","Piplup","Oshawott","Froakie","Popplio","Sobble"]
 	else
 		return
 	end
-	
+
+  starterName.each do |id|
+    starterArray << GameData::Species.get(id.upcase).name
+  end
+
 	while true
 		result = pbShowCommands(nil,starterArray,0)
 

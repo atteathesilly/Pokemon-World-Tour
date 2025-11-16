@@ -1736,7 +1736,7 @@ Pokemon = HOUNDOMINUS,70
     AbilityIndex = 1 # Berserk
     Item = FOCUSSASH
 Pokemon = SCARAPACE,70
-    Moves = FLY,XSCISSOR,CLOSECOMBAT,TRAMPLE
+	Moves = FLY,XSCISSOR,CLOSECOMBAT,ICEBERGBASH
     AbilityIndex = 0 # Victory Molt
     Item = STRIKEVEST
 Pokemon = MZANGOOSE,70
@@ -1759,7 +1759,7 @@ Pokemon = HOUNDOMINUS,70
     AbilityIndex = 1 # Berserk
     Item = FOCUSSASH
 Pokemon = SCARAPACE,70
-    Moves = FLY,XSCISSOR,CLOSECOMBAT,TRAMPLE
+	Moves = FLY,XSCISSOR,CLOSECOMBAT,ICEBERGBASH
     AbilityIndex = 0 # Victory Molt
     Item = STRIKEVEST
 Pokemon = SAURENAID,70
@@ -3872,7 +3872,7 @@ Pokemon = SHARPEDO,30
     AbilityIndex = 1 # Armor Piercing
 Pokemon = PINSIR,30
     Moves = FURYPECKS,CAPOEIRA,BUGBITE,BULKUP
-    AbilityIndex = 1 # Juggernaut
+    AbilityIndex = 1 # Power Pinch
 #-------------------------------
 [BURGLAR,Barret]
 Pokemon = DUDUNSPARCE,26
@@ -4109,7 +4109,7 @@ Pokemon = NIBELONG,55
     AbilityIndex = 1 # Fascinate
     Item = LOADEDDICE
 Pokemon = ADUGTRIO,55
-    Moves = SANDBLASTING,HAIRCURL,ENCHANTINGSONG,SHOREUP
+    Moves = SANDBLASTING,HAIRFLIP,ENCHANTINGSONG,SHOREUP
     AbilityIndex = 1 # Fascinate
     Item = SEVENLEAGUEBOOTS
 #-------------------------------
@@ -4706,7 +4706,7 @@ Pokemon = DRAMPA,60
     AbilityIndex = 0 # Berserk
 Pokemon = SCARAPACE,60
     Moves = SUPERPOWER,XSCISSOR,MACHPUNCH,FLY
-    AbilityIndex = 1 # Juggernaut
+    AbilityIndex = 1 # Power Pinch
 Pokemon = CHARIZARD,60
     Moves = DRACOMETEOR,WILDFIREMELT,FLAMETHROWER,OVERHEAT
     AbilityIndex = 0 # Pure Rage
@@ -8286,7 +8286,7 @@ Pokemon = MIMIKYU,70
 [TAPU_LELE,Tapu Lele]
 Flags = NoPerfect
 Pokemon = ADUGTRIO,70
-    Moves = HAIRCURL,SANDBLASTING,MIASMA,STEALTHROCK
+    Moves = HAIRFLIP,SANDBLASTING,MIASMA,STEALTHROCK
     AbilityIndex = 1 # Fascinate
     Item = OCCABERRY
 Pokemon = FLORGES,70
@@ -9087,7 +9087,7 @@ Pokemon = MILTANK,70
     AbilityIndex = 0 # Thick Fat
     Item = LEFTOVERS
 Pokemon = ADUGTRIO,70
-    Moves = SHOREUP,SLUDGEWAVE,HAIRCURL,SANDBLASTING
+    Moves = SHOREUP,SLUDGEWAVE,HAIRFLIP,SANDBLASTING
     AbilityIndex = 1 # Fascinate
 #-------------------------------
 [OFFICEWORKER_M,Kurt]
@@ -9597,8 +9597,8 @@ Pokemon = MZANGOOSE,60
     AbilityIndex = 1 # Mental Damage
     Item = CHOICESCARF
 Pokemon = ADUGTRIO,60
-    Moves = HAIRCURL,EARTHPOWER,ENCHANTEDARROW,STINGINGJEALOUSY
-    AbilityIndex = 0 # Tangling Hair
+    Moves = HAIRFLIP,EARTHPOWER,ENCHANTEDARROW,STINGINGJEALOUSY
+    AbilityIndex = 0 # Lauoho Lasso
     Item = STRIKEVEST
 Pokemon = JUMPLUFF,60
     Moves = PSYCHIC,PETALDANCE,AIRSLASH,MOONBLAST
@@ -9657,7 +9657,7 @@ Pokemon = GIGANTEON,45
     Moves = LASTRESORT,PROTECT
     AbilityIndex = 1 # Friend to All
 #-------------------------------
-[COOLTRAINER_F7,Iridia]
+[COOLTRAINER_F7,Milja]
 Pokemon = HELECTRODE,35
     Moves = SELFDESTRUCT,THUNDERBOLT,CHLOROBLAST,AROMATHERAPY
     AbilityIndex = 0 # Perennial Payload

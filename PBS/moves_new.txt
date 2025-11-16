@@ -3376,18 +3376,19 @@ Flags = CanProtect
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
-[HAIRCURL]
-Name = Hair Curl
+[HAIRFLIP]
+Name = Hair Flip
 Type = STEEL
 Category = Special
-Power = 90
+Power = 80
 Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = BindTarget3
+TotalPP = 15
+Target = NearFoe
+FunctionCode = BlindOnSwitchIn
 Flags = CanProtect
-Description = The user curls its metal hair around the target, trapping and binding it for three turns.
-Animation = BIND
+EffectChance = 100
+Description = The user reflects a burst of light off its curls. Blinds a Pokemon entering the battle.
+Animation = FLASH
 #-------------------------------
 [HELMBUTT]
 Name = Helmbutt
@@ -6826,7 +6827,7 @@ Target = NearOther
 FunctionCode = DoesPhysicalDamage
 Flags = CanProtect,Sound
 Description = The user shakes the target with a deep, rumbling roar. This attack does physical damage.
-Animation = ROAR
+Animation = SNARL
 #-------------------------------
 [HELIOPAUSE]
 Name = Heliopause
