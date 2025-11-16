@@ -303,7 +303,6 @@ BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
-        trappingDuration = applyEffectDurationModifiers(trappingDuration, user)
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being constricted!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
@@ -323,7 +322,6 @@ BattleHandlers::TargetAbilityOnHit.add(:MAGNETTRAP,
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
-        trappingDuration = applyEffectDurationModifiers(trappingDuration, user)
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being magnetized!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
