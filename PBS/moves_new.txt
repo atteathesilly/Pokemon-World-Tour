@@ -4792,7 +4792,7 @@ Power = 135
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableHiding
+FunctionCode = TwoTurnAttackInvulnerableInFoliage
 Description = The user fades into the foliage, charging and becoming invulnerable, then strikes from stealth on the second turn.
 #-------------------------------
 [COCODROP]
