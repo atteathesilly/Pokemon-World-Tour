@@ -1096,6 +1096,10 @@ Description = During hail, boosts Speed and Grass-type damage by 50%.
 Name = Tangled Feet
 Description = Raises evasion if the Pokémon is confused.
 #-------------------------------
+[TANGLINGHAIR]
+Name = Tangling Hair
+Description = Physical moves against it lower the attacker's Speed by three steps.
+#-------------------------------
 [TENDRILTRAP]
 Name = Tendril Trap
 Description = Prevents foes whose Attack is less than its from fleeing.
