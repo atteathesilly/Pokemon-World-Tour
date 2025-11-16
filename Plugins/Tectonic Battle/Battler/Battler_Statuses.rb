@@ -342,7 +342,7 @@ immuneTypeRealName))
 
         # Show animation
         if newStatus == :POISON && newStatusCount.positive?
-            @battle.pbCommonAnimation("Toxic", self)
+            @battle.pbCommonAnimation("Poison", self)
         else
             anim_name = GameData::Status.get(newStatus).animation
             @battle.pbCommonAnimation(anim_name, self) if anim_name
@@ -672,7 +672,7 @@ immuneTypeRealName))
         getStatuses.each do |oneStatus|
             next if !statusToContinue.nil? && oneStatus != statusToContinue
             if oneStatus == :POISON && @statusCount.positive?
-                @battle.pbCommonAnimation("Toxic", self)
+                @battle.pbCommonAnimation("Poison", self)
             else
                 anim_name = GameData::Status.get(oneStatus).animation
                 @battle.pbCommonAnimation(anim_name, self) if anim_name
