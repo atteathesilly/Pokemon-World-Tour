@@ -1229,6 +1229,10 @@ Description = Boosts power of sound-based moves by 30%.
 Name = Loud Sleeper
 Description = When hit while asleep, hits back instantly with Snore.
 #-------------------------------
+[LUCKYCHARM]
+Name = Lucky Charm
+Description = Sets a Sanctuary for four turns upon entry.
+#-------------------------------
 [LUNARIOT]
 Name = Luna Riot
 Description = Summons moonglow for four turns when hit by an attack.

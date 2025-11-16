@@ -460,6 +460,20 @@ BattleHandlers::AbilityOnSwitchIn.add(:STARGUARDIAN,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:LUCKYCHARM,
+  proc { |ability, battler, battle, aiCheck|
+      if aiCheck
+          next getSanctuaryEffectScore(battler, 4)
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          duration = battler.getScreenDuration(4)
+          battle.pbAnimation(:SANCTUARY, battler, nil, 0)
+          battler.pbOwnSide.applyEffect(:Sanctuary, duration)
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
 ##########################################
 # Room setting abilities
 ##########################################
