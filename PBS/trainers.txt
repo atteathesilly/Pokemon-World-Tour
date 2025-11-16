@@ -9657,7 +9657,7 @@ Pokemon = GIGANTEON,45
     Moves = LASTRESORT,PROTECT
     AbilityIndex = 1 # Friend to All
 #-------------------------------
-[COOLTRAINER_F7,Iridia]
+[COOLTRAINER_F7,Milja]
 Pokemon = HELECTRODE,35
     Moves = SELFDESTRUCT,THUNDERBOLT,CHLOROBLAST,AROMATHERAPY
     AbilityIndex = 0 # Perennial Payload
