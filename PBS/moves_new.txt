@@ -8053,7 +8053,7 @@ Target = NearOther
 FunctionCode = AttackTwoTurnsLater
 Flags = Foretold
 Description = Two turns after this move is used, a terrible fate befalls the target.
-Animation = LIGHTOFRUIN
+Animation = DOOMDESIRE
 #-------------------------------
 [SUGARBALL]
 Name = Sugar Ball
