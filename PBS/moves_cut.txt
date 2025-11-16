@@ -808,6 +808,18 @@ FunctionCode = Invalid
 Flags = CanProtect,Pulse
 Description = Uses the power of the terrain to attack. Type and power changes depending on the terrain.
 #-------------------------------
+[VICEGRIP]
+Name = Vice Grip
+Type = NORMAL
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = Huge, impressive pincers grip and squeeze the foe.
+#-------------------------------
 [VISEGRIP]
 Name = Vise Grip
 Type = NORMAL

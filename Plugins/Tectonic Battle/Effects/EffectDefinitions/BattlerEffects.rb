@@ -1520,20 +1520,17 @@ GameData::BattleEffect.register_effect(:Battler, {
     :trapping => true,
     :swaps_with_battlers => true,
     :disable_proc => proc do |battle, battler|
-        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
         trapAbility = battler.getAbilityData(:TrappingAbility).name
         battle.pbDisplay(_INTL("{1} was freed from {2}!", battler.pbThis, trapAbility))
     end,
     :expire_proc => proc do |battle, battler|
-        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
         trapAbility = battler.getAbilityData(:TrappingAbility).name
         battle.pbDisplay(_INTL("{1} is no longer trapped by {2}!", battler.pbThis, trapAbility))
     end,
     :remain_proc => proc do |battle, battler, _value|
-        #trapAbility = battler.hasActiveAbility?(GameData::Ability.getByFlag("TrapAbility"))
         trapAbility = battler.getAbilityData(:TrappingAbility).name
         case battler.effects[:TrappingAbility]
-        when :POWERPINCH    then battle.pbAnimation("ViceGrip", battler, nil)
+        when :POWERPINCH    then battle.pbAnimation(:VICEGRIP, battler, nil)
         when :CONSTRICTOR   then battle.pbCommonAnimation("Wrap", battler)
         when :MAGNETTRAP    then battle.pbCommonAnimation("MagnetBomb", battler)
         else battle.pbCommonAnimation("Wrap", battler)
