@@ -761,16 +761,16 @@ class PokeBattle_Battler
     def showStatChangeMessage(stat, increment, lowering: false)
         stat = stat[0] if stat.is_a?(Array) && stat.length == 1
         if stat.is_a?(Array)
-            messageFormat = "{1}'s "
+            messageFormat = "{1}" << _INTL("'s ")
             statNameArgs = []
             stat.each_with_index do |individualStatID, index|
                 messageFormatNumber = index + 2
                 messageFormatNumber += 1 if increment > 1
                 if index == stat.length - 1
                     if stat.length > 2
-                        messageFormat += ", and {#{messageFormatNumber}}"
+                        messageFormat += _INTL(", and ") << "{#{messageFormatNumber}}"
                     else
-                        messageFormat += " and {#{messageFormatNumber}}"
+                        messageFormat += _INTL(" and ") << "{#{messageFormatNumber}}"
                     end
                 elsif index == 0
                     messageFormat += "{#{messageFormatNumber}}"
@@ -781,18 +781,18 @@ class PokeBattle_Battler
             end
             if lowering
                 if increment == 1
-                    messageFormat += " fell!"
+                    messageFormat += _INTL(" fell!")
                     lowerMessage = _INTL(messageFormat, pbThis, *statNameArgs)
                 else
-                    messageFormat += " fell by {2} steps!"
+                    messageFormat += (_INTL(" fell by ") << "{2}") << _INTL(" steps!")
                     lowerMessage = _INTL(messageFormat, pbThis, increment, *statNameArgs)
                 end
             else
                 if increment == 1
-                    messageFormat += " rose!"
+                    messageFormat += _INTL(" rose!")
                     lowerMessage = _INTL(messageFormat, pbThis, *statNameArgs)
                 else
-                    messageFormat += " rose by {2} steps!"
+                    messageFormat += (_INTL(" rose by ") << "{2}") << _INTL(" steps!")
                     lowerMessage = _INTL(messageFormat, pbThis, increment, *statNameArgs)
                 end
             end
