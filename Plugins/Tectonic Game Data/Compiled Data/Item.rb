@@ -306,7 +306,7 @@ module GameData
 
       def legal?(isTrainer = false)
         return false if @cut
-        return false if @super && !isTrainer
+        return false if @super && isTrainer
         return true
       end
 
