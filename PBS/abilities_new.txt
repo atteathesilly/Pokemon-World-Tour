@@ -954,11 +954,6 @@ Name = Heroic Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Inner Focus.
 Flags = Immutable
 #-------------------------------
-[HIGHFLYING]
-Name = High Flying
-Description = Immune to weather downsides. Immune to hazards.
-Flags = HazardImmunity,AllWeatherSynergy
-#-------------------------------
 [HIGHJUDGE]
 Name = High Judge
 Description = Has Judgment as its 5th move.
