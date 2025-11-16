@@ -100,10 +100,14 @@ move, false, true)
 
         if target.inTwoTurnSkyAttack?
             return true unless move.hitsFlyingTargets?
-        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableUnderground")            # Dig
+        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableUnderground") # Dig
             return true unless move.hitsDiggingTargets?
-        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableUnderwater")            # Dive
+        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableUnderwater") # Dive
             return true unless move.hitsDivingTargets?
+        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableHiding") # Lurk and Hidden Strike
+            return true unless move.hitsHidingTargets?
+        elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableInFoliage") # Camouflage
+            return true unless move.hitsCamouflagedTargets?
         elsif target.inTwoTurnAttack?("TwoTurnAttackInvulnerableRemoveProtections")	# PHANTOMFORCE/SHADOWFORCE in case we have a move that hits them
             return true
         end

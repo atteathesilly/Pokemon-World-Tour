@@ -58,17 +58,6 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user squeezes the target, trapping and damaging it for three turns.
 #-------------------------------
-[CAMOUFLAGE]
-Name = Camouflage
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 15
-Target = User
-FunctionCode = Invalid
-Flags = CanSnatch
-Description = The user's type is changed depending on its environment, such as at water's edge, in grass, or in a cave.
-#-------------------------------
 [CELEBRATE]
 Name = Celebrate
 Type = NORMAL
@@ -1108,6 +1097,31 @@ FunctionCode = Invalid
 Flags = CanProtect,CanRandomCrit,Blade,Wind
 Description = The user launches razor-like wind to slash the opposing team. Can random critical hit.
 #-------------------------------
+[BOUNCE]
+Name = Bounce
+Type = FLYING
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Kick
+EffectChance = 30
+Description = The user bounces up high, charging and becoming invulnerable, then drops on the foe on the second turn. It has a 30% chance to numb.
+#-------------------------------
+[DIVEBOMB]
+Name = Dive Bomb
+Type = FLYING
+Category = Physical
+Power = 125
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user soars up high, charging and becoming invulnerable, then dive bombs the target on the second turn.
+#-------------------------------
 [HURRICANE]
 Name = Hurricane
 Type = FLYING
@@ -1599,6 +1613,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user spins a sandstorm around the target, trapping and damaging it for three turns.
+#-------------------------------
+[UNDERMINE]
+Name = Undermine
+Type = GROUND
+Category = Physical
+Power = 125
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user burrows deep, charging and becoming invulnerable, then attacks with devastating power on the second turn.
 #-------------------------------
 #		ROCK MOVES
 #-------------------------------
@@ -2328,6 +2354,19 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanRandomCrit
 Description = The target is hammered with a large pincer. Can random critical hit.
+#-------------------------------
+[DEPTHCHARGE]
+Name = Depth Charge
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user dives deep on the first turn, charging and becoming invulnerable, then rises and strikes with explosive strength on the second.
+Animation = DIVE
 #-------------------------------
 [HYPERJET]
 Name = Hyper Jet

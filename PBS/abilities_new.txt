@@ -173,6 +173,10 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
+[BIRDOFPREY]
+Name = Bird of Prey
+Description = Deals 30% more damage to targets that are below half health or that swapped in this turn.
+#-------------------------------
 [BITEY]
 Name = Bitey
 Description = Boosts the power of biting moves by 30%.
@@ -579,10 +583,6 @@ Description = The Pokemon's Fighting-type attacks become spread and deal 35% mor
 Name = Event Horizon
 Description = Changes the weather to Star Storm, which increases its damage over time. Lingers for three turns after leaving.
 Flags = SandstormSynergy
-#-------------------------------
-[EXCAVATOR]
-Name = Excavator
-Description = Dig and Undermine deal 50% more damage.
 #-------------------------------
 [EXORCIST]
 Name = Exorcist
@@ -1074,6 +1074,10 @@ Description = Immune to Steel-type moves and raises Speed if hit by one.
 Name = Inexorable
 Description = Pokémon take damage from non-volatile status conditions even while switched out.
 #-------------------------------
+[INFAMOUS]
+Name = Infamous
+Description = On the first turn, its attacks jinx the target.
+#-------------------------------
 [INFECTED]
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
@@ -1191,6 +1195,10 @@ Description = Deals 50% more damage to targets that switched in this turn. Takes
 Name = Linebacker
 Description = Doubles the damage and recoil of recoil moves.
 #-------------------------------
+[LIVEANDLURK]
+Name = Live and Lurk
+Description = When the Pokemon charges and becomes invulnerable, it heals for 25% HP. This can overheal.
+#-------------------------------
 [LIVEFAST]
 Name = Live Fast
 Description = Boosts Speed by 50%, but the Pokémon is hurt for 1/10th HP each turn.
@@ -1215,6 +1223,10 @@ Description = Boosts power of sound-based moves by 30%.
 [LOUDSLEEPER]
 Name = Loud Sleeper
 Description = When hit while asleep, hits back instantly with Snore.
+#-------------------------------
+[LUCKYCHARM]
+Name = Lucky Charm
+Description = Sets a Sanctuary for four turns upon entry.
 #-------------------------------
 [LUNARIOT]
 Name = Luna Riot
@@ -1259,10 +1271,6 @@ Flags = MoonglowSynergy
 [MARINE]
 Name = Marine
 Description = Physical moves have a 30% chance to waterlog targets.
-#-------------------------------
-[MARINEMENACE]
-Name = Marine Menace
-Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARTIALDISCIPLINE]
 Name = Martial Discipline
@@ -1847,6 +1855,10 @@ Description = When targeted by a status move, the offending Pokémon becomes poi
 Name = Seed Sowing
 Description = Special moves have a 30% chance to leech targets.
 #-------------------------------
+[SEER]
+Name = Seer
+Description = Foretold moves deal 50% more damage.
+#-------------------------------
 [SELECTIVESCUTES]
 Name = Selective Scutes
 Description = Boosts one defending stat by two steps according to the foe's Attack and Sp. Atk.
@@ -1878,6 +1890,10 @@ Description = Punching moves change the Pokémon's secondary type and their powe
 [SHOCKSTYLE]
 Name = Shock Style
 Description = Powers up Fighting-type moves by 50%.
+#-------------------------------
+[SHOWOFF]
+Name = Show Off
+Description = When the Pokemon charges and becomes invulnerable, it lowers the Attack and Sp. Atk of all foes.
 #-------------------------------
 [SICKENING]
 Name = Sickening
@@ -1923,7 +1939,7 @@ Description = Can't be leeched, drained, or trapped.
 #-------------------------------
 [SLINKY]
 Name = Slinky
-Description = Two-turn retreat moves such as Dig deal double damage.
+Description = Two-turn semi-invulnerable moves such as Dig deal double damage.
 #-------------------------------
 [SLIPSTREAM]
 Name = Slipstream
@@ -2014,10 +2030,6 @@ Flags = EclipseSynergy
 [STEAMPOWER]
 Name = Steam Power
 Description = Takes 50% less damage from Water-type moves. Raises Speed by four steps when hit by one.
-#-------------------------------
-[STEEPFLYING]
-Name = Steep Flying
-Description = Fly and Dive Bomb deal 50% more damage.
 #-------------------------------
 [STERN]
 Name = Stern
