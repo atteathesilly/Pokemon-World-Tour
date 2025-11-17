@@ -2243,6 +2243,7 @@ Target = NearOther
 FunctionCode = RecoilHalfOfDamageDealt
 Flags = CanProtect
 Description = The user slams itself into the target with absurd force, taking 50% recoil.
+Animation = HEADSMASH
 #-------------------------------
 [ROCKALANCHE]
 Name = Rockalanche
