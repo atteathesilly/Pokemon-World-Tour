@@ -481,7 +481,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:LUCKYCHARM,
 BattleHandlers::AbilityOnSwitchIn.add(:PUZZLING,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
-      battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
+      battle.pbAnimation(:MAGICROOM, battler, nil, 0) unless aiCheck
       score = battle.pbStartRoom(:PuzzleRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
@@ -491,7 +491,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:PUZZLING,
 BattleHandlers::AbilityOnSwitchIn.add(:ODDITY,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
-      battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
+      battle.pbAnimation(:MAGICROOM, battler, nil, 0) unless aiCheck
       score = battle.pbStartRoom(:OddRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
@@ -511,7 +511,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:SUBSPACESCHISM,
 BattleHandlers::AbilityOnSwitchIn.add(:POLARIZING,
   proc { |ability, battler, battle, aiCheck|
       battle.pbShowAbilitySplash(battler, ability) unless aiCheck
-      battle.pbAnimation(:TRICKROOM, battler, nil, 0) unless aiCheck
+      battle.pbAnimation(:WONDERROOM, battler, nil, 0) unless aiCheck
       score = battle.pbStartRoom(:PolarizedRoom, battler, ability, aiCheck)
       battle.pbHideAbilitySplash(battler) unless aiCheck
       next score
