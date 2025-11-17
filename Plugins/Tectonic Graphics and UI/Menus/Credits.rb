@@ -119,7 +119,8 @@ Carmine Trainer sprites
 kyledove
 
 Various free to use sprites
-deoxysacid, magneclair
+deoxysacid
+magneclair
 
 Mega Malamar Sprites
 sopita_yorita
@@ -129,6 +130,7 @@ Raffs07
 
 Various Regionals
 Raffs07
+Riptidecord
 
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
