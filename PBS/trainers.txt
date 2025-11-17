@@ -442,15 +442,15 @@ Pokemon = ROSELIA,22
 #-------------------------------
 [GAMBLER,Gregor]
 Pokemon = MEOWTH,21
-    Moves = PAYDAY,SCRATCH,STAMPDOWN
+    Moves = PAYDAY,SCRATCH,STAMPDOWN,FROLIC
     AbilityIndex = 1 # All That Glitters
     Item = NORMALGEM,GROUNDGEM
 Pokemon = AMEOWTH,22
-    Moves = PURSUIT,CRYSTALGLEAM,PLANTDOUBT,PAYDAY
+    Moves = PAYDAY,PURSUIT,CRYSTALGLEAM,PLANTDOUBT
     AbilityIndex = 0 # Fur Coat
     Item = DARKGEM
 Pokemon = GMEOWTH,22
-    Moves = SHARPEN,METALCLAW,PAYDAY,FAKEOUT
+    Moves = PAYDAY,METALCLAW,DOUBLEKICK,FAKEOUT
     AbilityIndex = 1 # Steely Spirit
     Item = STEELGEM
 #-------------------------------
@@ -1818,7 +1818,7 @@ Pokemon = PRIMEAPE,35
     AbilityIndex = 1 # Dominating
 Pokemon = GDARMANITAN,35
     Moves = GLACIALRAM,FIREPUNCH,FACADE
-    AbilityIndex = 0 # Repetition
+    AbilityIndex = 0 # Gorilla Tactics
 Pokemon = AGOLEM,35
     Moves = SELFDESTRUCT,LIVEWIRE,ROCKTOMB,DIZZYPUNCH
     AbilityIndex = 0 # Galvanize
