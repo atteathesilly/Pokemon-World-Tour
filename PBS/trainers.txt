@@ -7566,7 +7566,7 @@ Pokemon = MJELLICENT,59
     Moves = ELECTROSLASH,SIXFEETUNDER,LIQUIDATION,LEECHLIFE
     AbilityIndex = 1 # No Hope
 Pokemon = GREEDENT,58
-    Moves = BODYSLAM,STUFFCHEEKS,RECYCLE,BODYPRESS
+    Moves = STUFFCHEEKS,RECYCLE,BODYPRESS,WARDPRESS
     AbilityIndex = 0 # Cheek Pouch
     Item = CADOBERRY
 #-------------------------------
