@@ -3,22 +3,22 @@
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 #-------------------------------
 [YOUNGSTER,Joey]
 Pokemon = LILLIGANT,50

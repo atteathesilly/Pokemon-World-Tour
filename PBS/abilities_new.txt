@@ -56,6 +56,10 @@ Name = Anarchic
 Description = Doubles Speed in eclipse.
 Flags = EclipseSynergy
 #-------------------------------
+[APATHETIC]
+Name = Apathetic
+Description = The Pokémon moves after all other Pokémon do.
+#-------------------------------
 [APPREHENSIVE]
 Name = Apprehensive
 Description = Takes 35% less damage in eclipse, except in total eclipse.
