@@ -297,12 +297,12 @@ BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
         next if target.fainted?
-        next -30 if aiCheck
         next if user.effectActive?(:Trapping)
         next if user.effectActive?(:Binding)
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        next -10*trappingDuration if aiCheck
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being constricted!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
@@ -316,12 +316,12 @@ BattleHandlers::TargetAbilityOnHit.add(:MAGNETTRAP,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
         next if target.fainted?
-        next -30 if aiCheck
         next if user.effectActive?(:Trapping)
         next if user.effectActive?(:Binding)
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        next -10*trappingDuration if aiCheck
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being magnetized!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
