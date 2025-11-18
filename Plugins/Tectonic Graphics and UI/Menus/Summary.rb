@@ -1364,8 +1364,6 @@ class PokemonSummary_Scene
             elsif Input.trigger?(Input::UP)
                 if selmove >= 2 && selmove < Pokemon::MAX_MOVES
                     selmove -= 2
-                elsif selmove == 1 && move_to_learn
-                    selmove = Pokemon::MAX_MOVES # New move
                 end
             elsif Input.trigger?(Input::DOWN)
                 if selmove < 2
