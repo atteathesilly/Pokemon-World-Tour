@@ -112,7 +112,7 @@ Raffs07
 manycrows
 Mr. Gela<s>theo
 
-Kukui, Mina, Sina and Dexio trainer sprites
+Kukui, Hapu, Sina and Dexio trainer sprites
 Beliot419
 
 Carmine Trainer sprites
