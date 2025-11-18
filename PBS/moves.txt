@@ -1713,7 +1713,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect
-Description = The user soars, charging and becoming invulnerable, then strikes on the second turn.
+Description = The user soars, charging and becoming hidden, then strikes on the second turn.
 #-------------------------------
 [GUST]
 Name = Gust
@@ -2079,7 +2079,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderground
 Flags = CanProtect
-Description = The user burrows, charging and becoming invulnerable, then attacks on the second turn.
+Description = The user burrows, charging and becoming hidden, then attacks on the second turn.
 #-------------------------------
 [DRILLRUN]
 Name = Drill Run
@@ -2938,7 +2938,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
-Description = The user disappears, charging and becoming invulnerable, then strikes on the second turn. It hits even if the foe protects itself.
+Description = The user disappears, charging and becoming hidden, then strikes on the second turn. It hits even if the foe protects itself.
 #-------------------------------
 [SHADOWPUNCH]
 Name = Shadow Punch
@@ -3797,7 +3797,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderwater
 Flags = CanProtect
-Description = Diving on the first turn, charging and becoming invulnerable, the user hits from below water on the second turn.
+Description = Diving on the first turn, charging and becoming hidden, the user hits from below water on the second turn.
 #-------------------------------
 [FISHIOUSREND]
 Name = Fishious Rend

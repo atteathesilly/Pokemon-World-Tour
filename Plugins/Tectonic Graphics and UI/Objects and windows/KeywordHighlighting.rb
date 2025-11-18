@@ -142,6 +142,7 @@ def battleKeywordsImportant
         "binding",
         "binds",
         "bind",
+        "hidden",
     ]
 end
 

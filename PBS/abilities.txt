@@ -349,7 +349,7 @@ Flags = Immutable
 #-------------------------------
 [NOGUARD]
 Name = No Guard
-Description = Attacks by or against the Pokémon can't miss.
+Description = Attacks by or against the Pokémon can't miss and hit hidden Pokémon.
 #-------------------------------
 [NORMALIZE]
 Name = Normalize
