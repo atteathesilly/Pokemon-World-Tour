@@ -135,7 +135,7 @@ class PokeBattle_Move_TwoTurnAttackChargeSleep < PokeBattle_TwoTurnMove
         @battle.pbDisplay(_INTL("{1} takes a curative nap!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         user.applySleepSelf
     end
     
@@ -151,14 +151,14 @@ class PokeBattle_Move_TwoTurnAttackChargeSleep < PokeBattle_TwoTurnMove
     end
 end
 #===============================================================================
-# Boosts Attack on 1st Turn and Attacks on 2nd
+# Boosts Attack on 1st Turn and Attacks on 2nd (Quasar Crush)
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackChargeRaiseUserAtk2 < PokeBattle_TwoTurnMove
     def pbChargingTurnMessage(user, _targets)
         @battle.pbDisplay(_INTL("{1} is overflowing with power!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         user.tryRaiseStat(:ATTACK, user, move: self, increment: 2)
     end
 
@@ -177,7 +177,7 @@ class PokeBattle_Move_TwoTurnAttackChargeRaiseUserSpAtk2 < PokeBattle_TwoTurnMov
         @battle.pbDisplay(_INTL("{1} is overflowing with space power!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         user.tryRaiseStat(:SPECIAL_ATTACK, user, move: self, increment: 2)
     end
 
@@ -197,7 +197,7 @@ class PokeBattle_Move_TwoTurnAttackChargeRaiseUserDef4 < PokeBattle_TwoTurnMove
         @battle.pbDisplay(_INTL("{1} tucked in its head!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         user.tryRaiseStat(:DEFENSE, user, increment: 4, move: self)
     end
 
@@ -217,7 +217,7 @@ class PokeBattle_Move_TwoTurnAttackChargeRaiseUserspDef1 < PokeBattle_TwoTurnMov
         @battle.pbDisplay(_INTL("{1}'s wings start glowing!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         user.tryRaiseStat(:SPECIAL_DEFENSE, user, increment: 4, move: self)
     end
 
@@ -229,14 +229,27 @@ class PokeBattle_Move_TwoTurnAttackChargeRaiseUserspDef1 < PokeBattle_TwoTurnMov
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, attacks second turn. (Fly, Divebomb)
+# Two turn attack. Skips first turn, attacks second turn.
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerable < PokeBattle_TwoTurnMove  
+    def pbChargingTurnGeneralEffect(user)
+        user.eachActiveAbility do |ability|
+            BattleHandlers.triggerUserAbilityOnSemiInvulnerable(ability, user, self, @battle, false)
+        end
+    end
+
+    def getEffectScore(user, _target)
+        score = super
+        user.eachActiveAbility do |ability|
+            score += BattleHandlers.triggerUserAbilityOnSemiInvulnerable(ability, user, self, @battle, true)
+        end
+        return score
+    end
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, attacks second turn. (Fly, Divebomb)
+# Two turn attack. Skips first turn, attacks second turn. (Fly)
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerableInSky < PokeBattle_Move_TwoTurnAttackInvulnerable
@@ -280,7 +293,7 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableJinxFrostbite < PokeBattle_Move_T
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, attacks second turn. (Dig, Undermine)
+# Two turn attack. Skips first turn, attacks second turn. (Dig)
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerableUnderground < PokeBattle_Move_TwoTurnAttackInvulnerable
@@ -307,7 +320,7 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableUnderground < PokeBattle_Move_Two
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, attacks second turn. (Dive, Depth Charge)
+# Two turn attack. Skips first turn, attacks second turn. (Dive)
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
 class PokeBattle_Move_TwoTurnAttackInvulnerableUnderwater < PokeBattle_Move_TwoTurnAttackInvulnerable
@@ -327,24 +340,22 @@ class PokeBattle_Move_TwoTurnAttackInvulnerableUnderwater < PokeBattle_Move_TwoT
 end
 
 #===============================================================================
-# Two turn attack. Skips first turn, attacks second turn. (Bounce)
-# May numb the target.
+# Two turn attack. Skips first turn, attacks second turn. (Lurk)
 # (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
 #===============================================================================
-class PokeBattle_Move_TwoTurnAttackInvulnerableInSkyNumbTarget < PokeBattle_Move_TwoTurnAttackInvulnerable
-    def unusableInGravity?; return true; end
-
+class PokeBattle_Move_TwoTurnAttackInvulnerableHiding < PokeBattle_Move_TwoTurnAttackInvulnerable
     def pbChargingTurnMessage(user, _targets)
-        @battle.pbDisplay(_INTL("{1} sprang up!", user.pbThis))
+        @battle.pbDisplay(_INTL("{1} hid in the darkness!", user.pbThis))
     end
+end
 
-    def pbAdditionalEffect(user, target)
-        return if target.damageState.substitute
-        target.applyNumb(user) if target.canNumb?(user, false, self)
-    end
-
-    def getTargetAffectingEffectScore(user, target)
-        return getNumbEffectScore(user, target)
+#===============================================================================
+# Two turn attack. Skips first turn, attacks second turn. (Camouflage)
+# (Handled in Battler's pbSuccessCheckPerHit): Is semi-invulnerable during use.
+#===============================================================================
+class PokeBattle_Move_TwoTurnAttackInvulnerableInFoliage < PokeBattle_Move_TwoTurnAttackInvulnerable
+    def pbChargingTurnMessage(user, _targets)
+        @battle.pbDisplay(_INTL("{1} melded into the foliage!", user.pbThis))
     end
 end
 
@@ -371,7 +382,7 @@ class PokeBattle_Move_TwoTurnAttackChargeStartSunshine5 < PokeBattle_TwoTurnMove
         @battle.pbDisplay(_INTL("{1} petitions the sun!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         @battle.pbStartWeather(user, :Sunshine, 5, false)
     end
 
@@ -391,7 +402,7 @@ class PokeBattle_Move_TwoTurnAttackChargeStartRainstorm5 < PokeBattle_TwoTurnMov
         @battle.pbDisplay(_INTL("{1} begins the flood!", user.pbThis))
     end
 
-    def pbChargingTurnEffect(user, _target)
+    def pbChargingTurnGeneralEffect(user)
         @battle.pbStartWeather(user, :Rainstorm, 5, false)
     end
 

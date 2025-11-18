@@ -301,6 +301,10 @@ Flags = HailSynergy
 Name = Evo-Armor
 Description = Boosts one defending stat by two steps according to the foe's attacking stats.
 #-------------------------------
+[EXCAVATOR]
+Name = Excavator
+Description = Dig and Undermine deal 50% more damage.
+#-------------------------------
 [EXOADAPTION]
 Name = Exo-Adaption
 Description = User heals by 25% after taking a special attack.
@@ -601,6 +605,10 @@ Description = Prevents Steel-type Pokémon from escaping.
 [MALINGERING]
 Name = Malingering
 Description = Pokémon take damage from status conditions even while switched out.
+#-------------------------------
+[MARINEMENACE]
+Name = Marine Menace
+Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARVELSCALE]
 Name = Marvel Scale
@@ -1038,6 +1046,10 @@ Name = Steely Shell
 Description = Steel-type attacks deal 50% more damage, and the Pokémon is protected from critical hits.
 Flags = CritImmunity
 #-------------------------------
+[STEEPFLYING]
+Name = Steep Flying
+Description = Fly and Dive Bomb deal 50% more damage.
+#-------------------------------
 [STENCH]
 Name = Stench
 Description = Attacks have a 50% chance to cause the target to flinch.
@@ -1103,6 +1115,10 @@ Description = During hail, boosts Speed and Grass-type damage by 50%.
 [TANGLEDFEET]
 Name = Tangled Feet
 Description = Raises evasion if the Pokémon is confused.
+#-------------------------------
+[TANGLINGHAIR]
+Name = Tangling Hair
+Description = Physical moves against it lower the attacker's Speed by three steps.
 #-------------------------------
 [TENDRILTRAP]
 Name = Tendril Trap

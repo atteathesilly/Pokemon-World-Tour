@@ -533,11 +533,12 @@ class PokeBattle_Battler
         return inTwoTurnAttack?("TwoTurnAttackInvulnerableInSky",
         "TwoTurnAttackInvulnerableUnderground",
         "TwoTurnAttackInvulnerableUnderwater",
-        "TwoTurnAttackInvulnerableInSkyNumbTarget",
+        "TwoTurnAttackInvulnerableHiding",
+        "TwoTurnAttackInvulnerableInFoliage",
         "TwoTurnAttackInvulnerableRemoveProtections",
         "TwoTurnAttackInvulnerableInSkyRecoilQuarterOfDamageDealt",
         "TwoTurnAttackInvulnerableScalesFaster",
-        "TwoTurnAttackInvulnerableJinxFrostbite")
+        "TwoTurnAttackInvulnerableJinxFrostbite",)
     end
 
     def pbEncoredMoveIndex
