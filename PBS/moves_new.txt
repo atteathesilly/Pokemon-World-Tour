@@ -421,7 +421,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TypeDependsOnUserGemPlateVeil
 Flags = CanProtect
-Description = The user expresses a hidden potential. Changes type to match the user's Gem, Plate, or Crystal Veil.
+Description = The user expresses a mystical potential. Changes type to match the user's Gem, Plate, or Crystal Veil.
 Animation = HIDDENPOWER
 #-------------------------------
 [PULVERIZE]
@@ -4912,7 +4912,7 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesSpecialDamage
 Flags = CanProtect,Uninvocable,Blade
-Description = The user hides its blade. If hit by a foe's special move, it unsheathes it quickly, slashing all near foes.
+Description = The user sheathes its blade. If hit by a foe's special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
 [MISTLETOE]
