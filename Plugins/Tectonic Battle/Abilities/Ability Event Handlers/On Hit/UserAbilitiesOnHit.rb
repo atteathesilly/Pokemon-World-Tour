@@ -284,7 +284,10 @@ BattleHandlers::UserAbilityOnHit.add(:POWERPINCH,
 		next if target.effectActive?(:Binding)
     trappingDuration = 3
     trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
-    next 10*trappingDuration if aiCheck
+    score = 30
+    score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+    score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+    next score if aiCheck
 		battle.pbShowAbilitySplash(user, ability)
     battle.pbDisplay(_INTL("{1} is caught in the pincers!", target.pbThis))
 		target.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, user))
@@ -303,7 +306,10 @@ BattleHandlers::UserAbilityOnHit.add(:LAUOHOLASSO,
     next if target.effectActive?(:Binding)
     trappingDuration = 3
     trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
-    next 10*trappingDuration if aiCheck
+    score = 30
+    score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+    score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+    next score if aiCheck
     battle.pbShowAbilitySplash(user,ability)
     battle.pbDisplay(_INTL("{1} is caught in a lasso!", target.pbThis))
     target.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration,user))
