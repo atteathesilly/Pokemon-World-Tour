@@ -645,7 +645,7 @@ Pokemon = VIBRAVA,25
 [BEAUTY2,Enisa]
 Pokemon = MUNCHLAX,26
     Moves = REST,SNORE,TAKEDOWN,BITE
-    AbilityIndex = 0 # Gluttony
+    AbilityIndex = 0 # Snorer
     Item = CUSTAPBERRY
 Pokemon = HAUNTER,25
     Moves = SPECTRALTONGUE,CLEARSMOG,ICYWIND,HEX

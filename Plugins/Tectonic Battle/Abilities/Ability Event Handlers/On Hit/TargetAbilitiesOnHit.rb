@@ -409,6 +409,15 @@ BattleHandlers::TargetAbilityOnHit.add(:LOUDSLEEPER,
     }
 )
 
+BattleHandlers::TargetAbilityOnHit.add(:SNORER,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+          next if target.fainted?
+          next unless target.asleep?
+          next -15 * aiNumHits if aiCheck
+          battle.forceUseMove(target, :SNORE, user.index, ability: ability, moveUsageEffect: :Snorer)
+    }
+)
+
 #########################################
 # Numb inducing abilities
 #########################################

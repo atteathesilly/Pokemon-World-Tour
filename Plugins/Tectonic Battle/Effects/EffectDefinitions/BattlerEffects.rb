@@ -335,6 +335,12 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Snorer,
+    :real_name => "Snorer",
+    :copied_move_marker => true,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :DefenseCurl,
     :real_name => "Curled Up",
 })

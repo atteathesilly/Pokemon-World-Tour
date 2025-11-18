@@ -1961,6 +1961,10 @@ Description = Falls asleep upon entry, but raises all of its stats by two steps.
 Name = Snoozefest
 Description = Whenever the Pokémon falls asleep, each other battler becomes drowsy.
 #-------------------------------
+[SNORER]
+Name = Snorer
+Description = When hit while asleep, hits back instantly with Snore at half power.
+#-------------------------------
 [SNOWSHROUD]
 Name = Snow Shroud
 Description = The Pokémon takes 30% less move damage in hail.
