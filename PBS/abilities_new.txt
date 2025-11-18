@@ -1197,7 +1197,7 @@ Description = Doubles the damage and recoil of recoil moves.
 #-------------------------------
 [LIVEANDLURK]
 Name = Live and Lurk
-Description = When the Pokemon charges and becomes invulnerable, it heals for 25% HP. This can overheal.
+Description = When the Pokemon charges and becomes hidden, it heals for 25% HP. This can overheal.
 #-------------------------------
 [LIVEFAST]
 Name = Live Fast
@@ -1893,7 +1893,7 @@ Description = Powers up Fighting-type moves by 50%.
 #-------------------------------
 [SHOWOFF]
 Name = Show Off
-Description = When the Pokemon charges and becomes invulnerable, it lowers the Attack and Sp. Atk of all foes.
+Description = When the Pokémon charges and becomes hidden, it lowers the Attack and Sp. Atk of all foes.
 #-------------------------------
 [SICKENING]
 Name = Sickening
@@ -1939,7 +1939,7 @@ Description = Can't be leeched, drained, or trapped.
 #-------------------------------
 [SLINKY]
 Name = Slinky
-Description = Two-turn semi-invulnerable moves such as Dig deal double damage.
+Description = The Pokémon deals double damage with moves that cause the user to become hidden.
 #-------------------------------
 [SLIPSTREAM]
 Name = Slipstream
