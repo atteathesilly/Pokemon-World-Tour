@@ -275,6 +275,19 @@ BattleHandlers::MoveImmunityTargetAbility.add(:CYNIC,
   }
 )
 
+BattleHandlers::MoveImmunityTargetAbility.add(:ELEMENTALDRAGON,
+  proc { |ability, user, target, _move, type, battle, showMessages, aiCheck|
+      next false if user.index == target.index
+      next false unless %i[FIRE WATER FLYING GROUND].include?(type)
+      if showMessages
+          battle.pbShowAbilitySplash(target, ability)
+          battle.pbDisplay(_INTL("It doesn't affect {1}...", target.pbThis(true)))
+          battle.pbHideAbilitySplash(target)
+      end
+      next true
+  }
+)
+
 BattleHandlers::MoveImmunityTargetAbility.add(:RESOLUTE,
   proc { |ability, user, target, _move, type, battle, showMessages, aiCheck|
       next false if user.index == target.index

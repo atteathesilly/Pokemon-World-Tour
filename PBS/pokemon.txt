@@ -1677,6 +1677,47 @@ Kind = Viking
 Pokedex = After many battles, it evolved dangerous claws that come together to form daggers when extended.
 Generation = 8
 #-------------------------------
+[SMEOWTH]
+Name = S. Meowth
+Type1 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 40,80,45,80,40,85
+# Total = 370
+BaseEXP = 58
+Rareness = 195
+Happiness = 50
+Abilities = CASHOUT,TERRITORIAL
+Moves = 1,CLASH,1,LEER,4,PAYDAY,8,FAKEOUT,12,ASSIST,16,SHRED,20,METALCLAW,24,PURSUIT,28,WORKUP,32,CRUELTY,36,REND,40,IRONHEAD,44,CALAMITOUSSLASH,48,DRAGONDANCE,52,CHACHING,56,DIVEBOMB,60,OUTRAGE
+LineMoves = ADAMANTINEPRESS,AERIALACE,AIMTRUE,BODYSLAM,BOREALWIND,BRICKBREAK,BULLETCHARGE,BURNINGJEALOUSY,CALAMITOUSSLASH,COLDFRONT,CRUNCH,CURLUP,DIAMETRICBREATH,DISCOURAGE,DISTURB,DIVEBOMB,DRACOMETEOR,DRAFT,DRAGONBREATH,DRAGONCLAW,DRAGONDANCE,DRAGONPULSE,ECLIPSE,EMBER,ENDURE,FACADE,FIREBLAST,FIREFANG,FIREPULSE,FLAMECHARGE,FLAMETHROWER,FOCUSENERGY,GALLINGSPIT,GUTTURALROAR,HARDEN,HEADBUTT,HELIOPAUSE,HUNTDOWN,HYDROPUMP,HYPERVOICE,INFERNOIMPACT,IRONARROW,IRONDEFENSE,JAVELIN,KINDLE,OCCULTATION,OUTRAGE,REND,REST,ROAR,ROCKTOMB,ROUND,RUMBLE,SCARYFACE,SCOUR,SEERSTRIKE,SHADOWCLAW,SHOTPUT,SLEEPTALK,SMASH,SNIPESHOT,SNORE,STRAFE,SUBSTITUTE,THRASH,TWISTER,WAILINGBLOW,WATERGUN,WHELM,WYRMWOUNDING,ZENHEADBUTT
+Tribes = FORTUNE,TYRANNICAL,NOBLE
+StepsToHatch = 5355
+Height = 0.4
+Weight = 4.2
+Kind = Dragon Cat
+Pokedex = An odd feline that while being furless, has also grown some draconic attributes.
+Generation = 1
+Flags = Hidden
+WildItemUncommon = PEARL
+Evolutions = SNIBELONG,Level,36
+#-------------------------------
+[SNIBELONG]
+Name = S. Nibelong
+Type1 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 95,90,102,60,53,115
+# Total = 515
+BaseEXP = 154
+Rareness = 70
+Happiness = 50
+Abilities = ELEMENTALDRAGON,TERRITORIAL
+StepsToHatch = 5355
+Height = 33.0
+Weight = 108.3
+Kind = Long Dragon
+Pokedex = This dragon is a master of the elements, channeling them through its treasure. Stealing it is rumored to turn you into one of its treasures.
+Flags = Hidden
+WildItemUncommon = PEARL
+#-------------------------------
 [PSYDUCK]
 Name = Psyduck
 Type1 = WATER

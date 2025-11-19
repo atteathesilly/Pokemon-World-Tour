@@ -359,7 +359,7 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [052]
-# Kin Town Poke Center
+# Kin Town Center
 Outdoor = false
 ShowArea = false
 Bicycle = true

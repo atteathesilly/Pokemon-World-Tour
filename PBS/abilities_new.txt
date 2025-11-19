@@ -528,6 +528,10 @@ Description = Repeats another Pokémon's sound and pulse moves immediately at 50
 Name = Efflorescent
 Description = The Pokémon and its allies are protected from flinching, Intimidate, Fascinate, and Frustrate.
 #-------------------------------
+[ELEMENTALDRAGON]
+Name = Elemental Dragon
+Description = Immune to Fire-type, Water-type, Flying-type and Ground-type attacks.
+#-------------------------------
 [EMERGENCYPOWER]
 Name = Emergency Power
 Description = Uses Lightning Dance if an attack lowers its HP to half or below.

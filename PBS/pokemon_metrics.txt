@@ -5808,6 +5808,12 @@ FrontSprite = -8,18
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SMEOWTH]
+BackSprite = 0,25
+FrontSprite = 1,20
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [SMOOCHUM]
 BackSprite = 0,30
 FrontSprite = 1,24
@@ -5825,6 +5831,12 @@ BackSprite = 0,15
 FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[SNIBELONG]
+BackSprite = 0,7
+FrontSprite = -2,9
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [SNIVY]
 BackSprite = 0,29
