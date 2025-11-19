@@ -51,7 +51,7 @@ class PokeBattle_Battle
     #       command for the next round.
     def pbCanSwitch?(idxBattler, idxParty = -1, partyScene = nil)
         if @battlers[idxBattler].boss?
-            partyScene.pbDisplay(_INTL("Avatars can't be switched out!")) if partyScene
+            partyScene.pbDisplay(_INTL("Bosses can't be switched out!")) if partyScene
             return false
         end
         # Check whether party Pokémon can switch in
