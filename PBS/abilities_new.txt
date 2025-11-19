@@ -9,6 +9,10 @@ Name = Accumulation
 Description = The Pokémon gains twice as many stats from leveling up.
 Flags = Immutable
 #-------------------------------
+[GOODDREAMS]
+Name = Good Dreams
+Description = Increases users HP by 1/12 at the end of a round when a foe is sleeping.
+#-------------------------------
 [ACIDRAIN]
 Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.

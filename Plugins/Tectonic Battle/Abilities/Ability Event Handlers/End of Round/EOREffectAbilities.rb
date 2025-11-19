@@ -13,6 +13,22 @@ BattleHandlers::EOREffectAbility.add(:BADDREAMS,
   }
 )
 
+#===============================================================================
+# Custom Ability #23 - Good Dreams: Increases users HP by 1/12 at the end of a round when a foe is sleeping.
+#===============================================================================
+
+BattleHandlers::EOREffectAbility.add(:GOODDREAMS,
+  proc { |ability, battler, battle|
+      battle.eachOtherSideBattler(battler.index) do |b|
+          next if !b.near?(battler) || !b.asleep?
+          battle.pbShowAbilitySplash(battler, ability)
+          battle.pbDisplay(_INTL("{1} is giving away his dreams!", b.pbThis))
+          battler.applyFractionalHealing(EOT_ABILITY_HEALING_FRACTION, ability: ability)
+          battle.pbHideAbilitySplash(battler)
+      end
+  }
+)
+
 BattleHandlers::EOREffectAbility.add(:MOODY,
   proc { |ability, battler, battle|
       randomUp = []
