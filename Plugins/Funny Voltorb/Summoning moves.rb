@@ -1,81 +1,64 @@
-# Summon Krabby
-class PokeBattle_Move_CallMankey < PokeBattle_Move
+#===============================================================================
+# Summons a boss Pokémon in an empty side slot.
+#===============================================================================
+class PokeBattle_Move_SummonHelper < PokeBattle_Move
     include EmpoweredMove
 
-    def pbEffectGeneral(user)
-        summonAvatar(user, :MANKEY, _INTL("{1} joins with an ally!", user.pbThis))
+    def pbMoveFailed?(user, _targets, show_message)
+        if user.battle.pbSideSize(user.index) >= 3
+            @battle.pbDisplay(_INTL("But it failed, since {1}'s side is full!", user.pbThis(true))) if show_message
+            return true
+        end
+        return false
     end
-end
-#===============================================================================
-# Summon Solosis
-#===============================================================================
-class PokeBattle_Move_CallSolosis < PokeBattle_Move
-    include EmpoweredMove
-
-    def pbEffectGeneral(user)
-        summonAvatar(user, :SOLOSIS, _INTL("{1} joins with an ally!", user.pbThis))
-    end
-end
-#===============================================================================
-# Summon Rolycoly
-#===============================================================================
-class PokeBattle_Move_CallRolycoly < PokeBattle_Move
-    include EmpoweredMove
-
-    def pbEffectGeneral(user)
-        summonAvatar(user, :ROLYCOLY, _INTL("{1} joins with an ally!", user.pbThis))
-    end
-end
-#===============================================================================
-# The user chooses between calling Rolycoly, Solosis and Krabby
-#===============================================================================
-class PokeBattle_Move_SummonStage1Helpers < PokeBattle_Move
-    def callsAnotherMove?; return true; end
 
     def initialize(battle, move)
         super
-        @validMoves = %i[
-            CALLMANKEY
-            CALLSOLOSIS
-            CALLROLYCOLY
+        @allySummoned = nil
+    end
+
+    def pbEffectGeneral(user)
+        summonAvatar(user, @allySummoned, _INTL("An allied {1} joins the field!", @allySummoned.to_s.capitalize)) unless @allySummoned.nil?
+    end
+
+    def resetMoveUsageState
+        @allySummoned = nil
+    end
+end
+
+#===============================================================================
+# Summons an ally between Mankey, Solosis and Rolycoly (Call Helper)
+#===============================================================================
+class PokeBattle_Move_SummonStage1Helpers < PokeBattle_Move_SummonHelper
+    def initialize(battle, move)
+        super
+        @validAllies = %i[
+            MANKEY
+            SOLOSIS
+            ROLYCOLY
         ]
     end
 
     def resolutionChoice(user)
-        validMoveNames = []
-        @validMoves.each do |move|
-            validMoveNames.push(getMoveName(move))
-        end
-
-        if @battle.autoTesting
-            @chosenMove = @validMoves.sample
+        if pbMoveFailed?(user, nil, false)
+            @allySummoned = nil
+        elsif @battle.autoTesting
+            @allySummoned = @validAllies.sample
         elsif !user.pbOwnedByPlayer? # Trainer AI
-            @chosenMove = @validMoves[0]
+            @allySummoned = @validAllies[0]
         else
-            chosenIndex = @battle.scene.pbShowCommands(_INTL("Which move should {1} use?", user.pbThis(true)),validMoveNames,0)
-            @chosenMove = @validMoves[chosenIndex]
+            chosenIndex = @battle.scene.pbShowCommands(_INTL("Which ally should {1} call?", user.pbThis(true)),@validAllies.map { |sym| sym.to_s.capitalize }, 0)
+            @allySummoned = @validAllies[chosenIndex]
         end
-    end
-
-    def pbEffectAgainstTarget(user, target)
-        user.pbUseMoveSimple(@chosenMove, target.index) if @chosenMove
-    end
-
-    def resetMoveUsageState
-        @chosenMove = nil
-    end
-
-    def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
-        return # No animation
     end
 end
 #===============================================================================
-# Summon Ludicolo
+# Summons Ludicolo
 #===============================================================================
-class PokeBattle_Move_CallLudicolo < PokeBattle_Move
-    include EmpoweredMove
-
-    def pbEffectGeneral(user)
-        summonAvatar(user, :LUDICOLO, _INTL("{1} joins with an ally to dance!", user.pbThis))
+class PokeBattle_Move_CallLudicolo < PokeBattle_Move_SummonHelper
+    def initialize
+        super
+        @allySummoned = :LUDICOLO
     end
+
 end

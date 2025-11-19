@@ -71,10 +71,11 @@ Type = NORMAL
 Category = Status
 Accuracy = 100
 TotalPP = 1
-Target = NearOther
+Target = User
 FunctionCode = SummonStage1Helpers
 Flags = CanSnatch
-Description = The user chooses between summoning Krabby, Solosis, and Rolycoly
+Description = The user calls an ally between Mankey, Solosis and Rolycoly. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
 #-------------------------------
 [CENTER]
 Name = Center
@@ -758,17 +759,6 @@ Priority = 3
 FunctionCode = UserAndAlliesTakeHalfDamageThisTurn
 Flags = CanSnatch
 Description = The user and its allies take 50% less attack damage this turn. Always fails if used in succession.
-#-------------------------------
-[CALLMANKEY]
-Name = Call Mankey
-Type = FIGHTING
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = User
-FunctionCode = CallMankey
-Description = The user calls an allied Mankey. Fails if there are 3 Pokémon on this side already.
-Animation = UPROAR
 #-------------------------------
 [CAPOEIRA]
 Name = Capoeira
@@ -1914,17 +1904,6 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user bludgeons the target's arms and legs with a large rock. This has a 50% chance to fracture it.
 Animation = ROCKTOMB
-#-------------------------------
-[CALLROLYCOLY]
-Name = Call Rolycoly
-Type = ROCK
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = User
-FunctionCode = CallRolycoly
-Description = The user calls an allied Rolycoly. Fails if there are 3 Pokémon on this side already.
-Animation = UPROAR
 #-------------------------------
 [CRANIALGUARD]
 Name = Cranial Guard
@@ -5525,17 +5504,6 @@ Flags = CanProtect
 EffectChance = 30
 Description = The user slows the target's mind with a psychically infused blow. This has a 30% chance to frostbite.
 Animation = ICEPUNCH
-#-------------------------------
-[CALLSOLOSIS]
-Name = Call Solosis
-Type = PSYCHIC
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = User
-FunctionCode = CallSolosis
-Description = The user calls an allied Solosis. Fails if there are 3 Pokémon on this side already.
-Animation = UPROAR
 #-------------------------------
 [CENSOR]
 Name = Censor
