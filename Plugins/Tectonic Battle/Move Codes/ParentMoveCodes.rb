@@ -1344,26 +1344,26 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
         if aiCheck
             return super
         else
-            return false unless @battle.futureSight
+            return false unless @battle.foretoldMove
             return super
         end
     end
 
     def pbAccuracyCheck(user, target)
-        return true unless @battle.futureSight
+        return true unless @battle.foretoldMove
         return super
     end
 
     def pbDisplayUseMessage(user, targets)
-        super unless @battle.futureSight
+        super unless @battle.foretoldMove
     end
 
     def displayWeatherDebuffMessages(user, type)
-        super unless @battle.futureSight
+        super unless @battle.foretoldMove
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if !@battle.futureSight && target.position.effectActive?(:FutureSightCounter)
+        if !@battle.foretoldMove && target.position.effectActive?(:ForetoldMoveCounter)
             if show_message
                 @battle.pbDisplay(_INTL("But it failed, since an attack is already foreseen against {1}!", target.pbThis(true)))
             end
@@ -1373,15 +1373,15 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     end
 
     def pbEffectAgainstTarget(user, target)
-        return if @battle.futureSight # Attack is hitting
+        return if @battle.foretoldMove # Attack is hitting
         count = @turnCount
         count -= 2 if user.hasActiveAbility?(:BADOMEN)
         count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
         count = 1 if count < 1
-        target.position.applyEffect(:FutureSightCounter, count)
-        target.position.applyEffect(:FutureSightMove, @id)
-        target.position.pointAt(:FutureSightUserIndex, user)
-        target.position.applyEffect(:FutureSightUserPartyIndex, user.pokemonIndex)
+        target.position.applyEffect(:ForetoldMoveCounter, count)
+        target.position.applyEffect(:ForetoldMove, @id)
+        target.position.pointAt(:ForetoldMoveUserIndex, user)
+        target.position.applyEffect(:ForetoldMoveUserPartyIndex, user.pokemonIndex)
         if @id == :DOOMDESIRE
             @battle.pbDisplay(_INTL("{1} chose Doom Desire as its destiny!", user.pbThis))
         elsif @id == :ARTILLERIZE
@@ -1392,7 +1392,7 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     end
 
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
-        hitNum = 1 unless @battle.futureSight # Charging anim
+        hitNum = 1 unless @battle.foretoldMove # Charging anim
         super
     end
 
