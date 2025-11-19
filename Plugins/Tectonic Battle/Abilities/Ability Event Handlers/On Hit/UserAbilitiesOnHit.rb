@@ -212,14 +212,14 @@ BattleHandlers::UserAbilityOnHit.add(:MENTALDAMAGE,
 BattleHandlers::UserAbilityOnHit.add(:SOOTHINGMELODY,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
     next unless move.calcType == :NORMAL
-    randomStatusProcUserAbility(ability, :SLEEP, 30, user, target, move, battle, aiCheck, aiNumHits)
+    randomStatusProcUserAbility(ability, :Yawn, 40, user, target, move, battle, aiCheck, aiNumHits)
   }
 )
 
 BattleHandlers::UserAbilityOnHit.add(:TRANQUILIZINGVENOM,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
     next unless move.calcType == :POISON
-    randomStatusProcUserAbility(ability, :SLEEP, 30, user, target, move, battle, aiCheck, aiNumHits)
+    randomStatusProcUserAbility(ability, :Yawn, 40, user, target, move, battle, aiCheck, aiNumHits)
   }
 )
 

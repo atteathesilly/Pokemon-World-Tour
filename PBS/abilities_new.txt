@@ -826,7 +826,7 @@ Description = Random added effects of bite attacks are +50% more likely likely t
 #-------------------------------
 [GOODDREAMS]
 Name = Good Dreams
-Description = Increases users HP by 1/12 at the end of a round when a foe is sleeping.
+Description = Restores users HP by 1/12 at the end of a round when a foe is sleeping.
 #-------------------------------
 [GORGING]
 Name = Gorging
@@ -1847,7 +1847,7 @@ Flags = MoonglowSynergy
 #-------------------------------
 [SOOTHINGMELODY]
 Name = Soothing Melody
-Description = Normal-type attacks have a 30% chance to sleep.
+Description = Normal-type attacks have a 40% chance to make the opponent drowsy.
 #-------------------------------
 [SOPPING]
 Name = Sopping
@@ -2118,7 +2118,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [TRANQUILIZINGVENOM]
 Name = Tranquilizing Venom
-Description = Poison-type attacks have a 30% chance to sleep.
+Description = Poison-type attacks have a 40% chance to make the opponent drowsy.
 #-------------------------------
 [TRAPPER]
 Name = Trapper

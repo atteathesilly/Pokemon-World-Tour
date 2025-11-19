@@ -371,6 +371,14 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[054]
+# Bond Bridge
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = sand
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
