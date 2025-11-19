@@ -8493,7 +8493,7 @@ Policies = CURSE_SELF_DEBUFFING
 [BIRDKEEPER_M2,Vlasta]
 Pokemon = SWELLOW,70
     Moves = DIVEBOMB,FACADE,DOUBLEEDGE
-    AbilityIndex = 1 # Steep Flying
+    AbilityIndex = 1 # Dedicated
     Item = CHOICEBAND
 Pokemon = VILEPLUME,70
     Moves = SLUDGEWAVE,GIGADRAIN,SYNTHESIS,POISONIVY

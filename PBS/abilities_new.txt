@@ -9,10 +9,6 @@ Name = Accumulation
 Description = The Pokémon gains twice as many stats from leveling up.
 Flags = Immutable
 #-------------------------------
-[GOODDREAMS]
-Name = Good Dreams
-Description = Increases users HP by 1/12 at the end of a round when a foe is sleeping.
-#-------------------------------
 [ACIDRAIN]
 Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
@@ -403,6 +399,10 @@ Flags = SandstormSynergy
 Name = Decontamination
 Description = Prevents Bug- or Poison-type moves during moonglow.
 Flags = MoonglowSynergy
+#-------------------------------
+[DEDICATED]
+Name = Dedicated
+Description = Boosts power of the Pokémon's field-based moves by 50%.
 #-------------------------------
 [DEEPSTING]
 Name = Deep Sting
@@ -823,6 +823,10 @@ Description = Immune to Fire-type moves and raises Defense and Sp. Def if hit by
 [GNAWING]
 Name = Gnawing
 Description = Random added effects of bite attacks are +50% more likely likely to occur.
+#-------------------------------
+[GOODDREAMS]
+Name = Good Dreams
+Description = Increases users HP by 1/12 at the end of a round when a foe is sleeping.
 #-------------------------------
 [GORGING]
 Name = Gorging
@@ -1841,6 +1845,10 @@ Name = Solo Nocturne
 Description = Doubles Defense in moonglow.
 Flags = MoonglowSynergy
 #-------------------------------
+[SOOTHINGMELODY]
+Name = Soothing Melody
+Description = Normal-type attacks have a 30% chance to sleep.
+#-------------------------------
 [SOPPING]
 Name = Sopping
 Description = Physical attacks against the Pokémon have a 30% chance to waterlog the attacker.
@@ -2107,6 +2115,10 @@ Description = Heals based on the damage other battlers take from being poisoned.
 Name = Tractor Beam
 Description = Prevents the foe from escaping during eclipse.
 Flags = EclipseSynergy
+#-------------------------------
+[TRANQUILIZINGVENOM]
+Name = Tranquilizing Venom
+Description = Poison-type attacks have a 30% chance to sleep.
 #-------------------------------
 [TRAPPER]
 Name = Trapper

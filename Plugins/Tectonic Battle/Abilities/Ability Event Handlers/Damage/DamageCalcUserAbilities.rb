@@ -199,6 +199,16 @@ BattleHandlers::DamageCalcUserAbility.add(:EARSPLITTING,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:DEDICATED,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.fieldMove?
+      mults[:base_damage_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+
 BattleHandlers::DamageCalcUserAbility.add(:SWORDPLAY,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.bladeMove?

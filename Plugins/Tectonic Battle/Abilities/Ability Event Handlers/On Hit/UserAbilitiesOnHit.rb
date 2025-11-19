@@ -85,6 +85,8 @@ BattleHandlers::UserAbilityOnHit.add(:FROSTWINGS,
   }
 )
 
+
+
 #########################################
 # Numb abilities
 #########################################
@@ -204,6 +206,20 @@ BattleHandlers::UserAbilityOnHit.add(:MENTALDAMAGE,
       target.applyEffect(:Disable,2) if target.canBeDisabled?(true, move)
       battle.pbHideAbilitySplash(user)
     end
+  }
+)
+
+BattleHandlers::UserAbilityOnHit.add(:SOOTHINGMELODY,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless move.calcType == :NORMAL
+    randomStatusProcUserAbility(ability, :SLEEP, 30, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)
+
+BattleHandlers::UserAbilityOnHit.add(:TRANQUILIZINGVENOM,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless move.calcType == :POISON
+    randomStatusProcUserAbility(ability, :SLEEP, 30, user, target, move, battle, aiCheck, aiNumHits)
   }
 )
 

@@ -1196,7 +1196,7 @@ ShadowSize = 2
 #-------------------------------
 [COSPLAYPIKACHU]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 1,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -2144,9 +2144,9 @@ ShadowSize = 2
 #-------------------------------
 [GALLADE,1]
 BackSprite = 0,11
-FrontSprite = 0,10
+FrontSprite = -3,15
 ShadowX = 0
-ShadowSize = 2
+ShadowSize = 3
 #-------------------------------
 [GALVANTULA]
 BackSprite = 0,29
@@ -2163,6 +2163,12 @@ ShadowSize = 2
 [GARCHOMP]
 BackSprite = 0,11
 FrontSprite = -5,7
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[GARCHOMP,1]
+BackSprite = 0,11
+FrontSprite = -1,14
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
@@ -3745,7 +3751,7 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [MASCHIFF]
-BackSprite = 0,18
+BackSprite = 0,27
 FrontSprite = -1,33
 ShadowX = 0
 ShadowSize = 2
@@ -4459,16 +4465,16 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [OFERROSEED]
-BackSprite = 0,35
-FrontSprite = 0,32
+BackSprite = 0,15
+FrontSprite = 0,6
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
 [OFERROTHORN]
 BackSprite = 0,12
-FrontSprite = -1,10
+FrontSprite = -1,5
 ShadowX = 0
-ShadowSize = 2
+ShadowSize = 3
 #-------------------------------
 [OMANYTE]
 BackSprite = 0,31
@@ -4610,7 +4616,7 @@ ShadowSize = 2
 #-------------------------------
 [PARTNERPIKACHU]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 0,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -4718,7 +4724,7 @@ ShadowSize = 2
 #-------------------------------
 [PIKACHU]
 BackSprite = 0,27
-FrontSprite = 0,18
+FrontSprite = 0,15
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -4772,31 +4778,31 @@ ShadowSize = 2
 #-------------------------------
 [PIKACHUBELLE]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 4,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [PIKACHULIBRE]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [PIKACHUPHD]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [PIKACHUPOPSTAR]
-BackSprite = 0,27
-FrontSprite = 0,16
+BackSprite = 0,28
+FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [PIKACHUROCKSTAR]
 BackSprite = 0,27
-FrontSprite = 0,16
+FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -4873,8 +4879,8 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [POLTCHAGEIST]
-BackSprite = 0,34
-FrontSprite = 0,38
+BackSprite = 0,24
+FrontSprite = 0,20
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -5173,7 +5179,7 @@ ShadowX = 0
 ShadowSize = 3
 #-------------------------------
 [RFOONGUS]
-BackSprite = 0,32
+BackSprite = 0,29
 FrontSprite = 1,34
 ShadowX = 0
 ShadowSize = 1
@@ -5239,7 +5245,7 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [RONINGUS]
-BackSprite = 0,16
+BackSprite = 0,22
 FrontSprite = 0,25
 ShadowX = 0
 ShadowSize = 3
@@ -5544,6 +5550,18 @@ FrontSprite = 0,36
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SGALLADE]
+BackSprite = 0,14
+FrontSprite = 0,10
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[SGARDEVOIR]
+BackSprite = 0,19
+FrontSprite = 0,22
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [SHARPEDO]
 BackSprite = 0,11
 FrontSprite = 0,10
@@ -5724,6 +5742,12 @@ FrontSprite = 0,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SKIRLIA]
+BackSprite = 0,21
+FrontSprite = 0,24
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [SKITTY]
 BackSprite = 0,29
 FrontSprite = 0,24
@@ -5810,7 +5834,7 @@ ShadowSize = 2
 #-------------------------------
 [SMEOWTH]
 BackSprite = 0,25
-FrontSprite = 1,20
+FrontSprite = 1,25
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -5955,6 +5979,12 @@ ShadowSize = 2
 [SQUIRTLE]
 BackSprite = 0,29
 FrontSprite = 0,24
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[SRALTS]
+BackSprite = 0,18
+FrontSprite = 0,29
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -6259,19 +6289,19 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [TINKATINK]
-BackSprite = 0,20
+BackSprite = 0,28
 FrontSprite = 4,34
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
 [TINKATON]
-BackSprite = 0,0
+BackSprite = 0,24
 FrontSprite = 12,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [TINKATUFF]
-BackSprite = -8,0
+BackSprite = -8,29
 FrontSprite = 3,30
 ShadowX = 0
 ShadowSize = 2
@@ -6961,7 +6991,7 @@ ShadowX = 0
 ShadowSize = 2
 #-------------------------------
 [WOCHIEN]
-BackSprite = 0,0
+BackSprite = 0,11
 FrontSprite = -3,16
 ShadowX = 0
 ShadowSize = 3
