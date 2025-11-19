@@ -2,7 +2,7 @@ GameData::BattleEffect.register_effect(:Position, {
     :id => :ForetoldMoveCounter,
     :real_name => "Turns Till Move",
     :type => :Integer,
-    :ticks_down_eor => true,
+    :ticks_down_sor => true,
     :sub_effects => %i[ForetoldMove ForetoldMoveUserPartyIndex ForetoldMoveUserIndex ForetoldMoveType],
     :expire_proc => proc do |battle, index, position, battler|
         userIndex = position.effects[:ForetoldMoveUserIndex]
