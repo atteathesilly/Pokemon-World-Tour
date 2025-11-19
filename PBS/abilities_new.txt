@@ -763,6 +763,10 @@ Description = Raises Attack and Sp. Atk by two steps when hit by a not-very-effe
 Name = Foreman
 Description = Doubles the Pokémon's Speed in Rooms.
 #-------------------------------
+[FOREWARNING]
+Name = Forewarning
+Description = Foretold moves also hit for half power on the turn they are used.
+#-------------------------------
 [FREERIDE]
 Name = Free Ride
 Description = Raises other allies' Speed by two steps upon entry.

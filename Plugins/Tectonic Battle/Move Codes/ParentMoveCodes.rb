@@ -1338,32 +1338,56 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     def initialize(battle, move)
         super
         @turnCount = 3
+        @forewarned = false
+    end
+
+    def pbOnStartUse(user, targets)
+        if user.hasActiveAbility?(:FOREWARNING) && !@battle.foretoldMove
+            user.showMyAbilitySplash(:FOREWARNING)
+            @battle.pbDisplay(_INTL("{1} gives a taste of what's to come!", user.pbThis))
+            @forewarned = true
+            user.hideMyAbilitySplash
+        end
+    end
+
+    # Halve the damage of Forewarned first-turn attacks
+    def pbBaseDamage(baseDmg, _user, _target)
+        baseDmg /= 2 if @forewarned
+        return baseDmg
+    end
+
+    def resetMoveUsageState
+        @forewarned = false
+    end
+
+    def foretoldDamagingTurn?
+        return @battle.foretoldMove || @forewarned
     end
 
     def damagingMove?(aiCheck = false) # Stops damage being dealt in the setting-up turn
         if aiCheck
             return super
         else
-            return false unless @battle.foretoldMove
+            return false unless foretoldDamagingTurn?
             return super
         end
     end
 
     def pbAccuracyCheck(user, target)
-        return true unless @battle.foretoldMove
+        return true unless foretoldDamagingTurn?
         return super
     end
 
     def pbDisplayUseMessage(user, targets)
-        super unless @battle.foretoldMove
+        super unless foretoldDamagingTurn?
     end
 
     def displayWeatherDebuffMessages(user, type)
-        super unless @battle.foretoldMove
+        super unless foretoldDamagingTurn?
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if !@battle.foretoldMove && target.position.effectActive?(:ForetoldMoveCounter)
+        if !foretoldDamagingTurn? && target.position.effectActive?(:ForetoldMoveCounter)
             if show_message
                 @battle.pbDisplay(_INTL("But it failed, since an attack is already foreseen against {1}!", target.pbThis(true)))
             end
@@ -1374,6 +1398,7 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
 
     def pbEffectAgainstTarget(user, target)
         return if @battle.foretoldMove # Attack is hitting
+        return if @battle.foretoldMove
         count = @turnCount
         count -= 2 if user.hasActiveAbility?(:BADOMEN)
         count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
@@ -1392,14 +1417,15 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     end
 
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
-        hitNum = 1 unless @battle.foretoldMove # Charging anim
+        hitNum = 1 unless foretoldDamagingTurn? # Charging anim
         super
     end
 
     def getEffectScore(user, _target)
-        score = -20
-        score -= 50 unless user.alliesInReserve?
-        return score
+        malus = -20
+        malus -= 50 unless user.alliesInReserve?
+        malus /= 2 if user.hasActiveAbilityAI?(:FOREWARNING)
+        return score + malus
     end
 end
 

@@ -42,7 +42,7 @@ GameData::BattleEffect.register_effect(:Position, {
 
 GameData::BattleEffect.register_effect(:Position, {
     :id => :ForetoldMove,
-    :real_name => "Incoming Move",
+    :real_name => "Incoming",
     :type => :Move,
 })
 
@@ -62,7 +62,7 @@ GameData::BattleEffect.register_effect(:Position, {
 
 GameData::BattleEffect.register_effect(:Position, {
     :id => :ForetoldMoveType,
-    :real_name => "Incoming Move Type",
+    :real_name => "Incoming Type",
     :type => :Type,
 })
 
