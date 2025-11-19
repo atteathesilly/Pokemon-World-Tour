@@ -4,6 +4,7 @@ Major Contributors to World Tour
 AttteatheSilly
 manycrows
 Ace60
+Azeler
 
 Major Contributors to Tectonic Engine
 Brickbat<s>Zinnia
