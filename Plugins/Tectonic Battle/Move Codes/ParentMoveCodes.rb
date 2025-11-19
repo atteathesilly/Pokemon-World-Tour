@@ -1397,7 +1397,6 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     end
 
     def pbEffectAgainstTarget(user, target)
-        return if @battle.foretoldMove # Attack is hitting
         return if @battle.foretoldMove
         count = @turnCount
         count -= 2 if user.hasActiveAbility?(:BADOMEN)
@@ -1411,7 +1410,13 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
             @battle.pbDisplay(_INTL("{1} chose Doom Desire as its destiny!", user.pbThis))
         elsif @id == :ARTILLERIZE
             @battle.pbDisplay(_INTL("{1} fires a shell high in the air!", user.pbThis))
-        else
+        elsif @id == :GHOSTLYTALE
+            @battle.pbDisplay(_INTL("{1} weaves a tale of woe and horror!", user.pbThis))
+        elsif @id == :STROKEOFMIDNIGHT
+            @battle.pbDisplay(_INTL("{1} knows when {1}'s time will run out!", user.pbThis, target.pbThis(true)))
+        elsif @id == :LOOMINGWINTER
+            @battle.pbDisplay(_INTL("{1} feels a chill on the air... winter is coming!", user.pbThis))
+        else # Default, for Future Sight
             @battle.pbDisplay(_INTL("{1} foresaw an attack!", user.pbThis))
         end
     end
