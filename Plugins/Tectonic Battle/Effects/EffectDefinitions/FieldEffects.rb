@@ -29,7 +29,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :Gravity,
     :real_name => "Gravity Turns",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:DISTORTEDGRAVITY)
     end,
     :apply_proc => proc do |battle, _value|
@@ -116,7 +117,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :TrickRoom,
     :real_name => "Trick Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -135,7 +137,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :PuzzleRoom,
     :real_name => "Puzzle Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -154,7 +157,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :OddRoom,
     :real_name => "Odd Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -173,7 +177,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :PolarizedRoom,
     :real_name => "Polarized Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -192,7 +197,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :InsightRoom,
     :real_name => "Insight Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -217,7 +223,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :EmotionRoom,
     :real_name => "Emotion Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
@@ -236,7 +243,8 @@ GameData::BattleEffect.register_effect(:Field, {
     :id => :WillfulRoom,
     :real_name => "Willful Room",
     :type => :Integer,
-    :ticks_down_eor_proc => proc do |battle, value|
+    :ticks_down_eor => true,
+    :ticks_down_proc => proc do |battle, value|
         next !battle.pbCheckGlobalAbility(:ROOMLOCK)
     end,
     :is_room => true,
