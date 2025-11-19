@@ -2,7 +2,7 @@ GameData::BattleEffect.register_effect(:Position, {
     :id => :FutureSightCounter,
     :real_name => "Turns Till Move",
     :type => :Integer,
-    :ticks_down => true,
+    :ticks_down_eor => true,
     :sub_effects => %i[FutureSightMove FutureSightUserPartyIndex FutureSightUserIndex FutureSightType],
     :expire_proc => proc do |battle, index, position, battler|
         userIndex = position.effects[:FutureSightUserIndex]
@@ -96,7 +96,7 @@ GameData::BattleEffect.register_effect(:Position, {
     :id => :Wish,
     :real_name => "Turns Till Wish",
     :type => :Integer,
-    :ticks_down => true,
+    :ticks_down_eor => true,
     :swaps_with_battlers => true,
     :expire_proc => proc do |battle, index, position, battler|
         if battler.canHeal?
