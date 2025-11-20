@@ -649,6 +649,14 @@ Name = Ferrofluid
 Description = Takes 30% less damage in a rainstorm.
 Flags = RainstormSynergy
 #-------------------------------
+[FIELDOFDEATH]
+Name = Field of Death
+Description = While the Pokémon is on the field, all attacks drain 30% of damage dealt.
+#-------------------------------
+[FIELDOFLIFE]
+Name = Field of Life
+Description = While the Pokémon is on the field, all healing is boosted by 20% and can overheal.
+#-------------------------------
 [FIERYSPIRIT]
 Name = Fiery Spirit
 Description = Special moves against the Pokémon have a 30% chance to burn the attacker.
