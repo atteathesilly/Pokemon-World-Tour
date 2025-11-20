@@ -563,6 +563,10 @@ Description = Uses Lightning Dance if an attack lowers its HP to half or below.
 Name = Emotion Aura
 Description = Upon entry, creates an Emotion Room for four turns, which swaps each Pokemon's ability to its other ability each turn.
 #-------------------------------
+[EMPATHFINDER]
+Name = Empathfinder
+Description = When a foe switches to replace a fainted Pokemon, gives information about the switch and let's you switch beforehand.
+#-------------------------------
 [ENERGETIC]
 Name = Energetic
 Description = Can't be numbed, waterlogged, or have its Speed reduced.

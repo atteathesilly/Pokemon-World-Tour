@@ -209,7 +209,35 @@ class PokeBattle_Battle
                 next unless pbCanChooseNonActive?(idxBattler)
                 if !pbOwnedByPlayer?(idxBattler) || @controlPlayer # Opponent/ally is switching in
                     next if wildBattle? && opposes?(idxBattler) # Wild Pokémon can't switch
+
+                    # Foe chooses their switch
                     idxPartyNew = pbSwitchInBetween(idxBattler, safeSwitch: true)
+
+                    # Switch mode check
+                    empathFinder = pbCheckSameSideAbility(:EMPATHFINDER,0)
+                    switchModeEnabled = @switchStyle || !empathFinder.nil?
+                    opponent = pbGetOwnerFromBattlerIndex(idxBattler)
+                    battlerToSwitchIndex = empathFinder ? empathFinder.index : 0
+                    battlerToSwitch = @battlers[battlerToSwitchIndex]
+                    if @internalBattle && switchModeEnabled && trainerBattle? && opposes?(idxBattler) && !battlerToSwitch.fainted? && !switched.include?(battlerToSwitchIndex) && pbCanChooseNonActive?(battlerToSwitchIndex) && !battlerToSwitch.effectActive?(:Outrage)
+                        idxPartyForName = idxPartyNew
+                        enemyParty = pbParty(idxBattler)
+                        if enemyParty[idxPartyNew].hasAbility?(:ILLUSION)
+                            new_index = pbLastInTeam(idxBattler)
+                            idxPartyForName = new_index if new_index >= 0 && new_index != idxPartyNew
+                        end
+                        empathFinder.showMyAbilitySplash(:EMPATHFINDER)
+                        if pbDisplayConfirm(_INTL("{1} is about to send in {2}. Will you switch out {3}?", opponent.full_name, enemyParty[idxPartyForName].name, battlerToSwitch.name))
+                            idxPlayerPartyNew = pbSwitchInBetween(battlerToSwitchIndex, canCancel: true)
+                            if idxPlayerPartyNew >= 0
+                                pbMessageOnRecall(battlerToSwitch)
+                                pbRecallAndReplace(battlerToSwitchIndex,idxPlayerPartyNew)
+                                switched.push(battlerToSwitchIndex)
+                            end
+                        end
+                        empathFinder.hideMyAbilitySplash
+                    end
+
                     pbRecallAndReplace(idxBattler, idxPartyNew)
                     switched.push(idxBattler)
                 elsif trainerBattle? || bossBattle? # Player switches in in a trainer battle or boss battle
