@@ -243,3 +243,25 @@ GameData::BattleEffect.register_effect(:Position, {
         position.disableEffect(:MagmaTrail)
     end,
 })
+
+GameData::BattleEffect.register_effect(:Position, {
+    :id => :Stormshards,
+    :real_name => "Stormshards",
+    :type => :Integer,
+    :ticks_down => true,
+    :remain_proc => proc do |battle, index, position, battler|
+        if battler.takesIndirectDamage?
+        battler.applyFractionalDamage(1.0 / 8.0)
+        battle.pbDisplay(_INTL("{1} is hurt by the rocky shards!", battler.pbThis))
+        end
+    end,
+    :disable_proc => proc do |battle, index, position, battler|
+        battle.pbDisplay(_INTL("The rocky shards surrounding {1} were sent away.", battler.pbThis))
+    end,
+    :expire_proc => proc do |battle, index, position, battler|
+        if battler.takesIndirectDamage?
+        battler.applyFractionalDamage(1.0 / 8.0)
+        battle.pbDisplay(_INTL("The rocky shards surrounding {1} dissipate.", battler.pbThis))
+        end
+    end,
+})

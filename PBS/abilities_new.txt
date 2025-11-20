@@ -902,7 +902,7 @@ Description = Deals 30% more move damage to Pokémon that are taller than it.
 #-------------------------------
 [HARRYINGSTRIKES]
 Name = Harrying Strikes
-Description = Biting moves deal 50% more damage if the last move was a non-biting attack, and vice versa.
+Description = Biting attacks deal 50% more damage if the last move was a non-biting attack, and vice versa.
 #-------------------------------
 [HARSH]
 Name = Harsh
