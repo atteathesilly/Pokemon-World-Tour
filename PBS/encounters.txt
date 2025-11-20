@@ -52,7 +52,7 @@ Land,20
 Puddle,20
     20,BINACLE,9,11
     20,CARVANHA,9,11
-    20,SLOWPOKE,9,11
+    20,GSLOWPOKE,9,11
     20,TOXEL,9,11
     20,WYNAUT,9,11
 Special
@@ -243,3 +243,17 @@ Special
     1,CRABRAWLER,20
     1,OFERROSEED,20
     1,RFOONGUS,20
+#-------------------------------
+[054] # Three Isle Port
+Land,20
+    20,SRALTS,20,21
+    20,SMEOWTH,20,21
+    20,CHARMANDER,20,21
+    20,GIRAFARIG,20,21
+    20,GULPIN,20,21
+Puddle,20
+    20,SLOWPOKE,20,21
+    20,PSYDUCK,20,21
+    20,POLIWAG,20,21
+    20,KRABBY,20,21
+    20,TOTODILE,20,21
