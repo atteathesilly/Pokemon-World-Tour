@@ -203,6 +203,7 @@ BattleHandlers::UserAbilityOnHit.add(:MENTALDAMAGE,
 BattleHandlers::UserAbilityOnHit.add(:INFAMOUS,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
     next unless user.firstTurn?
+    next getJinxEffectScore(user, target) if aiCheck
     battle.pbShowAbilitySplash(user, ability)
     target.applyEffect(:Jinxed, applyEffectDurationModifiers(DEFAULT_JINX_DURATION, user))
     battle.pbHideAbilitySplash(user)
