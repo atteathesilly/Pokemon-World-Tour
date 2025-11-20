@@ -213,29 +213,34 @@ class PokeBattle_Battle
                     # Foe chooses their switch
                     idxPartyNew = pbSwitchInBetween(idxBattler, safeSwitch: true)
 
-                    # Switch mode check
-                    empathFinder = pbCheckSameSideAbility(:EMPATHFINDER,0)
-                    switchModeEnabled = @switchStyle || !empathFinder.nil?
-                    opponent = pbGetOwnerFromBattlerIndex(idxBattler)
-                    battlerToSwitchIndex = empathFinder ? empathFinder.index : 0
-                    battlerToSwitch = @battlers[battlerToSwitchIndex]
-                    if @internalBattle && switchModeEnabled && trainerBattle? && opposes?(idxBattler) && !battlerToSwitch.fainted? && !switched.include?(battlerToSwitchIndex) && pbCanChooseNonActive?(battlerToSwitchIndex) && !battlerToSwitch.effectActive?(:Outrage)
-                        idxPartyForName = idxPartyNew
-                        enemyParty = pbParty(idxBattler)
-                        if enemyParty[idxPartyNew].hasAbility?(:ILLUSION)
-                            new_index = pbLastInTeam(idxBattler)
-                            idxPartyForName = new_index if new_index >= 0 && new_index != idxPartyNew
-                        end
-                        empathFinder.showMyAbilitySplash(:EMPATHFINDER)
-                        if pbDisplayConfirm(_INTL("{1} is about to send in {2}. Will you switch out {3}?", opponent.full_name, enemyParty[idxPartyForName].name, battlerToSwitch.name))
-                            idxPlayerPartyNew = pbSwitchInBetween(battlerToSwitchIndex, canCancel: true)
-                            if idxPlayerPartyNew >= 0
-                                pbMessageOnRecall(battlerToSwitch)
-                                pbRecallAndReplace(battlerToSwitchIndex,idxPlayerPartyNew)
-                                switched.push(battlerToSwitchIndex)
+                    # Empathfinder / Switch Mode check
+                    if @internalBattle && trainerBattle? && opposes?(idxBattler)
+                        opponent = pbGetOwnerFromBattlerIndex(idxBattler)
+                        eachSameSideBattler do |playerBattler|
+                            next unless playerBattler.hasActiveAbility?(:EMPATHFINDER) || @switchStyle
+                            next if playerBattler.fainted?
+                            next if switched.include?(playerBattler.index)
+                            next unless pbCanChooseNonActive?(playerBattler.index)
+                            next if playerBattler.effectActive?(:Outrage)
+
+                            idxPartyForName = idxPartyNew
+                            enemyParty = pbParty(idxBattler)
+                            if enemyParty[idxPartyNew].hasAbility?(:ILLUSION)
+                                new_index = pbLastInTeam(idxBattler)
+                                idxPartyForName = new_index if new_index >= 0 && new_index != idxPartyNew
                             end
+                            empathFinder = playerBattler.hasActiveAbility?(:EMPATHFINDER)
+                            playerBattler.showMyAbilitySplash(:EMPATHFINDER) if empathFinder
+                            if pbDisplayConfirm(_INTL("{1} is about to send in {2}. Will you switch out {3}?", opponent.full_name, enemyParty[idxPartyForName].name, playerBattler.name))
+                                idxPlayerPartyNew = pbSwitchInBetween(playerBattler.index, canCancel: true)
+                                if idxPlayerPartyNew >= 0
+                                    pbMessageOnRecall(playerBattler)
+                                    pbRecallAndReplace(playerBattler.index,idxPlayerPartyNew)
+                                    switched.push(playerBattler.index)
+                                end
+                            end
+                            playerBattler.hideMyAbilitySplash if empathFinder
                         end
-                        empathFinder.hideMyAbilitySplash
                     end
 
                     pbRecallAndReplace(idxBattler, idxPartyNew)
