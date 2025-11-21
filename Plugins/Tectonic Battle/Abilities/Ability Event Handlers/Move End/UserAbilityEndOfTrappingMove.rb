@@ -8,6 +8,7 @@ BattleHandlers::UserAbilityEndOfTrappingMove.add(:DENTICLEDEBRIS,
         next
         end
         side.incrementEffect(:Spikes)
+        battle.pbAnimation(:SPIKES, user, nil)
         battle.pbDisplay(_INTL("{1} scattered debris that became Spikes!", user.pbThis))
         battle.pbHideAbilitySplash(user)
     }
