@@ -16,6 +16,7 @@ def battleGuideMainDirectory
         _INTL("MasterDex")         => [_INTL("What does the MasterDex do and how should I use it?"),:battleGuideMasterdexHash],
         _INTL("Weathers")          => [_INTL("What are weathers, and what does each do?"),:battleGuideWeathersHash],
         _INTL("Tribes")            => [_INTL("What are Tribes and what do they do?"),:battleGuideTribesHash],
+        _INTL("Legendary Abilities") => [_INTL("What do these legendary abilities do?"),:battleGuideLegendaryAbilitiesHash],
 }
 end
 
@@ -245,5 +246,27 @@ def battleGuideWeathersHash
         _INTL("Weather Downsides") => _INTL("Each weather has both an upside and a downside. There are items and abilities that make your Pokémon immune to these downsides regardless of type."),
         _INTL("Weather Areas") => _INTL("Certain areas in the game experience intense weather. That weather will also be present in the battles of that area. Simple daily weather will not do this."),
         _INTL("Weather Synergies") => _INTL("Each weather has dozens of moves and abilities that benefit from that weather. Pokémon using these moves/abilities ignore the downsides of their favored weather!"),
+    }
+end
+
+def battleGuideLegendaryAbilitiesHash
+    return {
+        _INTL("Tapu Koko: Storm Totem") => _INTL("Pokémon on this side get a 30% move damage boost, but they are prevented from using moves that are the same type as the move they most recently used."),
+        _INTL("Tapu Fini: Fog Totem") => _INTL("Whenever a foe finishes attacking a Pokemon on this side, the attacker is forced to switch out of battle. They are able to choose the replacement."),
+        _INTL("Tapu Bulu: Wild Totem") => _INTL("Whenever a Pokemon on this side is hit, its defending stats are both lowered by 1 step and its attacking stats are both raised by 1 step."),
+        _INTL("Tapu Lele: Flutter Totem") => _INTL("At the end of each turn, the Pokemon on this side are all healed by 1/8th of their max HP, but each one of their moves has their PP reduced by 1."),
+        _INTL("Zeraora: Hybrid Fighter") => _INTL("You gain effects for using moves in an order.\nKick -> Bite: Healed by 25%.\nPunch -> Kick: You switch out.\nBite -> Punch: The target's Attack lowers by 2 steps."),
+        _INTL("Hybrid Fighter Part 2") => _INTL("Bite -> Kick: Your speed raises by 2 steps.\nKick -> Punch: Opponent is Numbed.\nPunch -> Bite: You gain Energy Charged."),
+        _INTL("Articuno: Glacial Wings") => _INTL("Severe Frostbite: The same as Frostbite, but its end-of-turn chip deals double damage if the afflicted Pokémon is below half health."),
+        _INTL("Moltres: Searing Wings") => _INTL("Severe Burn: The same as Burn, but the afflicted Pokémon also takes 33% recoil from their attacks."),
+        _INTL("Zapdos: Galvanic Wings") => _INTL("Severe Numb: The same as Numb, but the afflicted Pokémon's highest stat is reduced at the end of each turn."),
+        _INTL("Kyogre: Primordial Sea") => _INTL("Boosts the damage of Water- and Electric-type attacks by 50%. Prevents moves' random added effects."),
+        _INTL("Groudon: Desolate Land") => _INTL("Boosts the damage of Fire- and Grass-type attacks by 50%. Prevents most moves from critting."),
+        _INTL("Groudon: Desolate Land") => _INTL("Boosts the damage of Fire- and Grass-types by 50%. Prevents most moves from critting."),
+        _INTL("Necrozma: Event Horizon") => _INTL("Rock- and Ground-types gain a 50% boost to Special Defense. End of turn damage doubles every turn."),
+        _INTL("Kyurem: Heat Death") => _INTL("Ice- and Ghost-types gain a 50% boost to Defense. Healing is prevented while active."),
+        _INTL("Cresselia: Saturnal Sky") => _INTL("Boosts the damage of Psychic- and Dragon-type attacks by 50%. When the debuff applies from the Ring Eclipse effect, it lowers stats by 3 steps instead of 2."),
+        _INTL("Darkrai: Stygian Night") => _INTL("Boosts the damage of Fairy- and Dark-type attacks by 50%. When the flinch happens from Blood Moon, it also damages targets by 25% of their Max HP."),
+        _INTL("Giratina: Distorted Gravity") => _INTL("All foes take 1/16th damage at the end of the round. While the user is on the field, gravity does not decay."),
     }
 end
