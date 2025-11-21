@@ -8127,8 +8127,8 @@ Evolutions = SKIRLIA,Level,24
 #-------------------------------
 [SKIRLIA]
 Name = S. Kirlia
-Type1 = PSYCHIC
-Type2 = FAIRY
+Type1 = NORMAL
+Type2 = PSYCHIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 60,50,80,65,75,95
 # Total = 425

@@ -457,29 +457,29 @@ Pokemon = DARUMAKA,20
     AbilityIndex = 0 # Extreme Power
     Item = CHARCOAL
 #-------------------------------
-[SCHOOLKID_F,Arya]
-Pokemon = TRANQUILL,21
-    Moves = FOCUSENERGY,PLUCK,INCISION,SCRATCH
-    AbilityIndex = 0 # Deterrent
-Pokemon = GOLDEEN,20
-    Moves = FROLIC,AQUAJET,TEETERDANCE,LEER
-    AbilityIndex = 1 # Volt Absorb
-    Item = WATERGEM
-Pokemon = WARTORTLE,21
-    Moves = WATERPULSE,SHINESHOT,RAPIDSPIN,AQUAJET
-    AbilityIndex = 1 # Mega Launcher
+[BATTLEGIRL,Joy]
+Policies = MOONGLOW_TEAM
+Pokemon = CLEFAIRY,22
+    Moves = METRONOME
+    AbilityIndex = 1 # Luna Riot
+Pokemon = SMEOWTH,20
+    Moves = SHRED,METALCLAW,PURSUIT
+    AbilityIndex = 1 # Territorial
+Pokemon = URSARING,23
+    Moves = COVET,BULLDOZE,FORCEPALM,REST
+    AbilityIndex = 0 # Moon Basking
 #-------------------------------
-[RUINMANIAC,Spencer]
-Pokemon = BALTOY,21
-    Moves = CONFIDE,RAPIDSPIN,PSYBEAM,MUDSHOT
-    AbilityIndex = 1 # Magic Bounce
-    Item = CADOBERRY
-Pokemon = BUIZEL,21
-    Moves = QUICKATTACK,FAKEOUT,WIPEOUT,DAZZLE
-    AbilityIndex = 1 # Technician
-Pokemon = GROWLITHE,21
-    Moves = FROLIC,FIREFANG,GROWL
-    AbilityIndex = 1 # Heart of Justice
+[AROMALADY3,Violet]
+Pokemon = IVYSAUR,21
+    Moves = PUFFBALL,BULLETSEED,STINKCLOUD,LEECHSEED
+    AbilityIndex = 1 # Aromatic
+    Item = MIRACLESEED
+Pokemon = MUNNA,22
+    Moves = FOOL,YAWN,REST,SIGNALBEAM
+    AbilityIndex = 1 # Dreamy Haze
+Pokemon = GPONYTA,23
+    Moves = MISHAP,FLOWSTATE,HEARTSTAMP
+    AbilityIndex = 0 # Joyous Sorrow
 #-------------------------------
 [SOCIALITE,Elizabeth]
 Pokemon = URSARING,22
