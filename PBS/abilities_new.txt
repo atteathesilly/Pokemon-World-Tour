@@ -234,7 +234,7 @@ Description = Moves ignore immunities due to typing.
 #-------------------------------
 [BRILLIANTFLURRY]
 Name = Brilliant Flurry
-Description = If an attack lowers its HP to half or less, lowers all of the attacker's stats.
+Description = If an attack lowers its HP below half, lowers all of the attacker's stats.
 #-------------------------------
 [BRISK]
 Name = Brisk
@@ -514,7 +514,7 @@ Description = Raises Sp. Atk by two steps whenever any battler falls asleep.
 #-------------------------------
 [DREAMYHAZE]
 Name = Dreamy Haze
-Description = If an attack lowers its HP to half or less, the attacker becomes drowsy.
+Description = If an attack lowers its HP below half, the attacker becomes drowsy.
 #-------------------------------
 [DREARYCLOUDS]
 Name = Dreary Clouds
@@ -557,7 +557,7 @@ Description = Boosts the power of pulse moves by 30%.
 #-------------------------------
 [EMERGENCYPOWER]
 Name = Emergency Power
-Description = Uses Lightning Dance if an attack lowers its HP to half or below.
+Description = Uses Lightning Dance if an attack lowers its HP below half.
 #-------------------------------
 [EMOTIONAURA]
 Name = Emotion Aura
@@ -898,7 +898,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [HARDAS]
 Name = Hard As
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes fractured.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes fractured.
 #-------------------------------
 [HARDFALL]
 Name = Hard Fall
@@ -1151,7 +1151,7 @@ Flags = MoldBreaking
 #-------------------------------
 [KARMA]
 Name = Karma
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes jinxed.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes jinxed.
 #-------------------------------
 [KELPLINK]
 Name = Kelp Link
@@ -1273,7 +1273,7 @@ Description = When hit with a special move, traps and binds the attacker for thr
 #-------------------------------
 [MALICE]
 Name = Malice
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes cursed.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes cursed.
 #-------------------------------
 [MALICIOUSGLOW]
 Name = Malicious Glow
@@ -1335,7 +1335,7 @@ Description = Pokémon that swap in for this have their Defense and Sp. Defense 
 #-------------------------------
 [MOISTSKIN]
 Name = Moist Skin
-Description = If an attack lowers its HP to half or less, waterlogs the attacker.
+Description = If an attack lowers its HP below half, waterlogs the attacker.
 #-------------------------------
 [MONKEYMISCHIEF]
 Name = Monkey Mischief
@@ -2057,11 +2057,11 @@ Description = Can hold a second item by stealing it.
 #-------------------------------
 [STICKYMOLD]
 Name = Sticky Mold
-Description = If an attack lowers its HP to half or less, leeches the attacker.
+Description = If an attack lowers its HP below half, leeches the attacker.
 #-------------------------------
 [STICKYSITUATION]
 Name = Sticky Situation
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes sticky for three turns.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes sticky for three turns.
 #-------------------------------
 [STONEMANE]
 Name = Stone Mane
@@ -2127,7 +2127,7 @@ Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special 
 #-------------------------------
 [SUDDENTURN]
 Name = Sudden Turn
-Description = Uses Rapid Spin if an attack lowers its HP to half or below.
+Description = Uses Rapid Spin if an attack lowers its HP below half.
 #-------------------------------
 [SUMMITSPIRIT]
 Name = Summit Spirit
@@ -2321,7 +2321,7 @@ Description = Deals 30% more damage to targets that have an item. After attackin
 #-------------------------------
 [VENGEANCE]
 Name = Vengeance
-Description = After an attack reduces its HP to half or less, deals 1/4th of the attacker's HP back to the attacker.
+Description = After an attack reduces its HP below half, deals 1/4th of the attacker's HP back to the attacker.
 #-------------------------------
 [VENOMDETTA]
 Name = Venomdetta
@@ -2452,7 +2452,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [WRATHINSTINCT]
 Name = Wrath Instinct
-Description = Uses Dragon Dance if an attack lowers its HP to half or below.
+Description = Uses Dragon Dance if an attack lowers its HP below half.
 #-------------------------------
 [WREAKHAVOC]
 Name = Wreak Havoc
