@@ -56,6 +56,10 @@ Name = Anarchic
 Description = Doubles Speed in eclipse.
 Flags = EclipseSynergy
 #-------------------------------
+[APATHETIC]
+Name = Apathetic
+Description = The Pokémon moves after all other Pokémon do.
+#-------------------------------
 [APPREHENSIVE]
 Name = Apprehensive
 Description = Takes 35% less damage in eclipse, except in total eclipse.
@@ -559,6 +563,10 @@ Description = Uses Lightning Dance if an attack lowers its HP to half or below.
 Name = Emotion Aura
 Description = Upon entry, creates an Emotion Room for four turns, which swaps each Pokemon's ability to its other ability each turn.
 #-------------------------------
+[EMPATHFINDER]
+Name = Empathfinder
+Description = When a foe switches to replace a fainted Pokemon, gives information about the switch and let's you switch beforehand.
+#-------------------------------
 [ENERGETIC]
 Name = Energetic
 Description = Can't be numbed, waterlogged, or have its Speed reduced.
@@ -758,6 +766,10 @@ Description = Raises Attack and Sp. Atk by two steps when hit by a not-very-effe
 [FOREMAN]
 Name = Foreman
 Description = Doubles the Pokémon's Speed in Rooms.
+#-------------------------------
+[FOREWARNING]
+Name = Forewarning
+Description = Foretold moves also hit for half power on the turn they are used.
 #-------------------------------
 [FREERIDE]
 Name = Free Ride
@@ -1197,7 +1209,7 @@ Description = Doubles the damage and recoil of recoil moves.
 #-------------------------------
 [LIVEANDLURK]
 Name = Live and Lurk
-Description = When the Pokemon charges and becomes invulnerable, it heals for 25% HP. This can overheal.
+Description = When the Pokemon charges and becomes hidden, it heals for 25% HP. This can overheal.
 #-------------------------------
 [LIVEFAST]
 Name = Live Fast
@@ -1893,7 +1905,7 @@ Description = Powers up Fighting-type moves by 50%.
 #-------------------------------
 [SHOWOFF]
 Name = Show Off
-Description = When the Pokemon charges and becomes invulnerable, it lowers the Attack and Sp. Atk of all foes.
+Description = When the Pokémon charges and becomes hidden, it lowers the Attack and Sp. Atk of all foes.
 #-------------------------------
 [SICKENING]
 Name = Sickening
@@ -1939,7 +1951,7 @@ Description = Can't be leeched, drained, or trapped.
 #-------------------------------
 [SLINKY]
 Name = Slinky
-Description = Two-turn semi-invulnerable moves such as Dig deal double damage.
+Description = The Pokémon deals double damage with moves that cause the user to become hidden.
 #-------------------------------
 [SLIPSTREAM]
 Name = Slipstream
@@ -1956,6 +1968,10 @@ Description = Falls asleep upon entry, but raises all of its stats by two steps.
 [SNOOZEFEST]
 Name = Snoozefest
 Description = Whenever the Pokémon falls asleep, each other battler becomes drowsy.
+#-------------------------------
+[SNORER]
+Name = Snorer
+Description = When hit while asleep, hits back instantly with Snore at half power.
 #-------------------------------
 [SNOWSHROUD]
 Name = Snow Shroud

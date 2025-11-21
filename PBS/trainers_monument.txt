@@ -2349,8 +2349,8 @@ Pokemon = BRELOOM,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = FURRET,70
-    Moves = COIL,QUICKATTACK,MEGAPUNCH,KNOCKOFF
-    AbilityIndex = 0 # Hustle
+    Moves = CAMOUFLAGE,QUICKATTACK,DIVE,KNOCKOFF
+    AbilityIndex = 1 # Slinky
     Item = LEFTOVERS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,10,20,0,10,0

@@ -297,12 +297,15 @@ BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?
         next if target.fainted?
-        next -30 if aiCheck
         next if user.effectActive?(:Trapping)
         next if user.effectActive?(:Binding)
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        score = 30
+        score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+        score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+        next score if aiCheck
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being constricted!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
@@ -316,12 +319,15 @@ BattleHandlers::TargetAbilityOnHit.add(:MAGNETTRAP,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.specialMove?
         next if target.fainted?
-        next -30 if aiCheck
         next if user.effectActive?(:Trapping)
         next if user.effectActive?(:Binding)
         next if target.effectActive?(:SwitchedIn)
         trappingDuration = 3
         trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        score = 30
+        score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+        score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+        next score if aiCheck
         battle.pbShowAbilitySplash(target, ability)
         battle.pbDisplay(_INTL("{1} is being magnetized!", user.pbThis))
         user.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, target))
@@ -400,6 +406,15 @@ BattleHandlers::TargetAbilityOnHit.add(:LOUDSLEEPER,
           next unless target.asleep?
           next -30 * aiNumHits if aiCheck
           battle.forceUseMove(target, :SNORE, user.index, ability: ability)
+    }
+)
+
+BattleHandlers::TargetAbilityOnHit.add(:SNORER,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+          next if target.fainted?
+          next unless target.asleep?
+          next -15 * aiNumHits if aiCheck
+          battle.forceUseMove(target, :SNORE, user.index, ability: ability, moveUsageEffect: :Snorer)
     }
 )
 

@@ -48,10 +48,6 @@ Description = The Pokémon is angered when it takes a critical hit, and that max
 Name = Anticipation
 Description = Senses a foe's dangerous moves.
 #-------------------------------
-[APATHETIC]
-Name = Apathetic
-Description = Takes no damage from status ailments.
-#-------------------------------
 [AQUAPROPULSION]
 Name = Aqua Propulsion
 Description = Boosts Sp. Atk and Speed by 25% in rain.
