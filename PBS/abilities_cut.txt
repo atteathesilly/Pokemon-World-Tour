@@ -16,6 +16,10 @@ Description = Powers up moves of the same type.
 Name = Adaptive Skin
 Description = After being attacked, gains resistance to that move's type but loses other adaptive resistances.
 #-------------------------------
+[VIGILANT]
+Name = Vigilant
+Description = Takes 40% less damage while using a status move.
+#-------------------------------
 [AERILATE]
 Name = Aerilate
 Description = Normal-type moves become Flying-type and power up by 30%.
