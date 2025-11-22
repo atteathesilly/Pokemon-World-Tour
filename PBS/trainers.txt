@@ -481,62 +481,41 @@ Pokemon = GPONYTA,23
     Moves = MISHAP,FLOWSTATE,HEARTSTAMP
     AbilityIndex = 0 # Joyous Sorrow
 #-------------------------------
-[SOCIALITE,Elizabeth]
-Pokemon = URSARING,22
-    Moves = BULLDOZE,SCRATCH,SMASH
-    AbilityIndex = 1 # Tough
-Pokemon = GIRAFARIG,22
-    Moves = BRUTALSWING,MINDWAVES
-    AbilityIndex = 1 # Phase Shift
+[BATTLEGIRL4,Meg]
+Pokemon = STEELIX,22
+    Moves = DUSTDEVIL,SHREDSHOT,DRAGONBREATH
+    AbilityIndex = 0 # Radiate
+Pokemon = SKIPLOOM,22
+    Moves = AUTUMNBLAST,SQUALLDART,DAZZLINGGLEAM
+    AbilityIndex = 0 # Aerodynamic
+Pokemon = CLEFAIRY,22
+    Moves = BALEFULBOP,ROCKTOMB,FIREPUNCH,FRIGIDJEALOUSY
+    AbilityIndex = 0 # Magic Guard
+    Item = EVIOLITE
 #-------------------------------
-[LASS4,Chloe]
-Pokemon = YAMASK,22
-    Moves = FIRESPIN,WILLOWISP,DEADEND
-    AbilityIndex = 0 # Mummy
+[PLZA_HEX_MANIAC,Nikki]
+Pokemon = WEEPINBELL,23
+    Moves = VINEBIND,POISONFANG,AERIALACE,ANESTHETIZE
+    AbilityIndex = 1 # Flytrap
     Item = SITRUSBERRY
-Pokemon = ROSELIA,22
-    Moves = RAZORLEAF,ENVENOM,CROSSPOISON
-    AbilityIndex = 1 # Merciless
-    Item = GRASSGEM
+Pokemon = MISDREAVUS,23
+    Moves = BALEFULBOP,OMINOUSWIND,ICYWIND,ROUND
+    AbilityIndex = 1 # Ear-Splitting
+Pokemon = PUMPKABOO,24
+    Moves = MYSTERYSEED,FIREPULSE,AUTUMNBLAST,SOULEATER
+    AbilityIndex = 0 # Flourishing
 #-------------------------------
-[GAMBLER,Gregor]
-Pokemon = MEOWTH,21
-    Moves = PAYDAY,SCRATCH,STAMPDOWN
-    AbilityIndex = 1 # All That Glitters
-    Item = NORMALGEM,GROUNDGEM
-Pokemon = AMEOWTH,22
-    Moves = DAZZLE,CRYSTALGLEAM,PLANTDOUBT,PAYDAY
-    AbilityIndex = 0 # Fur Coat
-    Item = DARKGEM
-Pokemon = GMEOWTH,22
-    Moves = SHARPEN,METALCLAW,PAYDAY,FAKEOUT
-    AbilityIndex = 1 # Steely Spirit
-    Item = STEELGEM
-#-------------------------------
-[MAID,Alice]
-Pokemon = AUDINO,23
-    Moves = SHOUT,DAZZLINGGLEAM,ROUND,BABYDOLLEYES
-    AbilityIndex = 1 # Regenerator
-    Item = CADOBERRY
-Pokemon = FRILLISH,23
-    Gender = female
-    Moves = SHIVER,CONFUSERAY,BUBBLEBARRAGE,DEADEND
-    AbilityIndex = 1 # Sentry
-Pokemon = LICKITUNG,22
-    Moves = NUMB,SLACKOFF,TAKEDOWN,SHADOWPUNCH
-    AbilityIndex = 0 # Tenderize
-#-------------------------------
-[LASS,Tara]
-Pokemon = ARROKUDA,23
-    Moves = FURYPECKS,SNAP,BITE,AQUAJET
-    AbilityIndex = 1 # Straight Ahead
+[SWIMMER_F5,Tisha]
+Pokemon = KINGLER,23
+    Moves = CLAMP,METALCLAW,RAKE,DIG
+    AbilityIndex = 1 # Bottom Feeder
     Item = WATERGEM
-Pokemon = PIDGEOTTO,22
-    Moves = DUSTDEVIL,SQUALLDART,SHOUT,GROWL
-    AbilityIndex = 1 # Aeroshell
-Pokemon = DRILBUR,23
-    Moves = RAPIDSPIN,TREMOR,METALCLAW,HONECLAWS
-    AbilityIndex = 1 # Juggernaut
+Pokemon = KANGASKHAN,22
+    Moves = HEADBUTT,FLAMECHARGE,SUCKERPUNCH
+    AbilityIndex = 1 # Inner Focus
+Pokemon = DITTO,23
+    Moves = TRANSFORM
+    AbilityIndex = 0 # Imposter
 #-------------------------------
 [SCHOOLKID_M2,Branimir]
 Pokemon = ASANDSHREW,23
