@@ -3677,7 +3677,7 @@ Pokemon = MTANGROWTH,70
     Item = POWERHERB
 Pokemon = MZANGOOSE,70
     Moves = CLOSECOMBAT,VIMRIPPER,FIREPUNCH,SHADOWSNEAK
-    AbilityIndex = 1 # Mental Damage
+    AbilityIndex = 0 # Served Cold
 #-------------------------------
 [TRAINER_Alessa,Alessa]
 Flags = NoPerfect,HideIdentity
