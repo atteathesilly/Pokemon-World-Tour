@@ -3152,6 +3152,7 @@ Target = NearOther
 FunctionCode = HealUserByHalfOfDamageDoneOverheal
 Flags = CanProtect
 Description = The user drains the target's soul. The user's HP is restored by 50% of the damage dealt. This can overheal.
+Animation = STRENGTHSAP
 #-------------------------------
 [SPECTRALTONGUE]
 Name = Spectral Tongue
