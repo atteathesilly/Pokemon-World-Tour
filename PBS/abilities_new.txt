@@ -2061,6 +2061,10 @@ Description = Deals 25% more move damage for each ally in battle.
 Name = Tenderize
 Description = At the end of each round, lowers other numbed Pokémon's Defense and Sp. Def by two steps.
 #-------------------------------
+[TERRAFORMER]
+Name = Terraformer
+Description = Uses Terraform if an attack lowers its HP to half or below.
+#-------------------------------
 [TERRITORIAL]
 Name = Territorial
 Description = Boosts damage by 20% if there is a weather. Immune to weather downsides.

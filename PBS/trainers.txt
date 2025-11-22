@@ -7565,7 +7565,7 @@ Pokemon = SIGILYPH,60
 [ANCIENTPRIEST,Radzayac]
 Pokemon = DIGGERSBY,60
     Moves = SUPERFANG,MEGAPUNCH,UNDERMINE,GUNKSHOT
-    AbilityIndex = 1 # Paranoid
+    AbilityIndex = 1 # Terraformer
 Pokemon = MGIGALITH,60
     Moves = ABERRANTMOTE,SINGINGSTONE,BLOSSOM,LUMINBURST
     AbilityIndex = 0 # Time Interloper
@@ -9045,7 +9045,7 @@ Pokemon = HUNTAIL,70
     AbilityIndex = 0 # Intimidate
 Pokemon = DIGGERSBY,70
     Moves = DRILLRUN,CLOUDBREAK,SWORDSDANCE,ADAMANTINEPRESS
-    AbilityIndex = 1 # Paranoid
+    AbilityIndex = 1 # Terraformer
 #-------------------------------
 [HARLEQUIN,Regis]
 Pokemon = PACHIRISU,70

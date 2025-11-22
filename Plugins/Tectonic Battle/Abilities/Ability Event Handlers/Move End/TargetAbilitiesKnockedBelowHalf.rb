@@ -36,6 +36,12 @@ BattleHandlers::TargetAbilityKnockedBelowHalf.add(:WRATHINSTINCT,
     }
 )
 
+BattleHandlers::TargetAbilityKnockedBelowHalf.add(:TERRAFORMER,
+    proc { |ability, target, user, move, _switched, battle|
+        battle.forceUseMove(target, :TERRAFORM, ability: ability)
+    }
+)
+
 BattleHandlers::TargetAbilityKnockedBelowHalf.add(:EMERGENCYPOWER,
     proc { |ability, target, user, move, _switched, battle|
         battle.forceUseMove(target, :LIGHTNINGDANCE, ability: ability)

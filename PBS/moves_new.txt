@@ -6243,6 +6243,19 @@ Flags = CanMagicCoat
 Description = The user pins the target down with icy spikes, applying frostbite and making it unable to flee.
 Animation = ICICLESPEAR
 #-------------------------------
+[ICYEND]
+Name = Icy End
+Type = ICE
+Category = Adaptive
+Power = 350
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = UserFaintsExplosive
+Flags = CanProtect
+Description = The user explodes in an icy demise to inflict damage on those around it. The user faints upon using this move.
+Animation = EXPLOSION
+#-------------------------------
 [ICYINJECTION]
 Name = Icy Injection
 Type = ICE
