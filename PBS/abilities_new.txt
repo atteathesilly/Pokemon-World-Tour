@@ -2285,6 +2285,10 @@ Description = Powers up Ground-type moves by 50%.
 Name = Ultra Adapted
 Description = Powers up moves of the same type by 50%.
 #-------------------------------
+[UMBRALTENACITY]
+Name = Umbral Tenacity
+Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
+#-------------------------------
 [UNAFRAID]
 Name = Unafraid
 Description = Takes half damage from Dark- and Bug-type moves.
@@ -2322,10 +2326,6 @@ Description = Takes 20% less damage from neutrally effective attacks.
 Name = Unidentified
 Description = The Pokémon is Mutant-type.
 Flags = Immutable
-#-------------------------------
-[UNNATURALRESISTANCE]
-Name = Unnatural Resistance
-Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
 #-------------------------------
 [VANDAL]
 Name = Vandal
