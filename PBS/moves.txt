@@ -1620,19 +1620,6 @@ EffectChance = 30
 Description = The user attacks foes with savagely cold winds. It has a 30% chance to frostbite.
 Animation = HURRICANE
 #-------------------------------
-[BOUNCE]
-Name = Bounce
-Type = FLYING
-Category = Physical
-Power = 85
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableInSkyNumbTarget
-Flags = CanProtect,Kick
-EffectChance = 30
-Description = The user bounces up high, charging and becoming invulnerable, then drops on the foe on the second turn. It has a 30% chance to numb.
-#-------------------------------
 [BRAVEBIRD]
 Name = Brave Bird
 Type = FLYING
@@ -1720,13 +1707,13 @@ Description = The user covers the target's body with a mass of down that lowers 
 Name = Fly
 Type = FLYING
 Category = Physical
-Power = 90
+Power = 135
 Accuracy = 100
-TotalPP = 12
+TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect
-Description = The user soars, charging and becoming invulnerable, then strikes on the second turn.
+Description = The user soars, charging and becoming hidden, then strikes on the second turn.
 #-------------------------------
 [GUST]
 Name = Gust
@@ -2086,13 +2073,13 @@ Description = The user strikes everything around it by stomping on the ground. I
 Name = Dig
 Type = GROUND
 Category = Physical
-Power = 90
+Power = 135
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderground
 Flags = CanProtect
-Description = The user burrows, charging and becoming invulnerable, then attacks on the second turn.
+Description = The user burrows, charging and becoming hidden, then attacks on the second turn.
 #-------------------------------
 [DRILLRUN]
 Name = Drill Run
@@ -2567,7 +2554,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user summons bugs to swarm the target, trapping and damaging it for three turns.
+Description = The user summons bugs to swarm the target, trapping and binding it for three turns.
 #-------------------------------
 [LEECHLIFE]
 Name = Leech Life
@@ -2951,7 +2938,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
-Description = The user disappears, charging and becoming invulnerable, then strikes on the second turn. It hits even if the foe protects itself.
+Description = The user disappears, charging and becoming hidden, then strikes on the second turn. It hits even if the foe protects itself.
 #-------------------------------
 [SHADOWPUNCH]
 Name = Shadow Punch
@@ -2988,7 +2975,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = StealPositiveStatSteps
 Flags = CanProtect
-Description = The user hides in the target's shadow, steals the target's stat boosts, and then attacks.
+Description = The user moves into the target's shadow, steals the target's stat boosts, and then attacks.
 #-------------------------------
 [SPIRITSHACKLE]
 Name = Spirit Shackle
@@ -3495,7 +3482,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect,Wind
-Description = The user engulfs the target in fierce flames, trapping and damaging it for three turns.
+Description = The user engulfs the target in fierce flames, trapping and binding it for three turns.
 #-------------------------------
 [FLAMECHARGE]
 Name = Flame Charge
@@ -3620,7 +3607,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user spews magma around the target, trapping and damaging it for three turns.
+Description = The user spews magma around the target, trapping and binding it for three turns.
 #-------------------------------
 [MINDBLOWN]
 Name = Mind Blown
@@ -3798,19 +3785,19 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user clamps onto the target, trapping and damaging it for three turns.
+Description = The user clamps onto the target, trapping and binding it for three turns.
 #-------------------------------
 [DIVE]
 Name = Dive
 Type = WATER
 Category = Physical
-Power = 90
+Power = 135
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableUnderwater
 Flags = CanProtect
-Description = Diving on the first turn, charging and becoming invulnerable, the user hits from below water on the second turn.
+Description = Diving on the first turn, charging and becoming hidden, the user hits from below water on the second turn.
 #-------------------------------
 [FISHIOUSREND]
 Name = Fishious Rend
@@ -4646,7 +4633,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user throws a cage of electricity around the target, trapping and damaging it for three turns.
+Description = The user throws a cage of electricity around the target, trapping and binding it for three turns.
 #-------------------------------
 [THUNDERFANG]
 Name = Thunder Fang

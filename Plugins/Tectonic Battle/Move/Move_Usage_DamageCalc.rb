@@ -535,6 +535,10 @@ class PokeBattle_Move
             if target.effectActive?(:RefugeDamageReduction)
                 multipliers[:final_damage_multiplier] *= 0.7
             end
+            # Snorer
+            if user.effectActive?(:Snorer)
+                multipliers[:final_damage_multiplier] *= 0.50
+            end
         end
 
         # Mass Attack

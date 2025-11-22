@@ -209,6 +209,16 @@ BattleHandlers::UserAbilityOnHit.add(:CANIDCRUSHER,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:INFAMOUS,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    next getJinxEffectScore(user, target) if aiCheck
+    battle.pbShowAbilitySplash(user, ability)
+    target.applyEffect(:Jinxed, applyEffectDurationModifiers(DEFAULT_JINX_DURATION, user))
+    battle.pbHideAbilitySplash(user)
+  }
+)
+
 #########################################
 # Stat change abilities
 #########################################
@@ -268,6 +278,54 @@ BattleHandlers::UserAbilityOnHit.add(:FATCHANCE,
     end
     next unless target.fainted?
     user.pbRaiseMultipleStatSteps(ALL_STATS_1, user, ability: ability)
+  }
+)
+
+#########################################
+# Binding Abilities
+#########################################
+
+BattleHandlers::UserAbilityOnHit.add(:POWERPINCH,
+	proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+		next unless user.firstTurn?
+    next unless move.physicalMove?
+		next if target.fainted?
+		next if target.effectActive?(:Trapping)
+		next if target.effectActive?(:Binding)
+    trappingDuration = 3
+    trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+    score = 30
+    score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+    score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+    next score if aiCheck
+		battle.pbShowAbilitySplash(user, ability)
+    battle.pbDisplay(_INTL("{1} is caught in the pincers!", target.pbThis))
+		target.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration, user))
+    target.applyEffect(:TrappingAbility, :POWERPINCH)
+		target.pointAt(:TrappingUser, user)
+		battle.pbHideAbilitySplash(user)
+	}
+)
+
+BattleHandlers::UserAbilityOnHit.add(:LAUOHOLASSO,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    next unless move.specialMove?
+    next if target.fainted?
+    next if target.effectActive?(:Trapping)
+    next if target.effectActive?(:Binding)
+    trappingDuration = 3
+    trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+    score = 30
+    score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+    score *= 2 if user.hasActiveItemAI?(:GRIPCLAW)
+    next score if aiCheck
+    battle.pbShowAbilitySplash(user,ability)
+    battle.pbDisplay(_INTL("{1} is caught in a lasso!", target.pbThis))
+    target.applyEffect(:Binding, applyEffectDurationModifiers(trappingDuration,user))
+    target.applyEffect(:TrappingAbility, :LAUOHOLASSO)
+    target.pointAt(:TrappingUser, user)
+    battle.pbHideAbilitySplash(user)
   }
 )
 

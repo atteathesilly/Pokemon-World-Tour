@@ -572,7 +572,7 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
         pbChargingTurnMessage(user, targets) if @chargingTurn
         if @chargingTurn && @damagingTurn # Move only takes one turn to use
             pbShowAnimation(@id, user, targets, 1) # Charging anim
-            targets.each { |b| pbChargingTurnEffect(user, b) }
+            pbChargingTurnGeneralEffect(user)
             if @powerHerb
                 # Moves that would make the user semi-invulnerable will hide the user
                 # after the charging animation, so the "UseItem" animation shouldn't show
@@ -581,7 +581,8 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
                     TwoTurnAttackInvulnerableInSky
                     TwoTurnAttackInvulnerableUnderground
                     TwoTurnAttackInvulnerableUnderwater
-                    TwoTurnAttackInvulnerableInSkyNumbTarget
+                    TwoTurnAttackInvulnerableHiding
+                    TwoTurnAttackInvulnerableInFoliage
                     TwoTurnAttackInvulnerableScalesFaster
                     TwoTurnAttackInvulnerableJinxFrostbite
                     TwoTurnAttackInvulnerableRemoveProtections].include?(@function)
@@ -598,10 +599,11 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
 
     def pbAttackingTurnMessage(user, targets); end
 
+    # For effects that affect the target
     def pbChargingTurnEffect(user, target)
-        # Skull Bash/Sky Drop/Infinite Wing are the only two-turn moves with an effect here, and
-        # the latter just records the target is being Sky Dropped
     end
+
+    def pbChargingTurnGeneralEffect(user); end
 
     def pbAttackingTurnEffect(user, target); end
 
@@ -611,6 +613,10 @@ class PokeBattle_TwoTurnMove < PokeBattle_Move
         elsif @chargingTurn
             pbChargingTurnEffect(user, target)
         end
+    end
+
+    def pbEffectGeneral(user)
+        pbChargingTurnGeneralEffect(user) if @chargingTurn && !@damagingTurn
     end
 
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
@@ -1332,32 +1338,56 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     def initialize(battle, move)
         super
         @turnCount = 3
+        @forewarned = false
+    end
+
+    def pbOnStartUse(user, targets)
+        if user.hasActiveAbility?(:FOREWARNING) && !@battle.foretoldMove
+            user.showMyAbilitySplash(:FOREWARNING)
+            @battle.pbDisplay(_INTL("{1} gives a taste of what's to come!", user.pbThis))
+            @forewarned = true
+            user.hideMyAbilitySplash
+        end
+    end
+
+    # Halve the damage of Forewarned first-turn attacks
+    def pbBaseDamage(baseDmg, _user, _target)
+        baseDmg /= 2 if @forewarned
+        return baseDmg
+    end
+
+    def resetMoveUsageState
+        @forewarned = false
+    end
+
+    def foretoldDamagingTurn?
+        return @battle.foretoldMove || @forewarned
     end
 
     def damagingMove?(aiCheck = false) # Stops damage being dealt in the setting-up turn
         if aiCheck
             return super
         else
-            return false unless @battle.futureSight
+            return false unless foretoldDamagingTurn?
             return super
         end
     end
 
     def pbAccuracyCheck(user, target)
-        return true unless @battle.futureSight
+        return true unless foretoldDamagingTurn?
         return super
     end
 
     def pbDisplayUseMessage(user, targets)
-        super unless @battle.futureSight
+        super unless foretoldDamagingTurn?
     end
 
     def displayWeatherDebuffMessages(user, type)
-        super unless @battle.futureSight
+        super unless foretoldDamagingTurn?
     end
 
     def pbFailsAgainstTarget?(_user, target, show_message)
-        if !@battle.futureSight && target.position.effectActive?(:FutureSightCounter)
+        if !foretoldDamagingTurn? && target.position.effectActive?(:ForetoldMoveCounter)
             if show_message
                 @battle.pbDisplay(_INTL("But it failed, since an attack is already foreseen against {1}!", target.pbThis(true)))
             end
@@ -1367,33 +1397,40 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
     end
 
     def pbEffectAgainstTarget(user, target)
-        return if @battle.futureSight # Attack is hitting
+        return if @battle.foretoldMove
         count = @turnCount
         count -= 2 if user.hasActiveAbility?(:BADOMEN)
         count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
         count = 1 if count < 1
-        target.position.applyEffect(:FutureSightCounter, count)
-        target.position.applyEffect(:FutureSightMove, @id)
-        target.position.pointAt(:FutureSightUserIndex, user)
-        target.position.applyEffect(:FutureSightUserPartyIndex, user.pokemonIndex)
+        target.position.applyEffect(:ForetoldMoveCounter, count)
+        target.position.applyEffect(:ForetoldMove, @id)
+        target.position.pointAt(:ForetoldMoveUserIndex, user)
+        target.position.applyEffect(:ForetoldMoveUserPartyIndex, user.pokemonIndex)
         if @id == :DOOMDESIRE
             @battle.pbDisplay(_INTL("{1} chose Doom Desire as its destiny!", user.pbThis))
         elsif @id == :ARTILLERIZE
             @battle.pbDisplay(_INTL("{1} fires a shell high in the air!", user.pbThis))
-        else
+        elsif @id == :GHOSTLYTALE
+            @battle.pbDisplay(_INTL("{1} weaves a tale of woe and horror!", user.pbThis))
+        elsif @id == :STROKEOFMIDNIGHT
+            @battle.pbDisplay(_INTL("{1} knows when {1}'s time will run out!", user.pbThis, target.pbThis(true)))
+        elsif @id == :LOOMINGWINTER
+            @battle.pbDisplay(_INTL("{1} feels a chill on the air... winter is coming!", user.pbThis))
+        else # Default, for Future Sight
             @battle.pbDisplay(_INTL("{1} foresaw an attack!", user.pbThis))
         end
     end
 
     def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
-        hitNum = 1 unless @battle.futureSight # Charging anim
+        hitNum = 1 unless foretoldDamagingTurn? # Charging anim
         super
     end
 
     def getEffectScore(user, _target)
-        score = -20
-        score -= 50 unless user.alliesInReserve?
-        return score
+        malus = -20
+        malus -= 50 unless user.alliesInReserve?
+        malus /= 2 if user.hasActiveAbilityAI?(:FOREWARNING)
+        return score + malus
     end
 end
 

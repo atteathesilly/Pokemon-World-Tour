@@ -56,6 +56,10 @@ Name = Anarchic
 Description = Doubles Speed in eclipse.
 Flags = EclipseSynergy
 #-------------------------------
+[APATHETIC]
+Name = Apathetic
+Description = The Pokémon moves after all other Pokémon do.
+#-------------------------------
 [APPREHENSIVE]
 Name = Apprehensive
 Description = Takes 35% less damage in eclipse, except in total eclipse.
@@ -173,6 +177,10 @@ Name = Berry Bunch
 Description = Can hold two different items, if both are Berries.
 Flags = MultipleItems
 #-------------------------------
+[BIRDOFPREY]
+Name = Bird of Prey
+Description = Deals 30% more damage to targets that are below half health or that swapped in this turn.
+#-------------------------------
 [BITEY]
 Name = Bitey
 Description = Boosts the power of biting moves by 30%.
@@ -201,7 +209,7 @@ Description = Increase the EXP gained from battles in which it participates by 5
 #-------------------------------
 [BOTTOMFEEDER]
 Name = Bottom Feeder
-Description = Heals from trapping damage it deals. Takes 25% less damage from Pokémon that are trapped.
+Description = Heals from binding damage it deals. Takes 25% less damage from Pokémon that are trapped.
 #-------------------------------
 [BOULDERNEST]
 Name = Boulder Nest
@@ -226,7 +234,7 @@ Description = Moves ignore immunities due to typing.
 #-------------------------------
 [BRILLIANTFLURRY]
 Name = Brilliant Flurry
-Description = If an attack lowers its HP to half or less, lowers all of the attacker's stats.
+Description = If an attack lowers its HP below half, lowers all of the attacker's stats.
 #-------------------------------
 [BRISK]
 Name = Brisk
@@ -354,7 +362,7 @@ Description = When hit with an attack, gains that attack's type.
 #-------------------------------
 [CONSTRICTOR]
 Name = Constrictor
-Description = When hit with a physical move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a physical move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [COREPROVENANCE]
 Name = Core Provenance
@@ -378,7 +386,7 @@ Description = Foretold moves take one turn longer to attack but deal 50% more da
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
-Description = When a foe hits the Pokémon with a physical move, they are warned. If they do it again, they become cursed.
+Description = When a foe hits the Pokémon, they are warned. If they do it again, they become cursed.
 #-------------------------------
 [CYNIC]
 Name = Cynic
@@ -510,7 +518,7 @@ Description = Raises Sp. Atk by two steps whenever any battler falls asleep.
 #-------------------------------
 [DREAMYHAZE]
 Name = Dreamy Haze
-Description = If an attack lowers its HP to half or less, the attacker becomes drowsy.
+Description = If an attack lowers its HP below half, the attacker becomes drowsy.
 #-------------------------------
 [DREARYCLOUDS]
 Name = Dreary Clouds
@@ -553,11 +561,15 @@ Description = Boosts the power of pulse moves by 30%.
 #-------------------------------
 [EMERGENCYPOWER]
 Name = Emergency Power
-Description = Uses Lightning Dance if an attack lowers its HP to half or below.
+Description = Uses Lightning Dance if an attack lowers its HP below half.
 #-------------------------------
 [EMOTIONAURA]
 Name = Emotion Aura
 Description = Upon entry, creates an Emotion Room for four turns, which swaps each Pokemon's ability to its other ability each turn.
+#-------------------------------
+[EMPATHFINDER]
+Name = Empathfinder
+Description = When a foe switches to replace a fainted Pokemon, gives information about the switch and let's you switch beforehand.
 #-------------------------------
 [ENERGETIC]
 Name = Energetic
@@ -583,10 +595,6 @@ Description = The Pokemon's Fighting-type attacks become spread and deal 35% mor
 Name = Event Horizon
 Description = Changes the weather to Star Storm, which increases its damage over time. Lingers for three turns after leaving.
 Flags = SandstormSynergy
-#-------------------------------
-[EXCAVATOR]
-Name = Excavator
-Description = Dig and Undermine deal 50% more damage.
 #-------------------------------
 [EXORCIST]
 Name = Exorcist
@@ -763,6 +771,10 @@ Description = Raises Attack and Sp. Atk by two steps when hit by a not-very-effe
 Name = Foreman
 Description = Doubles the Pokémon's Speed in Rooms.
 #-------------------------------
+[FOREWARNING]
+Name = Forewarning
+Description = Foretold moves also hit for half power on the turn they are used.
+#-------------------------------
 [FREERIDE]
 Name = Free Ride
 Description = Raises other allies' Speed by two steps upon entry.
@@ -865,7 +877,7 @@ Description = Intensifies gravity for four turns when hit by an attack.
 #-------------------------------
 [GRIPSTRENGTH]
 Name = Grip Strength
-Description = Moves that trap and damage the opponent for three turns deal 50% more damage on the initial hit.
+Description = Moves that trap and bind the opponent deal 50% more damage on the initial hit.
 #-------------------------------
 [GRIT]
 Name = Grit
@@ -879,13 +891,9 @@ Description = Raises Attack and Sp. Atk whenever any Pokémon uses a dance move.
 Name = Grotesque Vitals
 Description = Heals 1/16th HP every turn. Protected from being poisoned.
 #-------------------------------
-[GYRESPINNER]
-Name = Gyre Spinner
-Description = Upon entry, traps each opponent in a whirlpool for two turns.
-#-------------------------------
 [HANDOFF]
 Name = Hand Off
-Description = Trapping effects against an enemy are passed over to a Pokémon that swaps in for this.
+Description = Trapping and binding effects against an enemy are passed over to an ally that swaps in for this Pokémon.
 #-------------------------------
 [HARBINGER]
 Name = Harbinger
@@ -894,7 +902,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [HARDAS]
 Name = Hard As
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes fractured.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes fractured.
 #-------------------------------
 [HARDFALL]
 Name = Hard Fall
@@ -1086,6 +1094,10 @@ Description = Immune to Steel-type moves and raises Speed if hit by one.
 Name = Inexorable
 Description = Pokémon take damage from non-volatile status conditions even while switched out.
 #-------------------------------
+[INFAMOUS]
+Name = Infamous
+Description = On the first turn, its attacks jinx the target.
+#-------------------------------
 [INFECTED]
 Name = Infected
 Description = The Pokémon is also Grass-type. When hit by an attack, the attacker's ability becomes Infected.
@@ -1147,7 +1159,7 @@ Flags = MoldBreaking
 #-------------------------------
 [KARMA]
 Name = Karma
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes jinxed.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes jinxed.
 #-------------------------------
 [KELPLINK]
 Name = Kelp Link
@@ -1178,6 +1190,10 @@ Name = Last Gasp
 Description = Cannot take damage or be switched out. Hears Perish Song upon entry, ensuring its demise.
 Flags = Immutable
 #-------------------------------
+[LAUOHOLASSO]
+Name = Lauoho Lasso
+Description = On the first turn, its special attacks trap the target and damage it for three turns.
+#-------------------------------
 [LEVIATHAN]
 Name = Leviathan
 Description = Protected from critical hits. Can't be burned or frostbitten.
@@ -1198,6 +1214,10 @@ Description = Deals 50% more damage to targets that switched in this turn. Takes
 [LINEBACKER]
 Name = Linebacker
 Description = Doubles the damage and recoil of recoil moves.
+#-------------------------------
+[LIVEANDLURK]
+Name = Live and Lurk
+Description = When the Pokemon charges and becomes hidden, it heals for 25% HP. This can overheal.
 #-------------------------------
 [LIVEFAST]
 Name = Live Fast
@@ -1223,6 +1243,10 @@ Description = Boosts power of sound-based moves by 30%.
 [LOUDSLEEPER]
 Name = Loud Sleeper
 Description = When hit while asleep, hits back instantly with Snore.
+#-------------------------------
+[LUCKYCHARM]
+Name = Lucky Charm
+Description = Sets a Sanctuary for four turns upon entry.
 #-------------------------------
 [LUNARIOT]
 Name = Luna Riot
@@ -1253,11 +1277,11 @@ Description = Pokémon that swap in for this have their Attack and Sp. Atk raise
 #-------------------------------
 [MAGNETTRAP]
 Name = Magnet Trap
-Description = When hit with a special move, traps and damages the attacker for three turns. Fails on turns the user switched in.
+Description = When hit with a special move, traps and binds the attacker for three turns. Fails on turns the user switched in.
 #-------------------------------
 [MALICE]
 Name = Malice
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes cursed.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes cursed.
 #-------------------------------
 [MALICIOUSGLOW]
 Name = Malicious Glow
@@ -1267,10 +1291,6 @@ Flags = MoonglowSynergy
 [MARINE]
 Name = Marine
 Description = Physical moves have a 30% chance to waterlog targets.
-#-------------------------------
-[MARINEMENACE]
-Name = Marine Menace
-Description = Dive and Depth Charge deal 50% more damage.
 #-------------------------------
 [MARTIALDISCIPLINE]
 Name = Martial Discipline
@@ -1323,7 +1343,7 @@ Description = Pokémon that swap in for this have their Defense and Sp. Defense 
 #-------------------------------
 [MOISTSKIN]
 Name = Moist Skin
-Description = If an attack lowers its HP to half or less, waterlogs the attacker.
+Description = If an attack lowers its HP below half, waterlogs the attacker.
 #-------------------------------
 [MONKEYMISCHIEF]
 Name = Monkey Mischief
@@ -1583,6 +1603,10 @@ Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insul
 [POWERLIFTER]
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.
+#-------------------------------
+[POWERPINCH]
+Name = Power Pinch
+Description = On the first turn, its physical attacks trap the target and damage it for three turns.
 #-------------------------------
 [PREEMINENCE]
 Name = Preeminence
@@ -1851,6 +1875,10 @@ Description = When targeted by a status move, the offending Pokémon becomes poi
 Name = Seed Sowing
 Description = Special moves have a 30% chance to leech targets.
 #-------------------------------
+[SEER]
+Name = Seer
+Description = Foretold moves deal 50% more damage.
+#-------------------------------
 [SELECTIVESCUTES]
 Name = Selective Scutes
 Description = Boosts one defending stat by two steps according to the foe's Attack and Sp. Atk.
@@ -1882,6 +1910,10 @@ Description = Punching moves change the Pokémon's secondary type and their powe
 [SHOCKSTYLE]
 Name = Shock Style
 Description = Powers up Fighting-type moves by 50%.
+#-------------------------------
+[SHOWOFF]
+Name = Show Off
+Description = When the Pokémon charges and becomes hidden, it lowers the Attack and Sp. Atk of all foes.
 #-------------------------------
 [SICKENING]
 Name = Sickening
@@ -1927,7 +1959,7 @@ Description = Can't be leeched, drained, or trapped.
 #-------------------------------
 [SLINKY]
 Name = Slinky
-Description = Two-turn retreat moves such as Dig deal double damage.
+Description = The Pokémon deals double damage with moves that cause the user to become hidden.
 #-------------------------------
 [SLIPSTREAM]
 Name = Slipstream
@@ -1944,6 +1976,10 @@ Description = Falls asleep upon entry, but raises all of its stats by two steps.
 [SNOOZEFEST]
 Name = Snoozefest
 Description = Whenever the Pokémon falls asleep, each other battler becomes drowsy.
+#-------------------------------
+[SNORER]
+Name = Snorer
+Description = When hit while asleep, hits back instantly with Snore at half power.
 #-------------------------------
 [SNOWSHROUD]
 Name = Snow Shroud
@@ -2019,10 +2055,6 @@ Flags = EclipseSynergy
 Name = Steam Power
 Description = Takes 50% less damage from Water-type moves. Raises Speed by four steps when hit by one.
 #-------------------------------
-[STEEPFLYING]
-Name = Steep Flying
-Description = Fly and Dive Bomb deal 50% more damage.
-#-------------------------------
 [STERN]
 Name = Stern
 Description = Its attacks are critical against waterlogged targets.
@@ -2033,11 +2065,11 @@ Description = Can hold a second item by stealing it.
 #-------------------------------
 [STICKYMOLD]
 Name = Sticky Mold
-Description = If an attack lowers its HP to half or less, leeches the attacker.
+Description = If an attack lowers its HP below half, leeches the attacker.
 #-------------------------------
 [STICKYSITUATION]
 Name = Sticky Situation
-Description = If an attack lowers the Pokémon's HP to half or less, the attacker becomes sticky for three turns.
+Description = If an attack lowers the Pokémon's HP below half, the attacker becomes sticky for three turns.
 #-------------------------------
 [STONEMANE]
 Name = Stone Mane
@@ -2103,7 +2135,7 @@ Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special 
 #-------------------------------
 [SUDDENTURN]
 Name = Sudden Turn
-Description = Uses Rapid Spin if an attack lowers its HP to half or below.
+Description = Uses Rapid Spin if an attack lowers its HP below half.
 #-------------------------------
 [SUMMITSPIRIT]
 Name = Summit Spirit
@@ -2301,7 +2333,7 @@ Description = Deals 30% more damage to targets that have an item. After attackin
 #-------------------------------
 [VENGEANCE]
 Name = Vengeance
-Description = After an attack reduces its HP to half or less, deals 1/4th of the attacker's HP back to the attacker.
+Description = After an attack reduces its HP below half, deals 1/4th of the attacker's HP back to the attacker.
 #-------------------------------
 [VENOMDETTA]
 Name = Venomdetta
@@ -2322,10 +2354,6 @@ Description = The Pokemon's Dragon-type attacks become spread and drain 33% HP.
 [VICTORYMOLT]
 Name = Victory Molt
 Description = Heals non-volatile status conditions and resets stat changes after knocking out any Pokémon.
-#-------------------------------
-[VIGILANT]
-Name = Vigilant
-Description = Takes 40% less damage while using a status move.
 #-------------------------------
 [VITALRHYTHM]
 Name = Vital Rhythm
@@ -2432,7 +2460,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [WRATHINSTINCT]
 Name = Wrath Instinct
-Description = Uses Dragon Dance if an attack lowers its HP to half or below.
+Description = Uses Dragon Dance if an attack lowers its HP below half.
 #-------------------------------
 [WREAKHAVOC]
 Name = Wreak Havoc

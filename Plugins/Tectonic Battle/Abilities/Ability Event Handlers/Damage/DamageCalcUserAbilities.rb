@@ -284,6 +284,15 @@ BattleHandlers::DamageCalcUserAbility.add(:BADOMEN,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:SEER,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.foretoldMove?
+      mults[:base_damage_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:CREEPINGHORROR,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.foretoldMove?
@@ -344,6 +353,15 @@ BattleHandlers::DamageCalcUserAbility.add(:LIMINAL,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if target.effectActive?(:SwitchedIn)
       mults[:attack_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+BattleHandlers::DamageCalcUserAbility.add(:BIRDOFPREY,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if target.effectActive?(:SwitchedIn) || target.belowHalfHealth?
+      mults[:attack_multiplier] *= 1.3
       user.aiLearnsAbility(ability) unless aiCheck
     end
   }

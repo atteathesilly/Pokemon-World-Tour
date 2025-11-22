@@ -58,17 +58,6 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user squeezes the target, trapping and damaging it for three turns.
 #-------------------------------
-[CAMOUFLAGE]
-Name = Camouflage
-Type = NORMAL
-Category = Status
-Accuracy = 0
-TotalPP = 15
-Target = User
-FunctionCode = Invalid
-Flags = CanSnatch
-Description = The user's type is changed depending on its environment, such as at water's edge, in grass, or in a cave.
-#-------------------------------
 [CELEBRATE]
 Name = Celebrate
 Type = NORMAL
@@ -808,6 +797,18 @@ FunctionCode = Invalid
 Flags = CanProtect,Pulse
 Description = Uses the power of the terrain to attack. Type and power changes depending on the terrain.
 #-------------------------------
+[VICEGRIP]
+Name = Vice Grip
+Type = NORMAL
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = Huge, impressive pincers grip and squeeze the foe.
+#-------------------------------
 [VISEGRIP]
 Name = Vise Grip
 Type = NORMAL
@@ -1095,6 +1096,31 @@ Target = AllNearFoes
 FunctionCode = Invalid
 Flags = CanProtect,CanRandomCrit,Blade,Wind
 Description = The user launches razor-like wind to slash the opposing team. Can random critical hit.
+#-------------------------------
+[BOUNCE]
+Name = Bounce
+Type = FLYING
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,Kick
+EffectChance = 30
+Description = The user bounces up high, charging and becoming invulnerable, then drops on the foe on the second turn. It has a 30% chance to numb.
+#-------------------------------
+[DIVEBOMB]
+Name = Dive Bomb
+Type = FLYING
+Category = Physical
+Power = 125
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user soars up high, charging and becoming invulnerable, then dive bombs the target on the second turn.
 #-------------------------------
 [HURRICANE]
 Name = Hurricane
@@ -1588,6 +1614,18 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user spins a sandstorm around the target, trapping and damaging it for three turns.
 #-------------------------------
+[UNDERMINE]
+Name = Undermine
+Type = GROUND
+Category = Physical
+Power = 125
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user burrows deep, charging and becoming invulnerable, then attacks with devastating power on the second turn.
+#-------------------------------
 #		ROCK MOVES
 #-------------------------------
 [DIAMONDFIELD]
@@ -2024,6 +2062,19 @@ FunctionCode = Invalid
 Flags = CanSnatch
 Description = The user engages its gears to raise the Attack and Sp. Atk of allies with the Plus or Minus Ability.
 #-------------------------------
+[HAIRCURL]
+Name = Hair Curl
+Type = STEEL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user curls its metal hair around the target, trapping and damaging it for three turns.
+Animation = BIND
+#-------------------------------
 [IRONTAIL]
 Name = Iron Tail
 Type = STEEL
@@ -2303,6 +2354,19 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect,CanRandomCrit
 Description = The target is hammered with a large pincer. Can random critical hit.
+#-------------------------------
+[DEPTHCHARGE]
+Name = Depth Charge
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = The user dives deep on the first turn, charging and becoming invulnerable, then rises and strikes with explosive strength on the second.
+Animation = DIVE
 #-------------------------------
 [HYPERJET]
 Name = Hyper Jet

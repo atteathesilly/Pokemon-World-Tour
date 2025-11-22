@@ -110,6 +110,7 @@ module BattleHandlers
     EndOfMoveStatRestoreItem            = ItemHandlerHash.new   # White Herb
     UserAbilityEndOfExhaustingMove      = AbilityHandlerHash.new # Remanent Voltage
     UserAbilityEndOfTrappingMove        = AbilityHandlerHash.new # Denticle Debris
+    UserAbilityOnSemiInvulnerable       = AbilityHandlerHash.new
     # Experience and EV gain
     ExpGainModifierItem                 = ItemHandlerHash.new # Lucky Egg
     EVGainModifierItem                  = ItemHandlerHash.new
@@ -559,6 +560,11 @@ module BattleHandlers
 
     def self.triggerUserAbilityEndOfTrappingMove(ability, user, targets, move, battle)
         UserAbilityEndOfTrappingMove.trigger(ability, user, targets, move, battle)
+    end
+
+    def self.triggerUserAbilityOnSemiInvulnerable(ability, user, move, battle, aiCheck)
+        ret = UserAbilityOnSemiInvulnerable.trigger(ability, user, move, battle, aiCheck)
+        return !ret.nil? ? ret : 0
     end
 
     #=============================================================================

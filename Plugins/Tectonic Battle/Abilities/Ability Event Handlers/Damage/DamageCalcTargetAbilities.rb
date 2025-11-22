@@ -276,7 +276,9 @@ BattleHandlers::DamageCalcTargetAbility.add(:APPREHENSIVE,
 
 BattleHandlers::DamageCalcTargetAbility.add(:BULLY,
   proc { |ability, user, target, _move, mults, _baseDmg, type, aiCheck|
-    if target.pbHeight < user.pbHeight
+    # Important reminder: User is the one using the move, target is the one being hit
+    # This means for an ability that affects being hit, *target* is the Pokemon with the ability
+    if user.pbHeight < target.pbHeight
       mults[:base_damage_multiplier] *= 0.7
       target.aiLearnsAbility(ability) unless aiCheck
     end

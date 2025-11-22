@@ -65,6 +65,9 @@ def battleKeywordsImportant
         "cursing",
         "cursed",
         "curse",
+        "blind",
+        "blinds",
+        "blindness",
         "fracturing",
         "fractured",
         "fracture",
@@ -136,6 +139,10 @@ def battleKeywordsImportant
         "substitutes",
         "substitute",
         "sticky",
+        "binding",
+        "binds",
+        "bind",
+        "hidden",
     ]
 end
 

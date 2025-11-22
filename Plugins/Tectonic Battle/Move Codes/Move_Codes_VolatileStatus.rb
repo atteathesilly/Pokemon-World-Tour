@@ -438,7 +438,7 @@ class PokeBattle_Move_CurseTarget < PokeBattle_Move
 end
 
 #===============================================================================
-# Curses the targey. Money is gained from curse damage. (Pharaoh's Curse)
+# Curses the target. Money is gained from curse damage. (Pharaoh's Curse)
 #===============================================================================
 class PokeBattle_Move_CurseTargetEarnMoneyFromCurse < PokeBattle_Move_CurseTarget
     def pbFailsAgainstTarget?(user, target, show_message)
@@ -752,6 +752,46 @@ class PokeBattle_Move_FractureTarget < PokeBattle_Move
 
     def getEffectScore(user, target)
         return getFractureEffectScore(user, target)
+    end
+end
+
+#===============================================================================
+# User blinds the target.
+#===============================================================================
+class PokeBattle_Move_BlindTarget < PokeBattle_Move
+    def pbFailsAgainstTarget?(user, target, show_message)
+        return false if damagingMove?
+        if target.effectActive?(:Blindness)
+            @battle.pbDisplay(_INTL("But it failed, since {1} is already blinded!", target.pbThis(true))) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbEffectAgainstTarget(user, target)
+        return if damagingMove?
+        target.applyEffect(:Blindness)
+    end
+
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
+        return if target.effectActive?(:Blindness)
+        target.applyEffect(:Blindness)
+    end
+
+    def getEffectScore(user, target)
+        return getBlindnessEffectScore(user, target)
+    end
+end
+
+#===============================================================================
+# Blinds the target if it was switched in this turn. (Hair Flip)
+#===============================================================================
+
+class PokeBattle_Move_BlindOnSwitchIn < PokeBattle_Move_BlindTarget
+    def pbAdditionalEffect(user, target)
+        return if !target.effectActive?(:SwitchedIn)
+        super
     end
 end
 

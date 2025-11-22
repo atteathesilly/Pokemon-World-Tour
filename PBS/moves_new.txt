@@ -421,7 +421,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TypeDependsOnUserGemPlateVeil
 Flags = CanProtect
-Description = The user expresses a hidden potential. Changes type to match the user's Gem, Plate, or Crystal Veil.
+Description = The user expresses a mystical potential. Changes type to match the user's Gem, Plate, or Crystal Veil.
 Animation = HIDDENPOWER
 #-------------------------------
 [PULVERIZE]
@@ -742,7 +742,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user hugs the target intensely, trapping and damaging it for three turns.
+Description = The user hugs the target intensely, trapping and binding it for three turns.
 #-------------------------------
 [BREAKDANCE]
 Name = Breakdance
@@ -1116,18 +1116,6 @@ EffectChance = 10
 Description = The user propels a gale-force wind at the target. It has a 10% chance to frostbite.
 Animation = GUST
 #-------------------------------
-[DIVEBOMB]
-Name = Dive Bomb
-Type = FLYING
-Category = Physical
-Power = 125
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableInSky
-Flags = CanProtect
-Description = The user soars up high, charging and becoming invulnerable, then dive bombs the target on the second turn.
-#-------------------------------
 [DIVININGTALON]
 Name = Divining Talon
 Type = FLYING
@@ -1228,6 +1216,20 @@ FunctionCode = RaiseUserSpd4GainFlyingType
 Flags = CanSnatch
 Description = The user takes off at sonic speeds, raising its Speed by four steps and gaining the Flying type.
 Animation = AGILITY
+#-------------------------------
+[POUNCE]
+Name = Pounce
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,Kick
+EffectChance = 10
+Description = The user quickly jumps high up, then falls onto the target. It has a 10% chance to numb.
+Animation = BOUNCE
 #-------------------------------
 [PRESSURESHOCK]
 Name = Pressure Shock
@@ -1643,7 +1645,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user opens a rift beneath the target, trapping and damaging it for three turns.
+Description = The user opens a rift beneath the target, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [DEVOURINGDUST]
@@ -1656,7 +1658,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The target is consumed by a desert storm, trapping and damaging it for three turns.
+Description = The target is consumed by a desert storm, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [DUSTDEVIL]
@@ -1812,7 +1814,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user opens a pit beneath the target, trapping and damaging it for three turns.
+Description = The user opens a pit beneath the target, trapping and binding it for three turns.
 Animation = SANDTOMB
 #-------------------------------
 [PULVERIZERCHORD]
@@ -1971,18 +1973,6 @@ Target = AllNearOthers
 FunctionCode = HitsDiggers
 Flags = CanProtect
 Description = The user slams the earth, damaging all Pokémon around it and underground.
-#-------------------------------
-[UNDERMINE]
-Name = Undermine
-Type = GROUND
-Category = Physical
-Power = 125
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableUnderground
-Flags = CanProtect
-Description = The user burrows deep, charging and becoming invulnerable, then attacks with devastating power on the second turn.
 #-------------------------------
 #		ROCK MOVES
 #-------------------------------
@@ -2253,6 +2243,7 @@ Target = NearOther
 FunctionCode = RecoilHalfOfDamageDealt
 Flags = CanProtect
 Description = The user slams itself into the target with absurd force, taking 50% recoil.
+Animation = HEADSMASH
 #-------------------------------
 [ROCKALANCHE]
 Name = Rockalanche
@@ -2858,7 +2849,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user summons bugs to terrorize the target, trapping and damaging it for three turns.
+Description = The user summons bugs to terrorize the target, trapping and binding it for three turns.
 Animation = INFESTATION
 #-------------------------------
 [TUNEUP]
@@ -3360,7 +3351,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = Conductive materials ensnare the target, trapping and damaging it for three turns.
+Description = Conductive materials ensnare the target, trapping and binding it for three turns.
 Animation = MAGNETBOMB
 #-------------------------------
 [FEATHERWARD]
@@ -3400,18 +3391,19 @@ Flags = CanProtect
 Description = The user uses explosive force to shoot shards of its own body at the target. The user loses 10% of its max HP.
 Animation = SPIKECANNON
 #-------------------------------
-[HAIRCURL]
-Name = Hair Curl
+[HAIRFLIP]
+Name = Hair Flip
 Type = STEEL
 Category = Special
-Power = 90
+Power = 80
 Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = BindTarget3
-Flags = CanProtect
-Description = The user curls its metal hair around the target, trapping and damaging it for three turns.
-Animation = BIND
+TotalPP = 15
+Target = NearFoe
+FunctionCode = BlindOnSwitchIn
+Flags = CanProtect,Light
+EffectChance = 100
+Description = The user reflects a burst of light off its curls. Blinds a Pokemon entering the battle.
+Animation = FLASH
 #-------------------------------
 [HELMBUTT]
 Name = Helmbutt
@@ -3490,7 +3482,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user strikes the target while magnetizing it, trapping and damaging it for three turns.
+Description = The user strikes the target while magnetizing it, trapping and binding it for three turns.
 Animation = MAGNETBOMB
 #-------------------------------
 [MIRRORSHIELD]
@@ -3824,7 +3816,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect,Wind
-Description = The foe is engulfed in a firestorm, trapping and damaging it for three turns.
+Description = The foe is engulfed in a firestorm, trapping and binding it for three turns.
 Animation = FIRESPIN
 #-------------------------------
 [DRYHEAT]
@@ -4025,7 +4017,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInSkyRecoilQuarterOfDamageDealt
 Flags = CanProtect
-Description = The user launches up high, charging and becoming invulnerable, then explodes down on the second turn, taking 25% recoil.
+Description = The user launches up high, charging and becoming hidden, then explodes down on the second turn, taking 25% recoil.
 Animation = FLY
 #-------------------------------
 [LIKEWILDFIRE]
@@ -4314,19 +4306,6 @@ FunctionCode = LowerTargetSpd1
 Flags = CanProtect
 EffectChance = 20
 Description = A blast of bubbles is shot at the target. It has a 20% chance to lower the target's Speed stat.
-#-------------------------------
-[DEPTHCHARGE]
-Name = Depth Charge
-Type = WATER
-Category = Physical
-Power = 120
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-FunctionCode = TwoTurnAttackInvulnerableUnderwater
-Flags = CanProtect
-Description = The user dives deep on the first turn, charging and becoming invulnerable, then rises and strikes with explosive strength on the second.
-Animation = DIVE
 #-------------------------------
 [DRAGBENEATH]
 Name = Drag Beneath
@@ -4620,7 +4599,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The target is crushed in the user's shell, mouth, or claws, trapping and damaging it for three turns.
+Description = The target is crushed in the user's shell, mouth, or claws, trapping and binding it for three turns.
 Animation = CLAMP
 #-------------------------------
 [SPATTERINGRAM]
@@ -4820,6 +4799,17 @@ FunctionCode = ReviveGrassTypePartyMemberToFullHP
 Description = Restores a fainted Grass-type party member to full HP. Only one use per battle.
 Animation = GRASSYTERRAIN
 #-------------------------------
+[CAMOUFLAGE]
+Name = Camouflage
+Type = GRASS
+Category = Physical
+Power = 135
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableInFoliage
+Description = The user fades into the foliage, charging and becoming hidden, then strikes from stealth on the second turn.
+#-------------------------------
 [COCODROP]
 Name = Coco Drop
 Type = GRASS
@@ -4936,7 +4926,7 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesSpecialDamage
 Flags = CanProtect,Uninvocable,Blade
-Description = The user hides its blade. If hit by a foe's special move, it unsheathes it quickly, slashing all near foes.
+Description = The user sheathes its blade. If hit by a foe's special move, it unsheathes it quickly, slashing all near foes.
 Animation = CAMOUFLAGE
 #-------------------------------
 [MISTLETOE]
@@ -5202,7 +5192,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user wraps the target in its vines, trapping and damaging it for three turns.
+Description = The user wraps the target in its vines, trapping and binding it for three turns.
 #-------------------------------
 [WHIPKICK]
 Name = Whip Kick
@@ -5663,7 +5653,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user creates an electric fueled cage, trapping and damaging it for three turns.
+Description = The user creates an electric fueled cage, trapping and binding it for three turns.
 Animation = THUNDERCAGE
 #-------------------------------
 [THUNDERBELLY]
@@ -5933,7 +5923,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user conjures a giant fist to crush the target, trapping and damaging it for three turns.
+Description = The user conjures a giant fist to crush the target, trapping and binding it for three turns.
 #-------------------------------
 [MAGEHAND]
 Name = Mage Hand
@@ -5945,7 +5935,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget3
 Flags = CanProtect
-Description = The user grabs the target with a conjured hand, trapping and damaging it for three turns.
+Description = The user grabs the target with a conjured hand, trapping and binding it for three turns.
 Animation = KINETICGRIP
 #-------------------------------
 [MEMORYREMOVAL]
@@ -6852,7 +6842,7 @@ Target = NearOther
 FunctionCode = DoesPhysicalDamage
 Flags = CanProtect,Sound
 Description = The user shakes the target with a deep, rumbling roar. This attack does physical damage.
-Animation = ROAR
+Animation = SNARL
 #-------------------------------
 [HELIOPAUSE]
 Name = Heliopause
@@ -6890,7 +6880,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableScalesFaster
 Flags = CanProtect
-Description = The user flies high up into the air at supersonic speeds, charging and becoming invulnerable. It greatly increases in power the faster the user is.
+Description = The user flies high up into the air at supersonic speeds, charging and becoming hidden. It greatly increases in power the faster the user is.
 Animation = FLY
 #-------------------------------
 [LOOMOVER]
@@ -7345,6 +7335,18 @@ EffectChance = 30
 Description = The target is dragged viciously through water. This has a 30% chance to waterlog.
 Animation = SPATTERINGRAM
 #-------------------------------
+[LURK]
+Name = Lurk
+Type = DARK
+Category = Physical
+Power = 135
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableHiding
+Description = The user hides stealthily, charging and becoming hidden, then strikes from a blind spot on the second turn.
+Animation = PHANTOMFORCE
+#-------------------------------
 [MASSDESTRUCTION]
 Name = Mass Destruction
 Type = DARK
@@ -7601,7 +7603,7 @@ Target = NearOther
 Priority = 4
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = CanProtect
-Description = The user transforms into a cloud of vermin, charging and becoming invulnerable. On the second turn it ambushes the target.
+Description = The user transforms into a cloud of vermin, charging and becoming hidden. On the second turn it ambushes the target.
 Animation = FLY
 #-------------------------------
 [WETWORK]
@@ -7863,7 +7865,7 @@ TotalPP = 5
 Target = User
 FunctionCode = HealUserFullHPBindsTarget
 Flags = CanSnatch
-Description = The user uses honey to fully restore its HP. However, this lures swarming insects, trapping and damaging the user for three turns.
+Description = The user uses honey to fully restore its HP. However, this lures swarming insects, trapping and binding the user for three turns.
 Animation = RECOVER
 #-------------------------------
 [HUMBLE]
@@ -7992,7 +7994,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableJinxFrostbite
 Flags = CanProtect,Uninvocable
 EffectChance = 100
-Description = The user disappears in a cloud of mist, charging and becoming invulnerable. On the next turn, the target becomes jinxed and frostbitten.
+Description = The user disappears in a cloud of mist, charging and becoming hidden. On the next turn, the target becomes jinxed and frostbitten.
 Animation = PHANTOMFORCE
 #-------------------------------
 [MOONGLOW]
@@ -8054,6 +8056,19 @@ Target = BothSides
 FunctionCode = StartSwapAttackingStats8
 Description = The user creates a puzzling area for eight turns in which Pokémon's unmodified Attack and Sp. Atk are swapped.
 Animation = MAGICROOM
+#-------------------------------
+[STROKEOFMIDNIGHT]
+Name = Stroke of Midnight
+Type = FAIRY
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Flags = Foretold
+Description = Two turns after this move is used, a terrible fate befalls the target.
+Animation = DOOMDESIRE
 #-------------------------------
 [SUGARBALL]
 Name = Sugar Ball
@@ -8173,6 +8188,18 @@ Target = NearOther
 FunctionCode = RaiseUserAccIfMisses
 Flags = CanProtect
 Description = The user makes an risky, difficult attack. If it misses, the user's Accuracy is raised.
+#-------------------------------
+[HIDDENSTRIKE]
+Name = Hidden Strike
+Type = FLEX
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableHiding
+Description = The user hides, charging and becoming hidden, then strikes the target on the second turn.
+Animation = PHANTOMFORCE
 #-------------------------------
 [LONGSHOT]
 Name = Long Shot
