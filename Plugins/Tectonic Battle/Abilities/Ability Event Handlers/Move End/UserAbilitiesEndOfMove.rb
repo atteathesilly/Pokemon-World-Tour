@@ -620,6 +620,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:TANGLINGVINES,
     next unless move.damagingMove?
     targets.each do |b|
       next if b.fainted?
+      next if b.damageState.missed || b.damageState.unaffected
       if b.pointsAt?(:TanglingVines, user)
         b.disableEffect(:TanglingVines)
       end
