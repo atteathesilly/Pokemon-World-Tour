@@ -517,17 +517,20 @@ Pokemon = DITTO,23
     Moves = TRANSFORM
     AbilityIndex = 0 # Imposter
 #-------------------------------
-[SCHOOLKID_M2,Branimir]
-Pokemon = ASANDSHREW,23
-    Moves = FROSTBARB,METALCLAW,RAPIDSPIN
-    AbilityIndex = 1 # Assault Spines
+[TRAINERTORY,Tory]
+Pokemon = MUNCHLAX,23
+    Moves = SOLARGLIDE,TAKEDOWN,REST,ICEPUNCH
+    AbilityIndex = 1 # Thick Fat
     Item = SITRUSBERRY
-Pokemon = DREEPY,24
-    Moves = QUICKATTACK,RAKE,SHADOWCLAW,SHRED
-    AbilityIndex = 0 # Clear Body
-Pokemon = SWIRLIX,24
-    Moves = COTTONSPORE,ROOTWRACK,PIXIEPUNCH
-    AbilityIndex = 1 # Fine Sugar
+Pokemon = GULPIN,24
+    Moves = POISONGAS,STINKCLOUD,SWIFT
+    AbilityIndex = 1 # Toxin Tax
+Pokemon = BELDUM,24
+    Moves = MAGNETIZE,THUNDERPUNCH,PSYCHOCUT,BULLDOZE
+    AbilityIndex = 1 # Optimized Alloy
+Pokemon = NUZLEAF,24
+    Moves = MAGICALLEAF,DEFOG,SNARL,SQUALLDART
+    AbilityIndex = 1 # Gale Force
 #-------------------------------
 [TEENAGERF,Naomi]
 Pokemon = IVYSAUR,23

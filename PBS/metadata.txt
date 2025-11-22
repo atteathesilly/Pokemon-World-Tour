@@ -379,6 +379,12 @@ Bicycle = true
 BattleBack = sand
 Environment = TallGrass
 #-------------------------------
+[055]
+# Three Island Cafe
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

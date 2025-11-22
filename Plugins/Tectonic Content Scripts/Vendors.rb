@@ -297,6 +297,28 @@ def styleRubyAlcremie
     return false
 end
 
+def styleMatchaAlcremie
+    pbChoosePokemon(1,3,
+        proc { |poke|
+            !poke.egg? && poke.species == :ALCREMIE 
+        }
+    )
+    return false if pbGet(1) < 0
+    pkmn = $Trainer.party[pbGet(1)]
+    possibleForms, possibleFormNames = getFormSelectionChoices(:ALCREMIE,pkmn.form,allow = [14,15,16,17,18,19,20])
+    pbMessage(_INTL("What flavor would you like me to give it?"))
+    choice = pbShowCommands(nil,possibleFormNames,possibleFormNames.length+1)
+    if choice < possibleForms.length
+        pbMessage(_INTL("{1} remixed to {2}!", pkmn.name, possibleFormNames[choice]))
+        
+        pkmn.form = possibleForms[choice].form
+        #pkmn.changeHappiness("groom")
+        refreshFollow(false)
+        return true
+    end
+    return false
+end
+
 def createHisuian
 	unless pbHasItem?(:ORIGINORE)
 		setSpeaker(HISUIAN_WITCH)
