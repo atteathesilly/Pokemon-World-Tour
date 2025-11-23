@@ -473,11 +473,11 @@ GameData::BattleEffect.register_effect(:Battler, {
     :id => :FlinchNextTurn,
     :real_name => "Flinch Next Turn",
     :apply_proc => proc do |battle, battler, _value|
-        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis(true)))
+        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis))
     end,
     :sor_proc => proc do |_battle, battler, _value|
         battler.disableEffect(:FlinchNextTurn)
-        battler.applyEffect(:Flinch)
+        battler.pbFlinch
     end,
 })
 

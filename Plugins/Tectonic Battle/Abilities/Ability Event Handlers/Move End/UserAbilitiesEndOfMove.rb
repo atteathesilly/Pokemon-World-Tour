@@ -663,3 +663,16 @@ BattleHandlers::UserAbilityEndOfMove.add(:ACTIONSTAR,
     battle.pbHideAbilitySplash(user)
   }
 )
+
+BattleHandlers::UserAbilityEndOfMove.add(:DISCOMBOBULATOR,
+  proc { |ability, user, targets, move, battle, _switchedBattlers|
+    targets.each { |target|
+      next unless target.movedThisRound?
+      next unless target.effectActive?(:Flinch)
+      next if target.effectActive?(:FlinchImmunity)
+      battle.pbShowAbilitySplash(user, ability)
+      target.applyEffect(:FlinchNextTurn)
+      battle.pbHideAbilitySplash(user)
+    }
+  }
+)

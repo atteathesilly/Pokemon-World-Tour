@@ -471,6 +471,10 @@ Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose 
 Name = Dire Diversion
 Description = It can avoid being knocked out by sacrificing its held item.
 #-------------------------------
+[DISCOMBOBULATOR]
+Name = Discombobulator
+Description = When this Pokémon flinches a target that has already moved, it will flinch next turn.
+#-------------------------------
 [DISCONNECTION]
 Name = Disconnection
 Description = On the first turn, its attacks numb the target.
