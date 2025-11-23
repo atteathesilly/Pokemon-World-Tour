@@ -255,3 +255,30 @@ class PokeBattle_Move_TrapTargetTargetTakes50PercentMoreDamage < PokeBattle_Move
         target.pointAt(:DeathMark, user) unless target.effectActive?(:DeathMark)
     end
 end
+
+#===============================================================================
+# The target flinches and is trapped for two turns
+#===============================================================================
+
+class PokeBattle_Move_FlinchAndBindTarget2 < PokeBattle_Move
+    def pbEffectAgainstTarget(user, target)
+        return if target.fainted? || target.damageState.substitute
+        target.pbFlinch
+        return if target.effectActive?(:Trapping)
+        # Set trapping effect duration and info
+        trappingDuration = 2
+        trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
+        target.applyEffect(:Trapping, trappingDuration)
+        target.applyEffect(:TrappingMove, @id)
+        target.pointAt(:TrappingUser, user)
+        @battle.pbDisplay(_INTL("{1} was squeezed by {2}!", target.pbThis, user.pbThis(true)))
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        flinch_score = getFlinchingEffectScore(0, user, target, self)
+        trap_score = 30
+        trap_score *= 2 if user.hasActiveItemAI?(:BINDINGBAND)
+        trap_score *= 2 if user.hasActiveItemAI?(:GRIPCLAW) 
+        return flinch_score + trap_score
+    end
+end
