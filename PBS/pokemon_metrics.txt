@@ -1860,6 +1860,12 @@ FrontSprite = 0,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[ESPATHRA]
+BackSprite = 0,27
+FrontSprite = 1,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [ESPEON]
 BackSprite = 0,28
 FrontSprite = -3,17
@@ -1985,6 +1991,12 @@ BackSprite = 0,30
 FrontSprite = 1,32
 ShadowX = 0
 ShadowSize = 1
+#-------------------------------
+[FLITTLE]
+BackSprite = 0,15
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
 #-------------------------------
 [FLOATZEL]
 BackSprite = 0,14
