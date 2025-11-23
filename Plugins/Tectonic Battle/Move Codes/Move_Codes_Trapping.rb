@@ -102,6 +102,8 @@ class PokeBattle_Move_TrapTargetStartEclipse8 < PokeBattle_Move_TrapTarget
     end
 end
 
+
+
 #===============================================================================
 # Lowers target's Defense and Special Defense by 2 steps at the end of each
 # turn. Prevents target from retreating. (Octolock)

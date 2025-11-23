@@ -61,7 +61,7 @@ TotalPP = 12
 Target = NearOther
 FunctionCode = TargetsAttackDefends
 Flags = CanProtect
-EffectChance = 20
+EffectChance = 100
 Description = The user engages the target in a head-to-head fight. The damage is based on the target's Attack rather than their Defense.
 Animation = HEADBUTT
 #-------------------------------
@@ -4542,6 +4542,20 @@ FunctionCode = Numb
 Flags = CanProtect,CanMagicCoat
 Description = The user applies anesthetic substances, numbing the target.
 Animation = STUNSPORE
+#-------------------------------
+[APREHENSIVEVINES]
+Name = Apprehensive Vines
+Type = GRASS
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget3
+Flags = CanProtect
+EffectChance = 100
+Description = The user traps the target in weak but disgusting vines, trapping and flinching them.
+Animation = POWERWHIP
 #-------------------------------
 [AUTUMNBLAST]
 Name = Autumn Blast
