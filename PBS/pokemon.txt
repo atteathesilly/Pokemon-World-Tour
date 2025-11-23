@@ -2158,6 +2158,7 @@ WildItemUncommon = FLOATSTONE
 [PONYTA]
 Name = Ponyta
 Type1 = FIRE
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,80,50,85,55,60
 # Total = 385
@@ -2179,6 +2180,7 @@ Evolutions = RAPIDASH,Level,32
 [RAPIDASH]
 Name = Rapidash
 Type1 = FIRE
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 80,100,65,120,65,75
 # Total = 505
