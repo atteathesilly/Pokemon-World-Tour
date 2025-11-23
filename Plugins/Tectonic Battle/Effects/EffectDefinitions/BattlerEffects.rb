@@ -2538,3 +2538,30 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("{1} is carried off by feathers!", battler.pbThis))
     end,
 })
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Quarantine,
+    :real_name => "Under Quarantine",
+    :type => :Integer,
+    :ticks_down_eor => true,
+    :baton_passed => true,
+    :trapping => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} was placed under quarantine!", battler.pbThis))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The quarantine around {1} was lifted!", battler.pbThis(true)))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The quarantine around {1} ended!", battler.pbThis(true)))
+    end,
+    :sub_effects => %i[QuarantineUser]
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :QuarantineUser,
+    :real_name => "Quarantined by",
+    :type => :Position,
+    :disable_effects_on_other_exit => [:Quarantine],
+    :hand_off => true,
+})
