@@ -1007,12 +1007,13 @@ GameData::BattleEffect.register_effect(:Battler, {
     :resets_on_cancel => true,
     :multi_turn_tracker => true,
     :apply_proc => proc do |_battle, battler, _value|
-        battler.currentMove = battler.lastMoveUsed
+        battler.currentMove = battler.lastMoveUsed unless battler.effectActive?(:RampageLocked)
     end,
     :expire_proc => proc do |battle, battler|
         battle.pbDisplay(_INTL("{1} spun down from its attack.", battler.pbThis))
         battler.currentMove = nil
         echoln("RAMPAGE EXPIRE PROC")
+        battler.disableEffect(:RampageLocked) if battler.effectActive?(:RampageLocked)
     end,
     :remain_proc => proc do |battle, battler, _value|
         battle.pbDisplay(_INTL("{1} continues to rampage!", battler.pbThis))
@@ -2564,4 +2565,10 @@ GameData::BattleEffect.register_effect(:Battler, {
     :type => :Position,
     :disable_effects_on_other_exit => [:Quarantine],
     :hand_off => true,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :RampageLocked,
+    :real_name => "Rampage Locked",
+    :info_displayed => false,
 })

@@ -1663,6 +1663,10 @@ Description = Releases a hazard layer of Spikes when hit by an attack.
 Name = Radiate
 Description = Boosts power of light-based moves by 50%.
 #-------------------------------
+[RAGEMANEUVERS]
+Name = Rage Maneuvers
+Description = When the Pokémon is rampaging, it can choose the rampage moves it uses.
+#-------------------------------
 [RAGINGSCALECHARM]
 Name = Raging Scale Charm
 Description = When the Pokémon is hit thrice, a Live Wire is set on the foe's side. The attacker hits itself in a rage.
