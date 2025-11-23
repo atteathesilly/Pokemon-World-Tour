@@ -15297,7 +15297,7 @@ Kind = Sharp Blade
 Pokedex = Ignoring their injuries, groups attack by sinking the blades that cover their bodies into their prey.
 Generation = 5
 WildItemUncommon = SKILLHERB
-Evolutions = BISHARP,Level,32
+Evolutions = BISHARP,Level,23
 #-------------------------------
 [BISHARP]
 Name = Bisharp
@@ -15317,7 +15317,7 @@ Kind = Sword Blade
 Pokedex = Bisharp pursues prey in the company of a large group of Pawniard. Then Bisharp finishes off the prey.
 Generation = 5
 WildItemUncommon = SKILLHERB
-Evolutions = KINGAMBIT,Level,47
+Evolutions = KINGAMBIT,Level,41
 #-------------------------------
 [KINGAMBIT]
 Name = Kingambit
