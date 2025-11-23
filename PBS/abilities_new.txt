@@ -887,6 +887,10 @@ Description = Raises Attack and Sp. Atk whenever any Pokémon uses a dance move.
 Name = Grotesque Vitals
 Description = Heals 1/16th HP every turn. Protected from being poisoned.
 #-------------------------------
+[HADEANRAGE]
+Name = Hadean Rage
+Description = When suffering from recoil, the Pokémon cannot go below 1 HP.
+#-------------------------------
 [HANDOFF]
 Name = Hand Off
 Description = Trapping and binding effects against an enemy are passed over to an ally that swaps in for this Pokémon.

@@ -1396,7 +1396,7 @@ Pokemon = KECLEON,70
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
     Moves = SHADOWSNEAK,FLIPTURN,FROMBEYOND,HARBORBREAKER
-    AbilityIndex = 0 # Juggernaut
+    AbilityIndex = 0 # Hadean Rage
     Item = PRISMATICPLATE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
