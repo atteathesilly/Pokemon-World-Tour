@@ -93,7 +93,7 @@ move, false, true)
 
     def moveFailsSemiInvulnerability?(move, user, target, aiCheck = false)
         return false if user.shouldAbilityApply?(:NOGUARD, aiCheck) || target.shouldAbilityApply?(:NOGUARD, aiCheck)
-        return false if @battle.futureSight
+        return false if @battle.foretoldMove
         return false if move.hitsInvulnerable?
 
         return false if aiCheck && !user.boss? && !@battle.battleAI.userMovesFirst?(move, user, target)

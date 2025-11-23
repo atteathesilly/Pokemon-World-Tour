@@ -202,6 +202,8 @@ module EffectHolder
         eachEffect(true) do |effect, value, data|
             # Active end of round effects
             @sor_proc.call(data)
+            # Tick down active effects that tick down
+            tickDownAndProc(effect) if data.ticks_down_sor?(@battle, value)
         end
     end
 
@@ -210,7 +212,7 @@ module EffectHolder
             # Active end of round effects
             @eor_proc.call(data)
             # Tick down active effects that tick down
-            tickDownAndProc(effect) if data.ticks_down?(@battle, value)
+            tickDownAndProc(effect) if data.ticks_down_eor?(@battle, value)
             # Disable effects that reset end of round
             disableEffect(effect) if data.resets_eor
         end

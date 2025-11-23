@@ -174,8 +174,8 @@ class PokeBattle_Battler
         else
             choice[2] = PokeBattle_Move.from_pokemon_move(@battle, Pokemon::Move.new(moveID))
             choice[2].pp = -1
-            if @battle.futureSight && target >= 0 && @battle.positions[target].effectActive?(:FutureSightType)
-                choice[2].type = @battle.positions[target].effects[:FutureSightType]
+            if @battle.foretoldMove && target >= 0 && @battle.positions[target].effectActive?(:ForetoldMoveType)
+                choice[2].type = @battle.positions[target].effects[:ForetoldMoveType]
             end
         end
         choice[3] = target     # Target (-1 means no target yet)
@@ -196,7 +196,7 @@ class PokeBattle_Battler
         pbBeginTurn(choice)
 
         # Force the use of certain moves if they're already being used
-        unless specialUsage || @battle.futureSight || (choice[2]&.empoweredMove? && boss?)
+        unless specialUsage || @battle.foretoldMove || (choice[2]&.empoweredMove? && boss?)
             if usingMultiTurnAttack? && !@currentMove.nil?
                 choice[2] = PokeBattle_Move.from_pokemon_move(@battle, Pokemon::Move.new(@currentMove))
                 specialUsage = true

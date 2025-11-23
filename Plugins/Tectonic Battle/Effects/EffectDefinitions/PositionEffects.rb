@@ -1,13 +1,13 @@
 GameData::BattleEffect.register_effect(:Position, {
-    :id => :FutureSightCounter,
+    :id => :ForetoldMoveCounter,
     :real_name => "Turns Till Move",
     :type => :Integer,
-    :ticks_down => true,
-    :sub_effects => %i[FutureSightMove FutureSightUserPartyIndex FutureSightUserIndex FutureSightType],
+    :ticks_down_sor => true,
+    :sub_effects => %i[ForetoldMove ForetoldMoveUserPartyIndex ForetoldMoveUserIndex ForetoldMoveType],
     :expire_proc => proc do |battle, index, position, battler|
-        userIndex = position.effects[:FutureSightUserIndex]
-        partyIndex = position.effects[:FutureSightUserPartyIndex]
-        move = position.effects[:FutureSightMove]
+        userIndex = position.effects[:ForetoldMoveUserIndex]
+        partyIndex = position.effects[:ForetoldMoveUserPartyIndex]
+        move = position.effects[:ForetoldMove]
         moveUser = nil
         battle.eachBattler do |b|
             next if b.opposes?(userIndex)
@@ -32,37 +32,37 @@ GameData::BattleEffect.register_effect(:Position, {
         # NOTE: Future Sight failing against the target here doesn't count towards
         #       Stomping Tantrum.
         userLastMoveFailed = moveUser.lastMoveFailed
-        battle.futureSight = true
+        battle.foretoldMove = true
         moveUser.pbUseMoveSimple(move, index)
-        battle.futureSight = false
+        battle.foretoldMove = false
         moveUser.lastMoveFailed = userLastMoveFailed
         battler.pbFaint if battler.fainted?
     end,
 })
 
 GameData::BattleEffect.register_effect(:Position, {
-    :id => :FutureSightMove,
-    :real_name => "Incoming Move",
+    :id => :ForetoldMove,
+    :real_name => "Incoming",
     :type => :Move,
 })
 
 GameData::BattleEffect.register_effect(:Position, {
-    :id => :FutureSightUserIndex,
+    :id => :ForetoldMoveUserIndex,
     :real_name => "Foretold Move User Index",
     :type => :Position,
     :info_displayed => false,
 })
 
 GameData::BattleEffect.register_effect(:Position, {
-    :id => :FutureSightUserPartyIndex,
+    :id => :ForetoldMoveUserPartyIndex,
     :real_name => "Foretold Move User Party Index",
     :type => :PartyPosition,
     :info_displayed => false,
 })
 
 GameData::BattleEffect.register_effect(:Position, {
-    :id => :FutureSightType,
-    :real_name => "Incoming Move Type",
+    :id => :ForetoldMoveType,
+    :real_name => "Incoming Type",
     :type => :Type,
 })
 
@@ -96,7 +96,7 @@ GameData::BattleEffect.register_effect(:Position, {
     :id => :Wish,
     :real_name => "Turns Till Wish",
     :type => :Integer,
-    :ticks_down => true,
+    :ticks_down_eor => true,
     :swaps_with_battlers => true,
     :expire_proc => proc do |battle, index, position, battler|
         if battler.canHeal?

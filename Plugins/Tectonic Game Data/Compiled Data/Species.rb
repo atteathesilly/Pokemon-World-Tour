@@ -202,37 +202,37 @@ module GameData
                 moveID = entry[1]
                 moveData = GameData::Move.get(moveID)
                 next if moveData.learnable?
-                raise _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
             end
 
             @line_moves.each do |moveID|
                 moveData = GameData::Move.get(moveID)
                 next if moveData.learnable?
-                raise _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
             end
 
             @tutor_moves.each do |moveID|
                 moveData = GameData::Move.get(moveID)
                 next if moveData.learnable?
-                raise _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal move #{moveID} is learnable by species #{@id}!")
             end
 
             [@wild_item_common, @wild_item_uncommon, @wild_item_rare].each do |itemID|
                 next unless itemID
                 next if GameData::Item.get(itemID).legal?
-                raise _INTL("Illegal item #{itemID} is a wild item of species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal item #{itemID} is a wild item of species #{@id}!")
             end
 
             @abilities.each do |abilityID|
                 next unless abilityID
                 next if GameData::Ability.get(abilityID).legal?
-                raise _INTL("Illegal ability #{abilityID} is a defined ability of species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal ability #{abilityID} is a defined ability of species #{@id}!")
             end
 
             @hidden_abilities.each do |abilityID|
                 next unless abilityID
                 next if GameData::Ability.get(abilityID).legal?
-                raise _INTL("Illegal ability #{abilityID} is a defined hidden ability of species #{@id}!")
+                Compiler.logLegalityError _INTL("Illegal ability #{abilityID} is a defined hidden ability of species #{@id}!")
             end
         end
 

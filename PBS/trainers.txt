@@ -3,22 +3,22 @@
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 Pokemon = SLAKING,70
     Moves = TACKLE
-    AbilityIndex = 1 # Truant
+    AbilityIndex = 0 # Truant
 #-------------------------------
 [YOUNGSTER,Joey]
 Pokemon = LILLIGANT,50
@@ -645,7 +645,7 @@ Pokemon = VIBRAVA,25
 [BEAUTY2,Enisa]
 Pokemon = MUNCHLAX,26
     Moves = REST,SNORE,TAKEDOWN,BITE
-    AbilityIndex = 0 # Gluttony
+    AbilityIndex = 0 # Snorer
     Item = CUSTAPBERRY
 Pokemon = HAUNTER,25
     Moves = SPECTRALTONGUE,CLEARSMOG,ICYWIND,HEX
@@ -1046,7 +1046,7 @@ Pokemon = FERROSEED,20
 [KIMONOGIRL,Haera]
 Flags = NoPerfect
 Pokemon = ROSELIA,25
-    Moves = ENVENOM,SLASH,CROSSPOISON,RAZORLEAF
+    Moves = ENVENOM,SLASH,STINGINGJEALOUSY,RAZORLEAF
     AbilityIndex = 1 # Merciless
 Pokemon = BRIONNE,25
     Moves = BALEFULBOP,BUBBLEBEAM,ECHOEDVOICE,PRANK
@@ -1085,7 +1085,7 @@ Pokemon = DOUBLADE,30
 [GUITARIST3,Jamie]
 Flags = NoPerfect
 Pokemon = NIDOKING,35
-    Moves = CROSSPOISON,STOMPINGTANTRUM,BODYSLAM,WATERFALL
+    Moves = POISONJAB,STOMPINGTANTRUM,BODYSLAM,WATERFALL
     AbilityIndex = 0 # Sheer Force
     Item = LIFEORB
 Pokemon = NINETALES,35
@@ -3154,9 +3154,9 @@ Pokemon = BIBAREL,37
     Moves = BODYSLAM,SURF,SHOUT,WORKUP
     AbilityIndex = 0 # Simple
     Item = SITRUSBERRY
-Pokemon = SANDSLASH,38
-    Moves = ONAROLL,FURYCUTTER,ROCKROLL,SNOWBALL
-    AbilityIndex = 1 # Tough Claws
+Pokemon = TANGROWTH,38
+    Moves = CREEPINGSTRIKE,SYNTHESIS,KNOCKOFF,ROCKTOMB
+    AbilityIndex = 1 # Unaware
 Pokemon = XATU,38
     Moves = FUTURESIGHT,CONFUSERAY,STROKEOFMIDNIGHT,AIRSLASH
     AbilityIndex = 0 # Seer
@@ -3677,7 +3677,7 @@ Pokemon = MTANGROWTH,70
     Item = POWERHERB
 Pokemon = MZANGOOSE,70
     Moves = CLOSECOMBAT,VIMRIPPER,FIREPUNCH,SHADOWSNEAK
-    AbilityIndex = 1 # Mental Damage
+    AbilityIndex = 0 # Served Cold
 #-------------------------------
 [TRAINER_Alessa,Alessa]
 Flags = NoPerfect,HideIdentity
@@ -7447,8 +7447,8 @@ Pokemon = SCRAFTY,57
     Moves = BROWBEAT,GRIMEGRAPPLE,DRAINPUNCH,DROWN
     AbilityIndex = 0 # Shed Skin
 Pokemon = GUMSHOOS,57
-    Moves = SUPERFANG,BRAINFREEZE,AGONIZE,SHORTCIRCUIT
-    AbilityIndex = 1 # Cynic
+    Moves = SUPERFANG,FUTURESIGHT,GHOSTLYTALE,SHORTCIRCUIT
+    AbilityIndex = 1 # Forewarning
     Item = CRYSTALVEIL
     ItemType = GHOST
 Pokemon = TITANIX,57
