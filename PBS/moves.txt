@@ -997,7 +997,7 @@ Power = 120
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
-FunctionCode = TypeDependsOnUserSpecialItem
+FunctionCode = TechnoBlast
 Flags = CanProtect,Light
 Description = The user fires a beam of light at its target. The type changes depending on the Drive the user holds.
 #-------------------------------
