@@ -58,6 +58,18 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The user squeezes the target, trapping and damaging it for three turns.
 #-------------------------------
+[CALLHELPER]
+Name = Call Helper
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 1
+Target = User
+FunctionCode = Invalid
+Flags = CanSnatch
+Description = The user calls an ally between Mankey, Solosis and Rolycoly. Fails if there are 3 Pokémon on this side already.
+Animation = UPROAR
+#-------------------------------
 [CAMOUFLAGE]
 Name = Camouflage
 Type = NORMAL
@@ -2140,6 +2152,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user attacks the target by poking it with a sharply pointed branch.
+#-------------------------------
+[CALLLUDICOLO]
+Name = Call Dance Partner
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = Invalid
+Flags = Dance
+Description = The user calls an allied Ludicolo. Fails if there are 3 Pokémon on this side already.
+Animation = TEETERDANCE
 #-------------------------------
 [CURSEDROOTS]
 Name = Cursed Roots
