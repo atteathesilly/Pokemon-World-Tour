@@ -202,6 +202,20 @@ FunctionCode = Drainage
 Flags = CanProtect
 Description = This attack inflicts double damage on a waterlogged foe. It also cures the target's waterlogging, however.
 #-------------------------------
+[EGGHEADBUTT]
+Name = Eggheadbutt
+Type = NORMAL
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = TargetsAttackDefends
+Flags = CanProtect
+EffectChance = 100
+Description = The user engages the target head on with its egghead. The damage is based on the target's Attack rather than their Defense.
+Animation = HEADBUTT
+#-------------------------------
 [ELEMENTALFANG]
 Name = Elemental Fang
 Type = NORMAL
@@ -6195,6 +6209,18 @@ Flags = CanProtect,Blade
 EffectChance = 30
 Description = The user slashes the target with ice like a sword. It has a 30% chance to lower Defense.
 Animation = SUBZEROSLAMMER
+#-------------------------------
+[ICEDUNGEON]
+Name = Ice Dungeon
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = TrapTargetUntilHitLowerTargetAtkSpAtk1
+Flags = CanMagicCoat
+Description = The user imprisons all near foes, reducing their attacking stats by one step each and trapping them until the next time they take a hit.
+Animation = CHILL
 #-------------------------------
 [ICENINEWALL]
 Name = Ice-Nine Wall

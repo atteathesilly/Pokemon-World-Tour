@@ -8272,6 +8272,45 @@ Generation = 3
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
 #-------------------------------
+[SSHROOMISH]
+Name = S. Shroomish
+Type1 = NORMAL
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 55,90,95,45,50,45
+# Total = 380
+BaseEXP = 59
+Rareness = 195
+Abilities = NESTING,TOUGH
+Moves = 1,GROWL,1,PECK,4,QUICKATTACK,8,SCARYFACE,12,HEADBANG,16,FURYPECKS,20,PLUCK,24,HEADBUTT,28,AGILITY,32,GRANITEHEAD,36,DRILLPECK,40,SWORDSDANCE,44,CLOUDBREAK,48,HUNTDOWN,52,BEDROCKBREAKER,56,BRAVEBIRD,60,THRASH
+LineMoves = AERIALACE,ASSURANCE,BODYSLAM,BRAVEBIRD,BULLDOZE,COVET,CRUELTY,DIVEBOMB,DIVININGTALON,DOUBLEKICK,DROPKICK,DUALWINGBEAT,ECHOEDVOICE,ENDEAVOR,ENDURE,FEINTATTACK,FLAIL,FLY,GIGAIMPACT,GREYMIST,HEADBUTT,HIGHJUMPKICK,HYPERBEAM,IRONARROW,JAVELIN,KNOCKOFF,LONGSHOT,MULTISTRIKE,NATURALGIFT,PAYBACK,QUICKATTACK,REFLECT,REST,ROCKWRECKER,ROLEPLAY,ROOST,ROUND,SCYTHEKICK,SHARPEN,SLEEPTALK,SNORE,STAMPDOWN,STEELWING,STELLARATE,STOMPINGTANTRUM,STRAFE,SUBSTITUTE,SUPERSONIC,SWIFT,SWORDSDANCE,TAUNT,TORMENT,TRAMPLE,TREADON,TRIATTACK,UPROAR,VOLLEY,WORKUP
+Tribes = CARETAKER,STAMPEDE
+StepsToHatch = 4080
+Height = 0.4
+Weight = 4.5
+Kind = Hatchling
+Pokedex = It is rather helpless when it is young and requires to be fed by its parents. It wants to be treated like a baby even if it is mature.
+Generation = 3
+Evolutions = SBRELOOM,Level,32
+#-------------------------------
+[SBRELOOM]
+Name = S. Breloom
+Type1 = NORMAL
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,100,100,110,60,40
+# Total = 500
+BaseEXP = 161
+Rareness = 70
+Abilities = NESTING,TOUGH
+Moves = 0,EGGHEADBUTT,1,EGGHEADBUTT
+StepsToHatch = 4080
+Height = 1.2
+Weight = 39.2
+Kind = Egghead
+Pokedex = It has grown very attached to the egg from the time of its birth. It will viciously peck at you if you attempt to remove it.
+Generation = 3
+#-------------------------------
 [SLAKOTH]
 Name = Slakoth
 Type1 = NORMAL
@@ -13652,8 +13691,8 @@ BaseStats = 70,115,100,75,65,85
 BaseEXP = 168
 Rareness = 60
 Abilities = TANGLINGHAIR,PETTY
-Moves = 0,FRIGIDJEALOUSY,1,FRIGIDJEALOUSY
-Tribes = CHARMER,CARETAKER,NOBLE
+Moves = 0,ICEDUNGEON,1,ICEDUNGEON
+Tribes = CHARMER,TYRANNICAL,NOBLE
 StepsToHatch = 5355
 Height = 1.1
 Weight = 16.3

@@ -5424,6 +5424,12 @@ FrontSprite = 0,14
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SBRELOOM]
+BackSprite = 0,21
+FrontSprite = 3,23
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [SCARAPACE]
 BackSprite = 0,11
 FrontSprite = 5,12
@@ -5999,6 +6005,12 @@ BackSprite = 0,18
 FrontSprite = 0,29
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[SSHROOMISH]
+BackSprite = 0,32
+FrontSprite = 0,35
+ShadowX = 0
+ShadowSize = 1
 #-------------------------------
 [STAKATAKA]
 BackSprite = 0,1
