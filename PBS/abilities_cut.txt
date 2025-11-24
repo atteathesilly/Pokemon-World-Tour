@@ -73,6 +73,10 @@ Flags = MoonglowSynergy
 Name = Audacity
 Description = Boosts Sp. Atk by 33% if has a status condition. Ignores frostbite special damage reduction.
 #-------------------------------
+[AURABREAK]
+Name = Aura Break
+Description = Reverses "Aura" Abilities to weaken affected moves.
+#-------------------------------
 [BALANCEOFPOWER]
 Name = Middle Way
 Description = Boosts Attack by 50% if it used a special move last turn, or boosts Sp. Atk if physical.
