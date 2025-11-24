@@ -2158,6 +2158,7 @@ WildItemUncommon = FLOATSTONE
 [PONYTA]
 Name = Ponyta
 Type1 = FIRE
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 55,80,50,85,55,60
 # Total = 385
@@ -2179,6 +2180,7 @@ Evolutions = RAPIDASH,Level,32
 [RAPIDASH]
 Name = Rapidash
 Type1 = FIRE
+Type2 = GROUND
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 80,100,65,120,65,75
 # Total = 505
@@ -15297,7 +15299,7 @@ Kind = Sharp Blade
 Pokedex = Ignoring their injuries, groups attack by sinking the blades that cover their bodies into their prey.
 Generation = 5
 WildItemUncommon = SKILLHERB
-Evolutions = BISHARP,Level,32
+Evolutions = BISHARP,Level,23
 #-------------------------------
 [BISHARP]
 Name = Bisharp
@@ -15317,7 +15319,7 @@ Kind = Sword Blade
 Pokedex = Bisharp pursues prey in the company of a large group of Pawniard. Then Bisharp finishes off the prey.
 Generation = 5
 WildItemUncommon = SKILLHERB
-Evolutions = KINGAMBIT,Level,47
+Evolutions = KINGAMBIT,Level,41
 #-------------------------------
 [KINGAMBIT]
 Name = Kingambit
