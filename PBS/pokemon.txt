@@ -8291,6 +8291,7 @@ Weight = 4.5
 Kind = Hatchling
 Pokedex = It is rather helpless when it is young and requires to be fed by its parents. It wants to be treated like a baby even if it is mature.
 Generation = 3
+Flags = Hidden
 Evolutions = SBRELOOM,Level,32
 #-------------------------------
 [SBRELOOM]
@@ -8310,6 +8311,7 @@ Weight = 39.2
 Kind = Egghead
 Pokedex = It has grown very attached to the egg from the time of its birth. It will viciously peck at you if you attempt to remove it.
 Generation = 3
+Flags = Hidden
 #-------------------------------
 [SLAKOTH]
 Name = Slakoth

@@ -532,6 +532,22 @@ Pokemon = NUZLEAF,24
     Moves = MAGICALLEAF,DEFOG,SNARL,SQUALLDART
     AbilityIndex = 1 # Gale Force
 #-------------------------------
+[SUBWAYBOSS,Emmet]
+Pokemon = EELEKTRIK,24
+    Moves = GROWL,POISONFANG,THUNDERFANG
+    AbilityIndex = 1 # Frustrate
+Pokemon = BOLDORE,25
+    Moves = CRYSTALGLEAM,STEALTHROCK,SHOCKWAVE,SYNTHESIS
+    AbilityIndex = 1 # Unburden
+    Item = SITRUSBERRY
+Pokemon = FRAXURE,24
+    Moves = TAUNT,SHRED,ROCKTOMB,WIDEGUARD
+    AbilityIndex = 1 # Stressful
+Pokemon = LAMPENT,24
+    Moves = INCINERATE,OMINOUSWIND,TAUNT,SHIVER
+    AbilityIndex = 1 # Royal Majesty
+    Item = SITRUSBERRY
+#-------------------------------
 [TEENAGERF,Naomi]
 Pokemon = IVYSAUR,23
     Moves = STINKCLOUD,RAZORLEAF,LEECHSEED,POISONIVY
