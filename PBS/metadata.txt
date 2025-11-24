@@ -385,6 +385,14 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[056]
+# Berry Forest
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
