@@ -279,6 +279,9 @@ Jake
 REI-03
 Zinnia
 
+Terminian Yamask Sprites
+KajiAtsui
+
 Spanish PokeDex Translations
 Everson
 
