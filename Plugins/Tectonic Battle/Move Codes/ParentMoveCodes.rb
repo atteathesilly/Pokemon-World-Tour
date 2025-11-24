@@ -1034,14 +1034,15 @@ class PokeBattle_RoomMove < PokeBattle_Move
         super
         @roomEffect = nil
         @duration = nil
+        @short = false
     end
 
     def pbEffectGeneral(user)
-        @battle.pbStartRoom(@roomEffect, user)
+        @battle.pbStartRoom(@roomEffect, user, @short)
     end
 
     def getEffectScore(user, _target)
-        return @battle.pbStartRoom(@roomEffect, user, nil, true)
+        return @battle.pbStartRoom(@roomEffect, user, @short, true)
     end
 end
 
