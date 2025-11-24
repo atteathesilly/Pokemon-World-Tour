@@ -839,10 +839,6 @@ Description = Foes that become numbed are severely so. The Pokémon's Flying-typ
 Name = Gargantuan
 Description = Completely protects allies from foes' spread moves.
 #-------------------------------
-[GAUSSAFTERSHOCK]
-Name = Gauss Aftershock
-Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
-#-------------------------------
 [GILD]
 Name = Gild
 Description = Turns the held item of a Pokémon it hits into scattered gold coins for you to take.
@@ -2169,6 +2165,10 @@ Flags = EclipseSynergy
 [SUPERALLOY]
 Name = Superalloy
 Description = Powers up Steel-type moves by 50%.
+#-------------------------------
+[SUPERCONDUCTOR]
+Name = Superconductor
+Description = Doubles the speed of allied Pokémon.
 #-------------------------------
 [SURFSUP]
 Name = Surf's Up

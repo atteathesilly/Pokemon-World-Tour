@@ -374,6 +374,10 @@ Description = On the first turn, its attacks leech the target.
 Name = Garland Guardian
 Description = Creates a Safeguard upon entry, protecting from status conditions for 10 turns.
 #-------------------------------
+[GAUSSAFTERSHOCK]
+Name = Gauss Aftershock
+Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
+#-------------------------------
 [GENERATOR]
 Name = Dynamo
 Description = Whenever it uses a status move, becomes charged, doubling the power of its next Electric-type attack.
