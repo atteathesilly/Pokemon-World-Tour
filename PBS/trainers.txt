@@ -3154,9 +3154,9 @@ Pokemon = BIBAREL,37
     Moves = BODYSLAM,SURF,SHOUT,WORKUP
     AbilityIndex = 0 # Simple
     Item = SITRUSBERRY
-Pokemon = SANDSLASH,38
-    Moves = ONAROLL,FURYCUTTER,ROCKROLL,SNOWBALL
-    AbilityIndex = 1 # Tough Claws
+Pokemon = TANGROWTH,38
+    Moves = CREEPINGSTRIKE,SYNTHESIS,KNOCKOFF,ROCKTOMB
+    AbilityIndex = 1 # Unaware
 Pokemon = XATU,38
     Moves = FUTURESIGHT,CONFUSERAY,STROKEOFMIDNIGHT,AIRSLASH
     AbilityIndex = 0 # Seer
@@ -3677,7 +3677,7 @@ Pokemon = MTANGROWTH,70
     Item = POWERHERB
 Pokemon = MZANGOOSE,70
     Moves = CLOSECOMBAT,VIMRIPPER,FIREPUNCH,SHADOWSNEAK
-    AbilityIndex = 1 # Mental Damage
+    AbilityIndex = 0 # Served Cold
 #-------------------------------
 [TRAINER_Alessa,Alessa]
 Flags = NoPerfect,HideIdentity

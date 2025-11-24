@@ -1062,6 +1062,7 @@ BattleHandlers::TargetAbilityOnHit.add(:QUILLERINSTINCT,
         end
         battle.pbShowAbilitySplash(target, ability)
         target.pbOpposingSide.incrementEffect(:Spikes)
+        battle.pbAnimation(:SPIKES, target, nil)
         battle.pbHideAbilitySplash(target)
     }
 )

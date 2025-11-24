@@ -1192,6 +1192,10 @@ Description = Powers up moves different than the last move by 50%.
 Name = Resonant
 Description = Moves that hit multiple targets deal 25% more damage instead of 25% less.
 #-------------------------------
+[VIGILANT]
+Name = Vigilant
+Description = Takes 40% less damage while using a status move.
+#-------------------------------
 [WARMTHCYCLE]
 Name = Ignition Cycle
 Description = Each turn, raises Speed by three steps and loses HP. If Speed was maxed, instead Speed and HP are reset.

@@ -1345,6 +1345,7 @@ Target = NearOther
 FunctionCode = CrashDamageIfFailsUnusableInGravity
 Flags = CanProtect,Kick
 Description = The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead.
+Animation = JUMPKICK
 #-------------------------------
 [KARATECHOP]
 Name = Karate Chop
