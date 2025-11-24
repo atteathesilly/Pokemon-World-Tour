@@ -5537,7 +5537,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = StartPolarizeTypeMatchups5
 Flags = CanProtect
-Description = Sends a pulse to flip the charges of those nearby to damage a foe. Polarized Room is created for five turns.
+Description = Sends a pulse to flip the polarity of those nearby to damage a foe. Polarized Room is created for five turns.
 Animation = DISCHARGE
 #-------------------------------
 [QUARANTINE]
