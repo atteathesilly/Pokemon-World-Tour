@@ -675,14 +675,6 @@ Pocket = 13
 Price = 4000
 Description = A Pokémon held item that doubles the duration of binding moves and abilities.
 #-------------------------------
-[BINDINGBAND]
-Name = Binding Band
-NamePlural = Binding Bands
-Pocket = 12
-Price = 4000
-Flags = Clothing
-Description = A band that doubles the damage dealt each turn by binding moves and abilities when held.
-#-------------------------------
 [LOADEDDICE]
 Name = Loaded Dice
 NamePlural = Loaded Dices
