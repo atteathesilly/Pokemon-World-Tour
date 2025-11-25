@@ -1085,6 +1085,18 @@ Description = The user attacks last. In return, it's guaranteed not to miss and 
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
+[AEROBLAST]
+Name = Aeroblast
+Type = FLYING
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanRandomCrit,Wind
+Description = A vortex of air is shot at the target to inflict damage. Can random critical hit.
+#-------------------------------
 [AIRCUTTER]
 Name = Air Cutter
 Type = FLYING
@@ -2283,6 +2295,19 @@ TotalPP = 10
 Target = BothSides
 FunctionCode = Invalid
 Description = Intensifies the sun for five turns, boosting Fire-type attacks and hindering most other attacks.
+#-------------------------------
+[SACREDFIRE]
+Name = Sacred Fire
+Type = FIRE
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+EffectChance = 100
+Description = The target is razed with a mystical fire of great intensity. Burns the target.
 #-------------------------------
 [STOREFUEL]
 Name = Store Fuel

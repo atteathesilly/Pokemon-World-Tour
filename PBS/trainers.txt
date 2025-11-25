@@ -1,5 +1,13 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[ANCIENTPRIEST,Ancient Hot Girl Shit]
+Pokemon = HOOH,70
+    Moves = BULKUP,RECOVER,SUNSHINE,WILLOWISP
+    AbilityIndex = 0 # Rainbow Trail
+Pokemon = BLISSEY,70
+    Moves = SOFTBOILED
+    AbilityIndex = 0 # Serene Grace
+#-------------------------------
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
     Moves = TACKLE

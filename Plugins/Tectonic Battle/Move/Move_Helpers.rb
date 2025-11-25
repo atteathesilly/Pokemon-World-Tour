@@ -271,6 +271,17 @@ class PokeBattle_Move
         user.pbEffectsOnSwitchIn(true)
     end
 
+    def switchOutUserForRevivedPokemon(user,revivedPokemon,disableMoldBreaker=true,randomReplacement=false,batonPass=false)
+        return unless @battle.pbCanSwitch(user.index)
+        @battle.pbPursuit(user.index)
+        return if user.fainted?
+        @battle.pbRecallAndReplace(user.index,revivedPokemon.index,randomReplacement,batonPass)
+        @battle.pbClearChoice(user.index)
+        @battle.moldBreaker = false if disableMoldBreaker
+        switchedBattlers.push(user.index)
+        user.pbEffectsOnSwitchIn(true)
+    end
+
     def forceOutTargets(user, targets, switchedBattlers, substituteBlocks: false, random: true, ability: nil, invertMissCheck: false)
         return if user.fainted?
         roarSwitched = []

@@ -34,3 +34,21 @@ BattleHandlers::UserAbilityStartOfMove.add(:REFRACTIVE,
     moveUseTypeChangeAbility(ability, user, move, battle, true) if move.lightMove?
   }
 )
+
+BattleHandlers::UserAbilityStartOfMove.add(:RAINBOWTRAIL,
+  proc { |ability, user, targets, move, battle|
+    type = move.calcType
+    next if user.pbHasType?(type)
+    if user.effectActive?(:RainbowTrail)
+        user.effects[:RainbowTrail].push(type)
+    else
+        user.applyEffect(:RainbowTrail,[type])
+    end
+
+    typeName = GameData::Type.get(type).name
+    user.showMyAbilitySplash(ability)
+    battle.pbDisplay(_INTL("{1}'s rainbows shine with an aura of {2}!", user.pbThis, typeName))
+    battle.scene.pbRefresh
+    user.hideMyAbilitySplash
+  }
+)
