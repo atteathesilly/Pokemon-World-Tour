@@ -3841,7 +3841,7 @@ Kind = Pincer
 Pokedex = It has a steel-hard body. It intimidates foes by upraising its eye-patterned pincers.
 Generation = 2
 WildItemUncommon = METALCOAT
-Evolutions = REAVOR,Level,49
+Evolutions = REAVOR,Level,44
 #-------------------------------
 [REAVOR]
 Name = Reavor
@@ -4098,7 +4098,7 @@ Weight = 54.0
 Kind = Single Horn
 Pokedex = With its Herculean powers, it can easily throw around an object that is 100 times its own weight.
 Generation = 2
-Evolutions = ATLACROSS,Level,46
+Evolutions = ATLACROSS,Level,42
 #-------------------------------
 [ATLACROSS]
 Name = Atlacross
@@ -6873,7 +6873,7 @@ Weight = 35.0
 Kind = Dark
 Pokedex = The flames it breathes when angry contain toxins. If they cause a burn, it will hurt forever.
 Generation = 2
-Evolutions = HOUNDOMINUS,Level,46
+Evolutions = HOUNDOMINUS,Level,43
 #-------------------------------
 [HOUNDOMINUS]
 Name = Houndominus
@@ -8550,7 +8550,7 @@ Weight = 31.5
 Kind = Meditate
 Pokedex = Through yoga training, it gained the psychic power to predict its foe's next move.
 Generation = 3
-Evolutions = PALMANTRA,Level,46
+Evolutions = PALMANTRA,Level,44
 #-------------------------------
 [PALMANTRA]
 Name = Palmantra
@@ -8606,7 +8606,7 @@ Weight = 40.2
 Kind = Discharge
 Pokedex = It discharges electricity from its mane. It creates a thundercloud overhead to drop lightning bolts.
 Generation = 3
-Evolutions = MANERGETIC,Level,46
+Evolutions = MANERGETIC,Level,42
 #-------------------------------
 [MANERGETIC]
 Name = Manergetic
@@ -9187,7 +9187,7 @@ Weight = 20.6
 Kind = Humming
 Pokedex = Altarias often glide through the clouds while singing or humming. While normally kind, Altaria will attack foes without mercy if provoked.
 Generation = 3
-Evolutions = HYMNUS,Level,50
+Evolutions = HYMNUS,Level,45
 #-------------------------------
 [HYMNUS]
 Name = Hymnus
@@ -11647,7 +11647,7 @@ Weight = 54.0
 Kind = Aura
 Pokedex = By reading the auras of all things, it can tell how others are feeling from over half a mile away.
 Generation = 4
-Evolutions = RIOJIN,Level,47
+Evolutions = RIOJIN,Level,45
 #-------------------------------
 [RIOJIN]
 Name = Riojin
