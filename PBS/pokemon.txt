@@ -17654,7 +17654,7 @@ Name = Litten
 Type1 = FIRE
 Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 45,65,40,70,60,40
+BaseStats = 55,70,55,35,50,55
 # Total = 320
 BaseEXP = 64
 Rareness = 115
@@ -17676,7 +17676,7 @@ Name = Torracat
 Type1 = FIRE
 Type2 = DARK
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 65,85,50,90,80,50
+BaseStats = 75,95,70,45,65,70
 # Total = 420
 BaseEXP = 147
 Rareness = 80
