@@ -6173,8 +6173,8 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = User
-FunctionCode = TwoTurnAttackRaiseUserAllStats3
-Description = The user charges with energy and raises all of its stats by three steps on the next turn.
+FunctionCode = TwoTurnAttackRaiseUserAllStats2
+Description = The user charges with energy and raises all of its stats by two steps on the next turn.
 #-------------------------------
 [LIGHTOFRUIN]
 Name = Light of Ruin
