@@ -2015,7 +2015,7 @@ Weight = 45.5
 Kind = Jellyfish
 Pokedex = Tentacool is not a particularly strong swimmer. It drifts across the surface of shallow seas as it searches for prey.
 Generation = 1
-WildItemUncommon = BINDINGBAND
+WildItemUncommon = GRIPCLAW
 Evolutions = TENTACRUEL,Level,30
 #-------------------------------
 [TENTACRUEL]
@@ -2034,7 +2034,7 @@ Weight = 55.0
 Kind = Jellyfish
 Pokedex = It communicates with others of its kind by lighting up the red orbs on its head. When the orbs are blinking, it's a warning sign.
 Generation = 1
-WildItemUncommon = BINDINGBAND
+WildItemUncommon = GRIPCLAW
 #-------------------------------
 [GEODUDE]
 Name = Geodude
@@ -20426,7 +20426,7 @@ Weight = 4.0
 Kind = Tantrum
 Pokedex = Its tentacles tear off easily, but it isn't alarmed when that happens, it knows they'll grow back. It's about as smart as a three-year-old.
 Generation = 8
-WildItemUncommon = BINDINGBAND
+WildItemUncommon = GRIPCLAW
 Evolutions = GRAPPLOCT,Level,29
 #-------------------------------
 [GRAPPLOCT]
@@ -20446,7 +20446,7 @@ Weight = 39.0
 Kind = Jujitsu
 Pokedex = Searching for an opponent to test its skills against, it emerges onto land. Once the battle is over, it returns to the sea.
 Generation = 8
-WildItemUncommon = BINDINGBAND
+WildItemUncommon = GRIPCLAW
 #-------------------------------
 [SINISTEA]
 Name = Sinistea
