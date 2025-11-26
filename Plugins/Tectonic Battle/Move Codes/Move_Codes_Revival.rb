@@ -44,6 +44,8 @@ end
 # Revives a fainted party member back to 50% HP, then switch them in and boost their stats. (Blazing Rebirth)
 #===============================================================================
 class PokeBattle_Move_RevivePartyMemberTo50HPThenSwitch < PokeBattle_PartyMemberEffectMove
+    def switchOutMove?; return true; end
+    
     def legalChoice(pokemon)
         return false unless super
         return false unless pokemon.fainted?
@@ -51,11 +53,15 @@ class PokeBattle_Move_RevivePartyMemberTo50HPThenSwitch < PokeBattle_PartyMember
     end
 
     def effectOnPartyMember(pokemon)
-        @battle.pbdisplay(_INTL("{1} created a burning pyre!", user.name))
         pokemon.heal
-        pokemon.hp = applyFractionalHealing(1.0/2.0)
+        pokemon.hp *= 0.5
+    end
+
+    def pbEndOfMoveUsageEffect(user, targets, numHits, switchedBattlers)
+        @battle.pbDisplay(_INTL("{1} created a burning pyre!", user.name))
+        return if user.fainted? || numHits == 0
         switchOutUserForRevivedPokemon(user,pokemon)
-        @battle.pbdisplay(_INTL("{1} emerged from the pyre!", pokemon.name))
+        @battle.pbDisplay(_INTL("{1} emerged from the pyre!", pokemon.name))
         @statUp = ALL_STATS_1
     end
 
