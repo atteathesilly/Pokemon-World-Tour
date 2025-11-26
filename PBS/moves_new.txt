@@ -3793,18 +3793,6 @@ Flags = CanProtect,Light
 Description = Charges by summoning sunshine for five turns, then overwhelms the foe with fiery light on the second turn.
 Animation = FIREBLAST
 #-------------------------------
-[BLAZINGREBIRTH]
-Name = Blazing Rebirth
-Type = FIRE
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = User
-Priority = -6
-FunctionCode = RevivePartyMemberTo50HPThenSwitch
-Description = The user creates a blazing pyre, then switches out. A fainted Pokemon in the party is revived from the pyre at half health and its stats are boosted.
-Animation = FIRESPIN
-#-------------------------------
 [BLAZINGSPEED]
 Name = Blazing Speed
 Type = FIRE
@@ -3917,6 +3905,18 @@ Target = User
 FunctionCode = RaiseUserSpAtk3StartUserAttacksSpread
 Flags = CanSnatch
 Description = Raises Sp. Atk by three steps. Until switch out, the user's attacks spread to hit all nearby foes.
+#-------------------------------
+[GOLDENREBIRTH]
+Name = Golden Rebirth
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+Priority = -6
+FunctionCode = RevivePartyMemberTo50HPThenSwitch
+Description = The user creates a blazing pyre, then switches out. A fainted Pokemon in the party is revived from the pyre at half health and its stats are boosted.
+Animation = FIRESPIN
 #-------------------------------
 [HEARTHFIREHULA]
 Name = Hearthfire Hula
