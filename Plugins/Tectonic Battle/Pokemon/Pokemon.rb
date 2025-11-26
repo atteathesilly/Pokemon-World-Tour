@@ -27,7 +27,7 @@ class Pokemon
     attr_accessor :statusCount
     # This Pokémon's shininess (true, false, nil). Is recalculated if made nil.
     # @param value [Boolean, nil] whether this Pokémon is shiny
-    attr_writer   :
+    attr_writer   :shiny
     # @return [Array<Pokemon::Move>] the moves known by this Pokémon
     attr_accessor :moves
     # @return [Array<Integer>] the IDs of moves known by this Pokémon when it was obtained
@@ -85,7 +85,7 @@ class Pokemon
 
     attr_writer   :itemTypeChosen
 
-    attr_accessor :Rolls
+    attr_accessor :shinyRolls
 
     attr_accessor :shiny_variant
     attr_accessor :manual_hue_shift
