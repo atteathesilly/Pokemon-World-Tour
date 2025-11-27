@@ -302,17 +302,19 @@ end
 #===============================================================================
 # Lower's the target's Attack by 1 step. If so, it raises the user's Attack by 1 step. (Exsanguinate)
 #===============================================================================
-class PokeBattle_Move_StealAtk1 < PokeBattle_TargetStatDownMove
+class PokeBattle_Move_LowerAtk1RaiseUserAttack3IfTargetFaints < PokeBattle_TargetStatDownMove
     def initialize(battle, move)
         super
         @statDown = [:ATTACK, 1]
     end
 
-    def pbAdditionalEffect(user, target)
-        return if target.damageState.substitute
-        if target.tryLowerStat(@statDown[0], user, increment: @statDown[1], move: self)
-            user.tryRaiseStat(@statDown[0], user, increment: @statDown[1], move: self)
-        end
+    def pbEffectAfterAllHits(user, target)
+        return unless target.damageState.fainted
+        user.tryRaiseStat(:ATTACK, user, increment: 3, move: self)
+    end
+
+    def getFaintEffectScore(user, target)
+        return getMultiStatUpEffectScore([:ATTACK, 3], user, user)
     end
 end
 
