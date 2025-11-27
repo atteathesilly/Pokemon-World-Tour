@@ -463,12 +463,12 @@ end
 
 #===============================================================================
 # Two turn attack. Skips first turn, and increases all of the user's (Geomancy)
-# stats by three steps on the next turn.
+# stats by two steps on the next turn.
 #===============================================================================
-class PokeBattle_Move_TwoTurnAttackRaiseUserAllStats3 < PokeBattle_TwoTurnMove
+class PokeBattle_Move_TwoTurnAttackRaiseUserAllStats2 < PokeBattle_TwoTurnMove
     def initialize(battle, move)
         super
-        @statUp = ALL_STATS_3
+        @statUp = ALL_STATS_2
     end
 
     def pbMoveFailed?(user, _targets, show_message)
