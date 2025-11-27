@@ -393,6 +393,14 @@ Bicycle = true
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[057]
+# Navel Rock
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

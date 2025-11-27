@@ -15,10 +15,10 @@ DOCK_LOCATIONS = {
         :event_id => 1,
         :unlock_switch => 301,
     },
-    :SWEETROCK_DOCK => {
-        :map_name => "Sweetrock Harbor",
-        :map_id => 217,
-        :event_id => 57,
+    :NAVEL_ROCK => {
+        :map_name => "Navel Rock",
+        :map_id => 57,
+        :event_id => 1,
         :unlock_switch => 302,
     },
     :TAPU_ISLAND => {
