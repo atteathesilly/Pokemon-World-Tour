@@ -4028,7 +4028,7 @@ Pokemon = HSAMUROTT,43
 Pokemon = BRONZONG,42
     Moves = KINETICGRIP,HEALBELL,FLASHCANNON,FARADAYCAGE
     AbilityIndex = 0 # Levitate
-    Item = BINDINGBAND
+    Item = GRIPCLAW
 Pokemon = DECIDUEYE,43
     Moves = SPIRITSHACKLE,WHIPKICK,SHADOWSNEAK,ACROBATICS
     AbilityIndex = 1 # Siphon Sniper
@@ -7519,7 +7519,7 @@ Pokemon = MEGANIUM,60
 Pokemon = HGOODRA,60
     Moves = WYRMWOUNDING,FARADAYCAGE,ENCORE,SHININGSHELL
     AbilityIndex = 1 # Impetuous
-    Item = BINDINGBAND
+    Item = GRIPCLAW
 #-------------------------------
 [POKEMONRANGER_M,Alastar]
 Pokemon = ARBOK,60
