@@ -2664,15 +2664,15 @@ FrontSprite = 0,3
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
-[GYAMASK]
-BackSprite = 0,27
-FrontSprite = 0,30
-ShadowX = 0
-ShadowSize = 2
-#-------------------------------
 [GYARADOS]
 BackSprite = 0,10
 FrontSprite = -5,9
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[GYORGRIGUS]
+BackSprite = 0,11
+FrontSprite = 0,0
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -5334,12 +5334,6 @@ FrontSprite = 0,28
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
-[RUNERIGUS]
-BackSprite = 0,20
-FrontSprite = 0,24
-ShadowX = 0
-ShadowSize = 2
-#-------------------------------
 [SABLEYE]
 BackSprite = 0,26
 FrontSprite = 0,22
@@ -7067,6 +7061,12 @@ BackSprite = 0,28
 FrontSprite = -2,20
 ShadowX = 0
 ShadowSize = 1
+#-------------------------------
+[WYAMASK]
+BackSprite = 0,23
+FrontSprite = -2,16
+ShadowX = 0
+ShadowSize = 2
 #-------------------------------
 [WYNAUT]
 BackSprite = 0,27

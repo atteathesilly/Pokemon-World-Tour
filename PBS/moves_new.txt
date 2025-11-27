@@ -4369,6 +4369,19 @@ Flags = CanSnatch
 Description = The user rests in a riverbed, restoring its HP by half of max, and forming an Aqua Ring around themselves, healing 10% HP per turn.
 Animation = REST
 #-------------------------------
+[SCOURGEOFTHESEA]
+Name = Scourge of the Sea
+Type = WATER
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstWater
+Flags = CanProtect
+Description = The user hits the opponent with disgusting water. Super effective versus Water-types.
+Animation = BRINE
+#-------------------------------
 [SILTSURGE]
 Name = Silt Surge
 Type = WATER

@@ -2001,12 +2001,6 @@ Pokemon = BEWEAR,70
 #-------------------------------
 [RUINMANIAC2,Vladislav]
 Policies = SANDSTORM_TEAM
-Pokemon = RUNERIGUS,70
-    Moves = ADAMANTINEPRESS,STEALTHROCK,WILLOWISP,CURSEDOATH
-    AbilityIndex = 1 # Sand Stream
-    Item = SMOOTHROCK
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
 Pokemon = ARCTOZOLT,70
     Moves = BOLTBEAK,ICEBEAM,ERODE,FACADE
     AbilityIndex = 0 # Meteoric

@@ -39,6 +39,16 @@ class PokeBattle_Move_SuperEffectiveAgainstFighting < PokeBattle_TypeSuperMove
 end
 
 #===============================================================================
+# Effectiveness against Water-type is 2x. (scourge of water)
+#===============================================================================
+class PokeBattle_Move_SuperEffectiveAgainstWater < PokeBattle_TypeSuperMove
+    def initialize(battle, move)
+        super
+        @typeHated = :WATER
+    end
+end
+
+#===============================================================================
 # Type effectiveness is multiplied by the Flying-type's effectiveness against
 # the target. (Flying Press)
 #===============================================================================

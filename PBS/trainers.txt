@@ -1460,10 +1460,6 @@ Pokemon = DRIFBLIM,30
 Pokemon = LOMBRE,30
     Moves = BUBBLEBEAM,MEGADRAIN,FAKEOUT,GROWL
     AbilityIndex = 0 # Fiesta
-Pokemon = GYAMASK,30
-    Moves = SHADOWCLAW,ROCKTOMB,SHADOWSNEAK,PROTECT
-    AbilityIndex = 0 # Wandering Spirit
-    Item = CADOBERRY
 #-------------------------------
 [BACKPACKER_F,Aiyana]
 Pokemon = TANGELA,28
@@ -2355,10 +2351,6 @@ Pokemon = WEEZING,40
     Moves = EXPLOSION,MIASMA,COLDFRONT,CLEARSMOG
     AbilityIndex = 0 # Neutralizing Gas
     Item = POISONGEM
-Pokemon = RUNERIGUS,40
-    Moves = VIMRIPPER,ROCKALANCHE,SHADOWSNEAK,CURSEDOATH
-    AbilityIndex = 0 # Wandering Spirit
-    Item = LEFTOVERS
 #-------------------------------
 [JUGGLER,Brickbat]
 TrainerTypeLabel = DEVELOPER
@@ -5624,12 +5616,6 @@ Pokemon = BRAVIARY,70
 #-------------------------------
 [LEADER_Samorn_2,Samorn,2]
 Flags = NoPerfect
-Pokemon = RUNERIGUS,70
-    Moves = STEALTHROCK,SIXFEETUNDER,PAINSPLIT,WILLOWISP
-    AbilityIndex = 1 # Sand Stream
-    Item = SMOOTHROCK
-    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,0,15,0,0,15
 Pokemon = FLYGON,70
     Moves = DEVOURINGDUST,BUGBUZZ,DRAGONPULSE,SUPERSONIC
     AbilityIndex = 1 # Siren Song
@@ -5663,8 +5649,6 @@ Pokemon = WORNET,70
 [LEADER_Samorn_2,Samorn,3]
 ExtendsVersion = 2
 Policies = CURSE_SUPER_ITEMS
-Pokemon = RUNERIGUS,70
-    Item = SMOOTHSASH
 Pokemon = FLYGON,70
     Item = LUNUSBERRY
 Pokemon = SAURENAID,70
@@ -7975,8 +7959,6 @@ Pokemon = AMOONGUSS,70
 #-------------------------------
 [POKEMONMASTER_Vanya,Vanya,17]
 Flags = NoPerfect,SandTeam,PlayerTeam:Kamekami
-Pokemon = RUNERIGUS,70
-    AbilityIndex = 1 # Sand Stream
 Pokemon = CLAYDOL,70
     AbilityIndex = 1 # Magic Bounce
 Pokemon = HARCANINE,70
