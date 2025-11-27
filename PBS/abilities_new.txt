@@ -281,8 +281,8 @@ Description = Upon entry, consumes scattered coins to heal for 1/10th the amount
 Name = Castellan
 Description = Boosts Attack and Sp. Atk by 30% in rooms.
 #-------------------------------
-[CATASTROPHICFORCE]
-Name = Catastrophic Force
+[CATASTROPHIC]
+Name = Catastrophic
 Description = The user's damaging attacks become spread+ moves and always activate their random effects.
 #-------------------------------
 [CELEBRATION]

@@ -83,7 +83,7 @@ class PokeBattle_Move
           return allNearFoesData if @calcType == :DRAGON && user.hasActiveAbility?(:VICIOUSCYCLE)
           return allNearFoesData if @calcType == :NORMAL && user.hasActiveAbility?(:HORDETACTICS)
         end
-        if damagingMove? && user.hasActiveAbility?(:CATASTROPHICFORCE)
+        if damagingMove? && user.hasActiveAbility?(:CATASTROPHIC)
           return GameData::Target.get(:AllNearOthers)
         end
         return targetData

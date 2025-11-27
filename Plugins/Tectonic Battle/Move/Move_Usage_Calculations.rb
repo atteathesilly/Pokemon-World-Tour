@@ -395,7 +395,7 @@ showMessages)
 
     def pbAdditionalEffectChance(user, target, type, effectChance = 0, aiCheck = false)
         return 100 if @battle.pbCheckGlobalAbility(:WISHMAKER)
-        return 100 if user.hasActiveAbility?(:CATASTROPHICFORCE)
+        return 100 if user.hasActiveAbility?(:CATASTROPHIC)
         # Abilities ensure effect chance
         user.eachAbilityShouldApply(aiCheck) do |ability|
             return 100 if BattleHandlers.triggerCertainAddedEffectUserAbility(ability, @battle, user, target, self)

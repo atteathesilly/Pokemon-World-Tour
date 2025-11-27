@@ -2466,6 +2466,12 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :RainbowTrailEntry,
+    :real_name => "Trailing Rainbows Deletes Fire",
+    :info_displayed => false,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id =>  :TanglingVines,
     :real_name => "Tangling Vines",
     :type => :Position,

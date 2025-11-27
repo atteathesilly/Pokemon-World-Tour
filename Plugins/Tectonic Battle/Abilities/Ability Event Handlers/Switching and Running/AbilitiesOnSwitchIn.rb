@@ -145,15 +145,6 @@ proc { |ability, battler, battle, aiCheck|
 }
 )
 
-BattleHandlers::AbilityOnSwitchIn.add(:CATASTROPHICFORCE,
-proc { |ability, battler, battle, aiCheck|
-    next 0 if aiCheck
-    battle.pbShowAbilitySplash(battler, ability)
-    battle.pbDisplay(_INTL("{1} cannot control its power! Its presence heralds doom!", battler.pbThis))
-    battle.pbHideAbilitySplash(battler)
-}
-)
-
 BattleHandlers::AbilityOnSwitchIn.add(:UNNERVE,
 proc { |ability, battler, battle, aiCheck|
     next 0 if aiCheck
@@ -1367,8 +1358,10 @@ BattleHandlers::AbilityOnSwitchIn.add(:RAINBOWTRAIL,
       next unless battler.hasType?(:FIRE)
       next 0 if aiCheck
       battler.applyEffect(:RainbowTrail, [:FLYING])
+      battler.applyEffect(:RainbowTrailEntry)
       battle.pbShowAbilitySplash(battler, ability)
-      battle.pbDisplay(_INTL("{1} is trailing rainbows behind them!", battler.pbThis))
+      battle.pbDisplay(_INTL("{1} is trailing rainbows behind it!", battler.pbThis))
       battle.pbHideAbilitySplash(battler)
+      battle.scene.pbRefresh
   }
 )

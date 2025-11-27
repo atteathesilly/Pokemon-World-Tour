@@ -284,7 +284,7 @@ class PokeBattle_Move
         @battle.pbPursuit(user.index)
         return if user.fainted?
         @battle.pbRecallAndReplace(user.index,selectedPokemonIndex,randomReplacement,batonPass)
-        #@battle.pbClearChoice(user.index)
+        @battle.pbClearChoice(user.index)
         @battle.moldBreaker = false if disableMoldBreaker
         switchedBattlers.push(user.index)
         user.pbEffectsOnSwitchIn(true)

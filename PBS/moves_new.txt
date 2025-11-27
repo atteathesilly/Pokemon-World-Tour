@@ -1256,7 +1256,7 @@ Target = AllNearFoes
 Priority = -6
 FunctionCode = MovesHazardsToOpponentAndForcesSwitch
 Flags = CanProtect,Wind
-Description = The user creates a gale of overwhelming power. The wind blows all hazards on the user's side of the field to the opponent's, then forces all targets to switch.
+Description = Creates a wind that blows all hazards on the user's side to the opponent's, then forces the targets to switch.
 Animation = AEROBLAST
 #-------------------------------
 [SKYFALL]
@@ -3915,7 +3915,7 @@ TotalPP = 1
 Target = User
 Priority = -6
 FunctionCode = RevivePartyMemberTo50HPThenSwitch
-Description = The user creates a blazing pyre, then switches out. A fainted Pokemon in the party is revived from the pyre at half health and its stats are boosted.
+Description = The user creates a golden pyre that revives a fainted Pokemon. That Pokemon switches in and its stats are boosted.
 Animation = FIRESPIN
 #-------------------------------
 [HEARTHFIREHULA]

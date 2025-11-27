@@ -1,12 +1,18 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [ANCIENTPRIEST,Ancient Hot Girl Shit]
+Pokemon = HOOH,70
+    Moves = BULKUP,RECOVER,SUNSHINE,WILLOWISP
+    AbilityIndex = 0 # Rainbow Trail
+Pokemon = SKARMORY,70
+    Moves = STEALTHROCK,SPIKES,FEATHERWARD
+    AbilityIndex = 0 # Mental Block
 Pokemon = SANDSLASH,70
     Moves = STEALTHROCK,SPIKES
     AbilityIndex = 1 # Tough Claws
-Pokemon = GOLEM,70
-    Moves = STEALTHROCK
-    AbilityIndex = 0 # Unbreakable
+Pokemon = FERROTHORN,70
+    Moves = STEALTHROCK,SPIKES
+    AbilityIndex = 1 # Oxygenation
 #-------------------------------
 [BATTLEGIRL,Tester]
 Pokemon = SLAKING,70
