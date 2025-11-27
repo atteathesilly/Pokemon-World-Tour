@@ -20870,7 +20870,7 @@ WildItemUncommon = WEAKNESSPOLICY
 Name = Morpeko
 Type1 = ELECTRIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 90,115,85,110,75,85
+BaseStats = 90,70,125,70,85,120
 # Total = 560
 BaseEXP = 153
 Rareness = 140
@@ -20886,6 +20886,7 @@ Kind = Two-Sided
 Pokedex = It carries electrically roasted seeds with it as if they're precious treasures. No matter how much it eats, it always gets hungry again in short order.
 FormName = Full Belly
 Generation = 8
+Formalizer = 0,1
 #-------------------------------
 [CUFANT]
 Name = Cufant
