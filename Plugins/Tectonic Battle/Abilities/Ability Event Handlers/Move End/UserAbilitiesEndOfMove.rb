@@ -680,7 +680,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:DISCOMBOBULATOR,
 BattleHandlers::UserAbilityEndOfMove.add(:HEROSJOURNEY,
   proc { |ability, user, targets, move, battle, _switchedBattlers|
     next if battle.pbAllFainted?(user.idxOpposingSide)
-    user.applyEffect(:HerosJourneyKO) if (targets.any? { |b| b.damageState.fainted } && !user.effectActive?(:HerosJourneyKO))
+    user.applyEffect(:HerosJourneyKO) if (targets.any? { |b| b.damageState.fainted && b.opposes?(user) } && !user.effectActive?(:HerosJourneyKO))
     user.applyEffect(:HerosJourneyStatus) if (move.statusMove? && !user.effectActive?(:HerosJourneyStatus))
   }
 )
