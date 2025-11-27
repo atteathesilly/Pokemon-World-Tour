@@ -92,6 +92,25 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("{1} lost its Fire-Type!", battler.pbThis))
         battle.scene.pbRefresh
     end,
+    :stay_in_rating_proc => proc do |battle, battler, value, stay_in_rating|
+        stay_in_rating -= 15
+        next stay_in_rating
+    end
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Sublimate,
+    :real_name => "Sublimated",
+    :info_displayed => false,
+    :avatars_purge => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} lost its Ice-type!", battler.pbThis))
+        battle.scene.pbRefresh
+    end,
+    :stay_in_rating_proc => proc do |battle, battler, value, stay_in_rating|
+        stay_in_rating -= 15
+        next stay_in_rating
+    end
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
@@ -1807,17 +1826,6 @@ GameData::BattleEffect.register_effect(:Battler, {
     end,
     :apply_proc => proc do |battle, battler, value|
         battle.pbDisplay(_INTL("{1} will be flinch immune for {2} more turns!", battler.pbThis, value-1))
-    end,
-})
-
-GameData::BattleEffect.register_effect(:Battler, {
-    :id => :Sublimate,
-    :real_name => "Sublimate",
-    :info_displayed => false,
-    :avatars_purge => true,
-    :apply_proc => proc do |battle, battler, _value|
-        battle.pbDisplay(_INTL("{1} lost its Ice-type!", battler.pbThis))
-        battle.scene.pbRefresh
     end,
 })
 

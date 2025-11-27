@@ -1,5 +1,13 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[BINDINGBAND]
+Name = Binding Band
+NamePlural = Binding Bands
+Pocket = 12
+Price = 4000
+Flags = Clothing
+Description = A band that doubles the damage dealt each turn by binding moves and abilities when held.
+#-------------------------------
 [CASSBERRY]
 Name = Cass Berry
 NamePlural = Cass Berries

@@ -4795,6 +4795,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableInFoliage
+Flags = CanProtect
 Description = The user fades into the foliage, charging and becoming hidden, then strikes from stealth on the second turn.
 #-------------------------------
 [COCODROP]
@@ -5536,7 +5537,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = StartPolarizeTypeMatchups5
 Flags = CanProtect
-Description = Sends a pulse to flip the charges of those nearby to damage a foe. Polarized Room is created for five turns.
+Description = Sends a pulse to flip the polarity of those nearby to damage a foe. Polarized Room is created for five turns.
 Animation = DISCHARGE
 #-------------------------------
 [QUARANTINE]
@@ -7119,7 +7120,7 @@ Accuracy = 100
 TotalPP = 5
 Target = NearFoe
 FunctionCode = SwitchOutUserSetSpikes
-Flags = CanProtect
+Flags = CanProtect,CanMagicCoat
 EffectChance = 100
 Description = Deftly sets a hazard layer of damaging Spikes around the foe, then switches out.
 Animation = PARTINGSHOT
@@ -7331,6 +7332,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableHiding
+Flags = CanProtect
 Description = The user hides stealthily, charging and becoming hidden, then strikes from a blind spot on the second turn.
 Animation = PHANTOMFORCE
 #-------------------------------
@@ -8185,6 +8187,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableHiding
+Flags = CanProtect
 Description = The user hides, charging and becoming hidden, then strikes the target on the second turn.
 Animation = PHANTOMFORCE
 #-------------------------------

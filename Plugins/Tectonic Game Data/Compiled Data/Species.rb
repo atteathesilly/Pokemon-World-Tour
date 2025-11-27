@@ -401,7 +401,16 @@ module GameData
         end
 
         def inherited_level_moves
-            return get_previous_species_data.level_moves if has_previous_species?
+            if has_previous_species?
+                inherited = []
+                get_previous_species_data.level_moves.each do |inheritableLearnsetEntry|
+                    level = inheritableLearnsetEntry[0]
+                    moveID = inheritableLearnsetEntry[1]
+                    level = 1 if level == 0
+                    inherited.push([level,moveID])
+                end
+                return inherited
+            end
             return []
         end
 
