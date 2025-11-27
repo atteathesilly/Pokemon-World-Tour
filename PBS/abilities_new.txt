@@ -970,6 +970,11 @@ Name = Heroic Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Inner Focus.
 Flags = Immutable
 #-------------------------------
+[HEROSJOURNEY]
+Name = Hero's Journey
+Description = After switching in for a fainted ally, using a status move and knocking out a foe, heals to full and transforms.
+Flags = Immutable
+#-------------------------------
 [HIGHJUDGE]
 Name = High Judge
 Description = Has Judgment as its 5th move.

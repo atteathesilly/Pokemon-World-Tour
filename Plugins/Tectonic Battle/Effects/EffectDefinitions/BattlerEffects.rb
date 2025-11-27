@@ -2572,3 +2572,44 @@ GameData::BattleEffect.register_effect(:Battler, {
     :real_name => "Rampage Locked",
     :info_displayed => false,
 })
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyKO,
+    :real_name => "Hero's Journey KO",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} vanquishes its opponents!", battler.pbThis))
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyRevenge,
+    :real_name => "Hero's Journey Revenge",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyStatus,
+    :real_name => "Hero's Journey Status",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} draws strength from patience!", battler.pbThis))
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+def checkHerosJourney(battle, battler)
+    return unless battler.hasActiveAbility?(:HEROSJOURNEY)
+    return unless battler.effectActive?(:HerosJourneyKO)
+    return unless battler.effectActive?(:HerosJourneyStatus)
+    return unless battler.effectActive?(:HerosJourneyRevenge)
+    battler.showMyAbilitySplash(:HEROSJOURNEY)
+    battle.pbDisplay(_INTL("A fierce resolution gathers around {1}!", battler.pbThis))
+    battler.applyFractionalHealing(1.0)
+    battler.pbChangeForm(1, _INTL("{1} transformed!",battler.pbThis))
+    battler.hideMyAbilitySplash
+end
