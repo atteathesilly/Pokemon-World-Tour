@@ -908,10 +908,6 @@ Description = If an attack lowers the Pokémon's HP below half, the attacker bec
 Name = Hard Fall
 Description = Deals 30% more move damage to Pokémon that are taller than it.
 #-------------------------------
-[HARRYINGSTRIKES]
-Name = Harrying Strikes
-Description = Biting attacks deal 50% more damage if the last move was a non-biting attack, and vice versa.
-#-------------------------------
 [HARSH]
 Name = Harsh
 Description = Its attacks are critical against burned targets.
@@ -2244,6 +2240,10 @@ Description = Foes suffer 50% more move damage reduction from burn, frostbite, a
 Name = Toll the Bells
 Description = Upon entry during eclipse, heals the lowest HP ally or self by 33%.
 Flags = EclipseSynergy
+#-------------------------------
+[TOOTHANDCLAW]
+Name = Harrying Strikes
+Description = Non-biting attacks deal 50% more damage if the Pokémon used a non-biting attack last turn.
 #-------------------------------
 [TORPORSAP]
 Name = Torpor Sap

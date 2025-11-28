@@ -195,7 +195,7 @@ BattleHandlers::AttackCalcAllyAbility.add(:CASTELLAN,
   }
 )
 
-BattleHandlers::AttackCalcUserAbility.add(:HARRYINGSTRIKES,
+BattleHandlers::AttackCalcUserAbility.add(:TOOTHANDCLAW,
   proc { |ability, user, battle, attackMult|
     previousMoveID = user.moveUsageHistory[1] || nil
     currentMoveID = user.moveUsageHistory[0] || nil
@@ -206,9 +206,8 @@ BattleHandlers::AttackCalcUserAbility.add(:HARRYINGSTRIKES,
     previousMoveData = battle.getBattleMoveInstanceFromID(previousMoveID)
     currentMoveData = battle.getBattleMoveInstanceFromID(currentMoveID)
 
-    next if previousMoveData.bitingMove? && currentMoveData.bitingMove?
-    next if user.lastRoundMoveCategory == 2
-    attackMult *= 1.5 if previousMoveData.bitingMove? || currentMoveData.bitingMove?
+    next if currentMoveData.bitingMove?
+    attackMult *= 1.5 if previousMoveData.bitingMove?
     next attackMult
   }
 )
