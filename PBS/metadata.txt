@@ -401,6 +401,22 @@ Bicycle = true
 Temperature = Hot
 Humidity = Wet
 #-------------------------------
+[058]
+# Navel Rock Entrance
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[059]
+# Naval Rock Thin Hall
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
