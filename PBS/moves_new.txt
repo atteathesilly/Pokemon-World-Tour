@@ -1256,7 +1256,7 @@ Target = AllNearFoes
 Priority = -6
 FunctionCode = MovesHazardsToOpponentAndForcesSwitch
 Flags = CanProtect,Wind
-Description = Creates a wind that blows all hazards on the user's side to the opponent's, then forces the targets to switch.
+Description = A gale clears hazards on your side of the field, moves hazards on the user's side to the opponent's, then forces the targets to switch.
 Animation = AEROBLAST
 #-------------------------------
 [SKYFALL]

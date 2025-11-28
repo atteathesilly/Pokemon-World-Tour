@@ -1664,7 +1664,7 @@ Description = When the Pokémon is hit thrice, a Live Wire is set on the foe's s
 #-------------------------------
 [RAINBOWTRAIL]
 Name = Rainbow Trail
-Description = Loses Fire type. Whenever it uses a move, it gains that move's type.
+Description = Loses its Fire type. Whenever it uses a move, it gains that move's type.
 Flags = Immutable
 #-------------------------------
 [RAINPRISM]
