@@ -273,6 +273,10 @@ Description = After the Pokémon is hit thrice, a Sanctuary is set on its side f
 Name = Candy Veil
 Description = Prevents itself and allies from being poisoned, leeched, or waterlogged.
 #-------------------------------
+[CANIDCRUSHER]
+Name = Canid Crusher
+Description = On the first turn, its attacks fracture the target.
+#-------------------------------
 [CASHOUT]
 Name = Cash Out
 Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
@@ -1539,6 +1543,10 @@ Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special 
 Name = Petty
 Description = Whenever a foe raises their stats, the Pokémon follows suit.
 #-------------------------------
+[PHANTASMAL]
+Name = Phantasmal
+Description = Moves that make the user become hidden deal 30% more move damage and deal 50% damage to protecting targets.
+#-------------------------------
 [PHASESHIFT]
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
@@ -1667,6 +1675,10 @@ Flags = RainstormSynergy
 Name = Ram Prow
 Description = Ignores screens, Substitute, and Abilities that would affect its moves.
 Flags = MoldBreaking,IgnoreScreens,IgnoreSubstitute
+#-------------------------------
+[RAPIDONSET]
+Name = Rapid Onset
+Description = On the first turn, its attacks poison the target.
 #-------------------------------
 [RAPIDREFRESH]
 Name = Rapid Refresh
@@ -2237,6 +2249,10 @@ Name = Toll the Bells
 Description = Upon entry during eclipse, heals the lowest HP ally or self by 33%.
 Flags = EclipseSynergy
 #-------------------------------
+[TOOTHANDCLAW]
+Name = Tooth and Claw
+Description = Non-biting attacks deal 50% more damage if the Pokémon used a biting move last turn.
+#-------------------------------
 [TORPORSAP]
 Name = Torpor Sap
 Description = Restores its HP by 50% of the damage it deals to sleeping targets.
@@ -2276,6 +2292,10 @@ Description = Powers up Ground-type moves by 50%.
 [ULTRAADAPTED]
 Name = Ultra Adapted
 Description = Powers up moves of the same type by 50%.
+#-------------------------------
+[UMBRALTENACITY]
+Name = Umbral Tenacity
+Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
 #-------------------------------
 [UNAFRAID]
 Name = Unafraid

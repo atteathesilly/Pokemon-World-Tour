@@ -360,6 +360,9 @@ class PokeBattle_Battler
                 @battle.pbDisplay(_INTL("{1} was ignored, and failed to protect {2}!", effectDisplayName,
 target.pbThis(true)))
             end
+            if protectionIgnoredByAbility && user.hasActiveAbility?(:PHANTASMAL)
+                target.damageState.partiallyProtected = true
+            end
             return false
         end
     end
@@ -384,6 +387,8 @@ target.pbThis(true)))
         # Ability effects that ignore protection
         protectionIgnoredByAbility = false
         protectionIgnoredByAbility = true if user.shouldAbilityApply?(:UNSEENFIST, aiCheck) && move.physicalMove?
+        protectionIgnoredByAbility = true if user.shouldAbilityApply?(:PHANTASMAL, aiCheck) && move.is_a?(PokeBattle_Move_TwoTurnAttackInvulnerable)
+
 
         # Only check the target's side if the target is not the self
         holdersToCheck = [target]

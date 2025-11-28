@@ -23,6 +23,13 @@ BattleHandlers::UserAbilityOnHit.add(:DARKSCALECLOUD,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:RAPIDONSET,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    randomStatusProcUserAbility(ability, :POISON, 100, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)
+
 #########################################
 # Burn abilities
 #########################################
@@ -197,6 +204,15 @@ BattleHandlers::UserAbilityOnHit.add(:MENTALDAMAGE,
       target.applyEffect(:Disable,2) if target.canBeDisabled?(true, move)
       battle.pbHideAbilitySplash(user)
     end
+  }
+)
+
+BattleHandlers::UserAbilityOnHit.add(:CANIDCRUSHER,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    battle.pbShowAbilitySplash(user, ability)
+    target.applyEffect(:Fracture, applyEffectDurationModifiers(DEFAULT_FRACTURE_DURATION, user))
+    battle.pbHideAbilitySplash(user)
   }
 )
 
