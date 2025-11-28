@@ -66,15 +66,17 @@ Description = The user engages the target in a head-to-head fight. The damage is
 Animation = HEADBUTT
 #-------------------------------
 [CALLHELPER]
-Name = Call Helper
+Name = Tackle
 Type = NORMAL
-Category = Status
+Category = Physical
+Power = 45
 Accuracy = 100
-TotalPP = 1
+TotalPP = 30
 Target = NearOther
-FunctionCode = SummonStage1Helpers
-Flags = CanSnatch
-Description = The user chooses between summoning Krabby, Solosis, and Rolycoly
+FunctionCode = Basic
+Flags = CanProtect
+Description = Call Helper is  tackle now as a temp fix.
+Animation = TACKLE
 #-------------------------------
 [CENTER]
 Name = Center
