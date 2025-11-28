@@ -904,9 +904,6 @@ BattleHandlers::DamageCalcUserAbility.add(:PHANTASMAL,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if move.is_a?(PokeBattle_Move_TwoTurnAttackInvulnerable)
       mults[:base_damage_multiplier] *= 1.3
-      if protectionIgnoredByAbility = true
-        mults[:final_damage_multiplier] *= 0.5
-      end
       user.aiLearnsAbility(ability) unless aiCheck
     end
   }

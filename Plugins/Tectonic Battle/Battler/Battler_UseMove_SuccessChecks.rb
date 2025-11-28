@@ -360,6 +360,9 @@ class PokeBattle_Battler
                 @battle.pbDisplay(_INTL("{1} was ignored, and failed to protect {2}!", effectDisplayName,
 target.pbThis(true)))
             end
+            if protectionIgnoredByAbility && user.hasActiveAbility?(:PHANTASMAL)
+                target.damageState.partiallyProtected = true
+            end
             return false
         end
     end
