@@ -927,7 +927,7 @@ Pokemon = CHARIZARD,65
     EV = 10,20,0,20,20,0
 Pokemon = LYCANROC,65
     Moves = PSYCHICFANGS,ROCKALANCHE,CLOSECOMBAT,GLACIALCRUNCH
-    AbilityIndex = 0 # Harrying Strikes
+    AbilityIndex = 0 # Tooth and Claw
     Item = CHOPLEBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -8197,7 +8197,7 @@ Pokemon = SAMUROTT,70
 Pokemon = CHESNAUGHT,70
     AbilityIndex = 1 # Aggravate
 Pokemon = LYCANROC,70
-    AbilityIndex = 0 # Harrying Strikes
+    AbilityIndex = 0 # Tooth and Claw
 Pokemon = SYLVEON,70
     AbilityIndex = 1 # Dragon Slayer
 Pokemon = FURRET,70
