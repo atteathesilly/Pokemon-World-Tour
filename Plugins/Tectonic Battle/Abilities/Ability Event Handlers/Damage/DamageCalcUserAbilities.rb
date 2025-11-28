@@ -900,6 +900,15 @@ BattleHandlers::DamageCalcUserAbility.add(:SLINKY,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:PHANTASMAL,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if move.is_a?(PokeBattle_Move_TwoTurnAttackInvulnerable)
+      mults[:base_damage_multiplier] *= 1.3
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:TERRORIZE,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     mults[:base_damage_multiplier] *= 0.9
