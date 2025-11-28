@@ -2242,7 +2242,7 @@ Description = Upon entry during eclipse, heals the lowest HP ally or self by 33%
 Flags = EclipseSynergy
 #-------------------------------
 [TOOTHANDCLAW]
-Name = Harrying Strikes
+Name = Tooth and Claw
 Description = Non-biting attacks deal 50% more damage if the Pokémon used a non-biting attack last turn.
 #-------------------------------
 [TORPORSAP]
