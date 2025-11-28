@@ -23,6 +23,13 @@ BattleHandlers::UserAbilityOnHit.add(:DARKSCALECLOUD,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:RAPIDONSET,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    randomStatusProcUserAbility(ability, :POISON, 100, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)
+
 #########################################
 # Burn abilities
 #########################################
