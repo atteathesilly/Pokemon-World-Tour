@@ -1421,10 +1421,10 @@ Power = 75
 Accuracy = 100
 TotalPP = 12
 Target = NearOther
-FunctionCode = LowerAtk1RaiseUserAttack3IfTargetFaints
+FunctionCode = RaiseUserAttack5IfTargetFaints
 Flags = CanProtect,Biting
 EffectChance = 100
-Description = The user steals blood, lowering the target's Attack. If the target is knocked out, raises the user's Attack stat by three steps.
+Description = The user steals blood. If the target is knocked out, raises the user's Attack stat by five steps.
 Animation = CRUNCH
 #-------------------------------
 [GREYMIST]
