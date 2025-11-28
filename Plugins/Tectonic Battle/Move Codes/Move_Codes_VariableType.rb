@@ -111,7 +111,7 @@ class PokeBattle_Move_TechnoBlast < PokeBattle_Move_TypeDependsOnUserSpecialItem
 
     def resolutionChoice(user)
         return unless user.hasActiveAbility?(:MODUSSWITCH)
-        return unless user.isSpecies?(:GENESECT)
+        return unless user.countsAs?(:GENESECT)
         drivesToChooseFrom = @itemTypes.keys
         if @battle.autoTesting
             @chosenDrive = drivesToChooseFrom.sample
