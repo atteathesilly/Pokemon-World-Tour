@@ -1553,6 +1553,10 @@ Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special 
 Name = Petty
 Description = Whenever a foe raises their stats, the Pokémon follows suit.
 #-------------------------------
+[PHANTASMAL]
+Name = Phantasmal
+Description = Moves that make the user become hidden deal 30% more move damage and deal 50% damage to protecting targets.
+#-------------------------------
 [PHASESHIFT]
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
@@ -1685,6 +1689,10 @@ Flags = RainstormSynergy
 Name = Ram Prow
 Description = Ignores screens, Substitute, and Abilities that would affect its moves.
 Flags = MoldBreaking,IgnoreScreens,IgnoreSubstitute
+#-------------------------------
+[RAPIDONSET]
+Name = Rapid Onset
+Description = On the first turn, its attacks poison the target.
 #-------------------------------
 [RAPIDREFRESH]
 Name = Rapid Refresh
