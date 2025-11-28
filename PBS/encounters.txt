@@ -271,3 +271,15 @@ LandTall,20
     20,SLAKOTH,20,21
     20,TROPIUS,20,21
     20,VENONAT,20,21
+#-------------------------------
+[057] # Navel Rock
+Special
+    1,STONJOURNER,20
+#-------------------------------
+[059] # Naval Rock Thin Hall
+DarkCave,20
+    20,BALTOY,20,21
+    20,CYNDAQUIL,20,21
+    20,LARVESTA,20,21
+    20,SLUGMA,20,21
+    20,WYAMASK,20,21
