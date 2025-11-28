@@ -198,7 +198,7 @@ GameData::BattleEffect.register_effect(:Position, {
                 statPasserName = battle.pbThisEx(battler.index, position.effects[:PassingStats])
                 battle.pbDisplay(_INTL("{1} comes to avenge {2}!", battler.pbThis, statPasserName))
                 battler.applyEffect(:HerosJourneyRevenge)
-                position.disableEffect(:PassingStats)
+                position.disableEffect(:PassingKO)
             end
         end
     end,

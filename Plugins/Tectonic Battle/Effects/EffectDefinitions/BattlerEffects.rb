@@ -2612,6 +2612,7 @@ GameData::BattleEffect.register_effect(:Battler, {
 
 def checkHerosJourney(battle, battler)
     return unless battler.hasActiveAbility?(:HEROSJOURNEY)
+    return unless battler.isSpecies?(:KELDEO)
     return unless battler.effectActive?(:HerosJourneyKO)
     return unless battler.effectActive?(:HerosJourneyStatus)
     return unless battler.effectActive?(:HerosJourneyRevenge)
