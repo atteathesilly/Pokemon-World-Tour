@@ -2251,7 +2251,7 @@ Flags = EclipseSynergy
 #-------------------------------
 [TOOTHANDCLAW]
 Name = Tooth and Claw
-Description = Non-biting attacks deal 50% more damage if the Pokémon used a non-biting attack last turn.
+Description = Non-biting attacks deal 50% more damage if the Pokémon used a biting move last turn.
 #-------------------------------
 [TORPORSAP]
 Name = Torpor Sap
