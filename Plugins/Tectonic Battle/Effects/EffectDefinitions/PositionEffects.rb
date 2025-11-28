@@ -249,6 +249,11 @@ GameData::BattleEffect.register_effect(:Position, {
     :real_name => "Stormshards",
     :type => :Integer,
     :ticks_down => true,
+    :apply_proc => proc do |battle, _index, _position, battler|
+        # specifying "the ground below" cuz it's a position eff and not a battler eff
+        battle.pbDisplay(_INTL("The ground below {1} was surrounded by rocky shards!", battler.pbThis(true)))
+        battle.scene.pbRefresh
+    end,
     :remain_proc => proc do |battle, index, position, battler|
         if battler.takesIndirectDamage?
         battler.applyFractionalDamage(1.0 / 8.0)
@@ -256,12 +261,12 @@ GameData::BattleEffect.register_effect(:Position, {
         end
     end,
     :disable_proc => proc do |battle, index, position, battler|
-        battle.pbDisplay(_INTL("The rocky shards surrounding {1} were sent away.", battler.pbThis))
+        battle.pbDisplay(_INTL("The rocky shards surrounding {1} were sent away.", battler.pbThis(true)))
     end,
     :expire_proc => proc do |battle, index, position, battler|
         if battler.takesIndirectDamage?
         battler.applyFractionalDamage(1.0 / 8.0)
-        battle.pbDisplay(_INTL("The rocky shards surrounding {1} dissipate.", battler.pbThis))
+        battle.pbDisplay(_INTL("The rocky shards surrounding {1} dissipate.", battler.pbThis(true)))
         end
     end,
 })
