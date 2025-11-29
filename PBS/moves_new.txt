@@ -5816,18 +5816,6 @@ Flags = CanProtect
 Description = The user's HP is restored by 50% of the damage dealt. Power doubles if the foe is asleep.
 Animation = DREAMEATER
 #-------------------------------
-[DREAMFEAST]
-Name = Dream Feast
-Type = PSYCHIC
-Category = Adaptive
-Power = 75
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = HealUserByHalfOfDamageDoneDoubleDamageIfTargetAsleepCanOverheal
-Flags = CanProtect
-Description = Doubles in power if the foe is asleep. The user's HP is restored by 50% the damage dealt. This can overheal.
-#-------------------------------
 [ECLIPSE]
 Name = Eclipse
 Type = PSYCHIC
