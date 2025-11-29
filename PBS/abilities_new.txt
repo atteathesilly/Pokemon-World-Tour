@@ -287,7 +287,7 @@ Description = Boosts Attack and Sp. Atk by 30% in rooms.
 #-------------------------------
 [CATASTROPHIC]
 Name = Catastrophic
-Description = The user's damaging attacks become spread+ moves and always activate their random effects.
+Description = The user's damaging attacks hit all other Pokemon on the field and always activate their random effects.
 #-------------------------------
 [CELEBRATION]
 Name = Celebration
