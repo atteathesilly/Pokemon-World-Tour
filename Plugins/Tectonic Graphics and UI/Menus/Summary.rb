@@ -853,6 +853,26 @@ class PokemonSummary_Scene
                           ev_color_shadow,])
         end
 
+        # Draw species
+        tribes = @pokemon.tribes
+        tribesX = 56
+        tribesY = 136
+        tribesWidth = 450
+        tribe_base   = MessageConfig.pbDefaultTextMainColor
+        tribe_shadow = MessageConfig.pbDefaultTextShadowColor
+        if tribes.length == 0
+            drawFormattedTextEx(overlay, tribesX, tribesY+32, tribesWidth, _INTL("None"), tribe_base, tribe_shadow)
+        elsif tribes.length == GameData::Tribe::DATA.keys.count / 2
+            drawFormattedTextEx(overlay, tribesX, tribesY+32, tribesWidth, _INTL("All"), tribe_base, tribe_shadow)
+        else
+            tribes.each_with_index do |tribe, index|
+                tribeName = getTribeName(tribe)
+                tribeY = tribesY + 32 * index
+                drawFormattedTextEx(overlay, tribesX, tribeY, tribesWidth, tribeName, tribe_base, tribe_shadow)
+            end
+        end
+        
+
         # Draw ability name and description
         ability = @pokemon.ability 
         @sprites["pokemon"].visible = false if @sprites["pokemon"]
