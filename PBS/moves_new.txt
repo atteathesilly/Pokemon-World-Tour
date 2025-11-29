@@ -5816,18 +5816,6 @@ Flags = CanProtect
 Description = The user's HP is restored by 50% of the damage dealt. Power doubles if the foe is asleep.
 Animation = DREAMEATER
 #-------------------------------
-[DREAMFEAST]
-Name = Dream Feast
-Type = PSYCHIC
-Category = Adaptive
-Power = 75
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = HealUserByHalfOfDamageDoneDoubleDamageIfTargetAsleepCanOverheal
-Flags = CanProtect
-Description = Doubles in power if the foe is asleep. The user's HP is restored by 50% the damage dealt. This can overheal.
-#-------------------------------
 [ECLIPSE]
 Name = Eclipse
 Type = PSYCHIC
@@ -5885,9 +5873,21 @@ Accuracy = 100
 TotalPP = 10
 Target = AllNearOthers
 FunctionCode = Basic
-Flags = CanProtect
+Flags = CanProtect,Punch
 Description = The user claps with the power of a hundred hands, psionically striking all nearby battlers.
 Animation = SONICBOOM
+#-------------------------------
+[HYPNOTHERAPY]
+Name = Hypnotherapy
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 8
+Target = NearOther
+FunctionCode = SleepTargetIfStatused
+Flags = CanProtect,CanMagicCoat
+Description = The user swings its pendulum to cure a statused target, but make them fall into a deep sleep.
+Animation = HYPNOSIS
 #-------------------------------
 [INVITEECLIPSE]
 Name = Invite Eclipse

@@ -2009,15 +2009,6 @@ BattleUse = OnFoe
 Flags = PokeBall,SnagBall
 Description = A somewhat different Poké Ball which has 3x strength at night or in dark places like caves.
 #-------------------------------
-[FASTBALL]
-Name = Fast Ball
-NamePlural = Fast Balls
-Pocket = 14
-Price = 300
-BattleUse = OnFoe
-Flags = PokeBall,SnagBall
-Description = A Poké Ball with 4x strength against Pokémon species with 100 or more base Speed.
-#-------------------------------
 [LEVELBALL]
 Name = Level Ball
 NamePlural = Level Balls
@@ -2035,15 +2026,6 @@ Price = 300
 BattleUse = OnFoe
 Flags = PokeBall,SnagBall
 Description = A Poké Ball with 5x strength against Pokémon encountered through fishing.
-#-------------------------------
-[HEAVYBALL]
-Name = Heavy Ball
-NamePlural = Heavy Balls
-Pocket = 14
-Price = 300
-BattleUse = OnFoe
-Flags = PokeBall,SnagBall
-Description = A Poké Ball whose strength varies with the Pokémon's weight.
 #-------------------------------
 [LOVEBALL]
 Name = Love Ball
