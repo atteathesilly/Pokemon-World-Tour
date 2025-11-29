@@ -5889,6 +5889,18 @@ Flags = CanProtect
 Description = The user claps with the power of a hundred hands, psionically striking all nearby battlers.
 Animation = SONICBOOM
 #-------------------------------
+[HYPNOTHERAPY]
+Name = Hypnotherapy
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 8
+Target = NearOther
+FunctionCode = SleepTargetIfStatused
+Flags = CanProtect,CanMagicCoat
+Description = The user swings its pendulum to cure a statused target, but make them fall into a deep sleep.
+Animation = HYPNOSIS
+#-------------------------------
 [INVITEECLIPSE]
 Name = Invite Eclipse
 Type = PSYCHIC
