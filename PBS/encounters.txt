@@ -207,8 +207,8 @@ Land,20
 Land,20
     20,CARNIVINE,16,18
     20,COMFEY,16,18
+    20,MARACTUS,16,18
     20,SEVIPER,16,18
-    20,TROPIUS,16,18
     20,ZANGOOSE,16,18
 #-------------------------------
 [043] # Beppi Town
@@ -283,3 +283,11 @@ DarkCave,20
     20,LARVESTA,20,21
     20,SLUGMA,20,21
     20,WYAMASK,20,21
+#-------------------------------
+[060] # Ascension to the Peak
+Land,20
+    20,CRAMORANT,20,21
+    20,NATU,20,21
+    20,NOIBAT,20,21
+    20,PIDGEY,20,21
+    20,PINSIR,20,21
