@@ -11379,7 +11379,7 @@ StepsToHatch = 5355
 Height = 1.3
 Weight = 28.3
 Kind = Lunar Hero
-Pokedex = A wanderer, Makyan Haerobic has a deep sense of justice and will use the full force its lunar powers to rescue weaker Pokemon.
+Pokedex = A wanderer, Makyan Haerobic has a deep sense of justice and will use the full force of its lunar powers to rescue weaker Pokemon.
 #-------------------------------
 [GLAMEOW]
 Name = Glameow
