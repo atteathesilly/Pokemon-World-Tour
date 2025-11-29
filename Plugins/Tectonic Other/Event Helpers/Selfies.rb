@@ -22,8 +22,8 @@ def takeSelfie
     pbWait(10)
 
     if caption.length > 0
-      base   = LIGHT_TEXT_MAIN_COLOR
-      shadow = LIGHT_TEXT_SHADOW_COLOR
+      base   = MessageConfig::LIGHT_TEXT_MAIN_COLOR
+      shadow = MessageConfig::LIGHT_TEXT_SHADOW_COLOR
       viewport = Viewport.new(0,0,Graphics.width,Graphics.height)
       viewport.z = 99999
       selfieShaderBitmap = AnimatedBitmap.new(pbResolveBitmap("Graphics/Pictures/selfie_shader"))
