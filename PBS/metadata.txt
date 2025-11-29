@@ -417,6 +417,14 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[060]
+# Ascension to the Peak
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
