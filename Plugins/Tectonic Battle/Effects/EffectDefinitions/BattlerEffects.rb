@@ -1555,7 +1555,7 @@ GameData::BattleEffect.register_effect(:Battler, {
     :remain_proc => proc do |battle, battler, _value|
         trapAbility = battler.getAbilityData(:TrappingAbility).name
         case battler.effects[:TrappingAbility]
-        when :POWERPINCH    then battle.pbAnimation(:VICEGRIP, battler, nil)
+        when :POWERPINCH    then battle.pbAnimation(:VICEGRIP, battler, battler)
         when :CONSTRICTOR   then battle.pbCommonAnimation("Wrap", battler)
         when :MAGNETTRAP    then battle.pbCommonAnimation("MagnetBomb", battler)
         else battle.pbCommonAnimation("Wrap", battler)

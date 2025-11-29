@@ -131,16 +131,8 @@ class PokemonSummary_Scene
         @markingbitmap = AnimatedBitmap.new("Graphics/Pictures/Summary/markings")
         @sprites = {}
         @sprites["background"] = IconSprite.new(0, 0, @viewport)
-        @sprites["pokemon"] = PokemonSprite.new(@viewport)
-        @sprites["pokemon"].setOffset(PictureOrigin::Center)
-        @sprites["pokemon"].x = 104
-        @sprites["pokemon"].y = 206
-        @sprites["pokemon"].setPokemonBitmap(@pokemon)
-        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
-        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
-        @sprites["pokeicon"].x       = 46
-        @sprites["pokeicon"].y       = 92
-        @sprites["pokeicon"].visible = false
+        createPokemonSprite
+        createPokeIcon
         createItemIcons
         @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
         pbSetSystemFont(@sprites["overlay"].bitmap)
@@ -185,6 +177,22 @@ class PokemonSummary_Scene
         pbFadeInAndShow(@sprites) { pbUpdate }
     end
 
+    def createPokemonSprite
+        @sprites["pokemon"] = PokemonSprite.new(@viewport)
+        @sprites["pokemon"].setOffset(PictureOrigin::Center)
+        @sprites["pokemon"].x = 104
+        @sprites["pokemon"].y = 206
+        @sprites["pokemon"].setPokemonBitmap(@pokemon)
+    end
+
+    def createPokeIcon
+        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
+        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
+        @sprites["pokeicon"].x       = Graphics.width - 32
+        @sprites["pokeicon"].y       = 32
+        @sprites["pokeicon"].visible = true
+    end
+
     def createMoveInfoDisplay
         info_path = "Graphics/Pictures/move_info_display_3x3"
         info_path += "_dark" if darkMode?
@@ -216,16 +224,8 @@ class PokemonSummary_Scene
         @sprites["background"] = IconSprite.new(0, 0, @viewport)
         @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
         pbSetSystemFont(@sprites["overlay"].bitmap)
-        @sprites["pokemon"] = PokemonSprite.new(@viewport)
-        @sprites["pokemon"].setOffset(PictureOrigin::Center)
-        @sprites["pokemon"].x = 104
-        @sprites["pokemon"].y = 206
-        @sprites["pokemon"].setPokemonBitmap(@pokemon)
-        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
-        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
-        @sprites["pokeicon"].x       = 46
-        @sprites["pokeicon"].y       = 92
-        @sprites["pokeicon"].visible = false
+        createPokemonSprite
+        createPokeIcon
         createItemIcons
         @sprites["movesel"] = MoveSelectionSprite.new(@viewport, !move_to_learn.nil?)
         @sprites["movesel"].visible = false
@@ -259,19 +259,9 @@ class PokemonSummary_Scene
         @markingbitmap = AnimatedBitmap.new("Graphics/Pictures/Summary/markings")
         @sprites = {}
         @sprites["background"] = IconSprite.new(0, 0, @viewport)
-        @sprites["pokemon"] = PokemonSprite.new(@viewport)
-        @sprites["pokemon"].setOffset(PictureOrigin::Center)
-        @sprites["pokemon"].x = 104
-        @sprites["pokemon"].y = 206
-        @sprites["pokemon"].setPokemonBitmap(@pokemon)
-
+        createPokemonSprite
         @sprites["pokemon"].visible = false
-        
-        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
-        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
-        @sprites["pokeicon"].x       = 46
-        @sprites["pokeicon"].y       = 92
-        @sprites["pokeicon"].visible = false
+        createPokeIcon
         createItemIcons
         @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
         pbSetSystemFont(@sprites["overlay"].bitmap)
@@ -331,16 +321,8 @@ class PokemonSummary_Scene
         @sprites["background"] = IconSprite.new(0, 0, @viewport)
         @sprites["overlay"] = BitmapSprite.new(Graphics.width, Graphics.height, @viewport)
         pbSetSystemFont(@sprites["overlay"].bitmap)
-        @sprites["pokemon"] = PokemonSprite.new(@viewport)
-        @sprites["pokemon"].setOffset(PictureOrigin::Center)
-        @sprites["pokemon"].x = 104
-        @sprites["pokemon"].y = 206
-        @sprites["pokemon"].setPokemonBitmap(@pokemon)
-        @sprites["pokeicon"] = PokemonIconSprite.new(@pokemon, @viewport)
-        @sprites["pokeicon"].setOffset(PictureOrigin::Center)
-        @sprites["pokeicon"].x       = 46
-        @sprites["pokeicon"].y       = 92
-        @sprites["pokeicon"].visible = false
+        createPokemonSprite
+        createPokeIcon
         createItemIcons
         @sprites["movesel"] = MoveSelectionSprite.new(@viewport, false)
         @sprites["movesel"].visible = false
@@ -871,10 +853,30 @@ class PokemonSummary_Scene
                           ev_color_shadow,])
         end
 
+        # Draw species
+        tribes = @pokemon.tribes
+        tribesX = 56
+        tribesY = 136
+        tribesWidth = 450
+        tribe_base   = MessageConfig.pbDefaultTextMainColor
+        tribe_shadow = MessageConfig.pbDefaultTextShadowColor
+        if tribes.length == 0
+            drawFormattedTextEx(overlay, tribesX, tribesY+32, tribesWidth, _INTL("None"), tribe_base, tribe_shadow)
+        elsif tribes.length == GameData::Tribe::DATA.keys.count / 2
+            drawFormattedTextEx(overlay, tribesX, tribesY+32, tribesWidth, _INTL("All"), tribe_base, tribe_shadow)
+        else
+            tribes.each_with_index do |tribe, index|
+                tribeName = getTribeName(tribe)
+                tribeY = tribesY + 32 * index
+                drawFormattedTextEx(overlay, tribesX, tribeY, tribesWidth, tribeName, tribe_base, tribe_shadow)
+            end
+        end
+        
+
         # Draw ability name and description
         ability = @pokemon.ability 
         @sprites["pokemon"].visible = false if @sprites["pokemon"]
-        @sprites["pokeicon"].visible = false
+        @sprites["pokeicon"].visible = true
         ability_base   = MessageConfig.pbDefaultTextMainColor
         ability_shadow = MessageConfig.pbDefaultTextShadowColor
         if ability
@@ -911,7 +913,7 @@ class PokemonSummary_Scene
         base   = Color.new(248, 248, 248)
         shadow = Color.new(104, 104, 104)
         @sprites["pokemon"].visible = false
-        @sprites["pokeicon"].visible = false
+        @sprites["pokeicon"].visible = true
         textpos  = [[_INTL("MOVES"), 26, 10, 0, base, shadow]]
         imagepos = []
         drawMoveNames(textpos)
@@ -989,7 +991,7 @@ class PokemonSummary_Scene
 
         hideItems
         @sprites["pokemon"].visible = false if @sprites["pokemon"]
-        @sprites["pokeicon"].visible = false
+        @sprites["pokeicon"].visible = true
 
         writeMoveInfoToInfoOverlay3x3(@extraInfoOverlay.bitmap,selected_move)
 
@@ -1023,6 +1025,7 @@ class PokemonSummary_Scene
     def pbChangePokemon
         @pokemon = @party[@partyindex]
         @sprites["pokemon"].setPokemonBitmap(@pokemon)
+        @sprites["pokeicon"].pokemon = @pokemon
         refreshItemIcons(false)
         pbSEStop
         @pokemon.play_cry
