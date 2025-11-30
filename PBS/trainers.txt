@@ -1351,7 +1351,7 @@ Pokemon = CUBONE,26
 #-------------------------------
 [POKEFAN_F2,Tsveta]
 Pokemon = LAPRAS,28
-    Moves = BRINE,ROUND,GALLINGSPIT,SHOUT
+    Moves = BRINE,ROUND,DRAGONBREATH,SHOUT
     AbilityIndex = 0 # Arctic Ariette
 Pokemon = CARBINK,26
     Moves = FROLIC,ANCIENTPOWER,WORKUP,SWEETSELENE
