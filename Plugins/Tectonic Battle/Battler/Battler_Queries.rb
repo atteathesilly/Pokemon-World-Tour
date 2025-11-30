@@ -45,6 +45,8 @@ class PokeBattle_Battler
         ret.delete(:WATER) if effectActive?(:DryHeat)
         # Roost erases the Flying-type.
         ret.delete(:FLYING) if effectActive?(:Roost)
+        # Rainbow Trails erases the Fire-type.
+        ret.delete(:FIRE) if effectActive?(:RainbowTrailEntry)
         # Add the third type specially.
         ret.push(@effects[:Type3]) if withType3 && effectActive?(:Type3) && !ret.include?(@effects[:Type3])
         ret.uniq!

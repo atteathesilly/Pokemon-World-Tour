@@ -1569,18 +1569,6 @@ FunctionCode = AlwaysHits
 Flags = Blade
 Description = The user confounds the foe with speed, then slashes. Can't miss and skips protections.
 #-------------------------------
-[AEROBLAST]
-Name = Aeroblast
-Type = FLYING
-Category = Special
-Power = 95
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = Basic
-Flags = CanProtect,CanRandomCrit,Wind
-Description = A vortex of air is shot at the target to inflict damage. Can random critical hit.
-#-------------------------------
 [AIRSLASH]
 Name = Air Slash
 Type = FLYING
@@ -3671,19 +3659,6 @@ FunctionCode = Rampage
 Flags = CanProtect
 Description = The user rampages and attacks while spewing flames for two turns.
 Animation = FLAREBLITZ
-#-------------------------------
-[SACREDFIRE]
-Name = Sacred Fire
-Type = FIRE
-Category = Physical
-Power = 70
-Accuracy = 100
-TotalPP = 5
-Target = NearOther
-FunctionCode = Burn
-Flags = CanProtect
-EffectChance = 100
-Description = The target is razed with a mystical fire of great intensity. Burns the target.
 #-------------------------------
 [SEARINGSHOT]
 Name = Searing Shot
