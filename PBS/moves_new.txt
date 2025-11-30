@@ -3930,7 +3930,7 @@ Target = User
 Priority = -6
 FunctionCode = RevivePartyMemberTo50HPThenSwitch
 Description = The user creates a golden pyre that revives a fainted Pokemon. That Pokemon switches in and its stats are boosted.
-Animation = FIRESPIN
+Animation = WORKUP
 #-------------------------------
 [HEARTHFIREHULA]
 Name = Hearthfire Hula

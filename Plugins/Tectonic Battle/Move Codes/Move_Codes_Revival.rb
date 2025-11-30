@@ -79,6 +79,7 @@ class PokeBattle_Move_RevivePartyMemberTo50HPThenSwitch < PokeBattle_Move
 
     def pbEndOfMoveUsageEffect(user, targets, numHits, switchedBattlers)
         return if user.fainted? || numHits == 0
+        user.battle.pbCommonAnimation("FireSpin", user)
         @battle.pbDisplay(_INTL("{1} created a golden pyre!", user.name))
         switchOutUserForSelectedPokemon(user,@partyIndex,switchedBattlers)
         @battle.pbDisplay(_INTL("{1} emerged from the pyre!", user.name))
