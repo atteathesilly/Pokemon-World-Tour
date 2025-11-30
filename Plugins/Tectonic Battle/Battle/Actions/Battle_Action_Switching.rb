@@ -54,6 +54,10 @@ class PokeBattle_Battle
             partyScene.pbDisplay(_INTL("Avatars can't be switched out!")) if partyScene
             return false
         end
+        if @battlers[idxBattler].effectActive?(:RampageLocked)
+            partyScene.pbDisplay(_INTL("Rampaging Pokémon can't be switched out!")) if partyScene
+            return false
+        end
         # Check whether party Pokémon can switch in
         return false unless pbCanSwitchLax?(idxBattler, idxParty, partyScene)
         # Make sure another battler isn't already choosing to switch to the party

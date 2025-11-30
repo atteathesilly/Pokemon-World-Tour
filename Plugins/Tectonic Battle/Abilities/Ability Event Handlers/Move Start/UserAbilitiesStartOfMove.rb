@@ -35,6 +35,13 @@ BattleHandlers::UserAbilityStartOfMove.add(:REFRACTIVE,
   }
 )
 
+BattleHandlers::UserAbilityEndOfMove.add(:RAGEMANEUVERS,
+  proc { |ability, user, targets, move, battle|
+    next unless move.rampagingMove?
+    user.applyEffect(:RampageLocked)
+  }
+)
+  
 BattleHandlers::UserAbilityStartOfMove.add(:RAINBOWTRAIL,
   proc { |ability, user, targets, move, battle|
     type = move.calcType

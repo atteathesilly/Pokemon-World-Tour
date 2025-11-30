@@ -186,6 +186,25 @@ GameData::BattleEffect.register_effect(:Position, {
 })
 
 GameData::BattleEffect.register_effect(:Position, {
+    :id => :PassingKO,
+    :real_name => "PassingKO",
+    :info_displayed => false,
+    :type => :PartyPosition,
+    :swaps_with_battlers => true,
+    :entry_proc => proc do |battle, _index, position, battler|
+        if battler.hasActiveAbility?(:HEROSJOURNEY)
+            statPasser = battler.ownerParty[position.effects[:PassingKO]]
+            if statPasser
+                statPasserName = battle.pbThisEx(battler.index, position.effects[:PassingStats])
+                battle.pbDisplay(_INTL("{1} comes to avenge {2}!", battler.pbThis, statPasserName))
+                battler.applyEffect(:HerosJourneyRevenge)
+                position.disableEffect(:PassingKO)
+            end
+        end
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Position, {
     :id => :Kickback,
     :real_name => "Kickback",
     :type => :PartyPosition,

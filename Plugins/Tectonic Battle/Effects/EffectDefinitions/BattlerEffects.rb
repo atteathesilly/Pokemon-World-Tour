@@ -492,11 +492,11 @@ GameData::BattleEffect.register_effect(:Battler, {
     :id => :FlinchNextTurn,
     :real_name => "Flinch Next Turn",
     :apply_proc => proc do |battle, battler, _value|
-        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis(true)))
+        battle.pbDisplay(_INTL("{1} will flinch next turn!", battler.pbThis))
     end,
     :sor_proc => proc do |_battle, battler, _value|
         battler.disableEffect(:FlinchNextTurn)
-        battler.applyEffect(:Flinch)
+        battler.pbFlinch
     end,
 })
 
@@ -1026,12 +1026,13 @@ GameData::BattleEffect.register_effect(:Battler, {
     :resets_on_cancel => true,
     :multi_turn_tracker => true,
     :apply_proc => proc do |_battle, battler, _value|
-        battler.currentMove = battler.lastMoveUsed
+        battler.currentMove = battler.lastMoveUsed unless battler.effectActive?(:RampageLocked)
     end,
     :expire_proc => proc do |battle, battler|
         battle.pbDisplay(_INTL("{1} spun down from its attack.", battler.pbThis))
         battler.currentMove = nil
         echoln("RAMPAGE EXPIRE PROC")
+        battler.disableEffect(:RampageLocked) if battler.effectActive?(:RampageLocked)
     end,
     :remain_proc => proc do |battle, battler, _value|
         battle.pbDisplay(_INTL("{1} continues to rampage!", battler.pbThis))
@@ -2558,3 +2559,78 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("{1} is carried off by feathers!", battler.pbThis))
     end,
 })
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :Quarantine,
+    :real_name => "Under Quarantine",
+    :type => :Integer,
+    :ticks_down_eor => true,
+    :baton_passed => true,
+    :trapping => true,
+    :apply_proc => proc do |battle, battler, _value|
+        battle.pbDisplay(_INTL("{1} was placed under quarantine!", battler.pbThis))
+    end,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The quarantine around {1} was lifted!", battler.pbThis(true)))
+    end,
+    :expire_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("The quarantine around {1} ended!", battler.pbThis(true)))
+    end,
+    :sub_effects => %i[QuarantineUser]
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :QuarantineUser,
+    :real_name => "Quarantined by",
+    :type => :Position,
+    :disable_effects_on_other_exit => [:Quarantine],
+    :hand_off => true,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :RampageLocked,
+    :real_name => "Rampage Locked",
+    :info_displayed => false,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyKO,
+    :real_name => "Hero's Journey KO",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} vanquishes its opponents!", battler.pbThis))
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyRevenge,
+    :real_name => "Hero's Journey Revenge",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :HerosJourneyStatus,
+    :real_name => "Hero's Journey Status",
+    :info_displayed => false,
+    :apply_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} draws strength from patience!", battler.pbThis))
+        checkHerosJourney(battle, battler)
+    end,
+})
+
+def checkHerosJourney(battle, battler)
+    return unless battler.hasActiveAbility?(:HEROSJOURNEY)
+    return unless battler.countsAs?(:KELDEO)
+    return unless battler.effectActive?(:HerosJourneyKO)
+    return unless battler.effectActive?(:HerosJourneyStatus)
+    return unless battler.effectActive?(:HerosJourneyRevenge)
+    battler.showMyAbilitySplash(:HEROSJOURNEY)
+    battle.pbDisplay(_INTL("A fierce resolution gathers around {1}!", battler.pbThis))
+    battler.applyFractionalHealing(1.0)
+    battler.pbChangeForm(1, _INTL("{1} transformed!",battler.pbThis))
+    battler.hideMyAbilitySplash
+end

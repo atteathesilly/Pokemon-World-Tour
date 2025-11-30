@@ -73,6 +73,10 @@ Flags = MoonglowSynergy
 Name = Audacity
 Description = Boosts Sp. Atk by 33% if has a status condition. Ignores frostbite special damage reduction.
 #-------------------------------
+[AURABREAK]
+Name = Aura Break
+Description = Reverses "Aura" Abilities to weaken affected moves.
+#-------------------------------
 [BALANCEOFPOWER]
 Name = Middle Way
 Description = Boosts Attack by 50% if it used a special move last turn, or boosts Sp. Atk if physical.
@@ -373,6 +377,10 @@ Description = On the first turn, its attacks leech the target.
 [GARLANDGUARDIAN]
 Name = Garland Guardian
 Description = Creates a Safeguard upon entry, protecting from status conditions for 10 turns.
+#-------------------------------
+[GAUSSAFTERSHOCK]
+Name = Gauss Aftershock
+Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
 #-------------------------------
 [GENERATOR]
 Name = Dynamo

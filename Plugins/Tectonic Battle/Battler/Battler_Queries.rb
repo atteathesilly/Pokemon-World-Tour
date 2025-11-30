@@ -494,7 +494,7 @@ class PokeBattle_Battler
     def usingMultiTurnAttack?
         @effects.each do |effect, value|
             effectData = GameData::BattleEffect.get(effect)
-            next unless effectData.multi_turn_tracker?
+            next unless effectData.multi_turn_tracker? && !effectActive?(:RampageLocked)
             return true if effectData.active_value?(value)
         end
         return false

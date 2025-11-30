@@ -1739,6 +1739,24 @@ BattleUse = OnFoe
 Flags = PokeBall,SnagBall,SkipPocketMessage
 Description = A Poké Ball that makes caught Pokémon more friendly.
 #-------------------------------
+[HEAVYBALL]
+Name = Heavy Ball
+NamePlural = Heavy Balls
+Pocket = 14
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall,SnagBall
+Description = A Poké Ball whose strength varies with the Pokémon's weight.
+#-------------------------------
+[FASTBALL]
+Name = Fast Ball
+NamePlural = Fast Balls
+Pocket = 14
+Price = 300
+BattleUse = OnFoe
+Flags = PokeBall,SnagBall
+Description = A Poké Ball with 4x strength against Pokémon species with 100 or more base Speed.
+#-------------------------------
 [DREAMBALL]
 Name = Dream Ball
 NamePlural = Dream Balls
