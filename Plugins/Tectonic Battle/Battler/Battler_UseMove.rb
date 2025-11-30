@@ -1013,7 +1013,7 @@ class PokeBattle_Battler
                 next if b.damageState.calcDamage == 0
                 chance = move.pbAdditionalEffectChance(user, b, move.calcType)
                 next if chance <= 0
-                if @battle.pbRandom(100) < chance && move.canApplyRandomAddedEffects?(user,b,true)
+                if @battle.pbRandom(100) < chance && move.canApplyRandomAddedEffects?(user,b,chance,true)
                     if b.hasActiveAbility?(:UNCANNYLUCK)
                         b.showMyAbilitySplash(:UNCANNYLUCK)
                         @battle.pbDisplay(_INTL("{1}'s additional effect was bounced back!", move.name))
@@ -1041,7 +1041,7 @@ class PokeBattle_Battler
             next if chance <= 0
             next unless @battle.pbRandom(100) < chance
             PBDebug.log("[Item/ability triggered] #{user.pbThis}'s King's Rock/Razor Fang or Stench")
-            next unless move.canApplyRandomAddedEffects?(user, b, true)
+            next unless move.canApplyRandomAddedEffects?(user, b, chance, true)
             b.pbFlinch
         end
         # Message for and consuming of type-weakening berries

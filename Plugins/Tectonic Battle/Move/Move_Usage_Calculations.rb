@@ -363,7 +363,8 @@ class PokeBattle_Move
     #=============================================================================
     # Additional effect chance
     #=============================================================================
-    def canApplyRandomAddedEffects?(user, target, showMessages = false, aiCheck = false)
+    def canApplyRandomAddedEffects?(user, target, chance, showMessages = false, aiCheck = false)
+        return true if chance >= 100 # not actually random
         unless @battle.moldBreaker
             target.eachAbilityShouldApply(aiCheck) do |ability|
                 next unless BattleHandlers.triggerPreventAddedEffectTargetAbility(ability, @battle, user, target, self,
