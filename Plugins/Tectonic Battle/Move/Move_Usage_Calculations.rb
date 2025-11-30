@@ -384,14 +384,11 @@ showMessages)
             return false
         end
         if target.shouldItemApply?(:COVERTCLOAK, aiCheck) && user.opposes?(target)
-            actualChance = pbAdditionalEffectChance(user, target, @calcType, @effectChance, aiCheck)
-            if actualChance < 100
-                if showMessages
-                    battle.pbDisplay(_INTL("{1}'s {2} protects it from a random added effect!", target.pbThis, getItemName(:COVERTCLOAK)))
-                    target.aiLearnsItem(:COVERTCLOAK)
-                end
-                return false
+            if showMessages
+                battle.pbDisplay(_INTL("{1}'s {2} protects it from a random added effect!", target.pbThis, getItemName(:COVERTCLOAK)))
+                target.aiLearnsItem(:COVERTCLOAK)
             end
+            return false
         end
         return true
     end
