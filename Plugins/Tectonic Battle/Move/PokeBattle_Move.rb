@@ -184,6 +184,7 @@ class PokeBattle_Move
     def forceSwitchMove?; return false; end
     def hazardMove?; return false; end
     def statStepStealingMove?; return false; end
+    def statStepClearingMove?; return false; end
     def redirectionMove?; return false; end
     def hazardRemovalMove?; return false; end
     def screenRemovalMove?; return false; end
