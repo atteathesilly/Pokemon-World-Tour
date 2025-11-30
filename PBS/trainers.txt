@@ -606,7 +606,7 @@ Pokemon = PRINPLUP,25
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,20,0,0,20,15
 Pokemon = TOXTRICITY,25
-    Moves = VOLTSWITCH,CLEARSMOG,HEX,POISONGAS
+    Moves = VOLTSWITCH,CLEARSMOG,ASSURANCE,POISONGAS
     AbilityIndex = 1 # Thunderstruck
     Item = AIRBALLOON
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -624,7 +624,7 @@ Pokemon = LUXIO,25
 Pokemon = PRINPLUP,25
     Moves = FLIPTURN,SHRAPNEL,SUPERSONIC,AURAFLUX
 Pokemon = KINGLER,25
-    Moves = UTURN,RAZORSHELL,KNOCKOFF,CRUELTY
+    Moves = UTURN,RAZORSHELL,KNOCKOFF,FRIGIDJEALOUSY
     AbilityIndex = 0 # Frustrate
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -648,7 +648,7 @@ Pokemon = MUNCHLAX,26
     AbilityIndex = 0 # Snorer
     Item = CUSTAPBERRY
 Pokemon = HAUNTER,25
-    Moves = SPECTRALTONGUE,CLEARSMOG,ICYWIND,HEX
+    Moves = SPECTRALTONGUE,CLEARSMOG,ICYWIND,SEANCE
     AbilityIndex = 1 # Break Through
 Pokemon = PRIMEAPE,25
     Moves = FIREFANG,ARMTHRUST,SHADOWPUNCH,BULKUP
@@ -1483,10 +1483,10 @@ Pokemon = MTANGELA,27
     Moves = GLARE,ANCIENTPOWER,NATUREPOWER,SLUDGE
     AbilityIndex = 0 # Petrifying
     Item = SITRUSBERRY
-Pokemon = CORVISQUIRE,28
+Pokemon = CORVISQUIRE,27
     Moves = STEELWING,TAUNT,PLUCK,HONECLAWS
     AbilityIndex = 0 # Mirror Armor
-Pokemon = GABITE,27
+Pokemon = GABITE,28
     Moves = GLARE,BITE,TREMOR,CRUELTY
     AbilityIndex = 0 # Rough Skin
 #-------------------------------
