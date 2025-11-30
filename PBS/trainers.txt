@@ -4061,7 +4061,7 @@ Pokemon = HITMONCHAN,55
 #-------------------------------
 [SCIENTIST_F3,Nkechi]
 Pokemon = URSALUNA,55
-    Moves = EXTREMEEFFORT,SNORE,TRAMPLE,DISTURB
+    Moves = EXTREMEEFFORT,SNORE,HORIZONSLICE,DISTURB
     AbilityIndex = 1 # Tough
     Item = ASSAULTVEST
 Pokemon = AMUK,55
@@ -4077,7 +4077,7 @@ Pokemon = SAURENAID,55
     AbilityIndex = 1 # Leviathan
     Item = LEFTOVERS
 Pokemon = PORYGONZ,55
-    Moves = CRITICALERROR,LONGSHOT,THUNDER,BLIZZARD
+    Moves = CRITICALERROR,RUIN,THUNDER,BLIZZARD
     AbilityIndex = 1 # Adapted
     Item = WIDELENS
 Pokemon = DECEAT,55
