@@ -127,6 +127,17 @@ class PokeBattle_Battler
             end
         end
 
+        if hasActiveAbility?(:HADEANRAGE) && (damage > @hp)
+            showMyAbilitySplash(:HADEANRAGE)
+            @battle.pbDisplay(_INTL("{1} resists its impending doom!", pbThis))
+            damage = @hp - 1
+            hideMyAbilitySplash
+            if damage == 0
+                return
+            end
+        end
+
+
         oldHP = @hp
         recoilMessage = _INTL("{1} is damaged by recoil!", pbThis) if recoilMessage.nil?
         @battle.pbDisplay(recoilMessage) if showMessage

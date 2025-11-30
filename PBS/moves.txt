@@ -997,7 +997,7 @@ Power = 120
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
-FunctionCode = TypeDependsOnUserSpecialItem
+FunctionCode = TechnoBlast
 Flags = CanProtect,Light
 Description = The user fires a beam of light at its target. The type changes depending on the Drive the user holds.
 #-------------------------------
@@ -5371,9 +5371,10 @@ Power = 100
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
-FunctionCode = NegateTargetAbilityIfTargetActed
+FunctionCode = Dizzy
 Flags = CanProtect
-Description = If the target has already moved this turn, the effect of its Ability is negated.
+EffectChance = 100
+Description = The user sends out a telluric shockwave, damaging and dizzying all foes.
 #-------------------------------
 [DRACOMETEOR]
 Name = Draco Meteor

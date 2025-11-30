@@ -2211,7 +2211,7 @@ Pokemon = ROTOM,44
     Item = ELECTRICGEM
 Pokemon = VIKAVOLT,44
     Moves = ARCLAMP,BUGBUZZ
-    AbilityIndex = 1 # Levitate
+    AbilityIndex = 0 # Emergency Power
     Item = CHARTIBERRY
 #-------------------------------
 [JANITOR,Eric]
@@ -2393,7 +2393,7 @@ Pokemon = AEGISLASH,70
 Pokemon = INFERNAPE,70
     AbilityIndex = 0 # Mystic Fist
 Pokemon = VIKAVOLT,70
-    AbilityIndex = 1 # Levitate
+    AbilityIndex = 1 # Rage Maneuvers
 Pokemon = GARCHOMP,70
     AbilityIndex = 0 # Rough Skin
 Pokemon = TOXAPEX,70
@@ -2518,7 +2518,7 @@ Pokemon = TYRANITAR,70
 Pokemon = CHARIZARD,70
     AbilityIndex = 0 # Pure Rage
 Pokemon = VIKAVOLT,70
-    AbilityIndex = 1 # Levitate
+    AbilityIndex = 1 # Rage Maneuvers
 Pokemon = CORVIKNIGHT,70
     AbilityIndex = 0 # Mirror Armor
 #-------------------------------
@@ -8240,7 +8240,7 @@ Pokemon = KOMMOO,70
     Item = LEFTOVERS
 Pokemon = VIKAVOLT,70
     Moves = DIELECTRICBREAKDOWN,BUGBUZZ,ENERGYBALL,BIOFLASH
-    AbilityIndex = 1 # Levitate
+    AbilityIndex = 1 # Rage Maneuvers
 Pokemon = WOLFEROC,70
     Moves = BEDROCKBREAKER,PHANTOMGATE,ACCELEROCK,LIGHTNINGSLAM
     AbilityIndex = 1 # Canid Crusher
