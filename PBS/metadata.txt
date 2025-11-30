@@ -425,6 +425,16 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[061]
+# Navel Rock Peak
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Cold
+Humidity = Wet
+BattleBack = rocky
+Environment = Rock
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
