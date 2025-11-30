@@ -1397,13 +1397,17 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
         return false
     end
 
+    def foretoldTurnCount(user, target, aiCheck = false)
+        count = @turnCount
+        count -= 2 if user.shouldAbilityApply?(:BADOMEN, aiCheck)
+        count += 1 if user.shouldAbilityApply?(:CREEPINGHORROR, aiCheck)
+        count = 1 if count < 1
+        return count
+    end
+
     def pbEffectAgainstTarget(user, target)
         return if @battle.foretoldMove
-        count = @turnCount
-        count -= 2 if user.hasActiveAbility?(:BADOMEN)
-        count += 1 if user.hasActiveAbility?(:CREEPINGHORROR)
-        count = 1 if count < 1
-        target.position.applyEffect(:ForetoldMoveCounter, count)
+        target.position.applyEffect(:ForetoldMoveCounter, foretoldTurnCount(user, target))
         target.position.applyEffect(:ForetoldMove, @id)
         target.position.pointAt(:ForetoldMoveUserIndex, user)
         target.position.applyEffect(:ForetoldMoveUserPartyIndex, user.pokemonIndex)
@@ -1427,11 +1431,11 @@ class PokeBattle_ForetoldMove < PokeBattle_Move
         super
     end
 
-    def getEffectScore(user, _target)
-        malus = -20
-        malus -= 50 unless user.alliesInReserve?
-        malus /= 2 if user.hasActiveAbilityAI?(:FOREWARNING)
-        return score + malus
+    def getEffectScore(user, target)
+        score = -10 * foretoldTurnCount(user, target, true)
+        score *= 2 unless user.alliesInReserve?
+        score /= 3 if user.hasActiveAbilityAI?(:FOREWARNING)
+        return score
     end
 end
 
@@ -1668,10 +1672,10 @@ class PokeBattle_Move_StatusTargetLowerTargetDef2 < PokeBattle_Move
         return if target.damageState.substitute
         chance = pbAdditionalEffectChance(user, target, @calcType, @subEffectChance)
         return if chance == 0
-        if @battle.pbRandom(100) < chance && target.pbCanInflictStatus?(@statusToApply, user, false, self) && canApplyRandomAddedEffects?(user,target,true)
+        if @battle.pbRandom(100) < chance && target.pbCanInflictStatus?(@statusToApply, user, false, self) && canApplyRandomAddedEffects?(user,target,chance,true)
             target.pbInflictStatus(@statusToApply, 0, nil, user)
         end 
-        if @battle.pbRandom(100) < chance && canApplyRandomAddedEffects?(user,target,true)
+        if @battle.pbRandom(100) < chance && canApplyRandomAddedEffects?(user,target,chance,true)
             target.tryLowerStat(:DEFENSE, user, move: self, increment: 2)
         end
     end
