@@ -273,6 +273,10 @@ Description = After the Pokémon is hit thrice, a Sanctuary is set on its side f
 Name = Candy Veil
 Description = Prevents itself and allies from being poisoned, leeched, or waterlogged.
 #-------------------------------
+[CANIDCRUSHER]
+Name = Canid Crusher
+Description = On the first turn, its attacks fracture the target.
+#-------------------------------
 [CASHOUT]
 Name = Cash Out
 Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
@@ -2267,6 +2271,10 @@ Name = Toll the Bells
 Description = Upon entry during eclipse, heals the lowest HP ally or self by 33%.
 Flags = EclipseSynergy
 #-------------------------------
+[TOOTHANDCLAW]
+Name = Tooth and Claw
+Description = Non-biting attacks deal 50% more damage if the Pokémon used a biting move last turn.
+#-------------------------------
 [TORPORSAP]
 Name = Torpor Sap
 Description = Restores its HP by 50% of the damage it deals to sleeping targets.
@@ -2306,6 +2314,10 @@ Description = Powers up Ground-type moves by 50%.
 [ULTRAADAPTED]
 Name = Ultra Adapted
 Description = Powers up moves of the same type by 50%.
+#-------------------------------
+[UMBRALTENACITY]
+Name = Umbral Tenacity
+Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
 #-------------------------------
 [UNAFRAID]
 Name = Unafraid
