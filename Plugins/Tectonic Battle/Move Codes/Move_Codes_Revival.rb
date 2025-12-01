@@ -69,7 +69,7 @@ class PokeBattle_Move_RevivePartyMemberTo50HPThenSwitch < PokeBattle_Move
 
     def effectOnPartyMember(pokemon)
         pokemon.heal
-        pokemon.hp = (0.5*pokemon.hp).round
+        pokemon.hp = (pokemon.totalhp / 2.0).ceil
     end
 
     def pbEffectGeneral(user)
