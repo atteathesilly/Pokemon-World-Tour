@@ -12,6 +12,6 @@ BattleHandlers::CertainAddedEffectUserAbility.add(:TERRORIZE,
 
 BattleHandlers::CertainAddedEffectUserAbility.add(:CATASTROPHIC,
     proc { |ability, battle, user, target, move|
-        next move
+        next true
     }
 )
