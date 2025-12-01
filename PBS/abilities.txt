@@ -18,10 +18,6 @@ Name = As One
 Description = Possesses two Abilities: Unnerve and Chilling Neigh.
 Flags = Immutable
 #-------------------------------
-[AURABREAK]
-Name = Aura Break
-Description = Reverses "Aura" Abilities to weaken affected moves.
-#-------------------------------
 [BADDREAMS]
 Name = Bad Dreams
 Description = Reduces a sleeping foe's HP by 1/8th at the end of a round.
@@ -132,7 +128,7 @@ Flags = SunshineSynergy
 #-------------------------------
 [DRYSKIN]
 Name = Dry Skin
-Description = Heals 1/8th HP in rainstorm, 1/4th when hit by Water-type moves. Loses 1/8th in sunshine, takes 25% more from Fire-type moves.
+Description = Heals 1/8th HP in rainstorm, 1/4th when hit by Water-type moves. Loses 1/8th in sunshine, Fire-type moves do 25% more.
 Flags = RainstormSynergy
 #-------------------------------
 [EMERGENCYEXIT]

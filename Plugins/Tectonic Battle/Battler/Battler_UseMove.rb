@@ -435,14 +435,6 @@ class PokeBattle_Battler
                     end
                 end
             end
-            # Quarantine (for moves which target the whole side)
-            quarantined = false
-            if targets.empty? && user.pbOpposingSide.effectActive?(:Quarantine)
-                @battle.pbDisplay(_INTL("{1} was blocked by the quarantine!", move.name))
-                user.onMoveFailed(move)
-                user.applyEffect(:Disable,3) if user.canBeDisabled?(true,move)
-                quarantined = true
-            end
             # The target's abilities that trigger on the start of the move
             targets.each do |target|
                 next if target.damageState.unaffected
@@ -462,7 +454,7 @@ class PokeBattle_Battler
             # Process each hit in turn
             # Skip all hits if the move is being magic coated, magic bounced, or magic shielded
             realNumHits = 0
-            moveIsBlocked = magicCoater >= 0 || magicBouncer >= 0 || warder >= 0 || quarantined
+            moveIsBlocked = magicCoater >= 0 || magicBouncer >= 0 || warder >= 0
             unless moveIsBlocked
                 for i in 0...numHits
                     success = pbProcessMoveHit(move, user, targets, i, skipAccuracyCheck, multiHitAesthetics)
@@ -1021,7 +1013,7 @@ class PokeBattle_Battler
                 next if b.damageState.calcDamage == 0
                 chance = move.pbAdditionalEffectChance(user, b, move.calcType)
                 next if chance <= 0
-                if @battle.pbRandom(100) < chance && move.canApplyRandomAddedEffects?(user,b,true)
+                if @battle.pbRandom(100) < chance && move.canApplyRandomAddedEffects?(user,b,chance,true)
                     if b.hasActiveAbility?(:UNCANNYLUCK)
                         b.showMyAbilitySplash(:UNCANNYLUCK)
                         @battle.pbDisplay(_INTL("{1}'s additional effect was bounced back!", move.name))
@@ -1049,7 +1041,7 @@ class PokeBattle_Battler
             next if chance <= 0
             next unless @battle.pbRandom(100) < chance
             PBDebug.log("[Item/ability triggered] #{user.pbThis}'s King's Rock/Razor Fang or Stench")
-            next unless move.canApplyRandomAddedEffects?(user, b, true)
+            next unless move.canApplyRandomAddedEffects?(user, b, chance, true)
             b.pbFlinch
         end
         # Message for and consuming of type-weakening berries

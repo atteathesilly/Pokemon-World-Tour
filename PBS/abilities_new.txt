@@ -269,6 +269,10 @@ Description = After the Pokémon is hit thrice, a Sanctuary is set on its side f
 Name = Candy Veil
 Description = Prevents itself and allies from being poisoned, leeched, or waterlogged.
 #-------------------------------
+[CANIDCRUSHER]
+Name = Canid Crusher
+Description = On the first turn, its attacks fracture the target.
+#-------------------------------
 [CASHOUT]
 Name = Cash Out
 Description = Upon entry, consumes scattered coins to heal for 1/10th the amount consumed. This can overheal.
@@ -276,6 +280,10 @@ Description = Upon entry, consumes scattered coins to heal for 1/10th the amount
 [CASTELLAN]
 Name = Castellan
 Description = Boosts Attack and Sp. Atk by 30% in rooms.
+#-------------------------------
+[CATASTROPHIC]
+Name = Catastrophic
+Description = The user's damaging attacks hit all other Pokemon on the field and always activate their random effects.
 #-------------------------------
 [CELEBRATION]
 Name = Celebration
@@ -466,6 +474,10 @@ Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose 
 [DIREDIVERSION]
 Name = Dire Diversion
 Description = It can avoid being knocked out by sacrificing its held item.
+#-------------------------------
+[DISCOMBOBULATOR]
+Name = Discombobulator
+Description = When this Pokémon flinches a target that has already moved, it will flinch next turn.
 #-------------------------------
 [DISCONNECTION]
 Name = Disconnection
@@ -691,7 +703,7 @@ Description = Immune to Poison-type moves, and boosts Defense and Sp. Def when h
 #-------------------------------
 [FINESUGAR]
 Name = Fine Sugar
-Description = Restores 1/8th HP in sunshine, 1/4th when hit by Fire-type moves. Loses 1/8th in rainstorm, takes 25% more from Water-type moves.
+Description = Heals 1/8th HP in sunshine, 1/4th when hit by Fire-type moves. Loses 1/8th in rainstorm, Water-type moves do 25% more.
 Flags = SunshineSynergy
 #-------------------------------
 [FIREFESTIVAL]
@@ -827,10 +839,6 @@ Description = Foes that become numbed are severely so. The Pokémon's Flying-typ
 Name = Gargantuan
 Description = Completely protects allies from foes' spread moves.
 #-------------------------------
-[GAUSSAFTERSHOCK]
-Name = Gauss Aftershock
-Description = Pokémon that swap in for this have their Speed raised and their PP fully restored.
-#-------------------------------
 [GILD]
 Name = Gild
 Description = Turns the held item of a Pokémon it hits into scattered gold coins for you to take.
@@ -878,6 +886,10 @@ Description = Raises Attack and Sp. Atk whenever any Pokémon uses a dance move.
 [GROTESQUEVITALS]
 Name = Grotesque Vitals
 Description = Heals 1/16th HP every turn. Protected from being poisoned.
+#-------------------------------
+[HADEANRAGE]
+Name = Hadean Rage
+Description = When suffering from recoil, the Pokémon cannot go below 1 HP.
 #-------------------------------
 [HANDOFF]
 Name = Hand Off
@@ -956,6 +968,11 @@ Description = Wild Pokémon are more likely to appear in pairs and to be species
 [HEROICFINALE]
 Name = Heroic Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Inner Focus.
+Flags = Immutable
+#-------------------------------
+[HEROSJOURNEY]
+Name = Hero's Journey
+Description = After switching in for a fainted ally, using a status move and knocking out a foe, heals to full and transforms.
 Flags = Immutable
 #-------------------------------
 [HIGHJUDGE]
@@ -1325,6 +1342,11 @@ Flags = HazardImmunity
 Name = Mist Trail
 Description = Pokémon that swap in for this have their Defense and Sp. Defense raised.
 #-------------------------------
+[MODUSSWITCH]
+Name = Modus Switch
+Description = When using Techno Blast, the user can choose the move's type, switching to that form.
+Flags = Immutable
+#-------------------------------
 [MOISTSKIN]
 Name = Moist Skin
 Description = If an attack lowers its HP below half, waterlogs the attacker.
@@ -1531,6 +1553,10 @@ Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special 
 Name = Petty
 Description = Whenever a foe raises their stats, the Pokémon follows suit.
 #-------------------------------
+[PHANTASMAL]
+Name = Phantasmal
+Description = Moves that make the user become hidden deal 30% more move damage and deal 50% damage to protecting targets.
+#-------------------------------
 [PHASESHIFT]
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
@@ -1646,9 +1672,17 @@ Description = Releases a hazard layer of Spikes when hit by an attack.
 Name = Radiate
 Description = Boosts power of light-based moves by 50%.
 #-------------------------------
+[RAGEMANEUVERS]
+Name = Rage Maneuvers
+Description = When the Pokémon is rampaging, it can choose the rampage moves it uses.
+#-------------------------------
 [RAGINGSCALECHARM]
 Name = Raging Scale Charm
 Description = When the Pokémon is hit thrice, a Live Wire is set on the foe's side. The attacker hits itself in a rage.
+#-------------------------------
+[RAINBOWTRAIL]
+Name = Rainbow Trail
+Description = Loses its Fire type. Whenever it uses a move, it gains that move's type.
 #-------------------------------
 [RAINPRISM]
 Name = Rain Prism
@@ -1659,6 +1693,10 @@ Flags = RainstormSynergy
 Name = Ram Prow
 Description = Ignores screens, Substitute, and Abilities that would affect its moves.
 Flags = MoldBreaking,IgnoreScreens,IgnoreSubstitute
+#-------------------------------
+[RAPIDONSET]
+Name = Rapid Onset
+Description = On the first turn, its attacks poison the target.
 #-------------------------------
 [RAPIDREFRESH]
 Name = Rapid Refresh
@@ -2145,6 +2183,10 @@ Flags = EclipseSynergy
 Name = Superalloy
 Description = Powers up Steel-type moves by 50%.
 #-------------------------------
+[SUPERCONDUCTOR]
+Name = Superconductor
+Description = Doubles the speed of allied Pokémon.
+#-------------------------------
 [SURFSUP]
 Name = Surf's Up
 Description = Powers up Water-type moves by 50%.
@@ -2229,6 +2271,10 @@ Name = Toll the Bells
 Description = Upon entry during eclipse, heals the lowest HP ally or self by 33%.
 Flags = EclipseSynergy
 #-------------------------------
+[TOOTHANDCLAW]
+Name = Tooth and Claw
+Description = Non-biting attacks deal 50% more damage if the Pokémon used a biting move last turn.
+#-------------------------------
 [TORPORSAP]
 Name = Torpor Sap
 Description = Restores its HP by 50% of the damage it deals to sleeping targets.
@@ -2268,6 +2314,10 @@ Description = Powers up Ground-type moves by 50%.
 [ULTRAADAPTED]
 Name = Ultra Adapted
 Description = Powers up moves of the same type by 50%.
+#-------------------------------
+[UMBRALTENACITY]
+Name = Umbral Tenacity
+Description = During moonglow, take 35% less damage from attacks that aren't Steel-type.
 #-------------------------------
 [UNAFRAID]
 Name = Unafraid

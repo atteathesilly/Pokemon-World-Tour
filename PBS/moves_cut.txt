@@ -1085,6 +1085,18 @@ Description = The user attacks last. In return, it's guaranteed not to miss and 
 #-------------------------------
 #		FLYING MOVES
 #-------------------------------
+[AEROBLAST]
+Name = Aeroblast
+Type = FLYING
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect,CanRandomCrit,Wind
+Description = A vortex of air is shot at the target to inflict damage. Can random critical hit.
+#-------------------------------
 [AIRCUTTER]
 Name = Air Cutter
 Type = FLYING
@@ -2284,6 +2296,19 @@ Target = BothSides
 FunctionCode = Invalid
 Description = Intensifies the sun for five turns, boosting Fire-type attacks and hindering most other attacks.
 #-------------------------------
+[SACREDFIRE]
+Name = Sacred Fire
+Type = FIRE
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+EffectChance = 100
+Description = The target is razed with a mystical fire of great intensity. Burns the target.
+#-------------------------------
 [STOREFUEL]
 Name = Store Fuel
 Type = FIRE
@@ -3129,6 +3154,18 @@ Target = NearOther
 FunctionCode = Invalid
 Flags = CanProtect
 Description = The user eats its foe's dreams. It absorbs half the damage caused to heal its HP and doubles in power if the foe is asleep.
+#-------------------------------
+[DREAMFEAST]
+Name = Dream Feast
+Type = PSYCHIC
+Category = Adaptive
+Power = 75
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = Doubles in power if the foe is asleep. The user's HP is restored by 50% the damage dealt. This can overheal.
 #-------------------------------
 [ENERGYTRICK]
 Name = Energy Trick

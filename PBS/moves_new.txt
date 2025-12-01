@@ -1245,6 +1245,20 @@ Flags = CanProtect
 Description = The user quickly increases the air pressure to damage the target. This attack always goes before any other move.
 Animation = SONICBOOM
 #-------------------------------
+[SILVERGALE]
+Name = Silver Gale
+Type = FLYING
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+Priority = -6
+FunctionCode = MovesHazardsToOpponentAndForcesSwitch
+Flags = CanProtect,Wind
+Description = Clears hazards on the opponent's side of the field, moves hazards on the user's side to the opponent's, then forces the targets to switch.
+Animation = AEROBLAST
+#-------------------------------
 [SKYFALL]
 Name = Sky Fall
 Type = FLYING
@@ -1419,12 +1433,12 @@ Type = POISON
 Category = Physical
 Power = 75
 Accuracy = 100
-TotalPP = 15
+TotalPP = 12
 Target = NearOther
-FunctionCode = StealAtk1
+FunctionCode = RaiseUserAttack5IfTargetFaints
 Flags = CanProtect,Biting
 EffectChance = 100
-Description = The user steals blood, lowering the target's Attack. If so, raises the user's Attack.
+Description = The user steals blood. If the target is knocked out, raises the user's Attack stat by five steps.
 Animation = CRUNCH
 #-------------------------------
 [GREYMIST]
@@ -2394,6 +2408,20 @@ Flags = CanProtect
 EffectChance = 100
 Description = A star falls on the target. Witnessing this lucky star also enables random critical hits and doubles the user's critical hit chance.
 Animation = DOOMDESIRE
+#-------------------------------
+[STORMSHARDS]
+Name = Stormshards
+Type = ROCK
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = PositionPassiveDamage
+Flags = CanProtect,ForceSignature
+EffectChance = 100
+Description = The user attacks with shards from their rocky mane. For the next 3 turns, the Pokémon in the targeted slot loses 1/8th of their max HP.
+Animation = STEALTHROCK
 #-------------------------------
 [TERRAFORM]
 Name = Terraform
@@ -3891,6 +3919,18 @@ Target = User
 FunctionCode = RaiseUserSpAtk3StartUserAttacksSpread
 Flags = CanSnatch
 Description = Raises Sp. Atk by three steps. Until switch out, the user's attacks spread to hit all nearby foes.
+#-------------------------------
+[GOLDENREBIRTH]
+Name = Golden Rebirth
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+Priority = -6
+FunctionCode = RevivePartyMemberTo50HPThenSwitch
+Description = The user creates a golden pyre that revives a fainted Pokemon. That Pokemon switches in and its stats are boosted.
+Animation = MORNINGSUN
 #-------------------------------
 [HEARTHFIREHULA]
 Name = Hearthfire Hula
@@ -5545,12 +5585,12 @@ Name = Quarantine
 Type = ELECTRIC
 Category = Status
 Accuracy = 0
-TotalPP = 3
-Target = User
+TotalPP = 10
+Target = NearOther
 Priority = 4
-FunctionCode = ProtectUserFromStatusMovesDisableBlockedMoves3
-Description = Protects the user's side from status moves this turn. It disables any moves blocked for three turns.
-Animation = PROTECT
+FunctionCode = Trap3TurnsAndDisableLastMove3
+Description = Puts the target into a quarantine, trapping and disabling the move it last used for three turns.
+Animation = BAR
 #-------------------------------
 [RAPIDHERTZ]
 Name = Rapid Hertz
@@ -5802,18 +5842,6 @@ Flags = CanProtect
 Description = The user's HP is restored by 50% of the damage dealt. Power doubles if the foe is asleep.
 Animation = DREAMEATER
 #-------------------------------
-[DREAMFEAST]
-Name = Dream Feast
-Type = PSYCHIC
-Category = Adaptive
-Power = 75
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = HealUserByHalfOfDamageDoneDoubleDamageIfTargetAsleepCanOverheal
-Flags = CanProtect
-Description = Doubles in power if the foe is asleep. The user's HP is restored by 50% the damage dealt. This can overheal.
-#-------------------------------
 [ECLIPSE]
 Name = Eclipse
 Type = PSYCHIC
@@ -5871,9 +5899,21 @@ Accuracy = 100
 TotalPP = 10
 Target = AllNearOthers
 FunctionCode = Basic
-Flags = CanProtect
+Flags = CanProtect,Punch
 Description = The user claps with the power of a hundred hands, psionically striking all nearby battlers.
 Animation = SONICBOOM
+#-------------------------------
+[HYPNOTHERAPY]
+Name = Hypnotherapy
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 8
+Target = NearOther
+FunctionCode = SleepTargetIfStatused
+Flags = CanProtect,CanMagicCoat
+Description = The user swings its pendulum to cure a statused target, but make them fall into a deep sleep.
+Animation = HYPNOSIS
 #-------------------------------
 [INVITEECLIPSE]
 Name = Invite Eclipse

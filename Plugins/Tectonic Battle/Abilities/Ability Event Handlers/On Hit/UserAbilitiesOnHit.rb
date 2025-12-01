@@ -23,6 +23,13 @@ BattleHandlers::UserAbilityOnHit.add(:DARKSCALECLOUD,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:RAPIDONSET,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    randomStatusProcUserAbility(ability, :POISON, 100, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)
+
 #########################################
 # Burn abilities
 #########################################
@@ -200,6 +207,15 @@ BattleHandlers::UserAbilityOnHit.add(:MENTALDAMAGE,
   }
 )
 
+BattleHandlers::UserAbilityOnHit.add(:CANIDCRUSHER,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
+    battle.pbShowAbilitySplash(user, ability)
+    target.applyEffect(:Fracture, applyEffectDurationModifiers(DEFAULT_FRACTURE_DURATION, user))
+    battle.pbHideAbilitySplash(user)
+  }
+)
+
 BattleHandlers::UserAbilityOnHit.add(:INFAMOUS,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
     next unless user.firstTurn?
@@ -277,12 +293,13 @@ BattleHandlers::UserAbilityOnHit.add(:FATCHANCE,
 #########################################
 
 BattleHandlers::UserAbilityOnHit.add(:POWERPINCH,
-	proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-		next unless user.firstTurn?
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.firstTurn?
     next unless move.physicalMove?
-		next if target.fainted?
-		next if target.effectActive?(:Trapping)
-		next if target.effectActive?(:Binding)
+    next if target.fainted?
+    next if target.effectActive?(:Trapping)
+    next if target.effectActive?(:Binding)
+    next if user.fainted?
     trappingDuration = 3
     trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
     score = 30
@@ -305,6 +322,7 @@ BattleHandlers::UserAbilityOnHit.add(:LAUOHOLASSO,
     next if target.fainted?
     next if target.effectActive?(:Trapping)
     next if target.effectActive?(:Binding)
+    next if user.fainted?
     trappingDuration = 3
     trappingDuration *= 2 if user.hasActiveItem?(:GRIPCLAW)
     score = 30

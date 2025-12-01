@@ -13,7 +13,7 @@ Turns = 1
 HPMult = 3.0
 #-------------------------------
 [DREEPY]
-Ability = CLEARBODY
+Ability = FASCINATE
 Moves1 = SHRED
 Turns = 1
 HPMult = 3.0
@@ -584,7 +584,7 @@ HPMult = 16.0
 DMGMult = 1.25
 #-------------------------------
 [DRAGAPULT]
-Ability = CLEARBODY
+Ability = FASCINATE
 Moves1 = VIMRIPPER,DRAGONDARTS,PRIMEVALLASERFOCUS
 Moves2 = SIXFEETUNDER,IRONHEAD,WAILINGBLOW
 HPMult = 8.0
@@ -646,8 +646,8 @@ Moves2 = PINMISSILE,BUGBUZZ
 HPMult = 8.0
 #-------------------------------
 [HYPNO]
-Ability = BADDREAMS
-Moves1 = LULLABY,DREAMFEAST,BRICKBREAK,PRIMEVALSPORE
+Ability = TORPORSAP
+Moves1 = LULLABY,DREAMABSORB,BRICKBREAK,PRIMEVALSPORE
 Moves2 = SPORE,WHIPKICK,WAKEUPSLAP
 HPMult = 8.0
 #-------------------------------
