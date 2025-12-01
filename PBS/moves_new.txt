@@ -553,6 +553,17 @@ FunctionCode = Basic
 Flags = CanProtect,Sound
 Description = The user shouts with force at the target. This move always hits first.
 #-------------------------------
+[SLEEPYSERENADE]
+Name = Sleepy Serenade
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 3
+Target = NearOther
+FunctionCode = TwoTurnMoveSleepTarget
+Flags = CanProtect,CanMagicCoat,Sound
+Description = The user charges, then puts the target to sleep on the next turn.
+#-------------------------------
 [SMIRK]
 Name = Smirk
 Type = NORMAL

@@ -1028,6 +1028,10 @@ Description = After using a sound move, raises the Pokémon's Defense and Sp. De
 Name = Soundproof
 Description = Gives full immunity to all sound-based moves.
 #-------------------------------
+[STAGGERINGSLAPS]
+Name = Staggering Slaps
+Description = Has a 30% chance to dizzy targets when using physical moves.
+#-------------------------------
 [STAKEOUT]
 Name = Stakeout
 Description = Deals double damage to a target's replacement.

@@ -863,10 +863,6 @@ Description = Eats pinch berries earlier than normal. Gets a random pinch berry 
 Name = Gravitas
 Description = Upon entry, intensifies gravity for four turns.
 #-------------------------------
-[GRAVITYCONTROL]
-Name = Gravity Control
-Description = White Gravity is active, this Pokémon has 50% more Speed.
-#-------------------------------
 [GRAVITYWELL]
 Name = Gravity Well
 Description = Intensifies gravity for four turns when hit by an attack.
@@ -1987,6 +1983,10 @@ Description = Attack is boosted by 50% if a Tailwind is blowing.
 Name = Sluggish
 Description = The Pokémon is also Bug-type, but its Speed is halved.
 #-------------------------------
+[SLUMBERFORCE]
+Name = Slumber Force
+Description = Its attacks deal 50% more move damage against sleeping targets.
+#-------------------------------
 [SLUMBERINGDRAKE]
 Name = Slumbering Drake
 Description = Falls asleep upon entry, but raises all of its stats by two steps.
@@ -2045,10 +2045,6 @@ Description = Speed is raised each turn. Speed is reset when hit, but the attack
 [STABILITY]
 Name = Stability
 Description = Can't be afflicted with any non-volatile status condition.
-#-------------------------------
-[STAGGERINGSLAPS]
-Name = Staggering Slaps
-Description = Has a 30% chance to dizzy targets when using physical moves.
 #-------------------------------
 [STAINLESSSTEEL]
 Name = Stainless Steel

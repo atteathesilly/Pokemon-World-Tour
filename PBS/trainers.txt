@@ -632,7 +632,7 @@ Pokemon = KINGLER,25
 #-------------------------------
 [IDOL,Ishizu]
 Pokemon = JIGGLYPUFF,26
-    Moves = WAKEUPSLAP,LULLABY,ROUND,BALEFULBOP
+    Moves = LULLABY,ROUND,BALEFULBOP,TEASE
     AbilityIndex = 1 # Maestro
     Item = SITRUSBERRY
 Pokemon = KLANG,25
@@ -1327,8 +1327,8 @@ Pokemon = BEAUTIFLY,26
 #-------------------------------
 [SAGE,Imay]
 Pokemon = DOTTLER,26
-    Moves = CONFUSERAY,PSYBEAM,SIGNALBEAM
-    AbilityIndex = 1 # Hive Mind
+    Moves = CONFUSERAY,PSYBEAM,INFESTATION,SURGESNARE
+    AbilityIndex = 0 # Trapper
     Item = SITRUSBERRY
 Pokemon = HERDIER,27
     Moves = NUMB,CHARM,HOWL,HEADBUTT
