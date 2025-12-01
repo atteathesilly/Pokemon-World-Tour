@@ -821,6 +821,18 @@ FunctionCode = Invalid
 Flags = CanProtect
 Description = The target is gripped and squeezed from both sides to inflict damage.
 #-------------------------------
+[WAKEUPSLAP]
+Name = Wake-Up Slap
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Invalid
+Flags = CanProtect
+Description = This attack inflicts double damage on a sleeping target. It also wakes the target up, however.
+#-------------------------------
 [WEATHERBALL]
 Name = Weather Ball
 Type = NORMAL

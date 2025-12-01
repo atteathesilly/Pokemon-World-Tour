@@ -553,6 +553,17 @@ FunctionCode = Basic
 Flags = CanProtect,Sound
 Description = The user shouts with force at the target. This move always hits first.
 #-------------------------------
+[SLEEPYSERENADE]
+Name = Sleepy Serenade
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 3
+Target = NearOther
+FunctionCode = TwoTurnMoveSleepTarget
+Flags = CanProtect,CanMagicCoat,Sound
+Description = The user charges, then puts the target to sleep on the next turn.
+#-------------------------------
 [SMIRK]
 Name = Smirk
 Type = NORMAL
@@ -1321,7 +1332,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberSpecial
 Flags = CanProtect
-Description = Hits once for each party Pokemon. Deals more damage based on their Sp. Atk.
+Description = Hits once for each party Pokémon. Deals more damage based on their Sp. Atk.
 #-------------------------------
 [WINDTUNNEL]
 Name = Wind Tunnel
@@ -3417,7 +3428,7 @@ Target = NearFoe
 FunctionCode = BlindOnSwitchIn
 Flags = CanProtect,Light
 EffectChance = 100
-Description = The user reflects a burst of light off its curls. Blinds a Pokemon entering the battle.
+Description = The user reflects a burst of light off its curls. Blinds a Pokémon entering the battle.
 Animation = FLASH
 #-------------------------------
 [HELMBUTT]
@@ -3929,7 +3940,7 @@ TotalPP = 1
 Target = User
 Priority = -6
 FunctionCode = RevivePartyMemberTo50HPThenSwitch
-Description = The user creates a golden pyre that revives a fainted Pokemon. That Pokemon switches in and its stats are boosted.
+Description = The user creates a golden pyre that revives a fainted Pokémon. That Pokémon switches in and its stats are boosted.
 Animation = MORNINGSUN
 #-------------------------------
 [HEARTHFIREHULA]
@@ -6739,7 +6750,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberPhysical
 Flags = CanProtect
-Description = Hits once for each party Pokemon. Deals more damage based on their Attack.
+Description = Hits once for each party Pokémon. Deals more damage based on their Attack.
 Animation = ICEPUNCH
 #-------------------------------
 #		DRAGON MOVES

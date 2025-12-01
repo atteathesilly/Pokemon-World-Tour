@@ -98,6 +98,10 @@ Flags = CritImmunity
 Name = Beast Boost
 Description = Boosts its best stat each time it deals a KO.
 #-------------------------------
+[BEGUILING]
+Name = Beguiling
+Description = Boosts Sp. Def by 20%. When the Pokémon takes its second special hit from a foe, they become dizzied.
+#-------------------------------
 [BELLIGERENT]
 Name = Belligerent
 Description = Boosts Attack and Sp. Atk by three steps when a stat is lowered by a foe.
@@ -126,6 +130,10 @@ Description = Powers up Fire-type moves in a pinch.
 [BLIZZBOXER]
 Name = Sleetshaker
 Description = Boosts Attack by 30% in hailstorms.
+#-------------------------------
+[BRAINSCRAMBLE]
+Name = Brain Scramble
+Description = Has a 30% chance to dizzy targets when using special moves.
 #-------------------------------
 [BROODING]
 Name = Brooding
@@ -230,6 +238,10 @@ Description = Foes aren't released from its trapping moves even when the Pokémo
 [DIGGINGFIST]
 Name = Excavator
 Description = Dig and Undermine deal 50% more damage.
+#-------------------------------
+[DISORIENTING]
+Name = Disorienting
+Description = Boosts Defense by 20%. When the Pokémon takes its second physical hit from a foe, they become dizzied.
 #-------------------------------
 [DRAGONSCALES]
 Name = Dragon Scales
@@ -455,6 +467,10 @@ Description = Takes 50% less damage from Fire-type moves.
 Name = Heaven's Crown
 Description = If the Pokémon witnesses a total eclipse, it gets to move twice that turn.
 Flags = EclipseSynergy
+#-------------------------------
+[HELIOCENTRISM]
+Name = Heliocentrism
+Description = Traps the foe during gravity.
 #-------------------------------
 [HONEYGATHER]
 Name = Honey Gather
@@ -1019,6 +1035,10 @@ Description = After using a sound move, raises the Pokémon's Defense and Sp. De
 [SOUNDPROOF]
 Name = Soundproof
 Description = Gives full immunity to all sound-based moves.
+#-------------------------------
+[STAGGERINGSLAPS]
+Name = Staggering Slaps
+Description = Has a 30% chance to dizzy targets when using physical moves.
 #-------------------------------
 [STAKEOUT]
 Name = Stakeout

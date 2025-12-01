@@ -632,7 +632,7 @@ Pokemon = KINGLER,25
 #-------------------------------
 [IDOL,Ishizu]
 Pokemon = JIGGLYPUFF,26
-    Moves = WAKEUPSLAP,LULLABY,ROUND,BALEFULBOP
+    Moves = LULLABY,ROUND,BALEFULBOP,TEASE
     AbilityIndex = 1 # Maestro
     Item = SITRUSBERRY
 Pokemon = KLANG,25
@@ -909,7 +909,7 @@ Pokemon = VENUSAUR,65
     EV = 20,10,10,0,10,10
 Pokemon = SAHARICANE,65
     Moves = SANDBLASTING,MIASMA,COLDFRONT,FLAMETHROWER
-    AbilityIndex = 1 # Disorienting
+    AbilityIndex = 1 # Shed Skin
     Item = STRIKEVEST
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
@@ -969,7 +969,7 @@ Pokemon = POLIWHIRL,25
 Pokemon = SANDACONDA,25
     Position = 1
     Moves = DUSTDEVIL,BLUSTER,GLARE,STEALTHROCK
-    AbilityIndex = 1 # Disorienting
+    AbilityIndex = 1 # Shed Skin
     Item = AGILITYHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
@@ -1327,8 +1327,8 @@ Pokemon = BEAUTIFLY,26
 #-------------------------------
 [SAGE,Imay]
 Pokemon = DOTTLER,26
-    Moves = CONFUSERAY,PSYBEAM,SIGNALBEAM
-    AbilityIndex = 0 # Brain Scramble
+    Moves = CONFUSERAY,PSYBEAM,INFESTATION,SURGESNARE
+    AbilityIndex = 0 # Trapper
     Item = SITRUSBERRY
 Pokemon = HERDIER,27
     Moves = NUMB,CHARM,HOWL,HEADBUTT
@@ -2410,7 +2410,7 @@ Pokemon = GOTHITELLE,70
 Pokemon = BEHEEYEM,70
     AbilityIndex = 0 # Cold Calculation
 Pokemon = ORBEETLE,70
-    AbilityIndex = 0 # Brain Scramble
+    AbilityIndex = 1 # Hive Mind
 Pokemon = HATTERENE,70
     AbilityIndex = 0 # Killjoy
 Pokemon = MALAMAR,70
@@ -2675,7 +2675,7 @@ TrainerTypeLabel = DEVELOPER
 Pokemon = DECEAT,70
     AbilityIndex = 1 # Intimidate
 Pokemon = SYLVEON,70
-    AbilityIndex = 0 # Beguiling
+    AbilityIndex = 1 # Dragon Slayer
 Pokemon = ANINETALES,70
     AbilityIndex = 1 # Blinding
 Pokemon = MIMIKYU,70
@@ -7899,7 +7899,7 @@ Pokemon = GREEDENT,70
 Pokemon = REAVOR,70
     AbilityIndex = 0 # Technician
 Pokemon = SAHARICANE,70
-    AbilityIndex = 1 # Disorienting
+    AbilityIndex = 1 # Shed Skin
 Pokemon = SEISMAW,70
     AbilityIndex = 1 # Trapper
 #-------------------------------
@@ -8450,18 +8450,18 @@ Pokemon = CLEFABLE,70
     Moves = FOLLOWME,MORNINGSTAR,SWEETSELENE,PROTECT
     AbilityIndex = 1 # Luna Riot
     Item = MIRROREDROCK
-Pokemon = VOLBEAT,70
-    Moves = LUMINBURST,THUNDERBOLT,TAILGLOW,PROTECT
-    AbilityIndex = 0 # Swarm Instinct
-    Item = CHARTIBERRY
-Pokemon = NOCTOWL,70
-    Moves = TEMPEST,TOTALCONTROL,PROFANE,TRUENAME
-    AbilityIndex = 0 # Night Owl
-    Item = PSYCHICGEM
 Pokemon = ARATICATE,70
     Moves = MOUTHFUL,DOUBLEEDGE,CRUNCH,UTURN
     AbilityIndex = 0 # Night Life
     Item = NORMALGEM
+Pokemon = NOCTOWL,70
+    Moves = TEMPEST,TOTALCONTROL,PROFANE,TRUENAME
+    AbilityIndex = 0 # Night Owl
+    Item = PSYCHICGEM
+Pokemon = SYLVEON,70
+    Moves = MISTBURST,MOONBLAST,EARTHPOWER,MOONGLOW
+    AbilityIndex = 0 # Night Life
+    Item = CADOBERRY
 #-------------------------------
 [WILDPACK,Muggy]
 Policies = RAIN_TEAM

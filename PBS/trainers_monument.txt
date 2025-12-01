@@ -1301,7 +1301,7 @@ Pokemon = GARDEVOIR,70
 [BEAUTY,Riko]
 Pokemon = WIGGLYTUFF,70
     Moves = STEALTHROCK,KNOCKOFF,PLAYROUGH,SELFDESTRUCT
-    AbilityIndex = 0 # Staggering Slaps
+    AbilityIndex = 0 # Slumber Force
     Item = SITRUSBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,10,20,0,10,20

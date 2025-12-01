@@ -961,3 +961,12 @@ BattleHandlers::DamageCalcUserAbility.add(:ACTIONSTAR,
     user.aiLearnsAbility(ability) unless aiCheck
   }
 )
+
+BattleHandlers::DamageCalcUserAbility.add(:SLUMBERFORCE,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if target.asleep?
+      mults[:base_damage_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)

@@ -526,7 +526,9 @@ class PokeBattle_Move_TwoTurnMoveHealTargetHalfOfTotalHP < PokeBattle_Move_TwoTu
     end
 end
 
-
+#===============================================================================
+# Does more damage the lower the user's HP is. (Aura Storm)
+#===============================================================================
 class PokeBattle_Move_TwoTurnMoveHyperScalesWithLostHP < PokeBattle_TwoTurnMove
     def pbBaseDamage(_baseDmg, user, _target)
         ratio = user.hp.to_f / user.totalhp.to_f
@@ -546,5 +548,27 @@ class PokeBattle_Move_TwoTurnMoveHyperScalesWithLostHP < PokeBattle_TwoTurnMove
 
     def pbChargingTurnMessage(user, _targets)
         @battle.pbDisplay(_INTL("{1} gathered energy!", user.pbThis))
+    end
+end
+
+
+#===============================================================================
+# Charges up Turn 1 and puts the target to sleep on Turn 2 (Sleepy Serenade)
+#===============================================================================
+class PokeBattle_Move_TwoTurnMoveSleepTarget < PokeBattle_TwoTurnMove
+    def pbFailsAgainstTarget?(user, target, show_message)
+        return !target.canSleep?(user, show_message, self)
+    end
+
+    def pbAttackingTurnEffect(_user, target)
+        target.applySleep
+    end
+
+    def pbChargingTurnMessage(user, _targets)
+        @battle.pbDisplay(_INTL("{1} started singing!", user.pbThis))
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        return getSleepEffectScore(user, target)
     end
 end
