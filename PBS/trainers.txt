@@ -395,7 +395,7 @@ Pokemon = LILEEP,20
     AbilityIndex = 0 # Rooted
     Item = SITRUSBERRY
 Pokemon = FLAAFFY,21
-    Moves = SHOCKWAVE,SIGNALBEAM,NUMB,CHARGE
+    Moves = LASERBEAM,SIGNALBEAM,NUMB,CHARGE
     AbilityIndex = 0 # Beaming
 #-------------------------------
 [SCHOOLKID_F,Arya]
@@ -488,7 +488,7 @@ Pokemon = DREEPY,24
     Moves = QUICKATTACK,RAKE,SHADOWCLAW,SHRED
     AbilityIndex = 0 # Fascinate
 Pokemon = SWIRLIX,24
-    Moves = COTTONSPORE,CREEPINGSTRIKE,PIXIEPUNCH
+    Moves = COTTONSPORE,FLAMEWHEEL,PIXIEPUNCH
     AbilityIndex = 1 # Fine Sugar
 #-------------------------------
 [TEENAGERF,Naomi]
@@ -1038,7 +1038,7 @@ Pokemon = ELECTRIKE,20
 Pokemon = STUFFUL,20
     AbilityIndex = 0 # Intimidate
 Pokemon = FERROSEED,20
-    Moves = CREEPINGSTRIKE,SPIKES,METALCLAW
+    Moves = FLASHSEED,SPIKES,METALCLAW
     AbilityIndex = 0 # Iron Barbs
     Item = CADOBERRY
 #-------------------------------
@@ -4003,7 +4003,7 @@ Pokemon = RHYPERIOR,44
 #-------------------------------
 [BEAUTY3,Ester]
 Pokemon = AMPHAROS,41
-    Moves = RECOVER,SIGNALBEAM,DRAGONPULSE,THUNDERCAGE
+    Moves = RECOVER,SIGNALBEAM,DRAGONPULSE,ARCLAMP
     AbilityIndex = 0 # Beaming
     Item = SITRUSBERRY
 Pokemon = HSAMUROTT,43
@@ -8885,8 +8885,8 @@ Pokemon = KOMMOO,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 15,15,0,20,15,0
 Pokemon = AMPHAROS,70
-    Moves = TRANSCENDENTENERGY,THUNDER,POLLENPUFF,DRACOMETEOR
-    AbilityIndex = 0 # Beaming
+    Moves = TRANSCENDENTENERGY,THUNDERBOLT,POLLENPUFF,DRACOMETEOR
+    AbilityIndex = 1 # Stubborn
     Item = POWERHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,5,20,0,5
@@ -9168,8 +9168,8 @@ Pokemon = HARIYAMA,70
     EV = 11,20,15,0,20,4
 Pokemon = AMPHAROS,70
     Name = Visibility
-    Moves = VOLTSWITCH,RECOVER,TRANSCENDENTENERGY,DRAGONPULSE
-    AbilityIndex = 0 # Beaming
+    Moves = VOLTSWITCH,RECOVER,TRANSCENDENTENERGY,DRACOMETEOR
+    AbilityIndex = 1 # Stubborn
     Item = POWERHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
