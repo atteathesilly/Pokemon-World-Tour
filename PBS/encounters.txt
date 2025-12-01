@@ -40,8 +40,6 @@ FloweryGrass2,20,20
     14,JOLTIK,19,21
     14,PURRLOIN,19,21
     14,SHINX,19,21
-Special,20
-    1,GSLOWPOKE,15
 #-------------------------------
 [007] # Repora Forest
 Land,20,20
@@ -195,10 +193,13 @@ Puddle,20,15
     17,INKAY,9,11
     17,MGOLDEEN,9,11
     16,CLOBBOPUS,9,11
+Special,20
+    1,SENTRET,15
+    1,YUNGOOS,15
 #-------------------------------
 [039] # Casaba Center
 Special,15
-    1,ASANDSHREW,10
+    1,APPLIN,10
 #-------------------------------
 [040] # Gigalith's Guts
 DarkCave,20,20
@@ -213,7 +214,7 @@ Special,40
 #-------------------------------
 [049] # Tourist's House
 Special,15
-    1,BONSLY,10
+    1,ARON,10
 #-------------------------------
 [051] # Foreclosed Tunnel
 DarkCave,20,15
@@ -271,7 +272,7 @@ FloweryGrass,20,20
 #-------------------------------
 [057] # Novo Center
 Special,20
-    1,AMEOWTH,15
+    1,WYNAUT,15
 #-------------------------------
 [059] # Feebas' Fin
 Land,20,20
@@ -327,6 +328,11 @@ Puddle,20,20
     20,STARYU,18,20
     20,TENTACOOL,18,20
 #-------------------------------
+[082] # Alloy Station 531
+Special,20
+    1,HAPPINY,15
+    1,LILLIPUP,15
+#-------------------------------
 [085] # Worried Man's House
 Special,20
     1,FRILLISH,15
@@ -335,17 +341,9 @@ Special,20
 Special,20
     1,GZIGZAGOON,15
 #-------------------------------
-[087] # LuxTech Rec Center
-Special,20
-    1,APPLIN,15
-#-------------------------------
 [090] # Employees' House
 Special,20
-    1,SNUBBULL,15
-#-------------------------------
-[092] # Svait Lodge Room 2
-Special,20
-    1,AGRIMER,15
+    1,SEEL,15
 #-------------------------------
 [095] # Snowbird's House F2
 Special,20
@@ -355,13 +353,8 @@ Special,20
 Special,20
     1,SEWADDLE,15
 #-------------------------------
-[098] # LuxTech Cold Storage Basement
-Special,20
-    1,SEEL,15
-#-------------------------------
 [103] # Velenz Mart
 Special,20
-    1,MAGBY,15
     1,SINISTEA,20
 #-------------------------------
 [117] # Ice Cave
@@ -387,8 +380,6 @@ Land,20,20
     20,SNOM,22,24
     20,SNOVER,22,24
     20,SPEAROW,22,24
-Special,20
-    1,HAPPINY,15
 #-------------------------------
 [122] # LuxTech Sewers
 Special,20
@@ -423,7 +414,7 @@ Land,20,20
     17,SPOINK,24,26
     16,VULLABY,24,26
 Special,20
-    1,LILLIPUP,15
+    1,LICKITUNG,15
 #-------------------------------
 [130] # Canal Desert
 LandSparse,20,20
@@ -877,10 +868,6 @@ WaterGrass,10,40
 Special,40
     1,WINGULL,10
 #-------------------------------
-[243] # Chasm Base Mess Hall
-Special,20
-    1,DEWPIDER,15
-#-------------------------------
 [250] # Chasm Base Lab
 Special,20
     1,ARCTOVISH,40
@@ -962,8 +949,6 @@ FloweryGrass,20,20
     4,FLABEBE_2,21,23
     4,FLABEBE_3,21,23
     4,FLABEBE_4,21,23
-Special,20
-    1,DRIFLOON,15
 #-------------------------------
 [304] # Ruined Tower F1
 LandSparse,20,40
@@ -972,10 +957,6 @@ LandSparse,20,40
     20,GOLETT,43,45
     20,LARVESTA,43,45
     20,WEEPINBELL,43,45
-#-------------------------------
-[305] # Dock Warehouse
-Special,20
-    1,GPONYTA,15
 #-------------------------------
 [316] # Sandstone Estuary
 ActiveWater,20,40
@@ -1122,7 +1103,7 @@ Special,15
 #-------------------------------
 [392] # Turf-Grouz Gatehouse
 Special,20
-    1,ELEKID,15
+    1,FINNEON,15
 #-------------------------------
 [396] # Crater-Shelf Gatehouse
 Special,20
@@ -1214,6 +1195,8 @@ LandSparse,20,70
     20,GOGOAT,62,64
     20,GOLEM,62,64
     20,SAHARICANE,62,64
+Special,20
+    1,CRABRAWLER,15
 #-------------------------------
 [431] # Ship Graveyard
 Puddle,20,20
