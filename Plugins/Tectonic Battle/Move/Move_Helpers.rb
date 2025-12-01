@@ -279,11 +279,11 @@ class PokeBattle_Move
         user.pbEffectsOnSwitchIn(true)
     end
 
-    def switchOutUserForSelectedPokemon(user,selectedPokemonIndex,switchedBattlers=[],disableMoldBreaker=true,randomReplacement=false,batonPass=false)
+    def switchOutUserForSelectedPokemon(user,selectedPokemonIndex,switchedBattlers=[],disableMoldBreaker=true)
         return unless @battle.pbCanSwitch?(user.index)
         @battle.pbPursuit(user.index)
         return if user.fainted?
-        @battle.pbRecallAndReplace(user.index,selectedPokemonIndex,randomReplacement,batonPass)
+        @battle.pbRecallAndReplace(user.index,selectedPokemonIndex)
         @battle.pbClearChoice(user.index)
         @battle.moldBreaker = false if disableMoldBreaker
         switchedBattlers.push(user.index)
