@@ -1245,6 +1245,20 @@ Flags = CanProtect
 Description = The user quickly increases the air pressure to damage the target. This attack always goes before any other move.
 Animation = SONICBOOM
 #-------------------------------
+[SILVERGALE]
+Name = Silver Gale
+Type = FLYING
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 1
+Target = AllNearFoes
+Priority = -6
+FunctionCode = MovesHazardsToOpponentAndForcesSwitch
+Flags = CanProtect,Wind
+Description = Clears hazards on the opponent's side of the field, moves hazards on the user's side to the opponent's, then forces the targets to switch.
+Animation = AEROBLAST
+#-------------------------------
 [SKYFALL]
 Name = Sky Fall
 Type = FLYING
@@ -3905,6 +3919,18 @@ Target = User
 FunctionCode = RaiseUserSpAtk3StartUserAttacksSpread
 Flags = CanSnatch
 Description = Raises Sp. Atk by three steps. Until switch out, the user's attacks spread to hit all nearby foes.
+#-------------------------------
+[GOLDENREBIRTH]
+Name = Golden Rebirth
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+Priority = -6
+FunctionCode = RevivePartyMemberTo50HPThenSwitch
+Description = The user creates a golden pyre that revives a fainted Pokemon. That Pokemon switches in and its stats are boosted.
+Animation = MORNINGSUN
 #-------------------------------
 [HEARTHFIREHULA]
 Name = Hearthfire Hula

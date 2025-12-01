@@ -1351,3 +1351,17 @@ BattleHandlers::AbilityOnSwitchIn.add(:DISTORTEDGRAVITY,
       battle.pbHideAbilitySplash(battler)
   }
 )
+
+BattleHandlers::AbilityOnSwitchIn.add(:RAINBOWTRAIL,
+  proc { |ability, battler, battle, aiCheck| 
+      next unless battler.canChangeType?
+      next unless battler.hasType?(:FIRE)
+      next 0 if aiCheck
+      battler.applyEffect(:RainbowTrail, [:FLYING])
+      battler.applyEffect(:RainbowTrailEntry)
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} is trailing rainbows behind it!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+      battle.scene.pbRefresh
+  }
+)

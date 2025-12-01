@@ -285,6 +285,10 @@ Description = Upon entry, consumes scattered coins to heal for 1/10th the amount
 Name = Castellan
 Description = Boosts Attack and Sp. Atk by 30% in rooms.
 #-------------------------------
+[CATASTROPHIC]
+Name = Catastrophic
+Description = The user's damaging attacks hit all other Pokemon on the field and always activate their random effects.
+#-------------------------------
 [CELEBRATION]
 Name = Celebration
 Description = Heals by 1/5th HP whenever any Pokémon uses a dance move. Can overheal.
@@ -1683,6 +1687,10 @@ Description = When the Pokémon is rampaging, it can choose the rampage moves it
 [RAGINGSCALECHARM]
 Name = Raging Scale Charm
 Description = When the Pokémon is hit thrice, a Live Wire is set on the foe's side. The attacker hits itself in a rage.
+#-------------------------------
+[RAINBOWTRAIL]
+Name = Rainbow Trail
+Description = Loses its Fire type. Whenever it uses a move, it gains that move's type.
 #-------------------------------
 [RAINPRISM]
 Name = Rain Prism

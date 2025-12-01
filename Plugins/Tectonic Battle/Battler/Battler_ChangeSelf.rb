@@ -695,6 +695,7 @@ end
         pbReduceHP(subLife, false, false)
         pbItemHPHealCheck
         disableEffect(:Trapping)
+        disableEffect(:Binding)
         applyEffect(:Substitute, subLife)
     end
 
