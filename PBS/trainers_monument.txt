@@ -1395,7 +1395,7 @@ Pokemon = KECLEON,70
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
     Moves = SHADOWSNEAK,FLIPTURN,FROMBEYOND,HARBORBREAKER
-    AbilityIndex = 0 # Juggernaut
+    AbilityIndex = 0 # Hadean Rage
     Item = PRISMATICPLATE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -1945,7 +1945,7 @@ Pokemon = ZEBSTRIKA,70
     EV = 10,20,0,20,20,0
 Pokemon = VIKAVOLT,70
     Moves = ENERGYBALL,BUGBUZZ,VOLTSWITCH,FLASHCANNON
-    AbilityIndex = 1 # Levitate
+    AbilityIndex = 0 # Emergency Power
     Item = LUMBERAXE
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0

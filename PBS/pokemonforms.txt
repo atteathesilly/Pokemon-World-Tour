@@ -628,14 +628,12 @@ Pokedex = This is Zygarde when about 10% of its pieces have been assembled. It l
 FormName = Complete
 BaseStats = 225,90,120,85,90,95
 # Total = 705
-Abilities = POWERCONSTRUCT
 Height = 4.5
 Weight = 610.0
 Pokedex = This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything.
 #-------------------------------
 [ZYGARDE,3]
 FormName = 50%
-Abilities = POWERCONSTRUCT
 #-------------------------------
 [HOOPA,1]
 FormName = Unbound
@@ -963,8 +961,8 @@ Pokedex = Darmanitan takes this form when enraged. It won't stop spewing flames 
 #-------------------------------
 [AMPHAROS,1]
 FormName = Ascended
-BaseStats = 110,100,165,80,190,165
-# Total = 810
+BaseStats = 110,100,145,80,150,145
+# Total = 730
 Pokedex = This form has gotten enough energy to go further beyond a normal Ampharos' power. It has been calculated that each orb has over 9000 volts of energy each in it.
 #-------------------------------
 [GARCHOMP,1]

@@ -143,6 +143,51 @@ class PokeBattle_Move_DisableTargetLastMoveUsedReduceItsPPBy5 < PokeBattle_Move_
 end
 
 #===============================================================================
+# The target becomes trapped for 3 turns, and its last used move is disabled for 3 turns. (Quarantine)
+#=============================================================================== 
+class PokeBattle_Move_Trap3TurnsAndDisableLastMove3 < PokeBattle_Move_DisableTargetLastMoveUsed
+    def initialize(battle, move)
+        super
+        @disableTurns = 3
+    end
+
+    def pbFailsAgainstTarget?(user, target, show_message)
+        if target.effectActive?(:Quarantine)
+            @battle.pbDisplay(_INTL("But it failed, since the target is already under quarantine!")) if show_message
+            return true
+        end
+        if target.trapped? && super(user, target, false)
+            @battle.pbDisplay(_INTL("But it failed, since the target is already trapped and can't be disabled!")) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbEffectAgainstTarget(user, target)
+        super if target.canBeDisabled?
+        unless target.effectActive?(:Quarantine)
+            target.applyEffect(:Quarantine, applyEffectDurationModifiers(getDisableTurns(target), user))
+            target.pointAt(:QuarantineUser, user)
+        end
+    end
+
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
+        unless target.effectActive?(:Quarantine)
+            target.applyEffect(:Quarantine, applyEffectDurationModifiers(getDisableTurns(target), user))
+            target.pointAt(:QuarantineUser, user)
+        end
+        target.applyEffect(:Disable, applyEffectDurationModifiers(getDisableTurns(target), user)) if target.canBeDisabled?(true, self)
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        score = super
+        score += 50 unless target.trapped?
+        return score
+    end
+end
+
+#===============================================================================
 # For 4 rounds, disables the target's non-damaging moves. (Taunt)
 #===============================================================================
 class PokeBattle_Move_DisableTargetStatusMoves4 < PokeBattle_Move

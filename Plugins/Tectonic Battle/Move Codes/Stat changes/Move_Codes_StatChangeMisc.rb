@@ -2,6 +2,8 @@
 # Resets all target's stat steps to 0. (Clear Smog)
 #===============================================================================
 class PokeBattle_Move_ResetTargetStatSteps < PokeBattle_Move
+    def statStepClearingMove?; return true; end
+
     def pbEffectAgainstTarget(_user, target)
         if target.damageState.calcDamage > 0 && !target.damageState.substitute && target.hasRaisedStatSteps?
             target.pbResetRaisedStatSteps

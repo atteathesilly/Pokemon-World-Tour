@@ -964,6 +964,9 @@ class PokemonSummary_Scene
         overlay.clear
         base   = Color.new(248, 248, 248)
         shadow = Color.new(104, 104, 104)
+
+        @sprites["pokeicon"].visible = move_to_learn.nil?
+
         # Set background image
         if move_to_learn
             path = "Graphics/Pictures/Summary/bg_learnmove"
@@ -991,7 +994,7 @@ class PokemonSummary_Scene
 
         hideItems
         @sprites["pokemon"].visible = false if @sprites["pokemon"]
-        @sprites["pokeicon"].visible = true
+        @sprites["pokeicon"].visible = move_to_learn.nil? if @sprites["pokeicon"]
 
         writeMoveInfoToInfoOverlay3x3(@extraInfoOverlay.bitmap,selected_move)
 

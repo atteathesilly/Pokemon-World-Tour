@@ -5,7 +5,7 @@ BattleHandlers::UserAbilityEndOfTrappingMove.add(:DENTICLEDEBRIS,
         if side.effectAtMax?(:Spikes)
             battle.pbDisplay(_INTL("But it failed, since there is no room for more Spikes!"))
             battle.pbHideAbilitySplash(user)
-        next
+            next
         end
         side.incrementEffect(:Spikes)
         battle.pbAnimation(:SPIKES, user, nil)

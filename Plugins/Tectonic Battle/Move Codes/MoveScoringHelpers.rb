@@ -527,13 +527,23 @@ def getMultiStatUpEffectScore(statUpArray, user, target, fakeStepModifier: 0, ev
 
     enemiesCanSteal = false
     target.eachOpposing do |opp|
-        next unless opp.hasStatBoostStealingMove?
+        next unless opp.hasStatBoostStealingMove?(target)
         enemiesCanSteal = true
         echoln("\t\t[EFFECT SCORING] A foe of the target can steal the boost! Inverting the score.")
         break
     end
 
     score *= -1 if enemiesCanSteal
+
+    enemiesCanClearStats = false
+    target.eachOpposing do |opp|
+        next unless opp.hasStatBoostClearingMove?(target)
+        enemiesCanClearStats = true
+        echoln("\t\t[EFFECT SCORING] A foe of the target can clear the boost! Scoring 0.")
+        break
+    end
+
+    score = 0 if enemiesCanClearStats
     
     score *= user.levelNerf(false,false,0.6) if user.level <= 30 && !user.pbOwnedByPlayer?
     

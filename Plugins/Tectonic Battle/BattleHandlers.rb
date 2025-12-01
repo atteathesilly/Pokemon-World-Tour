@@ -558,8 +558,8 @@ module BattleHandlers
         UserAbilityEndOfExhaustingMove.trigger(ability, user, targets, move, battle)
     end
 
-    def self.triggerUserAbilityEndOfTrappingMove(ability, user, targets, move, battle)
-        UserAbilityEndOfTrappingMove.trigger(ability, user, targets, move, battle)
+    def self.triggerUserAbilityEndOfTrappingMove(ability, user, target, move, battle)
+        UserAbilityEndOfTrappingMove.trigger(ability, user, target, move, battle)
     end
 
     def self.triggerUserAbilityOnSemiInvulnerable(ability, user, move, battle, aiCheck)
