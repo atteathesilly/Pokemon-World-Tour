@@ -328,11 +328,6 @@ Puddle,20,20
     20,STARYU,18,20
     20,TENTACOOL,18,20
 #-------------------------------
-[082] # Alloy Station 531
-Special,20
-    1,HAPPINY,15
-    1,LILLIPUP,15
-#-------------------------------
 [085] # Worried Man's House
 Special,20
     1,FRILLISH,15
@@ -401,6 +396,7 @@ Special,20
     1,FURRET,15
     1,KABUTO,15
     1,LILEEP,15
+    1,MOMANYTE,15
     1,OMANYTE,15
     1,SHIELDON,15
     1,TIRTOUGA,15
@@ -971,6 +967,11 @@ LandSparse,20,40
     20,LAPRAS,49,51
     20,PINCURCHIN,49,51
     20,SEEL,49,51
+#-------------------------------
+[319] # Grouz Station Backroom
+Special,20
+    1,HAPPINY,15
+    1,LILLIPUP,15
 #-------------------------------
 [321] # Crater Station Backroom
 Special,20
