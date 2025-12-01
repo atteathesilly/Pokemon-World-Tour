@@ -131,6 +131,10 @@ Description = Powers up Fire-type moves in a pinch.
 Name = Sleetshaker
 Description = Boosts Attack by 30% in hailstorms.
 #-------------------------------
+[BRAINSCRAMBLE]
+Name = Brain Scramble
+Description = Has a 30% chance to dizzy targets when using special moves.
+#-------------------------------
 [BROODING]
 Name = Brooding
 Description = Deals 5% more damage and takes 5% less damage for each other Dragon on team.
@@ -463,6 +467,10 @@ Description = Takes 50% less damage from Fire-type moves.
 Name = Heaven's Crown
 Description = If the Pokémon witnesses a total eclipse, it gets to move twice that turn.
 Flags = EclipseSynergy
+#-------------------------------
+[HELIOCENTRISM]
+Name = Heliocentrism
+Description = Traps the foe during gravity.
 #-------------------------------
 [HONEYGATHER]
 Name = Honey Gather

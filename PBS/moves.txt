@@ -908,7 +908,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = FixedDamageHalfTargetHP
-Flags = CanProtect
+Flags = CanProtect,Biting
 Description = The user chomps hard on the target with its sharp front fangs. It cuts the target's HP to half.
 #-------------------------------
 [SUPERSONIC]
@@ -5581,7 +5581,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitOncePerUserTeamMemberPhysical
 Flags = CanProtect
-Description = Hits once for each party Pokemon. Deals more damage based on their Attack.
+Description = Hits once for each party Pokémon. Deals more damage based on their Attack.
 #-------------------------------
 [BITE]
 Name = Bite

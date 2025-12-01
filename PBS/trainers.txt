@@ -1328,7 +1328,7 @@ Pokemon = BEAUTIFLY,26
 [SAGE,Imay]
 Pokemon = DOTTLER,26
     Moves = CONFUSERAY,PSYBEAM,SIGNALBEAM
-    AbilityIndex = 0 # Brain Scramble
+    AbilityIndex = 1 # Hive Mind
     Item = SITRUSBERRY
 Pokemon = HERDIER,27
     Moves = NUMB,CHARM,HOWL,HEADBUTT
@@ -2410,7 +2410,7 @@ Pokemon = GOTHITELLE,70
 Pokemon = BEHEEYEM,70
     AbilityIndex = 0 # Cold Calculation
 Pokemon = ORBEETLE,70
-    AbilityIndex = 0 # Brain Scramble
+    AbilityIndex = 1 # Hive Mind
 Pokemon = HATTERENE,70
     AbilityIndex = 0 # Killjoy
 Pokemon = MALAMAR,70

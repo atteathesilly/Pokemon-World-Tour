@@ -197,3 +197,9 @@ BattleHandlers::SpeedCalcAbility.add(:CAFFEINERUSH,
       next mult * 1.5 if battler.battle.icy?
   }
 )
+
+BattleHandlers::SpeedCalcAbility.add(:GRAVITYCONTROL,
+  proc { |ability, battler, mult|
+      next mult * 1.5 if battler.battle.gravityIntensified?
+  }
+)

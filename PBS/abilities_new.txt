@@ -215,10 +215,6 @@ Description = Lays a hazard of levitating stones around the opponent when its HP
 Name = Bounce Back
 Description = When hit with an attack, uses Pain Split on the attacker if its HP is lower than the attacker.
 #-------------------------------
-[BRAINSCRAMBLE]
-Name = Brain Scramble
-Description = Has a 30% chance to dizzy targets when using special moves.
-#-------------------------------
 [BREAKINGWAVE]
 Name = Breaking Wave
 Description = Slips past hazards. On the first turn, its attacks are always critical.
@@ -283,7 +279,7 @@ Description = Boosts Attack and Sp. Atk by 30% in rooms.
 #-------------------------------
 [CATASTROPHIC]
 Name = Catastrophic
-Description = The user's damaging attacks hit all other Pokemon on the field and always activate their random effects.
+Description = The user's damaging attacks hit all other Pokémon on the field and always activate their random effects.
 #-------------------------------
 [CELEBRATION]
 Name = Celebration
@@ -485,7 +481,7 @@ Description = On the first turn, its attacks numb the target.
 #-------------------------------
 [DISTORTEDGRAVITY]
 Name = Distorted Gravity
-Description = While Gravity is active, deals damage to all foes. While the Pokemon is active, Gravity does not decay.
+Description = While Gravity is active, deals damage to all foes. While the Pokémon is active, Gravity does not decay.
 #-------------------------------
 [DOMINATING]
 Name = Dominating
@@ -565,11 +561,11 @@ Description = Uses Lightning Dance if an attack lowers its HP below half.
 #-------------------------------
 [EMOTIONAURA]
 Name = Emotion Aura
-Description = Upon entry, creates an Emotion Room for four turns, which swaps each Pokemon's ability to its other ability each turn.
+Description = Upon entry, creates an Emotion Room for four turns, which swaps each Pokémon's ability to its other ability each turn.
 #-------------------------------
 [EMPATHFINDER]
 Name = Empathfinder
-Description = When a foe switches to replace a fainted Pokemon, gives information about the switch and let's you switch beforehand.
+Description = When a foe switches to replace a fainted Pokémon, gives information about the switch and let's you switch beforehand.
 #-------------------------------
 [ENERGETIC]
 Name = Energetic
@@ -589,7 +585,7 @@ Description = Powers up Psychic-type moves by 50%.
 #-------------------------------
 [EVENHANDED]
 Name = Evenhanded
-Description = The Pokemon's Fighting-type attacks become spread and deal 35% more damage.
+Description = The Pokémon's Fighting-type attacks become spread and deal 35% more damage.
 #-------------------------------
 [EVENTHORIZON]
 Name = Event Horizon
@@ -867,6 +863,10 @@ Description = Eats pinch berries earlier than normal. Gets a random pinch berry 
 Name = Gravitas
 Description = Upon entry, intensifies gravity for four turns.
 #-------------------------------
+[GRAVITYCONTROL]
+Name = Gravity Control
+Description = White Gravity is active, this Pokémon has 50% more Speed.
+#-------------------------------
 [GRAVITYWELL]
 Name = Gravity Well
 Description = Intensifies gravity for four turns when hit by an attack.
@@ -952,10 +952,6 @@ Name = Heavy Duty Hooves
 Description = Boosts the power of kicking moves by 30%. Immune to hazards.
 Flags = HazardImmunity
 #-------------------------------
-[HELIOCENTRISM]
-Name = Heliocentrism
-Description = Traps the foe during gravity.
-#-------------------------------
 [HERBALIST]
 Name = Herbalist
 Description = Can hold two different items, if both are Herbs.
@@ -1006,7 +1002,7 @@ Description = The Pokémon's Speed is doubled while using rampage moves.
 #-------------------------------
 [HORDETACTICS]
 Name = Horde Tactics
-Description = The Pokemon's Normal-type attacks become spread and drain 33% HP.
+Description = The Pokémon's Normal-type attacks become spread and drain 33% HP.
 #-------------------------------
 [HUBRIS]
 Name = Hubris
@@ -1218,7 +1214,7 @@ Description = Doubles the damage and recoil of recoil moves.
 #-------------------------------
 [LIVEANDLURK]
 Name = Live and Lurk
-Description = When the Pokemon charges and becomes hidden, it heals for 25% HP. This can overheal.
+Description = When the Pokémon charges and becomes hidden, it heals for 25% HP. This can overheal.
 #-------------------------------
 [LIVEFAST]
 Name = Live Fast
@@ -1381,7 +1377,7 @@ Description = While the Pokémon is below half health, takes 33% less damage fro
 #-------------------------------
 [MULTITASKER]
 Name = Multitasker
-Description = The Pokemon's Psychic-type attacks become spread and deal 35% more damage.
+Description = The Pokémon's Psychic-type attacks become spread and deal 35% more damage.
 #-------------------------------
 [MUPROTOCOL]
 Name = MU Protocol
@@ -1567,7 +1563,7 @@ Description = Poison-type foes can be poisoned. Poison applied to foes starts al
 #-------------------------------
 [PINDOWN]
 Name = Pin Down
-Description = The user's moves cannot miss against trapped targets. Takes 20% less damage from Pokemon that are trapped.
+Description = The user's moves cannot miss against trapped targets. Takes 20% less damage from Pokémon that are trapped.
 #-------------------------------
 [PITFIGHTER]
 Name = Pit Fighter
@@ -1620,7 +1616,7 @@ Description = On the first turn, its physical attacks trap the target and damage
 #-------------------------------
 [PREEMINENCE]
 Name = Preeminence
-Description = Deals 30% more move damage to Pokemon slower than it.
+Description = Deals 30% more move damage to Pokémon slower than it.
 #-------------------------------
 [PRESSUREVALVE]
 Name = Pressure Valve
@@ -1629,7 +1625,7 @@ Flags = SetupCounterAI
 #-------------------------------
 [PROTECTIVEINSTINCT]
 Name = Protective Instinct
-Description = While the Pokemon has an ally that isn't fully evolved, both Pokemon take 33% less move damage.
+Description = While the Pokémon has an ally that isn't fully evolved, both Pokémon take 33% less move damage.
 #-------------------------------
 [PUFFUP]
 Name = Puff Up
@@ -1794,7 +1790,7 @@ Description = Takes 50% less damage while performing a move which charges up or 
 #-------------------------------
 [ROOMLOCK]
 Name = Room Lock
-Description = While the Pokemon is active, Rooms do not decay.
+Description = While the Pokémon is active, Rooms do not decay.
 #-------------------------------
 [ROOTED]
 Name = Rooted
@@ -2032,7 +2028,7 @@ Description = Your attacks become spread.
 #-------------------------------
 [SPARESCALES]
 Name = Spare Scales
-Description = The Pokemon is healed for 1/5th HP after using a Grass-, Ground-, or Steel-type move. Can overheal.
+Description = The Pokémon is healed for 1/5th HP after using a Grass-, Ground-, or Steel-type move. Can overheal.
 #-------------------------------
 [SPECTRUMVISION]
 Name = Spectrum Vision
@@ -2240,7 +2236,7 @@ Flags = AllWeatherSynergy
 #-------------------------------
 [TERRORIZE]
 Name = Terrorize
-Description = Flinching moves always activate their random effects. However, the Pokemon deals 10% less move damage.
+Description = Flinching moves always activate their random effects. However, the Pokémon deals 10% less move damage.
 #-------------------------------
 [TESLACOILS]
 Name = Tesla Coils
@@ -2379,7 +2375,7 @@ Description = Powers up Grass-type moves of itself and its allies by 50%.
 #-------------------------------
 [VICIOUSCYCLE]
 Name = Vicious Cycle
-Description = The Pokemon's Dragon-type attacks become spread and drain 33% HP.
+Description = The Pokémon's Dragon-type attacks become spread and drain 33% HP.
 #-------------------------------
 [VICTORYMOLT]
 Name = Victory Molt
