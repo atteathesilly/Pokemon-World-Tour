@@ -961,8 +961,8 @@ Pokedex = Darmanitan takes this form when enraged. It won't stop spewing flames 
 #-------------------------------
 [AMPHAROS,1]
 FormName = Ascended
-BaseStats = 110,100,165,80,190,165
-# Total = 810
+BaseStats = 110,100,145,80,150,145
+# Total = 730
 Pokedex = This form has gotten enough energy to go further beyond a normal Ampharos' power. It has been calculated that each orb has over 9000 volts of energy each in it.
 #-------------------------------
 [GARCHOMP,1]
