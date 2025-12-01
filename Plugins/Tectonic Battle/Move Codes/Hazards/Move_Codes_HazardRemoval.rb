@@ -205,9 +205,9 @@ class PokeBattle_Move_MovesHazardsToOpponentAndForcesSwitch < PokeBattle_Move
         end
         eachHazard(ourSide, true) do |effect, data|
             if data.is_hazard?
-                @battle.pbDisplay(_INTL("{1} blew the {2} to the other side of the field!", user.pbThis, data.name)) unless data.has_expire_proc?
+                @battle.pbDisplay(_INTL("The {1} was blown to the other side of the field!", data.name)) unless data.has_expire_proc?
             end
-            if data.is_spike?
+            if data.type == (:Integer)
                 increment = user.pbOwnSide.countEffect(effect)
                 user.pbOpposingSide.applyEffect(effect, increment)
             else
