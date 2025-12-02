@@ -146,8 +146,8 @@ Pokemon = SALAZZLE,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,0,20,20,10
 Pokemon = SANDSLASH,70
-    Moves = ADAMANTINEPRESS,RAPIDSPIN,EARTHQUAKE,STEALTHROCK
-    AbilityIndex = 1 # Tough Claws
+    Moves = ADAMANTINEPRESS,RAPIDSPIN,SHEDSPINES,STEALTHROCK
+    AbilityIndex = 1 # Spiny Ruse
     Item = ROCKGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -871,8 +871,8 @@ Pokemon = MDUSTOX,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = SANDSLASH,70
-    Moves = ADAMANTINEPRESS,RAPIDSPIN,EARTHQUAKE,FLAMESPIKES
-    AbilityIndex = 1 # Tough Claws
+    Moves = ADAMANTINEPRESS,RAPIDSPIN,DIG,FLAMESPIKES
+    AbilityIndex = 1 # Spiny Ruse
     Item = ROCKGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0

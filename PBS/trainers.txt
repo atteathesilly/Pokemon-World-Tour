@@ -2196,7 +2196,7 @@ Pokemon = GOGOAT,42
 [BEAUTY,Gretchen]
 Pokemon = SANDSLASH,44
     Moves = EARTHQUAKE,ROCKALANCHE,RAPIDSPIN,STEAMROLLER
-    AbilityIndex = 1 # Tough Claws
+    AbilityIndex = 1 # Spiny Ruse
     Item = LIFEORB
 Pokemon = EXCADRILL,44
     Moves = EARTHQUAKE,IRONHEAD,RAPIDSPIN
@@ -3893,8 +3893,8 @@ Pokemon = MLILLIGANT,41
     Moves = GLACIALRAM,PLAYROUGH,LIQUIDATION,BACKHAND
     AbilityIndex = 1 # Petty
 Pokemon = SANDSLASH,41
-    Moves = ONAROLL,FURYCUTTER,ROCKROLL
-    AbilityIndex = 1 # Tough Claws
+    Moves = DIG,CAMOUFLAGE,SHEDSPINES,UTURN
+    AbilityIndex = 1 # Spiny Ruse
 Pokemon = DARMANITAN,41
     Moves = FIRELASH,FLAREBLITZ,THRASH,HUNDREDHANDCLAP
     AbilityIndex = 0 # Extreme Power
@@ -8554,8 +8554,8 @@ Pokemon = KINGDRA,60
 #-------------------------------
 [POKEMONBREEDER_F4,Sara]
 Pokemon = SANDSLASH,60
-    Moves = ROCKALANCHE,SWORDSDANCE,LEECHLIFE,TRAMPLE
-    AbilityIndex = 1 # Tough Claws
+    Moves = ROCKALANCHE,SWORDSDANCE,LEECHLIFE,DIG
+    AbilityIndex = 1 # Spiny Ruse
 Pokemon = GOODRA,60
     Moves = SLIMEBALL,DRAGONENERGY,DRAGONPULSE,THUNDERBOLT
     AbilityIndex = 0 # Gooey
@@ -9234,8 +9234,8 @@ Pokemon = ARAQUANID,70
 #-------------------------------
 [TOURISTM,Calvin]
 Pokemon = SANDSLASH,70
-    Moves = RAPIDSPIN,ROCKALANCHE,EARTHQUAKE,UTURN
-    AbilityIndex = 1 # Tough Claws
+    Moves = RAPIDSPIN,DIG,SHEDSPINES,UTURN
+    AbilityIndex = 1 # Spiny Ruse
 Pokemon = KRICKETUNE,70
     Moves = BUGBUZZ,EERIESPELL,MASSDESTRUCTION,UTURN
     AbilityIndex = 1 # Maestro

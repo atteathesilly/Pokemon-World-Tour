@@ -2042,6 +2042,10 @@ Description = Leaves two hazard layers of Spikes after it self-destructs.
 Name = Spintensity
 Description = Speed is raised each turn. Speed is reset when hit, but the attacker takes 1/8th HP damage for each step lost.
 #-------------------------------
+[SPINYRUSE]
+Name = Spiny Ruse
+Description = Foes that attack the Pokémon while it is hidden take 25% HP damage.
+#-------------------------------
 [STABILITY]
 Name = Stability
 Description = Can't be afflicted with any non-volatile status condition.

@@ -1921,6 +1921,18 @@ Flags = CanProtect,Sound
 Description = The user attacks with a tectonic vibration. It also breaks any screens protecting the target's side.
 Animation = EARTHPOWER
 #-------------------------------
+[SHEDSPINES]
+Name = Shed Spines
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = TwoSpikesLoseThirdOfTotalHP
+Description = By sacrificing a third of its total HP, the user lays two hazard layers of Spikes at the foe's feet.
+Animation = SPIKES
+#-------------------------------
 [SIROCCO]
 Name = Sirocco
 Type = GROUND
