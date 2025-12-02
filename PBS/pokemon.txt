@@ -6042,7 +6042,7 @@ Weight = 14.0
 Kind = Bright
 Pokedex = It grows strong by pushing up against others en masse. It loves eating sweet fruit.
 Generation = 3
-Evolutions = WOBBUFFET,Level,25
+Evolutions = WOBBUFFET,Level,30
 #-------------------------------
 [WOBBUFFET]
 Name = Wobbuffet
@@ -11157,7 +11157,7 @@ Kind = Cherry
 Pokedex = It evolves by sucking the energy out of the small ball where it had been storing nutrients.
 Generation = 4
 WildItemUncommon = MIRACLESEED
-Evolutions = CHERRIM,Level,25
+Evolutions = CHERRIM,Level,27
 #-------------------------------
 [CHERRIM]
 Name = Cherrim
