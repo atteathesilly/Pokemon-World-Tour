@@ -435,6 +435,12 @@ Humidity = Wet
 BattleBack = rocky
 Environment = Rock
 #-------------------------------
+[062]
+# Three Island Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
