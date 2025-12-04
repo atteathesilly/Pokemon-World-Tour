@@ -209,12 +209,12 @@ Pokemon = SMOOCHUM,17
     EV = 20,20,0,10,20,0
 Pokemon = JOLTIK,18
     Moves = LIGHTSHOW,STICKYWEB,DISABLE,THUNDERSHOCK
-    AbilityIndex = 0 # Ocular
+    AbilityIndex = 1 # Overcharge
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = NOIBAT,17
     Moves = BOREALWIND,ABSORB,DEFOG,DRAGONBREATH
-    AbilityIndex = 0 # Terrorize
+    AbilityIndex = 1 # Fell Omen
     Item = FLYINGGEM
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
@@ -224,12 +224,12 @@ ExtendsVersion = 0
 Policies = CURSE_PERFECT_LUCK
 Pokemon = LARVESTA,18
     Moves = EMBER,STRUGGLEBUG,ABSORB,PROTECT
-    AbilityIndex = 0 # Solar Power
+    AbilityIndex = 1 # Dawnfall
     Item = SITRUSBERRY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,20,0,20,0
 Pokemon = WHISMUR,17
-    Moves = AURAPULSE,BARETEETH,ECHOEDVOICE,SHOUT
+    Moves = AURAPULSE,METALSOUND,ECHOEDVOICE,SHOUT
     AbilityIndex = 1 # Loud
     Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
