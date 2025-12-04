@@ -103,10 +103,6 @@ Description = Uses Aromatherapy if an attack lowers its HP to half or below.
 Name = Assault Spines
 Description = Doubles Sp. Def, but the Pokémon can't use status moves.
 #-------------------------------
-[ASSISTANT]
-Name = Assistant
-Description = Uses Assist upon entry, using a random move known by a party member.
-#-------------------------------
 [ASTRALHARVEST]
 Name = Astral Harvest
 Description = During eclipse, it restores its HP by half the damage it deals with attacks.
@@ -231,10 +227,6 @@ Description = If an attack lowers its HP below half, lowers all of the attacker'
 [BRISK]
 Name = Brisk
 Description = Boosts the power of wind-based moves by 30%.
-#-------------------------------
-[BRUTEFORCE]
-Name = Brute Force
-Description = Its attacks are always physical attacks.
 #-------------------------------
 [BULLY]
 Name = Bully
@@ -384,10 +376,6 @@ Description = Foretold moves take one turn longer to attack but deal 50% more da
 Name = Cursed Tail
 Description = When a foe hits the Pokémon, they are warned. If they do it again, they become cursed.
 #-------------------------------
-[CYNIC]
-Name = Cynic
-Description = Immune to Dragon-type, Fairy-type and Ghost-type attacks.
-#-------------------------------
 [DARING]
 Name = Daring
 Description = When this Pokémon gains a non-volatile status condition, its Attack is raised by three steps.
@@ -466,10 +454,6 @@ Description = Enemies which swap in take damage equal to 1/8th their HP.
 [DIRECTCURRENT]
 Name = Direct Current
 Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose to raise its Speed or heal it for 1/5th HP.
-#-------------------------------
-[DIREDIVERSION]
-Name = Dire Diversion
-Description = It can avoid being knocked out by sacrificing its held item.
 #-------------------------------
 [DISCOMBOBULATOR]
 Name = Discombobulator
@@ -759,10 +743,6 @@ Description = Raises Speed by two steps after knocking out any Pokémon.
 Name = Foolhardy
 Description = Immune to Psychic-type moves, and raises Attack and Sp. Atk if hit by one.
 #-------------------------------
-[FORCEREVERSAL]
-Name = Force Reversal
-Description = Raises Attack and Sp. Atk by two steps when hit by a not-very-effective move.
-#-------------------------------
 [FOREMAN]
 Name = Foreman
 Description = Doubles the Pokémon's Speed in Rooms.
@@ -1021,10 +1001,6 @@ Name = Hyper Speed
 Description = Doubles Speed. Dashes to avoid hazards upon entry.
 Flags = HazardImmunity
 #-------------------------------
-[IAIJUTSU]
-Name = Iaijutsu
-Description = Doubles the power of blade moves on the first turn.
-#-------------------------------
 [ICEBLOCK]
 Name = Ice Block
 Description = It can avoid being knocked out by using its face. The face then melts.
@@ -1254,11 +1230,6 @@ Flags = MoonglowSynergy
 [LUXURYTASTE]
 Name = Luxury Taste
 Description = At end of turn, heals 1/12th HP if holding a clothing item.
-#-------------------------------
-[LYCANTHROPE]
-Name = Lycanthrope
-Description = Transforms into Midnight Form at the Full Moon. Ability becomes No Guard.
-Flags = MoonglowSynergy
 #-------------------------------
 [MAESTRO]
 Name = Maestro
@@ -1719,10 +1690,6 @@ Description = Maximizes Sp. Atk when its HP is lowered below half.
 Name = Reclamation
 Description = After knocking out any Pokémon, regenerates its previously-used item.
 #-------------------------------
-[RECON]
-Name = Recon
-Description = Before using a status move against a single foe, lowers their Sp. Def by two steps.
-#-------------------------------
 [REFRACTIVE]
 Name = Refractive
 Description = Light moves change the Pokémon's secondary type and their power is boosted by 30%.
@@ -1779,10 +1746,6 @@ Description = Heals 1/8th of its max HP each turn during sandstorm.
 [ROCKCLIMBER]
 Name = Rock Climber
 Description = Immune to Rock-type moves and to Stealth Rock, and raises Speed whenever one would hit it.
-#-------------------------------
-[ROLLINGBLOWS]
-Name = Rolling Blows
-Description = Takes 50% less damage while performing a move which charges up or exhausts the user.
 #-------------------------------
 [ROOMLOCK]
 Name = Room Lock
@@ -2213,14 +2176,6 @@ Flags = HailSynergy
 Name = Tangling Vines
 Description = When hit, the attacker's Speed is reduced, and this Pokémon's next attack against them is boosted by 30%.
 #-------------------------------
-[TANTALIZING]
-Name = Tantalizing
-Description = Draws in attacks from enemies with below half health.
-#-------------------------------
-[TEAMPLAYER]
-Name = Team Player
-Description = Deals 25% more move damage for each ally in battle.
-#-------------------------------
 [TEMPORALDISTORTION]
 Name = Temporal Distortion
 Description = Every three turns it gets to move twice.
@@ -2331,10 +2286,6 @@ Flags = MoldBreaking
 [UNBREAKABLE]
 Name = Unbreakable
 Description = Prevents half the self-damage from recoil and Self-Destruct/Explosion.
-#-------------------------------
-[UNCANNYCOLD]
-Name = Uncanny Cold
-Description = Powers up Ice-type moves by 50%.
 #-------------------------------
 [UNCANNYLUCK]
 Name = Uncanny Luck

@@ -245,11 +245,6 @@ Name = Imposter
 Description = It transforms itself into the Pokémon it is facing.
 Flags = Immutable
 #-------------------------------
-[INFILTRATOR]
-Name = Infiltrator
-Description = Ignores screens and other barriers, Substitute, and boosted Defense and Sp. Def.
-Flags = IgnoreScreens,IgnoreSubstitute
-#-------------------------------
 [INNARDSOUT]
 Name = Innards Out
 Description = Damages an attacker that lands the finishing hit.
@@ -274,11 +269,6 @@ Description = Physical moves against it inflict 1/8th max HP damage to the foe.
 [IRONFIST]
 Name = Iron Fist
 Description = Boosts the power of punching moves by 30%.
-#-------------------------------
-[LEAFGUARD]
-Name = Leaf Guard
-Description = Immune to non-volatile status conditions while in sunshine.
-Flags = SunshineSynergy
 #-------------------------------
 [LEVITATE]
 Name = Levitate
@@ -459,10 +449,6 @@ Description = Doubles the likelihood of the user's random added effects activati
 [SHADOWSHIELD]
 Name = Shadow Shield
 Description = Resists damage while its HP is full.
-#-------------------------------
-[SHADOWTAG]
-Name = Shadow Tag
-Description = Traps the foe.
 #-------------------------------
 [SHEDSKIN]
 Name = Shed Skin
