@@ -414,6 +414,9 @@ Height = 3.3
 #-------------------------------
 [KELDEO,1]
 FormName = Resolute
+BaseStats = 90,70,120,120,160,120
+# Total = 680
+Abilities = HEARTOFJUSTICE
 Pokedex = The power that lay hidden in its body now covers its horn, turning it into a sword that can slice through anything.
 #-------------------------------
 [MELOETTA,1]
