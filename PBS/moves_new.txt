@@ -1930,7 +1930,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = TwoSpikesLoseThirdOfTotalHP
-Description = By sacrificing a third of its total HP, the user lays two hazard layers of Spikes at the foe's feet.
+Description = By sacrificing 33% of its max HP, the user lays two hazard layers of Spikes at the foe's feet.
 Animation = SPIKES
 #-------------------------------
 [SIROCCO]
@@ -5849,7 +5849,7 @@ TotalPP = 3
 Target = NearOther
 FunctionCode = SleepTargetUserLosesHalfMaxHP
 Flags = CanProtect,CanMagicCoat
-Description = By sacrificing half its total HP, the user makes the target fall asleep.
+Description = By sacrificing half its max HP, the user makes the target fall asleep.
 Animation = LOVELYKISS
 #-------------------------------
 [DREAMABSORB]
