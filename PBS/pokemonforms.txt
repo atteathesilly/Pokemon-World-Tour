@@ -891,7 +891,7 @@ BaseStats = 90,160,105,85,65,100
 Abilities = ROCKSMASHER
 #-------------------------------
 [ALAKAZAM,1]
-FormName = HOCUS
+FormName = Hocus
 BaseStats = 55,50,75,130,155,135
 Abilities = SPOONFED
 #-------------------------------

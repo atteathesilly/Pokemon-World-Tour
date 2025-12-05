@@ -564,6 +564,31 @@ Pokemon = BAYLEEF,24
     AbilityIndex = 0 # Fae Veil
     Item = LIGHTCLAY
 #-------------------------------
+[BLACKBELT2,Tekken]
+Pokemon = CROAGUNK,25
+    Moves = ACIDSPRAY,FORCEPALM,ENCORE,BACKHAND
+    AbilityIndex = 1 # Dry Skin
+Pokemon = SCRAGGY,25
+    Moves = ASSURANCE,LOWKICK,BACKHAND,BEATUP
+    AbilityIndex = 0 # Shed Skin
+    Item = SITRUSBERRY
+Pokemon = QUILAVA,25
+    Moves = INCINERATE,OMINOUSWIND,STOREFUEL,FROSTOVER
+    AbilityIndex = 1 # Hubris
+    Item = PASSHOBERRY
+#-------------------------------
+[BLACKBELT4,Nob]
+Pokemon = MACHOKE,25
+    Moves = LOWSWEEP,FIREPUNCH,KNOCKOFF,MACHPUNCH
+    AbilityIndex = 0 # Feel the Burn
+Pokemon = LUCARIO,25
+    Moves = SHINESHOT,CONCUSS,DRAGONBREATH,FIREPULSE
+    AbilityIndex = 0 # Honorable
+    Item = SITRUSBERRY
+Pokemon = CROCONAW,25
+    Moves = SNAP,SHRED,BITE,FLIPTURN
+    AbilityIndex = 0 # Ferocious
+#-------------------------------
 [MEDIUM,Theoni]
 Pokemon = SABLEYE,24
     Moves = SHADOWSNEAK,TEASE,CRYSTALGLEAM,WILLOWISP
@@ -579,7 +604,7 @@ Pokemon = CHINGLING,24
 [BAKER,Rose]
 Pokemon = QUILAVA,24
     Moves = SHOUT,OMINOUSWIND,BURNINGJEALOUSY
-    AbilityIndex = 0 # Brisk
+    AbilityIndex = 0 # Flame Body
     Item = AIRBALLOON
 Pokemon = SEEL,24
     Moves = LIGHTSHOW,BRINE,FRIGIDJEALOUSY
@@ -2691,7 +2716,7 @@ Pokemon = HATTERENE,70
 Pokemon = MPOLTEAGEIST,70
     AbilityIndex = 1 # Chill Out
 Pokemon = TYPHLOSION,70
-    AbilityIndex = 0 # Brisk
+    AbilityIndex = 0 # Flame Body
 #-------------------------------
 [POKEMONBREEDER_F,ZombyGoast]
 TrainerTypeLabel = DEVELOPER
@@ -3295,7 +3320,7 @@ Pokemon = HGOODRA,50
     Item = UTILITYUMBRELLA
 Pokemon = TYPHLOSION,50
     Moves = SHIMMERINGHEAT,WEATHERBURST,SUFFOCATE,MIASMA
-    AbilityIndex = 0 # Brisk
+    AbilityIndex = 0 # Flame Body
     Item = EXPERTBELT
 #-------------------------------
 [BATTLEGIRL3,Amelia]
@@ -7193,7 +7218,7 @@ Pokemon = VIVILLON,60
     AbilityIndex = 0 # Multiscale
     Item = LEFTOVERS
 Pokemon = MEGANIUM,60
-    Moves = HOLLYCHARM,ENCHANTEDARROW,STRENGTHSAP,MIRRORCOAT
+    Moves = HOLLYCHARM,ENCHANTEDARROW,STRENGTHSAP
     AbilityIndex = 0 # Fae Veil
 Pokemon = DRACOZOLT,60
     Moves = VOLTSEEKERS,REND,MASSDESTRUCTION,HUMBLE
