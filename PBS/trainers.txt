@@ -4301,7 +4301,7 @@ Pokemon = DECEAT,55
     EV = 20,20,10,0,20,0
 Pokemon = MISMAGIUS,55
     Name = Cherchez
-    Moves = FROSTBREATH,DEATHKNELL,ENCHANTINGSONG,THUNDER
+    Moves = FROSTBREATH,DEATHKNELL,ENCHANTINGSONG,POWERGEM
     AbilityIndex = 1 # Ear-Splitting
     Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
