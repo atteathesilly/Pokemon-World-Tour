@@ -4282,61 +4282,59 @@ Pokemon = HDECIDUEYE,55
 [LEADER_Victoire,Victoire]
 Policies = VICTOIRE
 Flags = NoPerfect
-Pokemon = HYMNUS,55
-    Moves = REND,MOONBLAST,RAINSTORM,FIREBLAST
-    AbilityIndex = 1 # Rain Prism
-    Item = DAMPROCK
+Pokemon = ADUGTRIO,55
+    Moves = HAIRFLIP,SANDBLASTING,SHADOWBALL,ENCHANTEDARROW
+    AbilityIndex = 0 # Lauoho Lasso
+    Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,5,0,20,5
-Pokemon = BLASTOISE,55
-    Moves = FLASHCANNON,RAPIDSPIN,SURF,AURASPHERE
-    AbilityIndex = 0 # Stormbringer
+    EV = 10,20,0,20,20,0
+Pokemon = MLILLIGANT,55
+    Moves = PLAYROUGH,ICEHAMMER,HARBORBREAKER,RECOVER
+    AbilityIndex = 0 # Sudden Chill
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,10,10,0,10,10
+    EV = 20,20,0,0,20,10
 Pokemon = DECEAT,55
-    Moves = METEORMASH,HUMBLE,CRUNCH,SWORDSDANCE
+    Moves = METEORMASH,HUMBLE,SUCKERPUNCH,SWORDSDANCE
     AbilityIndex = 0 # Pure Force
-    Item = UTILITYUMBRELLA
+    Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = MISMAGIUS,55
     Name = Cherchez
     Moves = FROSTBREATH,DEATHKNELL,ENCHANTINGSONG,THUNDER
     AbilityIndex = 1 # Ear-Splitting
-    Item = ASSAULTVEST
+    Item = THROATSPRAY
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 5,20,0,20,20,5
-Pokemon = BRONZONG,55
-    Moves = WEATHERBURST,THUNDER,TAKESHELTER,KINETICGRIP
-    AbilityIndex = 0 # Levitate
+Pokemon = SLURPUFF,55
+    Moves = PLAYROUGH,BLAZEKICK,BEDROCKBREAKER,DRAINPUNCH
+    AbilityIndex = 1 # Fine Sugar
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 20,20,0,0,20,10
-Pokemon = SEAKING,55
-    Moves = STORMDRIVE,FLIPTURN,DRILLRUN,HUMBLE
-    AbilityIndex = 1 # Volt Absorb
+    EV = 20,20,10,0,20,0
+Pokemon = KINGAMBIT,55
+    Moves = SWORDSDANCE,SEVER,SLAY,BULLETPUNCH
+    AbilityIndex = 0 # Defiant
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-    EV = 0,20,10,20,20,0
+    EV = 10,20,0,20,20,0
 #-------------------------------
 [LEADER_Victoire,Victoire,1]
 ExtendsVersion = 0
 Policies = CURSE_EXTRA_ITEMS
-Pokemon = HYMNUS,55
-    Moves = DRACOMETEOR,PLAYROUGH,RAINSTORM,FIREBLAST
-    ExtraItems = WHITEHERB
-Pokemon = BLASTOISE,55
-    Item = DAMPROCK
-    ExtraItems = FOCUSSASH
+Pokemon = ADUGTRIO,55
+    ExtraItems = WEAKNESSPOLICY
+Pokemon = MLILLIGANT,55
+    Item = LEFTOVERS
+    ExtraItems = COVERTCLOAK
 Pokemon = MISMAGIUS,55
-    ExtraItems = UTILITYUMBRELLA
+    ExtraItems = EXPERTBELT
 Pokemon = DECEAT,55
-    Moves = METEORMASH,HUMBLE,SUCKERPUNCH,SWORDSDANCE
-    ExtraItems = LIFEORB
-Pokemon = BRONZONG,55
-    Item = HIVISJACKET
-    ExtraItems = ROCKYHELMET
-Pokemon = SEAKING,55
+    ExtraItems = SHELLBELL
+Pokemon = SLURPUFF,55
     Item = STRIKEVEST
-    ExtraItems = KEBIABERRY
+    ExtraItems = ASSAULTVEST
+Pokemon = KINGAMBIT,55
+    Item = SEVENLEAGUEBOOTS
+    ExtraItems = OCCABERRY
 #-------------------------------
 [MASKEDVILLAIN_Sang,Silver]
 Policies = EQ_PROTECT
