@@ -468,6 +468,10 @@ Description = After knocking out any Pokémon, raises its Attack and Defense.
 Name = Domineering
 Description = Reduces move damage taken by 50% when HP is full. Can't be dizzied.
 #-------------------------------
+[DOPPELGANGER]
+Name = Doppelgänger
+Description = Transforms into a random party member on entry.
+#-------------------------------
 [DOUBLECHECK]
 Name = Double Check
 Description = Deals 50% more damage to targets who have already taken damage this turn.

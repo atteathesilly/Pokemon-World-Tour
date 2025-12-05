@@ -1055,6 +1055,25 @@ BattleHandlers::AbilityOnSwitchIn.add(:IMPOSTER,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:DOPPELGANGER,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if battler.transformed?
+      choices = []
+      battler.ownerParty.each_with_index do |pkmn, i|
+        next if battler.isSpecies?(pkmn.species)
+        choices.push(i)
+      end
+      choice = choices.sample
+      battler_choice = PokeBattle_Battler.new(battler.battle, battler.index, true)
+      battler_choice.pbInitializeFake(battler.ownerParty[choice], choice)
+      next 40 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability, true)
+      battle.pbHideAbilitySplash(battler)
+      battle.pbAnimation(:TRANSFORM, battler, battler_choice)
+      battler.pbTransform(battler_choice)
+  }
+)
+
 BattleHandlers::AbilityOnSwitchIn.add(:SCREENCLEANER,
   proc { |ability, battler, battle, aiCheck|
       anyScreen = false
