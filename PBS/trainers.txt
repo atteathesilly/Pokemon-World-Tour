@@ -4283,7 +4283,7 @@ Pokemon = HDECIDUEYE,55
 Policies = VICTOIRE
 Flags = NoPerfect
 Pokemon = ADUGTRIO,55
-    Moves = HAIRFLIP,SANDBLASTING,SHADOWBALL,ENCHANTEDARROW
+    Moves = HAIRFLIP,SANDBLASTING,SHADOWBALL,POWERGEM
     AbilityIndex = 0 # Lauoho Lasso
     Item = FOCUSSASH
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
