@@ -364,8 +364,9 @@
   //
   "execName": "Project Chasm",
 
-  // Whether to force the game into debug mode.
+  // Whether to force the game into debug mode and whether to compile the game.
   // Useful on JoiPlay and other emulators that can't natively
   // access it.
   "forceDebug": false,
+  "forceCompile": false
 }
