@@ -367,5 +367,5 @@
   // Whether to force the game into debug mode.
   // Useful on JoiPlay and other emulators that can't natively
   // access it.
-  "forceDebug": true,
+  "forceDebug": false,
 }
