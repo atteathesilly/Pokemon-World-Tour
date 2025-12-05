@@ -274,9 +274,8 @@ MultipleForms.register(:KYUREM,{
 })
 
 MultipleForms.register(:KELDEO,{
-  "getForm" => proc { |pkmn|
-    next 1 if pkmn.hasMove?(:SECRETSWORD) # Resolute Form
-    next 0                                # Ordinary Form
+  "getFormOnLeavingBattle" => proc { |pkmn,battle,usedInBattle,endBattle|
+    next 0
   }
 })
 
