@@ -4323,6 +4323,7 @@ Policies = CURSE_EXTRA_ITEMS
 Pokemon = ADUGTRIO,55
     ExtraItems = WEAKNESSPOLICY
 Pokemon = MSEAKING,55
+    Moves = TANTRUM,OUTRAGE
     Item = CHOICEBAND
     ExtraItems = CHOICESCARF
 Pokemon = MISMAGIUS,55
