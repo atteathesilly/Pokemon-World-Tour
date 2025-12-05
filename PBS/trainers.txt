@@ -548,17 +548,21 @@ Pokemon = LAMPENT,24
     AbilityIndex = 1 # Royal Majesty
     Item = SITRUSBERRY
 #-------------------------------
-[TEENAGERF,Naomi]
-Pokemon = IVYSAUR,23
-    Moves = STINKCLOUD,RAZORLEAF,LEECHSEED,POISONIVY
-    AbilityIndex = 0 # Poison Absorb
-Pokemon = TYRUNT,24
-    Moves = LASHOUT,GRANITEHEAD,CLASH,DRAGONTAIL
-    AbilityIndex = 0 # Wrath Instinct
-Pokemon = WOOBAT,24
-    Moves = HEARTSTAMP,AERIALACE,SWEETKISS,ECHOLOCATE
-    AbilityIndex = 0 # Clumsy Kinesis
-    Item = SITRUSBERRY,PSYCHICGEM
+[BLACKBELT3,Yoshi]
+Pokemon = LOPUNNY,25
+    Moves = HAREHEROICS,DROPKICK,PUMMEL,FROLIC
+    AbilityIndex = 0 # Unafraid
+Pokemon = DEWOTT,24
+    Moves = RAZORSHELL,SLASH,LOWSWEEP,DRAGONTAIL
+    AbilityIndex = 0 # Unconquerable
+Pokemon = CUBONE,24
+    Moves = STAMPDOWN,SHADOWPUNCH,DROPKICK,SPARK
+    AbilityIndex = 1 # Break Through
+    Item = SITRUSBERRY
+Pokemon = BAYLEEF,24
+    Moves = MAGICALLEAF,BALEFULBOP,LIGHTSCREEN,REFLECT
+    AbilityIndex = 0 # Fae Veil
+    Item = LIGHTCLAY
 #-------------------------------
 [MEDIUM,Theoni]
 Pokemon = SABLEYE,24

@@ -630,9 +630,6 @@ def naturesGallery
 		FLOATSTONE
 		BIGROOT
 		LUCKYEGG
-		CRYSTALVEIL
-		GALARICAWREATH
-		ALOLANWREATH
 	]
 
 	pbPokemonMart(
@@ -788,6 +785,8 @@ def evoStoneVendor
 		SHINYSTONE
 		SUNSTONE
 		MOONSTONE
+		GALARICAWREATH
+		ALOLANWREATH
 	]
 
 	message = _INTL("How can we help to empower your Pokemon?")
