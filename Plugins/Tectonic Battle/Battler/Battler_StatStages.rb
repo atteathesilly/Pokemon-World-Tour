@@ -431,9 +431,7 @@ class PokeBattle_Battler
         end
 
         # do not trigger effects if dropping multiple stats - the multiple stat function will do that afterwards
-        if !multiple
-            triggersOnStatLoss(user: user)
-        end
+        triggersOnStatLoss(user: user) unless multiple
 
         return increment
     end
