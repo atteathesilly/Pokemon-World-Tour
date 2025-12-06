@@ -13443,8 +13443,8 @@ Name = Petilil
 Type1 = GRASS
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 50,45,65,55,85,60
-# Total = 360
+BaseStats = 55,50,70,55,90,70
+# Total = 390
 BaseEXP = 56
 Rareness = 145
 Abilities = CHLOROPHYLL,HERBALIST
@@ -13458,15 +13458,15 @@ Kind = Bulb
 Pokedex = Since they prefer moist, nutrient-rich soil, the areas where Petilil live are known to be good for growing plants.
 Generation = 5
 WildItemUncommon = MIRACLESEED
-Evolutions = HLILLIGANT,Originize,36,LILLIGANT,Level,36
+Evolutions = HLILLIGANT,Originize,33,LILLIGANT,Level,33
 #-------------------------------
 [LILLIGANT]
 Name = Lilligant
 Type1 = GRASS
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,65,100,75,115,85
-# Total = 510
+BaseStats = 75,65,115,75,120,90
+# Total = 540
 BaseEXP = 168
 Rareness = 60
 Abilities = CHLOROPHYLL,HERBALIST
@@ -13486,8 +13486,8 @@ Name = H. Lilligant
 Type1 = GRASS
 Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,115,75,115,50,85
-# Total = 510
+BaseStats = 75,120,75,115,65,90
+# Total = 540
 BaseEXP = 168
 Rareness = 60
 Abilities = FASCINATE,EFFLORESCENT
@@ -13506,8 +13506,8 @@ Name = M. Petilil
 Type1 = ICE
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 50,80,55,55,45,75
-# Total = 360
+BaseStats = 55,90,60,55,50,80
+# Total = 390
 BaseEXP = 56
 Rareness = 145
 Abilities = SUDDENCHILL,PETTY
@@ -13520,15 +13520,15 @@ Weight = 6.6
 Kind = Ice Seed
 Pokedex = It seems to pride itself on living in inhospitable conditions. If others take up residence nearby, it will move to even colder climes.
 WildItemUncommon = NEVERMELTICE
-Evolutions = MLILLIGANT,Level,36
+Evolutions = MLILLIGANT,Level,33
 #-------------------------------
 [MLILLIGANT]
 Name = M. Lilligant
 Type1 = ICE
 Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,115,80,75,65,105
-# Total = 510
+BaseStats = 75,120,90,75,65,115
+# Total = 540
 BaseEXP = 168
 Rareness = 60
 Abilities = SUDDENCHILL,PETTY
