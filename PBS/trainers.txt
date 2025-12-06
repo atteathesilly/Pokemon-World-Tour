@@ -433,6 +433,7 @@ Pokemon = RABOOT,20
 Policies = RIDDLE
 Pokemon = MIMEJR,20
     Name = Tricky
+    Gender = male
     Moves = RETREAT,PIXIEPUNCH,MAGEHAND,ICEPUNCH
     AbilityIndex = 0 # Barrier Maker
     Item = TWISTEDSPOON
@@ -576,6 +577,39 @@ Pokemon = QUILAVA,25
     Moves = INCINERATE,OMINOUSWIND,STOREFUEL,FROSTOVER
     AbilityIndex = 1 # Hubris
     Item = PASSHOBERRY
+#-------------------------------
+[LEADER_CHUCK,Chuck]
+Policies = CHUCK
+Pokemon = POLIWRATH,25
+    Name = Plato
+    Gender = male
+    Moves = LOWSWEEP,CAUSTICPUNCH,BULKUP,WAVEBREAK
+    AbilityIndex = 0 # Counter Flow
+    Item = SITRUSBERRY
+Pokemon = SKIRLIA,25
+    Moves = ROUND,EXPLOIT,LIFEDEW,LULLABY
+    AbilityIndex = 0 # Good Dreams
+    Item = LUMBERRY
+Pokemon = PRIMEAPE,25
+    Name = Aristotle
+    Gender = male
+    Moves = ARMTHRUST,FIREFANG,SHADOWPUNCH,PROTECT
+    AbilityIndex = 0 # Defiant
+    Item = LIECHIBERRY
+Pokemon = TYROGUE,25
+    Moves = HELPINGHAND,POWERUPPUNCH,WIDEGUARD,FAKEOUT
+    AbilityIndex = 0 # Energetic
+    Item = COBABERRY
+Pokemon = VAROOM,25
+    Moves = SELFDESTRUCT
+    AbilityIndex = 1 # Levitate
+    Item = PAYAPABERRY
+    # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+    EV = 10,20,0,20,20,0
+Pokemon = PUPITAR,25
+    Moves = TREMOR,PAYBACK,BULKUP,BLUNTFORCE
+    AbilityIndex = 1 # Stressful
+    Item = CHOPLEBERRY
 #-------------------------------
 [BLACKBELT4,Nob]
 Pokemon = MACHOKE,25

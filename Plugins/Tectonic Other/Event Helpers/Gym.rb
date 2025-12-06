@@ -1,12 +1,12 @@
 BADGE_NAMES = [
 		"Clown",
-		"Perseverance",
-		"Patience",
-		"Reverence",
-		"Solidarity",
-		"Clarity",
-		"Generosity",
-		"Mercy"
+		"Storm",
+		"Beacon",
+		"Pika",
+		"Fan",
+		"Kabuki",
+		"Haunted",
+		"Pride}"
 	]
 TOTAL_BADGES = 8
 BADGE_COUNT_VARIABLE = 27
