@@ -746,7 +746,7 @@ class PokeBattle_Battler
             showStatChangeMessage(statIDList, increment, lowering: true)
         end
 
-        triggersOnStatLoss(user, move)
+        triggersOnStatLoss(user: user, move: move)
 
         @battle.pbHideAbilitySplash(user) if ability
         return loweredAnySteps
