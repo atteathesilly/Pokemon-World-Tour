@@ -1804,19 +1804,6 @@ EffectChance = 20
 Description = The user attacks by hurling a blob of mud. It has a 20% chance to reduce the target's Speed.
 Animation = MUDSLAP
 #-------------------------------
-[ONAROLL]
-Name = On A Roll
-Type = GROUND
-Category = Physical
-Power = 90
-Accuracy = 100
-TotalPP = 15
-Target = NearOther
-FunctionCode = OnARoll
-Flags = CanProtect
-Description = The user attacks while balled up. This counts as a usage of Fury Cutter, Rock Roll, or Snowball.
-Animation = ROCKROLL
-#-------------------------------
 [PARADISIACA]
 Name = Paradisiaca
 Type = GROUND

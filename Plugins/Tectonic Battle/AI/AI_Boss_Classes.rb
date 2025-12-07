@@ -832,13 +832,13 @@ class PokeBattle_AI_CLAYDOL < PokeBattle_AI_Boss
         super
         @warnedIFFMove.add(:REFLECT, {
             :condition => proc { |_move, user, _target, _battle|
-                physicalAttacker = false
-                user.lastFoeAttacker.each do |attacker|
-                    next unless attacker.lastRoundMoveCategory == 0
-                    physicalAttacker = true
+                physicalAttackingFoe = false
+                user.eachOpposing do |foe|
+                    next unless foe.lastRoundMoveCategory == 0
+                    physicalAttackingFoe = true
                     break
                 end
-                next physicalAttacker
+                next physicalAttackingFoe
             },
             :warning => proc { |_move, user, targets, _battle|
                 _INTL("{1} is molding its clay for physical defense!",user.pbThis)
@@ -847,13 +847,13 @@ class PokeBattle_AI_CLAYDOL < PokeBattle_AI_Boss
 
         @warnedIFFMove.add(:LIGHTSCREEN, {
             :condition => proc { |_move, user, _target, _battle|
-                physicalAttacker = false
-                user.lastFoeAttacker.each do |attacker|
-                    next unless attacker.lastRoundMoveCategory == 1
-                    physicalAttacker = true
+                specialAttackingFoe = false
+                user.eachOpposing do |foe|
+                    next unless foe.lastRoundMoveCategory == 1
+                    specialAttackingFoe = true
                     break
                 end
-                next physicalAttacker
+                next specialAttackingFoe
             },
             :warning => proc { |_move, user, targets, _battle|
                 _INTL("{1} is molding its clay for special defense!",user.pbThis)

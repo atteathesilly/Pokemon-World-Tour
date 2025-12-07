@@ -275,8 +275,8 @@ module BattleHandlers
         AbilityOnEnemyStatGain.trigger(ability, battler, stat, increment, user, battle, benefactor)
     end
 
-    def self.triggerAbilityOnStatLoss(ability, battler, stat, user)
-        AbilityOnStatLoss.trigger(ability, battler, stat, user)
+    def self.triggerAbilityOnStatLoss(ability, battler, user)
+        AbilityOnStatLoss.trigger(ability, battler, user)
     end
 
     #=============================================================================

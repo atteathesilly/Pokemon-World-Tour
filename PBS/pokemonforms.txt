@@ -636,7 +636,12 @@ Weight = 610.0
 Pokedex = This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything.
 #-------------------------------
 [ZYGARDE,3]
-FormName = 50%
+FormName = Complete
+BaseStats = 225,90,120,85,90,95
+# Total = 705
+Height = 4.5
+Weight = 610.0
+Pokedex = This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything.
 #-------------------------------
 [HOOPA,1]
 FormName = Unbound
