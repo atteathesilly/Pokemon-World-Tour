@@ -650,6 +650,14 @@ end
 # Uses rest on both self and target. (Bedfellows)
 #===============================================================================
 class PokeBattle_Move_ForceUserAndTargetToRest < PokeBattle_Move
+    def pbFailsAgainstTarget?(_user, target, show_message)
+        if target.boss?
+            @battle.pbDisplay(_INTL("{1} is too powerful to be compelled to rest!", target.pbThis)) if show_message
+            return true
+        end
+        return false
+    end
+
     def pbEffectAgainstTarget(user, target)
         @battle.forceUseMove(user, :REST)
         @battle.forceUseMove(target, :REST)
