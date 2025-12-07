@@ -1226,10 +1226,10 @@ BattleHandlers::AbilityOnSwitchIn.add(:CASHOUT,
 BattleHandlers::AbilityOnSwitchIn.add(:TABLETSOFRUIN,
   proc { |ability, battler, battle, aiCheck|
     case ability
-    when :TABLETSOFRUIN then stat_name = "offenses"
-    when :SWORDOFRUIN   then stat_name = "defenses"
-    when :VESSELOFRUIN  then stat_name = "offenses"
-    when :BEADSOFRUIN   then stat_name = "defenses"
+    when :TABLETSOFRUIN then stat_name = _INTL("Attack")
+    when :SWORDOFRUIN   then stat_name = _INTL("Defense")
+    when :VESSELOFRUIN  then stat_name = _INTL("Special Attack")
+    when :BEADSOFRUIN   then stat_name = _INTL("Special Defense")
     end
     battle.pbShowAbilitySplash(battler, ability)
     battle.pbDisplay(_INTL("{1} weakened the {2} of all surrounding Pokémon!", battler.pbThis, stat_name))

@@ -190,6 +190,9 @@ class PokeBattle_Battler
         # Dragon Ride
         attackMult *= 2.0 if effectActive?(:OnDragonRide)
 
+        # Tablets of Ruin
+        attackMult *= 0.75 if @battle.pbCheckGlobalAbility(:TABLETSOFRUIN) && !hasActiveAbility?(:TABLETSOFRUIN)
+
         # Calculation
         return [(attack * attackMult).round, 1].max
     end
@@ -213,6 +216,9 @@ class PokeBattle_Battler
         eachActiveItem do |item|
             spAtkMult = BattleHandlers.triggerSpecialAttackCalcUserItem(item, self, battle, spAtkMult)
         end
+
+        # Vessel of Ruin
+        spAtkMult *= 0.75 if @battle.pbCheckGlobalAbility(:VESSELOFRUIN) && !hasActiveAbility?(:VESSELOFRUIN)
 
         # Calculation
         return [(special_attack * spAtkMult).round, 1].max
@@ -248,6 +254,9 @@ class PokeBattle_Battler
             defenseMult *= (1 + hailAddition)
         end
 
+        # Sword of Ruin
+        defenseMult *= 0.75 if @battle.pbCheckGlobalAbility(:SWORDOFRUIN) && !hasActiveAbility?(:SWORDOFRUIN)
+
         # Calculation
         return [(defense * defenseMult).round, 1].max
     end
@@ -280,6 +289,9 @@ class PokeBattle_Battler
             sandAddition *= 2 if @battle.curseActive?(:CURSE_BOOSTED_SAND)
             spDefMult *= (1 + sandAddition)
         end
+
+        # Beads of Ruin
+        spDefMult *= 0.75 if @battle.pbCheckGlobalAbility(:BEADSOFRUIN) && !hasActiveAbility?(:BEADSOFRUIN)
 
         # Calculation
         return [(special_defense * spDefMult).round, 1].max
