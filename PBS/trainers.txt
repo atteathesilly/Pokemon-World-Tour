@@ -1535,7 +1535,7 @@ Pokemon = DREDNAW,28
     AbilityIndex = 1 # Trapper
     Item = SITRUSBERRY
 Pokemon = PORYGON2,28
-    Moves = SWIFT,HEX,NUMB,SIGNALBEAM
+    Moves = SWIFT,PSYPIERCE,NUMB,SIGNALBEAM
     AbilityIndex = 0 # Realist
 #-------------------------------
 [CLOWN,Klemens]
@@ -4077,7 +4077,7 @@ Pokemon = SAURENAID,55
     AbilityIndex = 1 # Leviathan
     Item = LEFTOVERS
 Pokemon = PORYGONZ,55
-    Moves = CRITICALERROR,RUIN,THUNDER,BLIZZARD
+    Moves = CRITICALERROR,RUIN,FOCUSBLAST,BLIZZARD
     AbilityIndex = 1 # Adapted
     Item = WIDELENS
 Pokemon = DECEAT,55
@@ -8762,7 +8762,7 @@ Pokemon = MMUSHARNA,70
     AbilityIndex = 1 # Fatigued
     Item = CHESTOBERRY
 Pokemon = PORYGONZ,70
-    Moves = TRIATTACK,ARCLAMP,HEX,NUMB
+    Moves = TRIATTACK,PIERCINGDOUBT,HEX,NUMB
     AbilityIndex = 1 # Adapted
 Pokemon = INCINEROAR,70
     Moves = SUBMISSION,KNOCKOFF,BLAZEKICK,BULKUP
