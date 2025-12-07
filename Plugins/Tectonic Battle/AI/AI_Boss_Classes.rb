@@ -833,7 +833,7 @@ class PokeBattle_AI_CLAYDOL < PokeBattle_AI_Boss
         @warnedIFFMove.add(:REFLECT, {
             :condition => proc { |_move, user, _target, _battle|
                 physicalAttackingFoe = false
-                user.eachOpposing.each do |foe|
+                user.eachOpposing do |foe|
                     next unless foe.lastRoundMoveCategory == 0
                     physicalAttackingFoe = true
                     break
@@ -848,7 +848,7 @@ class PokeBattle_AI_CLAYDOL < PokeBattle_AI_Boss
         @warnedIFFMove.add(:LIGHTSCREEN, {
             :condition => proc { |_move, user, _target, _battle|
                 specialAttackingFoe = false
-                user.eachOpposing.each do |foe|
+                user.eachOpposing do |foe|
                     next unless foe.lastRoundMoveCategory == 1
                     specialAttackingFoe = true
                     break
