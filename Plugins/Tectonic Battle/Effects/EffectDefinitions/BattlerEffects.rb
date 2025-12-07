@@ -762,8 +762,6 @@ GameData::BattleEffect.register_effect(:Battler, {
         battle.pbDisplay(_INTL("The evil roots will sap foe health each turn!", battler.pbThis))
     end,
     :eor_proc => proc do |battle, battler, _value|
-        next unless battler.canHeal?
-
         battler.eachOpposing do |b|
             if b.takesIndirectDamage?(true)
                 battle.pbDisplay(_INTL("{1} is sapped by the evil roots!", b.pbThis))
