@@ -137,7 +137,6 @@ LandSparse,20
 DarkCave,20
     20,CRVOLTORB,16,18
     20,DEINO,16,18
-    20,DUNSPARCE,16,18
     20,ROCKRUFF,16,18
     20,ROLYCOLY,16,18
     20,SANDSHREW,16,18
@@ -214,6 +213,8 @@ Land,20
 [043] # Beppi Town
 FloweryGrass2,21
     20,GRIMER,20,21
+    20,HATENNA,20,21
+    20,IMPIDIMP,20,21
     20,KOFFING,20,21
     20,TRUBBISH,20,21
 #-------------------------------
@@ -222,6 +223,7 @@ Land,20
     40,DUNSPARCE,20,21
     20,EEVEE,20,21
     20,SQUIRTLE,20,21
+    20,STARYU,20,21
     20,TOGEPI,20,21
 Puddle,20
     20,LUVDISC,20,21
@@ -291,3 +293,11 @@ Land,20
     20,NOIBAT,20,21
     20,PIDGEY,20,21
     20,PINSIR,20,21
+#-------------------------------
+[063] # Three Isle Path
+DarkCave,20
+    20,DIGLETT,20,21
+    20,EKANS,20,21
+    20,ONIX,20,21
+    20,PARAS,20,21
+    20,SABLEYE,20,21
