@@ -340,7 +340,7 @@ Pokemon = TENTACOOL,20
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = TYNAMO,20
-    Moves = ENVENOM,CURRENTCRASH,POISONFANG,BULLETCHARGE
+    Moves = ENVENOM,CURRENTCRASH,POISONFANG,HYDROFANG
     AbilityIndex = 0 # Frightening Fangs
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,0,20,20
@@ -366,7 +366,7 @@ Pokemon = TENTACOOL,20
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,0,20,20
 Pokemon = TYNAMO,20
-    Moves = THUNDERFANG,POISONFANG,BULLETCHARGE,ENVENOM
+    Moves = THUNDERFANG,POISONFANG,HYDROFANG,ENVENOM
 Pokemon = CAMERUPT,20
     Moves = INCINERATE,MUDSHOT,IGNITE,PROTECT
     AbilityIndex = 1 # Adrenaline Rush
@@ -5884,7 +5884,7 @@ Pokemon = TALONFLAME,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = EELEKTROSS,70
-    Moves = SUPERPOWER,ELECTROSLASH,POISONJAB,ACROBATICS
+    Moves = SUPERPOWER,ELECTROSLASH,POISONJAB,LIQUIDATION
     AbilityIndex = 1 # Frustrate
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 18,20,6,0,20,6
