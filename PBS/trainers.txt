@@ -4830,7 +4830,7 @@ Pokemon = CRADILY,55
 #-------------------------------
 [SWIMMER_M3,Diego]
 Pokemon = FLOATZEL,56
-    Moves = FAKEOUT,WEASELING,STORMTHROW,MEGAPUNCH
+    Moves = FAKEOUT,WEASELING,STORMTHROW,SPATTERINGRAM
     AbilityIndex = 1 # Technician
     Item = EJECTBUTTON
 Pokemon = CACTURNE,56
@@ -5037,8 +5037,8 @@ Pokemon = AEGISLASH,57
 #-------------------------------
 [SWIMMER_F6,Kiana]
 Pokemon = JELLICENT,58
-    Moves = RECOVER,HEX,SHIVER
-    AbilityIndex = 1 # Castellan
+    Moves = RECOVER,HEX,SHIVER,SCALD
+    AbilityIndex = 0 # Backwash
     Item = LEFTOVERS
 Pokemon = WORMADAM,59
     Moves = GIGADRAIN,SCORCHINGSANDS,IRONHEAD,LEECHLIFE
@@ -7472,10 +7472,10 @@ Pokemon = NIDOKING,59
     Item = LIFEORB
 #-------------------------------
 [SWIMMER_F,Cosmina]
-Pokemon = BARRASKEWDA,60
-    Moves = HARBORBREAKER,POISONJAB,CLOSECOMBAT,FLIPTURN
-    AbilityIndex = 1 # Straight Ahead
-    Item = MUSCLEBAND
+Pokemon = RELICANTH,60
+    Moves = HARBORBREAKER,BEDROCKBREAKER,WILDCHARGE,FLOODGATE
+    AbilityIndex = 0 # Trench Carver
+    Item = ROCKGEM
 Pokemon = CORSOLA,60
     Moves = RECOVER,MOONBLAST,SLAMSHUT,PROTECT
     AbilityIndex = 0 # Persistent Growth
