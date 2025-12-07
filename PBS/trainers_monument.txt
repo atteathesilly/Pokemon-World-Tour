@@ -795,7 +795,7 @@ Pokemon = GRENINJA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = DRAGALGE,70
-    Moves = POISONSPIKES,DRACOMETEOR,SCALD,SLUDGEWAVE
+    Moves = POISONSPIKES,DRACOMETEOR,THUNDERBOLT,SLUDGEWAVE
     AbilityIndex = 0 # Deterrent
     Item = ENERGYLOCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2525,7 +2525,7 @@ Pokemon = DURANT,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
-    Moves = SUPERPOWER,FLAREBLITZ,FROMBEYOND,HARBORBREAKER
+    Moves = BEDROCKBREAKER,FLAREBLITZ,FROMBEYOND,HARBORBREAKER
     AbilityIndex = 1 # Expertise
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
