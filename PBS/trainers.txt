@@ -1492,7 +1492,7 @@ Pokemon = GABITE,28
 #-------------------------------
 [FAIRYTALEGIRL,Maja]
 Pokemon = HSLIGGOO,28
-    Moves = MAGNETIZE,SHRED,DRAGONCLAW,SLUDGE
+    Moves = MAGNETIZE,MAGEHAND,DRAGONCLAW,STEAMROLLER
     AbilityIndex = 1 # Impetuous
 Pokemon = MPETILIL,28
     Moves = FROSTBARB,FROLIC,WAVEBREAK,BACKHAND
