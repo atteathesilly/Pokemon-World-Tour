@@ -356,6 +356,15 @@ BattleHandlers::AbilityOnSwitchIn.add(:BREAKTHROUGH,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:DYNAMICENTRANCE,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} is quick onto the scene!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 BattleHandlers::AbilityOnSwitchIn.add(:PACIFIST,
   proc { |ability, battler, battle, aiCheck|
       next 0 if aiCheck
