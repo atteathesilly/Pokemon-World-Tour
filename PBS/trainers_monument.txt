@@ -96,7 +96,7 @@ Pokemon = HOUNDOMINUS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = PORYGONZ,70
-    Moves = HEX,ZAPCANNON,ICEBEAM,DETACHMENT
+    Moves = HEX,PROFANE,ICEBEAM,DETACHMENT
     AbilityIndex = 0 # Realist
     Item = SKILLHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -172,7 +172,7 @@ Pokemon = MISMAGIUS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = LILLIGANT,70
-    Moves = PETALTEMPEST,MISTBURST,HYPERBEAM,ENCHANTINGSONG
+    Moves = FRENZYPLANT,MISTBURST,PIERCINGDOUBT,ENCHANTINGSONG
     AbilityIndex = 1 # Herbalist
     Item = ENERGYHERB,INTELLECTHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -356,7 +356,7 @@ Pokemon = TROPIUS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,10,0,0,20
 Pokemon = PORYGONZ,70
-    Moves = CRITICALERROR,ICEBEAM,THUNDERBOLT,TRIATTACK
+    Moves = CRITICALERROR,ICEBEAM,PSYCHIC,TRIATTACK
     AbilityIndex = 0 # Realist
     Item = LIFEORB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -795,7 +795,7 @@ Pokemon = GRENINJA,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = DRAGALGE,70
-    Moves = POISONSPIKES,DRACOMETEOR,SCALD,SLUDGEWAVE
+    Moves = POISONSPIKES,DRACOMETEOR,THUNDERBOLT,SLUDGEWAVE
     AbilityIndex = 0 # Deterrent
     Item = ENERGYLOCK
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2360,7 +2360,7 @@ Pokemon = AMUK,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,0,20,0,0,10
 Pokemon = VENOMOTH,70
-    Moves = TERRORSWARM,ENVENOM,DEFOG,SYNTHESIS
+    Moves = TERRORSWARM,ENVENOM,DEFOG,ROOST
     AbilityIndex = 0 # Fell Omen
     Item = HEAVYDUTYBOOTS
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
@@ -2525,7 +2525,7 @@ Pokemon = DURANT,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = BASCULEGION,70
-    Moves = SUPERPOWER,FLAREBLITZ,FROMBEYOND,HARBORBREAKER
+    Moves = BEDROCKBREAKER,FLAREBLITZ,FROMBEYOND,HARBORBREAKER
     AbilityIndex = 1 # Expertise
     Item = EXPERTBELT
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def

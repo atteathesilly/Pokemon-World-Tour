@@ -340,7 +340,7 @@ Pokemon = TENTACOOL,20
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 20,20,10,0,20,0
 Pokemon = TYNAMO,20
-    Moves = ENVENOM,CURRENTCRASH,POISONFANG,BULLETCHARGE
+    Moves = ENVENOM,CURRENTCRASH,POISONFANG,HYDROFANG
     AbilityIndex = 0 # Frightening Fangs
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,0,20,20
@@ -366,7 +366,7 @@ Pokemon = TENTACOOL,20
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,0,20,20
 Pokemon = TYNAMO,20
-    Moves = THUNDERFANG,POISONFANG,BULLETCHARGE,ENVENOM
+    Moves = THUNDERFANG,POISONFANG,HYDROFANG,ENVENOM
 Pokemon = CAMERUPT,20
     Moves = INCINERATE,MUDSHOT,IGNITE,PROTECT
     AbilityIndex = 1 # Adrenaline Rush
@@ -508,7 +508,7 @@ Pokemon = SABLEYE,24
     Moves = SHADOWSNEAK,TEASE,CRYSTALGLEAM,WILLOWISP
     AbilityIndex = 1 # Prankster
 Pokemon = SKRELP,23
-    Moves = POISONGAS,POISONTAIL,DRAGONTAIL,WAVEBREAK
+    Moves = POISONGAS,POISONTAIL,DRAGONTAIL,AERIALACE
     AbilityIndex = 0 # Deterrent
     Item = SITRUSBERRY
 Pokemon = CHINGLING,24
@@ -1492,7 +1492,7 @@ Pokemon = GABITE,28
 #-------------------------------
 [FAIRYTALEGIRL,Maja]
 Pokemon = HSLIGGOO,28
-    Moves = MAGNETIZE,SHRED,DRAGONCLAW,SLUDGE
+    Moves = MAGNETIZE,MAGEHAND,DRAGONCLAW,STEAMROLLER
     AbilityIndex = 1 # Impetuous
 Pokemon = MPETILIL,28
     Moves = FROSTBARB,FROLIC,WAVEBREAK,BACKHAND
@@ -1535,7 +1535,7 @@ Pokemon = DREDNAW,28
     AbilityIndex = 1 # Trapper
     Item = SITRUSBERRY
 Pokemon = PORYGON2,28
-    Moves = SWIFT,HEX,NUMB,SIGNALBEAM
+    Moves = SWIFT,PSYPIERCE,NUMB,SIGNALBEAM
     AbilityIndex = 0 # Realist
 #-------------------------------
 [CLOWN,Klemens]
@@ -2022,7 +2022,7 @@ Pokemon = BRONZONG,37
     AbilityIndex = 0 # Levitate
     Item = LEFTOVERS
 Pokemon = DRAGALGE,37
-    Moves = POISONJAB,RECOVER,WAVEBREAK,DRAGONTAIL
+    Moves = ACIDBREACH,RECOVER,FRIGIDJEALOUSY,DRAGONTAIL
     AbilityIndex = 0 # Deterrent
 Pokemon = CRUSTLE,37
     Moves = XSCISSOR,TREMOR,STEALTHROCK,ADAMANTINEPRESS
@@ -3417,7 +3417,7 @@ Pokemon = KECLEON,55
     AbilityIndex = 1 # Protean
     Item = WEAKNESSPOLICY
 Pokemon = ATLACROSS,55
-    Moves = XSCISSOR,DRAINPUNCH,ADAMANTINEPRESS,DISTURB
+    Moves = XSCISSOR,DRAINPUNCH,ADAMANTINEPRESS,CREEPINGSTRIKE
     AbilityIndex = 1 # Power Lifter
     Item = CADOBERRY
 Pokemon = BRAVIARY,55
@@ -4077,7 +4077,7 @@ Pokemon = SAURENAID,55
     AbilityIndex = 1 # Leviathan
     Item = LEFTOVERS
 Pokemon = PORYGONZ,55
-    Moves = CRITICALERROR,RUIN,THUNDER,BLIZZARD
+    Moves = CRITICALERROR,RUIN,FOCUSBLAST,BLIZZARD
     AbilityIndex = 1 # Adapted
     Item = WIDELENS
 Pokemon = DECEAT,55
@@ -4461,7 +4461,7 @@ Pokemon = GOREBYSS,57
     Moves = DREAMDANCE,GLAMOURFLASH,SCALD,MISTBURST
     AbilityIndex = 0 # Fascinate
 Pokemon = HLILLIGANT,58
-    Moves = SWORDSDANCE,ICECALIBUR,LEAFBLADE,SACREDSWORD
+    Moves = SWORDSDANCE,POUNCE,LEAFBLADE,SACREDSWORD
     AbilityIndex = 1 # Efflorescent
     Item = WHETSTONE
 Pokemon = TURTONATOR,57
@@ -5884,7 +5884,7 @@ Pokemon = TALONFLAME,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 0,20,10,20,20,0
 Pokemon = EELEKTROSS,70
-    Moves = SUPERPOWER,ELECTROSLASH,POISONJAB,ACROBATICS
+    Moves = SUPERPOWER,ELECTROSLASH,POISONJAB,LIQUIDATION
     AbilityIndex = 1 # Frustrate
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 18,20,6,0,20,6
@@ -8762,7 +8762,7 @@ Pokemon = MMUSHARNA,70
     AbilityIndex = 1 # Fatigued
     Item = CHESTOBERRY
 Pokemon = PORYGONZ,70
-    Moves = TRIATTACK,ARCLAMP,HEX,NUMB
+    Moves = TRIATTACK,PIERCINGDOUBT,HEX,NUMB
     AbilityIndex = 1 # Adapted
 Pokemon = INCINEROAR,70
     Moves = SUBMISSION,KNOCKOFF,BLAZEKICK,BULKUP
@@ -8998,7 +8998,7 @@ Pokemon = WYRDEER,70
     Moves = CENSOR,HIGHJUMPKICK,LONGSHOT,SUPERCOOL
     AbilityIndex = 0 # No Guard
 Pokemon = HLILLIGANT,70
-    Moves = STOMPINGTANTRUM,GLACIALRAM,LEAFBLADE,CLOSECOMBAT
+    Moves = STOMPINGTANTRUM,BLAZEKICK,LEAFBLADE,CLOSECOMBAT
     AbilityIndex = 0 # Fascinate
     Item = LIFEORB
 #-------------------------------
