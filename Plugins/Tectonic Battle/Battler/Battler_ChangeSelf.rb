@@ -167,19 +167,22 @@ class PokeBattle_Battler
         amt *= 1.2 if @battle.pbCheckGlobalAbility(:FIELDOFLIFE)
         amt = amt.round
 
-        # Cap the healing
-        healthCap = @totalhp
-        healthCap *= 2 if canOverheal
-        maxHeal = healthCap - @hp
-        amt = maxHeal if amt > maxHeal
-        amt = 1 if amt < 1 && @hp < @totalhp
+        # Nerve Break, Bad Influence invert healing
+        amt *= -1 if healingReversed?(showMessage && !aiCheck)
 
-        # Nerve Break, Bad Influence
-        if healingReversed?(showMessage && !aiCheck)
-            amt *= -1
-        elsif boss?
-            if @hp <= avatarPhaseLowerHealthBound && @hp + amt > avatarPhaseLowerHealthBound # Cap boss healing at the next health boundary
-                amt = avatarPhaseLowerHealthBound - @hp
+        if amt.positive?
+            # Cap the healing
+            healthCap = @totalhp
+            healthCap *= 2 if canOverheal
+            maxHeal = healthCap - @hp
+            amt = maxHeal if amt > maxHeal
+            amt = 1 if amt < 1 && @hp < @totalhp
+
+            # Cap boss healing at the next health boundary
+            if boss?
+                if @hp <= avatarPhaseLowerHealthBound && @hp + amt > avatarPhaseLowerHealthBound
+                    amt = avatarPhaseLowerHealthBound - @hp
+                end
             end
         end
 
