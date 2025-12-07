@@ -172,7 +172,7 @@ Pokemon = MISMAGIUS,70
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = LILLIGANT,70
-    Moves = PETALTEMPEST,MISTBURST,HYPERBEAM,ENCHANTINGSONG
+    Moves = FRENZYPLANT,MISTBURST,PIERCINGDOUBT,ENCHANTINGSONG
     AbilityIndex = 1 # Herbalist
     Item = ENERGYHERB,INTELLECTHERB
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
