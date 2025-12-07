@@ -36,7 +36,7 @@ Description = Powers up ally Pokémon's special moves by 30%.
 #-------------------------------
 [BEADSOFRUIN]
 Name = Beads of Ruin
-Description = All Pokémon deal 50% more move damage.
+Description = The power of the Pokémon's ruinous beads lowers the Special Defense stats of all Pokémon except itself.
 #-------------------------------
 [BERSERK]
 Name = Berserk
@@ -584,7 +584,7 @@ Flags = RainstormSynergy
 #-------------------------------
 [SWORDOFRUIN]
 Name = Sword of Ruin
-Description = All Pokémon deal 50% more move damage.
+Description = The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself.
 #-------------------------------
 [SYNCHRONIZE]
 Name = Synchronize
@@ -592,7 +592,7 @@ Description = When the Pokémon is given a non-volatile status condition by anot
 #-------------------------------
 [TABLETSOFRUIN]
 Name = Tablets of Ruin
-Description = All Pokémon deal 50% less move damage.
+Description = The power of the Pokémon's ruinous tablets lowers the Attack stats of all Pokémon except itself.
 #-------------------------------
 [TANGLINGHAIR]
 Name = Tangling Hair
@@ -644,7 +644,7 @@ Description = Physical moves negate all protection effects.
 #-------------------------------
 [VESSELOFRUIN]
 Name = Vessel of Ruin
-Description = All Pokémon deal 50% less move damage.
+Description = The power of the Pokémon's ruinous sword lowers the Special Attack stats of all Pokémon except itself.
 #-------------------------------
 [VICTORYSTAR]
 Name = Victory Star

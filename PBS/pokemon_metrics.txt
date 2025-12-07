@@ -1008,6 +1008,12 @@ FrontSprite = -3,28
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CHIENPAO]
+BackSprite = 0,29
+FrontSprite = -5,25
+ShadowX = 1
+ShadowSize = 3
+#-------------------------------
 [CHIKORITA]
 BackSprite = 0,25
 FrontSprite = 3,22
