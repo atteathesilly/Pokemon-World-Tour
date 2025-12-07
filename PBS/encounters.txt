@@ -301,3 +301,19 @@ DarkCave,20
     20,ONIX,20,21
     20,PARAS,20,21
     20,SABLEYE,20,21
+#-------------------------------
+[064] # Navel Rock Descent B1
+Land,20
+    20,AVULPIX,20,21
+    20,BERGMITE,20,21
+    20,SNEASEL,20,21
+    20,SNORUNT,20,21
+    20,SWINUB,20,21
+#-------------------------------
+[065] # Navel Rock Descent B2
+Land,20
+    20,ASANDSHREW,20,21
+    20,CUBCHOO,20,21
+    20,SNOM,20,21
+    20,SNOVER,20,21
+    20,VANILLITE,20,21

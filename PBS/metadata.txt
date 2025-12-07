@@ -406,7 +406,7 @@ Humidity = Wet
 Outdoor = false
 ShowArea = false
 Bicycle = true
-BattleBack = cave1
+BattleBack = wcave
 Environment = Cave
 #-------------------------------
 [059]
@@ -414,7 +414,7 @@ Environment = Cave
 Outdoor = false
 ShowArea = false
 Bicycle = true
-BattleBack = cave1
+BattleBack = wcave
 Environment = Cave
 #-------------------------------
 [060]
@@ -422,7 +422,7 @@ Environment = Cave
 Outdoor = false
 ShowArea = false
 Bicycle = true
-BattleBack = cave1
+BattleBack = wcave
 Environment = Cave
 #-------------------------------
 [061]
@@ -447,6 +447,22 @@ Outdoor = false
 ShowArea = false
 Bicycle = true
 BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[064]
+# Navel Rock Descent B1
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = wcave
+Environment = Cave
+#-------------------------------
+[065]
+# Navel Rock Descent B2
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = wcave
 Environment = Cave
 #-------------------------------
 [147]
