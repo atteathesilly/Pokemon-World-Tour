@@ -689,7 +689,7 @@ StepsToHatch = 2805
 Height = 0.4
 Weight = 6.0
 Kind = Mouse
-Pokedex = An extremely adaptive Pikachu, made to be able to adapt to the various contest traits.
+Pokedex = A Pikachu bred to be just as adaptive as Eevee. It can no longer evolve into Raichu, however it now can harness many types by evolving.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 Evolutions = PIKACHULIBRE,Item,THUNDERSTONE,PIKACHUROCKSTAR,Item,FIRESTONE,PIKACHUPOPSTAR,Item,WATERSTONE,PIKACHUBELLE,Item,ICESTONE,PIKACHUPHD,Item,MOONSTONE,PARTNERPIKACHU,Item,ALOLANWREATH
@@ -711,7 +711,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Wearing a wrestler outfit gives it the ability to use many tough fighting moves.
+Pokedex = It emulates the fighting style of Hawlucha and Incineroar. Their toughness is really shown when There's a crowd.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------
@@ -732,7 +732,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Wearing a rockstar outfit, it now has some cool heavy metal abilities.
+Pokedex = Adapting some metal into its biology, Rockstar Pikachu's punches can take down buildings.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------
@@ -753,7 +753,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Wearing a popstar outfit, it now have some cute fairy skills. It is quite the show off
+Pokedex = As with most Cosplay Pikachu, this Pikachu loves appealing to crowds. It heals from the praise crowds give it.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------
@@ -774,7 +774,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Wearing a lovely dress, it now has some beautifully bitter ice powers, it may be one of the cruelest cosplay Pikachu.
+Pokedex = The biggest attitude change of the Pikachu, it now is bitter and will freeze anyone who disapproves of its fashion.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------
@@ -795,7 +795,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Wearing a scientist outfit, it is now incredibly intelligent, even gaining psychic powers.
+Pokedex = Its intelligence has greatly increased, allowing it to gain psychic abilities. It is not a licensed hold of a Ph.D. and can not give you medicine.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------
@@ -814,7 +814,7 @@ StepsToHatch = 2805
 Height = 0.8
 Weight = 30.0
 Kind = Mouse
-Pokedex = Pikachu that is a big fan of some twerp from Kanto. No clue why its stronger than most.
+Pokedex = This Pikachu emulates a fictional alolan champion in appearance. This somehow gives it quite a lot of power.
 Generation = 1
 WildItemUncommon = AGILITYHERB
 #-------------------------------

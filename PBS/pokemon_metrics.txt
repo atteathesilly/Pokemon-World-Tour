@@ -108,6 +108,12 @@ FrontSprite = 0,12
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[ALAKAZAM,1]
+BackSprite = 0,8
+FrontSprite = 3,5
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [ALCREMIE]
 BackSprite = 0,21
 FrontSprite = 0,25
@@ -2300,7 +2306,7 @@ ShadowSize = 2
 #-------------------------------
 [GIGACHU]
 BackSprite = 0,15
-FrontSprite = 0,11
+FrontSprite = 10,5
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -2314,7 +2320,7 @@ ShadowSize = 3
 BackSprite = -1,7
 FrontSprite = 0,10
 ShadowX = 0
-ShadowSize = 4
+ShadowSize = 3
 #-------------------------------
 [GIRAFARIG]
 BackSprite = 0,13
@@ -2330,7 +2336,7 @@ ShadowSize = 3
 #-------------------------------
 [GIRATINA,1]
 BackSprite = 0,4
-FrontSprite = -5,10
+FrontSprite = -5,5
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
@@ -2559,6 +2565,12 @@ ShadowSize = 3
 [GRIMER]
 BackSprite = 0,28
 FrontSprite = 0,24
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[GRIMICE]
+BackSprite = 0,6
+FrontSprite = -3,6
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
