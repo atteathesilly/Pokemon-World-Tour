@@ -1868,6 +1868,12 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Sina and Dexio
 #-------------------------------
+[TRAINERMAGGIE]
+Name = Challenger
+Gender = Unknown
+BaseMoney = 100
+BattleBGM = Battle Vanya
+#-------------------------------
 [TRAINERSINA]
 Name = Kalos Trainer
 Gender = Female

@@ -124,6 +124,10 @@ Various free to use sprites
 deoxysacid
 magneclair
 
+Magikarp Jump Battlers
+riftclaw
+CodeEden
+
 Mega Malamar Sprites
 sopita_yorita
 
