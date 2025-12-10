@@ -202,20 +202,6 @@ FunctionCode = Drainage
 Flags = CanProtect
 Description = This attack inflicts double damage on a waterlogged foe. It also cures the target's waterlogging, however.
 #-------------------------------
-[EGGHEADBUTT]
-Name = Eggheadbutt
-Type = NORMAL
-Category = Physical
-Power = 95
-Accuracy = 100
-TotalPP = 12
-Target = NearOther
-FunctionCode = TargetsAttackDefends
-Flags = CanProtect
-EffectChance = 100
-Description = The user engages the target head on with its egghead. The damage is based on the target's Attack rather than their Defense.
-Animation = HEADBUTT
-#-------------------------------
 [ELEMENTALFANG]
 Name = Elemental Fang
 Type = NORMAL
@@ -1098,6 +1084,20 @@ FunctionCode = CantMissLowerTargetDefSpDefEvasion3
 Flags = CanMagicCoat,Sound
 Description = A high pitched screech lowers the target's Defense, Sp. Def, and Evasion by three steps. Can't miss and skips protections.
 Animation = SUPERSONIC
+#-------------------------------
+[EGGHEADBUTT]
+Name = Eggheadbutt
+Type = FLYING
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = TargetsAttackDefends
+Flags = CanProtect
+EffectChance = 100
+Description = The user engages the target head on with its egghead. The damage is based on the target's Attack rather than their Defense.
+Animation = HEADBUTT
 #-------------------------------
 [FURYPECKS]
 Name = Fury Pecks
@@ -4449,6 +4449,19 @@ FunctionCode = Waterlog
 Flags = CanProtect
 EffectChance = 30
 Description = The user rams the target while splashing up a lot of water. This has a 30% chance to waterlog.
+Animation = WATERFALL
+#-------------------------------
+[SPLASHANDDASH]
+Name = Splash and Dash
+Type = WATER
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMoveScalesWithLostHP
+Flags = CanProtect
+Description = Deals more damage the less HP the user has. After attacking, the user switches out.
 Animation = WATERFALL
 #-------------------------------
 [TIDEPULL]
