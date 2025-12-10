@@ -473,6 +473,16 @@ Bicycle = true
 BattleBack = wcave
 Environment = Cave
 #-------------------------------
+[067]
+# Hoppy Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

@@ -1869,10 +1869,10 @@ BaseMoney = 100
 BattleBGM = Battle Sina and Dexio
 #-------------------------------
 [TRAINERMAGGIE]
-Name = Challenger
+Name = Fisher
 Gender = Unknown
 BaseMoney = 100
-BattleBGM = Battle Vanya
+BattleBGM = Battle eifion
 #-------------------------------
 [TRAINERSINA]
 Name = Kalos Trainer

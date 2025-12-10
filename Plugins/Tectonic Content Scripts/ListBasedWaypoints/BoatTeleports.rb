@@ -21,10 +21,10 @@ DOCK_LOCATIONS = {
         :event_id => 1,
         :unlock_switch => 302,
     },
-    :TAPU_ISLAND => {
-        :map_name => "Guardian Island",
-        :map_id => 377,
-        :event_id => 93,
+    :HOPPY_TOWN => {
+        :map_name => "Hoppy Town",
+        :map_id => 67,
+        :event_id => 3,
         :unlock_switch => 303,
     },
     :EVENTIDE_ISLE => {
