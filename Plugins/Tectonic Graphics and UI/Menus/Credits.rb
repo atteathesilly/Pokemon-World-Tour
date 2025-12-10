@@ -5,6 +5,7 @@ AttteatheSilly
 manycrows
 Ace60
 Azeler
+CodeEden
 
 Major Contributors to Tectonic Engine
 Brickbat<s>Zinnia
@@ -270,6 +271,9 @@ Atteathesilly
 
 Legends ZA Hex Maniac
 CamiOfTargon
+
+Je1992 Expansion Project
+Je1992
 
 Beta Testing World Tour
 Lalunesarts

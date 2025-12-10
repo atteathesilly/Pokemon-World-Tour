@@ -317,3 +317,11 @@ Land,20
     20,SNOM,20,21
     20,SNOVER,20,21
     20,VANILLITE,20,21
+#-------------------------------
+[066] # Navel Rock Bottom
+Land,20
+    20,CRYOGONAL,20,21
+    20,DELIBIRD,20,21
+    20,EISCUE,20,21
+    20,GMRMIME,20,21
+    20,HAWLUCHA,20,21

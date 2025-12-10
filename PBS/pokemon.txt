@@ -21743,6 +21743,7 @@ Type2 = ICE
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 80,120,80,135,90,65
 # Total = 570
+GenderRate = Genderless
 BaseEXP = 86
 Rareness = 95
 Happiness = 35
@@ -21756,3 +21757,4 @@ Weight = 152.2
 Kind = Ruinous
 Pokedex = The hatred of those who perished by the sword long ago has clad itself in snow and become a Pokémon.
 Generation = 9
+Flags = Legendary

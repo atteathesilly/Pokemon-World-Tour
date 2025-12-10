@@ -465,6 +465,14 @@ Bicycle = true
 BattleBack = wcave
 Environment = Cave
 #-------------------------------
+[066]
+# Navel Rock Bottom
+Outdoor = false
+ShowArea = false
+Bicycle = true
+BattleBack = wcave
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
