@@ -4,217 +4,217 @@
 FormName = Skelly
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,2]
 FormName = Calico Orange
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectivelybred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,3]
 FormName = Calico Black
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,4]
 FormName = Calico White
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,5]
 FormName = Calico Gold
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,6]
 FormName = Orange Two-Tone
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,7]
 FormName = Orange Orca
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,8]
 FormName = Orange Dipples
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,9]
 FormName = Pink Two-Tone
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,10]
 FormName = Pink Orca
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,11]
 FormName = Pink Dapples
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,12]
 FormName = Gray Bubbles
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,13]
 FormName = Gray Diamonds
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,14]
 FormName = Gray Patches
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,15]
 FormName = Purple Bubbles
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,16]
 FormName = Purple Diamonds
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,17]
 FormName = Purple Patches
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,18]
 FormName = Apricot Tiger
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,19]
 FormName = Apricot Zebra
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,20]
 FormName = Apricot Stripes
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,21]
 FormName = Brown Tiger
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,22]
 FormName = Brown Zebra
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,23]
 FormName = Brown Stripes
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,24]
 FormName = Orange Forehead
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,25]
 FormName = Orange Mask
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,26]
 FormName = Black Forehead
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,27]
 FormName = Black Mask
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,28]
 FormName = Saucy Blue
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,29]
 FormName = Blue Raindrops
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,30]
 FormName = Saucy Violet
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [MAGIKARP,31]
 FormName = Violet Raindrops
 BaseStats = 90,85,105,120,10,75
 Moves = 1,SPLASH,4,WIPEOUT,8,HOP,12,LEER,16,SNAP,20,GROWL,24,FLAIL,28,AQUAJET,32,BOUNCE,36,SPLASHANDDASH,40,WATERFALL,44,ACROBATICS,48,ROOST,52,DEPTHCHARGE,56,BRAVEBIRD,60,RIPTIDE
-Pokedex = Hoppy town's prized Magikarp. They have selective bred to be able to be unable to evolve into Gyarados
+Pokedex = Hoppy town's prized Magikarp. They have selectively bred to be able to be unable to evolve into Gyarados
 Evolutions = GYARADOS,None,
 #-------------------------------
 [UNOWN,1]
