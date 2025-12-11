@@ -3856,15 +3856,15 @@ Pokedex = This Pokémon gets nibbled on by Lumineon and others. Thanks to its re
 Generation = 1
 WildItemCommon = STARDUST
 WildItemUncommon = STARPIECE
-Evolutions = STARMIE,Level,37
+Evolutions = STARMIE,Level,26
 #-------------------------------
 [STARMIE]
 Name = Starmie
 Type1 = WATER
 Type2 = PSYCHIC
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 70,75,85,115,110,85
-# Total = 540
+BaseStats = 60,55,55,85,90,75
+# Total = 420
 GenderRate = Genderless
 BaseEXP = 182
 Rareness = 50
@@ -3874,6 +3874,27 @@ Height = 1.1
 Weight = 80.0
 Kind = Mysterious
 Pokedex = This Pokémon has an organ known as its core. The organ glows in seven colors when Starmie is unleashing its potent psychic powers.
+Generation = 1
+WildItemCommon = STARDUST
+WildItemUncommon = STARPIECE
+Evolutions = STARMANN,Level,45
+#-------------------------------
+[STARMANN]
+Name = Starmann
+Type1 = WATER
+Type2 = PSYCHIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 95,75,85,115,115,85
+# Total = 570
+GenderRate = Genderless
+BaseEXP = 182
+Rareness = 50
+Abilities = STARSALIGN,SPECTRUMVISION
+StepsToHatch = 5355
+Height = 2.3
+Weight = 80.0
+Kind = Strange Hero
+Pokedex = Starmann has become a hero, or it is mimicking heroic deeds it sees on TV. It fights Malamind in battles incomprehensible to humans.
 Generation = 1
 WildItemCommon = STARDUST
 WildItemUncommon = STARPIECE
