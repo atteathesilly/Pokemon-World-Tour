@@ -16979,7 +16979,7 @@ StepsToHatch = 5120
 Height = 2.9
 Weight = 5.0
 Kind = Overpowering
-Pokedex = Malamind's mind control can rewrite entire personalities, they are very selfish and care a lot for presentation.
+Pokedex = Malamind's mind control can rewrite entire personalities. They are very selfish and care a lot for presentation.
 Generation = 6
 #-------------------------------
 [BINACLE]
