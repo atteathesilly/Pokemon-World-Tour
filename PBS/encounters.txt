@@ -110,6 +110,7 @@ LandSparse,20
 #-------------------------------
 [024] # Penny Province Path
 LandSparse,20
+    20,BLITZLE,16,18
     20,CRFARFETCHD,16,18
     20,MUDBRAY,16,18
     20,SANDILE,16,18
@@ -173,7 +174,7 @@ Special
 [034] # Kefka Highway
 LandSparse,20
     20,ABRA,16,18
-    20,BLITZLE,16,18
+    20,CRSPHEAL,16,18
     20,MACHOP,16,18
     20,RUFFLET,16,18
     20,SKORUPI,16,18

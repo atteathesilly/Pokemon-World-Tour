@@ -841,6 +841,20 @@ EffectChance = 100
 Description = The user drops onto the target with a kick, dealing 25% recoil to self.
 Animation = JUMPKICK
 #-------------------------------
+[DUNEHAMMER]
+Name = Dune Hammer
+Type = FIGHTING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = DamageBoostSandstorm50Percent
+Flags = CanProtect
+EffectChance = 100
+Description = The user slam the foe with a mighty desert hammer. If in sandstorm, the attack does 50% more damage.
+Animation = HAMMERARM
+#-------------------------------
 [FIGHTFOREVER]
 Name = Fight Forever
 Type = FIGHTING

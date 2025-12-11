@@ -91,6 +91,11 @@ Description = Boosts the Pokémon's Attack by 50%, but its attacks cannot faint 
 Name = Arctic Ariette
 Description = Sound-based attacks turn Ice-type and are boosted by 30%.
 #-------------------------------
+[ARIDRECOVERY]
+Name = Arid Recovery
+Description = Heals 1/8th of its HP under Sunlight or during a Sandstorm
+Flags = SunSynergy,SandSynergy
+#-------------------------------
 [ARMORPIERCING]
 Name = Armor Piercing
 Description = Deals double damage against Pokémon that have raised defenses or that are protected by a screen.
@@ -1555,6 +1560,10 @@ Description = Upon entry, creates a Puzzle Room for four turns, swapping base At
 [QUARRELSOME]
 Name = Quarrelsome
 Description = Both deals and takes double damage on its first full turn out in battle.
+#-------------------------------
+[QUICKSANDTRAP]
+Name = Quicksand Trap
+Description = Reduces each other Pokémon's speed by 1 step at the end of each turn.
 #-------------------------------
 [QUILLERINSTINCT]
 Name = Quiller Instinct

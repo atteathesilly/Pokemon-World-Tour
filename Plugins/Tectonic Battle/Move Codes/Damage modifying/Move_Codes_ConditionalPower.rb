@@ -577,3 +577,13 @@ class PokeBattle_Move_DamageBoost50PercentNotTargetFirstTurn < PokeBattle_Move
     end
     # AI does not understand this buff, unsure of how to code it
 end
+
+#===============================================================================
+# Power is boosted in Sandstorm. (Dune Hammer)
+#===============================================================================
+class PokeBattle_Move_DamageBoostSandstorm50Percent < PokeBattle_Move
+    def pbBaseDamage(baseDmg, _user, _target)
+        baseDmg *= 1.5 if @battle.sandy?
+        return baseDmg
+    end
+end
