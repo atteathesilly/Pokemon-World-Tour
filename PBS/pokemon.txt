@@ -261,7 +261,7 @@ Kind = Butterfly
 Pokedex = Water-repellent powder on its wings enables it to collect honey, even in the heaviest of rains.
 Generation = 1
 WildItemUncommon = SILVERPOWDER
-Evolutions = PAPELLUMEN,Level,42
+Evolutions = PAPELLUMEN,Item,MAXMUSHROOM
 #-------------------------------
 [PAPELLUMEN]
 Name = Papellumen
@@ -342,7 +342,7 @@ Kind = Poison Bee
 Pokedex = It prefers hit-and-run attacks using its powerful poison stingers, trying to evade blows to its fragile body.
 Generation = 1
 WildItemUncommon = POISONBARB
-Evolutions = WORNET,Level,42
+Evolutions = WORNET,Item,MEGASHARD
 #-------------------------------
 [WORNET]
 Name = Wornet
@@ -611,7 +611,7 @@ Kind = Mouse
 Pokedex = This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.
 Generation = 1
 WildItemUncommon = AGILITYHERB
-Evolutions = RAICHU,Item,THUNDERSTONE,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,DAWNSTONE
+Evolutions = RAICHU,Item,THUNDERSTONE,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,MAXMUSHROOM
 #-------------------------------
 [RAICHU]
 Name = Raichu
@@ -1554,7 +1554,7 @@ Kind = Scratch Cat
 Pokedex = It loves coins, so if you give it one, you can make friends with Meowth easily. But it's fickle, so you can't count on that friendship lasting.
 Generation = 1
 WildItemUncommon = PEARL
-Evolutions = PERSIAN,Level,36,NIBELONG,Item,DAWNSTONE
+Evolutions = PERSIAN,Level,36,NIBELONG,Item,MAXMUSHROOM
 #-------------------------------
 [PERSIAN]
 Name = Persian
@@ -1592,7 +1592,7 @@ StepsToHatch = 5355
 Height = 33.0
 Weight = 108.3
 Kind = Long Cat
-Pokedex = Scientists are divided as to whether its incredible length inspired internet memes, or whether seeing memes caused a Meowth to undergo unprecedented evolution.
+Pokedex = The pattern that has appeared on its giant coin is thought to be the key to unlocking the secrets of the Dynamax phenomenon.
 WildItemUncommon = PEARL
 #-------------------------------
 [AMEOWTH]
@@ -2959,7 +2959,7 @@ Kind = Iron Snake
 Pokedex = It chews its way through boulders with its sturdy jaws. Its eyes can see in the darkness underground.
 Generation = 2
 WildItemUncommon = METALCOAT
-Evolutions = TITANIX,Item,SHINYSTONE
+Evolutions = TITANIX,Item,MEGASHARD
 #-------------------------------
 [TITANIX]
 Name = Titanix
@@ -3056,7 +3056,7 @@ Weight = 60.0
 Kind = Pincer
 Pokedex = Kingler has an enormous, oversized claw, which it waves in the air to communicate with others. However, because the claw is so heavy, it quickly tires.
 Generation = 1
-Evolutions = KLAWSAR,Level,36
+Evolutions = KLAWSAR,Item,MAXMUSHROOM
 #-------------------------------
 [KLAWSAR]
 Name = Klawsar
@@ -3672,7 +3672,7 @@ Weight = 80.0
 Kind = Parent
 Pokedex = Although it's carrying its baby in a pouch on its belly, Kangaskhan is swift on its feet. It intimidates its opponents with quick jabs.
 Generation = 1
-Evolutions = TEAMUJIN,Level,50
+Evolutions = TEAMUJIN,Item,MEGASHARD
 #-------------------------------
 [TEAMUJIN]
 Name = Teamujin
@@ -3877,7 +3877,7 @@ Pokedex = This Pokémon has an organ known as its core. The organ glows in seven
 Generation = 1
 WildItemCommon = STARDUST
 WildItemUncommon = STARPIECE
-Evolutions = STARMANN,Level,45
+Evolutions = STARMANN,Item,MEGASHARD
 #-------------------------------
 [STARMANN]
 Name = Starmann
@@ -4239,7 +4239,7 @@ Weight = 55.0
 Kind = Stag Beetle
 Pokedex = Although it's tough, it can't handle cold well. When night falls, it buries itself in leafage and sleeps.
 Generation = 1
-Evolutions = SCARAPACE,Level,44
+Evolutions = SCARAPACE,Item,MEGASHARD
 #-------------------------------
 [SCARAPACE]
 Name = Scarapace
@@ -4277,7 +4277,7 @@ Weight = 54.0
 Kind = Single Horn
 Pokedex = With its Herculean powers, it can easily throw around an object that is 100 times its own weight.
 Generation = 2
-Evolutions = ATLACROSS,Level,46
+Evolutions = ATLACROSS,Item,MEGASHARD
 #-------------------------------
 [ATLACROSS]
 Name = Atlacross
@@ -4405,7 +4405,7 @@ Weight = 220.0
 Kind = Transport
 Pokedex = Once endangered, they are now overabundant. Their mournful songs have died out as the population rebounds.
 Generation = 1
-Evolutions = SAURENAID,Level,36
+Evolutions = SAURENAID,Item,MAXMUSHROOM
 #-------------------------------
 [SAURENAID]
 Name = Saurenaid
@@ -4464,7 +4464,7 @@ Weight = 6.5
 Kind = Evolution
 Pokedex = Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives.
 Generation = 1
-Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,SHINYSTONE,ESPEON,Item,SUNSTONE,UMBREON,Item,MOONSTONE,GIGANTEON,Level,40
+Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,Item,LEAFSTONE,GLACEON,Item,ICESTONE,SYLVEON,Item,SHINYSTONE,ESPEON,Item,SUNSTONE,UMBREON,Item,MOONSTONE,GIGANTEON,Item,MAXMUSHROOM
 #-------------------------------
 [VAPOREON]
 Name = Vaporeon
@@ -4822,7 +4822,7 @@ Kind = Fossil
 Pokedex = It flew through the open skies over the ancient continent as if they were its own. When it touched ground, its walk was weak and slow.
 Generation = 1
 WildItemUncommon = HARDSTONE
-Evolutions = PTEROFLYTE,Level,40
+Evolutions = PTEROFLYTE,Item,MEGASHARD
 #-------------------------------
 [PTEROFLYTE]
 Name = Pteroflyte
@@ -7019,7 +7019,7 @@ Weight = 35.0
 Kind = Dark
 Pokedex = The flames it breathes when angry contain toxins. If they cause a burn, it will hurt forever.
 Generation = 2
-Evolutions = HOUNDOMINUS,Level,46
+Evolutions = HOUNDOMINUS,Item,MEGASHARD
 #-------------------------------
 [HOUNDOMINUS]
 Name = Houndominus
@@ -8658,7 +8658,7 @@ Kind = Darkness
 Pokedex = It dwells in the darkness of caves. It uses its sharp claws to dig up gems to nourish itself.
 Generation = 3
 WildItemUncommon = WIDELENS
-Evolutions = RUBARIOR,Item,SHINYSTONE
+Evolutions = RUBARIOR,Item,MEGASHARD
 #-------------------------------
 [RUBARIOR]
 Name = Rubarior
@@ -8700,7 +8700,7 @@ Kind = Deceiver
 Pokedex = Attached to its head is a huge set of jaws formed by horns. It can chew through iron beams.
 Generation = 3
 WildItemUncommon = IRONBALL
-Evolutions = DECEAT,Level,42
+Evolutions = DECEAT,Item,MEGASHARD
 #-------------------------------
 [DECEAT]
 Name = Deceat
@@ -8876,7 +8876,7 @@ Weight = 40.2
 Kind = Discharge
 Pokedex = It discharges electricity from its mane. It creates a thundercloud overhead to drop lightning bolts.
 Generation = 3
-Evolutions = MANERGETIC,Level,46
+Evolutions = MANERGETIC,Item,MEGASHARD
 #-------------------------------
 [MANERGETIC]
 Name = Manergetic
@@ -9118,7 +9118,7 @@ Weight = 88.8
 Kind = Brutal
 Pokedex = It can swim at speeds of 75 mph by jetting seawater through its body. It is the bandit of the sea.
 Generation = 3
-Evolutions = SCARODON,Level,42
+Evolutions = SCARODON,Item,MEGASHARD
 #-------------------------------
 [SCARODON]
 Name = Scarodon
@@ -9216,7 +9216,7 @@ Weight = 220.0
 Kind = Eruption
 Pokedex = If angered, the humps on its back erupt in a shower of molten lava. It lives in the craters of volcanoes.
 Generation = 3
-Evolutions = DROMERUPT,Level,36
+Evolutions = DROMERUPT,Item,MEGASHARD
 #-------------------------------
 [DROMERUPT]
 Name = Dromerupt
@@ -9457,7 +9457,7 @@ Weight = 20.6
 Kind = Humming
 Pokedex = Altarias often glide through the clouds while singing or humming. While normally kind, Altaria will attack foes without mercy if provoked.
 Generation = 3
-Evolutions = HYMNUS,Level,50
+Evolutions = HYMNUS,Item,MEGASHARD
 #-------------------------------
 [HYMNUS]
 Name = Hymnus
@@ -9932,7 +9932,7 @@ Kind = Marionette
 Pokedex = Strong feelings of hatred turned a puppet into a Pokémon. If it opens its mouth, its cursed energy escapes.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = MANIKLAW,Level,44
+Evolutions = MANIKLAW,Item,MEGASHARD
 #-------------------------------
 [MANIKLAW]
 Name = Maniklaw
@@ -10095,7 +10095,7 @@ Weight = 47.0
 Kind = Disaster
 Pokedex = Swift as the wind, Absol races through fields and mountains. Its curved, bow-like horn is acutely sensitive to the warning signs of natural disasters.
 Generation = 3
-Evolutions = ABSOLUS,Level,45
+Evolutions = ABSOLUS,Item,MEGASHARD
 #-------------------------------
 [ABSOLUS]
 Name = Absolus
@@ -10156,7 +10156,7 @@ Weight = 256.5
 Kind = Face
 Pokedex = It can instantly freeze moisture in the atmosphere. It uses this power to freeze its foes.
 Generation = 3
-Evolutions = GRIMICE,Level,44
+Evolutions = GRIMICE,Item,MEGASHARD
 #-------------------------------
 [GRIMICE]
 Name = Grimice
@@ -11615,7 +11615,7 @@ Weight = 33.3
 Kind = Rabbit
 Pokedex = The ears appear to be delicate. If they are touched roughly, it kicks with its graceful legs.
 Generation = 4
-Evolutions = HAEROBIC,Level,45
+Evolutions = HAEROBIC,Item,MEGASHARD
 #-------------------------------
 [HAEROBIC]
 Name = Haerobic
@@ -11904,7 +11904,7 @@ Weight = 54.0
 Kind = Aura
 Pokedex = By reading the auras of all things, it can tell how others are feeling from over half a mile away.
 Generation = 4
-Evolutions = RIOJIN,Level,47
+Evolutions = RIOJIN,Item,MEGASHARD
 #-------------------------------
 [RIOJIN]
 Name = Riojin
@@ -12162,7 +12162,7 @@ Kind = Frost Tree
 Pokedex = It lives a quiet life on mountains that are perpetually covered in snow. It hides itself by whipping up blizzards.
 Generation = 4
 WildItemUncommon = NEVERMELTICE
-Evolutions = CONIFEAR,Level,45
+Evolutions = CONIFEAR,Item,MEGASHARD
 #-------------------------------
 [CONIFEAR]
 Name = Conifear
@@ -13333,7 +13333,7 @@ Pokedex = Audino's sense of hearing is superb. Not even a pebble rolling along o
 Generation = 5
 WildItemCommon = CADOBERRY
 WildItemUncommon = SITRUSBERRY
-Evolutions = SENSIBELLE,Level,42
+Evolutions = SENSIBELLE,Item,MEGASHARD
 #-------------------------------
 [SENSIBELLE]
 Name = Sensibelle
@@ -14293,7 +14293,7 @@ Weight = 107.3
 Kind = Trash Heap
 Pokedex = Consuming garbage makes new kinds of poison gases and liquids inside their bodies.
 Generation = 5
-Evolutions = DONSTER,Level,40
+Evolutions = DONSTER,Item,MAXMUSHROOM
 #-------------------------------
 [DONSTER]
 Name = Donster
@@ -17016,7 +17016,7 @@ Weight = 47.0
 Kind = Overturning
 Pokedex = It lures its prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids.
 Generation = 6
-Evolutions = MALAMIND,Level,46
+Evolutions = MALAMIND,Item,MEGASHARD
 #-------------------------------
 [MALAMIND]
 Name = Malamind
@@ -17374,7 +17374,7 @@ Kind = Jewel
 Pokedex = Carbink are near extinction in the modern day in some regions, with Sableye hunting them ruthlessly, so some places have deemed them mythical.
 Generation = 6
 Flags = Legendary
-Evolutions = DIANCIE,Level,37
+Evolutions = DIANCIE,Item,DIAMONDTIARA
 #-------------------------------
 [DIANCIE]
 Name = Diancie
@@ -20245,7 +20245,7 @@ Weight = 115.5
 Kind = Bite
 Pokedex = This Pokémon rapidly extends its retractable neck to sink its sharp fangs into distant enemies and take them down.
 Generation = 8
-Evolutions = SEISMAW,Level,42
+Evolutions = SEISMAW,Item,MAXMUSHROOM
 #-------------------------------
 [SEISMAW]
 Name = Seismaw
@@ -20470,7 +20470,7 @@ Kind = Sand Snake
 Pokedex = Its unique style of coiling allows it to blast sand out of its sand sac more efficiently.
 Generation = 8
 WildItemUncommon = SOFTSAND
-Evolutions = SAHARICANE,Level,45
+Evolutions = SAHARICANE,Item,MAXMUSHROOM
 #-------------------------------
 [SAHARICANE]
 Name = Saharicane
@@ -20591,7 +20591,7 @@ Weight = 40.0
 Kind = Punk
 Pokedex = This short-tempered and aggressive Pokémon chugs stagnant water to absorb any toxins it might contain.
 Generation = 8
-Evolutions = ARCLAMOR,Level,43
+Evolutions = ARCLAMOR,Item,MAXMUSHROOM
 #-------------------------------
 [ARCLAMOR]
 Name = Arclamor
@@ -20650,7 +20650,7 @@ Weight = 120.0
 Kind = Radiator
 Pokedex = While its burning body is already dangerous on its own, this excessively hostile Pokémon also has large and very sharp fangs.
 Generation = 8
-Evolutions = MILLIBLAZE,Level,41
+Evolutions = MILLIBLAZE,Item,MAXMUSHROOM
 #-------------------------------
 [MILLIBLAZE]
 Name = Milliblaze
@@ -21321,7 +21321,7 @@ Weight = 40.0
 Kind = Alloy
 Pokedex = The special metal that composes its body is very light, so this Pokémon has considerable agility. It lives in caves because it dislikes the rain.
 Generation = 8
-Evolutions = TOWERPODA,Level,34
+Evolutions = TOWERPODA,Item,MAXMUSHROOM
 #-------------------------------
 [TOWERPODA]
 Name = Towerpoda

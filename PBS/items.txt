@@ -124,6 +124,24 @@ FieldUse = OnPokemon
 Flags = EvolutionItem,Clothing
 Description = A glimmering tiara made of diamonds. It makes a certain Pokémon evolve.
 #-------------------------------
+[MAXMUSHROOM]
+Name = Max Mushroom
+NamePlural = Max Mushrooms
+Pocket = 1
+Price = 4000
+FieldUse = OnPokemon
+Flags = EvolutionItem
+Description = A mushroom emanating Dynamax energy, used to evolved certain Pokémon into their Gigantamax forms.
+#-------------------------------
+[MEGASHARD]
+Name = Mega Shard
+NamePlural = Mega Shard
+Pocket = 1
+Price = 4000
+FieldUse = OnPokemon
+Flags = EvolutionItem
+Description = A crystal emanating Mega energy, used to evolved certain Pokémon into their Mega forms.
+#-------------------------------
 [KNIGHTHELMET]
 Name = Knight Helmet
 NamePlural = Knight Helmets
