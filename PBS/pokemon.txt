@@ -10272,6 +10272,7 @@ Height = 0.8
 Weight = 40.0
 Kind = Nomad
 Pokedex = This Pokemon rolls across the desert dunes to move. Its thick, sandy brown hide protects it in the desert.
+Flags = Hidden
 Evolutions = CRSEALEO,Level,28
 #-------------------------------
 [CRSEALEO]
@@ -10290,6 +10291,7 @@ Height = 1.4
 Weight = 150.0
 Kind = Desert Guardian
 Pokedex = This Pokemons mane is made of rugged, golden sand that toughens from constant exposure to the sun.
+Flags = Hidden
 Evolutions = CRWALREIN,Level,44
 #-------------------------------
 [CRWALREIN]
@@ -10309,6 +10311,7 @@ Height = 2.1
 Weight = 300.0
 Kind = Desert King
 Pokedex = This Pokemon carries the spirit of the desert. Its body is armored with dense hide, and its tusks can shatter rocks.
+Flags = Hidden
 #-------------------------------
 [CLAMPERL]
 Name = Clamperl
