@@ -594,6 +594,12 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = BLACKBELT
 #-------------------------------
+[FIREFIGHTER]
+Name = Firefighter
+Gender = Male
+BaseMoney = 32
+IntroBGM = BLACKBELT
+#-------------------------------
 [FISHERMAN]
 Name = Fisherman
 Gender = Male
@@ -1846,7 +1852,13 @@ IntroBGM = POKEFAN
 #-------------------------------
 [TOURISTF]
 Name = Tourist
-Gender = Male
+Gender = Female
+BaseMoney = 16
+IntroBGM = BUSINESSMAN
+#-------------------------------
+[TOURISTF2]
+Name = Tourist
+Gender = Female
 BaseMoney = 16
 IntroBGM = BUSINESSMAN
 #-------------------------------

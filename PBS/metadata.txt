@@ -496,6 +496,13 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[070]
+# Steam Cave
+Outdoor = false
+ShowArea = false
+Bicycle = false
+Weather = Fog,100
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

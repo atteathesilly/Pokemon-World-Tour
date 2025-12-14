@@ -759,17 +759,35 @@ Pokemon = VIBRAVA,25
     Moves = DRONING,DRAGONBREATH,BITE,BULLDOZE
     AbilityIndex = 1 # Siren Song
 #-------------------------------
-[BEAUTY2,Enisa]
-Pokemon = MUNCHLAX,26
-    Moves = REST,SNORE,TAKEDOWN,BITE
-    AbilityIndex = 0 # Gluttony
-    Item = CUSTAPBERRY
-Pokemon = HAUNTER,25
-    Moves = SPECTRALTONGUE,CLEARSMOG,ICYWIND,HEX
-    AbilityIndex = 1 # Break Through
-Pokemon = PRIMEAPE,25
-    Moves = FIREFANG,ARMTHRUST,SHADOWPUNCH,BULKUP
-    AbilityIndex = 1 # Dominating
+[TOURISTF2,Miranda]
+Pokemon = EXCADRILL,31
+    Moves = DRILLRUN,METALCLAW,FURYSWIPES,STINGINGJEALOUSY
+    AbilityIndex = 1 # Juggernaut
+    Item = SITRUSBERRY
+Pokemon = ARROKUDA,31
+    Moves = LIQUIDATION,FURYPECKS,NIGHTSLASH,DRILLRUN
+    AbilityIndex = 1 # Straight Ahead
+Pokemon = BISHARP,32
+    Moves = NIGHTSLASH,SLAY,BULLETPUNCH,DUALCHOP
+    AbilityIndex = 0 # Defiant
+    Item = CHOPLEBERRY
+#-------------------------------
+[FIREFIGHTER,Manny]
+Pokemon = CENTISKORCH,34
+    Moves = FLAREUP,COIL,STINGINGJAB,CRUNCH
+    AbilityIndex = 0 # Firefighter
+    Item = SITRUSBERRY
+Pokemon = MAGIKARP,33
+    Form = 14 # Gray Patches Form
+    Moves = SPLASHANDDASH,BOUNCE,AQUAJET
+    AbilityIndex = 0 # Multiscale
+    Item = MYSTICWATER
+Pokemon = SBRELOOM,33
+    Moves = EGGHEADBUTT,GRANITEHEAD,HEADBUTT,DROPKICK
+    AbilityIndex = 1 # Tough
+Pokemon = GABITE,33
+    Moves = DIG,REND,CRUNCH,GLARE
+    AbilityIndex = 0 # Rough Skin
 #-------------------------------
 [CLERK_F,Lily]
 Pokemon = PIKACHU,23
