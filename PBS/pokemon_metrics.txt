@@ -1050,6 +1050,12 @@ FrontSprite = 2,20
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
+[CHIYU]
+BackSprite = -1,24
+FrontSprite = -2,25
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [CINCCINO]
 BackSprite = 0,20
 FrontSprite = 2,21
