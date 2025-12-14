@@ -26,6 +26,7 @@ REN = _INTL("Ren")
 NAGAO = _INTL("Nagao")
 TANYA = _INTL("Tanya")
 MINA = _INTL("Mina")
+HAPU = _INTL("Hapu")
 
 # Treasure Guardians
 REGI = _INTL("Regigigas")

@@ -898,7 +898,7 @@ def herbVendor
 	]
 	pbPokemonMart(
 		herbStock,
-		_INTL("Name's Herbert. Care for any herbs?"),
+		_INTL("Welcome to Herberalicous, would you like some herbs?"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
