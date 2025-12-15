@@ -502,6 +502,17 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 Weather = Fog,100
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
+[071]
+# Chamber of the Beads
+Outdoor = false
+ShowArea = false
+Bicycle = false
+Weather = Fog,100
+BattleBack = cave1
+Environment = Cave
 #-------------------------------
 [147]
 # PokEstate
