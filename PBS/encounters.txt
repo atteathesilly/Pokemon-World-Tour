@@ -20,11 +20,13 @@ Land,20
     20,DRIFLOON,9,11
     20,ESPURR,9,11
     20,RHYHORN,9,11
+    20,WOOLOO,9,11
 FloweryGrass,21
+    20,AIPOM,9,11
     20,AUDINO,9,11
     20,MEOWTH,9,11
     20,PANCHAM,9,11
-    20,SMOOCHUM,9,11
+    20,SCATTERBUG,9,11
 Special
     1,TIMBURR,15
 #-------------------------------
@@ -44,10 +46,10 @@ LandTall,20
 #-------------------------------
 [013] # Trop Town
 Land,20
-    20,AIPOM,9,11
     20,ELEKID,9,11
     20,MAGBY,9,11
     20,SCRAGGY,9,11
+    20,SMOOCHUM,9,11
     20,SPRITZEE,9,11
 Puddle,20
     20,BINACLE,9,11
@@ -67,6 +69,7 @@ Land,20
     20,WURMPLE,9,11
     20,YUNGOOS,9,11
 FloweryGrass,21
+    20,LOTAD,9,11
     20,PANPOUR,9,11
     20,PANSAGE,9,11
     20,PANSEAR,9,11

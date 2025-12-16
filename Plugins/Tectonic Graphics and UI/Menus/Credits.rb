@@ -286,6 +286,8 @@ Riptidecord
 Jake
 REI-03
 Zinnia
+Feutor
+cave.sala
 
 Terminian Yamask Sprites
 KajiAtsui
