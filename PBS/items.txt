@@ -2913,6 +2913,15 @@ Consumable = true
 Flags = KeyItem,SkipPocketMessage
 Description = A slip of paper with one digit of the code for the lock to Rafael's gym door.
 #-------------------------------
+[ENERGYDRINK]
+Name = Energy Drink
+NamePlural = Energy Drinks
+Pocket = 7
+Price = 0
+Consumable = true
+Flags = KeyItem
+Description = A drink that provides energy to men who throw people. Tastes like shit.
+#-------------------------------
 [SIGILLEFTHALF]
 Name = Sigil Left Half
 NamePlural = Sigils Left Half

@@ -1,11 +1,11 @@
 DOCK_LOCATIONS = {
     :TROP_TOWN => {
-        :map_name => "Gerenia Region",
+        :map_name => "Gerenia",
         :map_id => 13,
         :event_id => 27,
     },
     :CARNIE_REGION => {
-        :map_name => "Carnie Region",
+        :map_name => "Carnie",
         :map_id => 19,
         :event_id => 2,
     },
@@ -27,10 +27,10 @@ DOCK_LOCATIONS = {
         :event_id => 3,
         :unlock_switch => 303,
     },
-    :EVENTIDE_ISLE => {
-        :map_name =>  "Eventide Isle",
-        :map_id => 413,
-        :event_id => 13,
+    :SINNOH_REGION => {
+        :map_name =>  "Sinnoh",
+        :map_id => 72,
+        :event_id => 1,
         :unlock_switch => 304,
     },
     :DRAGON_ISLAND => {

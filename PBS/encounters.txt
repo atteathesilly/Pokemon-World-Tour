@@ -375,3 +375,11 @@ Puddle,20
     20,INKAY,30,31
     20,REMORAID,30,31
     20,WISHIWASHI,30,31
+#-------------------------------
+[072] # Sunyshore City
+Land,20
+    20,BUDEW,30,31
+    20,KRICKETOT,30,31
+    20,PIPLUP,30,31
+    20,SINISTCHA,30,31
+    20,STARLY,30,31

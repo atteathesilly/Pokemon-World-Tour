@@ -514,6 +514,16 @@ Weather = Fog,100
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[072]
+# Sunyshore City
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = sand
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
