@@ -1098,6 +1098,12 @@ FrontSprite = 1,19
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CLEFABLE,1]
+BackSprite = 0,26
+FrontSprite = 1,10
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [CLEFAIRY]
 BackSprite = 0,28
 FrontSprite = -1,25
@@ -1929,6 +1935,12 @@ ShadowSize = 3
 [FALINKS]
 BackSprite = 0,27
 FrontSprite = -1,31
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[FALZORD]
+BackSprite = 0,11
+FrontSprite = -3,11
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
@@ -3681,6 +3693,12 @@ ShadowSize = 2
 [MALAMAR]
 BackSprite = 0,3
 FrontSprite = -1,11
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MALAMIND]
+BackSprite = 0,10
+FrontSprite = 0,5
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -6060,6 +6078,12 @@ FrontSprite = 2,22
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[STARMANN]
+BackSprite = 0,18
+FrontSprite = 2,13
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [STARMIE]
 BackSprite = 0,21
 FrontSprite = 0,19
@@ -7145,6 +7169,12 @@ BackSprite = 0,22
 FrontSprite = 0,2
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[YUKIMONO]
+BackSprite = 0,8
+FrontSprite = 0,5
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [YUNGOOS]
 BackSprite = 0,30

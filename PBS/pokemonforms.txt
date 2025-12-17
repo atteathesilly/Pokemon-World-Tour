@@ -829,6 +829,15 @@ Abilities = NOGUARD
 Height = 1.1
 Pokedex = It goads its enemies into attacking, withstands the hits, and in return, delivers a headbutt, crushing their bones with its rocky mane.
 #-------------------------------
+[CLEFABLE,1]
+FormName = Moonlit
+Type1 = FAIRY
+Type2 = FLYING
+BaseStats = 100,120,95,90,120,95
+Abilities = MAGICGUARD
+Height = 1.7
+Pokedex = It flies by using the power of moonlight to control gravity within a radius of over 32 feet around it.
+#-------------------------------
 [LYCANROC,2]
 FormName = Dusk
 Abilities = TOUGHCLAWS

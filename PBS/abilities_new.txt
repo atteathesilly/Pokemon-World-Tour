@@ -1317,6 +1317,11 @@ Name = Moonlighter
 Description = When hit in moonglow, steals the attacker's item, or knocks it away.
 Flags = MoonglowSynergy
 #-------------------------------
+[MOONLITFLIGHT]
+Name = Moonlit Flight
+Description = Transforms into Moonlit Form at the Full Moon. Ability becomes Magic Guard.
+Flags = MoonglowSynergy
+#-------------------------------
 [MOTHBURGLAR]
 Name = Moth Burglar
 Description = Hits opponent with Thief when withdrawn from battle.
