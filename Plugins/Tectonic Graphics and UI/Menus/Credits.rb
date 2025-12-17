@@ -128,6 +128,9 @@ Magikarp Jump Battlers
 riftclaw
 CodeEden
 
+Gen 6 GUI
+Akizakura16
+
 Mega Malamar Sprites
 sopita_yorita
 
