@@ -524,6 +524,13 @@ Humidity = Wet
 BattleBack = sand
 Environment = TallGrass
 #-------------------------------
+[074]
+# Sunyshore Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 72,31,63
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

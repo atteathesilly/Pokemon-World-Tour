@@ -414,6 +414,29 @@ Pokemon = POLTCHAGEIST,20
     AbilityIndex = 1 # Leeching Matcha
     Item = MIRACLESEED
 #-------------------------------
+[TRAINERCARMINE,Carmine,1]
+Pokemon = MORPEKO,35
+    Gender = female
+    Moves = THUNDERFANG,CRUNCH,ICEFANG,INFERNOIMPACT
+    AbilityIndex = 0 # Hunger Switch
+Pokemon = TOUCANNON,35
+    Gender = female
+    Moves = BEAKBLAST,SEEDBOMB,DRILLPECK,FLAMECHARGE
+    AbilityIndex = 0 # Nesting
+Pokemon = GSLOWPOKE,35
+    Gender = female
+    Moves = SLACKOFF,VENOSHOCK,ZENHEADBUTT
+    AbilityIndex = 0 # Gluttony
+    Item = SITRUSBERRY
+Pokemon = MIGHTYENA,35
+    Gender = female
+    Moves = PLANTDOUBT,CRUNCH,YAWN,FROLIC
+    AbilityIndex = 0 # Intimidate
+Pokemon = SINISTCHA,35
+    Moves = MATCHAGOTCHA,HEX,BACKHAND,WILLOWISP
+    AbilityIndex = 1 # Leeching Matcha
+    Item = SEVENLEAGUEBOOTS
+#-------------------------------
 [JOGGER,Hugh]
 Pokemon = VULPIX,20
     Moves = FIRESPIN,ILLWISHES,FOOL,DISABLE
