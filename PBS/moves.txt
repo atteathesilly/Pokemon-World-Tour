@@ -1106,6 +1106,18 @@ FunctionCode = LowerTargetAtkDef2
 Flags = CanProtect,CanMagicCoat
 Description = The user tickles the target into laughing, reducing its Attack and Defense by two steps.
 #-------------------------------
+[TIDYUP]
+Name = Tidy Up
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = TidyUp
+Flags = CanSnatch
+Description = The user cleans to eliminate trapping and hazards afflicting your side. Also raises the user's Attack and Speed by 1 stage
+Animation = RAPIDSPIN
+#-------------------------------
 [TRANSFORM]
 Name = Transform
 Type = NORMAL
