@@ -709,7 +709,7 @@ def gemVendor
 
 	pbPokemonMart(
 		gemStock,
-		_INTL("Yo, I'm Adam, the gem guy. Gonna buy some gems, or what?"),
+		_INTL("Want some gems?"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -752,6 +752,25 @@ def basicBallVendor
 	pbPokemonMart(
 		basicBallStock,
 		_INTL("Welcome to the Poké Ball Depot! How may I serve you?"),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
+def newBallVendor
+	newBallStock = %i[
+		NETBALL
+		DIVEBALL
+		DUSKBALL
+		FASTBALL
+		LEVELBALL
+		LUREBALL
+		HEAVYBALL
+		LOVEBALL
+		MOONBALL
+	]
+	pbPokemonMart(
+		newBallStock,
+		_INTL("I have some balls straight from Johto! You want some?"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -867,7 +886,7 @@ def weirdBerryVendor
 
 	pbPokemonMart(
 		berryStock,
-		_INTL("Some of these are illegal to import. Don't get me caught."),
+		_INTL("I have some exotic berries from Paldea. Take a gander!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end

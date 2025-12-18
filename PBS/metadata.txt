@@ -531,6 +531,18 @@ ShowArea = false
 Bicycle = false
 HealingSpot = 72,31,63
 #-------------------------------
+[075]
+# Sunyshore  Mart
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[076]
+# Sunyshore Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
