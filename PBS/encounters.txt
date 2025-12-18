@@ -365,6 +365,10 @@ Puddle,20
     3,MAGIKARP_8,20,22
     3,MAGIKARP_9,20,22
 #-------------------------------
+[069] # Hoppy Town Buildings
+Special
+    1,CASTFORM,15
+#-------------------------------
 [070] # Steam Cave
 Land,20
     20,DITTO,30,31

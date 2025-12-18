@@ -101,6 +101,6 @@ MONDAYS,Mondays
 WASABI,Wasabi
 COUNTRYMUSIC,Country Music
 RAPMUSIC,Rap Music
-SNAKES,Snakes
-BEES,Bees
+SNAKES,Ekans
+BEES,Beedrills
 FORMALCLOTHES,Formal Clothes

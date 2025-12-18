@@ -812,6 +812,20 @@ Pokemon = GABITE,33
     Moves = DIG,REND,CRUNCH,GLARE
     AbilityIndex = 0 # Rough Skin
 #-------------------------------
+[ROUGHNECK,Sophia]
+Pokemon = CASTFORM,35
+    Name = The Beast
+    Gender = male
+    Moves = INVITEECLIPSE,WEATHERBURST,MOONBLAST,HEATWAVE
+    AbilityIndex = 0 # Forecast
+    Item = SITRUSBERRY
+Pokemon = CASTFORM,40
+    Name = The Beast 2
+    Gender = male
+    Moves = INVITEMOONGLOW,WEATHERBURST,BUBBLEBLASTER,DIAMONDFORCE
+    AbilityIndex = 0 # Forecast
+    Item = SITRUSBERRY
+#-------------------------------
 [CLERK_F,Lily]
 Pokemon = PIKACHU,23
     Moves = ELECTROBALL,AGILITY,NUZZLE,DRAININGKISS
