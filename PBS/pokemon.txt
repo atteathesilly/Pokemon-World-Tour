@@ -21657,6 +21657,7 @@ Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 74,75,70,111,65,75
 # Total = 470
+GenderRate = Genderless
 BaseEXP = 172
 Rareness = 95
 Abilities = FRIENDGUARD,FAMILYPOWER
@@ -21678,6 +21679,7 @@ Type2 = FAIRY
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 94,85,70,121,65,85
 # Total = 520
+GenderRate = Genderless
 BaseEXP = 172
 Rareness = 95
 Abilities = FRIENDGUARD,FAMILYPOWER
@@ -21688,6 +21690,7 @@ Height = 0.3
 Weight = 2.8
 Kind = Family
 Pokedex = The two little ones just appeared one day. The group might be a family of related Pokémon, but nobody knows for sure.
+FormName = Family of Four
 Generation = 9
 #-------------------------------
 [MASCHIFF]

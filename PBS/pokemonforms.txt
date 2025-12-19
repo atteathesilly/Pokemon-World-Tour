@@ -1359,3 +1359,8 @@ FormName = Rainbow Flower
 #-------------------------------
 [ALCREMIE,62]
 FormName = Rainbow Ribbon
+#-------------------------------
+[MAUSHOLD,1]
+FormName = Family of Three
+Weight = 2.3
+Pokedex = The little one just appeared one day. They all live together like a family, but the relationship between the three is still unclear.
