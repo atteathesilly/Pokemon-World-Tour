@@ -543,6 +543,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[077]
+# Route 222
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = sand
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

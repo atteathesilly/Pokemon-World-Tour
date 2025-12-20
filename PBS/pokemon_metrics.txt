@@ -3816,6 +3816,18 @@ FrontSprite = -2,6
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[MAUSHOLD]
+BackSprite = 0,24
+FrontSprite = 0,29
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[MAUSHOLD,1]
+BackSprite = 0,23
+FrontSprite = 0,28
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [MAWILE]
 BackSprite = 0,25
 FrontSprite = -2,21
@@ -6239,6 +6251,12 @@ BackSprite = 0,3
 FrontSprite = 0,4
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[TANDEMAUS]
+BackSprite = 0,25
+FrontSprite = 0,29
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [TANGELA]
 BackSprite = 0,27
