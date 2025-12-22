@@ -1102,6 +1102,11 @@ Name = Office Worker
 Gender = Male
 BaseMoney = 40
 #-------------------------------
+[OLDBEAUTY]
+Name = Beauty
+Gender = Unknown
+BaseMoney = 16
+#-------------------------------
 [PARASOLLADY]
 Name = Parasol Lady
 Gender = Female

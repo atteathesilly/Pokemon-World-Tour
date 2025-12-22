@@ -826,40 +826,42 @@ Pokemon = CASTFORM,40
     AbilityIndex = 0 # Forecast
     Item = SITRUSBERRY
 #-------------------------------
-[CLERK_F,Lily]
-Pokemon = PIKACHU,23
-    Moves = ELECTROBALL,AGILITY,NUZZLE,DRAININGKISS
-    AbilityIndex = 0 # Extreme Voltage
-Pokemon = SEALEO,24
-    Moves = AURORABEAM,WATERPULSE,YAWN,SYMBIOSIS
-    AbilityIndex = 0 # Full Blubber
-Pokemon = MFRILLISH,23
-    Gender = female
-    Moves = NASTYNIP,SPARK,ASTONISH
-    AbilityIndex = 0 # Disconnection
+[SAILOR,Luther]
+Pokemon = GASTRODON,31
+    Moves = SILTSURGE,EARTHPOWER,DISSOLUTION,LIFEDEW
+    AbilityIndex = 1 # Water Absorb
+Pokemon = VESPIQUEN,31
+    Moves = DEFENDORDER,HEALORDER,AGONIZE,CROSSPOISON
+    AbilityIndex = 0 # Royal Majesty
+Pokemon = HQWILFISH,31
+    Moves = KEELHAUL,CROSSPOISON,EXPLOSION
+    AbilityIndex = 0 # Poison Point
     Item = SITRUSBERRY
 #-------------------------------
-[PSYCHIC_F2,Ludmila]
-Pokemon = MIMEJR,26
-    Moves = ENCORE,MAGEHAND,PIXIEPUNCH,ICEPUNCH
-    AbilityIndex = 0 # Barrier Maker
-Pokemon = GOLBAT,25
-    Moves = SUPERSONIC,TOXICTASTE,SUCKBLOOD,AERIALACE
-    AbilityIndex = 0 # Inner Focus
-Pokemon = RATTATA,27
-    AbilityIndex = 1 # Gnawing
+[PUNKM,Conner]
+Pokemon = OCTILLERY,31
+    Moves = BUBBLEBARRAGE,TARVOLLEY,SHADOWBALL
+    AbilityIndex = 1 # Double Check
+Pokemon = ABOMASNOW,31
+    Moves = SEEDBOMB,ICEBEAM,BACKHAND,ROOTSHELTER
+    AbilityIndex = 1 # Frustrate
+    Item = SITRUSBERRY
+Pokemon = HIPPOPOTAS,31
+    Moves = SCORCHINGSANDS,HEATWAVE,IGNITE,SLACKOFF
+    AbilityIndex = 1 # Glass Firing
     Item = SITRUSBERRY
 #-------------------------------
-[YOUNGSTER3,Sorin]
-Pokemon = FROGADIER,26
-    Moves = TEASE,BUBBLEBEAM,ROUND,ICYWIND
-    AbilityIndex = 0 # Mutable
-Pokemon = BRAIXEN,26
-    Moves = FIRESPIN,PSYBEAM,EERIEIMPULSE,WILLOWISP
-    AbilityIndex = 1 # Fascinate
-Pokemon = QUILLADIN,26
-    Moves = BULKUP,FORCEPALM,RAZORLEAF,LEECHSEED
-    AbilityIndex = 1 # Aggravate
+[CEO,Nicola]
+TrainerTypeLabel = OLDBEAUTY
+Pokemon = HAEROBIC,32
+    Moves = SCYTHEKICK,DIZZYPUNCH,PUMMEL,DIG
+    AbilityIndex = 0 # Unafraid
+Pokemon = RAMPARDOS,32
+    Moves = CRANIALGUARD,ACCELEROCK,HEADBUTT,HOWL
+    AbilityIndex = 1 # Sturdy
+Pokemon = FEEBAS,35
+    Moves = DREAD,RECOVER,HYDROCANNON
+    AbilityIndex = 1 # Competitive
     Item = SITRUSBERRY
 #-------------------------------
 [BLACKBELT3,Philip]
