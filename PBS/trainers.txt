@@ -864,17 +864,17 @@ Pokemon = FEEBAS,35
     AbilityIndex = 1 # Competitive
     Item = SITRUSBERRY
 #-------------------------------
-[BLACKBELT3,Philip]
-Pokemon = MIENFOO,25
-    Moves = VACUUMWAVE,CONCUSS,SQUALLDART,PARTINGSHOT
-    AbilityIndex = 0 # Nerve Number
-Pokemon = WHIRLIPEDE,25
-    Moves = STUNNINGCURL,POISONTAIL,STEAMROLLER,BLUNTFORCE
-    AbilityIndex = 0 # Speed Boost
-Pokemon = SNORUNT,25
-    Moves = ICICLESPEAR,SHIVER,AURORABEAM,BITE
-    AbilityIndex = 0 # Sealing Body
-    Item = LOADEDDICE
+[LADY4,Holly]
+Pokemon = MOTHIM,32
+    Moves = HEADBUTT,LEECHLIFE,STEELWING,FLING
+    AbilityIndex = 1 # Moth Burglar
+Pokemon = DUSCLOPS,31
+    Moves = SHADOWPUNCH,WILLOWISP,CURSEDOATH,PROTECT
+    AbilityIndex = 0 # Aggravate
+Pokemon = WORMADAM,31
+    Moves = GIGADRAIN,STEELWING,DUSTDEVIL,SIGNALBEAM
+    AbilityIndex = 1 # Cloaking
+    Item = OCCABERRY
 #-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
