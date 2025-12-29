@@ -876,6 +876,43 @@ Pokemon = WORMADAM,31
     AbilityIndex = 1 # Cloaking
     Item = OCCABERRY
 #-------------------------------
+[DELINQUENT,Trinity]
+Pokemon = NOCTOWL,32
+    Moves = COLDFRONT,EXPLOIT,ROOST,CALMMIND
+    AbilityIndex = 1 # Fascinate
+    Item = WISEGLASSES
+Pokemon = PURUGLY,32
+    Moves = DISSIPATION,SHOUT,YAWN,DREAMDANCE
+    AbilityIndex = 1 # Competitive
+Pokemon = DUBWOOL,33
+    Moves = BUTTINGHEADS,REVERSAL,REST
+    AbilityIndex = 1 # Cold Reception
+#-------------------------------
+[COOLTRAINER_M4,Sandy]
+TrainerTypeLabel = DELINQUENT
+Pokemon = MNOCTOWL,32
+    Moves = COLDFRONT,FRIGIDFLURRY,HAIL,SHEDCOAT
+    AbilityIndex = 1 # Winter Insulation
+    Item = ICYROCK
+Pokemon = MMANTINE,32
+    Moves = ICECALIBUR,STINGINGJEALOUSY,CHILL,BULLETTRAIN
+    AbilityIndex = 0 # Slush Rush
+Pokemon = MCARNIVINE,33
+    Moves = KNOCKOFF,FLY,CRUNCH,THUNDERFANG
+    AbilityIndex = 0 # Archvillain
+#-------------------------------
+[RICHBOY2,Trey]
+Pokemon = LUXIO,32
+    Moves = CRUNCH,HOWL,THUNDERFANG,FIREFANG
+    AbilityIndex = 1 # Intimidate
+    Item = MUSCLEBAND
+Pokemon = GRAPIDASH,32
+    Moves = PSYCHOSCISSION,MISADVENTURE,RETREAT,WISH
+    AbilityIndex = 0 # Joyous Sorrow
+Pokemon = SCIZOR,33
+    Moves = BULLETPUNCH,RAKE,SHARPEN,FLY
+    AbilityIndex = 0 # Technician
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
