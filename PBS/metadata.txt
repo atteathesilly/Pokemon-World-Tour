@@ -553,6 +553,12 @@ Humidity = Wet
 BattleBack = sand
 Environment = TallGrass
 #-------------------------------
+[078]
+# Route 222 Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

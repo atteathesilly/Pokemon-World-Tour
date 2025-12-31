@@ -913,6 +913,17 @@ Pokemon = SCIZOR,33
     Moves = BULLETPUNCH,RAKE,SHARPEN,FLY
     AbilityIndex = 0 # Technician
 #-------------------------------
+[TRAINERSINA,Sina]
+Pokemon = YUKIMONO,33
+    Moves = HAIL,SNOWYSORROWS,HEX,FROSTBREATH
+    AbilityIndex = 1 # Summit Spirit
+Pokemon = SAURENAID,33
+    Moves = HYPERVOICE,DRAGONPULSE,BRINE,LIFEDEW
+    AbilityIndex = 0 # Arctic Ariette
+Pokemon = GLACEON,33
+    Moves = HALTINGCOLD,RECOVER,ICEBEAM,MUDSLIDE
+    AbilityIndex = 0 # Snow Shroud
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB

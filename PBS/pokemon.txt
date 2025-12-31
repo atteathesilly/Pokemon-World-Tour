@@ -10134,7 +10134,7 @@ Weight = 16.8
 Kind = Snow Hat
 Pokedex = In Sinnoh, certain folklore says a house will prosper if a Snorunt lives there.
 Generation = 3
-Evolutions = GLALIE,Level,26,FROSLASS,Item,DAWNSTONE
+Evolutions = GLALIE,Ability0,26,FROSLASS,Ability1,26
 #-------------------------------
 [GLALIE]
 Name = Glalie
