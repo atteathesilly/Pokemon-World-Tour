@@ -2096,19 +2096,6 @@ EffectChance = 100
 Description = The user drops a single piece of solid bedrock on the target, fracturing them.
 Animation = CONTINENTALCRUSH
 #-------------------------------
-[OMNISHELTER]
-Name = Omnishelter
-Type = ROCK
-Category = Status
-Accuracy = 0
-TotalPP = 5
-Target = User
-Priority = 3
-FunctionCode = ProtectUserSideFromMultiTargetMovesRedirectAllMovesToUser
-Flags = CanSnatch
-Description = The user and its allies are protected from wide-ranging attacks this turn, and enemies can only target the user. Fails if used in succession.
-Animation = WIDEGUARD
-#-------------------------------
 [PETRIFY]
 Name = Petrify
 Type = ROCK
@@ -4818,6 +4805,19 @@ FunctionCode = LeechTargetIfSlowerNumbTargetIfFaster
 Flags = CanProtect,CanMagicCoat
 Description = The target eats a strange seed. They become numbed if faster than the user, or leeched if slower.
 Animation = LEECHSEED
+#-------------------------------
+[OMNISHELTER]
+Name = Omnishelter
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 3
+FunctionCode = ProtectUserSideFromMultiTargetMovesRedirectAllMovesToUser
+Flags = CanSnatch
+Description = The user's side is protected from wide-ranging attacks this turn, enemies can only target the user. Fails if used in succession.
+Animation = WIDEGUARD
 #-------------------------------
 [PETALTEMPEST]
 Name = Petal Tempest

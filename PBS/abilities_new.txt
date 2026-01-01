@@ -159,7 +159,7 @@ Description = Your Poké Balls are 50% more effective.
 #-------------------------------
 [BANDITLASSO]
 Name = Bandit Lasso
-Description = Prevents foes whose Atk is less than its from fleeing.
+Description = Prevents foes whose Attack is less than its from fleeing.
 #-------------------------------
 [BARRIERMAKER]
 Name = Barrier Maker

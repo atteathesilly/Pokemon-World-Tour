@@ -212,3 +212,60 @@ Pokedex = Never touch its shadowlike body, or you'll be shown the horrific memor
 Generation = 8
 WildItemUncommon = HARDSTONE
 #-------------------------------
+[CRSPHEAL]
+Name = Cr. Spheal
+Type1 = GROUND
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,80,70,40,40,30
+# Total = 330
+BaseEXP = 58
+Rareness = 210
+Abilities = ARIDRECOVERY,QUICKSANDTRAP
+Moves = 1,GROWL,1,TACKLE,4,SMASH,8,TREADON,12,ROCKTHROW,16,BIDE,20,DIG,24,SLACKOFF,28,STORMTHROW,32,ACCELEROCK,36,ROCKALANCHE,40,REST,44,EARTHQUAKE,48,CLOSECOMBAT,52,TAUNT,56,SWORDSDANCE,60,UNDERMINE,64,STONEEDGE
+LineMoves = ADAMANTINEPRESS,ANCIENTPOWER,BRICKBREAK,BULLETCHARGE,BULLETTRAIN,DETACHMENT,DIG,DUSTDEVIL,EARTHPOWER,EARTHQUAKE,FOCUSBLAST,IRONDEFENSE,IRONHEAD,IRONTAIL,POWERUPPUNCH,ROCKOUT,ROCKTOMB,RUMBLE,SANDTOSS,SCORCHINGSANDS,SHOTPUT,SMASH,STEALTHROCK,STOMPINGTANTRUM,STONEEDGE,TRAMPLE,TREMOR,UNDERMINE
+Tribes = TYRANNICAL,NOBLE
+StepsToHatch = 5355
+Height = 0.8
+Weight = 40.0
+Kind = Nomad
+Pokedex = This Pokemon rolls across the desert dunes to move. Its thick, sandy brown hide protects it in the desert.
+Flags = Hidden
+Evolutions = CRSEALEO,Level,28
+#-------------------------------
+[CRSEALEO]
+Name = Cr. Sealeo
+Type1 = GROUND
+Type2 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 95,100,90,50,50,35
+# Total = 420
+BaseEXP = 144
+Rareness = 120
+Abilities = ARIDRECOVERY,QUICKSANDTRAP
+Tribes = TYRANNICAL,NOBLE
+StepsToHatch = 5355
+Height = 1.4
+Weight = 150.0
+Kind = Desert Guardian
+Pokedex = This Pokemons mane is made of rugged, golden sand that toughens from constant exposure to the sun.
+Flags = Hidden
+Evolutions = CRWALREIN,Level,44
+#-------------------------------
+[CRWALREIN]
+Name = Cr. Walrein
+Type1 = GROUND
+Type2 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 135,120,110,75,60,45
+# Total = 545
+BaseEXP = 239
+Rareness = 45
+Abilities = ARIDRECOVERY,QUICKSANDTRAP
+Moves = 0,DUNEHAMMER
+Tribes = TYRANNICAL,NOBLE
+StepsToHatch = 5355
+Height = 2.1
+Weight = 300.0
+Kind = Desert King
+Pokedex = This Pokemon carries the spirit of the desert. Its body is armored with dense hide, and its tusks can shatter rocks.
+Flags = Hidden

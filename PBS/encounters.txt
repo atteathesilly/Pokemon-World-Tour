@@ -177,7 +177,7 @@ Special
 [034] # Kefka Highway
 LandSparse,20
     20,ABRA,16,18
-    20,CRSPHEAL,16,18
+    20,BRONZOR,16,18
     20,MACHOP,16,18
     20,RUFFLET,16,18
     20,SKORUPI,16,18

@@ -2781,7 +2781,7 @@ TrainerTypeLabel = DEVELOPER
 Pokemon = PURUGLY,70
     AbilityIndex = 1 # Competitive
 Pokemon = METAGROSS,70
-    AbilityIndex = 0 # Brute Force
+    AbilityIndex = 0 # Indestructible
 Pokemon = WEAVILE,70
     AbilityIndex = 0 # Inner Focus
 Pokemon = WHIMSICOTT,70
@@ -4913,7 +4913,7 @@ Policies = EQ_PROTECT
 Flags = NoPerfect
 Pokemon = REGISTEEL,60
     Moves = CLOSECOMBAT,DISCHARGE,EVERHONE,STEALTHROCK
-    AbilityIndex = 1 # Indestructible
+    AbilityIndex = 1 # Superalloy
 Pokemon = CHATOT,60
     Name = Dove Abyss
     Gender = male
@@ -9005,7 +9005,7 @@ Pokemon = LEAFEON,70
     Item = ROCKYHELMET
 Pokemon = METAGROSS,70
     Moves = PIERCINGDOUBT,METEORMASH,DETACHMENT,MUDSLIDE
-    AbilityIndex = 0 # Brute Force
+    AbilityIndex = 0 # Indestructible
 #-------------------------------
 [EXPERTM,Hiroshi]
 Pokemon = ELECTIVIRE,70
