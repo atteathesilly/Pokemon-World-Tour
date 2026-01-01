@@ -34,7 +34,7 @@ Bicycle = false
 HealingSpot = 15,14,9
 #-------------------------------
 [004]
-# Starter Town buildings
+# Granite Town Buildings
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -106,7 +106,7 @@ Bicycle = false
 HealingSpot = 13,28,22
 #-------------------------------
 [015]
-# Starter town
+# Granite Town
 Outdoor = true
 ShowArea = true
 Bicycle = true
@@ -555,6 +555,12 @@ Environment = TallGrass
 #-------------------------------
 [078]
 # Route 222 Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[079]
+# Trainer School
 Outdoor = false
 ShowArea = false
 Bicycle = false
