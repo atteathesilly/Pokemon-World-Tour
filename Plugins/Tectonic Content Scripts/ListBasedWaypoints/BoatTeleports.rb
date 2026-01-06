@@ -79,6 +79,9 @@ def unlockAllBoatingSpots
     pbMessage(_INTL("All boating spots were unlocked."))
 end
 
+BOAT_PREVIOUS_PAGE_DIALOG = _INTL("Previous page...")
+BOAT_NEXT_PAGE_DIALOG = _INTL("Next page...")
+
 def boatTravel(currentDock = nil)
     validDockIDs = []
     validDockInfos = []
@@ -99,9 +102,6 @@ def boatTravel(currentDock = nil)
     pageChoice = 0
     pageNumber = (validDockIDs.length.to_f/BOAT_LOCATIONS_PAGE_SIZE.to_f).ceil
 
-    echoln("DOCKS : " + validDockIDs.to_s)
-    echoln("DOCK PAGES NUMBER : " + pageNumber.to_s)
-
     chosenDockID = nil
 
     loop do
@@ -110,20 +110,20 @@ def boatTravel(currentDock = nil)
             break if pageIndex * BOAT_LOCATIONS_PAGE_SIZE + i > validDockIDs.length - 1
             commands.push(validDockInfos[pageIndex * BOAT_LOCATIONS_PAGE_SIZE + i][:map_name])
         end
-        commands.push(_INTL("Previous Page")) if pageIndex > 0
-        commands.push(_INTL("Next Page")) if pageIndex < pageNumber - 1
+        commands.push(BOAT_PREVIOUS_PAGE_DIALOG) if pageIndex > 0
+        commands.push(BOAT_NEXT_PAGE_DIALOG) if pageIndex < pageNumber - 1
         commands.push(_INTL("Cancel"))
 
         choiceNumber = pbMessage(_INTL("Where would you like to go?"),commands,commands.length)
 
         return if choiceNumber == commands.length - 1 # Cancel
 
-        if commands[choiceNumber] == _INTL("Next Page")
+        if commands[choiceNumber] == _INTL(BOAT_NEXT_PAGE_DIALOG)
             pageIndex += 1
             next
         end
 
-        if commands[choiceNumber] == _INTL("Previous Page")
+        if commands[choiceNumber] == _INTL(BOAT_PREVIOUS_PAGE_DIALOG)
             pageIndex -= 1
             next
         end
