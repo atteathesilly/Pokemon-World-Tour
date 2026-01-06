@@ -565,6 +565,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[080]
+# Valor Lakefront
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
