@@ -410,3 +410,17 @@ Puddle,20
     20,HQWILFISH,30,31
     20,PIPLUP,30,31
     20,SHELLOS,30,31
+#-------------------------------
+[080] # Valor Lakefront
+Land,20
+    20,BONSLY,30,31
+    20,COMBEE,30,31
+    20,HSNEASEL,30,31
+    20,HVOLTORB,30,31
+    20,PACHIRISU,30,31
+Puddle,20
+    20,BUIZEL,30,31
+    20,CLAMPERL,30,31
+    20,CORPHISH,30,31
+    20,OSHAWOTT,30,31
+    20,WIMPOD,30,31
