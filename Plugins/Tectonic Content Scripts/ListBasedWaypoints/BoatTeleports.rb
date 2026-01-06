@@ -59,6 +59,8 @@ DOCK_LOCATIONS = {
     },
 }
 
+BOAT_LOCATIONS_PAGE_SIZE = 4
+
 def unlockBoatingSpot(dockID,ignoreAlreadyActive=false)
     dockInfo = DOCK_LOCATIONS[dockID]
     raise _INTL("Dock ID {1} has no unlock_switch defined. Cannot unlock!",dockID) if dockInfo[:unlock_switch].nil?
@@ -78,28 +80,59 @@ def unlockAllBoatingSpots
 end
 
 def boatTravel(currentDock = nil)
-    commands = []
     validDockIDs = []
+    validDockInfos = []
 
     DOCK_LOCATIONS.each do |dockID, dockInfo|
         next if dockID == currentDock
         next if dockInfo[:unlock_switch] && !getGlobalSwitch(dockInfo[:unlock_switch])
-        commands.push(_INTL(dockInfo[:map_name]))
         validDockIDs.push(dockID)
+        validDockInfos.push(dockInfo)
     end
 
-    if commands.empty?
+    if validDockIDs.empty?
         pbMessage(_INTL("There are no other places you can travel to."))
         return
     end
 
-    commands.push(_INTL("Cancel"))
+    pageIndex = 0
+    pageChoice = 0
+    pageNumber = (validDockIDs.length.to_f/BOAT_LOCATIONS_PAGE_SIZE.to_f).ceil
 
-    choiceNumber = pbMessage(_INTL("Where would you like to go?"),commands,commands.length)
+    echoln("DOCKS : " + validDockIDs.to_s)
+    echoln("DOCK PAGES NUMBER : " + pageNumber.to_s)
 
-    return if choiceNumber == commands.length - 1 # Cancel
+    chosenDockID = nil
 
-    chosenDockID = validDockIDs[choiceNumber]
+    loop do
+        commands = []
+        (0...BOAT_LOCATIONS_PAGE_SIZE).each do |i|
+            break if pageIndex * BOAT_LOCATIONS_PAGE_SIZE + i > validDockIDs.length - 1
+            commands.push(validDockInfos[pageIndex * BOAT_LOCATIONS_PAGE_SIZE + i][:map_name])
+        end
+        commands.push(_INTL("Previous Page")) if pageIndex > 0
+        commands.push(_INTL("Next Page")) if pageIndex < pageNumber - 1
+        commands.push(_INTL("Cancel"))
+
+        choiceNumber = pbMessage(_INTL("Where would you like to go?"),commands,commands.length)
+
+        return if choiceNumber == commands.length - 1 # Cancel
+
+        if commands[choiceNumber] == _INTL("Next Page")
+            pageIndex += 1
+            next
+        end
+
+        if commands[choiceNumber] == _INTL("Previous Page")
+            pageIndex -= 1
+            next
+        end
+
+        chosenDockID = validDockIDs[pageIndex * BOAT_LOCATIONS_PAGE_SIZE + choiceNumber]
+        break
+    end
+
+    raise _INTL("The chosen dock ID is null.") if chosenDockID.nil?
 
     warpToBoatWaypoint(chosenDockID)
 end
