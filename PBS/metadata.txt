@@ -27,7 +27,7 @@ Bicycle = false
 HealingSpot = 15,14,9
 #-------------------------------
 [003]
-# Your House Downstairs
+# Your House
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -574,6 +574,12 @@ Temperature = Hot
 Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
+#-------------------------------
+[081]
+# Hotel Grand Lake
+Outdoor = false
+ShowArea = false
+Bicycle = false
 #-------------------------------
 [147]
 # PokEstate
