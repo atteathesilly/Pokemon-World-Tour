@@ -424,3 +424,7 @@ Puddle,20
     20,CORPHISH,30,31
     20,OSHAWOTT,30,31
     20,WIMPOD,30,31
+#-------------------------------
+[081] # Hotel Grand Lake
+Special
+    1,MMANTYKE,15
