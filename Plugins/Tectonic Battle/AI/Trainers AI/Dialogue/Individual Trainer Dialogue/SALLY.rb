@@ -16,3 +16,12 @@ PokeBattle_AI::TrainerSendsOutPokemonDialogue.add(:SALLY2,
       next dialogue_array
   }
 )
+PokeBattle_AI::TrainerSendsOutPokemonDialogue.add(:SALLY3,
+  proc { |_policy, battler, trainer_speaking, dialogue_array|
+      if battler.battle.pbAbleCount(battler.index) == battler.battle.sideSizes[1] && !trainer_speaking.policyStates[:LastPokemonComment]
+          dialogue_array.push(_INTL("I won't lose in front of Riddle!"))
+          trainer_speaking.policyStates[:LastPokemonComment] = true
+      end
+      next dialogue_array
+  }
+)
