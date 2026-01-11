@@ -128,3 +128,13 @@ BattleHandlers::EORWeatherAbility.add(:SUNBURNING,
         end
   }
 )
+
+BattleHandlers::EORWeatherAbility.add(:BIGCHILL,
+  proc { |ability, _weather, battler, battle|
+        next unless battle.icy?
+        battler.eachOther do |b|
+            next unless b.takesHailDamage?
+            b.pbLowerMultipleStatSteps(DEFENDING_STATS_1, battler, ability: ability)
+        end
+  }
+)

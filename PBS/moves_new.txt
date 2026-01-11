@@ -2176,6 +2176,19 @@ Flags = CanProtect
 Description = If this move misses, the target is forced to switch out. Always goes last.
 Animation = SMACKDOWN
 #-------------------------------
+[SCOURGEOFTHEMOUNTAIN]
+Name = Scourge of the Mountain
+Type = ROCK
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstRock
+Flags = CanProtect
+Description = The user hits the opponent with freezing rock. Super effective versus Rock-types.
+Animation = ROCKSLIDE
+#-------------------------------
 [SHATTERSHOT]
 Name = Shatter Shot
 Type = ROCK

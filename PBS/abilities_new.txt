@@ -191,6 +191,11 @@ Name = Big Boss
 Description = Boosts Defense by 25%. The Pokémon cannot be flinched.
 Flags = FlinchImmunity
 #-------------------------------
+[BIGCHILL]
+Name = Big Chill
+Description = At the end of each turn in hail, each Pokémon not immune to hail has their Defense and Sp. Def lowered.
+Flags = HailSynergy
+#-------------------------------
 [BITTER]
 Name = Bitter
 Description = Its attacks are critical against frostbitten targets.
