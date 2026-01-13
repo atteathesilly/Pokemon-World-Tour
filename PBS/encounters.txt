@@ -428,3 +428,11 @@ Puddle,20
 [081] # Hotel Grand Lake
 Special
     1,MMANTYKE,15
+#-------------------------------
+[082] # Lake Valor
+Land,20
+    20,CHERUBI,30,31
+    20,DUSKULL,30,31
+    20,GLAMEOW,30,31
+    20,HGROWLITHE,30,31
+    20,NYAMASK,30,31
