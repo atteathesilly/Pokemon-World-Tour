@@ -470,6 +470,10 @@ Description = On the first turn, its attacks numb the target.
 Name = Disorienting
 Description = Physical attacks against the Pokémon have a 30% chance to dizzy the attacker.
 #-------------------------------
+[DISTORTEDWORSHIP]
+Name = Distorted Worship
+Description = Powers up Ghost-type moves by 50%.
+#-------------------------------
 [DOMINATING]
 Name = Dominating
 Description = After knocking out any Pokémon, raises its Attack and Defense.

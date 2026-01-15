@@ -78,6 +78,12 @@ FrontSprite = 0,10
 ShadowX = 2
 ShadowSize = 3
 #-------------------------------
+[AGOATALYTE]
+BackSprite = 0,20
+FrontSprite = -1,25
+ShadowX = 1
+ShadowSize = 3
+#-------------------------------
 [AGOLEM]
 BackSprite = 0,16
 FrontSprite = 0,17
@@ -515,6 +521,12 @@ BackSprite = 0,22
 FrontSprite = 0,18
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[BAPHOKING]
+BackSprite = 0,16
+FrontSprite = -8,12
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [BARBARACLE]
 BackSprite = 0,7
@@ -1365,6 +1377,12 @@ ShadowSize = 1
 [CUFANT]
 BackSprite = 0,22
 FrontSprite = -11,26
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[CULTOPHET]
+BackSprite = 0,24
+FrontSprite = 0,21
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
