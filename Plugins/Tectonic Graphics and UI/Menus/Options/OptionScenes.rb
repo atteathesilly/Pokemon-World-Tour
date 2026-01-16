@@ -456,16 +456,6 @@ class PokemonOption_Scene_Overworld < PokemonOption_Scene_Base
 					$Options.autosave = value
 				}
 			),
-			EnumOption.new(
-                _INTL("Pokémon Follow"),
-                _INTL("Whether your first Pokémon follows behind you."),
-                [_INTL("On"), _INTL("Off")],
-				proc { $Options.followers },
-				proc { |value|
-					$Options.followers = value
-					pbToggleFollowingPokemon($Options.followers == 0 ? "on" : "off", false) if $scene.is_a?(Scene_Map)
-				}
-			),
             EnumOption.new(
                 _INTL("World Weather"),
                 _INTL("Whether overworld areas experience random weathers."),
