@@ -211,23 +211,9 @@ end
 # user transforms into Giratina (distorted ritual)
 #===============================================================================
 class PokeBattle_Move_TransformUserGiratina < PokeBattle_Move
-    def pbFailsAgainstTarget?(_user, target, show_message)
-        if target.illusion?
-            if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} is disguised by an Illusion!", target.pbThis(true)))
-            end
-            return true
-        end
-        if target.boss?
-            if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} is an avatar!", target.pbThis(true)))
-            end
-            return true
-        end
-        unless target.species_data
-            if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} doesn't have a defined species somehow!", target.pbThis(true)))
-            end
+    def pbMoveFailed?(user, _targets, show_message)
+        if user.transformed?
+            @battle.pbDisplay(_INTL("But it failed, since the user is already transformed!")) if show_message
             return true
         end
         return false
@@ -237,14 +223,8 @@ class PokeBattle_Move_TransformUserGiratina < PokeBattle_Move
         user.transformSpecies(:GIRATINA)
     end
 
-    def getEffectScore(user, target)
-        score = 95
-        score += 45 if target.aboveHalfHealth?
-        if user.battle.pbCanSwitch?(target.index)
-            score -= 30
-            score += getForceOutEffectScore(user, target)
-        end
-        return score
+    def getEffectScore(_user, _target)
+        return 80
     end
 end
 
