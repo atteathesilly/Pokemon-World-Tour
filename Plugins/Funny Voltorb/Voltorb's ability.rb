@@ -33,3 +33,75 @@ BattleHandlers::EOREffectAbility.add(:QUICKSANDTRAP,
   }
 
 )
+#===============================================================================
+# Spicy Extract
+#===============================================================================
+# Increases the target's Attack by 2 stages.
+# Decreases the target's Defense by 4 stages.
+#-------------------------------------------------------------------------------
+class PokeBattle_Move_RaiseTargetAtk2LowerTargetDef4 < PokeBattle_Move
+    attr_reader :statUp, :statDown
+    def canMagicCoat?; return true; end
+  
+    def initialize(battle, move)
+      super
+      @statUp   = [:ATTACK, 2]
+      @statDown = [:DEFENDING_STATS_4]
+    end
+  
+    def pbFailsAgainstTarget?(user, target, show_message)
+      return false if damagingMove?
+      failed = !target.pbCanRaiseStatStage?(@statUp[0], user, self) && 
+               !target.pbCanLowerStatStage?(@statDown[0], user, self)
+      if failed
+        @battle.pbDisplay(_INTL("{1}'s stats can't be changed further!", target.pbThis)) if show_message
+        return true
+      end
+      return false
+    end
+  
+    def pbEffectAgainstTarget(user, target)
+      return if damagingMove?
+      if target.pbCanRaiseStatStage?(@statUp[0], user, self)
+        target.pbRaiseStatStage(@statUp[0], @statUp[1], user)
+      end
+      if target.pbCanLowerStatStage?(@statDown[0], user, self)
+        target.pbLowerStatStage(@statDown[0], @statDown[1], user)
+      end
+    end
+  end
+#===============================================================================
+# 100% Accuracy in Sunshine, and always causes a burn
+# (Pepper Headbutt)
+#===============================================================================
+class PokeBattle_Move_SunshineAccurateCauseBurn < PokeBattle_BurnMove
+    def pbAdditionalEffect(user, target)
+        return unless @battle.sunny?
+        super
+    end
+
+    def getTargetAffectingEffectScore(user, target)
+        return 0 unless @battle.sunny?
+        super
+    end
+
+    def pbBaseAccuracy(user, target)
+        return 0 if @battle.sunny?
+        return super
+    end
+
+    def shouldHighlight?(_user, _target)
+        return @battle.sunny?
+    end 
+end    
+#===============================================================================
+# Custom Ability #22 - Draconic Heat: Is also dragon-type but loses 1-8th HP every turn
+#===============================================================================
+BattleHandlers::TypeCalcAbility.add(:DRACONICHEAT,
+    proc { |ability, battler, types|
+        types.push(:DRAGON)
+        next types
+    }
+)
+
+BattleHandlers::EOREffectAbility.copy(:EXTREMEPOWER,:DRACONICHEAT)

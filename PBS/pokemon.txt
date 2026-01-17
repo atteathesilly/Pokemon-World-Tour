@@ -21776,6 +21776,68 @@ Kind = Boss
 Pokedex = Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family.
 Generation = 9
 #-------------------------------
+[CAPSAKID]
+Name = Capsakid
+Type1 = GRASS
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 55,68,41,59,68,40
+# Total = 331
+BaseEXP = 221
+Rareness = 45
+Happiness = 50
+Abilities = LEAFGUARD,CHLOROPHYLL
+Moves = 1,LEAFAGE,1,LEER,4,BITE,8,GROWTH,12,RAZORLEAF,16,SUNSHINE,20,FLAMECHARGE,24,AGILITY,28,HEADBUTT,32,ZENHEADBUTT,36,CRUNCH,40,BULLETSEED,44,DRAGONDANCE,48,SOLARBEAM,52,FLAREBLITZ,56,PEPPERHEADBUTT
+LineMoves = AROMATHERAPY,AUTUMNBLAST,BLOSSOM,CALAMITOUSSLASH,DRAGONTAIL,EMBER,FIREPULSE,FLAMETHROWER,FOLLOWME,HOTSHOT,KINDLE,LEAFAGE,OUTRAGE,OVERHEAT,SEEDBOMB,SHRED,SWORDSDANCE,SYNTHESIS,TEETERDANCE,UPROAR,WOODHAMMER
+Tribes = SCOURGE
+StepsToHatch = 1
+Height = 0.3
+Weight = 3.0
+Kind = Spicy Pepper
+Pokedex = The more sunlight this Pokemon bathes in, the more spicy chemicals are produced by its body, and thus the spicier its moves become.
+Generation = 9
+Evolutions = SCOVILLAIN,Level,31
+#-------------------------------
+[SCOVILLAIN]
+Name = Scovillain
+Type1 = GRASS
+Type2 = FIRE
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 65,108,65,75,76,70
+# Total = 459
+BaseEXP = 221
+Rareness = 45
+Happiness = 50
+Abilities = LEAFGUARD,CHLOROPHYLL
+Moves = 0,SPICYEXTRACT,1,SPICYEXTRACT
+Tribes = SCOURGE
+StepsToHatch = 1
+Height = 0.9
+Weight = 15.0
+Kind = Spicy Pepper
+Pokedex = The red head converts spicy chemicals into fire energy and blasts the surrounding area with a super spicy stream of flame.
+Generation = 9
+Evolutions = HABANEVIL,Level,50
+#-------------------------------
+[HABANEVIL]
+Name = Habanevil
+Type1 = GRASS
+Type2 = FIRE
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 95,115,95,100,70,75
+# Total = 550
+BaseEXP = 221
+Rareness = 45
+Happiness = 50
+Abilities = LEAFGUARD,DRACONICHEAT
+Tribes = SCOURGE,TYRANNICAL,STAMPEDE
+StepsToHatch = 1
+Height = 1.2
+Weight = 30.0
+Kind = Spicy Dragon
+Pokedex = Habanevil's heads are said to represent different levels of heat: mild, hot, and extreme. When they work together, they can melt everything.
+Generation = 9
+Flags = Hidden
+#-------------------------------
 [FLITTLE]
 Name = Flittle
 Type1 = PSYCHIC

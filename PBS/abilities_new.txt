@@ -490,6 +490,10 @@ Description = Transforms into a random party member on entry.
 Name = Double Check
 Description = Deals 50% more damage to targets who have already taken damage this turn.
 #-------------------------------
+[DRACONICHEAT]
+Name = Draconic Heat
+Description = The Pokemon is also Dragon-type, but it loses 1/8th HP every turn.
+#-------------------------------
 [DRAGONSBLOOD]
 Name = Dragon's Blood
 Description = Reduces the damage of each hit against it by an amount equal to its level.

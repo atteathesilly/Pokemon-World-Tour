@@ -6677,6 +6677,19 @@ Flags = CanProtect
 Description = Attacks all near others with dragon energy. Power increases by 50% in eclipse.
 Animation = DRAGONPULSE
 #-------------------------------
+[PEPPERHEADBUTT]
+Name = Pepper Headbutt
+Type = DRAGON
+Category = Physical
+Power = 120
+Accuracy = 80
+TotalPP = 10
+Target = NearOther
+FunctionCode = SunshineAccurateCauseBurn
+Flags = CanProtect
+Description = A devastating charge infused with fiery pepper essence. In sunshine it is 100% accurate and always causes a burn.
+Animation = FLAREBLITZ
+#-------------------------------
 [REND]
 Name = Rend
 Type = DRAGON

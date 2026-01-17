@@ -4681,6 +4681,18 @@ FunctionCode = IncreasedPriorityInSunshine
 Flags = CanProtect
 Description = Attacks by gliding on the ground. This move always goes first in sunshine.
 #-------------------------------
+[SPICYEXTRACT]
+Name = Spicy Extract
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseTargetAtk2LowerTargetDef4
+Flags = CanProtect
+Description = Emits a spicy extract which raises the target’s Attack 2 steps and lowers Defense by 4 steps each.
+Animation = HOWL
+#-------------------------------
 [SPIKYSHIELD]
 Name = Spiky Shield
 Type = GRASS
