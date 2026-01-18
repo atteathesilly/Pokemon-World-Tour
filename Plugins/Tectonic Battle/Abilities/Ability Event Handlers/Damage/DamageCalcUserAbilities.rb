@@ -399,7 +399,7 @@ BattleHandlers::DamageCalcUserAbility.add(:PALEOLITHIC,
 
 BattleHandlers::DamageCalcUserAbility.add(:DISTORTEDWORSHIP,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
-    if type == :ROCK
+    if type == :GHOST
       mults[:attack_multiplier] *= 1.5
       user.aiLearnsAbility(ability) unless aiCheck
     end
