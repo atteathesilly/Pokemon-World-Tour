@@ -535,9 +535,7 @@ class PokeBattle_Battler
         "TwoTurnAttackInvulnerableHiding",
         "TwoTurnAttackInvulnerableInFoliage",
         "TwoTurnAttackInvulnerableRemoveProtections",
-        "TwoTurnAttackInvulnerableInSkyRecoilQuarterOfDamageDealt",
-        "TwoTurnAttackInvulnerableScalesFaster",
-        "TwoTurnAttackInvulnerableJinxFrostbite",)
+        "TwoTurnAttackInvulnerableInSkyRecoilQuarterOfDamageDealt",)
     end
 
     def pbEncoredMoveIndex
@@ -911,7 +909,8 @@ class PokeBattle_Battler
     end
 
     def ignoreScreens?(checkingForAI)
-        return true if shouldAbilityApply?(GameData::Ability.getByFlag("IgnoreScreens"),checkingForAI)
+        return true if shouldAbilityApply?(:INFILTRATOR,checkingForAI)
+        return true if shouldAbilityApply?(:RAMPROW,checkingForAI)
         return false
     end
 
