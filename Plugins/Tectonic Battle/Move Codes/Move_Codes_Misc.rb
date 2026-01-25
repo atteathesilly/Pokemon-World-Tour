@@ -208,7 +208,7 @@ class PokeBattle_Move_TransformTargetPreEvolution < PokeBattle_Move
 end
 
 #===============================================================================
-# user transforms into Giratina (distorted ritual)
+# User transforms into Giratina (Distorted Ritual)
 #===============================================================================
 class PokeBattle_Move_TransformUserGiratina < PokeBattle_Move
     def pbMoveFailed?(user, _targets, show_message)

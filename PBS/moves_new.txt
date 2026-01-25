@@ -2813,7 +2813,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = TransformUserGiratina
-Flags = CanProtect
+Flags = CanSnatch
 Description = The user does a distorted ritual, transforming them into what they worship.
 Animation = TRANSFORM
 #-------------------------------
