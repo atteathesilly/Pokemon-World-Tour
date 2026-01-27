@@ -291,6 +291,7 @@ REI-03
 Zinnia
 Feutor
 cave.sala
+Lucario574
 
 Terminian Yamask Sprites
 KajiAtsui
