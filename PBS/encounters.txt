@@ -436,3 +436,11 @@ Land,20
     20,GLAMEOW,30,31
     20,HGROWLITHE,30,31
     20,NYAMASK,30,31
+#-------------------------------
+[083] # Route 214
+Land,20
+    20,CAPSAKID,30,31
+    20,CHATOT,30,31
+    20,GRUBBIN,30,31
+    20,MURKROW,30,31
+    20,SKIDDO,30,31

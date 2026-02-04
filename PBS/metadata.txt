@@ -591,6 +591,16 @@ Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[083]
+# Route 214
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
