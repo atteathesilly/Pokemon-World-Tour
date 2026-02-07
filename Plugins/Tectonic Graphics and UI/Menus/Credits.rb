@@ -141,6 +141,15 @@ Various Regionals
 Raffs07
 Riptidecord
 
+Dark Starter
+CodeEden
+
+Psychic and Fighting Starters
+manycrows
+
+H. Sceptile Line
+PDM20(resprite)
+
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
 Neo-Spriteman<s>Vanilla Sunshine
