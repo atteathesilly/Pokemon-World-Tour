@@ -1626,13 +1626,13 @@ Gender = Female
 BaseMoney = 80
 #-------------------------------
 [SIGHTSEER_F]
-Name = Swimmer
+Name = Sightseer
 Gender = Female
 BaseMoney = 16
 IntroBGM = CYCLING
 #-------------------------------
 [SIGHTSEER_M]
-Name = Swimmer
+Name = Sightseer
 Gender = Male
 BaseMoney = 16
 IntroBGM = CYCLING
