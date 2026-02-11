@@ -3557,6 +3557,20 @@ Flags = CanSnatch
 Description = The user heals itself for half of their max HP, and extends the current weather by one turn.
 Animation = RECOVER
 #-------------------------------
+[TIMEGEARGRIND]
+Name = Time Gear Grind
+Type = STEEL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserIsDevolved
+Flags = CanProtect
+EffectChance = 100
+Description = The user attacks with the power of the time gear. This devolves the user. Fails if the user has no prevolutions.
+Animation = GEARGRIND
+#-------------------------------
 [VANGUARD]
 Name = Vanguard
 Type = STEEL

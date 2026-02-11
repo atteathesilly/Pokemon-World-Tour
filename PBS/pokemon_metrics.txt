@@ -2658,6 +2658,12 @@ FrontSprite = -4,14
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[GROVYLE2]
+BackSprite = 0,22
+FrontSprite = 6,10
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [GROWLITHE]
 BackSprite = 0,25
 FrontSprite = 0,19
@@ -5544,6 +5550,12 @@ FrontSprite = 0,11
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SCEPTILE2]
+BackSprite = 0,9
+FrontSprite = 9,6
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [SCIZOR]
 BackSprite = 0,11
 FrontSprite = 0,15
@@ -6567,6 +6579,12 @@ ShadowSize = 2
 [TREECKO]
 BackSprite = 0,25
 FrontSprite = 0,19
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[TREECKO2]
+BackSprite = 0,4
+FrontSprite = 0,3
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

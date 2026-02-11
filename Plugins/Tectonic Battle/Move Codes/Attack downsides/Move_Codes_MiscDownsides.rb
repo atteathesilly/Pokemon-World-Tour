@@ -58,6 +58,22 @@ class PokeBattle_Move_UserIsPoisoned < PokeBattle_Move
 end
 
 #===============================================================================
+# Devolves the user (time gear)
+#===============================================================================
+class PokeBattle_Move_UserIsDevolved < PokeBattle_Move
+    def pbFailsAgainstTarget?(_user, target, show_message)
+        unless GameData::Species.get(user.technicalSpecies).has_previous_species?
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since {1} has no previous species to transform into!", target.pbThis(true)))
+            end
+        end
+    def pbEffectAfterAllHits(user, target)
+        user.transformSpecies(GameData::Species.get(user.technicalSpecies).get_previous_species)
+        end
+    end
+end
+
+#===============================================================================
 # Move disables self. (Six Feet Under)
 #===============================================================================
 class PokeBattle_Move_MoveDisablesSelf < PokeBattle_Move
