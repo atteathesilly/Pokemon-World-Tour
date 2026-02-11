@@ -61,14 +61,17 @@ end
 # Devolves the user (time gear)
 #===============================================================================
 class PokeBattle_Move_UserIsDevolved < PokeBattle_Move
-    def pbFailsAgainstTarget?(_user, target, show_message)
-        unless GameData::Species.get(user.technicalSpecies).has_previous_species?
-            if show_message
-                @battle.pbDisplay(_INTL("But it failed, since {1} has no previous species to transform into!", target.pbThis(true)))
-            end
+    def pbFailsAgainstTarget?(user, target, show_message)
+        if !GameData::Species.get(user.technicalSpecies).has_previous_species?
+            @battle.pbDisplay(_INTL("But it failed, since {1} has no previous species to transform into!", user.pbThis(true))) if show_message
+            return true
         end
+        return false
+    end
+
     def pbEffectAfterAllHits(user, target)
-        user.transformSpecies(GameData::Species.get(user.technicalSpecies).get_previous_species)
+        unless pbFailsAgainstTarget?(user, target, false)
+            user.transformSpecies(GameData::Species.get(user.technicalSpecies).get_previous_species)
         end
     end
 end
