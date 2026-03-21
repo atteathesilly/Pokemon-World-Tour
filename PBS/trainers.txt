@@ -310,6 +310,25 @@ Pokemon = BASCULIN,19
     Moves = SHADOWCLAW,SNAP,SHIVER
     AbilityIndex = 0 # Juggernaut
 #-------------------------------
+[MOTORCYCLIST,Charles,1]
+Pokemon = SHELMET,33
+    Moves = DREAMDANCE,SIGNALBEAM,YAWN,TEASE
+    AbilityIndex = 1 # Stainless Steel
+Pokemon = TORRACAT,34
+    Moves = FAKEOUT,KNOCKOFF,BURNINGJEALOUSY
+    AbilityIndex = 0 # Intimidate
+Pokemon = SIGILYPH,33
+    Moves = COSMICPOWER,BOREALWIND,HEATWAVE
+    AbilityIndex = 1 # Bizarre
+Pokemon = ZEBSTRIKA,33
+    Moves = WILDCHARGE,FLAMECHARGE,INERTIASHOCK,NUMB
+    AbilityIndex = 0 # Sap Sipper
+Pokemon = BASCULIN,34
+    Form = 1 # Blue-Striped Form
+    Gender = female
+    Moves = SHADOWCLAW,SNAP,SHIVER,FLIPTURN
+    AbilityIndex = 0 # Juggernaut
+#-------------------------------
 [BLACKBELT2,Jim]
 Pokemon = ELECTABUZZ,22
     AbilityIndex = 1 # Adrenaline Rush
