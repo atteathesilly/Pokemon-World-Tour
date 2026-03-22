@@ -1462,6 +1462,17 @@ Flags = CanMagicCoat
 Description = The user lays poison spikes on the foe's side. One layer hurts switched in foes, two layers poisons.
 Animation = TOXICSPIKES
 #-------------------------------
+[RAPIDCELLGROWTH]
+Name = Rapid Cell Growth
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = StartPerishCountsForAllBattlers
+Description = The Pokémon is hit by a beam that encourages rapid cell growth, causing them to faint in three turns.
+Animation = PSYBEAM
+#-------------------------------
 [REGOOVAL]
 Name = Regooval
 Type = POISON
@@ -2852,6 +2863,19 @@ FunctionCode = LowerTargetSpd4DrowsyIfHail
 Flags = CanProtect,CanMagicCoat
 Description = The user soothes the target, lowering its Speed by 4 steps. If in hail, they also become drowsy.
 Animation = YAWN
+#-------------------------------
+[FORETOLDDEMISE]
+Name = Foretold Demise
+Type = GHOST
+Category = Adaptive
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Flags = Foretold
+Description = Two turns after this move is used, the user sees a disaster hit the target, it does nothing to stop it.
+Animation = BLACKHOLEECLIPSE
 #-------------------------------
 [FROMBEYOND]
 Name = From Beyond
@@ -6104,7 +6128,7 @@ Target = NearOther
 FunctionCode = Numb
 Flags = CanProtect
 EffectChance = 50
-Description = The user freezeS with ice so cold that it has a 50% chance to numb.
+Description = The user freezes with ice so cold that it has a 50% chance to numb.
 Animation = FREEZESHOCK
 #-------------------------------
 [CRYOSLEEP]

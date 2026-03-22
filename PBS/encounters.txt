@@ -55,8 +55,8 @@ Puddle,20
     20,BINACLE,9,11
     20,CARVANHA,9,11
     20,GSLOWPOKE,9,11
+    20,SKRELP,9,11
     20,TOXEL,9,11
-    20,WYNAUT,9,11
 Special
     1,BOUNSWEET,15
 #-------------------------------
@@ -225,10 +225,10 @@ FloweryGrass2,21
 [049] # Three Isle Port
 Land,20
     40,DUNSPARCE,20,21
+    20,DRAMPSON,20,21
     20,EEVEE,20,21
     20,SQUIRTLE,20,21
     20,STARYU,20,21
-    20,TOGEPI,20,21
 Puddle,20
     20,LUVDISC,20,21
     20,MANTYKE,20,21

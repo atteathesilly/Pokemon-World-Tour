@@ -1404,6 +1404,12 @@ FrontSprite = 1,29
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
+[CYANOTHAN]
+BackSprite = 0,10
+FrontSprite = 0,3
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [CYNDAQUIL]
 BackSprite = 0,31
 FrontSprite = 3,21
@@ -1647,6 +1653,12 @@ ShadowSize = 2
 [DRAMPA]
 BackSprite = 0,14
 FrontSprite = 0,18
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[DRAMPSON]
+BackSprite = 0,11
+FrontSprite = 2,9
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
@@ -4158,6 +4170,12 @@ FrontSprite = 0,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[MINOSACLE]
+BackSprite = 0,11
+FrontSprite = -2,4
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [MINUN]
 BackSprite = 0,27
 FrontSprite = -1,22
@@ -4233,6 +4251,12 @@ ShadowSize = 3
 [MONFERNO]
 BackSprite = 0,21
 FrontSprite = 4,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MONOSTIC]
+BackSprite = 0,22
+FrontSprite = 0,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

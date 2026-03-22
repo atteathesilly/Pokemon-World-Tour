@@ -135,12 +135,21 @@ Description = A mushroom emanating Dynamax energy, used to evolved certain Poké
 #-------------------------------
 [MEGASHARD]
 Name = Mega Shard
-NamePlural = Mega Shard
+NamePlural = Mega Shards
 Pocket = 1
 Price = 4000
 FieldUse = OnPokemon
 Flags = EvolutionItem
-Description = A crystal emanating Mega energy, used to evolved certain Pokémon into their Mega forms.
+Description = A crystal emanating Mega energy, used to evolve certain Pokémon into their Mega forms.
+#-------------------------------
+[MEGASHARDZ]
+Name = Mega Shard
+NamePlural = Mega Shards Z
+Pocket = 1
+Price = 4000
+FieldUse = OnPokemon
+Flags = EvolutionItem
+Description = A crystal emanating otherworldly Mega energy, used to evolve certain Pokémon into their alternate Mega forms.
 #-------------------------------
 [KNIGHTHELMET]
 Name = Knight Helmet
