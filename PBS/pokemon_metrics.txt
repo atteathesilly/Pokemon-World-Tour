@@ -18,6 +18,12 @@ FrontSprite = -2,20
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[ABSOLITH]
+BackSprite = 0,23
+FrontSprite = -2,16
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [ABSOLUS]
 BackSprite = 0,17
 FrontSprite = 2,26
@@ -1494,6 +1500,12 @@ FrontSprite = 5,12
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[DENKOCHU]
+BackSprite = 0,17
+FrontSprite = 3,15
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [DEOXYS]
 BackSprite = 0,10
 FrontSprite = 0,7
@@ -2529,6 +2541,12 @@ ShadowSize = 2
 [GOREBYSS]
 BackSprite = 0,20
 FrontSprite = 0,14
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[GOROCHU]
+BackSprite = 0,18
+FrontSprite = 0,17
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

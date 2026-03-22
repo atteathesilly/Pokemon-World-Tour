@@ -26,6 +26,13 @@ BattleHandlers::AttackCalcUserAbility.add(:GORILLATACTICS,
     }
 )
 
+BattleHandlers::AttackCalcUserAbility.add(:UNYIELDINGPOWER,
+  proc { |ability, _user, _battle, spAtkMult|
+      spAtkMult *= 1.5
+      next spAtkMult
+  }
+)
+
 BattleHandlers::AttackCalcUserAbility.add(:TOUGHCLAWS,
   proc { |ability, _user, _battle, attackMult|
       attackMult *= 1.3

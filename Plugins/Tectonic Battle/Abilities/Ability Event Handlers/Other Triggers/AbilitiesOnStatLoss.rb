@@ -12,6 +12,13 @@ BattleHandlers::AbilityOnStatLoss.add(:DEFIANT,
   }
 )
 
+BattleHandlers::AbilityOnStatLoss.add(:XCELLENTBATTLER,
+  proc { |ability, battler, _stat, user|
+      next unless user&.opposes?(battler)
+      battler.tryRaiseStat(:ATTACK, battler, ability: ability, increment: 4)
+  }
+)
+
 BattleHandlers::AbilityOnStatLoss.add(:BELLIGERENT,
   proc { |ability, battler, _stat, user|
       next unless user&.opposes?(battler)

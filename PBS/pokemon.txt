@@ -669,7 +669,7 @@ Kind = Mouse
 Pokedex = This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.
 Generation = 1
 WildItemUncommon = AGILITYHERB
-Evolutions = RAICHU,Item,THUNDERSTONE,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,MAXMUSHROOM
+Evolutions = RAICHU,Item,THUNDERSTONE,ARAICHU,Item,ALOLANWREATH,GIGACHU,Item,MAXMUSHROOM,GOROCHU,Item,MEGASHARD,DENKOCHU,Item,MEGASHARDZ
 #-------------------------------
 [RAICHU]
 Name = Raichu
@@ -728,6 +728,45 @@ Weight = 21.0
 Kind = Mouse
 Pokedex = It can loose 100,000-volt bursts of electricity, instantly downing foes several times its size.
 Generation = 7
+#-------------------------------
+[GOROCHU]
+Name = Gorochu
+Type1 = ELECTRIC
+Type2 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 100,130,70,45,45,100
+# Total = 490
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = XCELLENTBATTLER,EXPERTISE
+Moves = 0,ARMTHRUST,32,POWERUPPUNCH,36,ELECTROSLASH,40,CROSSCHOP,44,REFLECT,48,SUBMISSION,52,VOLTTACKLE,56,DYNAMICPUNCH,60,SUPERPOWER
+StepsToHatch = 2805
+Height = 1.2
+Weight = 38.0
+Kind = Mouse
+Pokedex = An elusive electric rodent long theorized to exis. It was finally discovered in Lumiose City. It uses electromagnetism to levitate.
+Generation = 1
+WildItemUncommon = AGILITYHERB
+#-------------------------------
+[DENKOCHU]
+Name = Denkochu
+Type1 = ELECTRIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 125,60,60,95,120,60
+# Total = 520
+BaseEXP = 218
+Rareness = 60
+Happiness = 50
+Abilities = UNYIELDINGPOWER,VOLTABSORB
+Moves = 0,VOLTSWITCH,1,VOLTSWITCH,40,THUNDER,44,LIGHTNINGDANCE,48,DISCHARGE,52,HELPINGHAND,56,ENCORE,60,DIELECTRICBREAKDOWN
+StepsToHatch = 2805
+Height = 1.0
+Weight = 26.0
+Kind = Mouse
+Pokedex = Scientists were completely thrown for loop with Denkochu. It has strange protrusions of fur that help conduct electricity.
+Generation = 1
+WildItemUncommon = AGILITYHERB
 #-------------------------------
 [COSPLAYPIKACHU]
 Name = C. Pikachu

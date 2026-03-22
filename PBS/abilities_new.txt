@@ -2238,6 +2238,11 @@ Flags = Immutable
 Name = Unnerve
 Description = Makes the foe nervous and unable to eat Berries or Leftovers.
 #-------------------------------
+[UNYIELDINGPOWER]
+Name = Unyielding Power
+Description = Boosts Special Attack by 50% but the user is locked into the first move they use.
+Flags = ChoiceLocking
+#-------------------------------
 [VANDAL]
 Name = Vandal
 Description = Deals 30% more damage to targets that have an item. After attacking a foe, destroys their clothing items.
@@ -2343,3 +2348,8 @@ Description = Uses Dragon Dance if an attack lowers its HP to half or below.
 [WREAKHAVOC]
 Name = Wreak Havoc
 Description = Boosts the power of rampaging moves by 30%, and makes them physical or special based on which would be more effective.
+#-------------------------------
+[XCELLENTBATTLER]
+Name = Xcellent Battler
+Description = Raises Attack by four steps when a stat is lowered by a foe. The user is also immune to Ground-type moves.
+Flags = Levitation
