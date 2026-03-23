@@ -1546,6 +1546,11 @@ Description = Upon entry, creates a Polarized Room for four turns, exaggerating 
 Name = Poor Conduct
 Description = Upon switch out, lowers the foe's Attack and Sp. Atk stat by insulting them.
 #-------------------------------
+[PORTALPAL]
+Name = Portal Pal
+Description = The Pokémon does typed additional damage on attacks and targeted status based on form.
+Flags = Immutable
+#-------------------------------
 [POWERLIFTER]
 Name = Power Lifter
 Description = Its physical attacks go last but force the target to switch out after use.

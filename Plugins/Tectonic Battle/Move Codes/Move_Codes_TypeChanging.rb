@@ -436,6 +436,46 @@ class PokeBattle_Move_TypeAndEffectDependsOnUserRotomForm < PokeBattle_Move
 end
 
 #===============================================================================
+# Type changes depending on rotom's form. (wymholefriend)
+# Additional effect changes depending on rotom's form. Only usable by rotom.
+#===============================================================================
+class PokeBattle_Move_TypeDependsOnUserWyrmholanform < PokeBattle_Move
+    def aiAutoKnows?(pokemon); return true; end
+    def pbMoveFailed?(user, _targets, show_message)
+        unless user.countsAs?(:WYRMHOLAN)
+            @battle.pbDisplay(_INTL("But {1} can't use the move!", user.pbThis(true))) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbBaseType(user)
+        ret = :GHOST
+        case user.form
+        when 0
+            ret = :ELECTRIC if GameData::Type.exists?(:ROCK)
+        when 1
+            ret = :FIRE if GameData::Type.exists?(:DARK)
+        when 2
+            ret = :WATER if GameData::Type.exists?(:WATER)
+        when 3
+            ret = :ICE if GameData::Type.exists?(:ICE)
+        when 4
+            ret = :FLYING if GameData::Type.exists?(:POISON)
+        end
+        return ret
+    end
+    def getDetailsForMoveDex(detailsList = [])
+        detailsList << _INTL("Form Types:")
+        detailsList << _INTL("<u>Nacli</u>: Rock")
+        detailsList << _INTL("<u>Deino</u>: Dark")
+        detailsList << _INTL("<u>Smoochum</u>:Ice")
+        detailsList << _INTL("<u>Slowpoke</u>: Water")
+        detailsList << _INTL("<u>Poipole</u>: Poison")
+    end
+end
+
+#===============================================================================
 # Target becomes your choice of Dragon, Fairy, or Steel type. (Regalia)
 #===============================================================================
 class PokeBattle_Move_SetTargetTypesToChoiceOfDragonFairySteel < PokeBattle_Move

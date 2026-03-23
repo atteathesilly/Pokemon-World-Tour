@@ -1,5 +1,17 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[WYRMHOLAN,1]
+FormName = Deino Pal
+#-------------------------------
+[WYRMHOLAN,2]
+FormName = Slowpoke Pal
+#-------------------------------
+[WYRMHOLAN,3]
+FormName = Smoochum Pal
+#-------------------------------
+[WYRMHOLAN,4]
+FormName = Poipole Pal
+#-------------------------------
 [MAGIKARP,1]
 FormName = Skelly
 BaseStats = 90,85,105,120,10,75

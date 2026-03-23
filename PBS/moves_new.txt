@@ -6843,6 +6843,20 @@ FunctionCode = LowerTargetAtk2StartEclipse8
 Flags = CanProtect,CanMagicCoat
 Description = The Pokémon blots out the sky, summoning eclipse for eight turns and lowering each opponent's Attack by two steps.
 #-------------------------------
+[WYRMHOLEFRIEND]
+Name = Wyrmhole Friend
+Type = DRAGON
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = TypeDependsOnUserWyrmholanform
+Flags = CanProtect
+EffectChance = 30
+Description = Changes type based on Poral Pal. Wyrmholan has its portal pal do an attack.
+Animation = FLING
+#-------------------------------
 [WYRMWOUNDING]
 Name = Wyrmwounding
 Type = DRAGON

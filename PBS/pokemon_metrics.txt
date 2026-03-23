@@ -2826,6 +2826,12 @@ FrontSprite = -4,15
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[HATCHOLE]
+BackSprite = 0,26
+FrontSprite = -3,21
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [HATENNA]
 BackSprite = 0,28
 FrontSprite = 3,33
@@ -7253,6 +7259,12 @@ BackSprite = 0,7
 FrontSprite = 0,8
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[WYRMHOLAN]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [XATU]
 BackSprite = 0,25

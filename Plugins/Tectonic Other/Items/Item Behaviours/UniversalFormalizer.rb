@@ -1,6 +1,6 @@
 ItemHandlers::UseOnPokemon.add(:UNIVERSALFORMALIZER,proc { |item,pkmn,scene|
 	species = pkmn.species
-	validSpecies = %i[DEOXYS ORICORIO LYCANROC ROTOM DARMANITAN GDARMANITAN DEERLING URSHIFU SAWSBUCK MELOETTA MAUSHOLD]
+	validSpecies = %i[DEOXYS ORICORIO LYCANROC ROTOM DARMANITAN GDARMANITAN DEERLING URSHIFU WYRMHOLAN SAWSBUCK MELOETTA MAUSHOLD]
 	if validSpecies.include?(species)
 		possibleForms = []
 		possibleFormNames = []
