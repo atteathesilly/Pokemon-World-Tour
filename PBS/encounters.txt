@@ -452,3 +452,11 @@ FloweryGrass2,21
     20,TOGEPI,30,31
     20,TREECKO2,30,31
     20,YANMA,30,31
+#-------------------------------
+[085] # Sendoff Spring
+Land,20
+    20,DREEPY,30,31
+    20,KANGASKHAN,30,31
+    20,NINCADA,30,31
+    20,SPEAROW,30,31
+    20,VULPIX,30,31
