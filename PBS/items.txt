@@ -143,7 +143,7 @@ Flags = EvolutionItem
 Description = A crystal emanating Mega energy, used to evolve certain Pokémon into their Mega forms.
 #-------------------------------
 [MEGASHARDZ]
-Name = Mega Shard
+Name = Mega Shard Z
 NamePlural = Mega Shards Z
 Pocket = 1
 Price = 4000

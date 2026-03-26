@@ -601,6 +601,16 @@ Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[084]
+# Spring Path
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

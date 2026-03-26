@@ -444,3 +444,11 @@ Land,20
     20,GRUBBIN,30,31
     20,MURKROW,30,31
     20,SKIDDO,30,31
+#-------------------------------
+[084] # Spring Path
+FloweryGrass2,21
+    20,ABSOL,30,31
+    20,SNIVY,30,31
+    20,TOGEPI,30,31
+    20,TREECKO2,30,31
+    20,YANMA,30,31
