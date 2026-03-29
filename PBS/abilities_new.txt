@@ -367,6 +367,10 @@ Description = Upon entry, creates a substitute from 1/4th of its HP.
 Name = Counter Flow
 Description = When hit with a special move, hits back instantly with Breach.
 #-------------------------------
+[CRYSTALINFECTION]
+Name = Crystal Infection
+Description = The Pokémon is also Rock-type. When hit by an attack, the attacker's ability becomes Infected.
+#-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
 Description = When a foe hits the Pokémon, they are warned. If they do it again, they become cursed.
@@ -1795,6 +1799,10 @@ Description = Boosts Attack by 20% in hail, or 40% if also below half health.
 [SEVERE]
 Name = Severe
 Description = Its attacks are critical against numbed targets.
+#-------------------------------
+[SHADOWYINFECTION]
+Name = Shadowy Infection
+Description = The Pokémon is also Ghost-type. The Pokémon loses 1/8 hp in sunshine.
 #-------------------------------
 [SHARPSHOOTER]
 Name = Sharpshooter

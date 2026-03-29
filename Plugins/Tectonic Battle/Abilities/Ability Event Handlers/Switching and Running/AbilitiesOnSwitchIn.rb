@@ -948,6 +948,15 @@ BattleHandlers::AbilityOnSwitchIn.add(:INFECTED,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:CRYSTALINFECTION,
+  proc { |ability, battler, battle, aiCheck|
+      next 10 if aiCheck
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} is crystalized!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
 BattleHandlers::AbilityOnSwitchIn.add(:RUSTWRACK,
   proc { |ability, battler, battle, aiCheck|
       next 10 if aiCheck

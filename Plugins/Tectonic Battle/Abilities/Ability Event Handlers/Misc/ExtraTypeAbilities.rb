@@ -12,6 +12,20 @@ BattleHandlers::TypeCalcAbility.add(:INFECTED,
     }
 )
 
+BattleHandlers::TypeCalcAbility.add(:CRYSTALINFECTION,
+    proc { |ability, battler, types|
+        types.push(:ROCK)
+        next types
+    }
+)
+
+BattleHandlers::TypeCalcAbility.add(:SHADOWYINFECTION,
+    proc { |ability, battler, types|
+        types.push(:GHOST)
+        next types
+    }
+)
+
 BattleHandlers::TypeCalcAbility.add(:RUSTWRACK,
     proc { |ability, battler, types|
         types.push(:STEEL)

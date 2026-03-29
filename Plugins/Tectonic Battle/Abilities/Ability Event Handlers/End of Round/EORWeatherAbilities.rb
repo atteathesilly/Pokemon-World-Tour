@@ -71,6 +71,17 @@ BattleHandlers::EORWeatherAbility.add(:DRYSKIN,
         end
     }
 )
+
+BattleHandlers::EORWeatherAbility.add(:SHADOWYINFECTION,
+    proc { |ability, _weather, battler, battle|
+        if battle.sunny?
+            battle.pbShowAbilitySplash(battler, ability)
+            battle.pbDisplay(_INTL("{1} was hurt by the sunlight!", battler.pbThis))
+            battler.applyFractionalDamage(WEATHER_ABILITY_HEALING_FRACTION)
+            battle.pbHideAbilitySplash(battler)
+        end
+    }
+)
   
 BattleHandlers::EORWeatherAbility.add(:FINESUGAR,
     proc { |ability, _weather, battler, battle|
