@@ -460,3 +460,11 @@ Land,20
     20,NINCADA,30,31
     20,SPEAROW,30,31
     20,VULPIX,30,31
+#-------------------------------
+[086] # Turnback Cave
+Land,20
+    20,GIBLE,30,31
+    20,GLIGAR,30,31
+    20,HILLUMISE,30,31
+    20,HVOLBEAT,30,31
+    20,HZORUA,30,31

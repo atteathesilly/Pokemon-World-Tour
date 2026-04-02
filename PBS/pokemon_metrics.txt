@@ -2940,6 +2940,12 @@ FrontSprite = -1,35
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[HILLUMISE]
+BackSprite = 0,25
+FrontSprite = 2,27
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [HIPPOPOTAS]
 BackSprite = 0,26
 FrontSprite = -2,24
@@ -3075,6 +3081,12 @@ ShadowSize = 2
 [HUNTAIL]
 BackSprite = 0,14
 FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[HVOLBEAT]
+BackSprite = 0,24
+FrontSprite = -1,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

@@ -621,6 +621,14 @@ Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[086]
+# Turnback Cave
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
