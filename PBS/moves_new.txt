@@ -867,6 +867,19 @@ FunctionCode = UserEnduresFaintingThisTurnRaiseUserAtk2IfActivates
 Description = The user endures attacks with 1 HP. If so, raises its Attack by two steps. Fails if used in succession.
 Animation = ENDURE
 #-------------------------------
+[FIGHTINGWORDS]
+Name = Fighting Words
+Type = FIGHTING
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = Dizzy
+Flags = CanProtect,Field,Sound
+EffectChance = 100
+Description = The user scolds and smacks the opponent based on its experience. It also dizzies the target.
+#-------------------------------
 [FOXTROTFINALE]
 Name = Foxtrot Finale
 Type = FIGHTING

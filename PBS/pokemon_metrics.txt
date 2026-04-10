@@ -48,6 +48,12 @@ FrontSprite = 0,29
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[ADVENTAWK]
+BackSprite = 0,14
+FrontSprite = 0,12
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [AEGISLASH]
 BackSprite = 0,13
 FrontSprite = 0,17
@@ -995,6 +1001,12 @@ BackSprite = 0,19
 FrontSprite = -4,19
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[CHATODDLE]
+BackSprite = 0,20
+FrontSprite = -3,24
+ShadowX = 0
+ShadowSize = 1
 #-------------------------------
 [CHATOT]
 BackSprite = 0,27
@@ -2295,6 +2307,12 @@ ShadowSize = 2
 [GASTRODON,1]
 BackSprite = 0,21
 FrontSprite = 0,25
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[GCHATOT]
+BackSprite = 0,27
+FrontSprite = 0,22
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

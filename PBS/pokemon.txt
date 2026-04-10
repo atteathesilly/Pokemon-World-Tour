@@ -22,6 +22,68 @@ Pokedex = This Pokémon brings victory. It is said that Trainers with Victini al
 Generation = 5
 Flags = Legendary
 #-------------------------------
+[CHATODDLE]
+Name = Chatoddle
+Type1 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 66,57,55,30,30,70
+# Total = 308
+BaseEXP = 175
+Rareness = 100
+Happiness = 50
+Abilities = SHARPERANDSMARTER,FEATHERCOAT
+Moves = 1,SMASH,1,TAUNT,4,HOP,8,HEADBUTT,12,WINGCRASH,16,CAPOEIRA,20,AIRSTRIKE,24,FEATHERDANCE,28,FLY,32,AURAFLUX,36,DEFOG,40,SCYTHEKICK,44,DIVEBOMB,48,DIVININGTALON,52,HUNTDOWN,56,HIGHJUMPKICK,60,SUBMISSION,64,DIVEBOMB
+LineMoves = ACROBATICS,ADAMANTINEPRESS,AERIALACE,AGILITY,ASSURANCE,BODYPRESS,BOUNCE,BRAVEBIRD,BRICKBREAK,BULKUP,BULLETTRAIN,CALAMITOUSSLASH,CHAOSWHEEL,CLOSECOMBAT,COACHING,CROSSCHOP,DEFOG,DEPTHCHARGE,DETACHMENT,DIG,DIVE,DIVEBOMB,DIVININGTALON,DIZZYPUNCH,DRAINPUNCH,DUALCHOP,DUALWINGBEAT,ENCORE,ENDEAVOR,ENDURE,ENTRAINMENT,FACADE,FINALGAMBIT,FIREPUNCH,FLAMECHARGE,FLING,FLY,FOCUSBLAST,FOCUSPUNCH,GIGAIMPACT,GRASSKNOT,HELPINGHAND,HOLDBACK,HOP,INFERNOIMPACT,IRONARROW,IRONHEAD,JAVELIN,KINDLE,LASERFOCUS,LASTRESORT,LOWKICK,LOWSWEEP,MEANLOOK,MEFIRST,MEGAPUNCH,METEORASSAULT,PAYBACK,POISONJAB,POWERUPPUNCH,QUICKGUARD,REND,REST,RETALIATE,RETREAT,REVENGE,REVERSAL,ROCKTOMB,ROOST,SECRETTECHNIQUE,SEERSTRIKE,SHARPEN,SLEEPTALK,SMASH,SNORE,STEELWING,STINGINGJEALOUSY,STONEEDGE,STRAFE,SUBSTITUTE,SUPERPOWER,SWORDSDANCE,TAILWIND,TAUNT,THROATCHOP,THUNDERPUNCH,TORMENT,UNDERMINE,UTURN,VOLLEY,WORKUP,XSCISSOR,ZENHEADBUTT
+Tribes = SCRAPPER,BUSHWHACKER
+StepsToHatch = 5120
+Height = 0.2
+Weight = 1.4
+Kind = Feisty
+Pokedex = A feisty chick native to Gerenia, it wishes to leave but does not have the ability to fly yet.
+Generation = 4
+Evolutions = GCHATOT,Level,21
+#-------------------------------
+[GCHATOT]
+Name = G. Chatot
+Type1 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 78,77,85,50,30,90
+# Total = 410
+BaseEXP = 175
+Rareness = 100
+Happiness = 50
+Abilities = SHARPERANDSMARTER,FEATHERCOAT
+Moves = 0,FIGHTINGWORDS,1,FIGHTINGWORDS
+Tribes = SCRAPPER,BUSHWHACKER
+StepsToHatch = 5120
+Height = 0.5
+Weight = 1.9
+Kind = Explorer
+Pokedex = These Chatots are rarely seen in Gerenia itself. They migrate as far as far as they can in search of treasure. It is believed they settled in Sinnoh as well.
+Generation = 4
+Flags = Hidden
+Evolutions = ADVENTAWK,Level,40
+#-------------------------------
+[ADVENTAWK]
+Name = Adventawk
+Type1 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 88,87,115,60,30,120
+# Total = 500
+BaseEXP = 175
+Rareness = 100
+Happiness = 50
+Abilities = SHARPERANDSMARTER,FEATHERCOAT
+Moves = 0,DIG,0,DIVE,1,DIG,1,DIVE
+Tribes = SCRAPPER,BUSHWHACKER,TACTICIAN
+StepsToHatch = 5120
+Height = 1.5
+Weight = 41.0
+Kind = Explorer
+Pokedex = Adventawk can easily navigate both land and sea with its powerful wings. It is said they hoard as much wealth as a Dragon-type.
+Generation = 4
+Flags = Hidden
+#-------------------------------
 [AGOATALYTE]
 Name = Agoatalyte
 Type1 = DARK

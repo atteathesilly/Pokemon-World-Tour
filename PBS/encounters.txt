@@ -1,5 +1,11 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
+[003] # Your House
+Special
+    1,AGOATALYTE,15
+    1,CHATODDLE,15
+    1,HATCHOLE,15
+#-------------------------------
 [005] # Chespin Forest
 Land,20
     40,CHESPIN,9,11

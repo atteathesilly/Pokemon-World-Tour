@@ -1804,6 +1804,10 @@ Description = Its attacks are critical against numbed targets.
 Name = Shadowy Infection
 Description = The Pokémon is also Ghost-type. The Pokémon loses 1/8 hp in sunshine.
 #-------------------------------
+[SHARPERANDSMARTER]
+Name = Sharper and Tougher
+Description = The user adds the type of whatever field move they use.
+#-------------------------------
 [SHARPSHOOTER]
 Name = Sharpshooter
 Description = Doubles the critical hit chance of random crit moves. The Pokémon's Speed is doubled while using them.

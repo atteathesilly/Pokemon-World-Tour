@@ -3,6 +3,12 @@ BattleHandlers::UserAbilityStartOfMove.add(:DISCOLIGHTS,
     moveUseTypeChangeAbility(ability, user, move, battle, true) if move.danceMove?
   }
 )
+
+BattleHandlers::UserAbilityStartOfMove.add(:SHARPERANDSMARTER,
+  proc { |ability, user, targets, move, battle|
+    moveUseTypeChangeAbility(ability, user, move, battle, true) if move.fieldMove?
+  }
+)
 #===============================================================================
 # Custom Ability #4 - Arid Recovery : Restore 1/8 HP under Sunlight or Sandstorm
 #===============================================================================
