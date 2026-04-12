@@ -629,6 +629,12 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[087]
+# Sunyshore Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
