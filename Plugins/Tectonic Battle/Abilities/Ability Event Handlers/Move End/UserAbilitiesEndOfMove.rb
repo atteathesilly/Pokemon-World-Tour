@@ -659,7 +659,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:PORTALPAL,
         damageType = :POISON if GameData::Type.exists?(:POISON)
     end
 
-    battlersAffected = targets.reject { |t| return t == user || t.fainted? || !t.takesIndirectDamage?(true) }
+    battlersAffected = targets.reject { |t| t == user || t.fainted? || !t.takesIndirectDamage?(true) }
     if battlersAffected.size > 0
       user.showMyAbilitySplash(ability)
       battlersAffected.each do |b|
