@@ -453,15 +453,15 @@ class PokeBattle_Move_TypeDependsOnUserWyrmholanform < PokeBattle_Move
         ret = :GHOST
         case user.form
         when 0
-            ret = :ELECTRIC if GameData::Type.exists?(:ROCK)
+            ret = :ROCK if GameData::Type.exists?(:ROCK)
         when 1
-            ret = :FIRE if GameData::Type.exists?(:DARK)
+            ret = :DARK if GameData::Type.exists?(:DARK)
         when 2
             ret = :WATER if GameData::Type.exists?(:WATER)
         when 3
             ret = :ICE if GameData::Type.exists?(:ICE)
         when 4
-            ret = :FLYING if GameData::Type.exists?(:POISON)
+            ret = :POISON if GameData::Type.exists?(:POISON)
         end
         return ret
     end

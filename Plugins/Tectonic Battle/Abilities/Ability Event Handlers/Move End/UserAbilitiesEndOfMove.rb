@@ -639,3 +639,36 @@ BattleHandlers::UserAbilityEndOfMove.add(:OFFENSIVE,
     end
   }
 )
+
+BattleHandlers::UserAbilityEndOfMove.add(:PORTALPAL,
+  proc { |ability, user, targets, move, battle, switchedBattlers|
+    next if battle.futureSight
+    next unless move.statusMove?
+    
+    damageType = :GHOST
+    case user.form
+    when 0
+        damageType = :ROCK if GameData::Type.exists?(:ROCK)
+    when 1
+        damageType = :DARK if GameData::Type.exists?(:DARK)
+    when 2
+        damageType = :WATER if GameData::Type.exists?(:WATER)
+    when 3
+        damageType = :ICE if GameData::Type.exists?(:ICE)
+    when 4
+        damageType = :POISON if GameData::Type.exists?(:POISON)
+    end
+
+    battlersAffected = targets.reject { |t| return t == user || t.fainted? || !t.takesIndirectDamage?(true) }
+    if battlersAffected.size > 0
+      user.showMyAbilitySplash(ability)
+      battlersAffected.each do |b|
+        battle.pbDisplay(_INTL("{1} is attacked by a portal pal!", b.pbThis))
+        bTypes = b.pbTypes(true)
+        damageFraction = battle.getTypedHazardHPRatio(damageType, bTypes[0], bTypes[1], bTypes[2])
+        b.applyFractionalDamage(damageFraction, false)
+      end
+      user.hideMyAbilitySplash
+    end
+  }
+)

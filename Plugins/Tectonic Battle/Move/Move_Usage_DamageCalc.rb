@@ -550,6 +550,27 @@ class PokeBattle_Move
             finalCalculatedDamage += (user.level / 2).ceil
         end
 
+        if user.shouldAbilityApply?(:PORTALPAL,aiCheck)
+
+            damageType = :GHOST
+            case user.form
+            when 0
+                damageType = :ROCK if GameData::Type.exists?(:ROCK)
+            when 1
+                damageType = :DARK if GameData::Type.exists?(:DARK)
+            when 2
+                damageType = :WATER if GameData::Type.exists?(:WATER)
+            when 3
+                damageType = :ICE if GameData::Type.exists?(:ICE)
+            when 4
+                damageType = :POISON if GameData::Type.exists?(:POISON)
+            end
+            
+            bTypes = target.pbTypes(true)
+            damageFraction = @battle.getTypedHazardHPRatio(damageType, bTypes[0], bTypes[1], bTypes[2])
+            finalCalculatedDamage += target.getFractionalDamageAmount(damageFraction)
+        end
+
         # Subtractive effects
         if target.shouldAbilityApply?(:DRAGONSBLOOD,aiCheck) && !@battle.moldBreaker
             finalCalculatedDamage -= target.level
