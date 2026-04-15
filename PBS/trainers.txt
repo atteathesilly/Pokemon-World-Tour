@@ -953,6 +953,20 @@ Pokemon = SCIZOR,33
     Moves = BULLETPUNCH,RAKE,SHARPEN,FLY
     AbilityIndex = 0 # Technician
 #-------------------------------
+[FIREBREATHER,Kai]
+Pokemon = FLETCHINDER,34
+    Moves = FLY,IRONHEAD,TAILWIND,FLAMECHARGE
+    AbilityIndex = 1 # Gale Wings
+Pokemon = CHARMELEON,34
+    Moves = STOREFUEL,DISCOURAGE,INCINERATE,DRAGONBREATH
+    AbilityIndex = 0 # Pure Rage
+Pokemon = SIMISEAR,34
+    Moves = SEAOFFIRE,FAKEOUT,PARTINGSHOT,TRIATTACK
+    AbilityIndex = 0 # Friend Guard
+Pokemon = HILLUMISE,34
+    Moves = SHATTERSHOT,DRIFTOFF,OMINOUSWIND,BUGBUZZ
+    AbilityIndex = 0 # Crystal Infection
+#-------------------------------
 [TRAINERSINA,Sina]
 Pokemon = YUKIMONO,33
     Moves = HAIL,SNOWYSORROWS,HEX,FROSTBREATH

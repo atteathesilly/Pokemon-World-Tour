@@ -887,6 +887,12 @@ Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader 2
 #-------------------------------
+[LEADER_FLINT]
+Name = Gym Leader
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader 1
+#-------------------------------
 [LEADER_Helena]
 Name = Gym Leader
 Gender = Female

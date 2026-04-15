@@ -369,7 +369,7 @@ Description = When hit with a special move, hits back instantly with Breach.
 #-------------------------------
 [CRYSTALINFECTION]
 Name = Crystal Infection
-Description = The Pokémon is also Rock-type. When hit by an attack, the attacker's ability becomes Infected.
+Description = The Pokémon is also Rock-type. When hit by an attack, the attacker's ability becomes Crystal Infection.
 #-------------------------------
 [CURSEDTAIL]
 Name = Cursed Tail
