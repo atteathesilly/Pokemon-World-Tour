@@ -2929,7 +2929,7 @@ Pocket = 7
 Price = 0
 Consumable = true
 Flags = KeyItem
-Description = A drink that provides energy to transfems and men who throw people. Tastes like shit.
+Description = A drink that provides energy to transfems and men who throw people. Tastes like batteries.
 #-------------------------------
 [SIGILLEFTHALF]
 Name = Sigil Left Half
