@@ -957,6 +957,7 @@ Pokemon = SCIZOR,33
 Pokemon = FLETCHINDER,34
     Moves = FLY,IRONHEAD,TAILWIND,FLAMECHARGE
     AbilityIndex = 1 # Gale Wings
+    Item = FLYINGGEM
 Pokemon = CHARMELEON,34
     Moves = STOREFUEL,DISCOURAGE,INCINERATE,DRAGONBREATH
     AbilityIndex = 0 # Pure Rage
@@ -966,6 +967,36 @@ Pokemon = SIMISEAR,34
 Pokemon = HILLUMISE,34
     Moves = SHATTERSHOT,DRIFTOFF,OMINOUSWIND,BUGBUZZ
     AbilityIndex = 0 # Crystal Infection
+#-------------------------------
+[WORKER5,Zuko]
+Pokemon = LAMPENT,34
+    Moves = WILLOWISP,HEX,TAUNT
+    AbilityIndex = 0 # Light Trick
+Pokemon = SALAZZLE,34
+    Moves = FIREPULSE,VENOSHOCK,DREAMDANCE,POISONGAS
+    AbilityIndex = 1 # Domineering
+Pokemon = RABOOT,34
+    Moves = BULLETCHARGE,FIREPUNCH,DOUBLEKICK,HOP
+    AbilityIndex = 0 # Freestyle
+    Item = WIDELENS
+Pokemon = HVOLBEAT,34
+    Moves = SIGNALBEAM,HEX,CLEARSMOG,CONFUSERAY
+    AbilityIndex = 0 # Shadowy Infection
+#-------------------------------
+[FISHERF,Wyldfyre]
+Pokemon = TORKOAL,34
+    Moves = WHITEFLAME,BUBBLEBARRAGE,FLAMESPIKES,AMNESIA
+    AbilityIndex = 0 # Pressure Valve
+    Item = CHARCOAL
+Pokemon = SLUGMA,34
+    Moves = IRONDEFENSE,WHITEFLAME,TERRAFORM,STRUGGLEBUG
+    AbilityIndex = 1 # Flame Body
+Pokemon = COALOSSAL,34
+    Moves = TARSHOT,INFERNOIMPACT,ADAMANTINEPRESS
+    AbilityIndex = 0 # Steam Power
+Pokemon = DRAKLOAK,34
+    Moves = CRUELTY,UTURN,RAKE,SHADOWCLAW
+    AbilityIndex = 0 # Clear Body
 #-------------------------------
 [TRAINERSINA,Sina]
 Pokemon = YUKIMONO,33

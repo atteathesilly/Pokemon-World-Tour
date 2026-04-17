@@ -600,6 +600,12 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = BLACKBELT
 #-------------------------------
+[FISHERF]
+Name = Fisherman
+Gender = Male
+BaseMoney = 32
+IntroBGM = SAILOR
+#-------------------------------
 [FISHERMAN]
 Name = Fisherman
 Gender = Male

@@ -120,7 +120,7 @@ Mr. Gela<s>theo
 Kukui, Hapu, Sina and Dexio trainer sprites
 Beliot419
 
-Carmine Trainer sprites
+Carmine and SS Fisher Trainer sprites
 kyledove
 
 Various free to use sprites
