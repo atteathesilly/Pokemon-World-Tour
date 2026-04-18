@@ -1009,6 +1009,36 @@ Pokemon = GLACEON,33
     Moves = HALTINGCOLD,RECOVER,ICEBEAM,MUDSLIDE
     AbilityIndex = 0 # Snow Shroud
 #-------------------------------
+[LEADER_FLINT,Flint]
+Policies = FLINT
+Pokemon = MAGMORTAR,35
+    Name = Sandy
+    Gender = male
+    Moves = TEPHRACANNON,BLASTBURN,DUSTDEVIL,FLASHCANNON
+    AbilityIndex = 0 # Mega Launcher
+    Item = SOFTSAND
+Pokemon = RAPIDASH,35
+    Name = Yu Long
+    Gender = male
+    Moves = BLAZEKICK,BOUNCE,STAMPDOWN,DROPKICK
+    AbilityIndex = 1 # Heavy Duty Hooves
+    Item = FIGHTINGGEM
+Pokemon = SCOVILLAIN,35
+    Moves = SUNSHINE,SPICYEXTRACT,SEEDBOMB,INFERNOIMPACT
+    AbilityIndex = 1 # Chlorophyll
+    Item = SITRUSBERRY
+Pokemon = STEELIX,35
+    Moves = SHRAPNEL,TERRAFORM,STEALTHROCK,EXPLOSION
+    AbilityIndex = 0 # Radiate
+    Item = AIRBALLOON
+Pokemon = LOPUNNY,35
+    Moves = HAREHEROICS,DIZZYPUNCH,SCYTHEKICK,ACROBATICS
+    AbilityIndex = 1 # Stubborn
+Pokemon = DRIFBLIM,25
+    Moves = HEATWAVE,BURNINGJEALOUSY,HEX,BOREALWIND
+    AbilityIndex = 1 # Drifting Mist
+    Item = SITRUSBERRY
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
