@@ -57,23 +57,13 @@ class PokeBattle_Move_RaiseTargetAtk2LowerTargetDef4 < PokeBattle_Move
   
     def pbFailsAgainstTarget?(user, target, show_message)
       return false if damagingMove?
-      failed = !target.pbCanRaiseStatStage?(@statUp[0], user, self) && 
-               !target.pbCanLowerStatStage?(@statDown[0], user, self)
+      failed = !target.pbCanRaiseStatStep?(@statUp[0], user, self) && 
+               !target.pbCanLowerStatStep?(@statDown[0], user, self)
       if failed
         @battle.pbDisplay(_INTL("{1}'s stats can't be changed further!", target.pbThis)) if show_message
         return true
       end
       return false
-    end
-  
-    def pbEffectAgainstTarget(user, target)
-      return if damagingMove?
-      if target.pbCanRaiseStatStage?(@statUp[0], user, self)
-        target.pbRaiseStatStage(@statUp[0], @statUp[1], user)
-      end
-      if target.pbCanLowerStatStage?(@statDown[0], user, self)
-        target.pbLowerStatStage(@statDown[0], @statDown[1], user)
-      end
     end
   end
 #===============================================================================
