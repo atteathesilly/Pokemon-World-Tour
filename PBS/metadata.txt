@@ -635,6 +635,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[088]
+# Route 214 House
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

@@ -47,6 +47,7 @@ HARMONY = _INTL("Harmony")
 # Other
 HANNAH = _INTL("Hannah")
 CLOWN = _INTL("Clown")
+JAN = _INTL("Jan")
 GRIND_RIVAL = _INTL("Vanya")
 SANG = _INTL("Sang")
 MAVIS = _INTL("Mavis")
