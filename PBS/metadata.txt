@@ -636,7 +636,7 @@ ShowArea = false
 Bicycle = false
 #-------------------------------
 [088]
-# Route 214 House
+# Route 214 Cabin
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -652,6 +652,20 @@ Bicycle = false
 Outdoor = false
 ShowArea = false
 Bicycle = false
+#-------------------------------
+[091]
+# Sunyshore Cafe
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[092]
+# Tunnel of the Vessel
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
 #-------------------------------
 [147]
 # PokEstate

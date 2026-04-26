@@ -474,3 +474,11 @@ Land,20
     20,HILLUMISE,30,31
     20,HVOLBEAT,30,31
     20,HZORUA,30,31
+#-------------------------------
+[092] # Tunnel of the Vessel
+Mud,20
+    20,GOLETT,34,35
+    20,GOTHITA,34,35
+    20,PAWNIARD,34,35
+    20,ROTOM,34,35
+    20,SPIRITOMB,34,35

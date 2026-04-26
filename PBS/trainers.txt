@@ -1039,6 +1039,23 @@ Pokemon = DRIFBLIM,25
     AbilityIndex = 1 # Drifting Mist
     Item = SITRUSBERRY
 #-------------------------------
+[POKEMONRANGER_F4,Shiori]
+Pokemon = HAVALUGG,35
+    Moves = ICEBREAKER,CURSEDOATH,ACCELEROCK,ICECALIBUR
+    AbilityIndex = 1 # Follow Through
+    Item = SITRUSBERRY
+Pokemon = ALCREMIE,35
+    Form = 26 # Mint Flower Form
+    Moves = DARKALLURE,ENCHANTINGSONG,BACKHAND,FAKETEARS
+    AbilityIndex = 1 # Hubris
+    Item = FAIRYFEATHER
+Pokemon = DELCATTY,35
+    Moves = PARTINGSHOT,LATHER,HEX,EXTREMESPEED
+    AbilityIndex = 1 # Normalize
+Pokemon = WHIMSICOTT,35
+    Moves = DEFOG,MISADVENTURE,LEAFBLADE,SYNTHESIS
+    AbilityIndex = 0 # Cotton Decoy
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
