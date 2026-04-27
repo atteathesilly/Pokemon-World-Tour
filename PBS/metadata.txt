@@ -667,6 +667,12 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[093]
+# The Home of the Vessel
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
