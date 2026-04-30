@@ -1832,6 +1832,10 @@ Description = Flying-type attacks have a 40% chance to numb.
 Name = Sickening
 Description = Special moves against it lower the attacker's Speed and Sp. Atk.
 #-------------------------------
+[SIDECHARACTER]
+Name = Side Character
+Description = Cheers the Pokémon that switches in to replace it, raising both of its attacking stats.
+#-------------------------------
 [SIGNALJAM]
 Name = Signal Jam
 Description = The Pokémon and other battlers don't benefit from same-type attacking bonus.
@@ -2370,3 +2374,8 @@ Description = Boosts the power of rampaging moves by 30%, and makes them physica
 Name = Xcellent Battler
 Description = Raises Attack by four steps when a stat is lowered by a foe. The user is also immune to Ground-type moves.
 Flags = Levitation
+#-------------------------------
+[ZEROTOHERO]
+Name = Zero to Hero
+Description = Transforms into its Hero form when switched out.
+Flags = Immutable

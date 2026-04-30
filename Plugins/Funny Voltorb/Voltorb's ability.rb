@@ -90,6 +90,45 @@ class PokeBattle_Move_SunshineAccurateCauseBurn < PokeBattle_BurnMove
         return @battle.sunny?
     end 
 end    
+
+BattleHandlers::AbilityOnSwitchOut.add(:ZEROTOHERO,
+  proc { |ability, battler, battle, endOfBattle|
+      next if endOfBattle
+      next unless battler.species == :PALAFIN
+      next unless battler.form == 0
+      battler.pbChangeForm(1, battler.pbThis)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchIn.add(:ZEROTOHERO,
+  proc { |ability, battler, battle, aiCheck|
+      next 0 if aiCheck
+      next unless battler.form == 1
+      battle.pbShowAbilitySplash(battler, ability)
+      battle.pbDisplay(_INTL("{1} underwent a heroic transformation!", battler.pbThis))
+      battle.pbHideAbilitySplash(battler)
+  }
+)
+
+BattleHandlers::AbilityOnSwitchOut.add(:SIDECHARACTER,
+  proc { |ability, battler, battle, endOfBattle|
+      next if endOfBattle
+      battler.position.applyEffect(:SideCharacter, battler.pokemonIndex)
+  }
+)
+
+GameData::BattleEffect.register_effect(:Position, {
+    :id => :SideCharacter,
+    :real_name => "Side Character",
+    :type => :PartyPosition,
+    :swaps_with_battlers => true,
+    :entry_proc => proc do |battle, _index, position, battler|
+        sourceMaker = battle.pbThisEx(battler.index, position.effects[:SideCharacter])
+        battle.pbDisplay(_INTL("{1}'s cheers boost the morale!", sourceMaker, battler.pbThis(true)))
+        battler.pbRaiseMultipleStatSteps(ATTACKING_STATS_1, battler, showFailMsg: true)
+        position.disableEffect(:SideCharacter)
+    end,
+})
 #===============================================================================
 # Custom Ability #22 - Draconic Heat: Is also dragon-type but loses 1-8th HP every turn
 #===============================================================================

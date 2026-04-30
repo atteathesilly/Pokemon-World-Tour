@@ -1376,3 +1376,9 @@ FormName = Rainbow Ribbon
 FormName = Family of Three
 Weight = 2.3
 Pokedex = The little one just appeared one day. They all live together like a family, but the relationship between the three is still unclear.
+#-------------------------------
+[PALAFIN,1]
+FormName = Hero
+BaseStats = 100,120,97,100,106,87
+Abilities = ZEROTOHERO
+Pokedex = This Pokémon’s ancient genes have awakened. It is now so extraordinarily strong that it can easily lift a cruise ship with one fin.
