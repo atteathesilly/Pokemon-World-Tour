@@ -14,10 +14,6 @@ Name = Acid Rain
 Description = At the end of each turn in rainstorm, each Pokémon not immune to rainstorm has their Defense and Sp. Def lowered.
 Flags = RainstormSynergy
 #-------------------------------
-[ALLYOFBUGS]
-Name = Ally of Bugs
-Description = Powers up Bug-type moves of itself and its allies by 50%.
-#-------------------------------
 [ADAPTIVESKIN]
 Name = Adaptive Skin
 Description = After being hit, the Pokémon raises either Defense or Sp. Def based on the attack's category. Caps out at +4.
@@ -58,6 +54,10 @@ Description = Repeats another Pokémon's field moves immediately at 50% power.
 Name = All That Glitters
 Description = Can hold two different items, if both are Gems.
 Flags = MultipleItems
+#-------------------------------
+[ALLYOFBUGS]
+Name = Ally of Bugs
+Description = Powers up Bug-type moves of itself and its allies by 50%.
 #-------------------------------
 [ANARCHIC]
 Name = Anarchic
