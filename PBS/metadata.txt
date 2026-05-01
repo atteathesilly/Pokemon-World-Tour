@@ -673,6 +673,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[095]
+# Los Machos
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

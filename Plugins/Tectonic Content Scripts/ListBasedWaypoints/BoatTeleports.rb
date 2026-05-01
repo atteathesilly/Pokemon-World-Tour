@@ -33,10 +33,10 @@ DOCK_LOCATIONS = {
         :event_id => 1,
         :unlock_switch => 304,
     },
-    :DRAGON_ISLAND => {
-        :map_name => "Isle of Dragons",
-        :map_id => 356,
-        :event_id => 38,
+    :CALLIE_REGION => {
+        :map_name => "Callie",
+        :map_id => 95,
+        :event_id => 8,
         :unlock_switch => 86,
     },
     :TRI_ISLAND => {
