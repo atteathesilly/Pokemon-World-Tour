@@ -5635,6 +5635,7 @@ Kind = Roadkill
 Pokedex = It stalks the roadway where it was killed in hopes of exacting its vengeance on the motorist that took its life.
 Generation = 2
 Evolutions = CLFURRET,Level,26
+Flags = Hidden
 #-------------------------------
 [CLFURRET]
 Name = Cl. Furret
@@ -5654,6 +5655,7 @@ Kind = Roadkill
 Pokedex = It is decaying such that it exhibits a foul odour and has managed to attract flies that constantly hover around it.
 Generation = 2
 Evolutions = FURRIOUS,Level,42
+Flags = Hidden
 #-------------------------------
 [FURRIOUS]
 Name = Furrious
@@ -5672,6 +5674,7 @@ Weight = 100.5
 Kind = Roadkill
 Pokedex = Its soul has extended from its body. They will sometimes coil around cars to attempt to attack the driver.
 Generation = 2
+Flags = Hidden
 #-------------------------------
 [HOOTHOOT]
 Name = Hoothoot
