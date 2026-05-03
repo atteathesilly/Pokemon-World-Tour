@@ -502,3 +502,11 @@ Puddle,20
     20,MAREANIE,30,31
     20,PYUKUMUKU,30,31
     20,RELICANTH,30,31
+#-------------------------------
+[098] # TM Store
+SewerFloor,20
+    20,AGRIMER,35,36
+    20,FOONGUS,35,36
+    20,MORELULL,35,36
+    20,SHROOMISH,35,36
+    20,VOLTORB,35,36

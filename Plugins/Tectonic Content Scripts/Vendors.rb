@@ -600,7 +600,7 @@ def tmShop
 
 	pbPokemonMart(
 		tmsStock,
-		_INTL("One-Stop Tech Shop, for all your electronic need."),
+		_INTL("Welcome to the Los Machos TM Store!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -656,7 +656,7 @@ def naturesGallery
 
 	pbPokemonMart(
 		stock,
-		_INTL("Nature's Gallery, your gateway to nature's beauty."),
+		_INTL("I have some held items found in good ol' nature!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -688,7 +688,7 @@ def heldItemShop
 
 	pbPokemonMart(
 		stock,
-		_INTL("Welcome to Emma's Empolorium! What're you looking for today?"),
+		_INTL("I have some interesting manufactured items!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -713,12 +713,12 @@ end
 
 def diegosWares
 	castleStock = %i[
-		KNIGHTHELMET NINJASCARF
+		KNIGHTHELMET NINJASCARF LEFTOVERS
 	]
 
 	pbPokemonMart(
 		castleStock,
-		_INTL("Welcome to Diego's Wares! Please, come look through our goods."),
+		_INTL("I have some random crap!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end
@@ -799,17 +799,25 @@ end
 
 def weirdBallsVendor
 	weirdBallStock = %i[
+		POKEBALL
+		GREATBALL
 		ULTRABALL
-		DREAMBALL
-		FASTBALL
-		HEAVYBALL
+		REPEATBALL
+		NESTBALL
+		TIMERBALL
+		QUICKBALL
+		FRIENDBALL
+		SLICEBALL
+		LEECHBALL
+		DISABLEBALL
+		POTIONBALL
+		HEALBALL
 		LUXURYBALL
 		ROYALBALL
-		BEASTBALL
 	]
 	pbPokemonMart(
 		weirdBallStock,
-		_INTL("Custom Pokéballs, made to order! You won't find these in a mart!"),
+		_INTL("Welcome to your all in one ball shop!"),
 		!CAN_SELL_IN_VENDORS
 	)
 end

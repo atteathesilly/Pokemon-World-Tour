@@ -683,6 +683,26 @@ Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[096]
+# Los Machos Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 95,39,36
+#-------------------------------
+[097]
+# Los Machos Mega  Mart
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[098]
+# TM Store
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = indoor3
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

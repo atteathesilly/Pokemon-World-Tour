@@ -3297,6 +3297,49 @@ Weight = 180.0
 Kind = Mega Claw
 Pokedex = Its claw has become so large that if it finds itself unable to clamp its opponent, it will just smack them with the blunt side.
 #-------------------------------
+[VOLTORB]
+Name = Voltorb
+Type1 = ELECTRIC
+Type2 = NORMAL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 40,65,55,110,65,60
+# Total = 395
+GenderRate = Genderless
+BaseEXP = 66
+Rareness = 145
+Abilities = BUNKERDOWN,BALLLIGHTNING
+Moves = 1,SPARK,1,TACKLE,3,SMIRK,6,SCREECH,9,CHARGE,12,ROCKROLL,15,CHARGEBEAM,18,SELFDESTRUCT,21,ELECTROBALL,24,PARTICLEPULSE,27,LIGHTSCREEN,30,RAPIDHERTZ,33,BODYSLAM,36,DISCHARGE,39,MAGNETRISE,42,EXPLOSION,45,NULLPULSE,48,ROCKAPULT,51,DREAMDANCE,54,EERIEIMPULSE,57,GLIMMERPULSE,60,MONOLITHDROP,64,LIGHTNINGDANCE
+LineMoves = ADAMANTINEPRESS,AGILITY,AIMTRUE,BEDROCKBREAKER,BODYSLAM,CARAPACECRUSH,CHARGEBEAM,CLOUDBREAK,CONCENTRATE,COVET,CURRENTCRASH,DIELECTRICBREAKDOWN,DISCHARGE,DISSIPATION,DOUBLEEDGE,ELECTROSLASH,ENDURE,EXPLOSION,FACADE,FINALGAMBIT,FOULPLAY,GIGAIMPACT,GRANITEHEAD,GYROBALL,HEADBANG,HEADBUTT,HYPERBEAM,LIGHTNINGSLAM,LIGHTSCREEN,LIGHTSHOW,LONGSHOT,LUMINBURST,LUNGE,MAGICCOAT,MAGNETRISE,METALSOUND,NUMB,PETRIFY,POWERGEM,PUMMEL,RAINSTORM,RAPIDSPIN,REFLECT,REST,RETREAT,ROUND,SELFDESTRUCT,SHATTERSHOT,SHOCKWAVE,SIGNALBEAM,SLEEPTALK,SLINGSHOT,SMUSH,SNORE,STEAMROLLER,STELLARATE,STORMDRIVE,SUBSTITUTE,SWIFT,TAKEDOWN,TAUNT,TERRAFORM,THUNDER,THUNDERBOLT,THUNDERSHOCK,TORMENT,TRUMPCARD,UTURN,VOLTSWITCH,VOLTTACKLE,WILDCHARGE
+Tribes = ANIMATED,ASSASSIN,ARTILLERY
+StepsToHatch = 5355
+Height = 0.5
+Weight = 10.4
+Kind = Ball
+Pokedex = It rolls to move. If the ground is uneven, a sudden jolt from hitting a bump can cause it to explode.
+Generation = 1
+WildItemCommon = POKEBALL
+WildItemRare = DYNAMITESTICK
+Evolutions = ELECTRODE,Level,32
+#-------------------------------
+[ELECTRODE]
+Name = Electrode
+Type1 = ELECTRIC
+Type2 = NORMAL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 60,90,70,150,90,80
+# Total = 540
+GenderRate = Genderless
+BaseEXP = 172
+Rareness = 50
+Abilities = BUNKERDOWN,BALLLIGHTNING
+Moves = 0,DISSIPATION,1,DISSIPATION
+StepsToHatch = 5355
+Height = 1.2
+Weight = 66.6
+Kind = Ball
+Pokedex = They appear in great numbers at electric power plants. Because they feed on electricity, they cause massive and chaotic blackouts in nearby cities.
+Generation = 1
+#-------------------------------
 [HVOLTORB]
 Name = H. Voltorb
 Type1 = ELECTRIC
@@ -5634,8 +5677,8 @@ Weight = 6.0
 Kind = Roadkill
 Pokedex = It stalks the roadway where it was killed in hopes of exacting its vengeance on the motorist that took its life.
 Generation = 2
-Evolutions = CLFURRET,Level,26
 Flags = Hidden
+Evolutions = CLFURRET,Level,26
 #-------------------------------
 [CLFURRET]
 Name = Cl. Furret
@@ -5654,8 +5697,8 @@ Weight = 32.5
 Kind = Roadkill
 Pokedex = It is decaying such that it exhibits a foul odour and has managed to attract flies that constantly hover around it.
 Generation = 2
-Evolutions = FURRIOUS,Level,42
 Flags = Hidden
+Evolutions = FURRIOUS,Level,42
 #-------------------------------
 [FURRIOUS]
 Name = Furrious
