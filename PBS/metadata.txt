@@ -709,6 +709,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[100]
+# Frame Geak Callie
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
