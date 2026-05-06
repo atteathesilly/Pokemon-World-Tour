@@ -703,6 +703,12 @@ ShowArea = true
 Bicycle = true
 BattleBack = indoor3
 #-------------------------------
+[099]
+# Beach Houses
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
