@@ -715,6 +715,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[101]
+# Polimount Studios
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

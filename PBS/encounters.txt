@@ -480,8 +480,8 @@ Mud,20
     20,GOLETT,34,35
     20,GOTHITA,34,35
     20,PAWNIARD,34,35
-    20,ROTOM,34,35
     20,SPIRITOMB,34,35
+    20,TEPIG,34,35
 #-------------------------------
 [095] # Los Machos
 Land,20
@@ -510,3 +510,7 @@ SewerFloor,20
     20,MORELULL,35,36
     20,SHROOMISH,35,36
     20,VOLTORB,35,36
+#-------------------------------
+[101] # Polimount Studios
+Special
+    1,ROTOM,35
