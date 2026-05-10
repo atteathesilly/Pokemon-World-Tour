@@ -2922,6 +2922,15 @@ Consumable = true
 Flags = KeyItem,SkipPocketMessage
 Description = A slip of paper with one digit of the code for the lock to Rafael's gym door.
 #-------------------------------
+[PIKEY]
+Name = Pikey
+NamePlural = Pikey
+Pocket = 7
+Price = 0
+Consumable = true
+Flags = KeyItem,SkipPocketMessage
+Description = A key to give to Gianna so she unlocks the gym door.
+#-------------------------------
 [ENERGYDRINK]
 Name = Pocket Monster Energy
 NamePlural = Pocket Monster Energies
