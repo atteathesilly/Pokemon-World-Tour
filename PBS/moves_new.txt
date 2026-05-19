@@ -1773,6 +1773,19 @@ Flags = CanProtect
 Description = The user hits the target with each of its heads from underground. Strikes three times.
 Animation = DIG
 #-------------------------------
+[ROTARYKICK]
+Name = Rotary Kick
+Type = GROUND
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitThreeTimes
+Flags = CanProtect,Kick
+Description = The user kicks the target with its defined legs. Strikes three times.
+Animation = MEGAKICK
+#-------------------------------
 [RUMBLE]
 Name = Rumble
 Type = GROUND
@@ -2266,6 +2279,19 @@ FunctionCode = Basic
 Flags = CanProtect
 Description = The user carefully lobs a small stone at high speed.
 Animation = ROCKTHROW
+#-------------------------------
+[STALAGMITESTAB]
+Name = Stalagmite Stab
+Type = ROCK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitThreeTimes
+Flags = CanProtect
+Description = The user hits the target with its spiky head from underground. Strikes three times.
+Animation = DIG
 #-------------------------------
 [STARFALL]
 Name = Star Fall
@@ -2913,6 +2939,20 @@ FunctionCode = DisableTargetLastMoveUsedReduceItsPPBy5
 Flags = CanProtect,CanMagicCoat
 Description = Disables the target's last used move for five turns, and cuts 5 PP from it.
 Animation = DISABLE
+#-------------------------------
+[HEADPUMPBUTT]
+Name = Headpumpbutt
+Type = GHOST
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = LowerTargetSpAtk2
+Flags = CanProtect,Kicking
+EffectChance = 100
+Description = The user hits the opponent with their head, even though they don't have their pumpkin. Lowers Special Attack by two stages.
+Animation = HEADBUTT
 #-------------------------------
 [HONEYSLATHER]
 Name = Honey Slather
@@ -4946,6 +4986,20 @@ FunctionCode = SleepTargetIfDealtDamageToUserThisTurn
 Flags = CanProtect,CanMagicCoat
 Description = The user bursts a ball of sleep-inducing powder. It fails unless the target hit the user this turn.
 Animation = SLEEPPOWDER
+#-------------------------------
+[PUMPKICK]
+Name = Pumpkick
+Type = GRASS
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = LowerTargetSpAtk2
+Flags = CanProtect,Kicking
+EffectChance = 100
+Description = The user lands an intense pumpkick on the target. This also lowers the target's Special Attack stat by two steps.
+Animation = TROPKICK
 #-------------------------------
 [RAZINGVINES]
 Name = Razing Vines

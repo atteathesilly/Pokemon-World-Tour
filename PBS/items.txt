@@ -2428,6 +2428,38 @@ Price = 5000
 Flags = Fossil
 Description = The fossil of an ancient Pokémon that once lived in the sea. What it looked like is a mystery.
 #-------------------------------
+[FOSSILIZEDSTEM]
+Name = Fossilized Stem
+NamePlural = Fossilized Stems
+Pocket = 1
+Price = 5000
+Flags = Fossil
+Description = The fossil of an extinct Pokémon that once ruled the forest. This is the stem of it.
+#-------------------------------
+[FOSSILIZEDPUMPKING]
+Name = Fossilized Pumpkin
+NamePlural = Fossilized Pumpkin
+Pocket = 1
+Price = 5000
+Flags = Fossil
+Description = The fossil of an extinct Pokémon that once ruled the forest. This is the stem of it.
+#-------------------------------
+[FOSSILIZEDROCK]
+Name = Fossilized Rock
+NamePlural = Fossilized Rocks
+Pocket = 1
+Price = 5000
+Flags = Fossil
+Description = The fossil of an extinct Pokémon that was as hard as a rock. This is the top of it.
+#-------------------------------
+[FOSSILIZEDTHING]
+Name = Fossilized Thing?
+NamePlural = Fossilized Things?
+Pocket = 1
+Price = 5000
+Flags = Fossil
+Description = Scientist think its the fossil of an extinct burrowing Pokémon. They do not know what part of the body it is.
+#-------------------------------
 [RUSTEDSHIELD]
 Name = Rusted Shield
 NamePlural = Rusted Shields
