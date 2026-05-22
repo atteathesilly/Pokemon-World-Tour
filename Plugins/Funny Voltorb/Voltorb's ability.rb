@@ -140,3 +140,72 @@ BattleHandlers::TypeCalcAbility.add(:DRACONICHEAT,
 )
 
 BattleHandlers::EOREffectAbility.copy(:EXTREMEPOWER,:DRACONICHEAT)
+
+#===============================================================================
+# User turns 1/4 of max HP into a substitute. Then, the user switches out. The
+# switched-in Pokemon retains the user's substitute. (Shed Tail)
+#-------------------------------------------------------------------------------
+class PokeBattle_Move_UserMakeSubstituteSwitchOut < PokeBattle_Move
+    def pbMoveFailed?(user, _targets, show_message)
+        if user.substituted?
+            @battle.pbDisplay(_INTL("{1} already has a substitute!", user.pbThis)) if show_message
+            return true
+        end
+
+        if user.hp <= user.getSubLife
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since #{user.pbThis(true)} does not have enough HP left to make a substitute!"))
+            end
+            return true
+        end
+
+       
+        unless @battle.pbCanChooseNonActive?(user.index)
+                if show_message
+                    @battle.pbDisplay(_INTL("But it failed, since #{user.pbThis(true)} has no party allies to replace it!"))
+                end
+                return true
+            end
+            return false
+      
+    end
+
+    def switchOutMove?; return true; end
+
+
+    def pbEndOfMoveUsageEffect(user, _targets, numHits, switchedBattlers)
+        return if user.fainted? || numHits == 0
+        return unless @battle.pbCanChooseNonActive?(user.index)
+        @battle.pbPursuit(user.index)
+        return if user.fainted?
+        newPkmn = @battle.pbGetReplacementPokemonIndex(user.index) # Owner chooses
+        return if newPkmn < 0
+        @battle.pbRecallAndReplace(user.index, newPkmn, false, true)
+        @battle.pbClearChoice(user.index) # Replacement Pokémon does nothing this round
+        @battle.moldBreaker = false
+        switchedBattlers.push(user.index)
+        user.pbEffectsOnSwitchIn(true)
+    end
+    
+    def pbEffectGeneral(user)
+        user.createSubstitute
+        @battle.pbDisplay(_INTL("{1} shed its tail to create a decoy!", user.pbThis))
+    end
+
+    def getEffectScore(user, _target)
+        score = getSubstituteEffectScore(user)
+        score += getHPLossEffectScore(user, 0.25)
+        return score
+    end
+end
+
+#===============================================================================
+# Custom Ability #10 - Vertigo Pirouette : When below half health, moves dizzy the opponent
+#===============================================================================
+
+BattleHandlers::UserAbilityOnHit.add(:VERTIGOPIROUETTE,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+    next unless user.belowHalfHealth?
+    randomStatusProcUserAbility(ability, :DIZZY, 100, user, target, move, battle, aiCheck, aiNumHits)
+  }
+)

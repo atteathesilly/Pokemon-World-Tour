@@ -22246,6 +22246,66 @@ Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and bless
 Generation = 8
 Flags = Legendary
 #-------------------------------
+[QUAXLY]
+Name = Quaxly
+Type1 = WATER
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 55,65,45,50,50,45
+# Total = 310
+BaseEXP = 100
+Rareness = 150
+Happiness = 50
+Abilities = VERTIGOPIROUETTE,MOXIE
+Moves = 1,PECK,4,AQUAJET,8,LOWKICK,12,PLUCK,16,RAINSTORM,20,FOCUSENERGY,24,ROOST,28,DROPKICK,32,ACROBATICS,36,BRINE,40,FEATHERDANCE,44,LIQUIDATION,48,BRAVEBIRD,52,CLOSECOMBAT,56,DOUBLEEDGE,60,DEPTHCHARGE
+LineMoves = ACROBATICS,AERIALACE,AIRSLASH,AQUAJET,AURASPHERE,BODYPRESS,BRAVEBIRD,BREACH,BRINE,BUBBLE,BUBBLEBARRAGE,BUBBLEBEAM,BUBBLEBLASTER,DARKALLURE,DEPTHCHARGE,DISARMINGVOICE,DIVE,DRAGONPULSE,DREAMDANCE,ENCORE,ENDURE,FACADE,FLING,FLIPTURN,FOCUSBLAST,GREYMIST,GYROBALL,HEALPULSE,HELPINGHAND,HYDROCANNON,HYDROPUMP,IRONDEFENSE,IRONHEAD,IRONTAIL,LIFEDEW,LIQUIDATION,LOWKICK,MAELSTROM,MENDINGSPRING,MIRRORCOAT,NIGHTCHILL,NULLPULSE,OUTRAGE,POWERUPPUNCH,PSYCHUP,RAINSTORM,REFLECT,REFRESH,REST,RIPTIDE,ROAR,ROOST,ROUND,SCALD,SEERSTRIKE,SHOTPUT,SKULLBASH,SLEEPTALK,SNORE,SPATTERINGRAM,SUBSTITUTE,SURF,SWIFT,SWORDSDANCE,TAKEDOWN,VANGUARD,WATERFALL,WATERPLEDGE,WATERPULSE,WATERSPOUT,WEATHERBURST,WHIRLPOOL,WIPEOUT,WORKUP,ZENHEADBUTT
+Tribes = CHARMER,MYSTIC
+StepsToHatch = 5120
+Height = 0.5
+Weight = 6.1
+Kind = Duckling
+Pokedex = Its strong legs let it easily swim around in even fast-flowing rivers. It likes to keep things tidy and is prone to overthinking things.
+Generation = 9
+Evolutions = QUAXWELL,Level,16
+#-------------------------------
+[QUAXWELL]
+Name = Quaxwell
+Type1 = WATER
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,85,70,70,65,60
+# Total = 420
+BaseEXP = 100
+Rareness = 150
+Happiness = 50
+Abilities = VERTIGOPIROUETTE,MOXIE
+Tribes = CHARMER,MYSTIC
+StepsToHatch = 5120
+Height = 1.2
+Weight = 21.5
+Kind = Practicing
+Pokedex = These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully.
+Generation = 9
+Evolutions = QUAQUAVAL,Level,36
+#-------------------------------
+[QUAQUAVAL]
+Name = Quaquaval
+Type1 = WATER
+Type2 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 85,125,85,85,85,75
+# Total = 540
+BaseEXP = 100
+Rareness = 150
+Happiness = 50
+Abilities = VERTIGOPIROUETTE,MOXIE
+Moves = 0,AQUASTEP
+Tribes = CHARMER,MYSTIC
+StepsToHatch = 5120
+Height = 1.8
+Weight = 61.9
+Kind = Dancer
+Pokedex = A single kick from a Quaquaval can send a truck rolling. This Pokémon uses its powerful legs to perform striking dances from far-off lands.
+Generation = 9
+#-------------------------------
 [TANDEMAUS]
 Name = Tandemaus
 Type1 = NORMAL
@@ -22572,6 +22632,27 @@ Height = 1.8
 Weight = 120.0
 Kind = Multi-Cyl
 Pokedex = It creates a gas out of poison and minerals from rocks. It then detonates the gas in its cylinders—now numbering eight—to generate energy.
+Generation = 9
+#-------------------------------
+[CYCLIZAR]
+Name = Cyclizar
+Type1 = NORMAL
+Type2 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,95,65,85,65,121
+# Total = 501
+BaseEXP = 100
+Rareness = 200
+Happiness = 50
+Abilities = SHEDSKIN,REGENERATOR
+Moves = 1,GROWL,1,TACKLE,4,RAPIDSPIN,8,TAUNT,12,BREAKINGSWIPE,16,QUICKATTACK,20,BITE,24,UTURN,28,SHEDTAIL,32,DRAGONCLAW,36,SHIFTGEAR,40,DRAGONPULSE,44,DOUBLEEDGE,48,DRAGONDANCE,52,OUTRAGE,56,DRACOMETEOR
+TutorMoves = ACROBATICS,AERIALACE,AGILITY,BODYSLAM,BREAKINGSWIPE,CRUNCH,DOUBLEEDGE,DRACOMETEOR,DRAGONCLAW,DRAGONPULSE,DRAGONTAIL,ENDEAVOR,ENDURE,FACADE,FIREFANG,GIGAIMPACT,HYPERBEAM,HYPERVOICE,IRONHEAD,KNOCKOFF,MUDSHOT,OUTRAGE,OVERHEAT,PROTECT,REST,SLEEPTALK,SUBSTITUTE,TAKEDOWN,TAUNT,THIEF,THUNDERBOLT,THUNDERFANG,UPROAR,UTURN,WILDCHARGE
+Tribes = TYRANNICAL,NOBLE
+StepsToHatch = 5355
+Height = 1.6
+Weight = 63.0
+Kind = Mount
+Pokedex = Apparently Cyclizar has been allowing people to ride on its back since ancient times. Depictions of this have been found in 10,000-year-old murals.
 Generation = 9
 #-------------------------------
 [WOCHIEN]
