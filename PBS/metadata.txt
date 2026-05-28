@@ -721,6 +721,12 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[102]
+# Machos-166 Gatehouse
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
