@@ -498,10 +498,10 @@ FloweryGrass,20
     20,THROH,30,31
 Puddle,20
     20,FINIZEN,30,31
-    20,LAPRAS,30,31
     20,MAREANIE,30,31
     20,PYUKUMUKU,30,31
     20,RELICANTH,30,31
+    20,SANDYGAST,30,31
 #-------------------------------
 [098] # TM Store
 SewerFloor,20
@@ -514,3 +514,17 @@ SewerFloor,20
 [101] # Polimount Studios
 Special
     1,ROTOM,35
+#-------------------------------
+[103] # Route 166
+Land,20
+    20,CYCLIZAR,35,36
+    20,MILTANK,35,36
+    20,PIKIPEK,35,36
+    20,PINECO,35,36
+    20,TAUROS,35,36
+Puddle,20
+    20,ARROKUDA,35,36
+    20,GOLDEEN,35,36
+    20,HORSEA,35,36
+    20,LAPRAS,35,36
+    20,QUAXLY,35,36

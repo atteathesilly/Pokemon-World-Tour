@@ -727,6 +727,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = true
 #-------------------------------
+[103]
+# Route 166
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
