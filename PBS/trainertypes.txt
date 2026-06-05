@@ -588,6 +588,12 @@ Gender = Female
 BaseMoney = 8
 IntroBGM = TWINS
 #-------------------------------
+[FEM_DRAGONTAMER]
+Name = Dragon Tamer
+Gender = Male
+BaseMoney = 32
+IntroBGM = ACETRAINER
+#-------------------------------
 [FIREBREATHER]
 Name = Firebreather
 Gender = Male

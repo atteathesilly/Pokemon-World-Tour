@@ -153,6 +153,9 @@ manycrows
 H. Sceptile Line
 PDM20(resprite)
 
+Dragorain
+Articuno
+
 Taiga's Trainer Collection (X/Y)
 Taiga<s>DiegoWT
 Neo-Spriteman<s>Vanilla Sunshine

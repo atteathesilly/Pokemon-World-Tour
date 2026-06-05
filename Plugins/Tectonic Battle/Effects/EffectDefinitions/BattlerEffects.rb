@@ -1836,6 +1836,24 @@ GameData::BattleEffect.register_effect(:Battler, {
 })
 
 GameData::BattleEffect.register_effect(:Battler, {
+    :id => :BlessedSerpent,
+    :real_name => "Blessing Giving",
+    :type => :Position,
+    :others_lose_track => true,
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer giving a Serpent Blessing!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
+    :id => :SerpentBlessed,
+    :real_name => "Blessed by a Serpent",
+    :disable_proc => proc do |battle, battler|
+        battle.pbDisplay(_INTL("{1} is no longer being blessed by a serpent!", battler.pbThis))
+    end,
+})
+
+GameData::BattleEffect.register_effect(:Battler, {
     :id => :MoveSpeedDoubled,
     :real_name => "Move Speed Doubled",
     :type => :Ability,

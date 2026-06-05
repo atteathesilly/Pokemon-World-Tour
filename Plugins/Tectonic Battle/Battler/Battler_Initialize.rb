@@ -162,6 +162,11 @@ class PokeBattle_Battler
         if effectActive?(:GivingDragonRideTo)
             getBattlerPointsTo(:GivingDragonRideTo).disableEffect(:OnDragonRide)
         end
+        # serpentblessing ends
+        if effectActive?(:BlessedSerpent)
+            getBattlerPointsTo(:BlessedSerpent).disableEffect(:SerpentBlessed)
+        end
+        
         
         initializeEffects(batonPass)
 

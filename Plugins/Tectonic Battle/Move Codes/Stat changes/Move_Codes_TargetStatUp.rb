@@ -77,6 +77,41 @@ class PokeBattle_Move_DragonRide < PokeBattle_Move
 end
 
 #===============================================================================
+# Doubles an allies Attack and Speed. The user cannot swap out of battle.
+# If the user faints, so too does that ally. (Serpent's bLessing)
+#===============================================================================
+class PokeBattle_Move_SerpentsBlessing < PokeBattle_Move
+    def pbFailsAgainstTarget?(user, target, show_message)
+        if target.effectActive?(:SerpentBlessed)
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since {1} is already blessed!", target.pbThis(true)))
+            end
+            return true
+        end
+        if user.effectActive?(:BlessedSerpent)
+            if show_message
+                @battle.pbDisplay(_INTL("But it failed, since {1} is already blessing someone!", user.pbThis))
+            end
+            return true
+        end
+        return false
+    end
+
+    def pbEffectAgainstTarget(user, target)
+        target.applyEffect(:SerpentBlessed)
+        user.applyEffect(:BlessedSerpent, target.index)
+        @battle.pbDisplay(_INTL("{1} blesses {2} with its Serpent Powers!", user.pbThis, target.pbThis(true)))
+    end
+
+    def getEffectScore(user, target)
+        return 0 if user.effects[:PerishSong] > 0
+        return 0 if user.belowHalfHealth?
+        return 0 unless target.hasPhysicalAttack?
+        return 150
+    end
+end
+
+#===============================================================================
 # Damages target if target is a foe, or buff's the target's Speed
 # by four steps if it's an ally. (Lightning Spear)
 #===============================================================================

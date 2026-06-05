@@ -6862,6 +6862,17 @@ Flags = CanProtect,Wind
 EffectChance = 30
 Description = The user whips up a tornado to tear at the target. It has a 30% chance to make them flinch.
 #-------------------------------
+[SERPENTSBLESSING]
+Name = Serpent's Blessing
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearAlly
+FunctionCode = SerpentsBlessing
+Description = Doubles target ally's Special Attack and Speed. However, if the user faints, so too does that ally.
+Animation = COACHING
+#-------------------------------
 [SHRED]
 Name = Shred
 Type = DRAGON

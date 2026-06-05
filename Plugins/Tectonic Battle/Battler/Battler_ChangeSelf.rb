@@ -327,6 +327,16 @@ class PokeBattle_Battler
                 otherBattler.pbFaint
             end
 
+            if effectActive?(:BlessedSerpent, true)
+                otherBattler = @battle.battlers[@effects[:GivingDragonRideTo]] # Do not switch to the helper method
+                damageDealt = otherBattler.hp
+                otherBattler.damageState.displayedDamage = damageDealt
+                @battle.scene.pbDamageAnimation(otherBattler)
+                otherBattler.pbReduceHP(damageDealt, false)
+                @battle.pbDisplay(_INTL("{1} fell to the ground!", otherBattler.pbThis))
+                otherBattler.pbFaint
+            end
+
             # On-faint effect items
             if hasActiveItem?(:HOOHSASHES)
                 faintedPartyMembers = []

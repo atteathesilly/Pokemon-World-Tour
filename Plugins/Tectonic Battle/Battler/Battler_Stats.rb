@@ -220,6 +220,9 @@ class PokeBattle_Battler
         # Vessel of Ruin
         spAtkMult *= 0.75 if @battle.pbCheckGlobalAbility(:VESSELOFRUIN) && !hasActiveAbility?(:VESSELOFRUIN)
 
+        # Serpent's Blessing
+        spAtkMult *= 2.0 if effectActive?(:SerpentBlessed)
+
         # Calculation
         return [(special_attack * spAtkMult).round, 1].max
     end
@@ -317,6 +320,7 @@ class PokeBattle_Battler
             speedMult *= 2.0 if pbOwnSide.effectActive?(:Tailwind)
             speedMult /= 2.0 if pbOwnSide.effectActive?(:Swamp)
             speedMult *= 2.0 if effectActive?(:OnDragonRide)
+            speedMult *= 2.0 if effectActive?(:SerpentBlessed)
         end
         
         # Numb
