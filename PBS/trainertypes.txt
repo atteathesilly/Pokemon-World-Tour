@@ -1137,6 +1137,12 @@ Gender = Female
 BaseMoney = 32
 IntroBGM = PARASOL
 #-------------------------------
+[PARASOLLADY3]
+Name = Parasol Lady
+Gender = Female
+BaseMoney = 32
+IntroBGM = PARASOL
+#-------------------------------
 [PICNICKER]
 Name = Picnicker
 Gender = Female
@@ -1416,6 +1422,12 @@ BaseMoney = 20
 IntroBGM = ROUGHNECK
 #-------------------------------
 [RANCHER]
+Name = Rancher
+Gender = Male
+BaseMoney = 40
+IntroBGM = BACKPACKER
+#-------------------------------
+[RANCHER2]
 Name = Rancher
 Gender = Male
 BaseMoney = 40

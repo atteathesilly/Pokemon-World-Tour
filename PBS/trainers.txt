@@ -1056,6 +1056,54 @@ Pokemon = WHIMSICOTT,35
     Moves = DEFOG,MISADVENTURE,LEAFBLADE,SYNTHESIS
     AbilityIndex = 0 # Cotton Decoy
 #-------------------------------
+[RANCHER2,Theodore]
+Pokemon = QUAQUAVAL,36
+    Moves = AQUASTEP,ACROBATICS,DROPKICK,BRINE
+    AbilityIndex = 1 # Moxie
+    Item = SITRUSBERRY
+Pokemon = FALZORD,36
+    Moves = DRAINPUNCH,JAVELIN,DISCOURAGE,STANDTOGETHER
+    AbilityIndex = 0 # Imperious
+Pokemon = DRAMPSON,37
+    Moves = GUTTURALROAR,NATUREPOWER,WEATHERBURST,BURNINGJEALOUSY
+    AbilityIndex = 1 # Apprehensive
+Pokemon = LUDICOLO,37
+    Moves = DREAMDANCE,GIGADRAIN,BUBBLEBARRAGE,FAKEOUT
+    AbilityIndex = 0 # Fiesta
+#-------------------------------
+[PARASOLLADY3,Peach]
+Pokemon = INFERNAPE,36
+    Moves = FLOWSTATE,ACROBATICS,FIREPUNCH,STORMTHROW
+    AbilityIndex = 1 # Monkey Mischief
+    Item = SITRUSBERRY
+Pokemon = MUNCHLAX,36
+    Moves = BODYSLAM,CRUNCH,REST,SNORE
+    AbilityIndex = 0 # Gluttony
+Pokemon = SNORLAX,38
+    Moves = BODYSLAM,CRUNCH,REST,SNORE
+    AbilityIndex = 0 # Loud Sleeper
+Pokemon = CLFURRET,37
+    Moves = MIASMA,SHADOWBALL,BUGBUZZ,SHIVER
+    AbilityIndex = 1 # Ally of Bugs
+#-------------------------------
+[DRAGONTAMER2,Kamina]
+Pokemon = MZANGOOSE,37
+    Moves = VIMRIPPER,CROSSCHOP,AERIALACE,BULLETTRAIN
+    AbilityIndex = 1 # Mental Damage
+    Item = CHOICESCARF
+Pokemon = METANG,37
+    Moves = ZENHEADBUTT,ELECTROSLASH,FARADAYCAGE,BULLDOZE
+    AbilityIndex = 0 # Indestructible
+    Item = CHOICESCARF
+Pokemon = EXCADRILL,38
+    Moves = DIG,METEORMASH,DRILLRUN,ADAMANTINEPRESS
+    AbilityIndex = 0 # Sandworn Auger
+    Item = CHOICESCARF
+Pokemon = SAURENAID,37
+    Moves = HYPERVOICE,DRAGONPULSE,ICEBEAM,SURF
+    AbilityIndex = 1 # Leviathan
+    Item = CHOICESCARF
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
