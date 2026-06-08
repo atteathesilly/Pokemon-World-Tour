@@ -3272,6 +3272,18 @@ EffectChance = 100
 Description = The target is punched with a cool steel fist. Frostbites the target.
 Animation = ICEPUNCH
 #-------------------------------
+[DRILLTHATWILLPIERCETHEHEAVENS]
+Name = Giga Drill Break
+Type = STEEL
+Category = Physical
+Power = 150
+Accuracy = 100
+TotalPP = 1
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstFlying
+Description = The user drill at the target with all their willpower. Super effective versus Flying-types and goes through protection.
+Animation = TECTONICRAGE
+#-------------------------------
 [EVERHONE]
 Name = Everhone
 Type = STEEL

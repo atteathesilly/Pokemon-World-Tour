@@ -13769,8 +13769,8 @@ Name = Excadrill
 Type1 = GROUND
 Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 100,125,60,108,70,70
-# Total = 533
+BaseStats = 90,115,60,90,70,70
+# Total = 495
 BaseEXP = 178
 Rareness = 50
 Happiness = 50
@@ -13781,6 +13781,26 @@ Height = 0.7
 Weight = 40.4
 Kind = Subterrene
 Pokedex = More than 300 feet below the surface, they build mazelike nests. Their activity can be destructive to subway tunnels.
+Generation = 5
+Evolutions = LAGAANDRILL,Item,MEGASHARD
+#-------------------------------
+[LAGAANDRILL]
+Name = Lagaandrill
+Type1 = GROUND
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 110,135,60,118,70,70
+# Total = 563
+BaseEXP = 178
+Rareness = 50
+Happiness = 50
+Abilities = SANDWORNAUGER,JUGGERNAUT
+Moves = 0,DRILLTHATWILLPIERCETHEHEAVENS,1,DRILLTHATWILLPIERCETHEHEAVENS
+StepsToHatch = 5355
+Height = 0.7
+Weight = 40.4
+Kind = Tengen Toppa
+Pokedex = This Pokémon can drill through anything, its signature drill attack can shatter even the sky itself.
 Generation = 5
 #-------------------------------
 [AUDINO]

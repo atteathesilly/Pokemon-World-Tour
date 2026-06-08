@@ -59,6 +59,16 @@ class PokeBattle_Move_SuperEffectiveAgainstRock < PokeBattle_TypeSuperMove
 end
 
 #===============================================================================
+# Effectiveness against Flying-type is 2x. (WHO THE HELL DO YOU THINK IT IS)
+#===============================================================================
+class PokeBattle_Move_SuperEffectiveAgainstFlying < PokeBattle_TypeSuperMove
+    def initialize(battle, move)
+        super
+        @typeHated = :FLYING
+    end
+end
+
+#===============================================================================
 # Type effectiveness is multiplied by the Flying-type's effectiveness against
 # the target. (Flying Press)
 #===============================================================================

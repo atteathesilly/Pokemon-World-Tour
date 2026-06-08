@@ -1704,6 +1704,12 @@ FrontSprite = 4,7
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[DRAGORAIN]
+BackSprite = 0,11
+FrontSprite = 0,8
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [DRAKLOAK]
 BackSprite = 0,17
 FrontSprite = 0,21
@@ -3513,6 +3519,12 @@ ShadowSize = 3
 [KYUREM,4]
 BackSprite = 0,0
 FrontSprite = 1,4
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
+[LAGAANDRILL]
+BackSprite = 0,18
+FrontSprite = 0,20
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
