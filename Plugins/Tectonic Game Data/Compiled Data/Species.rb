@@ -620,6 +620,10 @@ module GameData
             return @flags.include?("Test")
         end
 
+        def isProp?
+            return @flags.include?("Prop")
+        end
+
         def isHidden?
             return @flags.include?("Hidden")
         end

@@ -22786,3 +22786,23 @@ Kind = Ruinous
 Pokedex = It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand.
 Generation = 9
 Flags = Legendary
+#-------------------------------
+[PROPK1]
+Name = Prop K1
+Type1 = FIGHTING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 100,100,100,100,100,100
+# Total = 600
+GenderRate = Genderless
+BaseEXP = 270
+Rareness = 5
+Happiness = 100
+Abilities = NOGUARD
+Moves = 1,AURASPHERE
+StepsToHatch = 30720
+Height = 0.4
+Weight = 4.0
+Kind = Prop
+Pokedex = Just a Pokestars prop
+Generation = 5
+Flags = Prop,TutorAny

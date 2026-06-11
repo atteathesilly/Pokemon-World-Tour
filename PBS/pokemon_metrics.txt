@@ -5220,6 +5220,12 @@ FrontSprite = -3,8
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[PROPK1]
+BackSprite = 0,0
+FrontSprite = 0,19
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [PSYDUCK]
 BackSprite = 0,27
 FrontSprite = 0,21

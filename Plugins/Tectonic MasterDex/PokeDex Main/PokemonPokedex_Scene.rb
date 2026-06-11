@@ -172,6 +172,9 @@ class PokemonPokedex_Scene
             speciesData = GameData::Species.get(species)
             next if speciesData.isTest? && !$DEBUG
 
+            speciesData = GameData::Species.get(species)
+            next if speciesData.isProp? && !$DEBUG
+
             dexListEntry =
 			{
 				:species => species,

@@ -154,9 +154,10 @@ def speciesInfoViewable?(speciesID)
     return true if $DEBUG
     speciesData = GameData::Species.get(speciesID)
     return false if speciesData.isTest?
+	return false if speciesData.isProp?
     return true if $Trainer.seen?(speciesID)
     return false if speciesData.isLegendary?
-		return false if speciesData.isHidden?
+	return false if speciesData.isHidden?
     return true
 end
 

@@ -106,6 +106,7 @@ def nonLegendarySpeciesCount(owned = false)
         next unless speciesData.form == 0
         next if speciesData.isLegendary?
         next if speciesData.isTest?
+				next if speciesData.isProp?
         next if owned && !$Trainer.pokedex.owned?(speciesData.species)
         count += 1
     end
