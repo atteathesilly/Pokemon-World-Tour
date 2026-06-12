@@ -4464,6 +4464,12 @@ FrontSprite = 0,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[MSPRITZEE]
+BackSprite = 0,27
+FrontSprite = -2,19
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [MTANGELA]
 BackSprite = 0,27
 FrontSprite = 0,25
