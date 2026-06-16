@@ -493,6 +493,7 @@ Description = Reduces move damage taken by 50% when HP is full. Can't be dizzied
 [DOPPELGANGER]
 Name = Doppelgänger
 Description = Transforms into a random party member on entry.
+Flags = Immutable
 #-------------------------------
 [DOUBLECHECK]
 Name = Double Check

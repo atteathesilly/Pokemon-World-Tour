@@ -1108,6 +1108,27 @@ Pokemon = SAURENAID,37
     AbilityIndex = 1 # Leviathan
     Item = CHOICESCARF
 #-------------------------------
+[TRAINERMAGGIE,Maggie]
+Pokemon = DRAGONAIR,38
+    Moves = CALAMITOUSSLASH,SURF,COLDFRONT,BRINE
+    AbilityIndex = 0 # Shed Skin
+Pokemon = LILEEP,38
+    Moves = GIGADRAIN,POWERGEM,STOCKPILE,SWALLOW
+    AbilityIndex = 0 # Rooted
+    Item = EVIOLITE
+Pokemon = ALOMOMOLA,38
+    Moves = SPIRITBREAK,WATERFALL,ZENHEADBUTT,BACKHAND
+    AbilityIndex = 0 # Moist Skin
+Pokemon = MAGIKARP,40
+    Name = Joker
+    Form = 27 # Black Mask Form
+    Moves = SPLASHANDDASH,EARTHQUAKE,BULLETTRAIN,BRAVEBIRD
+    AbilityIndex = 0 # Multiscale
+    Item = MYSTICWATER
+Pokemon = DITTO,38
+    Moves = TRANSFORM
+    AbilityIndex = 1 # Doppelgänger
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB

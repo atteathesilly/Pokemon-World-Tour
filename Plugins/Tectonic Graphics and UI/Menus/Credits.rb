@@ -103,6 +103,7 @@ OTHER MISC TILES AND BATTLE BACKGROUNDS FROM DEVIANTART:
 - Carchagui
 - Aveontrainer
 - Phyromatical
+- Terrible Jared
 
 DPPT Grand underground tileset
 alchemybats
