@@ -77,7 +77,7 @@ Accuracy = 100
 TotalPP = 12
 Target = NearOther
 FunctionCode = Numb
-Flags = CanProtect
+Flags = CanProtect,Field
 EffectChance = 30
 Description = The user drops onto the target with its full body weight. It has a 30% chance to numb.
 #-------------------------------

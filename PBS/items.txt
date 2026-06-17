@@ -2436,7 +2436,7 @@ Price = 5000
 Flags = Fossil
 Description = The fossil of an extinct Pokémon that once ruled the forest. This is the stem of it.
 #-------------------------------
-[FOSSILIZEDPUMPKING]
+[FOSSILIZEDPUMPKIN]
 Name = Fossilized Pumpkin
 NamePlural = Fossilized Pumpkin
 Pocket = 1

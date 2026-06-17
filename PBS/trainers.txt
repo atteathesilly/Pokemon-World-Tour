@@ -1129,6 +1129,36 @@ Pokemon = DITTO,38
     Moves = TRANSFORM
     AbilityIndex = 1 # Doppelgänger
 #-------------------------------
+[SCIENTIST_F,Penny]
+Pokemon = DRACOZOLT,39
+    Moves = VOLTSEEKERS,REND,DARKPULSE,AMNESIA
+    AbilityIndex = 1 # Challenger
+    Item = SITRUSBERRY
+Pokemon = PALAFIN,38
+    Moves = JETPUNCH,LIQUIDATION,FLIPTURN,CROSSCHOP
+    AbilityIndex = 1 # Side Character
+Pokemon = XATU,38
+    Moves = WISH,CALMMIND,PSYCHIC,AIRSLASH
+    AbilityIndex = 0 # Vigilant
+Pokemon = DUDUNSPARCE,38
+    Moves = HEAVENSEYES,SUPERSTITION,SCORCHINGSANDS,COLDFRONT
+    AbilityIndex = 1 # Adapted
+#-------------------------------
+[SCIENTIST_M2,Bray Zenn]
+Pokemon = ARCTOZOLT,39
+    Moves = BOLTBEAK,DISCHARGE,FROSTBREATH,MUDSLIDE
+    AbilityIndex = 1 # Adrenaline Rush
+    Item = SITRUSBERRY
+Pokemon = MUDSDALE,38
+    Moves = DIG,BULKUP,BODYSLAM,SCYTHEKICK
+    AbilityIndex = 0 # HM Mule
+Pokemon = AMPHAROS,38
+    Moves = TRANSCENDENTENERGY,RECOVER,DRAGONPULSE,DISCHARGE
+    AbilityIndex = 0 # Static
+Pokemon = OBSTAGOON,38
+    Moves = THROATCHOP,TAKEDOWN,OBSTRUCT,METRONOME
+    AbilityIndex = 0 # Hooligan
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
