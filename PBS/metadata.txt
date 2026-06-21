@@ -737,6 +737,12 @@ Humidity = Wet
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[104]
+# Route 166 Trailers
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

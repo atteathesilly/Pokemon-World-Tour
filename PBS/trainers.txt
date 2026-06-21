@@ -1159,6 +1159,36 @@ Pokemon = OBSTAGOON,38
     Moves = THROATCHOP,TAKEDOWN,OBSTRUCT,METRONOME
     AbilityIndex = 0 # Hooligan
 #-------------------------------
+[SCIENTIST_M4,Crygor]
+Pokemon = ARCTOVISH,39
+    Moves = ICEBEAM,PRESSUREBURST,RECOVER,LULLABY
+    AbilityIndex = 0 # Burdened
+    Item = SITRUSBERRY
+Pokemon = BRUXISH,38
+    Moves = PSYCHICFANGS,CRUNCH,POISONFANG,ICEFANG
+    AbilityIndex = 1 # Strong Jaw
+Pokemon = POLITOED,38
+    Moves = HYPERVOICE,LULLABY,SURF,COLDFRONT
+    AbilityIndex = 1 # Bellower
+Pokemon = UNFEZANT,38
+    Moves = GLOAT,DIVININGTALON,PALEBLADE,SEVER
+    AbilityIndex = 1 # Super Luck
+#-------------------------------
+[SCIENTIST_F3,Tama]
+Pokemon = DRACOVISH,39
+    Moves = FISHIOUSREND,GALLINGSPIT,CRUNCH,POISONFANG
+    AbilityIndex = 0 # Live Fast
+    Item = SITRUSBERRY
+Pokemon = TSAREENA,38
+    Moves = TROPKICK,THROATCHOP,SCYTHEKICK,BULKUP
+    AbilityIndex = 1 # Swift Stomps
+Pokemon = DROMERUPT,38
+    Moves = FLAMETHROWER,FLAMESPIKES,SCORCHINGSANDS,VANGUARD
+    AbilityIndex = 1 # Adrenaline Rush
+Pokemon = KLAWSAR,38
+    Moves = LIQUIDATION,XSCISSOR,BAR,METEORMASH
+    AbilityIndex = 0 # Frustrate
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
