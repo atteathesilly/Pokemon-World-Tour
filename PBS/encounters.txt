@@ -528,3 +528,14 @@ Puddle,20
     20,HORSEA,35,36
     20,LAPRAS,35,36
     20,QUAXLY,35,36
+#-------------------------------
+[104] # Route 166 Trailers
+Special
+    1,ARCTOVISH,15
+    1,ARCTOZOLT,15
+    1,CLDIGLETT,15
+    1,CLTSAREENA,15
+    1,DIGLEGGS,15
+    1,DRACOVISH,15
+    1,DRACOZOLT,15
+    1,TSARLETT,15
