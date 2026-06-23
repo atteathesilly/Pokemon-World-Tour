@@ -743,6 +743,22 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[105]
+# Mori Town
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
+[106]
+# Mori-166 Gatehouse
+Outdoor = false
+ShowArea = false
+Bicycle = true
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
