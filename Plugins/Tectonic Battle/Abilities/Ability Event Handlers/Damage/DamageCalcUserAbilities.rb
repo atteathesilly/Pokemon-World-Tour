@@ -20,6 +20,17 @@ BattleHandlers::DamageCalcUserAbility.add(:NORMALIZE,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:DEVILEDEGG,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+      if aiCheck
+          mults[:base_damage_multiplier] *= 1.5 if type != :DARK
+      elsif move.powerBoost
+          mults[:base_damage_multiplier] *= 1.5
+          user.aiLearnsAbility(ability) unless aiCheck
+      end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:ANALYTIC,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
       if aiCheck

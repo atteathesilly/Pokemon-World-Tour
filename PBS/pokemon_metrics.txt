@@ -1128,6 +1128,18 @@ FrontSprite = -1,3
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CLBLISSEY]
+BackSprite = 0,23
+FrontSprite = 0,23
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[CLCHANSEY]
+BackSprite = 0,26
+FrontSprite = 0,19
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [CLDIGLETT]
 BackSprite = 0,29
 FrontSprite = 1,34
@@ -1163,6 +1175,12 @@ BackSprite = 0,22
 FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 3
+#-------------------------------
+[CLHAPPINY]
+BackSprite = 0,26
+FrontSprite = -1,29
+ShadowX = 0
+ShadowSize = 1
 #-------------------------------
 [CLOBBOPUS]
 BackSprite = 0,31

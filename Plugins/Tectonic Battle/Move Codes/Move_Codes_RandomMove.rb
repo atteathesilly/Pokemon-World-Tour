@@ -135,6 +135,55 @@ class PokeBattle_Move_UseRandomNonSignatureMove < PokeBattle_Move
 end
 
 #===============================================================================
+# Uses a SIGNATURE move that exists. (Metronome)
+#===============================================================================
+class PokeBattle_Move_UseRandomSignatureMove < PokeBattle_Move
+    def callsAnotherMove?; return true; end
+
+    def initialize(battle, move)
+        super
+        @gambleMoves = []
+        GameData::Move::DATA.keys.each do |move_id|
+            move_data = GameData::Move.get(move_id)
+            next unless move_data.is_signature?
+            next unless move_data.learnable?
+            next if move_data.uninvocable?
+            next if move_data.empoweredMove?
+            if battle
+                next unless battle.canInvokeMove?(move_id)
+            else
+                next if move_data.uninvocable?
+            end
+            @gambleMoves.push(move_data.id)
+        end
+    end
+
+    def pbMoveFailed?(_user, _targets, show_message)
+        if @gambleMoves.empty?
+            @battle.pbDisplay(_INTL("But it failed, since there are no moves to use!")) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbEffectGeneral(user)
+        choice = @gambleMoves.sample
+        user.pbUseMoveSimple(choice)
+    end
+
+    def getEffectScore(user, _target)
+        return randomMovesEffectScore(user, self)
+    end
+
+    def getDetailsForMoveDex(detailsList = [])
+        detailsList << _INTL("Can't call moves that affect the moveset, moves that redirect or steal moves, " +
+            "moves that steal items, Recharge moves, moves that counter, Focus moves, " +
+            "Protect moves, Helping Hand moves, Snore, After You, or Quash.")
+    end
+end
+
+
+#===============================================================================
 # The user is given the choice of using one of 3 randomly chosen status moves. (Discovered Power)
 #===============================================================================
 class PokeBattle_Move_UseChoiceOf3RandomNonSignatureStatusMoves < PokeBattle_Move

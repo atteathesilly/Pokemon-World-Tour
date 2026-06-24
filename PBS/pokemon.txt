@@ -3889,6 +3889,72 @@ Kind = Happiness
 Pokedex = This kindhearted Pokémon nurses sick Pokémon to health. It senses feelings of sadness.
 Generation = 2
 #-------------------------------
+[CLHAPPINY]
+Name = Cl. Happiny
+Type1 = DARK
+Type2 = FAIRY
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 50,50,50,50,50,50
+# Total = 300
+GenderRate = AlwaysFemale
+BaseEXP = 55
+Rareness = 115
+Happiness = 140
+Abilities = RAMBLINGGAMBLER,DEVILEDEGG
+Moves = 1,METRONOME,1,PROTECT,4,AIMTRUE,8,BULKUP,12,CALMMIND,16,EERIEIMPULSE,20,DREAMDANCE,24,SWORDSDANCE,28,HEALPULSE,32,HELPINGHAND,36,RECYCLE,40,FLING,44,SOFTBOILED,48,HYPERBEAM,52,QUIVERDANCE,56,SHIVERDANCE,60,SKILLSWAP
+LineMoves = AIMTRUE,AROMATHERAPY,BLOCK,BULKUP,CALMMIND,COUNTER,DREAMDANCE,FLING,HELPINGHAND,MIRRORCOAT,QUIVERDANCE,RECYCLE,SHIVERDANCE,SKILLSWAP,SWORDSDANCE,TRUMPCARD,WORKUP
+Tribes = DECEIVER,FORTUNE,TYRANNICAL
+StepsToHatch = 10455
+Height = 0.6
+Weight = 24.4
+Kind = Gacha
+Pokedex = It likes to offer its egg to humans, but this is a ruse, as the egg is made from dark energy and hurts to touch.
+Generation = 4
+Flags = Hidden
+Evolutions = CLCHANSEY,Level,20
+#-------------------------------
+[CLCHANSEY]
+Name = Cl. Chansey
+Type1 = DARK
+Type2 = FAIRY
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 70,70,70,70,70,70
+# Total = 420
+GenderRate = AlwaysFemale
+BaseEXP = 130
+Rareness = 95
+Happiness = 140
+Abilities = RAMBLINGGAMBLER,DEVILEDEGG
+Moves = 0,GAMBLE,1,GAMBLE
+StepsToHatch = 10455
+Height = 1.1
+Weight = 34.6
+Kind = Gacha
+Pokedex = Putting the chance in Chansey, it can embody any move ever at complete random, and it often infuses them with dark power.
+Generation = 1
+Flags = Hidden
+Evolutions = CLBLISSEY,Level,45
+#-------------------------------
+[CLBLISSEY]
+Name = Cl. Blissey
+Type1 = DARK
+Type2 = FAIRY
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 95,95,95,95,95,95
+# Total = 570
+GenderRate = AlwaysFemale
+BaseEXP = 225
+Rareness = 40
+Happiness = 140
+Abilities = RAMBLINGGAMBLER,DEVILEDEGG
+StepsToHatch = 10455
+Height = 1.5
+Weight = 46.8
+Kind = Gacha
+Pokedex = No longer hiding its malevolence, Blissey now actively encourages gambling. It drains the money and energy of its victims.
+Generation = 2
+Flags = Hidden
+#-------------------------------
 [TANGELA]
 Name = Tangela
 Type1 = GRASS

@@ -705,6 +705,12 @@ BattleHandlers::AbilityOnSwitchIn.add(:WIBBLEWOBBLE,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:RAMBLINGGAMBLER,
+  proc { |ability, battler, battle, aiCheck|
+      next battle.forceUseMove(battler, :METRONOME, ability: ability, aiCheck: aiCheck)
+  }
+)
+
 ##########################################
 # Self buffing
 ##########################################

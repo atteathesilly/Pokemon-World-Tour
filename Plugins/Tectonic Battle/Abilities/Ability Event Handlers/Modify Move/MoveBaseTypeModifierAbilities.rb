@@ -28,6 +28,14 @@ BattleHandlers::MoveBaseTypeModifierAbility.add(:NORMALIZE,
   }
 )
 
+BattleHandlers::MoveBaseTypeModifierAbility.add(:DEVILEDEGG,
+  proc { |ability, _user, move, _type|
+      next unless GameData::Type.exists?(:DARK)
+      move.powerBoost = true
+      next :DARK
+  }
+)
+
 BattleHandlers::MoveBaseTypeModifierAbility.add(:PIXILATE,
   proc { |ability, _user, move, type|
       next if type != :NORMAL || !GameData::Type.exists?(:FAIRY)

@@ -458,6 +458,10 @@ Flags = SandstormSynergy
 Name = Deterrent
 Description = Enemies which swap in take damage equal to 1/8th their HP.
 #-------------------------------
+[DEVILEDEGG]
+Name = Deviled Egg
+Description = Non-Dark moves become Dark-type and are powered up by 50%.
+#-------------------------------
 [DIRECTCURRENT]
 Name = Direct Current
 Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose to raise its Speed or heal it for 1/5th HP.
@@ -1613,6 +1617,10 @@ Description = Increases Sp. Atk by 30%.
 Name = Rain Prism
 Description = Powers up Fairy-type moves by 50% in rainstorm.
 Flags = RainstormSynergy
+#-------------------------------
+[RAMBLINGGAMBLER]
+Name = Rambling Gambler
+Description = Uses Metronome upon entry or when hit by a move.
 #-------------------------------
 [RAMPROW]
 Name = Ram Prow

@@ -325,6 +325,14 @@ BattleHandlers::TargetAbilityOnHit.add(:WIBBLEWOBBLE,
   }
 )
 
+BattleHandlers::TargetAbilityOnHit.add(:RAMBLINGGAMBLER,
+  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        next if target.fainted?
+        next -40 if aiCheck
+        battle.forceUseMove(target, :METRONOME, user.index, ability: ability)
+  }
+)
+
 BattleHandlers::TargetAbilityOnHit.add(:CONSTRICTOR,
   proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
         next unless move.physicalMove?

@@ -7167,6 +7167,18 @@ FunctionCode = RaiseUserSpAtk5IfTargetFaints
 Flags = CanProtect
 Description = When the user knocks out a target with this move, the user's Sp. Atk stat rises by five steps.
 #-------------------------------
+[GAMBLE]
+Name = Gamble
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UseRandomSignatureMove
+Flags = Uninvocable
+Description = The user uses dark powers to use a random signature move.
+Animation = SCARYFACE
+#-------------------------------
 [GLEEFULGRASP]
 Name = Gleeful Grasp
 Type = DARK
