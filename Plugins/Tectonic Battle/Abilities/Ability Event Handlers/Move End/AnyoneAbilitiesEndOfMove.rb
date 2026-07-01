@@ -32,3 +32,10 @@ BattleHandlers::AnyoneAbilityEndOfMove.add(:HMMULE,
         battler.pbRaiseMultipleStatSteps([:ATTACK, 1], user, ability: ability)
     }
 )
+
+BattleHandlers::AnyoneAbilityEndOfMove.add(:SINGER,
+    proc { |ability, battler, user, targets, move, battle|
+        next unless move.soundMove?
+        battler.applyFractionalHealing(1.0 / 8.0, ability: ability)
+    }
+)

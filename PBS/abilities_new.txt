@@ -1862,6 +1862,10 @@ Flags = RainstormSynergy
 Name = Silver Sense
 Description = Doubles critical hit chance. Restores HP for half the damage it does with critical hits.
 #-------------------------------
+[SINGER]
+Name = Singer
+Description = Heals by 1/8th HP whenever any Pokémon uses a sound move.
+#-------------------------------
 [SINKINGFEELING]
 Name = Sinking Feeling
 Description = At the end of each round, lowers other waterlogged Pokémon's Attack and Sp. Atk by two steps.

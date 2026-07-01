@@ -539,3 +539,17 @@ Special
     1,DRACOVISH,15
     1,DRACOZOLT,15
     1,TSARLETT,15
+#-------------------------------
+[105] # Mori Town
+FloweryGrass,20
+    20,BOUFFALANT,35,36
+    20,CLHAPPINY,35,36
+    20,STUFFUL,35,36
+    20,SWIRLIX,35,36
+    20,YAMPER,35,36
+FloweryGrass2,20
+    20,DEDENNE,35,36
+    20,FUECOCO,35,36
+    20,KLINK,35,36
+    20,MIENFOO,35,36
+    20,SIZZLIPEDE,35,36

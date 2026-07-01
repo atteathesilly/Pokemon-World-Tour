@@ -22376,6 +22376,66 @@ Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and bless
 Generation = 8
 Flags = Legendary
 #-------------------------------
+[FUECOCO]
+Name = Fuecoco
+Type1 = FIRE
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 67,45,59,36,63,40
+# Total = 310
+BaseEXP = 62
+Rareness = 150
+Happiness = 50
+Abilities = SINGER,UNAWARE
+Moves = 1,LEER,1,SHOUT,4,EMBER,8,ROUND,12,BITE,16,INCINERATE,20,YAWN,24,SNARL,28,ROAR,32,HEATWAVE,36,HYPERVOICE,40,SPITEFULCHANT,44,FIREBLAST,48,WILLOWISP,52,HEX,56,OVERHEAT,60,LUNARDANCE
+LineMoves = BLASTBURN,BODYSLAM,BREAKDANCE,CRUNCH,DIG,DISARMINGVOICE,DRAGONDANCE,DREAMDANCE,EARTHPOWER,EARTHQUAKE,ENCORE,ENDURE,FACADE,FIREBLAST,FIREFANG,FIREPLEDGE,FIRESPIN,FLAMECHARGE,FLAMETHROWER,FLAREBLITZ,GIGAIMPACT,HEATCRASH,HEATWAVE,HELPINGHAND,HEX,HYPERBEAM,HYPERVOICE,LIGHTNINGDANCE,OUTRAGE,OVERHEAT,REST,ROAR,SCARYFACE,SCORCHINGSANDS,SEEDBOMB,SHADOWBALL,SHADOWCLAW,SLEEPTALK,SNARL,SOLARBEAM,STOMPINGTANTRUM,SUBSTITUTE,TAKEDOWN,THUNDERFANG,WILLOWISP,ZENHEADBUTT
+Tribes = ANIMATED,MYSTIC,SCOURGE
+StepsToHatch = 5120
+Height = 0.4
+Weight = 9.8
+Kind = Fire Croc
+Pokedex = It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.
+Generation = 9
+Evolutions = CROCALOR,Level,16
+#-------------------------------
+[CROCALOR]
+Name = Crocalor
+Type1 = FIRE
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 81,55,78,49,90,58
+# Total = 411
+BaseEXP = 144
+Rareness = 100
+Happiness = 50
+Abilities = SINGER,UNAWARE
+Tribes = ANIMATED,MYSTIC,SCOURGE
+StepsToHatch = 1
+Height = 1.0
+Weight = 30.7
+Kind = Fire Croc
+Pokedex = The combination of Crocalors fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémons head.
+Generation = 9
+Evolutions = SKELEDIRGE,Level,36
+#-------------------------------
+[SKELEDIRGE]
+Name = Skeledirge
+Type1 = FIRE
+Type2 = GHOST
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 104,75,100,66,110,75
+# Total = 530
+BaseEXP = 265
+Rareness = 45
+Happiness = 50
+Abilities = SINGER,UNAWARE
+Moves = 0,TORCHSONG
+Tribes = ANIMATED,MYSTIC,SCOURGE
+StepsToHatch = 1
+Height = 1.6
+Weight = 326.5
+Kind = Singer
+Pokedex = The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirges head gained a soul.
+Generation = 9
+#-------------------------------
 [QUAXLY]
 Name = Quaxly
 Type1 = WATER

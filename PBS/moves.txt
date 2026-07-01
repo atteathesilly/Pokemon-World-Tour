@@ -3980,6 +3980,20 @@ Target = BothSides
 FunctionCode = StartSunshine6
 Description = Summons sunshine for six turns, boosting Fire-type attacks and hindering most others.
 #-------------------------------
+[TORCHSONG]
+Name = Torch Song
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = Sound,CanProtect
+EffectChance = 100
+Description = The user blows out raging flames as if singing a song. This also boosts the users Sp. Atk stat by one step.
+Animation = FIREBLAST
+#-------------------------------
 [VCREATE]
 Name = V-create
 Type = FIRE

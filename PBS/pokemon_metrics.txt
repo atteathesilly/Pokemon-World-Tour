@@ -1392,6 +1392,12 @@ FrontSprite = 1,2
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CROCALOR]
+BackSprite = 0,23
+FrontSprite = 0,22
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [CROCONAW]
 BackSprite = 0,22
 FrontSprite = 0,15
@@ -2229,6 +2235,12 @@ ShadowSize = 2
 [FROSMOTH]
 BackSprite = 0,15
 FrontSprite = 1,14
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[FUECOCO]
+BackSprite = 0,24
+FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -6053,6 +6065,12 @@ BackSprite = 0,14
 FrontSprite = 0,10
 ShadowX = 0
 ShadowSize = 2
+#-------------------------------
+[SKELEDIRGE]
+BackSprite = 0,22
+FrontSprite = -9,25
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [SKIDDO]
 BackSprite = 0,23
