@@ -366,7 +366,7 @@ Bicycle = true
 HealingSpot = 50,32,37
 #-------------------------------
 [053]
-# Kin Town  Mart
+# Kin Town Mart
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -532,7 +532,7 @@ Bicycle = false
 HealingSpot = 72,31,63
 #-------------------------------
 [075]
-# Sunyshore  Mart
+# Sunyshore Mart
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -691,7 +691,7 @@ Bicycle = false
 HealingSpot = 95,39,36
 #-------------------------------
 [097]
-# Los Machos Mega  Mart
+# Los Machos Mega Mart
 Outdoor = false
 ShowArea = false
 Bicycle = false
@@ -758,6 +758,25 @@ Environment = TallGrass
 Outdoor = false
 ShowArea = false
 Bicycle = true
+#-------------------------------
+[107]
+# Mori Center
+Outdoor = false
+ShowArea = false
+Bicycle = false
+HealingSpot = 105,42,27
+#-------------------------------
+[108]
+# Mori Cafe
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[109]
+# Mori Town Buildings
+Outdoor = false
+ShowArea = false
+Bicycle = false
 #-------------------------------
 [147]
 # PokEstate
