@@ -1449,6 +1449,19 @@ EffectChance = 10
 Description = The user stabs the opponent with a toxin-infused limb. It has a 10% chance to poison.
 Animation = POISONJAB
 #-------------------------------
+[NEWTSLAM]
+Name = Newt Slam
+Type = POISON
+Category = Physical
+Power = 200
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RecoilFullDamageDealt
+Flags = CanProtect
+Description = The user does a big attack that puts everything on the line. The user takes 100% recoil.
+Animation = BODYSLAM
+#-------------------------------
 [POISONDART]
 Name = Poison Dart
 Type = POISON

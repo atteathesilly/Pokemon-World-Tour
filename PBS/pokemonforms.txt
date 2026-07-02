@@ -1382,3 +1382,17 @@ FormName = Hero
 BaseStats = 100,120,97,100,106,87
 Abilities = ZEROTOHERO
 Pokedex = This Pokémon’s ancient genes have awakened. It is now so extraordinarily strong that it can easily lift a cruise ship with one fin.
+#-------------------------------
+[PTAUROS,1]
+FormName = Blaze Breed
+Type1 = FIGHTING
+Type2 = FIRE
+BaseStats = 80,140,115,95,80,85
+Abilities = INTIMIDATE,BLAZINGVIGOR
+#-------------------------------
+[PTAUROS,2]
+FormName = Aqua Breed
+Type1 = FIGHTING
+Type2 = WATER
+BaseStats = 80,120,85,135,80,95
+Abilities = FASCINATE,AQUATICPROWESS

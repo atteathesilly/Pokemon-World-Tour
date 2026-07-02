@@ -1188,6 +1188,12 @@ FrontSprite = 2,32
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[CLODSIRE]
+BackSprite = 0,34
+FrontSprite = 6,32
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [CLOYSTER]
 BackSprite = 0,20
 FrontSprite = -6,11
@@ -5268,6 +5274,24 @@ FrontSprite = 0,21
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[PTAUROS]
+BackSprite = 0,25
+FrontSprite = -2,23
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PTAUROS,1]
+BackSprite = 0,26
+FrontSprite = -4,22
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PTAUROS,2]
+BackSprite = 0,25
+FrontSprite = -5,24
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [PTEROFLYTE]
 BackSprite = 0,14
 FrontSprite = 0,-1
@@ -5313,6 +5337,12 @@ ShadowSize = 2
 [PURUGLY]
 BackSprite = 0,19
 FrontSprite = 0,15
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[PWOOPER]
+BackSprite = 0,29
+FrontSprite = -1,33
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------

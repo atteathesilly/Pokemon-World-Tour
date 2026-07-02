@@ -209,3 +209,37 @@ BattleHandlers::UserAbilityOnHit.add(:VERTIGOPIROUETTE,
     randomStatusProcUserAbility(ability, :DIZZY, 100, user, target, move, battle, aiCheck, aiNumHits)
   }
 )
+#===============================================================================
+# Custom Ability #18 - Combat Instinct : Normal moves are 30% stronger
+#===============================================================================
+
+BattleHandlers::DamageCalcUserAbility.add(:COMBATINSTINCT,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if type == :NORMAL
+      mults[:attack_multiplier] *= 1.3
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+#===============================================================================
+# Custom Ability #15 - Blazing Vigor: Normal move are Fire and 50% stronger
+#===============================================================================
+BattleHandlers::MoveBaseTypeModifierAbility.add(:BLAZINGVIGOR,
+  proc { |ability, _user, move, type|
+      next if type != :NORMAL || !GameData::Type.exists?(:FIRE)
+      move.powerBoost = true
+      next :FIRE
+  }
+)
+
+#===============================================================================
+# Custom Ability #16 - Aquatic Prowess: Normal move are Water and 50% stronger
+#===============================================================================
+BattleHandlers::MoveBaseTypeModifierAbility.add(:AQUATICPROWESS,
+  proc { |ability, _user, move, type|
+      next if type != :NORMAL || !GameData::Type.exists?(:WATER)
+      move.powerBoost = true
+      next :WATER
+  }
+)

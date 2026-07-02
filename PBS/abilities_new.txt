@@ -77,6 +77,10 @@ Flags = EclipseSynergy
 Name = Apricorn Armor
 Description = Takes 40% less damage from attacks by Pokémon who have a non-volatile status condition.
 #-------------------------------
+[AQUATICPROWESS]
+Name = Aquatic Prowess
+Description = Normal-type moves become Water-type and power up by 30%.
+#-------------------------------
 [ARCANEFINALE]
 Name = Arcane Finale
 Description = Turns to Finale Form when only unfainted on team. Ability becomes Synchronize.
@@ -217,6 +221,10 @@ Description = Its special attacks reduce the target's Sp. Def.
 Name = Bladebrained
 Description = Boosts the power of blade moves by 30%. Blade moves ignore the target's modified Defense and Sp. Def.
 #-------------------------------
+[BLAZINGVIGOR]
+Name = Blazing Vigor
+Description = Normal-type moves become Fire-type and power up by 30%.
+#-------------------------------
 [BLINDINGLIGHT]
 Name = Blinding Light
 Description = Move damage that's decreased by sunshine is decreased twice as much.
@@ -350,6 +358,10 @@ Description = Boosts Sp. Attack by 75%, but the Pokémon becomes frostbitten aft
 [COLDRECEPTION]
 Name = Cold Reception
 Description = Immune to Ice-type moves, and raises Attack and Sp. Atk if hit by one.
+#-------------------------------
+[COMBATINSTINCT]
+Name = Combat Instinct
+Description = Normal-type attacks are boosted by 30%.
 #-------------------------------
 [CONSTRICTOR]
 Name = Constrictor
