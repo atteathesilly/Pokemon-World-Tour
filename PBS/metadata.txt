@@ -778,6 +778,20 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[110]
+# Mori Safari Entrance
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
+[111]
+# Galar Area
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

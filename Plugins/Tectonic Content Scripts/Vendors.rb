@@ -773,6 +773,19 @@ def ballman
 	)
 end
 
+def safarisalesman
+	basicBallStock = %i[
+		SAFARIBALL
+		SWEETAPPLE
+		TARTAPPLE
+	]
+	pbPokemonMart(
+		basicBallStock,
+		_INTL("Get all your safari needs here!"),
+		!CAN_SELL_IN_VENDORS
+	)
+end
+
 def earlyBallVendor
 	basicBallStock = %i[
 		SLICEBALL
