@@ -243,3 +243,27 @@ BattleHandlers::MoveBaseTypeModifierAbility.add(:AQUATICPROWESS,
       next :WATER
   }
 )
+#===============================================================================
+# Flamboyant
+# Hits 2-5 times. Each hit has a 50% chance to be Flying-type and a 50% chance to be Fighting-type.
+# Each hit has a 20% chance to dizzy the target.
+#===============================================================================
+class PokeBattle_Move_HitTwoToFiveTimesHalfFlyingHalfFighting20Dizzy < PokeBattle_Move_HitTwoToFiveTimes
+    def pbOnStartUse(user, targets)
+        @chosen_types = []
+        pbNumHits(user, targets).times do
+            @chosen_types.push(rand(2) == 0 ? :FLYING : :FIGHTING)
+        end
+    end
+
+    def pbBaseType(user)
+        return @chosen_types[@currentHit]
+    end
+
+    def pbAdditionalEffect(user, target)
+        return if target.damageState.substitute
+        return if !target.canDizzy?(user, false, self)
+        return if @battle.pbRandom(100) >= 20
+        target.applyDizzy
+    end
+end

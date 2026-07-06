@@ -252,6 +252,19 @@ Flags = Foretold
 Description = The user chooses Fire, Electric, or Ice, then launches a shell of that type to strike the target in one turn.
 Animation = DOOMDESIRE
 #-------------------------------
+[FLAMBOYANCE]
+Name = Flamboyance
+Type = NORMAL
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoToFiveTimesHalfFlyingHalfFighting20Dizzy
+Flags = CanProtect,CanMirrorMove,Wind
+Description = Each hit is randomly Fighting or Flying and has a 20% chance to dizzy.
+Animation = BRAVEBIRD
+#-------------------------------
 [FRANTICFANG]
 Name = Frantic Fang
 Type = NORMAL

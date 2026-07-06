@@ -2136,6 +2136,12 @@ FrontSprite = 0,29
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[FLAMIGO]
+BackSprite = 0,16
+FrontSprite = -1,12
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
 [FLAPPLE]
 BackSprite = 0,24
 FrontSprite = 5,21
