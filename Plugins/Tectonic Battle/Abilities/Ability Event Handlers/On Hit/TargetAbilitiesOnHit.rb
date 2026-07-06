@@ -695,6 +695,20 @@ BattleHandlers::TargetAbilityOnHit.add(:QUILLERINSTINCT,
     }
 )
 
+BattleHandlers::TargetAbilityOnHit.add(:TOXICDEBRIS,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+        next if target.pbOpposingSide.effectAtMax?(:PoisonSpikes)
+        if aiCheck
+            layerSlots = GameData::BattleEffect.get(:PoisonSpikes).maximum - target.pbOpposingSide.countEffect(:PoisonSpikes)
+            aiNumHits = [aiNumHits,layerSlots].min
+            next -getHazardSettingEffectScore(target, user) * aiNumHits
+        end
+        battle.pbShowAbilitySplash(target, ability)
+        target.pbOpposingSide.incrementEffect(:PoisonSpikes)
+        battle.pbHideAbilitySplash(target)
+    }
+)
+
 # Only does stuff for the AI
 BattleHandlers::TargetAbilityOnHit.add(:MULTISCALE,
     proc { |ability, user, target, move, _battle, aiCheck, aiNumHits|

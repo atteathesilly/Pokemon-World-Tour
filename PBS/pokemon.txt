@@ -23035,6 +23035,65 @@ Kind = Mount
 Pokedex = Apparently Cyclizar has been allowing people to ride on its back since ancient times. Depictions of this have been found in 10,000-year-old murals.
 Generation = 9
 #-------------------------------
+[GLIMMET]
+Name = Glimmet
+Type1 = ROCK
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 48,35,42,60,105,60
+# Total = 350
+BaseEXP = 87
+Rareness = 105
+Abilities = TOXICDEBRIS,MERCILESS
+Moves = 1,PRANK,1,SLINGSHOT,4,ACID,8,SCARYFACE,12,CHARM,16,ANCIENTPOWER,20,VINEBIND,24,SLUDGE,28,STEALTHROCK,32,POWERGEM,36,POISONSPIKES,40,ACIDBALL,44,CALMMIND,48,GLIMMERPULSE,52,SNAPTRAP,56,ACIDBATH,60,WAVEOFJADE
+LineMoves = ACIDBALL,ADAMANTINEPRESS,AERIALACE,AGONIZE,AIMTRUE,AMNESIA,BAR,BELCH,BITE,BLOCK,BLUNTFORCE,BRICKBREAK,BRUTALSWING,CENTER,CLEARSMOG,CRUNCH,CRYSTALGLEAM,EMBRITTLE,ENDEAVOR,ENDURE,ENVENOM,FACADE,FIREFANG,FLAIL,FLING,FOCUSBLAST,FOCUSENERGY,GALLINGSPIT,GIGAIMPACT,GRASSKNOT,GRINDSTONE,HARSHVOICE,HEARTSWAP,HYPERBEAM,ICEFANG,INFESTATION,IRRITATE,KNOCKOFF,METEORBEAM,MIASMA,MINDWAVES,NATURALGIFT,NATUREPOWER,NULLPULSE,PAINSPLIT,PAYBACK,POISONJAB,POWERWHIP,PSYCHUP,PURSUIT,REFLECT,REST,RETREAT,ROCKALANCHE,ROCKROLL,ROCKTOMB,ROCKWRECKER,ROUND,RUIN,SANDSTORM,SHARPEN,SHATTERSHOT,SHOCKWAVE,SLEEPTALK,SLUDGEWAVE,SMASH,SMOG,SNORE,SOLARGLIDE,STAREDOWN,STARFALL,STINGINGJAB,STINGINGJEALOUSY,STINKCLOUD,STOMPINGTANTRUM,SUBSTITUTE,SUNSHINE,SWORDSDANCE,TERRAFORM,THIEF,THUNDERFANG,TOXICTASTE,TREMOR,TRUMPCARD,VANGUARD,VENOMORTAR,VENOSHOCK
+Tribes = CHARMER,DECEIVER
+StepsToHatch = 5355
+Height = 0.7
+Weight = 8.0
+Kind = Ore
+Pokedex = It absorbs nutrients from cave walls. The petals it wears are made of crystallized poison.
+Generation = 9
+Evolutions = GLIMMORA,Level,35
+#-------------------------------
+[GLIMMORA]
+Name = Glimmora
+Type1 = ROCK
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 83,55,90,86,130,81
+# Total = 525
+BaseEXP = 87
+Rareness = 105
+Abilities = TOXICDEBRIS,MERCILESS
+Moves = 0,MORTALSPIN,1,MORTALSPIN
+Tribes = CHARMER,DECEIVER
+StepsToHatch = 5355
+Height = 1.5
+Weight = 45.0
+Kind = Ore
+Pokedex = When this Pokémon detects danger, it will open up its crystalline petals and fire beams from its conical body.
+Generation = 9
+Evolutions = GLIMMERO,Level,46
+#-------------------------------
+[GLIMMERO]
+Name = Glimmero
+Type1 = ROCK
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 83,65,100,86,150,91
+# Total = 575
+BaseEXP = 87
+Rareness = 105
+Abilities = TOXICDEBRIS,MERCILESS
+Tribes = CHARMER,DECEIVER
+StepsToHatch = 5355
+Height = 2.8
+Weight = 77.0
+Kind = Ore
+Pokedex = Glimmora's petals-now larger and separated from its main body-rotate around it to provide defense while scattering poisonous fragments.
+Generation = 9
+#-------------------------------
 [FLAMIGO]
 Name = Flamigo
 Type1 = FLYING

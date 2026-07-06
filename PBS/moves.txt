@@ -2070,6 +2070,20 @@ FunctionCode = Basic
 Flags = CanProtect
 Description = The user shoots filthy garbage at the target to attack.
 #-------------------------------
+[MORTALSPIN]
+Name = Mortal Spin
+Type = POISON
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 30
+Target = AllNearFoes
+FunctionCode = MortalSpin
+Flags = CanProtect
+EffectChance = 100
+Description = A poisonous attack that can also eliminate trapping and hazards afflicting your side. Also poisons opposing Pokémon.
+Animation = POISONJAB
+#-------------------------------
 [POISONFANG]
 Name = Poison Fang
 Type = POISON

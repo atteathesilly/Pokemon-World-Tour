@@ -618,6 +618,10 @@ Description = Doubles the damage of "not very effective" moves.
 Name = Tough Claws
 Description = Increases Attack by 30%.
 #-------------------------------
+[TOXICDEBRIS]
+Name = Toxic Debris
+Description = Releases a layer of Poison Spikes when hit by an attack.
+#-------------------------------
 [TRANSISTOR]
 Name = Transistor
 Description = Powers up Electric-type moves by 50%.

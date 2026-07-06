@@ -105,8 +105,8 @@ class PokeBattle_Move_RapidSpin < PokeBattle_StatUpMove
 end
 
 #===============================================================================
-# Removes trapping moves, entry hazards and Leech Seed on user/user's side. Raises speed by 1.
-# (Rapid Spin)
+# Removes trapping moves, entry hazards and Leech Seed on user/user's side. 
+# (Tidyup)
 #===============================================================================
 class PokeBattle_Move_TidyUp < PokeBattle_StatUpMove
     def hazardRemovalMove?; return true; end
@@ -116,6 +116,30 @@ class PokeBattle_Move_TidyUp < PokeBattle_StatUpMove
         super
         @statUp = [:ATTACK, 1, :SPEED, 1]
     end
+
+    def pbEffectAfterAllHits(user, target)
+        return if user.fainted? || target.damageState.unaffected
+        user.disableEffect(:Trapping)
+        user.pbOwnSide.eachEffect(true) do |effect, _value, data|
+            next unless data.is_hazard?
+            user.pbOwnSide.disableEffect(effect)
+        end
+    end
+
+    def getEffectScore(user, target)
+        score = super
+        score += hazardWeightOnSide(user.pbOwnSide) if user.alliesInReserve?
+        score += 20 if user.effectActive?(:Trapping)
+        return score
+    end
+end
+
+#===============================================================================
+#mORTAL SPIN
+#===============================================================================
+class PokeBattle_Move_MortalSpin < PokeBattle_StatUpMove
+    def hazardRemovalMove?; return true; end
+    def aiAutoKnows?(pokemon); return false; end
 
     def pbEffectAfterAllHits(user, target)
         return if user.fainted? || target.damageState.unaffected
