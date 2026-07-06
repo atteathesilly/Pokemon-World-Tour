@@ -137,7 +137,7 @@ end
 #===============================================================================
 #mORTAL SPIN
 #===============================================================================
-class PokeBattle_Move_MortalSpin < PokeBattle_StatUpMove
+class PokeBattle_Move_MortalSpin < PokeBattle_PoisonMove
     def hazardRemovalMove?; return true; end
     def aiAutoKnows?(pokemon); return false; end
 
