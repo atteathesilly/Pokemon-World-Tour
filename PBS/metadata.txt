@@ -792,6 +792,14 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[112]
+# Makya Area
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
