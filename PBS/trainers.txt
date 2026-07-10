@@ -1189,6 +1189,23 @@ Pokemon = KLAWSAR,38
     Moves = LIQUIDATION,XSCISSOR,BAR,METEORMASH
     AbilityIndex = 0 # Frustrate
 #-------------------------------
+[POKEMONRANGER_F2,Karina]
+Policies = PRESERVE_LAST_POKEMON
+Pokemon = GLIMMORA,39
+    Moves = MORTALSPIN,STEALTHROCK,ACIDBALL,POWERGEM
+    AbilityIndex = 0 # Toxic Debris
+Pokemon = MBEAUTIFLY,39
+    Moves = ICECALIBUR,UTURN,LEECHLIFE,FELLSTINGER
+    AbilityIndex = 1 # Schadenfreude
+    Item = ASSAULTVEST
+Pokemon = GRAPIDASH,39
+    Moves = PSYCHOSCISSION,MISADVENTURE,DRILLPECK,DRILLRUN
+    AbilityIndex = 0 # Joyous Sorrow
+    Item = STRIKEVEST
+Pokemon = MAROMATISSE,39
+    Moves = DEATHKNELL,PERISHSONG,ENCHANTINGSONG,CHARM
+    AbilityIndex = 0 # Reap What You Sow
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB

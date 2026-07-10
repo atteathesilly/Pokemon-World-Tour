@@ -800,6 +800,14 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[113]
+# Paldea Area
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

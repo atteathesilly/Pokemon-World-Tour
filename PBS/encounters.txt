@@ -590,3 +590,12 @@ Land,20
     20,MVULPIX,35,36
     20,MWURMPLE,35,36
     20,MZANGOOSE,35,36
+#-------------------------------
+[113] # Paldea Area
+Land,20
+    20,FLAMIGO,35,36
+    20,GLIMMET,35,36
+    20,PTAUROS,35,36
+    20,PTAUROS_1,35,36
+    20,PTAUROS_2,35,36
+    20,PWOOPER,35,36
