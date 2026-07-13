@@ -567,6 +567,10 @@ Name = Earthshaker
 Description = In sandstorm, the Pokémon's Attack is boosted by 30%.
 Flags = SandstormSynergy
 #-------------------------------
+[EASYPREY]
+Name = Easy Prey
+Description = Uses Follow Me upon entry or when hit by a move.
+#-------------------------------
 [ECCENTRIC]
 Name = Eccentric
 Description = If its stats would be changed, instead they're changed half as much in the opposite direction (rounded up).
@@ -1824,6 +1828,10 @@ Description = Boosts Attack by 20% in hail, or 40% if also below half health.
 [SEVERE]
 Name = Severe
 Description = Its attacks are critical against numbed targets.
+#-------------------------------
+[SHADOWPRANKSTER]
+Name = Shadow Prankster
+Description = Gives +3 priority to dark-moves and boost their power by 20%.
 #-------------------------------
 [SHADOWYINFECTION]
 Name = Shadowy Infection

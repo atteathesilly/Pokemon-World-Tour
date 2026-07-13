@@ -325,6 +325,19 @@ Flags = CanSnatch
 Description = The user focuses its aim to raise its Sp. Atk and Accuracy by three steps.
 Animation = LASERFOCUS
 #-------------------------------
+[LAGOMORPHICRETREAT]
+Name = Lagomorphic Retreat
+Type = NORMAL
+Category = Adaptive
+Power = 160
+Accuracy = 0
+TotalPP = 1
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect
+Description = The user unleashes uses all its bunny power and retreats. Can't miss and can only be used once battle.
+Animation = UTURN
+#-------------------------------
 [LATHER]
 Name = Lather
 Type = NORMAL
@@ -3553,6 +3566,18 @@ FunctionCode = Basic
 Flags = CanProtect,Punch
 Description = The user launches a fist with extreme force. This attack is popular with children.
 Animation = BULLETPUNCH
+#-------------------------------
+[SAMURAISHONOR]
+Name = Samurai's Honor
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserAtkDef2CriticalHitRate1
+Flags = CanSnatch
+Description = Enables random critical hits for the user, doubles its critical hit chance, and raises its Attack and Defense by two steps.
+Animation = FOCUSENERGY
 #-------------------------------
 [SHATTERVISE]
 Name = Shatter Vise

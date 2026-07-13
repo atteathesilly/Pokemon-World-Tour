@@ -705,6 +705,12 @@ BattleHandlers::AbilityOnSwitchIn.add(:WIBBLEWOBBLE,
   }
 )
 
+BattleHandlers::AbilityOnSwitchIn.add(:EASYPREY,
+  proc { |ability, battler, battle, aiCheck|
+      next battle.forceUseMove(battler, :FOLLOWME, ability: ability, aiCheck: aiCheck)
+  }
+)
+
 BattleHandlers::AbilityOnSwitchIn.add(:RAMBLINGGAMBLER,
   proc { |ability, battler, battle, aiCheck|
       next battle.forceUseMove(battler, :METRONOME, ability: ability, aiCheck: aiCheck)

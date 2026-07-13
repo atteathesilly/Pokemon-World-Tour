@@ -4488,6 +4488,19 @@ Flags = CanProtect
 EffectChance = 100
 Description = The user controls the drum's roots to attack the target. This also lowers the target's Speed stat by two steps.
 #-------------------------------
+[FLOWERTRICK]
+Name = Flower Trick
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysCriticalHit
+Flags = CanProtect
+Description = The user throws a rigged bouquet of flowers at the target, which always hits and lands a critical hit.
+Animation = SEEDBOMB
+#-------------------------------
 [FRENZYPLANT]
 Name = Frenzy Plant
 Type = GRASS

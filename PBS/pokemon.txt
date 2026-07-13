@@ -15633,7 +15633,7 @@ BaseStats = 95,124,90,70,30,75
 BaseEXP = 162
 Rareness = 60
 Abilities = SUPERLUCK,HEARTOFJUSTICE
-Moves = 0,ARTOFWAR,1,ARTOFWAR
+Moves = 0,SAMURAISHONOR,1,SAMURAISHONOR
 StepsToHatch = 5355
 Height = 1.2
 Weight = 21.0
@@ -19830,6 +19830,27 @@ Kind = Sea Cucumber
 Pokedex = The tradition known as Pyukumuku chucking started from the custom of throwing Pyukumuku back into the sea after they wash onshore.
 Generation = 7
 #-------------------------------
+[CLPYUKUMUKU]
+Name = Cl. Pyukumuku
+Type1 = NORMAL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 115,80,100,130,30,90
+# Total = 545
+BaseEXP = 194
+Rareness = 95
+Happiness = 50
+Abilities = EASYPREY,PARANOID
+Moves = 1,RETREAT,1,SWEETKISS,3,HELPINGHAND,6,TAUNT,9,WATERLOG,12,NERVEBLOCK,15,YAWN,18,ENCORE,21,STANDTOGETHER,24,METRONOME,27,SYMBIOSIS,30,NATURALPROTECTION,33,LAGOMORPHICRETREAT,36,LATCHON,39,PAINSPLIT,42,SLACKOFF,45,ASSIST,48,PACIFY,51,TORMENT,54,SCREECH,57,NATURALPROTECTION,60,UTURN
+LineMoves = BAR,BESTOW,BLOCK,CONCENTRATE,COUNTER,CRAFTYSHIELD,ENDURE,ENERGYTRICK,FOLLOWME,GREYMIST,HAIL,HELPINGHAND,LIGHTSCREEN,LIVEWIRE,MEMENTO,MIRRORCOAT,NATURALPROTECTION,NERVEBLOCK,PAINSPLIT,POWERTRICK,PRANK,PSYCHUP,QUICKGUARD,RECYCLE,REFLECT,REST,RETREAT,SCREECH,SLEEPTALK,SUBSTITUTE,TAUNT,TICKLE,WATERLOG,WIDEGUARD
+Tribes = SERENE
+StepsToHatch = 4096
+Height = 0.3
+Weight = 1.2
+Kind = Bunny
+Pokedex = A mammal similar to Pyukumuku in appearance. However it is quite agile, and skittish. It can unleash a powerful blast on its predators.
+Generation = 7
+Flags = Hidden
+#-------------------------------
 [TYPENULL]
 Name = Type: Null
 Type1 = NORMAL
@@ -22565,6 +22586,65 @@ Kind = King
 Pokedex = Calyrex is a merciful Pokémon, capable of providing healing and blessings. It has the power to cause hearts to mend and plants to spring forth.
 Generation = 8
 Flags = Legendary
+#-------------------------------
+[SPRIGATITO]
+Name = Sprigatito
+Type1 = GRASS
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 40,61,54,65,45,45
+# Total = 310
+BaseEXP = 62
+Rareness = 150
+Happiness = 50
+Abilities = FLOWERVEIL,THICKFAT
+Moves = 1,SCRATCH,4,LEAFAGE,8,BITE,12,HONECLAWS,16,MAGICALLEAF,20,QUICKATTACK,24,SEEDBOMB,28,UTURN,32,THROATCHOP,36,SLASH,40,ENERGYBALL,44,PLAYROUGH,48,SEVER,52,LEAFBLADE,56,LEAFSTORM
+LineMoves = ACROBATICS,AERIALACE,AGILITY,AURASPHERE,BRICKBREAK,BULLETSEED,CHARM,DARKPULSE,DISARMINGVOICE,ENDURE,ENERGYBALL,FACADE,FAKETEARS,FLING,FOULPLAY,FRENZYPLANT,GIGADRAIN,GIGAIMPACT,GRASSKNOT,GRASSPLEDGE,HELPINGHAND,HYPERBEAM,KNOCKOFF,LASHOUT,LEAFSTORM,LOWKICK,LOWSWEEP,MAGICALLEAF,PLAYROUGH,POISONSPIKES,POLLENPUFF,POWERGEM,PSYCHUP,REST,SEEDBOMB,SHADOWBALL,SHADOWCLAW,SKILLSWAP,SLEEPTALK,SOLARBEAM,SPIKES,SUBSTITUTE,SWIFT,TAKEDOWN,TAUNT,THIEF,THROATCHOP,THUNDERPUNCH,TRICK,UTURN
+Tribes = MYSTIC,DECEIVER
+StepsToHatch = 5120
+Height = 0.4
+Weight = 4.1
+Kind = Grass Cat
+Pokedex = The sweet scent its body gives off mesmerizes those around it. The scent grows stronger when this Pokémon is in the sun.
+Generation = 9
+Evolutions = FLORAGATO,Level,16
+#-------------------------------
+[FLORAGATO]
+Name = Floragato
+Type1 = GRASS
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 61,80,63,83,60,63
+# Total = 410
+BaseEXP = 142
+Rareness = 100
+Happiness = 50
+Abilities = FLOWERVEIL,THICKFAT
+Tribes = MYSTIC,DECEIVER
+StepsToHatch = 5120
+Height = 0.9
+Weight = 12.2
+Kind = Grass Cat
+Pokedex = Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents.
+Generation = 9
+Evolutions = MEOWSCARADA,Level,36
+#-------------------------------
+[MEOWSCARADA]
+Name = Meowscarada
+Type1 = GRASS
+Type2 = DARK
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 76,110,70,123,81,70
+# Total = 530
+BaseEXP = 265
+Rareness = 45
+Happiness = 50
+Abilities = FLOWERVEIL,SHADOWPRANKSTER
+Moves = 0,FLOWERTRICK,1,FLOWERTRICK
+StepsToHatch = 5355
+Height = 1.5
+Weight = 31.2
+Kind = Magician
+Pokedex = This Pokemon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.
+Generation = 9
 #-------------------------------
 [FUECOCO]
 Name = Fuecoco

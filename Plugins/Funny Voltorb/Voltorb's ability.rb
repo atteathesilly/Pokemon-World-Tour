@@ -267,3 +267,20 @@ class PokeBattle_Move_HitTwoToFiveTimesHalfFlyingHalfFighting20Dizzy < PokeBattl
         target.applyDizzy
     end
 end
+#===============================================================================
+# Custom Ability #17 - Shadow Prankster : Dark Moves are 20% stronger and always priority
+#===============================================================================
+BattleHandlers::DamageCalcUserAbility.add(:SHADOWPRANKSTER,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if type == :DARK
+      mults[:attack_multiplier] *= 1.2
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
+BattleHandlers::PriorityChangeAbility.add(:SHADOWPRANKSTER,
+  proc { |ability, _battler, move, _pri, _targets = nil, _aiCheck = false|
+      next 3 if move.type == :DARK
+  }
+)
