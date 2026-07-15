@@ -808,6 +808,12 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[114]
+# Machos-Redwood Gatehouse
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
