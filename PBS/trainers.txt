@@ -958,6 +958,25 @@ Pokemon = SCIZOR,33
     Moves = BULLETPUNCH,RAKE,SHARPEN,FLY
     AbilityIndex = 0 # Technician
 #-------------------------------
+[ROUGHNECK2,Freddy]
+Pokemon = PANGORO,34
+    Gender = male
+    Moves = HATEFULHAYMAKER,DRAINPUNCH,THROATCHOP,PARTINGSHOT
+    AbilityIndex = 1 # Juggernaut
+    Item = BLACKGLASSES
+Pokemon = DIGGERSBY,34
+    Gender = male
+    Moves = DIG,BOUNCE,CLOUDBREAK,COVET
+    AbilityIndex = 0 # Dedicated
+Pokemon = COMBUSKEN,34
+    Gender = female
+    Moves = AURASPHERE,BURNINGJEALOUSY,DUSTDEVIL,DEFOG
+    AbilityIndex = 0 # Speed Boost
+Pokemon = MNINETALES,34
+    Gender = male
+    Moves = SOULEATER,SHINESHOT,IRONDEFENSE,SWEETKISS
+    AbilityIndex = 0 # Gild
+#-------------------------------
 [FIREBREATHER,Kai]
 Pokemon = FLETCHINDER,34
     Moves = FLY,IRONHEAD,TAILWIND,FLAMECHARGE

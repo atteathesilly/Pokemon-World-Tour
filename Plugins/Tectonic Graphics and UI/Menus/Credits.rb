@@ -118,7 +118,7 @@ Raffs07
 manycrows
 Mr. Gela<s>theo
 
-Kukui, Hapu, Sina and Dexio trainer sprites
+Kukui, Hapu, Anabel Sina and Dexio trainer sprites
 Beliot419
 
 Carmine and SS Fisher Trainer sprites
@@ -145,13 +145,14 @@ Various Regionals
 Raffs07
 Riptidecord
 
-Dark Starter
+Agoatalyte line
 CodeEden
 
-Psychic and Fighting Starters
+Hatchole and Chatoddle lines
 manycrows
 
 H. Sceptile Line
+Atteathesilly
 PDM20(resprite)
 
 Dragorain
