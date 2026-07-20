@@ -599,3 +599,11 @@ Land,20
     20,PTAUROS_1,35,36
     20,PTAUROS_2,35,36
     20,PWOOPER,35,36
+#-------------------------------
+[115] # Redwood Labrynth
+Land,20
+    20,COTTONEE,35,36
+    20,GROOKEY,35,36
+    20,KECLEON,35,36
+    20,PATRAT,35,36
+    20,SPRIGATITO,35,36
