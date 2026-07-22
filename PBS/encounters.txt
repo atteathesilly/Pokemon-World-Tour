@@ -607,3 +607,12 @@ Land,20
     20,KECLEON,35,36
     20,PATRAT,35,36
     20,SPRIGATITO,35,36
+#-------------------------------
+[116] # Redwood Labrynth
+Land,20
+    20,SCYTHER,35,36
+    20,CLPYUKUMUKU,35,36
+    20,BLIPBUG,35,36
+    20,CUTIEFLY,35,36
+    20,KARRABLAST,35,36
+    20,SHELMET,35,36
