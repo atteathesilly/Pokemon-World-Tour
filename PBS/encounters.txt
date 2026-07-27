@@ -624,3 +624,11 @@ Land,20
     20,JOLTIK,35,36
     20,VENIPEDE,35,36
     20,ZORUA,35,36
+#-------------------------------
+[118] # Redwood Labrynth
+Land,20
+    20,DROWZEE,35,36
+    20,GASTLY,35,36
+    20,IGGLYBUFF,35,36
+    20,INDEEDEE,35,36
+    20,STANTLER,35,36

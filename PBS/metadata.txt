@@ -816,7 +816,7 @@ Bicycle = false
 #-------------------------------
 [115]
 # Redwood Labrynth
-Outdoor = true
+Outdoor = false
 ShowArea = true
 Bicycle = true
 BattleBack = forest
@@ -824,7 +824,7 @@ Environment = TallGrass
 #-------------------------------
 [116]
 # Redwood Labrynth
-Outdoor = true
+Outdoor = false
 ShowArea = true
 Bicycle = true
 BattleBack = forest
@@ -832,11 +832,25 @@ Environment = TallGrass
 #-------------------------------
 [117]
 # Redwood Labrynth
-Outdoor = true
+Outdoor = false
 ShowArea = true
 Bicycle = true
 BattleBack = forest
 Environment = TallGrass
+#-------------------------------
+[118]
+# Redwood Labrynth
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
+[119]
+# Redwood Labrynth
+Outdoor = false
+ShowArea = false
+Bicycle = false
 #-------------------------------
 [147]
 # PokEstate
