@@ -1095,6 +1095,21 @@ Pokemon = LUDICOLO,37
     Moves = DREAMDANCE,GIGADRAIN,BUBBLEBARRAGE,FAKEOUT
     AbilityIndex = 0 # Fiesta
 #-------------------------------
+[PSYCHIC_F2,Paula]
+Pokemon = WYRDEER,36
+    Moves = PSYSHIELDBASH,SCYTHEKICK,BODYSLAM,GLACIALRAM
+    AbilityIndex = 0 # No Guard
+    Item = SITRUSBERRY
+Pokemon = CLPYUKUMUKU,36
+    Moves = LAGOMORPHICRETREAT,LATCHON,SLACKOFF,STANDTOGETHER
+    AbilityIndex = 1 # Paranoid
+Pokemon = MEOWSCARADA,37
+    Moves = FLOWERTRICK,THROATCHOP,SLASH,PLAYROUGH
+    AbilityIndex = 1 # Shadow Prankster
+Pokemon = MONOSTIC,37
+    Moves = PATTERNRELEASE,WISH,SUCKERPUNCH,OCCULTATION
+    AbilityIndex = 0 # Prankster
+#-------------------------------
 [PARASOLLADY3,Peach]
 Pokemon = INFERNAPE,36
     Moves = FLOWSTATE,ACROBATICS,FIREPUNCH,STORMTHROW
