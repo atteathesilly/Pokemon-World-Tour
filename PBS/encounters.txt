@@ -640,3 +640,11 @@ Land,20
     20,ORANGURU,35,36
     20,PASSIMIAN,35,36
     20,SCORBUNNY,35,36
+#-------------------------------
+[121] # Redwood Labrynth
+Land,20
+    20,BARBOACH,35,36
+    20,MINUN,35,36
+    20,PIKACHU,35,36
+    20,PLUSLE,35,36
+    20,SOBBLE,35,36

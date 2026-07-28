@@ -149,7 +149,7 @@ Pocket = 1
 Price = 4000
 FieldUse = OnPokemon
 Flags = EvolutionItem
-Description = A crystal emanating otherworldly Mega energy, used to evolve certain Pokémon into their alternate Mega forms.
+Description = A crystal emanating weird Mega energy, used to evolve certain Pokémon into their alternate Mega forms.
 #-------------------------------
 [KNIGHTHELMET]
 Name = Knight Helmet
