@@ -632,3 +632,11 @@ Land,20
     20,IGGLYBUFF,35,36
     20,INDEEDEE,35,36
     20,STANTLER,35,36
+#-------------------------------
+[120] # Redwood Labrynth
+Land,20
+    20,FLETCHLING,35,36
+    20,KOMALA,35,36
+    20,ORANGURU,35,36
+    20,PASSIMIAN,35,36
+    20,SCORBUNNY,35,36

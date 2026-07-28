@@ -852,6 +852,14 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[120]
+# Redwood Labrynth
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
