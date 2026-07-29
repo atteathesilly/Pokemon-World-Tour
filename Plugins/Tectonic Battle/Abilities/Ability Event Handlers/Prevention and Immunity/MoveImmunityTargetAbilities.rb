@@ -127,6 +127,12 @@ BattleHandlers::MoveImmunityTargetAbility.add(:WATERABSORB,
   }
 )
 
+BattleHandlers::MoveImmunityTargetAbility.add(:EARTHEATER,
+  proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
+      next pbBattleMoveImmunityHealAbility(ability, user, target, move, type, :GROUND, battle, showMessages, aiCheck)
+  }
+)
+
 BattleHandlers::MoveImmunityTargetAbility.add(:STEELABSORB,
   proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
     next pbBattleMoveImmunityHealAbility(ability, user, target, move, type, :STEEL, battle, showMessages, aiCheck)

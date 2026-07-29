@@ -59,6 +59,16 @@ class PokeBattle_Move_SuperEffectiveAgainstRock < PokeBattle_TypeSuperMove
 end
 
 #===============================================================================
+# Effectiveness against GROUND-type is 2x. (scourge of Desert)
+#===============================================================================
+class PokeBattle_Move_SuperEffectiveAgainstGround < PokeBattle_TypeSuperMove
+    def initialize(battle, move)
+        super
+        @typeHated = :GROUND
+    end
+end
+
+#===============================================================================
 # Effectiveness against Flying-type is 2x. (WHO THE HELL DO YOU THINK IT IS)
 #===============================================================================
 class PokeBattle_Move_SuperEffectiveAgainstFlying < PokeBattle_TypeSuperMove

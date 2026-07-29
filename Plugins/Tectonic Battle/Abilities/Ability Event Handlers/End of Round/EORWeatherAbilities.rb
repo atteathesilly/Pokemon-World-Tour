@@ -149,3 +149,13 @@ BattleHandlers::EORWeatherAbility.add(:BIGCHILL,
         end
   }
 )
+
+BattleHandlers::EORWeatherAbility.add(:DEVILISHDUST,
+  proc { |ability, _weather, battler, battle|
+        next unless battle.sandy?
+        battler.eachOther do |b|
+            next unless b.takesHailDamage?
+            b.pbLowerMultipleStatSteps(DEFENDING_STATS_1, battler, ability: ability)
+        end
+  }
+)

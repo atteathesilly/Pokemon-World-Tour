@@ -2070,6 +2070,12 @@ FrontSprite = 0,11
 ShadowX = 0
 ShadowSize = 3
 #-------------------------------
+[EYAMASK]
+BackSprite = 0,27
+FrontSprite = 0,20
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [FALINKS]
 BackSprite = 0,27
 FrontSprite = -1,31
@@ -3257,6 +3263,12 @@ BackSprite = 0,32
 FrontSprite = 0,27
 ShadowX = 0
 ShadowSize = 1
+#-------------------------------
+[IKANARIGUS]
+BackSprite = 0,14
+FrontSprite = 0,5
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [ILLUMISE]
 BackSprite = 0,26

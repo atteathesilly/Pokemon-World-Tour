@@ -1865,6 +1865,19 @@ EffectChance = 10
 Description = The user tosses hot desert sand on the target. It has a 10% chance to burn.
 Animation = SCORCHINGSANDS
 #-------------------------------
+[SCOURGEOFTHEDESERT]
+Name = Scourge of the Desert
+Type = GROUND
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 12
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstGround
+Flags = CanProtect
+Description = The user hits the opponent with infested sand. Super effective versus Ground-types.
+Animation = SANDSTORM
+#-------------------------------
 [SIROCCO]
 Name = Sirocco
 Type = GROUND

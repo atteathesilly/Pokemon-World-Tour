@@ -33,7 +33,7 @@ BattleBGM = Battle another
 Name = Archfriend
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle lainie
+BattleBGM = Battle Lainie
 #-------------------------------
 [AROMALADY]
 Name = Aroma Lady
@@ -802,6 +802,12 @@ Name = Juggler
 Gender = Male
 BaseMoney = 32
 IntroBGM = POKEFAN
+#-------------------------------
+[KELPIE]
+Name = Treasure Thief
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle lainie
 #-------------------------------
 [KIMONOGIRL]
 Name = Kimono Girl

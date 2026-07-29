@@ -474,6 +474,11 @@ Description = Enemies which swap in take damage equal to 1/8th their HP.
 Name = Deviled Egg
 Description = Non-Dark moves become Dark-type and are powered up by 50%.
 #-------------------------------
+[DEVILISHDUST]
+Name = Devilish Dust
+Description = At the end of each turn in sandstorm, each Pokémon not immune to sandstorm has their Def. and Sp. Def lowered.
+Flags = SandstormSynergy
+#-------------------------------
 [DIRECTCURRENT]
 Name = Direct Current
 Description = At the end of each turn, its Sp. Atk is lowered. Then, you choose to raise its Speed or heal it for 1/5th HP.

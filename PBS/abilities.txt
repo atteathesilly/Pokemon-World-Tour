@@ -147,6 +147,10 @@ Name = Dry Skin
 Description = Heals 1/8 HP in rainstorm, 1/4 when hit by Water-type moves. Loses 1/8 in sunshine, takes 25% more from Fire-type moves.
 Flags = RainstormSynergy
 #-------------------------------
+[EARTHEATER]
+Name = Earth Eater
+Description = Immune to Ground-type moves and restores 25% of max HP when hit by one.
+#-------------------------------
 [EMERGENCYEXIT]
 Name = Emergency Exit
 Description = Switches out if its HP becomes half or less.
