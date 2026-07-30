@@ -648,3 +648,11 @@ Land,20
     20,PIKACHU,35,36
     20,PLUSLE,35,36
     20,SOBBLE,35,36
+#-------------------------------
+[122] # Redwood Labrynth
+FloweryGrass2,20
+    20,ILLUMISE,35,36
+    20,LEDYBA,35,36
+    20,SIGILYPH,35,36
+    20,SPINARAK,35,36
+    20,VOLBEAT,35,36
