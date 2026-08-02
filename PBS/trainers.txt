@@ -1240,6 +1240,28 @@ Pokemon = MAROMATISSE,39
     Moves = DEATHKNELL,PERISHSONG,ENCHANTINGSONG,CHARM
     AbilityIndex = 0 # Reap What You Sow
 #-------------------------------
+[KELPIE,Kelpie]
+Pokemon = AZELF,40
+    Moves = PSYCHESWITCH,CALMMIND,ENDURE,RISINGPOWER
+    AbilityIndex = 0 # Will Aura
+    Item = REINFORCINGROD
+Pokemon = CONKELDURR,39
+    Moves = COLUMNARPIN,DRAINPUNCH,BULKUP,FLOWSTATE
+    AbilityIndex = 0 # Expertise
+    Item = MUSCLEBAND
+Pokemon = CRSIRFETCHD,40
+    Moves = WINDLASSO,BRICKBREAK,DRILLPECK,THROATCHOP
+    AbilityIndex = 0 # Bandit Lasso
+    Item = ASSAULTVEST
+Pokemon = COFAGRIGUS,40
+    Moves = PHARAOHSCURSE,WILLOWISP,HEX,PROTECT
+    AbilityIndex = 1 # Skill Link
+    Item = SITRUSBERRY
+Pokemon = EELEKTROSS,40
+    Moves = VOLTSWITCH,POISONJAB,ELECTROSLASH,DRAGONTAIL
+    AbilityIndex = 1 # Frustrate
+    Item = SHUCABERRY
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
