@@ -876,6 +876,12 @@ Bicycle = true
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[123]
+# Abyssal Temple
+Outdoor = false
+ShowArea = true
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

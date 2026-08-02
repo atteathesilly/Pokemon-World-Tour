@@ -643,10 +643,10 @@ Land,20
 #-------------------------------
 [121] # Redwood Labrynth
 Land,20
-    20,BARBOACH,35,36
     20,MINUN,35,36
     20,PIKACHU,35,36
     20,PLUSLE,35,36
+    20,POOCHYENA,35,36
     20,SOBBLE,35,36
 #-------------------------------
 [122] # Redwood Labrynth
@@ -656,3 +656,17 @@ FloweryGrass2,20
     20,SIGILYPH,35,36
     20,SPINARAK,35,36
     20,VOLBEAT,35,36
+#-------------------------------
+[123] # Abyssal Temple
+Puddle,20
+    20,BARBOACH,35,36
+    20,BRUXISH,35,36
+    20,DRATINI,35,36
+    20,QWILFISH,35,36
+    20,SHELLDER,35,36
+FloweryGrass2,20
+    20,ARON,35,36
+    20,EYAMASK,35,36
+    20,SEEDOT,35,36
+    20,SPINDA,35,36
+    20,ZIGZAGOON,35,36
