@@ -1241,6 +1241,7 @@ Pokemon = MAROMATISSE,39
     AbilityIndex = 0 # Reap What You Sow
 #-------------------------------
 [KELPIE,Kelpie]
+Policies = KELPIE
 Pokemon = AZELF,40
     Moves = PSYCHESWITCH,CALMMIND,ENDURE,RISINGPOWER
     AbilityIndex = 0 # Will Aura
