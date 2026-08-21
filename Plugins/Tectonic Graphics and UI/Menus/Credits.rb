@@ -118,6 +118,9 @@ Raffs07
 manycrows
 Mr. Gela<s>theo
 
+Drawn Cutscenes
+Ace60
+
 Kukui, Hapu, Anabel Sina and Dexio trainer sprites
 Beliot419
 
