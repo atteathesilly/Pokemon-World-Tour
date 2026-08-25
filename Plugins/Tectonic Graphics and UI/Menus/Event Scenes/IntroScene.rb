@@ -84,7 +84,7 @@ class IntroEventScene < EventScene
     onUpdate.clear
     onCTrigger.clear
     # Play random cry
-    Pokemon.play_cry(:REGIGIGAS)
+    Pokemon.play_cry(:NECROZMA)
     @pic.moveXY(0, 20, 0, 0)   # Adds 20 ticks (1 second) pause
     pictureWait
     # Fade out
