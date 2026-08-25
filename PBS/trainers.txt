@@ -293,6 +293,8 @@ Pokemon = TYRUNT,19
     Moves = GRANITEHEAD,DRAGONTAIL,CHARM
     AbilityIndex = 0 # Wrath Instinct
 Pokemon = LOTAD,19
+    Gender = male
+    Shiny = yes
     Moves = MEGADRAIN,BUBBLEBEAM,FAKEOUT
     AbilityIndex = 0 # Fiesta
 Pokemon = SANDYGAST,19
@@ -1262,6 +1264,26 @@ Pokemon = EELEKTROSS,40
     Moves = VOLTSWITCH,POISONJAB,ELECTROSLASH,DRAGONTAIL
     AbilityIndex = 1 # Frustrate
     Item = SHUCABERRY
+#-------------------------------
+[WANDERER,Mirora B.,1]
+Pokemon = CRELECTRODE,37
+    Moves = BLINDINGDANCE,SMOLDERRAVE,FLASHCANNON,LIGHTNINGDANCE
+    AbilityIndex = 0 # Disco Lights
+Pokemon = TYRANTRUM,39
+    Moves = CALAMITOUSSLASH,ROCKALANCHE,PSYCHICFANGS,IRONHEAD
+    AbilityIndex = 0 # Wrath Instinct
+    Item = MUSCLEBAND
+Pokemon = LUDICOLO,37
+    Moves = DREAMDANCE,GIGADRAIN,HYPERVOICE,BUBBLEBLASTER
+    AbilityIndex = 0 # Fiesta
+Pokemon = LUDICOLO,37
+    Gender = male
+    Shiny = yes
+    Moves = DREAMDANCE,GIGADRAIN,HYPERVOICE,BUBBLEBLASTER
+    AbilityIndex = 0 # Fiesta
+Pokemon = BOUFFALANT,37
+    Moves = SWORDSDANCE,ROCKOUT,ELECTROSLASH,BODYSLAM
+    AbilityIndex = 1 # Groovy
 #-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
