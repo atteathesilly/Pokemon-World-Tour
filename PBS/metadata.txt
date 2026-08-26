@@ -888,6 +888,12 @@ Outdoor = false
 ShowArea = true
 Bicycle = false
 #-------------------------------
+[125]
+# Los Machos Gym
+Outdoor = false
+ShowArea = false
+Bicycle = false
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
