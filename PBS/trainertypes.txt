@@ -299,7 +299,7 @@ BaseMoney = 16
 IntroBGM = YOUNGSTER
 #-------------------------------
 [CAPTAINSYDNEY]
-Name = Sailor
+Name = Pirate Captain
 Gender = Unknown
 BaseMoney = 32
 IntroBGM = SAILOR
@@ -1174,7 +1174,7 @@ BaseMoney = 40
 IntroBGM = CYCLING
 #-------------------------------
 [PIRATE]
-Name = Sailor
+Name = Pirate
 Gender = Male
 BaseMoney = 32
 IntroBGM = SAILOR
