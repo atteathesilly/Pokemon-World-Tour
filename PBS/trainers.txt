@@ -1285,6 +1285,33 @@ Pokemon = BOUFFALANT,37
     Moves = SWORDSDANCE,ROCKOUT,ELECTROSLASH,BODYSLAM
     AbilityIndex = 1 # Groovy
 #-------------------------------
+[LEADER_GIANNA,Gianna]
+Policies = GIANNA,RAIN_TEAM
+Pokemon = STUNFISK,40
+    Moves = EARTHPOWER,THUNDER,VOLTSWITCH,DEFIBRILLATE
+    AbilityIndex = 1 # Drizzle
+    Item = DAMPROCK
+Pokemon = PIKACHUBELLE,40
+    Moves = COLDPARESIS,THUNDER,FRIGIDJEALOUSY,HELPINGHAND
+    AbilityIndex = 0 # Flash Freeze
+    Item = MAGNET
+Pokemon = AZUMARILL,40
+    Moves = BUBBLEBARRIER,LIQUIDATION,PLAYROUGH,ENCORE
+    AbilityIndex = 1 # Pure Force
+    Item = DAMPROCK
+Pokemon = GOROCHU,40
+    Moves = ELECTROSLASH,CROSSCHOP,PROTECT,WISH
+    AbilityIndex = 0 # Xcellent Battler
+    Item = SITRUSBERRY
+Pokemon = SLIGGOO,40
+    Moves = DRAGONPULSE,ACIDBALL,SUPERSONIC,RAINSTORM
+    AbilityIndex = 1 # Hydration
+    Item = EVIOLITE
+Pokemon = CASTFORM,40
+    Moves = INVITERAINSTORM,WEATHERBURST,HEATWAVE,MOONBLAST
+    AbilityIndex = 1 # Forecast
+    Item = DAMPROCK
+#-------------------------------
 [COOLTRAINER_M7,Xander]
 Pokemon = JOLTIK,15
     Moves = THUNDERSHOCK,LIGHTSHOW,STICKYWEB,NUMB
