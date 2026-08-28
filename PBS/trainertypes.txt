@@ -298,6 +298,12 @@ Gender = Male
 BaseMoney = 16
 IntroBGM = YOUNGSTER
 #-------------------------------
+[CAPTAINSYDNEY]
+Name = Sailor
+Gender = Unknown
+BaseMoney = 32
+IntroBGM = SAILOR
+#-------------------------------
 [CEO]
 Name = CEO
 Gender = Female
@@ -1166,6 +1172,12 @@ Name = Pilot
 Gender = Male
 BaseMoney = 40
 IntroBGM = CYCLING
+#-------------------------------
+[PIRATE]
+Name = Sailor
+Gender = Male
+BaseMoney = 32
+IntroBGM = SAILOR
 #-------------------------------
 [PLZA_HEX_MANIAC]
 Name = Hex Maniac
