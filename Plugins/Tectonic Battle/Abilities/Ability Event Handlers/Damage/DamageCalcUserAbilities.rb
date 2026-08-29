@@ -426,6 +426,15 @@ BattleHandlers::DamageCalcUserAbility.add(:SUPERALLOY,
   }
 )
 
+BattleHandlers::DamageCalcUserAbility.add(:PIRATEHOOK,
+  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
+    if type == :STEEL
+      mults[:attack_multiplier] *= 1.5
+      user.aiLearnsAbility(ability) unless aiCheck
+    end
+  }
+)
+
 BattleHandlers::DamageCalcUserAbility.add(:SCALDINGSMOKE,
   proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
     if type == :POISON

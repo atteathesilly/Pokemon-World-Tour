@@ -4,6 +4,10 @@
 Name = Above It All
 Description = After being attacked, uses Parting Shot to switch out.
 #-------------------------------
+[ABOVETHELAW]
+Name = Above the Law
+Description = Immune to Fighting-type moves, and raises Speed if hit by one.
+#-------------------------------
 [ACCUMULATION]
 Name = Accumulation
 Description = The Pokémon gains twice as many stats from leveling up.
@@ -1542,6 +1546,10 @@ Description = Whenever a foe raises their stats, the Pokémon follows suit.
 [PHASESHIFT]
 Name = Phase Shift
 Description = The Pokémon's moves deal 50% more damage if they're a different type than last.
+#-------------------------------
+[PIRATEHOOK]
+Name = Pirate Hook
+Description = Powers up Steel-type moves by 50%.
 #-------------------------------
 [PLACIDITY]
 Name = Placidity

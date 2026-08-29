@@ -517,6 +517,19 @@ class PokeBattle_Move_AlliesAlsoUseSlashAgainstTarget < PokeBattle_Move
 end
 
 #===============================================================================
+# Allies of the user also attack the target with ChaChiing. (Avast ye)
+#===============================================================================
+class PokeBattle_Move_AlliesAlsoUseChaChingAgainstTarget < PokeBattle_Move
+    def pbEffectAfterAllHits(user, target)
+        user.eachAlly do |b|
+            break if target.fainted?
+            @battle.pbDisplay(_INTL("{1} joins in the attack!", b.pbThis))
+            battle.forceUseMove(b, :CHACHING, target.index)
+        end
+    end
+end
+
+#===============================================================================
 # Can't miss if attacking a target that already used an attack this turn. (Power Whip)
 #===============================================================================
 class PokeBattle_Move_CantMissAgainstTargetAlreadyAttacked < PokeBattle_Move

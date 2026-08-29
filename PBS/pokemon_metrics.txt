@@ -7554,6 +7554,12 @@ FrontSprite = 0,2
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[YOSHISMEE]
+BackSprite = 0,4
+FrontSprite = 0,5
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [YUKIMONO]
 BackSprite = 0,8
 FrontSprite = 0,5

@@ -47,6 +47,12 @@ BattleHandlers::MoveImmunityTargetAbility.add(:CHALLENGER,
   }
 )
 
+BattleHandlers::MoveImmunityTargetAbility.add(:ABOVETHELAW,
+  proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
+      next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :FIGHTING, SPEED, nil, battle, showMessages, aiCheck)
+  }
+)
+
 BattleHandlers::MoveImmunityTargetAbility.add(:HEARTOFJUSTICE,
   proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
       next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :DARK, ATTACKING_STATS_1, nil, battle, showMessages, aiCheck)

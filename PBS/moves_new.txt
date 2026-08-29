@@ -26,6 +26,19 @@ Flags = CanSnatch
 Description = The user steadies its eyes, mind, and body in order to maximize its Accuracy.
 Animation = MINDREADER
 #-------------------------------
+[AVASTYE]
+Name = Avast Ye!
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlliesAlsoUseChaChingAgainstTarget
+Flags = CanProtect
+Description = The user calls a plunder on the target, inspiring its allies to follow up by using Cha-ching on the target.
+Animation = LIQUIDATION
+#-------------------------------
 [BEDFELLOWS]
 Name = Bedfellows
 Type = NORMAL
@@ -6375,6 +6388,19 @@ Target = FoeSide
 FunctionCode = FrostSpikes
 Flags = CanMagicCoat
 Description = The user lays frozen spikes on the foe's side. One layer hurts switched in foes, two layers frostbites.
+#-------------------------------
+[FROZENBOOTY]
+Name = Frozen Booty
+Type = ICE
+Category = Adaptive
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = AddMoneyGainedFromBattle
+Flags = CanProtect
+Description = The user attacks with frozen treasure. Money is earned after the battle.
+Animation = ICICLECRASH
 #-------------------------------
 [GLACIALRAM]
 Name = Glacial Ram
