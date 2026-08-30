@@ -277,7 +277,7 @@ module Compiler
     firstPage = RPG::Event::Page.new
     ret.pages[0] = firstPage
     firstPage.graphic.character_name = "zAvatar_#{avatarSpecies}"
-    firstPage.graphic.opacity = 180
+    firstPage.graphic.opacity = 255
     firstPage.graphic.direction = direction
     firstPage.trigger = 2   # On event touch
     firstPage.step_anime = true # Animate while still

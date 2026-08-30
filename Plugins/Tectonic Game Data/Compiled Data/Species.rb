@@ -628,6 +628,10 @@ module GameData
             return @flags.include?("Hidden")
         end
 
+        def isRegional?
+            return @flags.include?("Regional")
+        end
+
         def canTutorAny?
             return @flags.include?("TutorAny")
         end
