@@ -1812,6 +1812,16 @@ Flags = CanProtect,Sound
 Description = The user hits a pitch that turns earth and stone to dust, damaging its foes.
 Animation = SCORCHINGSANDS
 #-------------------------------
+[REGIONALBOOST]
+Name = Regional Boost
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserOrNearAlly
+FunctionCode = ScaleswithRegionals
+Description = The user channels power to increase the offense stats of the target by one stage for each regional form in the party.
+#-------------------------------
 [ROTARYHEADBUTT]
 Name = Rotary Headbutt
 Type = GROUND
@@ -3554,16 +3564,6 @@ Target = BothSides
 FunctionCode = StartPolarizeTypeMatchups8
 Description = The user creates a high quality area for 8 turns in which super-effective deals 25% more, and not very effective deals 25% less.
 Animation = WONDERROOM
-#-------------------------------
-[REGIONALBOOST]
-Name = Regional Boost
-Type = GROUND
-Category = Status
-Accuracy = 0
-TotalPP = 10
-Target = UserOrNearAlly
-FunctionCode = ScaleswithRegionals
-Description = The user channels power to increase the offense
 #-------------------------------
 [RAILCANNON]
 Name = Rail Cannon

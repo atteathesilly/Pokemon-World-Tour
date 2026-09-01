@@ -10608,8 +10608,8 @@ Tribes = MYSTIC,SCRAPPER,TACTICIAN
 StepsToHatch = 6630
 Height = 0.3
 Weight = 0.8
-Kind = Planetoid
-Pokedex = A genetically engineered variant of Castform made to study regions. It mysteriously gains power when surrounded by Pokémon with regional forms.
+Kind = Tiny Planet
+Pokedex = A genetically engineered Castform made to study regions, it gains power when surrounded by Pokémon with regional forms. The moon is named Lunaform.
 Generation = 3
 Flags = Hidden,Regional
 #-------------------------------

@@ -44,16 +44,19 @@ BattleHandlers::TargetAbilityOnHit.add(:LUNARIOT,
     }
 )
 
+#########################################
+# Other battle effects
+#########################################
 BattleHandlers::TargetAbilityOnHit.add(:PLANETOID,
     proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-      if aiCheck
-          next getGravityEffectScore(battler, 5)
-      else
-          battle.pbShowAbilitySplash(battler, ability)
-          battle.pbAnimation(:GRAVITY, battler, nil, 0)
-          battle.field.applyEffect(:Gravity, 5)
-          battle.pbHideAbilitySplash(battler)
-      end
+        if aiCheck
+            next getGravityEffectScore(user, 4)
+        else
+            battle.pbShowAbilitySplash(target, ability)
+            battle.pbAnimation(:GRAVITY, target, nil, 0)
+            battle.field.applyEffect(:Gravity, 4)
+            battle.pbHideAbilitySplash(target)
+        end
     }
 )
 
