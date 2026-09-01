@@ -44,6 +44,19 @@ BattleHandlers::TargetAbilityOnHit.add(:LUNARIOT,
     }
 )
 
+BattleHandlers::TargetAbilityOnHit.add(:PLANETOID,
+    proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
+      if aiCheck
+          next getGravityEffectScore(battler, 5)
+      else
+          battle.pbShowAbilitySplash(battler, ability)
+          battle.pbAnimation(:GRAVITY, battler, nil, 0)
+          battle.field.applyEffect(:Gravity, 5)
+          battle.pbHideAbilitySplash(battler)
+      end
+    }
+)
+
 #########################################
 # Stat change abilities
 #########################################

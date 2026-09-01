@@ -3555,6 +3555,16 @@ FunctionCode = StartPolarizeTypeMatchups8
 Description = The user creates a high quality area for 8 turns in which super-effective deals 25% more, and not very effective deals 25% less.
 Animation = WONDERROOM
 #-------------------------------
+[REGIONALBOOST]
+Name = Regional Boost
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserOrNearAlly
+FunctionCode = ScaleswithRegionals
+Description = The user channels power to increase the offense
+#-------------------------------
 [RAILCANNON]
 Name = Rail Cannon
 Type = STEEL

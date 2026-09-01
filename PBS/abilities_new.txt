@@ -1559,6 +1559,10 @@ Description = Takes no damage from non-volatile status conditions.
 Name = Planar Veil
 Description = Sets screens for two more turns.
 #-------------------------------
+[PLANETOID]
+Name = Planetoid
+Description = Summons gravity for four turns when hit by an attack.
+#-------------------------------
 [PLASMAGLOBE]
 Name = Plasma Globe
 Description = Attacks against the Pokémon deal 50% more damage, but the attacker takes 100% recoil.

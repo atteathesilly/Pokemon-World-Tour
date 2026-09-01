@@ -5526,6 +5526,12 @@ FrontSprite = 0,9
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[REGIONFORM]
+BackSprite = 0,29
+FrontSprite = 0,31
+ShadowX = 0
+ShadowSize = 1
+#-------------------------------
 [REGIROCK]
 BackSprite = 0,14
 FrontSprite = -6,11
