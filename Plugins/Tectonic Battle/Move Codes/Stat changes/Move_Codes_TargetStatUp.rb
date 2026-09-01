@@ -184,3 +184,42 @@ class PokeBattle_Move_RaiseTargetWorstThreeStats1 < PokeBattle_Move
         return getMultiStatUpEffectScore(statUp(user, target), user, target)
     end
 end
+
+#=========================================================================================================
+# Raises the target's Attack and Special Attack by X steps, 
+# where X is the number of Pokémon with the IsRegional? flag in the user's party. (Regional Boost) 
+#=========================================================================================================
+class PokeBattle_Move_ScaleswithRegionals < PokeBattle_Move
+    def pbFailsAgainstTarget?(user, target, show_message)
+        regional_count = 0
+        user.ownerParty.each do |pkmn|
+            next unless pkmn
+            next if pkmn.egg?
+            species_data = GameData::Species.get(pkmn.species)
+            regional_count += 1 if species_data && species_data.isRegional?
+        end
+
+        if regional_count == 0
+            @battle.pbDisplay(_INTL("But it failed!")) if show_message
+            return true
+        end
+
+        return !target.pbCanRaiseStatStep?(:ATTACK, user, self, show_message) &&
+               !target.pbCanRaiseStatStep?(:SPECIAL_ATTACK, user, self, show_message)
+    end
+
+    def pbEffectAgainstTarget(user, target)
+        regional_count = 0
+        user.ownerParty.each do |pkmn|
+            next unless pkmn
+            next if pkmn.egg?
+            species_data = GameData::Species.get(pkmn.species)
+            regional_count += 1 if species_data && species_data.isRegional?
+        end
+
+        return if regional_count == 0
+
+        stat_up = [:ATTACK, regional_count, :SPECIAL_ATTACK, regional_count]
+        target.pbRaiseMultipleStatSteps(stat_up, user, move: self)
+    end
+end
