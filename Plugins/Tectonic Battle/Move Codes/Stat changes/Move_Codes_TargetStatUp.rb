@@ -222,4 +222,11 @@ class PokeBattle_Move_ScaleswithRegionals < PokeBattle_Move
         stat_up = [:ATTACK, regional_count, :SPECIAL_ATTACK, regional_count]
         target.pbRaiseMultipleStatSteps(stat_up, user, move: self)
     end
+
+        
+    def getDetailsForMoveDex(detailsList = [])
+        detailsList << _INTL("Regional counts any Pokemon who is a region variant, like Alolan Muk," +
+            " any convergent, like Regionform, and any evolution of a regional, like Obstagoon, " +
+            "and any Pokemon with a regional form, like Kanto Sandslash.")
+    end
 end

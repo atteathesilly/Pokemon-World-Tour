@@ -144,23 +144,6 @@ class PokeBattle_Move_ScalesFaintedPartyMembers < PokeBattle_Move
 end
 
 #===============================================================================
-#The user increases the targets offensive stats for each regional in the party
-#this is a placeholder copy of from beyond cuz i have no clue how to do this
-#regionals are isRegional? tag
-#===============================================================================
-class PokeBattle_Move_ScaleswithRegionals < PokeBattle_Move
-    def pbBaseDamage(baseDmg, user, target)
-        user.ownerParty.each do |partyPokemon|
-            next unless partyPokemon
-            next if partyPokemon.personalID == user.personalID
-            next unless partyPokemon.fainted?
-            baseDmg += 20
-        end
-        return baseDmg
-    end
-end
-
-#===============================================================================
 # Power increases with the highest allies defense. (Hard Place)
 #===============================================================================
 class PokeBattle_Move_HardPlace < PokeBattle_Move
