@@ -42,6 +42,7 @@ Kind = Feisty
 Pokedex = A feisty chick native to Gerenia, it wishes to leave but does not have the ability to fly yet.
 Generation = 4
 Evolutions = GCHATOT,Level,21
+Flags = Regional
 #-------------------------------
 [GCHATOT]
 Name = G. Chatot
@@ -61,7 +62,7 @@ Weight = 1.9
 Kind = Explorer
 Pokedex = These Chatots are rarely seen in Gerenia itself. They migrate as far as far as they can in search of treasure. It is believed they settled in Sinnoh as well.
 Generation = 4
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = ADVENTAWK,Level,40
 #-------------------------------
 [ADVENTAWK]
@@ -82,7 +83,7 @@ Weight = 41.0
 Kind = Explorer
 Pokedex = Adventawk can easily navigate both land and sea with its powerful wings. It is said they hoard as much wealth as a Dragon-type.
 Generation = 4
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [AGOATALYTE]
 Name = Agoatalyte
@@ -637,6 +638,7 @@ Kind = Mouse
 Pokedex = Cautious in the extreme, its hardy vitality lets it live in any kind of environment.
 Generation = 1
 Evolutions = RATICATE,Level,34
+Flags = Regional
 #-------------------------------
 [RATICATE]
 Name = Raticate
@@ -654,6 +656,7 @@ Weight = 18.5
 Kind = Mouse
 Pokedex = With its long fangs, this surprisingly violent Pokémon can gnaw away even thick concrete with ease.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [ARATTATA]
 Name = A. Rattata
@@ -676,6 +679,7 @@ Pokedex = It shows no interest in anything that isn't fresh. If you take it shop
 Generation = 7
 WildItemUncommon = PECHABERRY
 Evolutions = ARATICATE,Level,34
+Flags = Regional
 #-------------------------------
 [ARATICATE]
 Name = A. Raticate
@@ -695,6 +699,7 @@ Kind = Mouse
 Pokedex = It makes its Rattata underlings gather food for it, dining solely on the most nutritious and delicious fare.
 Generation = 7
 WildItemUncommon = PECHABERRY
+Flags = Regional
 #-------------------------------
 [SPEAROW]
 Name = Spearow
@@ -1079,6 +1084,7 @@ Pokedex = It loves to bathe in the grit of dry, sandy areas. By sand bathing, th
 Generation = 1
 WildItemUncommon = SOFTSAND
 Evolutions = SANDSLASH,Level,32
+Flags = Regional
 #-------------------------------
 [SANDSLASH]
 Name = Sandslash
@@ -1097,6 +1103,7 @@ Kind = Mouse
 Pokedex = Its claws and horns often break off. The broken claws and horns can be used to carve plows for tilling farm fields.
 Generation = 1
 WildItemUncommon = SOFTSAND
+Flags = Regional
 #-------------------------------
 [ASANDSHREW]
 Name = A. Sandshrew
@@ -1119,6 +1126,7 @@ Pokedex = Life on mountains covered with deep snow has granted this Pokémon a b
 Generation = 7
 WildItemUncommon = NEVERMELTICE
 Evolutions = ASANDSLASH,Level,32
+Flags = Regional
 #-------------------------------
 [ASANDSLASH]
 Name = A. Sandslash
@@ -1137,6 +1145,7 @@ Kind = Mouse
 Pokedex = It lives in snowy mountains on southern islands. When a blizzard rolls in, this Pokémon hunkers down in the snow to avoid getting blown away.
 Generation = 7
 WildItemUncommon = NEVERMELTICE
+Flags = Regional
 #-------------------------------
 [NIDORANfE]
 Name = Nidoran-F
@@ -1343,6 +1352,7 @@ Pokedex = From its mouth spew flames that seem to resemble the spirits of the de
 Generation = 1
 WildItemUncommon = CHARCOAL
 Evolutions = NINETALES,Item,FIRESTONE
+Flags = Regional
 #-------------------------------
 [NINETALES]
 Name = Ninetales
@@ -1363,6 +1373,7 @@ Kind = Fox
 Pokedex = Legend has it that this mystical Pokémon was formed when nine saints coalesced into one.
 Generation = 1
 WildItemUncommon = CHARCOAL
+Flags = Regional
 #-------------------------------
 [AVULPIX]
 Name = A. Vulpix
@@ -1386,6 +1397,7 @@ Kind = Icy Fox
 Pokedex = In hot weather, this Pokémon makes ice shards with its six tails and sprays them around to cool itself off.
 Generation = 7
 Evolutions = ANINETALES,Item,ICESTONE
+Flags = Regional
 #-------------------------------
 [ANINETALES]
 Name = A. Ninetales
@@ -1406,6 +1418,7 @@ Weight = 19.9
 Kind = Blizzard Fox
 Pokedex = It lives on mountains perpetually covered in snow and is revered as a deity incarnate. It appears draped in a blizzard.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [MVULPIX]
 Name = M. Vulpix
@@ -1428,6 +1441,7 @@ Kind = City Fox
 Pokedex = It constantly demands treats and gifts from its Trainer. An expensive and fashionable hoard is necessary for evolution.
 WildItemUncommon = NUGGET
 Evolutions = MNINETALES,Item,DUSKSTONE
+Flags = Regional
 #-------------------------------
 [MNINETALES]
 Name = M. Ninetales
@@ -1448,6 +1462,7 @@ Weight = 19.9
 Kind = Avarice Fox
 Pokedex = The gifts it received have become a tail of golden light. It weaponizes pure avaricious energy in battle, gaining in power as it is pampered.
 WildItemUncommon = NUGGET
+Flags = Regional
 #-------------------------------
 [IGGLYBUFF]
 Name = Igglybuff
@@ -1753,6 +1768,7 @@ Pokedex = Around their crops, farmers plant trees that Diglett like to eat as a 
 Generation = 1
 WildItemUncommon = SOFTSAND
 Evolutions = DUGTRIO,Level,26
+Flags = Regional
 #-------------------------------
 [DUGTRIO]
 Name = Dugtrio
@@ -1773,6 +1789,7 @@ Kind = Mole
 Pokedex = Dugtrio's heads are sleek and smooth and incredibly hard. It can dig through any soil with its headbutts.
 Generation = 1
 WildItemUncommon = SOFTSAND
+Flags = Regional
 #-------------------------------
 [ADIGLETT]
 Name = A. Diglett
@@ -1795,6 +1812,7 @@ Kind = Mole
 Pokedex = Its head sports an altered form of whiskers made of metal. When in communication with its comrades, its whiskers wobble to and fro.
 Generation = 7
 Evolutions = ADUGTRIO,Level,26
+Flags = Regional
 #-------------------------------
 [ADUGTRIO]
 Name = A. Dugtrio
@@ -1816,6 +1834,7 @@ Weight = 66.6
 Kind = Mole
 Pokedex = Its shining gold hair provides it with protection. It's reputed that keeping any of its fallen hairs will bring bad luck.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [CLDIGLETT]
 Name = Cl. Diglett
@@ -1837,7 +1856,7 @@ Weight = 2.8
 Kind = Stalagmite
 Pokedex = An extinct form of Diglett. They used to be plentiful but were hunted for their gem noses.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [DIGLEGGS]
 Name = Digleggs
@@ -1859,7 +1878,7 @@ Weight = 2.8
 Kind = Frankenfusion
 Pokedex = Humanity dreamed of creating the strongest Pokémon and we succeeded.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [MEOWTH]
 Name = Meowth
@@ -1882,6 +1901,7 @@ Pokedex = It loves coins, so if you give it one, you can make friends with Meowt
 Generation = 1
 WildItemUncommon = PEARL
 Evolutions = PERSIAN,Level,36,NIBELONG,Item,MAXMUSHROOM
+Flags = Regional
 #-------------------------------
 [PERSIAN]
 Name = Persian
@@ -1901,6 +1921,7 @@ Kind = Classy Cat
 Pokedex = Behind its lithe, elegant appearance lies a barbaric side. It will tear apart its prey on a mere whim.
 Generation = 1
 WildItemUncommon = NUGGET
+Flags = Regional
 #-------------------------------
 [NIBELONG]
 Name = Nibelong
@@ -1921,6 +1942,7 @@ Weight = 108.3
 Kind = Long Cat
 Pokedex = The pattern that has appeared on its giant coin is thought to be the key to unlocking the secrets of the Dynamax phenomenon.
 WildItemUncommon = PEARL
+Flags = Regional
 #-------------------------------
 [AMEOWTH]
 Name = A. Meowth
@@ -1943,6 +1965,7 @@ Pokedex = It's impulsive, selfish, and fickle. It's very popular with some Train
 Generation = 7
 WildItemUncommon = PEARL
 Evolutions = APERSIAN,Level,36
+Flags = Regional
 #-------------------------------
 [APERSIAN]
 Name = A. Persian
@@ -1962,6 +1985,7 @@ Kind = Classy Cat
 Pokedex = Its round face is a symbol of wealth. Persian that have bigger, plumper faces are considered more beautiful.
 Generation = 7
 WildItemUncommon = PEARL
+Flags = Regional
 #-------------------------------
 [GMEOWTH]
 Name = G. Meowth
@@ -1984,6 +2008,7 @@ Pokedex = These daring Pokémon have coins on their foreheads. Darker coins are 
 Generation = 8
 WildItemUncommon = PEARL
 Evolutions = PERRSERKER,Level,36
+Flags = Regional
 #-------------------------------
 [PERRSERKER]
 Name = Perrserker
@@ -2003,6 +2028,7 @@ Weight = 28.0
 Kind = Viking
 Pokedex = After many battles, it evolved dangerous claws that come together to form daggers when extended.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [SMEOWTH]
 Name = S. Meowth
@@ -2023,7 +2049,7 @@ Weight = 4.2
 Kind = Dragon Cat
 Pokedex = An odd feline that while being furless, has also grown some draconic attributes.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = PEARL
 Evolutions = SNIBELONG,Level,36
 #-------------------------------
@@ -2043,7 +2069,7 @@ Height = 33.0
 Weight = 108.3
 Kind = Long Dragon
 Pokedex = This dragon is a master of the elements, channeling them through its treasure. Stealing it is rumored to turn you into one of its treasures.
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = PEARL
 #-------------------------------
 [PSYDUCK]
@@ -2161,6 +2187,7 @@ Kind = Puppy
 Pokedex = It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.
 Generation = 1
 Evolutions = ARCANINE,Item,FIRESTONE
+Flags = Regional
 #-------------------------------
 [ARCANINE]
 Name = Arcanine
@@ -2180,6 +2207,7 @@ Weight = 155.0
 Kind = Legendary
 Pokedex = Legends tell of it fighting alongside a general and conquering a whole country. Those hearing its bark feel compelled to grovel before it.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [HGROWLITHE]
 Name = H. Growlithe
@@ -2203,6 +2231,7 @@ Kind = Puppy
 Pokedex = It has a brave and trustworthy nature. It fearlessly stands up to bigger and stronger foes.
 Generation = 8
 Evolutions = HARCANINE,Level,35
+Flags = Regional
 #-------------------------------
 [HARCANINE]
 Name = H. Arcanine
@@ -2223,6 +2252,7 @@ Weight = 168.0
 Kind = Legendary
 Pokedex = Its magnificent bark conveys a sense of majesty. Anyone hearing it can't help but grovel before it.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [POLIWAG]
 Name = Poliwag
@@ -2543,6 +2573,7 @@ Pokedex = The longer it lives, the more its edges are chipped and worn away. How
 Generation = 1
 WildItemUncommon = EVERSTONE
 Evolutions = GRAVELER,Level,20
+Flags = Regional
 #-------------------------------
 [GRAVELER]
 Name = Graveler
@@ -2562,6 +2593,7 @@ Pokedex = This Pokémon will climb a mountain from the base to the summit, crunc
 Generation = 1
 WildItemUncommon = EVERSTONE
 Evolutions = GOLEM,Level,35
+Flags = Regional
 #-------------------------------
 [GOLEM]
 Name = Golem
@@ -2581,6 +2613,7 @@ Kind = Megaton
 Pokedex = When Golem grow old, they stop shedding their shells. Those that have lived a long, long time have shells green with moss.
 Generation = 1
 WildItemUncommon = EVERSTONE
+Flags = Regional
 #-------------------------------
 [AGEODUDE]
 Name = A. Geodude
@@ -2603,6 +2636,7 @@ Pokedex = Geodude compete against each other with headbutts. The iron sand on th
 Generation = 7
 WildItemUncommon = FLOATSTONE
 Evolutions = AGRAVELER,Level,20
+Flags = Regional
 #-------------------------------
 [AGRAVELER]
 Name = A. Graveler
@@ -2622,6 +2656,7 @@ Pokedex = They eat rocks and often get into a scrap over them. The shock of Grav
 Generation = 7
 WildItemUncommon = FLOATSTONE
 Evolutions = AGOLEM,Level,35
+Flags = Regional
 #-------------------------------
 [AGOLEM]
 Name = A. Golem
@@ -2640,6 +2675,7 @@ Kind = Megaton
 Pokedex = It fires rocks charged with electricity. Even if the rock isn't fired that accurately, just grazing an opponent will cause numbness and fainting.
 Generation = 7
 WildItemUncommon = FLOATSTONE
+Flags = Regional
 #-------------------------------
 [PONYTA]
 Name = Ponyta
@@ -2661,6 +2697,7 @@ Kind = Fire Horse
 Pokedex = About an hour after birth, its fiery mane and tail grow out, giving it an impressive appearance.
 Generation = 1
 Evolutions = RAPIDASH,Level,32
+Flags = Regional
 #-------------------------------
 [RAPIDASH]
 Name = Rapidash
@@ -2680,6 +2717,7 @@ Weight = 95.0
 Kind = Fire Horse
 Pokedex = Very competitive, this Pokémon will chase anything that moves fast in the hopes of racing it.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [GPONYTA]
 Name = G. Ponyta
@@ -2702,6 +2740,7 @@ Kind = Unique Horn
 Pokedex = This Pokémon will look into your eyes and read the contents of your heart. If it finds evil there, it promptly hides away.
 Generation = 8
 Evolutions = GRAPIDASH,Level,34
+Flags = Regional
 #-------------------------------
 [GRAPIDASH]
 Name = G. Rapidash
@@ -2721,6 +2760,7 @@ Weight = 80.0
 Kind = Unique Horn
 Pokedex = Brave and prideful, this Pokémon dashes airily through the forest, its steps aided by the psychic power stored in the fur on its fetlocks.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [SLOWPOKE]
 Name = Slowpoke
@@ -2744,6 +2784,7 @@ Pokedex = Slowpoke uses its tail to catch prey by dipping it in rivers. However,
 Generation = 1
 WildItemUncommon = LAGGINGTAIL
 Evolutions = SLOWBRO,Level,37,SLOWKING,Item,WATERSTONE
+Flags = Regional
 #-------------------------------
 [SLOWBRO]
 Name = Slowbro
@@ -2765,6 +2806,7 @@ Kind = Hermit Crab
 Pokedex = A metamorphosed Shellder has latched onto Slowbro's tail. The tail can't be used for fishing anymore, forcing Slowbro to grudgingly swim and catch prey instead.
 Generation = 1
 WildItemUncommon = MYSTICWATER
+Flags = Regional
 #-------------------------------
 [SLOWKING]
 Name = Slowking
@@ -2785,6 +2827,7 @@ Kind = Royal
 Pokedex = When its head was bitten, toxins entered Slowpoke's head and unlocked an extraordinary power.
 Generation = 2
 WildItemUncommon = MYSTICWATER
+Flags = Regional
 #-------------------------------
 [GSLOWPOKE]
 Name = G. Slowpoke
@@ -2808,6 +2851,7 @@ Pokedex = Because Galarian Slowpoke eat the seeds of a plant that grows only in 
 Generation = 8
 WildItemUncommon = LAGGINGTAIL
 Evolutions = GSLOWKING,Item,GALARICAWREATH,GSLOWBRO,Level,37
+Flags = Regional
 #-------------------------------
 [GSLOWBRO]
 Name = G. Slowbro
@@ -2829,6 +2873,7 @@ Kind = Hermit Crab
 Pokedex = If this Pokémon squeezes the tongue of the Shellder biting it, the Shellder will launch a toxic liquid from the tip of its shell.
 Generation = 8
 WildItemUncommon = POISONBARB
+Flags = Regional
 #-------------------------------
 [GSLOWKING]
 Name = G. Slowking
@@ -2850,6 +2895,7 @@ Kind = Hexpert
 Pokedex = Slowking can solve any problem present to it, but no one can understand a thing Slowking says.
 Generation = 8
 WildItemUncommon = POISONBARB
+Flags = Regional
 #-------------------------------
 [MAGNEMITE]
 Name = Magnemite
@@ -2936,6 +2982,7 @@ Kind = Wild Duck
 Pokedex = The stalk this Pokémon carries in its wings serves as a sword to cut down opponents. In a dire situation, the stalk can also serve as food.
 Generation = 1
 WildItemUncommon = LUCKHERB
+Flags = Regional
 #-------------------------------
 [GFARFETCHD]
 Name = G. Farfetch'd
@@ -2958,6 +3005,7 @@ Pokedex = The stalks of leeks are thicker and longer in the Galar region. Farfet
 Generation = 8
 WildItemUncommon = STRENGTHHERB
 Evolutions = SIRFETCHD,Level,35
+Flags = Regional
 #-------------------------------
 [SIRFETCHD]
 Name = Sirfetch'd
@@ -2978,6 +3026,7 @@ Kind = Wild Duck
 Pokedex = After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek stalk. The leek stalk is both weapon and food.
 Generation = 8
 WildItemUncommon = STRENGTHHERB
+Flags = Regional
 #-------------------------------
 [CRFARFETCHD]
 Name = Cr. Farfetch'd
@@ -2999,7 +3048,7 @@ Weight = 42.0
 Kind = Deputy
 Pokedex = It dispenses swift justice with the expert command of its trusty lasso. The deserts it inhabits are safer because of its presence.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CRSIRFETCHD,Level,35
 #-------------------------------
 [CRSIRFETCHD]
@@ -3021,7 +3070,7 @@ Weight = 117.0
 Kind = Sheriff
 Pokedex = It can now do lasso tricks effortlessly around its giant cranium. A good Carnan Sirfetch'd can rival a knight.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = STRENGTHHERB
 #-------------------------------
 [DODUO]
@@ -3124,6 +3173,7 @@ Pokedex = Its main source of food is the slimy industrial waste of factories. Th
 Generation = 1
 WildItemUncommon = BLACKSLUDGE
 Evolutions = MUK,Level,33
+Flags = Regional
 #-------------------------------
 [MUK]
 Name = Muk
@@ -3142,6 +3192,7 @@ Kind = Sludge
 Pokedex = Their food sources have decreased, and their numbers have declined sharply. Sludge ponds are being built to prevent their extinction.
 Generation = 1
 WildItemUncommon = BLACKSLUDGE
+Flags = Regional
 #-------------------------------
 [AGRIMER]
 Name = A. Grimer
@@ -3163,6 +3214,7 @@ Kind = Sludge
 Pokedex = A Grimer, which had been brought in to solve a problem with garbage, developed over time into this form.
 Generation = 7
 Evolutions = AMUK,Level,33
+Flags = Regional
 #-------------------------------
 [AMUK]
 Name = A. Muk
@@ -3181,6 +3233,7 @@ Weight = 52.0
 Kind = Sludge
 Pokedex = The garbage it eats causes continuous chemical changes in its body, which produce its exceedingly vivid coloration.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [SHELLDER]
 Name = Shellder
@@ -3468,6 +3521,7 @@ Generation = 1
 WildItemCommon = POKEBALL
 WildItemRare = DYNAMITESTICK
 Evolutions = ELECTRODE,Level,32
+Flags = Regional
 #-------------------------------
 [ELECTRODE]
 Name = Electrode
@@ -3487,6 +3541,7 @@ Weight = 66.6
 Kind = Ball
 Pokedex = They appear in great numbers at electric power plants. Because they feed on electricity, they cause massive and chaotic blackouts in nearby cities.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [HVOLTORB]
 Name = H. Voltorb
@@ -3509,6 +3564,7 @@ Kind = Ball
 Pokedex = When excited, it discharges the electric current it has stored in its belly, then lets out a great, uproarious laugh.
 Generation = 8
 Evolutions = HELECTRODE,Level,32
+Flags = Regional
 #-------------------------------
 [HELECTRODE]
 Name = H. Electrode
@@ -3528,6 +3584,7 @@ Weight = 71.0
 Kind = Ball
 Pokedex = The tissue on the surface of its body is curiously similar in composition to an Apricorn.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [CRVOLTORB]
 Name = Cr. Voltorb
@@ -3549,7 +3606,7 @@ Weight = 10.4
 Kind = Disco Ball
 Pokedex = Discovered at around the 80s, these groovy Voltorbs help bring guests to clubs.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CRELECTRODE,Level,32
 #-------------------------------
 [CRELECTRODE]
@@ -3570,7 +3627,7 @@ Weight = 66.6
 Kind = Disco Ball
 Pokedex = It wears sunglasses to protect its own eyes from its many lights, recently several have been imported to the Orre region.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [EXEGGCUTE]
 Name = Exeggcute
@@ -3609,6 +3666,7 @@ Weight = 120.0
 Kind = Coconut
 Pokedex = Each of its three heads has its own thoughts. When they want to go in different directions, Exeggutor becomes unable to move.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [AEXEGGUTOR]
 Name = A. Exeggutor
@@ -3628,6 +3686,7 @@ Weight = 415.6
 Kind = Coconut
 Pokedex = As it grew taller and taller, it outgrew its reliance on psychic powers, while within it awakened the power of the sleeping dragon.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [CUBONE]
 Name = Cubone
@@ -3671,6 +3730,7 @@ Kind = Bone Keeper
 Pokedex = This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.
 Generation = 1
 WildItemUncommon = RAREBONE
+Flags = Regional
 #-------------------------------
 [AMAROWAK]
 Name = A. Marowak
@@ -3691,6 +3751,7 @@ Weight = 34.0
 Kind = Bone Keeper
 Pokedex = Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak
 Generation = 7
+Flags = Regional
 #-------------------------------
 [TYROGUE]
 Name = Tyrogue
@@ -3850,6 +3911,7 @@ Weight = 9.5
 Kind = Poison Gas
 Pokedex = Top-grade perfume is made using its internal poison gasses by diluting them to the highest level.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [GWEEZING]
 Name = G. Weezing
@@ -3871,6 +3933,7 @@ Weight = 16.0
 Kind = Poison Gas
 Pokedex = Long ago, during a time when droves of factories fouled the air with pollution, Weezing changed into this form for some reason.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [RHYHORN]
 Name = Rhyhorn
@@ -3955,6 +4018,7 @@ Kind = Playhouse
 Pokedex = It carefully carries a round, white rock that it thinks is an egg. It's bothered by how curly its hair looks.
 Generation = 4
 Evolutions = CHANSEY,Level,20
+Flags = Regional
 #-------------------------------
 [CHANSEY]
 Name = Chansey
@@ -3974,6 +4038,7 @@ Kind = Egg
 Pokedex = It walks carefully to prevent its egg from breaking. However, it is extremely fast at running away.
 Generation = 1
 Evolutions = BLISSEY,Level,45
+Flags = Regional
 #-------------------------------
 [BLISSEY]
 Name = Blissey
@@ -3992,6 +4057,7 @@ Weight = 46.8
 Kind = Happiness
 Pokedex = This kindhearted Pokémon nurses sick Pokémon to health. It senses feelings of sadness.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [CLHAPPINY]
 Name = Cl. Happiny
@@ -4014,7 +4080,7 @@ Weight = 24.4
 Kind = Gacha
 Pokedex = It likes to offer its egg to humans, but this is a ruse, as the egg is made from dark energy and hurts to touch.
 Generation = 4
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CLCHANSEY,Level,20
 #-------------------------------
 [CLCHANSEY]
@@ -4036,7 +4102,7 @@ Weight = 34.6
 Kind = Gacha
 Pokedex = Putting the chance in Chansey, it can embody any move ever at complete random, and it often infuses them with dark power.
 Generation = 1
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CLBLISSEY,Level,45
 #-------------------------------
 [CLBLISSEY]
@@ -4057,7 +4123,7 @@ Weight = 46.8
 Kind = Gacha
 Pokedex = No longer hiding its malevolence, Blissey now actively encourages gambling. It drains the money and energy of its victims.
 Generation = 2
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [TANGELA]
 Name = Tangela
@@ -4078,6 +4144,7 @@ Kind = Vine
 Pokedex = Its vines snap off easily and painlessly if they are grabbed, allowing it to make a quick getaway. The lost vines are replaced by new growth the very next day.
 Generation = 1
 Evolutions = TANGROWTH,Level,34
+Flags = Regional
 #-------------------------------
 [TANGROWTH]
 Name = Tangrowth
@@ -4094,6 +4161,7 @@ Weight = 128.6
 Kind = Vine
 Pokedex = Its vines grow so profusely that, in the warm season, you can't even see its eyes.
 Generation = 4
+Flags = Regional
 #-------------------------------
 [MTANGELA]
 Name = M. Tangela
@@ -4114,6 +4182,7 @@ Weight = 35.0
 Kind = Gorgon
 Pokedex = Though it looks like a plant, its green color comes from its jade scales. Looking into its eyes is said to bring three years of bad luck.
 Evolutions = MTANGROWTH,Level,34
+Flags = Regional
 #-------------------------------
 [MTANGROWTH]
 Name = M. Tangrowth
@@ -4131,6 +4200,7 @@ Height = 2.0
 Weight = 128.6
 Kind = Gorgon
 Pokedex = While the snakes covering it are hard as granite, its skin is soft. Predators attacking its unprotected limbs have to contend with its powerful digging claws.
+Flags = Regional
 #-------------------------------
 [KANGASKHAN]
 Name = Kangaskhan
@@ -4252,6 +4322,7 @@ Pokedex = Although known for their splendid tail fins, Goldeen apparently compet
 Generation = 1
 WildItemUncommon = MYSTICWATER
 Evolutions = SEAKING,Level,33
+Flags = Regional
 #-------------------------------
 [SEAKING]
 Name = Seaking
@@ -4272,6 +4343,7 @@ Kind = Goldfish
 Pokedex = Trainers who are crazy for Seaking are divided into horn enthusiasts and fin enthusiasts. The two groups do not get along well.
 Generation = 1
 WildItemUncommon = MYSTICWATER
+Flags = Regional
 #-------------------------------
 [MGOLDEEN]
 Name = M. Goldeen
@@ -4293,6 +4365,7 @@ Weight = 15.0
 Kind = Fortune
 Pokedex = They obsessively count the pebbles in their rivers, becoming irate if the result is an unlucky number.
 Evolutions = MSEAKING,Level,33
+Flags = Regional
 #-------------------------------
 [MSEAKING]
 Name = M. Seaking
@@ -4312,6 +4385,7 @@ Height = 1.3
 Weight = 39.0
 Kind = Auspicious
 Pokedex = Fearsome Pokémon lining a river in a grand procession is a sign of a Makyan Seaking. They offer endless blessings in exchange for servitude.
+Flags = Regional
 #-------------------------------
 [STARYU]
 Name = Staryu
@@ -4419,6 +4493,7 @@ Weight = 54.5
 Kind = Barrier
 Pokedex = Emanations from its fingertips solidify the air into invisible walls that repel even harsh attacks.
 Generation = 1
+Flags = Regional
 #-------------------------------
 [GMRMIME]
 Name = G. Mr. Mime
@@ -4440,6 +4515,7 @@ Kind = Barrier
 Pokedex = It can radiate chilliness from the bottoms of its feet. It'll spend the whole day tap-dancing on a frozen floor.
 Generation = 8
 Evolutions = MRRIME,Level,42
+Flags = Regional
 #-------------------------------
 [MRRIME]
 Name = Mr. Rime
@@ -4459,6 +4535,7 @@ Weight = 58.2
 Kind = Comedian
 Pokedex = Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [SCYTHER]
 Name = Scyther
@@ -4795,6 +4872,7 @@ Kind = Wild Bull
 Pokedex = When Tauros begins whipping itself with its tails, it's a warning that the Pokémon is about to charge with astounding speed.
 Generation = 1
 WildItemUncommon = STRENGTHHERB
+Flags = Regional
 #-------------------------------
 [MILTANK]
 Name = Miltank
@@ -4839,6 +4917,7 @@ Kind = Wild Bull
 Pokedex = When Paldean Tauros begins whipping itself with its tails, it's a warning that the Pokemon is about to charge with astounding speed.
 FormName = Combat Breed
 Generation = 9
+Flags = Regional
 #-------------------------------
 [MAGIKARP]
 Name = Magikarp
@@ -5486,7 +5565,7 @@ Weight = 55.4
 Kind = Freeze
 Pokedex = A legendary bird Pokémon that is said to appear to doomed people who are lost in icy mountains.
 Generation = 1
-Flags = Legendary
+Flags = Legendary,Regional
 #-------------------------------
 [ZAPDOS]
 Name = Zapdos
@@ -5509,7 +5588,7 @@ Weight = 52.6
 Kind = Electric
 Pokedex = This legendary bird Pokémon is said to appear only when a thundercloud parts into two halves.
 Generation = 1
-Flags = Legendary
+Flags = Legendary,Regional
 #-------------------------------
 [MOLTRES]
 Name = Moltres
@@ -5532,7 +5611,7 @@ Weight = 60.0
 Kind = Flame
 Pokedex = One of the legendary bird Pokémon. It is said that its appearance indicates the coming of spring.
 Generation = 1
-Flags = Legendary
+Flags = Legendary,Regional
 #-------------------------------
 [GARTICUNO]
 Name = G. Articuno
@@ -5555,7 +5634,7 @@ Weight = 55.4
 Kind = Cruel
 Pokedex = Its feather-like blades are composed of psychic energy and can shear through thick iron sheets as if they were paper.
 Generation = 8
-Flags = Legendary
+Flags = Legendary,Regional
 #-------------------------------
 [GZAPDOS]
 Name = G. Zapdos
@@ -5578,7 +5657,7 @@ Weight = 52.6
 Kind = Strong Legs
 Pokedex = One kick from its powerful legs will pulverize a dump truck. Supposedly, this Pokémon runs through the mountains at over 180 mph.
 Generation = 8
-Flags = Legendary
+Flags = Legendary,Regional
 #-------------------------------
 [GMOLTRES]
 Name = G. Moltres
@@ -5759,6 +5838,7 @@ Weight = 79.5
 Kind = Volcano
 Pokedex = It has a secret, devastating move. It rubs its blazing fur together to cause huge explosions.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [HTYPHLOSION]
 Name = H. Typhlosion
@@ -5779,6 +5859,7 @@ Weight = 69.8
 Kind = Volcano
 Pokedex = Said to purify lost, forsaken souls with its flames and guide them to the afterlife. Its form had been influenced by the energy of Mt. Coronet.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [TOTODILE]
 Name = Totodile
@@ -5856,6 +5937,7 @@ Kind = Scout
 Pokedex = This Pokémon is very cautious. It stands on its tail in order to see enemies from far away. If it does then it alert its pack by thumping its tail on the ground.
 Generation = 2
 Evolutions = FURRET,Level,26
+Flags = Regional
 #-------------------------------
 [FURRET]
 Name = Furret
@@ -5873,6 +5955,7 @@ Weight = 32.5
 Kind = Long Body
 Pokedex = It makes a nest to suit its long and skinny body. It uses tunnels in order to make a quick getaway from foes.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [MSENTRET]
 Name = M. Sentret
@@ -5894,6 +5977,7 @@ Kind = Unblinking
 Pokedex = The eye on its stomach enables its psychic powers and never blinks. Dirt and dust are telekinetically repelled.
 WildItemUncommon = PINPOINTROCK
 Evolutions = MFURRET,Level,26
+Flags = Regional
 #-------------------------------
 [MFURRET]
 Name = M. Furret
@@ -5912,6 +5996,7 @@ Weight = 32.5
 Kind = Long Sight
 Pokedex = It burrows at night, leaving only the eye on its stomach exposed. The eye will stare into space while the rest of it sleeps.
 WildItemUncommon = PINPOINTROCK
+Flags = Regional
 #-------------------------------
 [CLSENTRET]
 Name = Cl. Sentret
@@ -5932,7 +6017,7 @@ Weight = 6.0
 Kind = Roadkill
 Pokedex = It stalks the roadway where it was killed in hopes of exacting its vengeance on the motorist that took its life.
 Generation = 2
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CLFURRET,Level,26
 #-------------------------------
 [CLFURRET]
@@ -5952,7 +6037,7 @@ Weight = 32.5
 Kind = Roadkill
 Pokedex = It is decaying such that it exhibits a foul odour and has managed to attract flies that constantly hover around it.
 Generation = 2
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = FURRIOUS,Level,42
 #-------------------------------
 [FURRIOUS]
@@ -5972,7 +6057,7 @@ Weight = 100.5
 Kind = Roadkill
 Pokedex = Its soul has extended from its body. They will sometimes coil around cars to attempt to attack the driver.
 Generation = 2
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [HOOTHOOT]
 Name = Hoothoot
@@ -5996,6 +6081,7 @@ Pokedex = It always stands on one foot. It changes feet so fast, the movement ca
 Generation = 2
 WildItemUncommon = WISEGLASSES
 Evolutions = NOCTOWL,Level,26
+Flags = Regional
 #-------------------------------
 [NOCTOWL]
 Name = Noctowl
@@ -6016,6 +6102,7 @@ Kind = Owl
 Pokedex = When it needs to think, it rotates its head 180 degrees to sharpen its intellectual power.
 Generation = 2
 WildItemUncommon = WISEGLASSES
+Flags = Regional
 #-------------------------------
 [MHOOTHOOT]
 Name = M. Hoothoot
@@ -6037,6 +6124,7 @@ Weight = 21.2
 Kind = Snow Owl
 Pokedex = Its down insulates it against any cold. In winter it will lay dormant beneath snow banks, only to pop out during spring.
 Evolutions = MNOCTOWL,Level,26
+Flags = Regional
 #-------------------------------
 [MNOCTOWL]
 Name = M. Noctowl
@@ -6055,6 +6143,7 @@ Height = 1.6
 Weight = 40.8
 Kind = Snow Owl
 Pokedex = When its shadow passes over someone, they feel a horrible chill. Some Trainers find it invigorating.
+Flags = Regional
 #-------------------------------
 [LEDYBA]
 Name = Ledyba
@@ -6628,6 +6717,7 @@ Kind = Water Fish
 Pokedex = When the temperature cools in the evening, they emerge from water to seek food along the shore.
 Generation = 2
 Evolutions = QUAGSIRE,Level,26
+Flags = Regional
 #-------------------------------
 [QUAGSIRE]
 Name = Quagsire
@@ -6647,6 +6737,7 @@ Weight = 75.0
 Kind = Water Fish
 Pokedex = This carefree Pokémon has an easygoing nature. While swimming, it always bumps into boat hulls.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [PWOOPER]
 Name = P. Wooper
@@ -6669,6 +6760,7 @@ Kind = Poison Fish
 Pokedex = After losing a territorial struggle, Wooper began living on land. The Pokémon changed over time, developing a poisonous film to protect its body.
 Generation = 2
 Evolutions = CLODSIRE,Level,26
+Flags = Regional
 #-------------------------------
 [CLODSIRE]
 Name = Clodsire
@@ -6689,6 +6781,7 @@ Weight = 223.0
 Kind = Spiny Fish
 Pokedex = When attacked, this Pokémon will retaliate by sticking thick spines out from its body. It's a risky move that puts everything on the line.
 Generation = 9
+Flags = Regional
 #-------------------------------
 [MURKROW]
 Name = Murkrow
@@ -7066,6 +7159,7 @@ Kind = Balloon
 Pokedex = The small spikes covering its body developed from scales. They inject a toxin that causes fainting.
 Generation = 2
 WildItemUncommon = POISONBARB
+Flags = Regional
 #-------------------------------
 [HQWILFISH]
 Name = H. Qwilfish
@@ -7089,6 +7183,7 @@ Pokedex = Fishers detest this troublesome Pokémon because it sprays poison from
 Generation = 8
 WildItemUncommon = POISONBARB
 Evolutions = OVERQWIL,Level,38
+Flags = Regional
 #-------------------------------
 [OVERQWIL]
 Name = Overqwil
@@ -7108,6 +7203,7 @@ Weight = 60.5
 Kind = Pin Cluster
 Pokedex = Its lancelike spikes and savage temperament have earned it the nickname "sea fiend." It slurps up poison to nourish itself.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [SHUCKLE]
 Name = Shuckle
@@ -7155,6 +7251,7 @@ Pokedex = Its paws conceal sharp claws. If attacked, it suddenly extends the cla
 Generation = 2
 WildItemUncommon = BLACKGLASSES
 Evolutions = WEAVILE,Item,ICESTONE
+Flags = Regional
 #-------------------------------
 [WEAVILE]
 Name = Weavile
@@ -7175,6 +7272,7 @@ Kind = Sharp Claw
 Pokedex = They live in cold regions, forming groups of four or five that hunt prey with impressive coordination.
 Generation = 4
 WildItemUncommon = BLACKGLASSES
+Flags = Regional
 #-------------------------------
 [HSNEASEL]
 Name = H. Sneasel
@@ -7197,6 +7295,7 @@ Kind = Sharp Claw
 Pokedex = Its sturdy, curved claws are ideal for traversing precipitous cliffs. From the tips of these claws drips a nerve-destroying venom.
 Generation = 8
 Evolutions = SNEASLER,Level,33
+Flags = Regional
 #-------------------------------
 [SNEASLER]
 Name = Sneasler
@@ -7216,6 +7315,7 @@ Weight = 43.0
 Kind = Free Climb
 Pokedex = Because of Sneasler's virulent poison and daunting physical prowess, no other species could hope to best it on frozen highlands.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [TEDDIURSA]
 Name = Teddiursa
@@ -7394,6 +7494,7 @@ Weight = 5.0
 Kind = Coral
 Pokedex = They prefer unpolluted southern seas. Their coral branches lose their color and deteriorate in dirty water.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [GCORSOLA]
 Name = G. Corsola
@@ -7417,6 +7518,7 @@ Kind = Coral
 Pokedex = Sudden climate change wiped out this ancient kind of Corsola. This Pokémon absorbs others' life-force through its branches.
 Generation = 8
 Evolutions = CURSOLA,Level,38
+Flags = Regional
 #-------------------------------
 [CURSOLA]
 Name = Cursola
@@ -7438,6 +7540,7 @@ Weight = 0.4
 Kind = Coral
 Pokedex = Be cautious of the ectoplasmic body surrounding its soul. You'll become stiff as stone if you touch it.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [REMORAID]
 Name = Remoraid
@@ -7500,6 +7603,7 @@ Kind = Kite
 Pokedex = When it swims close to the surface of the ocean, people aboard ships are able to observe the pattern on its back.
 Generation = 4
 Evolutions = MANTINE,Item,WATERSTONE
+Flags = Regional
 #-------------------------------
 [MANTINE]
 Name = Mantine
@@ -7519,6 +7623,7 @@ Weight = 220.0
 Kind = Kite
 Pokedex = While elegantly swimming in the sea, it ignores Remoraid that cling to its fins seeking food scraps.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [MMANTYKE]
 Name = M. Mantyke
@@ -7541,6 +7646,7 @@ Kind = Famine
 Pokedex = Food rots and milk curdles in their presence. Because of this, they're commonly seen fleeing from angered Pokémon such as Miltank or Alcremie.
 Generation = 4
 Evolutions = MMANTINE,Level,37
+Flags = Regional
 #-------------------------------
 [MMANTINE]
 Name = M. Mantine
@@ -7560,6 +7666,7 @@ Weight = 220.0
 Kind = Plague
 Pokedex = It pelts houses with hail that sounds like knocking, trying to get those inside to open a door or window. People used to import Skarmory to defend against them.
 Generation = 2
+Flags = Regional
 #-------------------------------
 [DELIBIRD]
 Name = Delibird
@@ -7974,6 +8081,7 @@ Kind = Wood Gecko
 Pokedex = Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls. This Pokémon attacks by slamming foes with its thick tail.
 Generation = 3
 Evolutions = GROVYLE,Level,16
+Flags = Regional
 #-------------------------------
 [GROVYLE]
 Name = Grovyle
@@ -7992,6 +8100,7 @@ Kind = Wood Gecko
 Pokedex = The leaves growing out of Grovyle's body are convenient for camouflaging it from enemies in the forest. This Pokémon is a master at climbing trees in jungles.
 Generation = 3
 Evolutions = SCEPTILE,Level,36
+Flags = Regional
 #-------------------------------
 [SCEPTILE]
 Name = Sceptile
@@ -8010,6 +8119,7 @@ Weight = 52.2
 Kind = Forest
 Pokedex = The leaves growing on Sceptile's body are very sharp edged. This Pokémon is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind.
 Generation = 3
+Flags = Regional
 #-------------------------------
 [TREECKO2]
 Name = H. Treecko
@@ -8030,6 +8140,7 @@ Kind = Strange Gear
 Pokedex = It was entrusted with a gear, though it's not clear what power this gear holds. It is found in areas of historical significance or otherworldly places.
 Generation = 3
 Evolutions = GROVYLE2,Level,16
+Flags = Hidden,Regional
 #-------------------------------
 [GROVYLE2]
 Name = H. Grovyle
@@ -8049,6 +8160,7 @@ Kind = Time Gear
 Pokedex = It uses the gear for temporal attacks. Any attempts to steal the gear will result in you being transported to a different timeline.
 Generation = 3
 Evolutions = SCEPTILE2,Level,36
+Flags = Hidden,Regional
 #-------------------------------
 [SCEPTILE2]
 Name = H. Sceptile
@@ -8066,6 +8178,7 @@ Weight = 52.2
 Kind = Chronomancer
 Pokedex = They are expert users of time gears and use them effortlessly to support their attacks in an almost artful manner.
 Generation = 3
+Flags = Hidden,Regional
 #-------------------------------
 [TORCHIC]
 Name = Torchic
@@ -8239,6 +8352,7 @@ Generation = 3
 WildItemCommon = EXPCANDYS
 WildItemUncommon = EXPCANDYM
 Evolutions = LINOONE,Level,26
+Flags = Regional
 #-------------------------------
 [LINOONE]
 Name = Linoone
@@ -8260,6 +8374,7 @@ Pokedex = It charges prey at speeds over 60 mph. However, because it can only ru
 Generation = 3
 WildItemCommon = POTION
 WildItemUncommon = SUPERPOTION
+Flags = Regional
 #-------------------------------
 [GZIGZAGOON]
 Name = G. Zigzagoon
@@ -8283,6 +8398,7 @@ Pokedex = Thought to be the oldest form of Zigzagoon, it moves in zigzags and wr
 Generation = 8
 WildItemUncommon = BLACKGLASSES
 Evolutions = GLINOONE,Level,26
+Flags = Regional
 #-------------------------------
 [GLINOONE]
 Name = G. Linoone
@@ -8303,6 +8419,7 @@ Pokedex = This very aggressive Pokémon will recklessly challenge opponents stro
 Generation = 8
 WildItemUncommon = BLACKGLASSES
 Evolutions = OBSTAGOON,Level,35
+Flags = Regional
 #-------------------------------
 [OBSTAGOON]
 Name = Obstagoon
@@ -8323,6 +8440,7 @@ Kind = Blocking
 Pokedex = It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch.
 Generation = 8
 WildItemUncommon = BLACKGLASSES
+Flags = Regional
 #-------------------------------
 [WURMPLE]
 Name = Wurmple
@@ -8344,6 +8462,7 @@ Pokedex = It lives among the tall grass and in forests. It repels attacks by rai
 Generation = 3
 WildItemCommon = PECHABERRY
 Evolutions = SILCOON,Ability0,18,CASCOON,Ability1,18
+Flags = Regional
 #-------------------------------
 [SILCOON]
 Name = Silcoon
@@ -8363,6 +8482,7 @@ Kind = Cocoon
 Pokedex = It drinks dew that collects on its silk and waits for evolution. Its hard cocoon repels attacks.
 Generation = 3
 Evolutions = BEAUTIFLY,Level,26
+Flags = Regional
 #-------------------------------
 [BEAUTIFLY]
 Name = Beautifly
@@ -8383,6 +8503,7 @@ Kind = Butterfly
 Pokedex = It has an aggressive nature. It stabs prey with its long, narrow mouth to drain the prey's fluids.
 Generation = 3
 WildItemUncommon = SHEDSHELL
+Flags = Regional
 #-------------------------------
 [CASCOON]
 Name = Cascoon
@@ -8402,6 +8523,7 @@ Kind = Cocoon
 Pokedex = It never forgets any attack it endured while in the cocoon. After evolution, it seeks payback.
 Generation = 3
 Evolutions = DUSTOX,Level,26
+Flags = Regional
 #-------------------------------
 [DUSTOX]
 Name = Dustox
@@ -8422,6 +8544,7 @@ Kind = Poison Moth
 Pokedex = It violently flutters its wings to scatter toxic dust when attacked. It becomes active after sunset.
 Generation = 3
 WildItemUncommon = SHEDSHELL
+Flags = Regional
 #-------------------------------
 [MWURMPLE]
 Name = M. Wurmple
@@ -8442,6 +8565,7 @@ Weight = 3.8
 Kind = Hot Cold Worm
 Pokedex = Its horns efficiently regulate its body temperature. It seeks out Fire- and Ice-type predators to charge itself with energy for evolution.
 Evolutions = MSILCOON,Ability0,18,MCASCOON,Ability1,18
+Flags = Regional
 #-------------------------------
 [MSILCOON]
 Name = M. Silcoon
@@ -8461,6 +8585,7 @@ Weight = 10.0
 Kind = Cold Cocoon
 Pokedex = Its silk makes it blend in with snowy rocks. If attacked, its only recourse is to make itself unappetizing by chilling its own body.
 Evolutions = MBEAUTIFLY,Level,26
+Flags = Regional
 #-------------------------------
 [MBEAUTIFLY]
 Name = M. Beautifly
@@ -8480,6 +8605,7 @@ Weight = 28.4
 Kind = Frost Gossamer
 Pokedex = It is less hostile than the Hoennian form, but vicious towards former predators. Its mouthparts inject a fluid similar to liquid nitrogen.
 WildItemUncommon = ASPEARBERRY
+Flags = Regional
 #-------------------------------
 [MCASCOON]
 Name = M. Cascoon
@@ -8499,6 +8625,7 @@ Weight = 11.5
 Kind = Candle Cocoon
 Pokedex = Its flame is kept burning by an organ similar to a Bunsen burner. Curious Pokémon often try to put it out, to no avail.
 Evolutions = MDUSTOX,Level,26
+Flags = Regional
 #-------------------------------
 [MDUSTOX]
 Name = M. Dustox
@@ -8518,6 +8645,7 @@ Weight = 31.6
 Kind = Rocket Moth
 Pokedex = Its abdomen is actually a sophisticated torch drive. Their migrations can be tracked by following broken trees left by supersonic flybys.
 WildItemUncommon = RAWSTBERRY
+Flags = Regional
 #-------------------------------
 [LOTAD]
 Name = Lotad
@@ -8750,6 +8878,7 @@ Kind = Feeling
 Pokedex = It is highly attuned to the emotions of people and Pokémon. It hides if it senses hostility.
 Generation = 3
 Evolutions = KIRLIA,Level,24
+Flags = Regional
 #-------------------------------
 [KIRLIA]
 Name = Kirlia
@@ -8769,6 +8898,7 @@ Kind = Emotion
 Pokedex = It has a psychic power that enables it to distort the space around it and see into the future.
 Generation = 3
 Evolutions = GARDEVOIR,Level,38,GALLADE,Item,DAWNSTONE
+Flags = Regional
 #-------------------------------
 [GARDEVOIR]
 Name = Gardevoir
@@ -8789,6 +8919,7 @@ Weight = 48.4
 Kind = Embrace
 Pokedex = It has the power to predict the future. Its power peaks when it is protecting its Trainer.
 Generation = 3
+Flags = Regional
 #-------------------------------
 [GALLADE]
 Name = Gallade
@@ -8809,6 +8940,7 @@ Weight = 52.0
 Kind = Blade
 Pokedex = A master of courtesy and swordsmanship, it fights using extending swords on its elbows.
 Generation = 4
+Flags = Regional
 #-------------------------------
 [SRALTS]
 Name = S. Ralts
@@ -8830,7 +8962,7 @@ Weight = 6.6
 Kind = Snakelet
 Pokedex = It is mostly reliant on its evolutions for protection. Though in a pinch it can emit a high pitched flute noise from its tail to stun enemies.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = SKIRLIA,Level,24
 #-------------------------------
 [SKIRLIA]
@@ -8851,7 +8983,7 @@ Weight = 20.2
 Kind = Lamia
 Pokedex = The powers of its flute allow it to act as a pied piper to other Pokémon, lulling them to sleep and controlling them.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = SGARDEVOIR,Ability0,38,SGALLADE,Ability1,38
 #-------------------------------
 [SGARDEVOIR]
@@ -8873,7 +9005,7 @@ Weight = 48.4
 Kind = Flute Lamia
 Pokedex = It is a master flutist such that its sound attacks can be very painful to hear. It uses this skill to protect its young or disable foes.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [SGALLADE]
 Name = S. Gallade
@@ -8894,7 +9026,7 @@ Weight = 52.0
 Kind = Triple Serpent
 Pokedex = It lost its flute abilities in exchange for potent venom. It is very aggressive and has forgone its tendency to protect its young like S. Gardevoir.
 Generation = 4
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [SURSKIT]
 Name = Surskit
@@ -8959,6 +9091,7 @@ Generation = 3
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
 Evolutions = BRELOOM,Level,32
+Flags = Regional
 #-------------------------------
 [BRELOOM]
 Name = Breloom
@@ -8979,6 +9112,7 @@ Pokedex = It scatters poisonous spores and throws powerful punches while its foe
 Generation = 3
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
+Flags = Regional
 #-------------------------------
 [SSHROOMISH]
 Name = S. Shroomish
@@ -8999,7 +9133,7 @@ Weight = 4.5
 Kind = Hatchling
 Pokedex = It is rather helpless when it is young and requires to be fed by its parents. It wants to be treated like a baby even if it is mature.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = SBRELOOM,Level,32
 #-------------------------------
 [SBRELOOM]
@@ -9019,7 +9153,7 @@ Weight = 39.2
 Kind = Egghead
 Pokedex = It has grown very attached to the egg from the time of its birth. It will viciously peck at you if you attempt to remove it.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [SLAKOTH]
 Name = Slakoth
@@ -9631,6 +9765,7 @@ Weight = 17.7
 Kind = Firefly
 Pokedex = It lives around clean ponds. At night, its rear lights up. It converses with others by flashing its light.
 Generation = 3
+Flags = Regional
 #-------------------------------
 [ILLUMISE]
 Name = Illumise
@@ -9651,6 +9786,7 @@ Weight = 17.7
 Kind = Firefly
 Pokedex = With its sweet aroma, it guides Volbeat to draw signs with light in the night sky.
 Generation = 3
+Flags = Regional
 #-------------------------------
 [HVOLBEAT]
 Name = H. Volbeat
@@ -9671,7 +9807,7 @@ Weight = 17.7
 Kind = Mutation
 Pokedex = The sunlight mutated the disease it contracted from Illumise, causing bulbous sacs of disease to grow out of their skin.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [HILLUMISE]
 Name = H. Illumise
@@ -9692,7 +9828,7 @@ Weight = 17.7
 Kind = Crystal
 Pokedex = Illumise that went into Turnback Cave were changed forever. They got a terrible disease, causing their eyes to turn orange and sprout crystals from their exoskeleton.
 Generation = 3
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [BUDEW]
 Name = Budew
@@ -10215,6 +10351,7 @@ Kind = Cat Ferret
 Pokedex = Its fur would all stand on end if it smelled a Seviper nearby. Its sharp claws tear up its foes.
 Generation = 3
 WildItemUncommon = SCOPELENS
+Flags = Regional
 #-------------------------------
 [SEVIPER]
 Name = Seviper
@@ -10235,6 +10372,7 @@ Kind = Fang Snake
 Pokedex = Constant polishing makes the edge of the blade on its tail extremely sharp. It's Zangoose's archrival.
 Generation = 3
 WildItemUncommon = SHEDSHELL
+Flags = Regional
 #-------------------------------
 [MZANGOOSE]
 Name = M. Zangoose
@@ -10255,6 +10393,7 @@ Height = 1.2
 Weight = 16.8
 Kind = Vendetta
 Pokedex = Even being bisected by a Seviper's tail couldn't quell its rage. It attacks enemies on a physical and spiritual level simultaneously.
+Flags = Regional
 #-------------------------------
 [MSEVIPER]
 Name = M. Seviper
@@ -10275,6 +10414,7 @@ Weight = 52.5
 Kind = Ironclad
 Pokedex = Its iron body is impenetrable to nearly all attacks. When coiled, it can fire metal projectiles using magnetic induction.
 WildItemUncommon = METALCOAT
+Flags = Regional
 #-------------------------------
 [LUNATONE]
 Name = Lunatone
@@ -10591,6 +10731,7 @@ Pokedex = It has the ability to change its form into the sun, the rain, or a sno
 FormName = Normal
 Generation = 3
 WildItemCommon = UTILITYUMBRELLA
+Flags = Regional
 #-------------------------------
 [REGIONFORM]
 Name = Regionform
@@ -12508,6 +12649,7 @@ Kind = Music Note
 Pokedex = It can learn and speak human words. If they gather, they all learn the same saying.
 Generation = 4
 WildItemUncommon = METRONOME
+Flags = Regional
 #-------------------------------
 [SPIRITOMB]
 Name = Spiritomb
@@ -12790,6 +12932,7 @@ Weight = 27.0
 Kind = Bug Catcher
 Pokedex = It binds itself to trees in marshes. It attracts prey with its sweet-smelling drool and gulps them down.
 Generation = 4
+Flags = Regional
 #-------------------------------
 [MCARNIVINE]
 Name = M. Carnivine
@@ -12809,6 +12952,7 @@ Height = 1.4
 Weight = 27.0
 Kind = Sundew
 Pokedex = It hunts other nocturnal predators, trapping them with its sticky tendrils. Its maniacal laugh is a common sound on autumn nights.
+Flags = Regional
 #-------------------------------
 [FINNEON]
 Name = Finneon
@@ -13389,6 +13533,7 @@ Weight = 94.6
 Kind = Formidable
 Pokedex = One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody.
 Generation = 5
+Flags = Regional
 #-------------------------------
 [HSAMUROTT]
 Name = H. Samurott
@@ -13409,6 +13554,7 @@ Weight = 58.2
 Kind = Formidable
 Pokedex = Hard of heart and deft of blade, its turbulent blows crash into foes like ceaseless pounding waves.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [PATRAT]
 Name = Patrat
@@ -13679,6 +13825,7 @@ Kind = Dream Eater
 Pokedex = It eats the dreams of people and Pokémon. When it eats a pleasant dream, it expels pink-colored mist.
 Generation = 5
 Evolutions = MUSHARNA,Item,MOONSTONE
+Flags = Regional
 #-------------------------------
 [MUSHARNA]
 Name = Musharna
@@ -13698,6 +13845,7 @@ Weight = 60.5
 Kind = Drowsing
 Pokedex = The dream mist coming from its forehead changes into many different colors depending on the dream that was eaten.
 Generation = 5
+Flags = Regional
 #-------------------------------
 [MMUNNA]
 Name = M. Munna
@@ -13719,6 +13867,7 @@ Weight = 23.3
 Kind = Dragon Egg
 Pokedex = When a Munna egg is placed in the care of a brooding dragon, it hatches into this form. It will repeatedly headbutt Togepi if placed near one.
 Evolutions = MMUSHARNA,Level,37
+Flags = Regional
 #-------------------------------
 [MMUSHARNA]
 Name = M. Musharna
@@ -13736,6 +13885,7 @@ Height = 1.1
 Weight = 60.5
 Kind = Hoarding
 Pokedex = Excess psychic energy is vented as smoke from the hole where its gem once was. Its heart functions as a second brain that lets it communicate telepathically.
+Flags = Regional
 #-------------------------------
 [PIDOVE]
 Name = Pidove
@@ -13856,6 +14006,7 @@ Pokedex = When it overflows with power, the orange crystal on its body glows. It
 Generation = 5
 WildItemUncommon = HEATROCK
 Evolutions = BOLDORE,Level,25
+Flags = Regional
 #-------------------------------
 [BOLDORE]
 Name = Boldore
@@ -13876,6 +14027,7 @@ Pokedex = The blasts of energy it makes from sunbeams have terrifying power. How
 Generation = 5
 WildItemUncommon = HEATROCK
 Evolutions = GIGALITH,Level,36
+Flags = Regional
 #-------------------------------
 [GIGALITH]
 Name = Gigalith
@@ -13895,6 +14047,7 @@ Kind = Compressed
 Pokedex = This hardy Pokémon can often be found on construction sites and in mines, working alongside people and Copperajah.
 Generation = 5
 WildItemUncommon = HEATROCK
+Flags = Regional
 #-------------------------------
 [MROGGENROLA]
 Name = M. Roggenrola
@@ -13917,6 +14070,7 @@ Kind = Aberrant
 Pokedex = It was first unearthed in forbidden lands. Its body doesn't abide by the physical laws of this universe.
 WildItemUncommon = EVERSTONE
 Evolutions = MBOLDORE,Level,25
+Flags = Regional
 #-------------------------------
 [MBOLDORE]
 Name = M. Boldore
@@ -13936,6 +14090,7 @@ Kind = Interloper
 Pokedex = It is more comfortable in alien dimensions than on Earth. The rocky parts of its body can't be analyzed by modern science.
 WildItemUncommon = EVERSTONE
 Evolutions = MGIGALITH,Level,43
+Flags = Regional
 #-------------------------------
 [MGIGALITH]
 Name = M. Gigalith
@@ -13955,6 +14110,7 @@ Weight = 260.0
 Kind = Unfathomable
 Pokedex = They can't be understood or predicted, making them dangerous opponents. At the end of their lifespan they return to their home universe, reporting to a higher will.
 WildItemUncommon = EVERSTONE
+Flags = Regional
 #-------------------------------
 [WOOBAT]
 Name = Woobat
@@ -14449,6 +14605,7 @@ Pokedex = Since they prefer moist, nutrient-rich soil, the areas where Petilil l
 Generation = 5
 WildItemUncommon = MIRACLESEED
 Evolutions = HLILLIGANT,Originize,36,LILLIGANT,Level,36
+Flags = Regional
 #-------------------------------
 [LILLIGANT]
 Name = Lilligant
@@ -14470,6 +14627,7 @@ Kind = Flowering
 Pokedex = Even veteran Trainers face a challenge in getting its beautiful flower to bloom. This Pokémon is popular with celebrities.
 Generation = 5
 WildItemUncommon = MIRACLESEED
+Flags = Regional
 #-------------------------------
 [HLILLIGANT]
 Name = H. Lilligant
@@ -14490,6 +14648,7 @@ Weight = 19.2
 Kind = Flowering
 Pokedex = Its well-developed legs were the result of a life spent on mountains covered in deep snow. The scent it exudes from its flower crown heartens those in proximity.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [MPETILIL]
 Name = M. Petilil
@@ -14511,6 +14670,7 @@ Kind = Ice Seed
 Pokedex = It seems to pride itself on living in inhospitable conditions. If others take up residence nearby, it will move to even colder climes.
 WildItemUncommon = NEVERMELTICE
 Evolutions = MLILLIGANT,Level,36
+Flags = Regional
 #-------------------------------
 [MLILLIGANT]
 Name = M. Lilligant
@@ -14530,6 +14690,7 @@ Weight = 16.3
 Kind = Princess
 Pokedex = It utters royal proclamations and tyrannical edicts on a whim, becoming petulant when its disobedient subjects can't understand it.
 WildItemUncommon = NEVERMELTICE
+Flags = Regional
 #-------------------------------
 [BASCULIN]
 Name = Basculin
@@ -14652,6 +14813,7 @@ Kind = Zen Charm
 Pokedex = When it sleeps, it pulls its limbs into its body and its internal fire goes down to 1,100 degrees Fahrenheit.
 Generation = 5
 Evolutions = DARMANITAN,Level,35
+Flags = Regional
 #-------------------------------
 [DARMANITAN]
 Name = Darmanitan
@@ -14671,6 +14833,7 @@ Kind = Blazing
 Pokedex = Its internal fire burns at 2,500 degrees Fahrenheit, making enough power that it can destroy a dump truck with one punch.
 FormName = Standard Mode
 Generation = 5
+Flags = Regional
 #-------------------------------
 [GDARUMAKA]
 Name = G. Darumaka
@@ -14692,6 +14855,7 @@ Kind = Zen Charm
 Pokedex = The colder they get, the more energetic they are. They freeze their breath to make snowballs, using them as ammo for playful snowball fights.
 Generation = 8
 Evolutions = GDARMANITAN,Item,ICESTONE
+Flags = Regional
 #-------------------------------
 [GDARMANITAN]
 Name = G. Darmanitan
@@ -14711,6 +14875,7 @@ Kind = Blazing
 Pokedex = Though it has a gentle disposition, it's also very strong. It will quickly freeze the snowball on its head before going for a headbutt.
 FormName = Standard Mode
 Generation = 8
+Flags = Regional
 #-------------------------------
 [MARACTUS]
 Name = Maractus
@@ -14858,6 +15023,7 @@ Pokedex = Each of them carries a mask that used to be its face when it was human
 Generation = 5
 WildItemUncommon = SPELLTAG
 Evolutions = COFAGRIGUS,Level,34
+Flags = Regional
 #-------------------------------
 [COFAGRIGUS]
 Name = Cofagrigus
@@ -14877,6 +15043,7 @@ Kind = Coffin
 Pokedex = Grave robbers who mistake them for real coffins and get too close end up trapped inside their bodies.
 Generation = 5
 WildItemUncommon = SPELLTAG
+Flags = Regional
 #-------------------------------
 [GYAMASK]
 Name = G. Yamask
@@ -14900,6 +15067,7 @@ Pokedex = It's said that this Pokémon was formed when an ancient clay tablet wa
 Generation = 8
 WildItemUncommon = HARDSTONE
 Evolutions = RUNERIGUS,Level,34
+Flags = Regional
 #-------------------------------
 [RUNERIGUS]
 Name = Runerigus
@@ -14920,6 +15088,7 @@ Kind = Grudge
 Pokedex = Never touch its shadowlike body, or you'll be shown the horrific memories behind the picture carved into it.
 Generation = 8
 WildItemUncommon = HARDSTONE
+Flags = Regional
 #-------------------------------
 [WYAMASK]
 Name = W. Yamask
@@ -14941,7 +15110,7 @@ Weight = 1.5
 Kind = Fish Mask
 Pokedex = The mask it has resembles an aquatic species of legend. West Yamask are the heroes of the seas.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = MYSTICWATER
 Evolutions = GYORGRIGUS,Level,34
 #-------------------------------
@@ -14964,7 +15133,7 @@ Weight = 66.6
 Kind = Aquatic Scourge
 Pokedex = The once heroic Yamask has become a spiteful fish who corrupts the ocean around it. It is unknown what causes this hate.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [NYAMASK]
 Name = N. Yamask
@@ -14986,7 +15155,7 @@ Weight = 1.5
 Kind = Rock Mask
 Pokedex = The mask it has resembles a mountain dwelling species of legend. North Yamask are known to eat rocks.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = HARDSTONE
 Evolutions = GOHTAGRIGUS,Level,34
 #-------------------------------
@@ -15009,7 +15178,7 @@ Weight = 66.6
 Kind = Icy Scourge
 Pokedex = The Yamask has turned on the mountains it protects. It causes cold spells that spell doom for its once friends.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [EYAMASK]
 Name = E. Yamask
@@ -15031,7 +15200,7 @@ Weight = 1.5
 Kind = Maskless
 Pokedex = The bravest of all Yamasks. It adventures deep
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = IKANARIGUS,Level,40
 #-------------------------------
 [IKANARIGUS]
@@ -15054,7 +15223,7 @@ Weight = 66.6
 Kind = Desert Scourge
 Pokedex = East Yamask went through the strangest mutation of them all. It gained two heads and now roams the desert looking for a meal.
 Generation = 8
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [TIRTOUGA]
 Name = Tirtouga
@@ -15211,6 +15380,7 @@ Pokedex = To protect themselves from danger, they hide their true identities by 
 Generation = 5
 WildItemUncommon = COVERTCLOAK
 Evolutions = ZOROARK,Level,30
+Flags = Regional
 #-------------------------------
 [ZOROARK]
 Name = Zoroark
@@ -15229,6 +15399,7 @@ Kind = Illusion Fox
 Pokedex = Bonds between these Pokémon are very strong. It protects the safety of its pack by tricking its opponents.
 Generation = 5
 WildItemUncommon = COVERTCLOAK
+Flags = Regional
 #-------------------------------
 [HZORUA]
 Name = H. Zorua
@@ -15250,6 +15421,7 @@ Kind = Spiteful Fox
 Pokedex = A once-departed soul, returned to life. Derives power from resentment, which rises as energy atop its head and takes on the forms of foes.
 Generation = 8
 Evolutions = HZOROARK,Level,30
+Flags = Regional
 #-------------------------------
 [HZOROARK]
 Name = H. Zoroark
@@ -15268,6 +15440,7 @@ Weight = 73.0
 Kind = Baneful Fox
 Pokedex = It likes to settle grudges and fulfill final wishes. It does so to ensure peaceful passage to the afterlife.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [MINCCINO]
 Name = Minccino
@@ -15665,6 +15838,7 @@ Generation = 5
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
 Evolutions = AMOONGUSS,Level,34
+Flags = Regional
 #-------------------------------
 [AMOONGUSS]
 Name = Amoonguss
@@ -15684,6 +15858,7 @@ Pokedex = It lures prey close by dancing and waving its arm caps, which resemble
 Generation = 5
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
+Flags = Regional
 #-------------------------------
 [RFOONGUS]
 Name = R. Foongus
@@ -15704,7 +15879,7 @@ Weight = 1.0
 Kind = Trainee
 Pokedex = It dropped the disguise early in its lifespan and went all out on offense, one of the few mushroom Pokémon who is active.
 Generation = 5
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
 Evolutions = RONINGUS,Level,34
@@ -15726,7 +15901,7 @@ Weight = 21.0
 Kind = Ronin
 Pokedex = Resembling an ancient ancestor to Amoonguss, Roningus are terrifying to face one on one. They fashion steel-like blades from hardy mushrooms
 Generation = 5
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemCommon = TINYMUSHROOM
 WildItemUncommon = BIGMUSHROOM
 #-------------------------------
@@ -15751,6 +15926,7 @@ Kind = Floating
 Pokedex = If its veil-like arms stun and wrap a foe, that foe will be dragged miles below the surface, never to return.
 Generation = 5
 Evolutions = JELLICENT,Level,30
+Flags = Regional
 #-------------------------------
 [JELLICENT]
 Name = Jellicent
@@ -15770,6 +15946,7 @@ Weight = 135.0
 Kind = Floating
 Pokedex = The fate of the ships and crew that wander into Jellicent's habitat: all sunken, all lost, all vanished.
 Generation = 5
+Flags = Regional
 #-------------------------------
 [MFRILLISH]
 Name = M. Frillish
@@ -15791,6 +15968,7 @@ Weight = 33.0
 Kind = Glow Jelly
 Pokedex = They are drawn to mysterious machinery and internet influencers. Because of this, they are common in online horror media.
 Evolutions = MJELLICENT,Level,30
+Flags = Regional
 #-------------------------------
 [MJELLICENT]
 Name = M. Jellicent
@@ -15809,6 +15987,7 @@ Height = 2.2
 Weight = 135.0
 Kind = Remnant
 Pokedex = They led explorers to an ancient sunken city in the abyss. Its people had uploaded their minds into machines that slowly failed over the ages.
+Flags = Regional
 #-------------------------------
 [JOLTIK]
 Name = Joltik
@@ -15870,7 +16049,7 @@ Weight = 18.8
 Kind = Potted Plant
 Pokedex = It needs lots of sunshine and to be watered regularly to ensure it grows tall and strong.
 Generation = 5
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = STICKYBARB
 Evolutions = OFERROTHORN,Level,33
 #-------------------------------
@@ -15891,7 +16070,7 @@ Weight = 110.0
 Kind = Potted Plant
 Pokedex = It has several vines that it can use to lure and draw in unsuspecting bugs that it then subsequently consumes.
 Generation = 5
-Flags = Hidden
+Flags = Hidden,Regional
 WildItemUncommon = STICKYBARB
 #-------------------------------
 [KLINK]
@@ -16297,6 +16476,7 @@ Weight = 11.0
 Kind = Trap
 Pokedex = It conceals itself in the mud of the seashore. Then it waits. When prey touch it, it delivers a jolt of electricity.
 Generation = 5
+Flags = Regional
 #-------------------------------
 [GSTUNFISK]
 Name = G. Stunfisk
@@ -16318,6 +16498,7 @@ Kind = Trap
 Pokedex = Its conspicuous lips lure prey in as it lies in wait in the mud. When prey gets close, Stunfisk clamps its jagged steel fins down on them.
 Generation = 8
 WildItemUncommon = GRIPCLAW
+Flags = Regional
 #-------------------------------
 [MIENFOO]
 Name = Mienfoo
@@ -16549,6 +16730,7 @@ Kind = Valiant
 Pokedex = They fight for their friends without any thought about danger to themselves. One can carry a car while flying.
 Generation = 5
 WildItemUncommon = SHARPBEAK
+Flags = Regional
 #-------------------------------
 [HBRAVIARY]
 Name = H. Braviary
@@ -16571,6 +16753,7 @@ Kind = Battle Cry
 Pokedex = Screaming a bloodcurdling battle cry, this huge and ferocious bird Pokémon went out on the hunt.
 Generation = 8
 WildItemUncommon = SHARPBEAK
+Flags = Regional
 #-------------------------------
 [VULLABY]
 Name = Vullaby
@@ -16594,6 +16777,7 @@ Pokedex = Their wings are too tiny to allow them to fly. They guard their poster
 Generation = 5
 WildItemUncommon = BLACKHERB
 Evolutions = MANDIBUZZ,Level,31
+Flags = Regional
 #-------------------------------
 [MANDIBUZZ]
 Name = Mandibuzz
@@ -16614,6 +16798,7 @@ Kind = Bone Vulture
 Pokedex = Watching from the sky, they swoop to strike weakened Pokémon on the ground. They decorate themselves with bones.
 Generation = 5
 WildItemUncommon = BLACKHERB
+Flags = Regional
 #-------------------------------
 [MVULLABY]
 Name = M. Vullaby
@@ -16635,6 +16820,7 @@ Kind = Tiny House
 Pokedex = It stomps on smaller opponents with its powerful legs, sometimes toppling in the process. If its house is broken, terrible wailing emits until it is repaired.
 WildItemUncommon = SPELLTAG
 Evolutions = MMANDIBUZZ,Level,31
+Flags = Regional
 #-------------------------------
 [MMANDIBUZZ]
 Name = M. Mandibuzz
@@ -16654,6 +16840,7 @@ Weight = 39.5
 Kind = Witchcraft
 Pokedex = It steeps the remains of prey within the jar it protects, stirring the concoction with its claws. Folklore says its soul is kept within the diseased mass.
 WildItemUncommon = SPELLTAG
+Flags = Regional
 #-------------------------------
 [HEATMOR]
 Name = Heatmor
@@ -17791,7 +17978,8 @@ Kind = Perfume
 Pokedex = In the past, rather than using perfume, royal ladies carried a Spritzee that would waft a fragrance they liked.
 Generation = 6
 WildItemUncommon = FAIRYFEATHER
-Evolutions = AROMATISSE,Level,34,MAROMATISSE,Item,LEAFSTONE
+Evolutions = AROMATISSE,Level,34
+Flags = Regional
 #-------------------------------
 [AROMATISSE]
 Name = Aromatisse
@@ -17813,6 +18001,7 @@ Kind = Fragrance
 Pokedex = Its scent is so overpowering that, unless a Trainer happens to really enjoy the smell, he or she will have a hard time walking alongside it.
 Generation = 6
 WildItemUncommon = FAIRYFEATHER
+Flags = Regional
 #-------------------------------
 [MSPRITZEE]
 Name = M. Spritzee
@@ -17836,6 +18025,7 @@ Pokedex = The rare Makyan Spritzee is rarely seen outside of captivity, it's a p
 Generation = 6
 WildItemUncommon = FAIRYFEATHER
 Evolutions = MAROMATISSE,Level,34
+Flags = Regional
 #-------------------------------
 [MAROMATISSE]
 Name = M. Aromatisse
@@ -17856,6 +18046,7 @@ Weight = 36.2
 Kind = Harvest
 Pokedex = It uses both white and black magic. It harvests the flowers that grow on witches who regularly walk between life and death.
 WildItemUncommon = FAIRYFEATHER
+Flags = Regional
 #-------------------------------
 [SWIRLIX]
 Name = Swirlix
@@ -18037,6 +18228,7 @@ Kind = Mock Kelp
 Pokedex = It looks just like rotten kelp. It hides from foes while storing up power for its evolution.
 Generation = 6
 Evolutions = DRAGALGE,Level,26
+Flags = Regional
 #-------------------------------
 [DRAGALGE]
 Name = Dragalge
@@ -18056,6 +18248,7 @@ Kind = Mock Kelp
 Pokedex = Tales are told of ships that wander into seas where Dragalge live, never to return.
 Generation = 6
 Evolutions = CYANOTHAN,Item,MEGASHARD
+Flags = Regional
 #-------------------------------
 [CYANOTHAN]
 Name = Cyanothan
@@ -18074,6 +18267,7 @@ Weight = 100.3
 Kind = Mock Kelp
 Pokedex = It spits a liquid that causes the regenerative power of cells to run wild. The liquid is deadly poison to everything other than itself.
 Generation = 6
+Flags = Regional
 #-------------------------------
 [MSKRELP]
 Name = M. Skrelp
@@ -18094,6 +18288,7 @@ Weight = 7.3
 Kind = Lush Kelp
 Pokedex = Born in pristine waters, they escape detection by blending in seamlessly with underwater plants.
 Evolutions = MDRAGALGE,Level,34
+Flags = Regional
 #-------------------------------
 [MDRAGALGE]
 Name = M. Dragalge
@@ -18111,6 +18306,7 @@ Height = 1.8
 Weight = 81.5
 Kind = Kelp
 Pokedex = They gallop on the ocean floor, cleaning it by collecting algae on their hooves.
+Flags = Regional
 #-------------------------------
 [CLAUNCHER]
 Name = Clauncher
@@ -18399,6 +18595,7 @@ Pokedex = It's very friendly toward people. If you grow close to it, Goodra will
 Generation = 6
 WildItemUncommon = SHEDSHELL
 Evolutions = GOODRA,Level,43
+Flags = Regional
 #-------------------------------
 [GOODRA]
 Name = Goodra
@@ -18419,6 +18616,7 @@ Weight = 150.5
 Kind = Dragon
 Pokedex = It attacks with retractable horns. It throws a punch that's the equivalent of the force of a hundred pro boxers.
 Generation = 6
+Flags = Regional
 #-------------------------------
 [HSLIGGOO]
 Name = H. Sliggoo
@@ -18440,6 +18638,7 @@ Kind = Soft Tissue
 Pokedex = A creature given to melancholy. I suspect its metallic shell developed as a result of the mucus on its skin reacting with the iron in Hisui's water.
 Generation = 8
 Evolutions = HGOODRA,Level,43
+Flags = Regional
 #-------------------------------
 [HGOODRA]
 Name = H. Goodra
@@ -18460,6 +18659,7 @@ Weight = 334.1
 Kind = Dragon
 Pokedex = Able to freely control the hardness of its metallic shell. It loathes solitude and is extremely clingy-it will fume and run riot if those dearest to it ever leave its side.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [KLEFKI]
 Name = Klefki
@@ -18608,6 +18808,7 @@ Weight = 505.0
 Kind = Iceberg
 Pokedex = The way several Bergmite and Dreepy like to huddle on its back makes it look like an aircraft carrier made of ice.
 Generation = 6
+Flags = Regional
 #-------------------------------
 [HAVALUGG]
 Name = H. Avalugg
@@ -18629,6 +18830,7 @@ Weight = 262.4
 Kind = Iceberg
 Pokedex = This Pokémon barrels along steep mountain paths, cleaving through the deep snow with its hard icy armor.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [NOIBAT]
 Name = Noibat
@@ -19583,6 +19785,7 @@ Kind = Flailing
 Pokedex = It boasts power enough to split large trees in half. The organ on its rear releases an odor that it uses to communicate with others of its kind.
 Generation = 7
 Evolutions = BEWEAR,Level,27
+Flags = Regional
 #-------------------------------
 [BEWEAR]
 Name = Bewear
@@ -19602,6 +19805,7 @@ Weight = 135.0
 Kind = Strong Arm
 Pokedex = It waves its hands wildly in intimidation and warning. Life is over for anyone who doesn't run away as fast as possible.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [CRSTUFFUL]
 Name = Cr. Stufful
@@ -19623,7 +19827,7 @@ Weight = 6.8
 Kind = Teddy
 Pokedex = A goo creature that hid inside a plus animal. While it may not seem related to Stufful, it is a mammal.
 Generation = 7
-Flags = Hidden
+Flags = Hidden,Regional
 Evolutions = CRBEWEAR,Level,27
 #-------------------------------
 [CRBEWEAR]
@@ -19644,7 +19848,7 @@ Weight = 135.0
 Kind = Groozly
 Pokedex = It tried to expand the plush but it just burst open, dropping the disguise and going all out on offense.
 Generation = 7
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [BOUNSWEET]
 Name = Bounsweet
@@ -19704,6 +19908,7 @@ Weight = 21.4
 Kind = Fruit
 Pokedex = A master of grand and beautiful kicks, it can knock out even kickboxing champions with a single blow.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [CLTSAREENA]
 Name = Cl. Tsareena
@@ -19725,7 +19930,7 @@ Weight = 21.4
 Kind = Pumpqueen
 Pokedex = An extinct form of Tsareena. They were once tyrants in the forests but were overthrown.
 Generation = 7
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [TSARLETT]
 Name = Tsarlett
@@ -19747,7 +19952,7 @@ Weight = 21.4
 Kind = Frankenfusion
 Pokedex = It has no legs and it must kick. It has no pump and it must kin.
 Generation = 7
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [COMFEY]
 Name = Comfey
@@ -19915,6 +20120,7 @@ Weight = 1.2
 Kind = Sea Cucumber
 Pokedex = The tradition known as Pyukumuku chucking started from the custom of throwing Pyukumuku back into the sea after they wash onshore.
 Generation = 7
+Flags = Regional
 #-------------------------------
 [CLPYUKUMUKU]
 Name = Cl. Pyukumuku
@@ -19935,7 +20141,7 @@ Weight = 1.2
 Kind = Bunny
 Pokedex = A mammal similar to Pyukumuku in appearance. However it is quite agile, and skittish. It can unleash a powerful blast on its predators.
 Generation = 7
-Flags = Hidden
+Flags = Hidden,Regional
 #-------------------------------
 [TYPENULL]
 Name = Type: Null
@@ -21777,6 +21983,7 @@ Kind = Black Tea
 Pokedex = The teacup in which this Pokémon makes its home is a famous piece of antique tableware. Many forgeries are in circulation.
 Generation = 8
 Evolutions = POLTEAGEIST,Item,LEAFSTONE
+Flags = Regional
 #-------------------------------
 [POLTEAGEIST]
 Name = Polteageist
@@ -21796,6 +22003,7 @@ Weight = 0.4
 Kind = Black Tea
 Pokedex = Leaving leftover black tea unattended is asking for this Pokémon to come along and pour itself into it, turning the tea into a new Polteageist.
 Generation = 8
+Flags = Regional
 #-------------------------------
 [MSINISTEA]
 Name = M. Sinistea
@@ -21818,6 +22026,7 @@ Weight = 0.2
 Kind = Ice Tea
 Pokedex = It spends days relaxing on the beach. Its rest is often interrupted by someone who confuses it for a drink.
 Evolutions = MPOLTEAGEIST,Item,ICESTONE
+Flags = Regional
 #-------------------------------
 [MPOLTEAGEIST]
 Name = M. Polteageist
@@ -21837,6 +22046,7 @@ Height = 0.4
 Weight = 0.4
 Kind = Ice Tea
 Pokedex = Despite its refreshing scent, those who drink of its colorful liquid are swiftly put into a deep sleep.
+Flags = Regional
 #-------------------------------
 [POLTCHAGEIST]
 Name = Poltchageist
@@ -21860,6 +22070,7 @@ Kind = Matcha
 Pokedex = Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon.
 Generation = 9
 Evolutions = SINISTCHA,Item,FIRESTONE
+Flags = Regional
 #-------------------------------
 [SINISTCHA]
 Name = Sinistcha
@@ -21880,6 +22091,7 @@ Weight = 0.4
 Kind = Matcha
 Pokedex = It pretends to be tea, trying to fool people into drinking it so it can drain their life-force. Its ruse is generally unsuccessful.
 Generation = 9
+Flags = Regional
 #-------------------------------
 [HATENNA]
 Name = Hatenna
