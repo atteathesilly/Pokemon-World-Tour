@@ -894,6 +894,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[127]
+# Thunderpunch Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Dry
+BattleBack = sand
+Environment = Sand
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

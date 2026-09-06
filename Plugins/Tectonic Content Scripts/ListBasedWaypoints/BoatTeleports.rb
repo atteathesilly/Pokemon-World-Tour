@@ -39,10 +39,10 @@ DOCK_LOCATIONS = {
         :event_id => 8,
         :unlock_switch => 86,
     },
-    :TRI_ISLAND => {
-        :map_name => "Tri Island",
+    :tHUNDERPUNCH_ISLAND => {
+        :map_name => "Thunderpunch Island",
         :map_id => 411,
-        :event_id => 23,
+        :event_id => 1,
         :unlock_switch => 97,
     },
     :MONUMENT_ISLAND => {
