@@ -670,3 +670,11 @@ FloweryGrass2,20
     20,SEEDOT,35,36
     20,SPINDA,35,36
     20,ZIGZAGOON,35,36
+#-------------------------------
+[127] # Thunderpunch Island
+Land,20
+    20,AGEODUDE,30,31
+    20,FALINKS,30,31
+    20,MAGNEMITE,30,31
+    20,PINCURCHIN,30,31
+    20,TOGEDEMARU,30,31

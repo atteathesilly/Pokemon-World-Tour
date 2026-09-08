@@ -39,16 +39,16 @@ DOCK_LOCATIONS = {
         :event_id => 8,
         :unlock_switch => 86,
     },
-    :tHUNDERPUNCH_ISLAND => {
+    :THUNDERPUNCH_ISLAND => {
         :map_name => "Thunderpunch Island",
-        :map_id => 411,
+        :map_id => 127,
         :event_id => 1,
         :unlock_switch => 97,
     },
-    :MONUMENT_ISLAND => {
-        :map_name => "Battle Monument",
-        :map_id => 357,
-        :event_id => 4,
+    :JAN => {
+        :map_name => "Jan's Hole",
+        :map_id => 128,
+        :event_id => 3,
         :unlock_switch => 99,
     },
     :SPIRIT_ATOLL => {

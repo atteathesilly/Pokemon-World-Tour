@@ -904,6 +904,14 @@ Humidity = Dry
 BattleBack = sand
 Environment = Sand
 #-------------------------------
+[128]
+# Jan's Hole
+Outdoor = false
+ShowArea = true
+Bicycle = true
+BattleBack = cave1
+Environment = Cave
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
