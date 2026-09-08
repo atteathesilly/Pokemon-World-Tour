@@ -1082,6 +1082,22 @@ Pokemon = WHIMSICOTT,35
     Moves = DEFOG,MISADVENTURE,LEAFBLADE,SYNTHESIS
     AbilityIndex = 0 # Cotton Decoy
 #-------------------------------
+[PIRATE,Buggy]
+Pokemon = SCYTHER,34
+    Moves = XSCISSOR,FLY,UTURN,SHARPEN
+    AbilityIndex = 1 # Inner Focus
+    Item = EVIOLITE
+Pokemon = SPINDA,34
+    Moves = GUTTURALROAR,VIMRIPPER,DIZZYPUNCH,FOULPLAY
+    AbilityIndex = 1 # Unconventional
+Pokemon = CRAMORANT,34
+    Moves = SURF,AIRSLASH,FLIPTURN,FEATHERDANCE
+    AbilityIndex = 0 # Gulp Missile
+    Item = SITRUSBERRY
+Pokemon = SMEOWTH,34
+    Moves = REND,PAYDAY,IRONDEFENSE,METALCLAW
+    AbilityIndex = 0 # Cash Out
+#-------------------------------
 [RANCHER2,Theodore]
 Pokemon = QUAQUAVAL,36
     Moves = AQUASTEP,ACROBATICS,DROPKICK,BRINE
