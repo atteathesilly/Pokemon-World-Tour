@@ -39,22 +39,22 @@ DOCK_LOCATIONS = {
         :event_id => 8,
         :unlock_switch => 86,
     },
-    :THUNDERPUNCH_ISLAND => {
-        :map_name => "Thunderpunch Island",
-        :map_id => 127,
-        :event_id => 1,
-        :unlock_switch => 97,
-    },
     :JAN => {
         :map_name => "Jan's Hole",
         :map_id => 128,
         :event_id => 3,
         :unlock_switch => 99,
     },
-    :SPIRIT_ATOLL => {
-        :map_name => "Spirit Atoll",
-        :map_id => 182,
-        :event_id => 19,
+    :THUNDERPUNCH_ISLAND => {
+        :map_name => "Thunderpunch Island",
+        :map_id => 127,
+        :event_id => 1,
+        :unlock_switch => 97,
+    },
+    :LAB129 => {
+        :map_name => "Lab 129",
+        :map_id => 129,
+        :event_id => 1,
         :unlock_switch => 151,
     },
 }

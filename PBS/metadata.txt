@@ -912,6 +912,14 @@ Bicycle = true
 BattleBack = cave1
 Environment = Cave
 #-------------------------------
+[129]
+# Lab 129
+Outdoor = true
+ShowArea = true
+Bicycle = true
+BattleBack = forest
+Environment = TallGrass
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false
