@@ -219,10 +219,6 @@ Flags = HailSynergy
 Name = Effect Spore
 Description = Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker.
 #-------------------------------
-[EGOIST]
-Name = Egoist
-Description = Fighting-type moves have +1 priority.
-#-------------------------------
 [ELECTRICSURGE]
 Name = Electric Surge
 Description = Turns the ground into Electric Terrain for 5 turns when entering battle.

@@ -592,6 +592,10 @@ Description = Repeats another Pokémon's sound and pulse moves immediately at 50
 Name = Efflorescent
 Description = The Pokémon and its allies are protected from flinching, Intimidate, Fascinate, and Frustrate.
 #-------------------------------
+[EGOIST]
+Name = Egoist
+Description = Fighting-type moves have +1 priority.
+#-------------------------------
 [ELEMENTALDRAGON]
 Name = Elemental Dragon
 Description = Immune to Fire-type, Water-type, Flying-type and Ground-type attacks.

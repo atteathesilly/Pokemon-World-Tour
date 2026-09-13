@@ -48,7 +48,7 @@ HARMONY = _INTL("Harmony")
 HANNAH = _INTL("Hannah")
 CLOWN = _INTL("Clown")
 JAN = _INTL("Jan")
-SYDNEY = _INTL("captain Sydney")
+SYDNEY = _INTL("Captain Sydney")
 GRISHAM = _INTL("Grisham")
 GRISELLE = _INTL("Griselle")
 
