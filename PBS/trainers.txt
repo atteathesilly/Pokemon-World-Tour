@@ -1116,6 +1116,39 @@ Pokemon = SNIBELONG,39
     Moves = ARCHMYTH,CALAMITOUSSLASH,IRONHEAD,DRAGONDANCE
     AbilityIndex = 0 # Elemental Dragon
 #-------------------------------
+[PIRATE,Salty]
+Pokemon = KLEAVOR,41
+    Moves = XSCISSOR,STONEAXE,SWORDSDANCE,ROCKALANCHE
+    AbilityIndex = 0 # Swordplay
+    Item = WHETSTONE
+Pokemon = PTAUROS,41
+    Form = 1 # Blaze Breed Form
+    Moves = BACKHAND,LIQUIDATION,BULLETTRAIN,BODYSLAM
+    AbilityIndex = 1 # Blazing Vigor
+Pokemon = SCEPTILE,41
+    Moves = LEAFBLADE,NIGHTSLASH,REND,RETREAT
+    AbilityIndex = 0 # Regenerator
+    Item = MIRACLESEED
+Pokemon = COPPERAJAH,41
+    Moves = REFURBISH,HEAVYSLAM,IRONDEFENSE,PLAYROUGH
+    AbilityIndex = 0 # Heavy Metal
+#-------------------------------
+[PIRATE,Don]
+Pokemon = SCARAPACE,43
+    Moves = CARAPACECRUSH,DUALWINGBEAT,DIVEBOMB,SWORDSDANCE
+    AbilityIndex = 0 # Victory Molt
+    Item = SITRUSBERRY
+Pokemon = MONOSTIC,43
+    Moves = PATTERNRELEASE,FAKEOUT,LIGHTSCREEN,REFLECT
+    AbilityIndex = 1 # Liminal
+    Item = LOADEDDICE
+Pokemon = MINOSACLE,43
+    Moves = ADAMANTINEPRESS,CROSSCHOP,GLARE,SLAMSHUT
+    AbilityIndex = 1 # Steel Absorb
+Pokemon = ABSOLITH,43
+    Moves = DEADEND,DARKALLURE,SHIVER,WILLOWISP
+    AbilityIndex = 1 # Vengeance
+#-------------------------------
 [RANCHER2,Theodore]
 Pokemon = QUAQUAVAL,36
     Moves = AQUASTEP,ACROBATICS,DROPKICK,BRINE

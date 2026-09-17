@@ -268,7 +268,7 @@ Name = Brisk
 Description = Boosts the power of wind-based moves by 30%.
 #-------------------------------
 [BRUTEFORCE]
-Name = Brute Force
+Name = Claw of Fate
 Description = Its attacks are always physical attacks.
 #-------------------------------
 [BULLY]
