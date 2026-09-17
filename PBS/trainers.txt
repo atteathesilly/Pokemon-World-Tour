@@ -1098,6 +1098,24 @@ Pokemon = SMEOWTH,34
     Moves = REND,PAYDAY,IRONDEFENSE,METALCLAW
     AbilityIndex = 0 # Cash Out
 #-------------------------------
+[CAPTAINSYDNEY,Sydney]
+Pokemon = YOSHISMEE,39
+    Moves = FROZENBOOTY,FLIPTURN,BULLETTRAIN,SHARPEN
+    AbilityIndex = 0 # Pirate Hook
+Pokemon = CHATOT,39
+    Moves = BUGBUZZ,HYPERVOICE,CHATTER,DREAMDANCE
+    AbilityIndex = 0 # Loud
+    Item = SITRUSBERRY
+Pokemon = PERSIAN,39
+    Moves = CHACHING,TRAMPLE,HUNTDOWN,SCREECH
+    AbilityIndex = 0 # Cash Out
+Pokemon = APERSIAN,39
+    Moves = ROYALTRIBUTE,SCAM,DIAMONDFORCE,PARTINGSHOT
+    AbilityIndex = 0 # Fur Coat
+Pokemon = SNIBELONG,39
+    Moves = ARCHMYTH,CALAMITOUSSLASH,IRONHEAD,DRAGONDANCE
+    AbilityIndex = 0 # Elemental Dragon
+#-------------------------------
 [RANCHER2,Theodore]
 Pokemon = QUAQUAVAL,36
     Moves = AQUASTEP,ACROBATICS,DROPKICK,BRINE

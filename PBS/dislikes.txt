@@ -104,3 +104,4 @@ RAPMUSIC,Rap Music
 SNAKES,Ekans
 BEES,Beedrills
 FORMALCLOTHES,Formal Clothes
+MONOKUMA,Monokuma
