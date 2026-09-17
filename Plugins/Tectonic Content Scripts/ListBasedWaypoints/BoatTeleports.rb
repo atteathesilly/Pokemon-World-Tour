@@ -57,6 +57,12 @@ DOCK_LOCATIONS = {
         :event_id => 1,
         :unlock_switch => 151,
     },
+        :FROSTY_ISLAND => {
+        :map_name => "Frosty Island",
+        :map_id => 126,
+        :event_id => 5,
+        :unlock_switch => 309,
+    },
 }
 
 BOAT_LOCATIONS_PAGE_SIZE = 4

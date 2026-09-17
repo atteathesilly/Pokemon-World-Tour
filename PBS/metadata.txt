@@ -894,6 +894,16 @@ Outdoor = false
 ShowArea = false
 Bicycle = false
 #-------------------------------
+[126]
+# Frosty Island
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Cold
+Humidity = Dry
+BattleBack = city
+Environment = Snow
+#-------------------------------
 [127]
 # Thunderpunch Island
 Outdoor = true

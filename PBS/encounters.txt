@@ -671,6 +671,14 @@ FloweryGrass2,20
     20,SPINDA,35,36
     20,ZIGZAGOON,35,36
 #-------------------------------
+[126] # Frosty Island
+Land,20
+    20,BAGON,35,36
+    20,DHELMISE,35,36
+    20,HONEDGE,35,36
+    20,SPHEAL,35,36
+    20,YOSHISMEE,35,36
+#-------------------------------
 [127] # Thunderpunch Island
 Land,20
     20,AGEODUDE,30,31
