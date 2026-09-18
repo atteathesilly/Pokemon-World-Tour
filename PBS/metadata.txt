@@ -930,6 +930,15 @@ Bicycle = true
 BattleBack = forest
 Environment = TallGrass
 #-------------------------------
+[131]
+# Diamond Grove
+Outdoor = true
+ShowArea = true
+Bicycle = true
+Temperature = Hot
+Humidity = Wet
+BattleBack = forest
+#-------------------------------
 [147]
 # PokEstate
 Outdoor = false

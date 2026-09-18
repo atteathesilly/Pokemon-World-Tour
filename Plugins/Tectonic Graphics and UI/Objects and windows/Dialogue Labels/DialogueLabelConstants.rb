@@ -51,7 +51,7 @@ JAN = _INTL("Jan")
 SYDNEY = _INTL("Captain Sydney")
 GRISHAM = _INTL("Grisham")
 GRISELLE = _INTL("Griselle")
-
+DIANCIE = _INTL("Diancie")
 CARALISS = _INTL("Cara Liss")
 GRIND_RIVAL = _INTL("Vanya")
 REDWOOD = _INTL("Prof. Redwood")

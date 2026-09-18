@@ -63,6 +63,12 @@ DOCK_LOCATIONS = {
         :event_id => 5,
         :unlock_switch => 309,
     },
+        :DIAMONDGROVE => {
+        :map_name => "Diamond Grove",
+        :map_id => 131,
+        :event_id => 4,
+        :unlock_switch => 311,
+    },
 }
 
 BOAT_LOCATIONS_PAGE_SIZE = 4

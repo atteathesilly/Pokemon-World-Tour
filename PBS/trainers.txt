@@ -1149,6 +1149,30 @@ Pokemon = ABSOLITH,43
     Moves = DEADEND,DARKALLURE,SHIVER,WILLOWISP
     AbilityIndex = 1 # Vengeance
 #-------------------------------
+[CAPTAINSYDNEY,Sydney,1]
+Pokemon = MANAPHY,45
+    Form = 1 #  Form
+    Moves = HEARTSWAP,UTURN,WATERFALL,SURF
+    AbilityIndex = 0 # Overflowing Heart
+Pokemon = URSHIFU,45
+    Form = 1 # Rapid Strike Form
+    Moves = SURGINGSTRIKES,LIQUIDATION,BRICKBREAK,IRONHEAD
+    AbilityIndex = 0 # Unseen Fist
+Pokemon = YOSHISMEE,45
+    Moves = FROZENBOOTY,BULLETTRAIN,AVASTYE,SHARPEN
+    AbilityIndex = 0 # Pirate Hook
+    Item = MUSCLEBAND
+Pokemon = CHATOT,45
+    Moves = BUGBUZZ,HYPERVOICE,CHATTER,DREAMDANCE
+    AbilityIndex = 0 # Loud
+    Item = SITRUSBERRY
+Pokemon = PERSIAN,45
+    Moves = CHACHING,TRAMPLE,HUNTDOWN,SCREECH
+    AbilityIndex = 0 # Cash Out
+Pokemon = APERSIAN,45
+    Moves = ROYALTRIBUTE,SCAM,DIAMONDFORCE,PARTINGSHOT
+    AbilityIndex = 0 # Fur Coat
+#-------------------------------
 [RANCHER2,Theodore]
 Pokemon = QUAQUAVAL,36
     Moves = AQUASTEP,ACROBATICS,DROPKICK,BRINE
