@@ -303,6 +303,7 @@ Name = Pirate Captain
 Gender = Unknown
 BaseMoney = 32
 IntroBGM = SAILOR
+BattleBGM = Battle Pirate
 #-------------------------------
 [CEO]
 Name = CEO
@@ -813,7 +814,7 @@ IntroBGM = POKEFAN
 Name = Treasure Thief
 Gender = Female
 BaseMoney = 100
-BattleBGM = Battle lainie
+BattleBGM = Battle Kelpie
 #-------------------------------
 [KIMONOGIRL]
 Name = Kimono Girl
@@ -1178,6 +1179,7 @@ Name = Pirate
 Gender = Male
 BaseMoney = 32
 IntroBGM = SAILOR
+BattleBGM = Battle Pirate
 #-------------------------------
 [PLZA_HEX_MANIAC]
 Name = Hex Maniac
@@ -1767,7 +1769,7 @@ IntroBGM = CYCLING2
 Name = Subway Boss
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Subway Boss
 #-------------------------------
 [SUPERNERD]
 Name = Super Nerd
@@ -1943,7 +1945,7 @@ BattleBGM = Battle Sina and Dexio
 Name = Fisher
 Gender = Unknown
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Maggie
 #-------------------------------
 [TRAINERSINA]
 Name = Kalos Trainer
@@ -1955,7 +1957,7 @@ BattleBGM = Battle Sina and Dexio
 Name = Vankyo Trainer
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle eifion
+BattleBGM = Battle Tory
 #-------------------------------
 [TRAINER_Alessa]
 Name = Pokémon Trainer
