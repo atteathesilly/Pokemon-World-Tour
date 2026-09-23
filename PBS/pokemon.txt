@@ -62,7 +62,7 @@ Weight = 1.9
 Kind = Explorer
 Pokedex = These Chatots are rarely seen in Gerenia itself. They migrate as far as far as they can in search of treasure. It is believed they settled in Sinnoh as well.
 Generation = 4
-Flags = Hidden,Regional
+Flags = Regional
 Evolutions = ADVENTAWK,Level,40
 #-------------------------------
 [ADVENTAWK]
@@ -83,7 +83,7 @@ Weight = 41.0
 Kind = Explorer
 Pokedex = Adventawk can easily navigate both land and sea with its powerful wings. It is said they hoard as much wealth as a Dragon-type.
 Generation = 4
-Flags = Hidden,Regional
+Flags = Regional
 #-------------------------------
 [AGOATALYTE]
 Name = Agoatalyte
@@ -121,7 +121,6 @@ Height = 0.8
 Weight = 18.0
 Kind = Leading Goat
 Pokedex = Cultophet leads the Agoatalytes to do specific actions to worship Giratina. They rarely let them evolve.
-Flags = Hidden
 Evolutions = BAPHOKING,Level,40
 #-------------------------------
 [BAPHOKING]
@@ -141,7 +140,6 @@ Height = 0.8
 Weight = 18.0
 Kind = Distorted Goat
 Pokedex = When Cultophet get a certain age, they do a ritual further connecting themselves to Giratina. They may be able to go even further with it.
-Flags = Hidden
 #-------------------------------
 [HATCHOLE]
 Name = Hatchole
@@ -153,7 +151,7 @@ BaseStats = 55,34,44,60,60,55
 BaseEXP = 60
 Rareness = 95
 Happiness = 35
-Abilities = STRESSFUL,WARPINGEFFECT
+Abilities = STRESSFUL,ENERGETIC
 Moves = 1,DAZZLE,1,TWISTER,4,MINDWAVES,8,LOOMOVER,12,GLARE,16,DRAGONBREATH,20,PSYBEAM,24,DRONING,28,DIAMETRICBREATH,32,DREAMDANCE,36,SCOUR,40,PSYCHIC,44,SIGNALBEAM,48,PSYCHICOVERLOAD,52,DRACOMETEOR,56,SCALESTORM,60,HYPERBEAM
 LineMoves = ACCELEROCK,ADAMANTINEPRESS,AFTERYOU,AMNESIA,BRAINFREEZE,CALMMIND,CENTER,CHACHING,CHARGEBEAM,CLASH,CONCENTRATE,CRUELTY,CRYOSLEEP,DARKALLURE,DARKPULSE,DIAMETRICBREATH,DRACOMETEOR,DRAGONENERGY,DREAMABSORB,ECLIPSE,ENDURE,FINALIZE,FLING,FUTURESIGHT,GIGAIMPACT,GRAVITY,HEARTSWAP,HELIOPAUSE,HELPINGHAND,HOLDBACK,HYPERBEAM,LIGHTSCREEN,LIGHTSHOW,LUMINBURST,MAGICCOAT,NUMB,OCCULTATION,OUTRAGE,PAINSPLIT,PAYDAY,PETRIFY,POWERGEM,PSYBEAM,PSYCHIC,PSYCHUP,REFLECT,REND,REST,RISINGPOWER,ROCKTOMB,ROUND,SCALESTORM,SCAM,SCOUR,SEERSTRIKE,SHATTERSHOT,SHOUT,SHRED,SIGNALBEAM,SKILLSWAP,SLEEPTALK,SNORE,STELLARATE,SUBSTITUTE,SWIFT,TEASE,TERRAFORM,TORMENT,TRICK,TRUMPCARD,TUTELAGE,TWISTER,ZENHEADBUTT
 Tribes = NOBLE,MYSTIC
@@ -174,14 +172,13 @@ BaseStats = 75,40,60,60,90,85
 BaseEXP = 60
 Rareness = 95
 Happiness = 35
-Abilities = STRESSFUL,WARPINGEFFECT
+Abilities = STRESSFUL,ENERGETIC
 Tribes = NOBLE,MYSTIC
 StepsToHatch = 10455
 Height = 4.0
 Weight = 16.5
 Kind = Wyrmhole
 Pokedex = It now resides almost entirely in another dimension. Very few trainers will even get a glimpse of this dimension, let alone go in.
-Flags = Hidden
 Evolutions = WYRMHOLAN,Level,40
 #-------------------------------
 [WYRMHOLAN]
@@ -203,7 +200,6 @@ Weight = 206.5
 Kind = Wyrmhole Master
 Pokedex = It takes care of small Pokémon it finds in stressful places. It was once considered legendary in Gerenia's past.
 FormName = Nacli Pal
-Flags = Hidden
 #-------------------------------
 [YOSHISMEE]
 Name = Yoshismee
