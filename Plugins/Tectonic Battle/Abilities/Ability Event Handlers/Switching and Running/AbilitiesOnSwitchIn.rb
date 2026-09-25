@@ -1084,6 +1084,7 @@ BattleHandlers::AbilityOnSwitchIn.add(:DOPPELGANGER,
         next if battler.isSpecies?(pkmn.species)
         choices.push(i)
       end
+	  next if choices.empty?
       choice = choices.sample
       battler_choice = PokeBattle_Battler.new(battler.battle, battler.index, true)
       battler_choice.pbInitializeFake(battler.ownerParty[choice], choice)
