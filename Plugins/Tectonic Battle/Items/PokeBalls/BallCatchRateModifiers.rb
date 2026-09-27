@@ -82,9 +82,7 @@ BallHandlers::ModifyCatchRate.add(:LEVELBALL, proc { |_ball, catchRate, battle, 
 })
 
 BallHandlers::ModifyCatchRate.add(:LUREBALL, proc { |_ball, catchRate, _battle, _battler, _ultraBeast|
-    multiplier = 5
-    catchRate *= multiplier if battler.pbHasType?(:WATER)
-    next catchRate
+    next catchRate * 1.5
 })
 
 BallHandlers::ModifyCatchRate.add(:HEAVYBALL, proc { |_ball, catchRate, _battle, battler, _ultraBeast|

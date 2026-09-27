@@ -1591,7 +1591,7 @@ Description = A device for catching wild Pokémon. It is thrown like a ball at t
 Name = Safari Ball
 NamePlural = Safari Balls
 Pocket = 3
-Price = 0
+Price = 300
 BattleUse = OnFoe
 Flags = PokeBall,SkipPocketMessage
 Description = A special Poké Ball that is used only in the Safari Zone. It is decorated in a camouflage pattern.
@@ -1801,7 +1801,7 @@ Pocket = 3
 Price = 300
 BattleUse = OnFoe
 Flags = PokeBall
-Description = A Poké Ball with 5x strength against Water-type Pokemon
+Description = A Poké Ball with the same catchrate as an ultra ball
 #-------------------------------
 [HEAVYBALL]
 Name = Heavy Ball
