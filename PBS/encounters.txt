@@ -469,6 +469,7 @@ Land,20
 #-------------------------------
 [086] # Turnback Cave
 Land,20
+    20,CARBINK,30,31
     20,GIBLE,30,31
     20,GLIGAR,30,31
     20,HILLUMISE,30,31

@@ -18524,7 +18524,6 @@ Weight = 5.7
 Kind = Jewel
 Pokedex = Carbink are near extinction in the modern day in some regions, with Sableye hunting them ruthlessly, so some places have deemed them mythical.
 Generation = 6
-Flags = Legendary
 Evolutions = DIANCIE,Item,DIAMONDTIARA
 #-------------------------------
 [DIANCIE]
