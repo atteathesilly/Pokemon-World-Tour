@@ -1968,6 +1968,12 @@ FrontSprite = -4,27
 ShadowX = 0
 ShadowSize = 1
 #-------------------------------
+[ELECTRODE]
+BackSprite = 0,21
+FrontSprite = 0,18
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [ELEKID]
 BackSprite = 0,31
 FrontSprite = 2,23
@@ -2495,6 +2501,12 @@ BackSprite = 0,33
 FrontSprite = -2,26
 ShadowX = 0
 ShadowSize = 1
+#-------------------------------
+[GFARFETCHD]
+BackSprite = 0,23
+FrontSprite = 0,26
+ShadowX = 0
+ShadowSize = 3
 #-------------------------------
 [GIBLE]
 BackSprite = 0,24
@@ -4422,6 +4434,12 @@ FrontSprite = -6,8
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[MNINETALES]
+BackSprite = 0,13
+FrontSprite = -2,12
+ShadowX = 0
+ShadowSize = 3
+#-------------------------------
 [MNOCTOWL]
 BackSprite = 0,15
 FrontSprite = 0,11
@@ -4605,6 +4623,12 @@ ShadowSize = 2
 [MVULLABY]
 BackSprite = 0,20
 FrontSprite = 1,20
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[MVULPIX]
+BackSprite = 0,26
+FrontSprite = 0,21
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -6126,6 +6150,12 @@ FrontSprite = 0,35
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
+[SIRFETCHD]
+BackSprite = 1,2
+FrontSprite = -4,2
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
 [SIZZLIPEDE]
 BackSprite = 0,29
 FrontSprite = -9,32
@@ -7311,6 +7341,12 @@ ShadowSize = 3
 [VOLCARONA]
 BackSprite = 0,15
 FrontSprite = 0,16
+ShadowX = 0
+ShadowSize = 2
+#-------------------------------
+[VOLTORB]
+BackSprite = 0,27
+FrontSprite = 0,26
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
