@@ -348,7 +348,7 @@ TotalPP = 1
 Target = NearOther
 FunctionCode = SwitchOutUserDamagingMove
 Flags = CanProtect
-Description = The user unleashes uses all its bunny power and retreats. Can't miss and can only be used once battle.
+Description = The user unleashes uses all its bunny power and retreats. Can't miss and can only be used once per battle.
 Animation = UTURN
 #-------------------------------
 [LATHER]
