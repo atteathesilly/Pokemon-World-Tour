@@ -410,7 +410,7 @@ BattleBack = wcave
 Environment = Cave
 #-------------------------------
 [059]
-# Naval Rock Thin Hall
+# Navel Rock Thin Hall
 Outdoor = false
 ShowArea = false
 Bicycle = true

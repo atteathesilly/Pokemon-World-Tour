@@ -288,7 +288,7 @@ LandTall,20
 Special
     1,STONJOURNER,20
 #-------------------------------
-[059] # Naval Rock Thin Hall
+[059] # Navel Rock Thin Hall
 DarkCave,20
     20,BALTOY,20,21
     20,CYNDAQUIL,20,21

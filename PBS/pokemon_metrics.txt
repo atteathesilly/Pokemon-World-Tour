@@ -2162,7 +2162,7 @@ ShadowSize = 1
 #-------------------------------
 [FLAPPLE]
 BackSprite = 0,24
-FrontSprite = 5,21
+FrontSprite = 5,16
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
@@ -2185,8 +2185,8 @@ ShadowX = 0
 ShadowSize = 1
 #-------------------------------
 [FLITTLE]
-BackSprite = 0,15
-FrontSprite = 0,0
+BackSprite = 0,16
+FrontSprite = -2,12
 ShadowX = 0
 ShadowSize = 2
 #-------------------------------
