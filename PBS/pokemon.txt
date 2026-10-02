@@ -47,6 +47,7 @@ Evolutions = GCHATOT,Level,21
 [GCHATOT]
 Name = G. Chatot
 Type1 = FIGHTING
+Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 78,77,85,50,30,90
 # Total = 410
@@ -68,6 +69,7 @@ Evolutions = ADVENTAWK,Level,40
 [ADVENTAWK]
 Name = Adventawk
 Type1 = FIGHTING
+Type2 = FLYING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 88,87,115,60,30,120
 # Total = 500
@@ -126,6 +128,7 @@ Evolutions = BAPHOKING,Level,40
 [BAPHOKING]
 Name = Baphoking
 Type1 = DARK
+Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 80,70,110,60,90,100
 # Total = 510
