@@ -673,7 +673,7 @@ Pokemon = TYROGUE,25
 Pokemon = VAROOM,25
     Moves = SELFDESTRUCT
     AbilityIndex = 1 # Levitate
-    Item = PAYAPABERRY
+    Item = CHOICESCARF
     # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
     EV = 10,20,0,20,20,0
 Pokemon = PUPITAR,25
