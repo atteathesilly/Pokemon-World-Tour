@@ -1560,7 +1560,6 @@ Power = 60
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-Priority = -4
 FunctionCode = DoubleDamageTargetHitUser
 Flags = CanProtect
 Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
