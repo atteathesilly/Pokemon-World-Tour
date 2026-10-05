@@ -64,7 +64,6 @@ class PokemonGameInfoMenu < PokemonPauseMenu
 		infoCommands = []
 		infoCommands[cmdTrainer = infoCommands.length] = _INTL("{1}'s Card",$Trainer.name)
 		infoCommands[cmdLevelCap = infoCommands.length] = _INTL("Level Cap") if LEVEL_CAPS_USED && getLevelCap > 0 && $Trainer.party_count > 0
-		infoCommands[cmdMainQuestHelp = infoCommands.length] = _INTL("What Next?") if defined?($main_quest_tracker)
 		infoCommands.push(_INTL("Cancel"))
 		loop do
 			infoCommand = @scene.pbShowCommands(infoCommands)
