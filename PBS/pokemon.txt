@@ -23475,8 +23475,8 @@ Name = Flamigo
 Type1 = FLYING
 Type2 = FIGHTING
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 82,115,74,90,75,64
-# Total = 500
+BaseStats = 82,135,84,90,75,84
+# Total = 550
 BaseEXP = 175
 Rareness = 128
 Happiness = 50

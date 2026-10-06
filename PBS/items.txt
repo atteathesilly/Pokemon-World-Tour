@@ -1594,7 +1594,7 @@ Pocket = 3
 Price = 300
 BattleUse = OnFoe
 Flags = PokeBall,SkipPocketMessage
-Description = A special Poké Ball that is used only in the Safari Zone. It is decorated in a camouflage pattern.
+Description = A special Poké Ball that is themed after the Safari Zone. It is decorated in a camouflage pattern.
 #-------------------------------
 [SPORTBALL]
 Name = Sport Ball

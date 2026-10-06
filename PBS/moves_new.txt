@@ -275,7 +275,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoToFiveTimesHalfFlyingHalfFighting20Dizzy
 Flags = CanProtect,CanMirrorMove,Wind
-Description = Each hit is randomly Fighting or Flying and has a 20% chance to dizzy.
+Description = Hits the target 2-5 times. Each hit is randomly Fighting or Flying and has a 20% chance to dizzy.
 Animation = BRAVEBIRD
 #-------------------------------
 [FRANTICFANG]
