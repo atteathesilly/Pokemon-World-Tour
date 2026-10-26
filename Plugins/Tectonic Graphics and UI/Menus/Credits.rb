@@ -154,6 +154,12 @@ CodeEden
 Hatchole and Chatoddle lines
 manycrows
 
+Iron Jugilus Redesign
+IronUdon
+
+Paradox's in Chasm Engine
+Valrex
+
 H. Sceptile Line
 Atteathesilly
 PDM20(resprite)
