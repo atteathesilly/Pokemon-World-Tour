@@ -15,6 +15,12 @@ DOCK_LOCATIONS = {
         :event_id => 1,
         :unlock_switch => 301,
     },
+    :BERRYFOREST => {
+        :map_name => "Berry Forest",
+        :map_id => 56,
+        :event_id => 31,
+        :unlock_switch => 312,
+    },
     :NAVEL_ROCK => {
         :map_name => "Navel Rock",
         :map_id => 57,

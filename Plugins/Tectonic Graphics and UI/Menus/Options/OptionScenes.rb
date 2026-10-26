@@ -146,8 +146,8 @@ class PokemonOption_Scene_Audio < PokemonOption_Scene_Base
 				}
 			),
             EnumOption.new(
-                _INTL("Bicycle Music"),
-                _INTL("Whether to play special music while riding the bicycle."),
+                _INTL("Rollerskates Music"),
+                _INTL("Whether to play special music while riding the rollerskates."),
                 [_INTL("On"), _INTL("Off")],
 				proc { $Options.bike_bgm },
 				proc { |value|
@@ -418,8 +418,8 @@ class PokemonOption_Scene_Battle < PokemonOption_Scene_Base
 				}
 			),
             EnumOption.new(
-                _INTL("Avatar Messages"),
-                _INTL("Whether to show messages about avatar mechanics."),
+                _INTL("Boss Messages"),
+                _INTL("Whether to show messages about boss mechanics."),
                 [_INTL("On"), _INTL("Off")],
 				proc { $Options.avatar_mechanics_messages },
 				proc { |value|

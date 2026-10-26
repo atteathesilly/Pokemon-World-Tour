@@ -638,6 +638,17 @@ Flags = CanProtect,Empowered
 Description = It swamps the area with a giant wave, hitting every battler nearby and underwater.
 Animation = SURF
 #-------------------------------
+[PRIMALREVERSIONKYOGRE]
+Name = Primal Reversion
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = None
+FunctionCode = Basic
+Flags = AvatarSignature
+Description = A move that only the boss Kyogre can use. The user changes to Primal Form and becomes a Water-type.
+#-------------------------------
 [PRIMEVALFLOWSTATE]
 Name = Primeval Flow State
 Type = WATER
@@ -685,17 +696,6 @@ Target = None
 FunctionCode = KyogreSummonAvatarLuvdiscRemoraid
 Flags = AvatarSignature
 Description = A move that only the avatar of Kyogre can use. The user commands a Luvdisc avatar and a Remoraid avatar to join it.
-#-------------------------------
-[PRIMALREVERSIONKYOGRE]
-Name = Primal Reversion
-Type = WATER
-Category = Status
-Accuracy = 0
-TotalPP = 1
-Target = None
-FunctionCode = Basic
-Flags = AvatarSignature
-Description = A move that only the boss Kyogre can use. The user changes to Primal Form and becomes a Water-type.
 #-------------------------------
 #		GRASS MOVES
 #-------------------------------
