@@ -644,9 +644,9 @@ Type = WATER
 Category = Status
 Accuracy = 0
 TotalPP = 1
-Target = None
-FunctionCode = Basic
-Flags = AvatarSignature
+Target = User
+FunctionCode = EmpoweredPrimalReversionKyogre
+Flags = AvatarSignature,Empowered
 Description = A move that only the boss Kyogre can use. The user changes to Primal Form and becomes a Water-type.
 #-------------------------------
 [PRIMEVALFLOWSTATE]
