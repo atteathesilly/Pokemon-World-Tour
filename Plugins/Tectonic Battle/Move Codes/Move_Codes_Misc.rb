@@ -408,6 +408,35 @@ class PokeBattle_Move_TwoTurnChangeUserAmpharosForm < PokeBattle_TwoTurnMove
 end
 
 #===============================================================================
+# Transforms the user into their Primal form. Only Kyogre can use it. 
+# (Primal Reversion)
+#===============================================================================
+class PokeBattle_Move_EmpoweredPrimalReversionKyogre < PokeBattle_Move
+    include EmpoweredMove
+
+    def pbMoveFailed?(user, _targets, show_message)
+        if !user.countsAs?(:KYOGRE)
+            @battle.pbDisplay(_INTL("But {1} can't use the move!", user.pbThis(true))) if show_message
+            return true
+        elsif user.form != 0
+            @battle.pbDisplay(_INTL("But {1} can't use it the way it is now!", user.pbThis(true))) if show_message
+            return true
+        end
+        return false
+    end
+
+    def pbEffectGeneral(user)
+        user.pbChangeForm(1, _INTL("{1} awakened its primal power!", user.pbThis))
+        transformType(user, :WATER)
+    end
+
+    def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
+        @battle.pbCommonAnimation("MegaEvolution", user)
+        super
+    end
+end
+
+#===============================================================================
 # Transforms the user into one of its forms. (Mutate)
 #===============================================================================
 class PokeBattle_Move_ChangeUserDeoxusChoiceOfForm < PokeBattle_Move
