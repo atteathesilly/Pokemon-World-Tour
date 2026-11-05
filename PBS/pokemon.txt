@@ -23583,6 +23583,227 @@ Pokedex = It controls flames burning at over 5,400 degrees Fahrenheit. It casual
 Generation = 9
 Flags = Legendary
 #-------------------------------
+[IRONTREADS]
+Name = Iron Treads
+Type1 = GROUND
+Type2 = STEEL
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,120,90,50,60,110
+# Total = 520
+BaseEXP = 175
+Rareness = 60
+Abilities = SPEEDBOOST,BURNOUT
+Moves = 0,DRAGRACE,1,DRAGRACE,1,GROWL,1,TAKEDOWN,1,TREADON,4,CURLUP,8,FLAIL,12,ROCKROLL,16,BULLDOZE,20,NATURALGIFT,24,ENDURE,28,ROCKALANCHE,32,CHARM,36,TRAMPLE,40,ADAMANTINEPRESS,44,EARTHQUAKE,48,CHAOSWHEEL,52,ROLLINGBOULDER,56,DOUBLEEDGE,60,STOMPINGTANTRUM
+TutorMoves = BULLETTRAIN,IRONHEAD,SPIKECANNON
+StepsToHatch = 5355
+Height = 0.9
+Weight = 240.0
+Kind = Armor
+Pokedex = TBA
+Generation = 9
+#-------------------------------
+[IRONBUNDLE]
+Name = Iron Bundle
+Type1 = ICE
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 100,50,75,100,115,75
+# Total = 515
+BaseEXP = 216
+Rareness = 120
+Happiness = 50
+Abilities = LARDER,HOLIDAYCHEER
+Moves = 0,HIGHPRESSURE,1,BESTOW,1,HIGHPRESSURE,1,VOLLEY,4,BAR,8,POWDERSNOW,12,LIFEDEW,16,BOREALWIND,20,AURORABEAM,24,LIGHTSCREEN,24,REFLECT,28,FRIGIDJEALOUSY,32,TAILWIND,36,PACKAGE,40,COLDFRONT,44,AURORAVEIL,48,FROSTSPIKES,52,TEMPEST,56,TRICK,60,SUPERCOOL
+Tribes = CARETAKER,INDUSTRIOUS
+StepsToHatch = 5355
+Height = 0.6
+Weight = 11.0
+Kind = Delivery
+Pokedex = This Pokémon purifies the water it carries around and delivers it to those in need. When necessary, it can also use this water to fire devastating blasts.
+Generation = 9
+#-------------------------------
+[IRONHANDS]
+Name = Iron Hands
+Type1 = FIGHTING
+Type2 = ELECTRIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 140,120,85,50,70,100
+# Total = 565
+GenderRate = Female25Percent
+BaseEXP = 166
+Rareness = 200
+Abilities = THICKFAT,FIGHTINGVIGOR
+Moves = 0,SHOCKER,1,JOLT,1,SHOCKER,1,SMELLINGSALTS,1,TACKLE,4,LEER,8,SCUFFLE,12,FAKEOUT,16,FORCEPALM,20,CURRENTCRASH,24,NERVEBLOCK,28,BAR,32,BELLYDRUM,36,STORMTHROW,40,WILDCHARGE,44,BULKUP,48,SUBMISSION,52,VOLTTACKLE,56,WIDEGUARD,60,FOCUSPUNCH
+TutorMoves = CURRENTCRASH,ELECTROSLASH,STORMDRIVE,WILDCHARGE
+StepsToHatch = 5355
+Height = 1.8
+Weight = 380.7
+Kind = Arm Thrust
+Pokedex = TBA
+Generation = 9
+WildItemUncommon = BLACKBELT
+#-------------------------------
+[IRONJUGULIS]
+Name = Iron Jugulis
+Type1 = DARK
+Type2 = FLYING
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 106,130,80,78,96,80
+# Total = 570
+BaseEXP = 147
+Rareness = 60
+Happiness = 35
+Abilities = JUGGERNAUT,ROCKETHANDS
+Moves = 0,MACHTWO,1,FOCUSENERGY,1,MACHTWO,1,TWISTER,4,ABSORB,8,HARSHVOICE,12,MEGADRAIN,16,DRAGONBREATH,20,SNARL,24,LOOMOVER,28,DIAMETRICBREATH,32,GIGADRAIN,36,CALMMIND,40,DRAGONPULSE,44,DARKPULSE,48,GUTTURALROAR,52,CRUNCH,56,DIVEBOMB,60,DRAINPUNCH
+TutorMoves = CAUSTICPUNCH,DIZZYPUNCH,FIREPUNCH,FOCUSPUNCH,ICEPUNCH,POWERUPPUNCH,SHADOWPUNCH,STRAFE,THUNDERPUNCH
+Tribes = SCOURGE,TYRANNICAL,TACTICIAN
+StepsToHatch = 10455
+Height = 1.3
+Weight = 111.0
+Kind = Hostile
+Pokedex = TBA
+Generation = 9
+#-------------------------------
+[IRONMOTH]
+Name = Iron Moth
+Type1 = FIRE
+Type2 = POISON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 82,122,82,70,122,72
+# Total = 550
+BaseEXP = 72
+Rareness = 150
+Abilities = LEVITATE,SOLARPANEL
+Moves = 0,POISONJAB,1,EMBER,1,POISONJAB,1,STRINGSHOT,4,CLACKACLACK,8,ABSORB,12,IGNITE,16,DRONING,20,INCINERATE,24,SUNSHINE,28,MEGADRAIN,32,SMOLDERRAVE,36,BUGBUZZ,40,MYSTICALFIRE,44,DISCHARGE,48,PHOTOVOLTAICGUARD,52,FLAREBLITZ,56,ACIDBATH,60,VOLTTACKLE
+TutorMoves = AGILITY,CHARGEBEAM,CROSSPOISON,CURRENTCRASH,GUNKSHOT,MIASMA,NASTYNIP,POISONDART,POISONGAS,POISONJAB,SHOCKWAVE,SLUDGE,SLUDGEWAVE,SPARK,THUNDER,THUNDERBOLT,THUNDERSHOCK,VENOMDRENCH,VENOMGUARD,VENOMORTAR,VENOSHOCK,WILDCHARGE
+Tribes = RADIANT
+StepsToHatch = 10455
+Height = 1.2
+Weight = 36.0
+Kind = Satellite
+Pokedex = It can sustain itself by only sunlight, so it usually lives orbitating the stratosphere. It hates encountering Minior up there.
+Generation = 9
+#-------------------------------
+[IRONTHORNS]
+Name = Iron Thorns
+Type1 = ROCK
+Type2 = ELECTRIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,74,96,72,134,110
+# Total = 576
+BaseEXP = 144
+Rareness = 60
+Happiness = 35
+Abilities = THUNDERSTORM,IMPENETRABLESHELL
+Moves = 1,IRONDEFENSE,1,ROCKTHROW,4,BITE,8,RUMBLE,12,RISINGPOWER,16,ROCKTOMB,20,TREMOR,24,BULKUP,28,PAYBACK,32,ROCKPOLISH,36,ROCKALANCHE,40,CRUNCH,44,EARTHQUAKE,48,DIAMONDFORCE,52,THUNDERBOLT,56,EARTHPOWER,60,ATOMICBREATH
+TutorMoves = CHARGEBEAM,METEORBEAM
+StepsToHatch = 10455
+Height = 1.6
+Weight = 303.0
+Kind = Hard Shell
+Pokedex = TBA
+Generation = 9
+#-------------------------------
+[IRONVALIANT]
+Name = Iron Valiant
+Type1 = FIGHTING
+Type2 = FAIRY
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 88,116,76,110,116,70
+# Total = 576
+BaseEXP = 97
+Rareness = 120
+Happiness = 35
+Abilities = WELLEQUIPPED,DOWNLOAD
+Moves = 0,FLASHCANNON,1,DAZZLE,1,DISARMINGVOICE,1,FLASHCANNON,4,CHARM,8,MINDWAVES,12,LULLABY,16,NERVEBLOCK,20,PSYBEAM,24,LIFEDEW,28,DAZZLINGGLEAM,32,CALMMIND,36,PSYCHIC,40,SPIRITBREAK,44,BULLETTRAIN,48,SCHEME,52,FLEURCANNON,56,BULLETPUNCH,60,OPTIMIZEDHIT,64,POLARIZEDROOM
+TutorMoves = INFINITEFORCE,IRONHEAD,PLAYROUGH,SHINESHOT,SHREDSHOT,STEELBEAM
+StepsToHatch = 5355
+Height = 1.4
+Weight = 35.0
+Kind = Warrior
+Pokedex = The ultimate fighter, it will adapt to any enemy and skillfully dismantle them. Few can withstand its glaive made of pure magical energy.
+Generation = 9
+#-------------------------------
+[IRONLEAVES]
+Name = Iron Leaves
+Type1 = GRASS
+Type2 = PSYCHIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,130,88,104,70,108
+# Total = 590
+GenderRate = Genderless
+BaseEXP = 175
+Rareness = 60
+Abilities = QUARKPROTOCOL
+Moves = 1,LEAFAGE,1,PSYBLADE
+TutorMoves = LEAFAGE
+StepsToHatch = 5355
+Height = 1.0
+Weight = 125.0
+Kind = Paradox
+Pokedex = It uses its shining blades to julienne large trees and boulders. It matches characteristics with a Virizion from the future.
+Generation = 9
+#-------------------------------
+[IRONBOULDER]
+Name = Iron Boulder
+Type1 = ROCK
+Type2 = PSYCHIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,120,80,124,68,108
+# Total = 590
+GenderRate = Genderless
+BaseEXP = 175
+Rareness = 60
+Abilities = QUARKPROTOCOL
+Moves = 1,MIGHTYCLEAVE,1,ROCKTHROW
+TutorMoves = ROCKTHROW
+StepsToHatch = 5355
+Height = 1.5
+Weight = 162.5
+Kind = Paradox
+Pokedex = It can charge energy within its axe horns to plow through anything. It is said to be a Terrakion modified by an evil organization.
+Generation = 9
+#-------------------------------
+[IRONCROWN]
+Name = Iron Crown
+Type1 = STEEL
+Type2 = PSYCHIC
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 90,72,100,98,122,108
+# Total = 590
+GenderRate = Genderless
+BaseEXP = 175
+Rareness = 60
+Abilities = QUARKPROTOCOL
+Moves = 1,IRONHEAD,1,TACHYONCUTTER
+TutorMoves = IRONHEAD
+StepsToHatch = 5355
+Height = 1.6
+Weight = 156.0
+Kind = Paradox
+Pokedex = It launches its shining blades to cut everything around it to pieces. It resembles a cutting-edge weapon shaped like a Cobalion.
+Generation = 9
+#-------------------------------
+[MIRAIDON]
+Name = Miraidon
+Type1 = ELECTRIC
+Type2 = DRAGON
+# HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
+BaseStats = 100,85,100,135,135,115
+# Total = 670
+GenderRate = Genderless
+BaseEXP = 175
+Rareness = 60
+Abilities = HADRONSYSTEM
+Moves = 1,SHOCKWAVE
+TutorMoves = SHOCKWAVE
+StepsToHatch = 5355
+Height = 3.5
+Weight = 240.0
+Kind = Paradox
+Pokedex = Ruthless and powerful, it's also known as the Iron Serpent. It was said to have turned the land to ash with its lighting.
+Generation = 9
+#-------------------------------
 [PROPK1]
 Name = Prop K1
 Type1 = FIGHTING
