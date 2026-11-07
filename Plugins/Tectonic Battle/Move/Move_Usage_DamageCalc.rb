@@ -216,6 +216,17 @@ class PokeBattle_Move
                 damageBonus = weather == :BloodMoon ? 0.5 : 0.3
                 multipliers[:final_damage_multiplier] *= (1 + damageBonus)
             end
+        when :BrilliantRain
+            if type == :WATER || :FAIRY 
+              damageBonus = weather == :HeavyRain ? 0.5 : 0.3
+              damageBonus *= 2 if @battle.curseActive?(:CURSE_BOOSTED_RAIN)
+              multipliers[:final_damage_multiplier] *= (1 + damageBonus)
+            elsif applyRainDebuff?(user,type,checkingForAI)
+              damageReduction = 0.15
+              damageReduction *= 2 if @battle.pbCheckGlobalAbility(:DREARYCLOUDS)
+              damageReduction *= 2 if @battle.curseActive?(:CURSE_BOOSTED_RAIN)
+              multipliers[:final_damage_multiplier] *= (1 - damageReduction)
+            end 
         end
     end
 

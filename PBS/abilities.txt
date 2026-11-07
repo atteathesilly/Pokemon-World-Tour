@@ -81,6 +81,11 @@ Description = Can poison the target even if it's a Steel or Poison-type.
 Name = Cotton Down
 Description = Lowers everyone else's Speed by two steps when hit by an attack.
 #-------------------------------
+[CRIMSONSKIES]
+Name = Crimson Skies
+Description = Dragon-type moves deal 50% more damage in moonglow.
+Flags = MoonglowSynergy
+#-------------------------------
 [CUDCHEW]
 Name = Cud Chew
 Description = When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time.
@@ -228,9 +233,18 @@ Name = Gulp Missile
 Description = Attacks with prey caught when using Surf, Dive, or Depth Charge.
 Flags = Immutable
 #-------------------------------
+[HADRONSYSTEM]
+Name = Hadron System
+Description = Summons brilliant rain, which combines the effects of moonglow and rain for four turns.
+Flags = RainSynergy,MoonglowSynergy
+#-------------------------------
 [HEAVYMETAL]
 Name = Heavy Metal
 Description = Doubles the Pokémon's weight.
+#-------------------------------
+[HOTFIX]
+Name = Hotfix
+Description = Immune to Bug-type moves and raises Speed if hit by one.
 #-------------------------------
 [HUNGERSWITCH]
 Name = Hunger Switch
@@ -426,6 +440,11 @@ Description = It changes type to that of the move it's about to use.
 Name = Pure Force
 Description = Raises the Pokémon's Attack by 50%, including Style Values and other bonuses.
 #-------------------------------
+[QUARKPROTOCOL]
+Name = Quark Protocol
+Description = On switch-in, raises both offensive stats in rain, or lowers the enemy's in moonglow.
+Flags = RainSynergy,MoonglowSynergy
+#-------------------------------
 [RAINDISH]
 Name = Rain Dish
 Description = Heals 1/8th of its max HP each turn if in rainstorm.
@@ -447,6 +466,10 @@ Description = Ripens Berries and doubles their effect.
 Name = RKS System
 Description = Its type matches the memory disc it holds.
 Flags = Immutable
+#-------------------------------
+[ROCKETHANDS]
+Name = Rocket Hands
+Description = Doubles the speed of Punch-based moves.
 #-------------------------------
 [ROCKHEAD]
 Name = Rock Head
@@ -535,6 +558,11 @@ Name = Snow Warning
 Description = Summons a hail for 4 turns when it enters battle.
 Flags = HailSynergy
 #-------------------------------
+[SOLARPANEL]
+Name = Solar Panel
+Description = Heals 1/8th of its HP and takes 35% less damage under sunlight.
+Flags = SunSynergy
+#-------------------------------
 [SOLARPOWER]
 Name = Solar Power
 Description = In sunshine, Sp. Atk is boosted by 50%, but the Pokémon is hurt for 1/10th HP each turn.
@@ -614,6 +642,11 @@ Description = Anticipates an ally's attack and dodges it.
 Name = Thick Fat
 Description = Takes half damage from Fire- and Ice-type moves.
 #-------------------------------
+[THUNDERSTORM]
+Name = Thunderstorm
+Description = Once per switch-in, Charges in sandstorm, doubling the power of its next Electric-type move.
+Flags = SandSynergy
+#-------------------------------
 [TINTEDLENS]
 Name = Tinted Lens
 Description = Doubles the damage of "not very effective" moves.
@@ -681,6 +714,11 @@ Description = Weakens incoming Fire-type moves, and doubles Water-type damage.
 [WEAKARMOR]
 Name = Weak Armor
 Description = Physical attacks against the Pokémon raise its Speed by two steps but lower its Defense.
+#-------------------------------
+[WELLEQUIPPED]
+Name = Well-Equipped
+Description = Can hold two items, but loses 1/10th HP each turn and takes 15% more damage.
+Flags = MultipleItems
 #-------------------------------
 [WHITESMOKE]
 Name = White Smoke

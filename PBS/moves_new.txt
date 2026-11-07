@@ -239,6 +239,18 @@ Flags = CanProtect
 Description = The user draws power to attack by using a held Berry. The Berry used determines its type.
 Animation = NATURALGIFT
 #-------------------------------
+[EXPLOSIVENAP]
+Name = Explosive Nap
+Type = NORMAL
+Category = Adaptive
+Power = 150
+Accuracy = 50
+TotalPP = 3
+Target = NearOther
+FunctionCode = HealUserFullyAndFallAsleepDownDefenses4IfMisses
+Flags = CanProtect,CanMirrorMove
+Description = The user sleeps next to the target with explosive power, healing and recovering status. Lowers the user's defensive stats four steps if it misses.
+#-------------------------------
 [EXTREMEEFFORT]
 Name = Extreme Effort
 Type = NORMAL
@@ -441,6 +453,18 @@ Flags = CanProtect,Pulse
 EffectChance = 30
 Description = The target is struck by a pulse of negative energy. This resets the target's stat changes.
 Animation = WEATHERBALL
+#-------------------------------
+[OPTIMIZEDHIT]
+Name = Optimized Hit
+Type = NORMAL
+Category = Adaptive
+Power = 100
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ChangeTypeDependsOnCategory
+Flags = CanProtect,CanMirrorMove
+Description = The user analyzes its own strong points, then attacks. Changes type depending on its category. Fairy if physical, Fighting if special.
 #-------------------------------
 [PALEBLADE]
 Name = Pale Blade
@@ -1226,6 +1250,19 @@ FunctionCode = RaiseUserSpd4GainFlyingType
 Flags = CanSnatch
 Description = The user takes off at sonic speeds, raising its Speed by four steps and gaining the Flying type.
 Animation = AGILITY
+#-------------------------------
+[MACHTWO]
+Name = Mach Two
+Type = FLYING
+Category = Physical
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 1
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user launches its hands at high speeds to attack two times, it always goes first.
 #-------------------------------
 [SKYFALL]
 Name = Sky Fall
@@ -2193,6 +2230,18 @@ FunctionCode = StealthRockStartSandstorm5
 Flags = CanMagicCoat
 Description = The user calls all rocks to join it, summoning sandstorm for five turns and laying a trap of levitating stones around the target.
 Animation = STEALTHROCK
+#-------------------------------
+[MIGHTYCLEAVE]
+Name = Mighty Cleave
+Type = ROCK
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RemovesHazardsWeatherRooms
+Flags = CanProtect,CanMirrorMove
+Description = The user slashes target, removing weather, rooms, and hazards in both sides.
 #-------------------------------
 [MONOLITHDROP]
 Name = Monolith Drop
@@ -3347,6 +3396,19 @@ EffectChance = 100
 Description = The target is punched with a cool steel fist. Frostbites the target.
 Animation = ICEPUNCH
 #-------------------------------
+[DRAGRACE]
+Name = Drag Race
+Type = STEEL
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = DragRace
+Flags = CanProtect,CanMirrorMove
+Description = The user rolls into the target. Gains +30 BP if it hits in succession, with a maximum of 150.
+Animation = ROLLOUT
+#-------------------------------
 [DRILLTHATWILLPIERCETHEHEAVENS]
 Name = Giga Drill Break
 Type = STEEL
@@ -3720,6 +3782,18 @@ FunctionCode = SuperEffectiveAgainstDragon
 Flags = CanProtect,Blade
 Description = The user slashes at the target with a steel blade. Super effective versus Dragon-types.
 Animation = SACREDSWORD
+#-------------------------------
+[TACHYONCUTTER]
+Name = Tachyon Cutter
+Type = STEEL
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove,Blade
+Description = The user slashes the target. The target is hit twice in a row.
 #-------------------------------
 [TAKESHELTER]
 Name = Take Shelter
@@ -4430,6 +4504,19 @@ FunctionCode = RecoilThirdOfDamageDealt
 Flags = CanProtect
 Description = The user crashes into the target like a tsunami. The user also takes 33% recoil.
 Animation = WATERFALL
+#-------------------------------
+[HIGHPRESSURE]
+Name = High Pressure
+Type = WATER
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = Basic
+Flags = CanProtect,CanMirrorMove
+Description = The user uses its water reserves to overwhelm the target.
+Animation = HYDROPUMP
 #-------------------------------
 [HYPERJET]
 Name = Hyper Jet
@@ -5315,6 +5402,19 @@ FunctionCode = TargetActsNextBoostsTheirDamage
 Description = The user assists an ally's next move, boosting its power by 50% and letting it move right after the user.
 Animation = HELPINGHAND
 #-------------------------------
+[ATOMICBREATH]
+Name = Atomic Breath
+Type = ELECTRIC
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackCanChooseOne
+Flags = CanProtect,CanMirrorMove
+Description = The user charges, attacking on the second turn. It can be used instantly for half of its power.
+Animation = HYPERBEAM
+#-------------------------------
 [BADENDING]
 Name = Bad Ending
 Type = ELECTRIC
@@ -5393,6 +5493,18 @@ FunctionCode = Rampage
 Flags = CanProtect
 Description = The user breaks down all insulation to send a barrage of electricity to rampage for two turns.
 Animation = GIGAVOLTHAVOC
+#-------------------------------
+[ELECTRODRIFT]
+Name = Electro Drift
+Type = ELECTRIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 8
+Target = NearOther
+FunctionCode = BoostIfSuperEffective
+Flags = CanProtect,CanMirrorMove
+Description = The user crashes into the target. It is boosted by 33% if it's super effective.
 #-------------------------------
 [ELECTROSLASH]
 Name = Electroslash
@@ -5597,6 +5709,18 @@ Flags = CanProtect,CanRandomCrit
 EffectChance = 50
 Description = The user slices with claws of light that have a 50% chance to numb. Can random critical hit.
 #-------------------------------
+[PHOTOVOLTAICGUARD]
+Name = Photovoltaic Guard
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 4
+Target = User
+FunctionCode = RaiseUserDefSpDef2Or4InSun
+Flags = CanSnatch
+Description = The user transforms solar energy into an electric shield, raising both defensive stats by two steps, or four steps in sun.
+Animation = SYNTHESIS
+#-------------------------------
 [QUARANTINE]
 Name = Quarantine
 Type = ELECTRIC
@@ -5633,6 +5757,20 @@ Target = UserSide
 FunctionCode = StartWeaken100PowerOrHigherDamageAgainstUserSide5
 Flags = CanSnatch
 Description = This move creates a directional magnetic field which reduces damage from attacks with 100 or more base power for five turns.
+#-------------------------------
+[SHOCKER]
+Name = Shocker
+Type = ELECTRIC
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = Numb
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user uses its electric hands to attack the target, numbing it.
+Animation = NUZZLE
 #-------------------------------
 [SHORTCIRCUIT]
 Name = Short Circuit
@@ -6076,6 +6214,18 @@ FunctionCode = CritsAgainstRaisedStats
 Flags = CanProtect
 Description = Pierces the mind of the target, inflicting doubt in their abilities, guaranteeing a critical hit on foes with boosted stats.
 Animation = EXTRASENSORY
+#-------------------------------
+[PSYBLADE]
+Name = Psyblade
+Type = PSYCHIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = BoostInMoonglow
+Flags = CanProtect,CanMirrorMove,Blade
+Description = The user attacks with a psychic blade. Powers up 50% in moonglow.
 #-------------------------------
 [PSYCHESWITCH]
 Name = Psyche Switch
