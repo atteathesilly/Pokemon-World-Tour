@@ -1251,19 +1251,6 @@ Flags = CanSnatch
 Description = The user takes off at sonic speeds, raising its Speed by four steps and gaining the Flying type.
 Animation = AGILITY
 #-------------------------------
-[MACHTWO]
-Name = Headshot
-Type = STEEL
-Category = Physical
-Power = 25
-Accuracy = 100
-TotalPP = 20
-Target = NearOther
-Priority = 1
-FunctionCode = HitTwoTimes
-Flags = CanProtect,CanMirrorMove
-Description = The user launches its heads at high speeds to attack two times, it always goes first.
-#-------------------------------
 [SKYFALL]
 Name = Sky Fall
 Type = FLYING
@@ -3564,6 +3551,19 @@ FunctionCode = Basic
 Flags = CanProtect,CanRandomCrit
 Description = The target is pierced with a pointed metal javelin. Can random critical hit.
 Animation = SPIKECANNON
+#-------------------------------
+[MACHTWO]
+Name = Headshot
+Type = STEEL
+Category = Physical
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 1
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user launches its heads at high speeds to attack two times, it always goes first.
 #-------------------------------
 [MAGNETIZE]
 Name = Magnetize
