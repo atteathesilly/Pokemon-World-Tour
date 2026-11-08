@@ -23601,11 +23601,12 @@ Weight = 240.0
 Kind = Armor
 Pokedex = TBA
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONBUNDLE]
 Name = Iron Bundle
 Type1 = ICE
-Type2 = FLYING
+Type2 = WATER
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 100,50,75,100,115,75
 # Total = 515
@@ -23621,6 +23622,7 @@ Weight = 11.0
 Kind = Delivery
 Pokedex = This Pokémon purifies the water it carries around and delivers it to those in need. When necessary, it can also use this water to fire devastating blasts.
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONHANDS]
 Name = Iron Hands
@@ -23641,12 +23643,13 @@ Weight = 380.7
 Kind = Arm Thrust
 Pokedex = TBA
 Generation = 9
+Flags = Hidden,Regional
 WildItemUncommon = BLACKBELT
 #-------------------------------
 [IRONJUGULIS]
 Name = Iron Jugulis
 Type1 = DARK
-Type2 = FLYING
+Type2 = STEEL
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
 BaseStats = 106,130,80,78,96,80
 # Total = 570
@@ -23663,6 +23666,7 @@ Weight = 111.0
 Kind = Hostile
 Pokedex = TBA
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONMOTH]
 Name = Iron Moth
@@ -23683,6 +23687,7 @@ Weight = 36.0
 Kind = Satellite
 Pokedex = It can sustain itself by only sunlight, so it usually lives orbitating the stratosphere. It hates encountering Minior up there.
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONTHORNS]
 Name = Iron Thorns
@@ -23703,6 +23708,7 @@ Weight = 303.0
 Kind = Hard Shell
 Pokedex = TBA
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONVALIANT]
 Name = Iron Valiant
@@ -23723,6 +23729,7 @@ Weight = 35.0
 Kind = Warrior
 Pokedex = The ultimate fighter, it will adapt to any enemy and skillfully dismantle them. Few can withstand its glaive made of pure magical energy.
 Generation = 9
+Flags = Hidden,Regional
 #-------------------------------
 [IRONLEAVES]
 Name = Iron Leaves
@@ -23743,6 +23750,7 @@ Weight = 125.0
 Kind = Paradox
 Pokedex = It uses its shining blades to julienne large trees and boulders. It matches characteristics with a Virizion from the future.
 Generation = 9
+Flags = Legendary,Regional
 #-------------------------------
 [IRONBOULDER]
 Name = Iron Boulder
@@ -23763,6 +23771,7 @@ Weight = 162.5
 Kind = Paradox
 Pokedex = It can charge energy within its axe horns to plow through anything. It is said to be a Terrakion modified by an evil organization.
 Generation = 9
+Flags = Legendary,Regional
 #-------------------------------
 [IRONCROWN]
 Name = Iron Crown
@@ -23783,14 +23792,15 @@ Weight = 156.0
 Kind = Paradox
 Pokedex = It launches its shining blades to cut everything around it to pieces. It resembles a cutting-edge weapon shaped like a Cobalion.
 Generation = 9
+Flags = Legendary,Regional
 #-------------------------------
 [MIRAIDON]
 Name = Miraidon
 Type1 = ELECTRIC
 Type2 = DRAGON
 # HP, Attack, Defense, Speed, Sp. Atk, Sp. Def
-BaseStats = 100,85,100,135,135,115
-# Total = 670
+BaseStats = 100,75,100,120,120,105
+# Total = 620
 GenderRate = Genderless
 BaseEXP = 175
 Rareness = 60
@@ -23803,6 +23813,7 @@ Weight = 240.0
 Kind = Paradox
 Pokedex = Ruthless and powerful, it's also known as the Iron Serpent. It was said to have turned the land to ash with its lighting.
 Generation = 9
+Flags = Legendary,Regional
 #-------------------------------
 [PROPK1]
 Name = Prop K1

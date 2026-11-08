@@ -1252,8 +1252,8 @@ Description = The user takes off at sonic speeds, raising its Speed by four step
 Animation = AGILITY
 #-------------------------------
 [MACHTWO]
-Name = Mach Two
-Type = FLYING
+Name = Headshot
+Type = STEEL
 Category = Physical
 Power = 25
 Accuracy = 100
@@ -1262,7 +1262,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = HitTwoTimes
 Flags = CanProtect,CanMirrorMove
-Description = The user launches its hands at high speeds to attack two times, it always goes first.
+Description = The user launches its heads at high speeds to attack two times, it always goes first.
 #-------------------------------
 [SKYFALL]
 Name = Sky Fall
