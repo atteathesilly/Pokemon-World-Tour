@@ -1,89 +1,4 @@
-#===============================================================================
-#+50% chance of added effects in sound moves activating (Primal Echo)
-#===============================================================================
 
-BattleHandlers::AddedEffectChanceModifierUserAbility.add(:PRIMALECHO,
-    proc { |ability, user, target, move, chance|
-        chance += 50 if move.soundMove?
-        next chance
-    }
-)
-
-#===============================================================================
-# Boosts special attack 50%, but locked to one move (Banshee's Melisma)
-#===============================================================================
-
-BattleHandlers::SpecialAttackCalcUserAbility.add(:BANSHEESMELISMA,
-  proc { |ability, _user, _battle, spAtkMult|
-      spAtkMult *= 1.5
-      next spAtkMult
-  }
-)
-
-#==========================================================================================================================
-# Takes less 25% damage from super-effective moves, if hit by one, attacks immediately with Brutal Swing (Wild Fungus)
-#==========================================================================================================================
-
-BattleHandlers::DamageCalcTargetAbility.add(:WILDFUNGUS,
-  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck, battle|
-    if Effectiveness.super_effective?(typeModToCheck(user.battle, type, user, target, move, aiCheck))
-      mults[:final_damage_multiplier] *= 0.75
-      target.aiLearnsAbility(ability) unless aiCheck
-    end
-  }
-)
-
-BattleHandlers::TargetAbilityOnHit.add(:WILDFUNGUS,
-  proc { |ability, user, target, move, battle, aiCheck, aiNumHits|
-        next unless Effectiveness.super_effective?(target.damageState.typeMod)
-        next if target.fainted?
-        next -30 * aiNumHits if aiCheck
-        battle.forceUseMove(target, :BRUTALSWING, user.index, ability: ability)
-  }
-)
-
-#===============================================================================
-# Uses Dragon Dance when a Total Eclipse occurs (Ancient Dance)
-#===============================================================================
-
-BattleHandlers::TotalEclipseAbility.add(:ANCIENTDANCE,
-  proc { |ability, battler, battle, aiCheck|
-      next battle.forceUseMove(battler, :DRAGONDANCE, -1, ability: ability, aiCheck: aiCheck)
-  }
-) 
-
-#===============================================================================
-# Uses Magnet Rise when loses half its HP (Strong Magnetism)
-#===============================================================================
-
-BattleHandlers::AbilityOnHPDroppedBelowHalf.add(:STRONGMAGNETISM,
-  proc { |ability, battler, battle, aiCheck|
-      next battle.forceUseMove(battler, :MAGNETRISE, -1, ability: ability, aiCheck: aiCheck)
-  }
-)
-
-#===============================================================================
-# Boosts 50% Dragon-type moves in Moonglow (Crimson Skies)
-#===============================================================================
-
-BattleHandlers::DamageCalcUserAbility.add(:CRIMSONSKIES,
-  proc { |ability, user, target, move, mults, _baseDmg, type, aiCheck|
-    if user.battle.moonGlowing? && type == :DRAGON
-      mults[:base_damage_multiplier] *= 1.5
-      user.aiLearnsAbility(ability) unless aiCheck
-    end
-  }
-)
-
-#===============================================================================
-# Leech immunity (Fighting Vigor)
-#===============================================================================
-
-BattleHandlers::StatusImmunityAbility.add(:FIGHTINGVIGOR,
-  proc { |ability, _battler, status|
-      next true if status == :LEECHED
-  }
-)
 
 #===============================================================================
 # Doubles speed while using punching moves (Rocket Hands)
@@ -155,7 +70,7 @@ BattleHandlers::UserAbilityEndOfMove.add(:THUNDERSTORM,
   }
 )
 
-BattleHandlers::MoveImmunityTargetAbility.add(:IMPENETRABLESHELL,
+BattleHandlers::MoveImmunityTargetAbility.add(:HOTFIX,
   proc { |ability, user, target, move, type, battle, showMessages, aiCheck|
       next pbBattleMoveImmunityStatAbility(ability, user, target, move, type, :BUG, :SPEED, 1, battle, showMessages, aiCheck)
   }
@@ -180,26 +95,6 @@ BattleHandlers::EOREffectAbility.add(:WELLEQUIPPED,
   }
 )
 
-#================================================================================================
-# On switch-in, +1 to attacking stats in eclipse, or -2 to the enemy side in sun (Protoinstinct)
-#================================================================================================
-
-BattleHandlers::AbilityOnSwitchIn.add(:PROTOINSTINCT,
-  proc { |ability, battler, battle, aiCheck|
-      if battle.eclipsed?
-      if aiCheck
-          next getMultiStatUpEffectScore([:ATTACK, 1], battler, battler)
-      else
-          battler.tryRaiseStat(:ATTACK, battler, ability: ability)
-      if battle.sunny?
-      next entryDebuffAbility(ability, battler, battle, ATTACKING_STATS_2, aiCheck: aiCheck)
-      end
-    end 
-      elsif battle.sunny?
-      next entryDebuffAbility(ability, battler, battle, ATTACKING_STATS_2, aiCheck: aiCheck) 
-      end   
-    }
-)
 
 #==================================================================================================
 # On switch-in, +1 to attacking stats in rain, or -2 to the enemy side in moonglow (Quark Protocol)
@@ -222,15 +117,6 @@ BattleHandlers::AbilityOnSwitchIn.add(:QUARKPROTOCOL,
     }
 )
 
-#========================================================================================
-# Sets Darkened Sun in switch-in, a combination of Eclipse and Sun (Orichalchum Presence)
-#========================================================================================
-
-BattleHandlers::AbilityOnSwitchIn.add(:ORICHALCHUMPRESENCE,
-  proc { |ability, battler, battle, aiCheck|
-      pbBattleWeatherAbility(ability, :DarkenedSun, battler, battle, true, true, aiCheck)
-  }
-)
 
 #=====================================================================================
 # Sets Brilliant Rain in switch-in, a combination of Rain and Moonglow (Hadron System)

@@ -24,13 +24,22 @@ class PokeBattle_Move_TypeDependsOnWeather < PokeBattle_Move
             ret = :ICE if GameData::Type.exists?(:ICE)
         when :Eclipse, :RingEclipse
             ret = :PSYCHIC if GameData::Type.exists?(:PSYCHIC)
-        when :Moonglow, :BloodMoon
+        when :Moonglow, :BloodMoon, :BrilliantRain
             ret = :FAIRY if GameData::Type.exists?(:FAIRY)
         when :StrongWinds
             ret = :FLYING if GameData::Type.exists?(:FLYING)
         end
         return ret
     end
+
+    def pbCalcTypeModSingle(moveType, defType, user, target)
+    ret = super
+    if :BrilliantRain 
+      waterEff = Effectiveness.calculate_one(:WATER, defType) if GameData::Type.exists?(:WATER)
+      ret *= waterEff.to_f / Effectiveness::NORMAL_EFFECTIVE_ONE
+    end
+    return ret
+end
 
     # def pbShowAnimation(id, user, targets, hitNum = 0, showAnimation = true)
     #     t = pbBaseType(user)
