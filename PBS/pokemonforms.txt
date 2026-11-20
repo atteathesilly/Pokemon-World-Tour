@@ -1181,6 +1181,12 @@ FormName = Harvest
 BaseStats = 120,130,81,68,130,81
 Abilities = AUTUMNAL
 #-------------------------------
+[ADVENTAWK,1]
+FormName = Spirit
+Type1 = GHOST
+Type2 = FIGHTING
+Abilities = FEATHERCOAT
+#-------------------------------
 [BASCULIN,2]
 FormName = White-Striped
 Kind = Mellow

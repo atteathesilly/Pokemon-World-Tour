@@ -157,7 +157,7 @@ manycrows
 Iron Jugilus Redesign
 IronUdon
 
-Paradox's in Chasm Engine
+Paradoxes in Chasm Engine
 Valrex
 
 H. Sceptile Line

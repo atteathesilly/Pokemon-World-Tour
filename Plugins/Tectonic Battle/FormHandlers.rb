@@ -480,6 +480,12 @@ MultipleForms.register(:PALAFIN, {
   },
 })
 
+MultipleForms.register(:ADVENTAWK, {
+  "getFormOnLeavingBattle" => proc { |pkmn, _battle, _usedInBattle, endBattle|
+      next 0 if pkmn.form == 1 && (pkmn.fainted? || endBattle)
+  },
+})
+
 MultipleForms.register(:ALAKAZAM, {
   "getFormOnLeavingBattle" => proc { |pkmn, _battle, _usedInBattle, endBattle|
       next 0 if pkmn.form == 1 && (pkmn.fainted? || endBattle)

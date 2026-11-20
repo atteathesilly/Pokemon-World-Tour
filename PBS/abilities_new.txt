@@ -1999,6 +1999,11 @@ Description = Leaves two layers of spikes after it self-destructs.
 Name = Spintensity
 Description = Speed is raised each turn. Speed is reset when hit, but the attacker takes 1/8th HP damage for each step lost.
 #-------------------------------
+[SPIRITOFADVENTURE]
+Name = Spirit of Adventure
+Description = When the Pokémon faints, it is revived in a new form. Ability becomes Feather Coat.
+Flags = Immutable
+#-------------------------------
 [SPOONFED]
 Name = Spoon Fed
 Description = Immune to Steel-type moves, and raises Attack and Sp. Atk when hit by one.
